@@ -51,13 +51,21 @@ def _to_float(v):
 
 
 def _fetch_rows(dataset):
+    """datasets-server /rows 分页。遇限流(429)时保留已拉到的部分行，不整体丢弃。"""
     rows, offset, page = [], 0, 100
     while True:
         url = (
             f"{HF_DATASETS_SERVER}/rows?dataset={dataset.replace('/', '%2F')}"
             f"&config=default&split=train&offset={offset}&length={page}"
         )
-        data = http_get(url, as_json=True)
+        try:
+            data = http_get(url, as_json=True)
+        except Exception:
+            # 限流/网络失败：已有部分数据就用部分，没有则抛给上层换通道
+            if rows:
+                warn(f"OpenLLM {dataset}: 分页中断于 offset={offset}，使用已拉取的 {len(rows)} 行")
+                break
+            raise
         batch = data.get("rows") or []
         for item in batch:
             rows.append(item.get("row", item))
@@ -69,21 +77,36 @@ def _fetch_rows(dataset):
 
 
 def _fetch_rows_parquet(dataset):
-    """直接下载转换后的 parquet（单次请求，避开 datasets-server 分页限流 429）。"""
+    """经 datasets-server /parquet 拿权威文件 URL 后单次下载（避开分页限流）。"""
     import io
     try:
         import pyarrow.parquet as pq
     except ImportError:
         warn("pyarrow 未安装，跳过 parquet 通道")
         return []
-    url = (
-        f"https://huggingface.co/datasets/{dataset}/resolve/"
-        f"refs%2Fconvert%2Fparquet/default/train/0000.parquet"
+    meta = http_get(
+        f"{HF_DATASETS_SERVER}/parquet?dataset={dataset.replace('/', '%2F')}",
+        as_json=True, timeout=30,
     )
-    content = http_get(url, timeout=90)
-    if isinstance(content, str):
-        content = content.encode("utf-8", errors="ignore")
-    return pq.read_table(io.BytesIO(content)).to_pylist()
+    urls = []
+    # 结构：{"<config>": {"<split>": [{"url": ...}, ...]}}
+    for cfg, splits in (meta or {}).items():
+        if not isinstance(splits, dict):
+            continue
+        for split, files in splits.items():
+            if isinstance(files, list):
+                for f in files:
+                    if isinstance(f, dict) and f.get("url"):
+                        urls.append(f["url"])
+    if not urls:
+        raise RuntimeError("parquet 元数据中无文件 URL")
+    rows = []
+    for u in urls[:3]:  # 主表通常单文件，最多取 3 个防意外
+        content = http_get(u, timeout=120)
+        if isinstance(content, str):
+            content = content.encode("utf-8", errors="ignore")
+        rows.extend(pq.read_table(io.BytesIO(content)).to_pylist())
+    return rows
 
 
 def fetch(date_str: str):
