@@ -9,7 +9,7 @@
 
 抓取通道：HF datasets-server /rows 分页 API（GitHub Actions 内可正常访问）。
 6 项基准：IFEval / BBH / MATH Lvl 5 / GPQA / MuSR / MMLU-PRO，Average 为总分。
-只保留 chat/instruct 类型，按 Average 降序取前 N，不修改任何分数。
+按 Average 降序取前 N（不做类型过滤，官方 Top 榜含 merged 类型），不修改任何分数。
 """
 
 from common import http_get, log, warn, now_utc_iso
@@ -138,10 +138,10 @@ def fetch(date_str: str):
         avg = _to_float(_pick(row, AVG_KEYS))
         if not name or avg is None:
             continue
+        # 不按 type 过滤：官方榜单本身包含 chat/instruct/merged 等类型
+        # （Top 榜的 calme-* 系列即 merged），且原始 Type 列带 emoji 前缀不可靠。
+        # 仅保留 type 字段供前端展示。
         rtype = (_pick(row, TYPE_KEYS) or "").lower()
-        # 只保留对话/指令微调模型（排除 base pretrained），聚焦可用模型
-        if rtype and "chat" not in rtype and "instruct" not in rtype:
-            continue
         subs = {}
         for key, keys in SUB_KEYS.items():
             subs[key] = _to_float(_pick(row, keys))
@@ -161,7 +161,7 @@ def fetch(date_str: str):
     for i, row in enumerate(cleaned, start=1):
         row["rank"] = i
 
-    log(f"OpenLLM: 归档数据集 {used_dataset}，取 {len(cleaned)} 个 chat 模型")
+    log(f"OpenLLM: 归档数据集 {used_dataset}，取 {len(cleaned)} 个模型（Top {TOP_N}）")
     return {
         "source_id": SOURCE_ID,
         "board": "HF Open LLM Leaderboard v2（开源·已退役归档）",
