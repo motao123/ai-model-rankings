@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T15:11:24Z",
+ "generated_at": "2026-10-08T15:17:43Z",
  "status": "partial",
  "boards": [
   "lmarena_text",
@@ -14,7 +14,7 @@
   {
    "source": "open_llm",
    "status": "fallback",
-   "error": "Open LLM Leaderboard: 归档数据集不可用"
+   "error": "Open LLM Leaderboard: 清洗后无 chat 模型"
   },
   {
    "source": "superclue",

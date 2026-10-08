@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T15:11:24Z",
+ "generated_at": "2026-10-08T15:17:43Z",
  "date": "2026-10-08",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
@@ -10,7 +10,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:09:20Z",
+   "fetched_at": "2026-10-08T15:16:02Z",
    "publish_date": "2026-10-02",
    "compared_with": null,
    "stale": false,
@@ -7050,7 +7050,7 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-10-08T15:09:23Z",
+   "fetched_at": "2026-10-08T15:16:05Z",
    "publish_date": "2026-10-08",
    "compared_with": null,
    "stale": false,
@@ -7368,7 +7368,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:09:23Z",
+   "fetched_at": "2026-10-08T15:16:04Z",
    "publish_date": "2026-10-06",
    "compared_with": null,
    "stale": false,
@@ -9750,7 +9750,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:09:23Z",
+   "fetched_at": "2026-10-08T15:16:05Z",
    "publish_date": "2026-10-02",
    "compared_with": null,
    "stale": false,
@@ -10619,7 +10619,7 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dataset_url": "https://livecodebench.github.io/performances_generation.json",
    "license": "官方公开数据",
-   "fetched_at": "2026-10-08T15:09:25Z",
+   "fetched_at": "2026-10-08T15:16:05Z",
    "publish_date": "2025-04-07",
    "compared_with": null,
    "stale": false,
@@ -18838,7 +18838,7 @@
   {
    "source": "open_llm",
    "status": "fallback",
-   "error": "Open LLM Leaderboard: 归档数据集不可用"
+   "error": "Open LLM Leaderboard: 清洗后无 chat 模型"
   },
   {
    "source": "superclue",
