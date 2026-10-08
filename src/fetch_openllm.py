@@ -43,6 +43,24 @@ def _pick(row, keys):
     return None
 
 
+def _pick_fuzzy(row, needles):
+    """先精确匹配，再按"键名包含 needle（忽略大小写）"模糊匹配。
+
+    归档数据集列名带 emoji/大小写变体（如 'Average ⭐'、'Average'），
+    精确列表容易漏，模糊匹配更稳。"""
+    v = _pick(row, needles)
+    if v is not None:
+        return v
+    for k, val in row.items():
+        if val in (None, ""):
+            continue
+        lk = str(k).lower()
+        for n in needles:
+            if n.lower() in lk:
+                return val
+    return None
+
+
 def _to_float(v):
     try:
         return float(v)
@@ -134,17 +152,17 @@ def fetch(date_str: str):
 
     cleaned = []
     for row in raw_rows:
-        name = _pick(row, NAME_KEYS)
-        avg = _to_float(_pick(row, AVG_KEYS))
+        name = _pick_fuzzy(row, NAME_KEYS)
+        avg = _to_float(_pick_fuzzy(row, AVG_KEYS))
         if not name or avg is None:
             continue
         # 不按 type 过滤：官方榜单本身包含 chat/instruct/merged 等类型
         # （Top 榜的 calme-* 系列即 merged），且原始 Type 列带 emoji 前缀不可靠。
         # 仅保留 type 字段供前端展示。
-        rtype = (_pick(row, TYPE_KEYS) or "").lower()
+        rtype = str(_pick_fuzzy(row, TYPE_KEYS) or "").lower()
         subs = {}
         for key, keys in SUB_KEYS.items():
-            subs[key] = _to_float(_pick(row, keys))
+            subs[key] = _to_float(_pick_fuzzy(row, keys))
         cleaned.append({
             "model": str(name),
             "organization": str(name).split("/")[0] if "/" in str(name) else None,
@@ -152,6 +170,9 @@ def fetch(date_str: str):
             "type": rtype or None,
             "subscores": subs,
         })
+
+    if not cleaned and raw_rows:
+        warn(f"OpenLLM: 清洗后为空，实际列名样例: {list(raw_rows[0].keys())[:15]}")
 
     if not cleaned:
         raise RuntimeError("Open LLM Leaderboard: 清洗后无 chat 模型")
