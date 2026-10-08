@@ -68,17 +68,43 @@ def _fetch_rows(dataset):
     return rows
 
 
+def _fetch_rows_parquet(dataset):
+    """直接下载转换后的 parquet（单次请求，避开 datasets-server 分页限流 429）。"""
+    import io
+    try:
+        import pyarrow.parquet as pq
+    except ImportError:
+        warn("pyarrow 未安装，跳过 parquet 通道")
+        return []
+    url = (
+        f"https://huggingface.co/datasets/{dataset}/resolve/"
+        f"refs%2Fconvert%2Fparquet/default/train/0000.parquet"
+    )
+    content = http_get(url, timeout=90)
+    if isinstance(content, str):
+        content = content.encode("utf-8", errors="ignore")
+    return pq.read_table(io.BytesIO(content)).to_pylist()
+
+
 def fetch(date_str: str):
     raw_rows = []
     used_dataset = None
     for ds in DATASETS:
+        # 通道 1：datasets-server 分页（可能 429）；通道 2：parquet 直下
         try:
             raw_rows = _fetch_rows(ds)
             if raw_rows:
                 used_dataset = ds
                 break
         except Exception as exc:  # noqa: BLE001
-            warn(f"OpenLLM {ds} 拉取失败: {exc}")
+            warn(f"OpenLLM {ds} datasets-server 拉取失败: {exc}")
+        try:
+            raw_rows = _fetch_rows_parquet(ds)
+            if raw_rows:
+                used_dataset = ds
+                break
+        except Exception as exc:  # noqa: BLE001
+            warn(f"OpenLLM {ds} parquet 拉取失败: {exc}")
 
     if not raw_rows:
         raise RuntimeError("Open LLM Leaderboard: 归档数据集不可用")
