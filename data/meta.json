@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T15:27:12Z",
+ "generated_at": "2026-10-08T15:36:38Z",
  "status": "partial",
  "boards": [
   "lmarena_text",
@@ -11,11 +11,6 @@
   "open_llm"
  ],
  "failures": [
-  {
-   "source": "open_llm",
-   "status": "fallback",
-   "error": "Open LLM Leaderboard: 清洗后无 chat 模型"
-  },
   {
    "source": "superclue",
    "status": "fallback",

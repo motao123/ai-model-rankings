@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T15:27:12Z",
+ "generated_at": "2026-10-08T15:36:38Z",
  "date": "2026-10-08",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
@@ -10,7 +10,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:25:31Z",
+   "fetched_at": "2026-10-08T15:34:55Z",
    "publish_date": "2026-10-02",
    "compared_with": null,
    "stale": false,
@@ -7050,7 +7050,7 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-10-08T15:25:34Z",
+   "fetched_at": "2026-10-08T15:34:57Z",
    "publish_date": "2026-10-08",
    "compared_with": null,
    "stale": false,
@@ -7368,7 +7368,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:25:33Z",
+   "fetched_at": "2026-10-08T15:34:57Z",
    "publish_date": "2026-10-06",
    "compared_with": null,
    "stale": false,
@@ -9750,7 +9750,7 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-08T15:25:33Z",
+   "fetched_at": "2026-10-08T15:34:57Z",
    "publish_date": "2026-10-02",
    "compared_with": null,
    "stale": false,
@@ -10619,7 +10619,7 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dataset_url": "https://livecodebench.github.io/performances_generation.json",
    "license": "官方公开数据",
-   "fetched_at": "2026-10-08T15:25:34Z",
+   "fetched_at": "2026-10-08T15:34:57Z",
    "publish_date": "2025-04-07",
    "compared_with": null,
    "stale": false,
@@ -11030,30 +11030,30 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": null,
+   "fetched_at": "2026-10-08T15:35:24Z",
    "publish_date": "2025-03",
    "compared_with": null,
-   "stale": true,
-   "manual": true,
-   "manual_note": "本地网络无法访问 Hugging Face 数据集时展示此归档快照（HF Open LLM Leaderboard v2 退役前 Top 值）。GitHub Actions 每日从官方归档数据集抓取覆盖。",
+   "stale": false,
+   "manual": false,
+   "manual_note": null,
    "retired": true,
-   "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考，与其他实时榜单不可直接比较。",
+   "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考。",
    "price_unit": null,
    "rows": [
     {
-     "rank": 1,
      "model": "MaziyarPanahi/calme-3.2-instruct-78b",
      "organization": "MaziyarPanahi",
      "score": 52.08,
-     "type": "chat",
+     "type": "🔶 fine-tuned on domain-specific datasets",
      "subscores": {
-      "ifeval": 80.63,
-      "bbh": 62.61,
-      "math": 40.33,
-      "gpqa": 20.36,
-      "musr": 38.53,
-      "mmlu_pro": 70.03
+      "ifeval": 80.62607215521483,
+      "bbh": 62.609443282901594,
+      "math": 40.33232628398791,
+      "gpqa": 20.3579418344519,
+      "musr": 38.52890624999999,
+      "mmlu_pro": 70.03361406619385
      },
+     "rank": 1,
      "id": "maziyarpanahicalme32instruct78b",
      "display_name": "MaziyarPanahi/calme-3.2-instruct-78b",
      "vendor": "MaziyarPanahi",
@@ -11063,19 +11063,19 @@
      "is_new": false
     },
     {
-     "rank": 2,
      "model": "MaziyarPanahi/calme-3.1-instruct-78b",
      "organization": "MaziyarPanahi",
      "score": 51.29,
-     "type": "chat",
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
      "subscores": {
-      "ifeval": 81.36,
-      "bbh": 62.41,
-      "math": 39.27,
-      "gpqa": 19.4,
-      "musr": 36.5,
-      "mmlu_pro": 68.72
+      "ifeval": 81.35547015252862,
+      "bbh": 62.40968270370106,
+      "math": 39.274924471299094,
+      "gpqa": 19.463087248322143,
+      "musr": 36.49947916666666,
+      "mmlu_pro": 68.72229609929079
      },
+     "rank": 2,
      "id": "maziyarpanahicalme31instruct78b",
      "display_name": "MaziyarPanahi/calme-3.1-instruct-78b",
      "vendor": "MaziyarPanahi",
@@ -11085,41 +11085,19 @@
      "is_new": false
     },
     {
-     "rank": 3,
-     "model": "dfurman/CalmeRys-78B-Orpo-v0.1",
-     "organization": "dfurman",
-     "score": 51.23,
-     "type": "chat",
-     "subscores": {
-      "ifeval": 81.63,
-      "bbh": 61.92,
-      "math": 40.63,
-      "gpqa": 20.02,
-      "musr": 37.37,
-      "mmlu_pro": 66.8
-     },
-     "id": "dfurmancalmerys78borpov01",
-     "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
-     "vendor": "dfurman",
-     "region": "other",
-     "open": null,
-     "trend": 0,
-     "is_new": false
-    },
-    {
-     "rank": 4,
      "model": "MaziyarPanahi/calme-2.4-rys-78b",
      "organization": "MaziyarPanahi",
      "score": 50.77,
-     "type": "chat",
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
      "subscores": {
-      "ifeval": 80.11,
-      "bbh": 62.16,
-      "math": 40.71,
-      "gpqa": 20.36,
-      "musr": 34.57,
-      "mmlu_pro": 65.16
+      "ifeval": 80.10899967641413,
+      "bbh": 62.15654929467119,
+      "math": 40.70996978851964,
+      "gpqa": 20.3579418344519,
+      "musr": 34.56614583333333,
+      "mmlu_pro": 66.690676713948
      },
+     "rank": 3,
      "id": "maziyarpanahicalme24rys78b",
      "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
      "vendor": "MaziyarPanahi",
@@ -11129,44 +11107,1254 @@
      "is_new": false
     },
     {
-     "rank": 5,
-     "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
-     "organization": "huihui-ai",
-     "score": 48.11,
-     "type": "chat",
+     "model": "Qwen/Qwen2.5-72B-Instruct",
+     "organization": "Qwen",
+     "score": 47.98,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
      "subscores": {
-      "ifeval": 85.93,
-      "bbh": 60.49,
-      "math": 60.12,
-      "gpqa": 19.35,
-      "musr": 12.34,
-      "mmlu_pro": 50.41
+      "ifeval": 86.3837949972739,
+      "bbh": 61.873255668787884,
+      "math": 59.818731117824775,
+      "gpqa": 16.666666666666664,
+      "musr": 11.742187500000005,
+      "mmlu_pro": 51.39812352245864
      },
-     "id": "huihuiaiqwen2572binstructabliterated",
-     "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
-     "vendor": "huihui-ai",
+     "rank": 4,
+     "id": "qwenqwen2572binstruct",
+     "display_name": "Qwen/Qwen2.5-72B-Instruct",
+     "vendor": "Qwen",
      "region": "other",
      "open": null,
      "trend": 0,
      "is_new": false
     },
     {
-     "rank": 6,
-     "model": "Qwen/Qwen2.5-72B-Instruct",
-     "organization": "Qwen",
-     "score": 47.98,
-     "type": "chat",
+     "model": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
+     "organization": "MaziyarPanahi",
+     "score": 47.86,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
      "subscores": {
-      "ifeval": 86.38,
-      "bbh": 61.87,
-      "math": 59.82,
-      "gpqa": 16.67,
-      "musr": 11.74,
-      "mmlu_pro": 51.4
+      "ifeval": 86.62360315075111,
+      "bbh": 61.65570318314716,
+      "math": 59.13897280966768,
+      "gpqa": 15.100671140939594,
+      "musr": 13.297135416666663,
+      "mmlu_pro": 51.3242464539007
      },
-     "id": "qwenqwen2572binstruct",
-     "display_name": "Qwen/Qwen2.5-72B-Instruct",
+     "rank": 5,
+     "id": "maziyarpanahicalme21qwen2572b",
+     "display_name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+     "organization": "Saxo",
+     "score": 47.34,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.71681804279312,
+      "bbh": 57.633928620802884,
+      "math": 60.27190332326284,
+      "gpqa": 14.988814317673373,
+      "musr": 18.155989583333334,
+      "mmlu_pro": 53.25428486997635
+     },
+     "rank": 6,
+     "id": "saxolinkbrickshorizonaiavengersv132b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
+     "organization": "MaziyarPanahi",
+     "score": 47.22,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 84.76763875406145,
+      "bbh": 61.80360419146786,
+      "math": 58.91238670694864,
+      "gpqa": 14.541387024608499,
+      "musr": 12.016666666666671,
+      "mmlu_pro": 51.305777186761226
+     },
+     "rank": 7,
+     "id": "maziyarpanahicalme22qwen2572b",
+     "display_name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
+     "organization": "JungZoona",
+     "score": 47.09,
+     "type": "❓ other",
+     "subscores": {
+      "ifeval": 73.2396707403024,
+      "bbh": 65.46659667305961,
+      "math": 28.625377643504528,
+      "gpqa": 22.259507829977633,
+      "musr": 38.688020833333326,
+      "mmlu_pro": 54.270094562647756
+     },
+     "rank": 8,
+     "id": "jungzoonat3qqwen2514binstruct1me3",
+     "display_name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
+     "vendor": "JungZoona",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
+     "organization": "JungZoona",
+     "score": 47.09,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 73.2396707403024,
+      "bbh": 65.46659667305961,
+      "math": 28.625377643504528,
+      "gpqa": 22.259507829977633,
+      "musr": 38.688020833333326,
+      "mmlu_pro": 54.270094562647756
+     },
+     "rank": 9,
+     "id": "jungzoonat3qqwen2514bv10e3",
+     "display_name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
+     "vendor": "JungZoona",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sakalti/ultiima-72B",
+     "organization": "Sakalti",
+     "score": 46.77,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 71.4012154416947,
+      "bbh": 61.10313258693403,
+      "math": 53.54984894259819,
+      "gpqa": 21.923937360178968,
+      "musr": 18.115104166666665,
+      "mmlu_pro": 54.510195035460995
+     },
+     "rank": 10,
+     "id": "sakaltiultiima72b",
+     "display_name": "Sakalti/ultiima-72B",
+     "vendor": "Sakalti",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "organization": "CombinHorizon",
+     "score": 46.76,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 83.28136012446973,
+      "bbh": 56.82740697772572,
+      "math": 58.53474320241692,
+      "gpqa": 15.659955257270694,
+      "musr": 14.224479166666663,
+      "mmlu_pro": 52.05378250591017
+     },
+     "rank": 11,
+     "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
+     "display_name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "vendor": "CombinHorizon",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Qwen/Qwen2.5-32B-Instruct",
+     "organization": "Qwen",
+     "score": 46.6,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 83.46121623957765,
+      "bbh": 56.48934826159387,
+      "math": 62.53776435045317,
+      "gpqa": 11.74496644295302,
+      "musr": 13.498958333333329,
+      "mmlu_pro": 51.85062056737589
+     },
+     "rank": 12,
+     "id": "qwenqwen2532binstruct",
+     "display_name": "Qwen/Qwen2.5-32B-Instruct",
      "vendor": "Qwen",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
+     "organization": "Saxo",
+     "score": 46.37,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 82.48702332034557,
+      "bbh": 56.527924000253876,
+      "math": 61.78247734138973,
+      "gpqa": 11.74496644295302,
+      "musr": 13.832291666666665,
+      "mmlu_pro": 51.822916666666664
+     },
+     "rank": 13,
+     "id": "saxolinkbrickshorizonaiavengersv332b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
+     "organization": "Saxo",
+     "score": 46.23,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 82.08985491828349,
+      "bbh": 56.186576093303636,
+      "math": 62.2356495468278,
+      "gpqa": 11.297539149888143,
+      "musr": 13.661718749999997,
+      "mmlu_pro": 51.915263002364064
+     },
+     "rank": 14,
+     "id": "saxolinkbrickshorizonaiavengersv632b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
+     "organization": "OpenBuddy",
+     "score": 45.74,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 81.2080834408259,
+      "bbh": 54.146647969721265,
+      "math": 44.10876132930513,
+      "gpqa": 24.608501118568235,
+      "musr": 22.265885416666666,
+      "mmlu_pro": 48.082890070921984
+     },
+     "rank": 15,
+     "id": "openbuddyopenbuddyllama3370bv241131k",
+     "display_name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
+     "vendor": "OpenBuddy",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
+     "organization": "Saxo",
+     "score": 45.67,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 75.15558717536138,
+      "bbh": 56.67538301839144,
+      "math": 54.607250755287005,
+      "gpqa": 14.093959731543624,
+      "musr": 20.591406250000002,
+      "mmlu_pro": 52.912603427895974
+     },
+     "rank": 16,
+     "id": "saxolinkbrickshorizonaiavengersv532b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "organization": "CombinHorizon",
+     "score": 45.66,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 82.06237228331938,
+      "bbh": 56.04478184089901,
+      "math": 59.44108761329305,
+      "gpqa": 11.85682326621924,
+      "musr": 12.091145833333337,
+      "mmlu_pro": 52.45087174940899
+     },
+     "rank": 17,
+     "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
+     "display_name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "vendor": "CombinHorizon",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
+     "organization": "Saxo",
+     "score": 45.61,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 76.30963620970138,
+      "bbh": 56.552203892922165,
+      "math": 53.625377643504535,
+      "gpqa": 14.876957494407161,
+      "musr": 19.465885416666666,
+      "mmlu_pro": 52.8017878250591
+     },
+     "rank": 18,
+     "id": "saxolinkbrickshorizonaiavengersv432b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sakalti/ultiima-32B",
+     "organization": "Sakalti",
+     "score": 45.4,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 68.54357549080883,
+      "bbh": 58.112446786765965,
+      "math": 49.62235649546828,
+      "gpqa": 17.4496644295302,
+      "musr": 24.134895833333335,
+      "mmlu_pro": 54.55636820330969
+     },
+     "rank": 19,
+     "id": "sakaltiultiima32b",
+     "display_name": "Sakalti/ultiima-32B",
+     "vendor": "Sakalti",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sakalti/ultiima-72B-v1.5",
+     "organization": "Sakalti",
+     "score": 44.9,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 65.49610588793291,
+      "bbh": 63.438206058920265,
+      "math": 43.957703927492446,
+      "gpqa": 21.812080536912756,
+      "musr": 18.536718749999995,
+      "mmlu_pro": 56.153959810874696
+     },
+     "rank": 20,
+     "id": "sakaltiultiima72bv15",
+     "display_name": "Sakalti/ultiima-72B-v1.5",
+     "vendor": "Sakalti",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "FINGU-AI/RomboUltima-32B",
+     "organization": "FINGU-AI",
+     "score": 44.73,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 66.71509372908326,
+      "bbh": 56.67376969863417,
+      "math": 53.85196374622356,
+      "gpqa": 16.21923937360179,
+      "musr": 21.721093749999998,
+      "mmlu_pro": 53.20811170212767
+     },
+     "rank": 21,
+     "id": "finguairomboultima32b",
+     "display_name": "FINGU-AI/RomboUltima-32B",
+     "vendor": "FINGU-AI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.1-rys-78b",
+     "organization": "MaziyarPanahi",
+     "score": 44.64,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 81.35547015252862,
+      "bbh": 59.4700307859535,
+      "math": 39.42598187311178,
+      "gpqa": 19.239373601789712,
+      "musr": 18.99739583333333,
+      "mmlu_pro": 49.37573877068559
+     },
+     "rank": 22,
+     "id": "maziyarpanahicalme21rys78b",
+     "display_name": "MaziyarPanahi/calme-2.1-rys-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.3-rys-78b",
+     "organization": "MaziyarPanahi",
+     "score": 44.56,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 80.65854155862002,
+      "bbh": 59.57454695904105,
+      "math": 39.803625377643506,
+      "gpqa": 20.581655480984338,
+      "musr": 16.999218749999997,
+      "mmlu_pro": 49.7266548463357
+     },
+     "rank": 23,
+     "id": "maziyarpanahicalme23rys78b",
+     "display_name": "MaziyarPanahi/calme-2.3-rys-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.1-qwen2-72b",
+     "organization": "MaziyarPanahi",
+     "score": 44.4,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 81.62774770941103,
+      "bbh": 57.3258823447103,
+      "math": 40.78549848942598,
+      "gpqa": 17.4496644295302,
+      "musr": 20.15234375,
+      "mmlu_pro": 49.05252659574468
+     },
+     "rank": 24,
+     "id": "maziyarpanahicalme21qwen272b",
+     "display_name": "MaziyarPanahi/calme-2.1-qwen2-72b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.2-rys-78b",
+     "organization": "MaziyarPanahi",
+     "score": 44.39,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 79.86420475449586,
+      "bbh": 59.268645675184494,
+      "math": 40.70996978851964,
+      "gpqa": 20.917225950782996,
+      "musr": 16.82864583333333,
+      "mmlu_pro": 48.72931442080378
+     },
+     "rank": 25,
+     "id": "maziyarpanahicalme22rys78b",
+     "display_name": "MaziyarPanahi/calme-2.2-rys-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Undi95/MG-FinalMix-72B",
+     "organization": "Undi95",
+     "score": 44.3,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 80.13648231137824,
+      "bbh": 57.502411706281976,
+      "math": 39.72809667673716,
+      "gpqa": 18.008948545861294,
+      "musr": 21.217187499999998,
+      "mmlu_pro": 49.19104609929077
+     },
+     "rank": 26,
+     "id": "undi95mgfinalmix72b",
+     "display_name": "Undi95/MG-FinalMix-72B",
+     "vendor": "Undi95",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+     "organization": "EVA-UNIT-01",
+     "score": 44.22,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 68.78837041272712,
+      "bbh": 59.0667326828602,
+      "math": 43.126888217522655,
+      "gpqa": 21.140939597315437,
+      "musr": 19.730729166666666,
+      "mmlu_pro": 53.47591607565011
+     },
+     "rank": 27,
+     "id": "evaunit01evaqwen2572bv02",
+     "display_name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+     "vendor": "EVA-UNIT-01",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.2-qwen2-72b",
+     "organization": "MaziyarPanahi",
+     "score": 44.09,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 80.08151704145003,
+      "bbh": 56.79594225047665,
+      "math": 45.31722054380665,
+      "gpqa": 16.554809843400445,
+      "musr": 16.516927083333332,
+      "mmlu_pro": 49.27415780141844
+     },
+     "rank": 28,
+     "id": "maziyarpanahicalme22qwen272b",
+     "display_name": "MaziyarPanahi/calme-2.2-qwen2-72b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Steelskull/L3.3-MS-Nevoria-70b",
+     "organization": "Steelskull",
+     "score": 44.04,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.63268571833845,
+      "bbh": 56.60264873723427,
+      "math": 39.577039274924466,
+      "gpqa": 29.418344519015662,
+      "musr": 18.628645833333337,
+      "mmlu_pro": 50.39154846335697
+     },
+     "rank": 29,
+     "id": "steelskulll33msnevoria70b",
+     "display_name": "Steelskull/L3.3-MS-Nevoria-70b",
+     "vendor": "Steelskull",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Triangle104/Set-70b",
+     "organization": "Triangle104",
+     "score": 44.03,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 76.42954028643999,
+      "bbh": 56.88003115055037,
+      "math": 36.40483383685801,
+      "gpqa": 26.174496644295303,
+      "musr": 18.961979166666666,
+      "mmlu_pro": 49.3572695035461
+     },
+     "rank": 30,
+     "id": "triangle104set70b",
+     "display_name": "Triangle104/Set-70b",
+     "vendor": "Triangle104",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Aryanne/QwentileSwap",
+     "organization": "Aryanne",
+     "score": 43.92,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 73.78422585406722,
+      "bbh": 57.67565555333628,
+      "math": 42.220543806646525,
+      "gpqa": 15.659955257270694,
+      "musr": 19.20520833333333,
+      "mmlu_pro": 54.95345744680851
+     },
+     "rank": 31,
+     "id": "aryanneqwentileswap",
+     "display_name": "Aryanne/QwentileSwap",
+     "vendor": "Aryanne",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Cran-May/tempmotacilla-cinerea-0308",
+     "organization": "Cran-May",
+     "score": 43.64,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 80.84837121061007,
+      "bbh": 50.59894860885105,
+      "math": 55.51359516616314,
+      "gpqa": 14.988814317673373,
+      "musr": 12.669531249999999,
+      "mmlu_pro": 47.224069148936174
+     },
+     "rank": 32,
+     "id": "cranmaytempmotacillacinerea0308",
+     "display_name": "Cran-May/tempmotacilla-cinerea-0308",
+     "vendor": "Cran-May",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Steelskull/L3.3-Nevoria-R1-70b",
+     "organization": "Steelskull",
+     "score": 43.61,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 60.23794642659256,
+      "bbh": 56.167288330479515,
+      "math": 46.299093655589125,
+      "gpqa": 29.194630872483216,
+      "musr": 20.191406249999996,
+      "mmlu_pro": 49.5881353427896
+     },
+     "rank": 33,
+     "id": "steelskulll33nevoriar170b",
+     "display_name": "Steelskull/L3.3-Nevoria-R1-70b",
+     "vendor": "Steelskull",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Qwen/Qwen2-72B-Instruct",
+     "organization": "Qwen",
+     "score": 43.59,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 79.89168738945996,
+      "bbh": 57.48300911876294,
+      "math": 41.76737160120846,
+      "gpqa": 16.33109619686801,
+      "musr": 17.167968749999996,
+      "mmlu_pro": 48.92324172576833
+     },
+     "rank": 34,
+     "id": "qwenqwen272binstruct",
+     "display_name": "Qwen/Qwen2-72B-Instruct",
+     "vendor": "Qwen",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+     "organization": "VAGOsolutions",
+     "score": 43.41,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 86.56365111238182,
+      "bbh": 57.24162100868165,
+      "math": 36.933534743202415,
+      "gpqa": 12.192393736017896,
+      "musr": 19.38541666666666,
+      "mmlu_pro": 48.16600177304965
+     },
+     "rank": 35,
+     "id": "vagosolutionsllama31sauerkrautlm70binstruct",
+     "display_name": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+     "vendor": "VAGOsolutions",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "organization": "Saxo",
+     "score": 43.34,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.56444456264933,
+      "bbh": 58.07744907944319,
+      "math": 56.646525679758305,
+      "gpqa": 2.1252796420581683,
+      "musr": 11.179427083333337,
+      "mmlu_pro": 52.44163711583924
+     },
+     "rank": 36,
+     "id": "saxolinkbrickshorizonaiavengersv232b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "vendor": "Saxo",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
+     "organization": "Lunzima",
+     "score": 43.31,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 80.02655177152178,
+      "bbh": 50.73787805937095,
+      "math": 54.68277945619335,
+      "gpqa": 12.416107382550338,
+      "musr": 14.757812499999998,
+      "mmlu_pro": 47.23330378250591
+     },
+     "rank": 37,
+     "id": "lunzimanqlsgqwen2514bmegafusionv91",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
+     "vendor": "Lunzima",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.2-llama3.1-70b",
+     "organization": "MaziyarPanahi",
+     "score": 43.31,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 85.92667455684251,
+      "bbh": 54.20646208605566,
+      "math": 43.65558912386707,
+      "gpqa": 9.955257270693513,
+      "musr": 17.06953125,
+      "mmlu_pro": 49.05252659574468
+     },
+     "rank": 38,
+     "id": "maziyarpanahicalme22llama3170b",
+     "display_name": "MaziyarPanahi/calme-2.2-llama3.1-70b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.3-llama3.1-70b",
+     "organization": "MaziyarPanahi",
+     "score": 43.28,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 86.04657863358113,
+      "bbh": 55.58549511699308,
+      "math": 39.274924471299094,
+      "gpqa": 12.527964205816552,
+      "musr": 17.736197916666658,
+      "mmlu_pro": 48.4799793144208
+     },
+     "rank": 39,
+     "id": "maziyarpanahicalme23llama3170b",
+     "display_name": "MaziyarPanahi/calme-2.3-llama3.1-70b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
+     "organization": "Lunzima",
+     "score": 43.23,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 78.62272104682242,
+      "bbh": 50.455174757059126,
+      "math": 53.32326283987915,
+      "gpqa": 14.093959731543624,
+      "musr": 15.261718749999995,
+      "mmlu_pro": 47.593454491725765
+     },
+     "rank": 40,
+     "id": "lunzimanqlsgqwen2514bmegafusionv92",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
+     "vendor": "Lunzima",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
+     "organization": "Lunzima",
+     "score": 43.09,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 78.74761189200211,
+      "bbh": 49.91009317302106,
+      "math": 54.0785498489426,
+      "gpqa": 13.534675615212524,
+      "musr": 15.157812499999997,
+      "mmlu_pro": 47.131722813238774
+     },
+     "rank": 41,
+     "id": "lunzimanqlsgqwen2514bmegafusionv87",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
+     "vendor": "Lunzima",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sao10K/70B-L3.3-Cirrus-x1",
+     "organization": "Sao10K",
+     "score": 43.0,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 66.80751517085777,
+      "bbh": 57.132312166381276,
+      "math": 37.38670694864049,
+      "gpqa": 26.62192393736018,
+      "musr": 21.42083333333333,
+      "mmlu_pro": 48.646202718676115
+     },
+     "rank": 42,
+     "id": "sao10k70bl33cirrusx1",
+     "display_name": "Sao10K/70B-L3.3-Cirrus-x1",
+     "vendor": "Sao10K",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "organization": "Tarek07",
+     "score": 43.0,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.06064796960952,
+      "bbh": 56.24697023586278,
+      "math": 35.725075528700906,
+      "gpqa": 27.740492170022367,
+      "musr": 19.62864583333333,
+      "mmlu_pro": 49.61583924349882
+     },
+     "rank": 43,
+     "id": "tarek07progenitorv11llama70b",
+     "display_name": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "vendor": "Tarek07",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
+     "organization": "Lunzima",
+     "score": 42.78,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 78.74761189200211,
+      "bbh": 49.0341381962539,
+      "math": 55.58912386706949,
+      "gpqa": 11.409395973154364,
+      "musr": 15.18723958333333,
+      "mmlu_pro": 46.734633569739955
+     },
+     "rank": 44,
+     "id": "lunzimanqlsgqwen2514bmegafusionv8",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
+     "vendor": "Lunzima",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Daemontatox/Llama3.3-70B-CogniLink",
+     "organization": "Daemontatox",
+     "score": 42.77,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 69.31042965996889,
+      "bbh": 52.12466257626164,
+      "math": 41.389728096676734,
+      "gpqa": 26.062639821029084,
+      "musr": 21.395572916666662,
+      "mmlu_pro": 46.36524822695035
+     },
+     "rank": 45,
+     "id": "daemontatoxllama3370bcognilink",
+     "display_name": "Daemontatox/Llama3.3-70B-CogniLink",
+     "vendor": "Daemontatox",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+     "organization": "Goekdeniz-Guelmez",
+     "score": 42.55,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 82.91666112581285,
+      "bbh": 48.05226992969286,
+      "math": 54.229607250755286,
+      "gpqa": 12.304250559284117,
+      "musr": 13.15,
+      "mmlu_pro": 44.64760638297872
+     },
+     "rank": 46,
+     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
+     "display_name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+     "vendor": "Goekdeniz-Guelmez",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
+     "organization": "Lunzima",
+     "score": 42.52,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 79.93413032974729,
+      "bbh": 49.946869654224066,
+      "math": 53.70090634441088,
+      "gpqa": 10.626398210290827,
+      "musr": 14.269531249999995,
+      "mmlu_pro": 46.660756501182036
+     },
+     "rank": 47,
+     "id": "lunzimanqlsgqwen2514bmegafusionv89",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
+     "vendor": "Lunzima",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+     "organization": "BenevolenceMessiah",
+     "score": 42.27,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 54.73499204333391,
+      "bbh": 61.91149453060484,
+      "math": 57.85498489425982,
+      "gpqa": 15.659955257270694,
+      "musr": 12.016666666666671,
+      "mmlu_pro": 51.425827423167846
+     },
+     "rank": 48,
+     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
+     "display_name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+     "vendor": "BenevolenceMessiah",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Tarek07/Thalassic-Alpha-LLaMa-70B",
+     "organization": "Tarek07",
+     "score": 42.22,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 70.03484088884161,
+      "bbh": 55.95412538254855,
+      "math": 31.49546827794562,
+      "gpqa": 25.838926174496642,
+      "musr": 20.72473958333333,
+      "mmlu_pro": 49.27415780141844
+     },
+     "rank": 49,
+     "id": "tarek07thalassicalphallama70b",
+     "display_name": "Tarek07/Thalassic-Alpha-LLaMa-70B",
+     "vendor": "Tarek07",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Quazim0t0/Fugazi14b",
+     "organization": "Quazim0t0",
+     "score": 41.94,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.97987561891337,
+      "bbh": 56.092125930693726,
+      "math": 46.52567975830816,
+      "gpqa": 13.534675615212524,
+      "musr": 16.419010416666662,
+      "mmlu_pro": 49.0802304964539
+     },
+     "rank": 50,
+     "id": "quazim0t0fugazi14b",
+     "display_name": "Quazim0t0/Fugazi14b",
+     "vendor": "Quazim0t0",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "1024m/QWEN-14B-B100",
+     "organization": "1024m",
+     "score": 41.92,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 77.62104549262622,
+      "bbh": 49.77664782103219,
+      "math": 54.38066465256798,
+      "gpqa": 13.422818791946312,
+      "musr": 9.883333333333335,
+      "mmlu_pro": 46.429890661938536
+     },
+     "rank": 51,
+     "id": "1024mqwen14bb100",
+     "display_name": "1024m/QWEN-14B-B100",
+     "vendor": "1024m",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sakalti/Saka-14B",
+     "organization": "Sakalti",
+     "score": 41.91,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 71.74341857382856,
+      "bbh": 49.72322791125956,
+      "math": 40.93655589123867,
+      "gpqa": 19.463087248322143,
+      "musr": 20.740885416666668,
+      "mmlu_pro": 48.84013002364066
+     },
+     "rank": 52,
+     "id": "sakaltisaka14b",
+     "display_name": "Sakalti/Saka-14B",
+     "vendor": "Sakalti",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Tsunami-th/Tsunami-1.0-14B-Instruct",
+     "organization": "Tsunami-th",
+     "score": 41.84,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 78.29049145157072,
+      "bbh": 49.150255113097735,
+      "math": 45.84592145015105,
+      "gpqa": 14.205816554809845,
+      "musr": 16.342187499999998,
+      "mmlu_pro": 47.205599881796694
+     },
+     "rank": 53,
+     "id": "tsunamithtsunami1014binstruct",
+     "display_name": "Tsunami-th/Tsunami-1.0-14B-Instruct",
+     "vendor": "Tsunami-th",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Quazim0t0/Rune-14b",
+     "organization": "Quazim0t0",
+     "score": 41.82,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 70.15973173402128,
+      "bbh": 56.053987787163095,
+      "math": 45.84592145015105,
+      "gpqa": 13.534675615212524,
+      "musr": 16.29348958333333,
+      "mmlu_pro": 49.01558806146573
+     },
+     "rank": 54,
+     "id": "quazim0t0rune14b",
+     "display_name": "Quazim0t0/Rune-14b",
+     "vendor": "Quazim0t0",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
+     "organization": "CombinHorizon",
+     "score": 41.77,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 82.39958864701215,
+      "bbh": 48.19594986631396,
+      "math": 53.17220543806647,
+      "gpqa": 9.955257270693513,
+      "musr": 12.65390625,
+      "mmlu_pro": 44.213578605200944
+     },
+     "rank": 55,
+     "id": "combinhorizonjosiefiedabliteratedv4qwen2514binstbasemergeties",
+     "display_name": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
+     "vendor": "CombinHorizon",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Quazim0t0/SuperNova14b",
+     "organization": "Quazim0t0",
+     "score": 41.68,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 70.7642388861554,
+      "bbh": 56.0926914908668,
+      "math": 43.957703927492446,
+      "gpqa": 13.646532438478745,
+      "musr": 16.31510416666666,
+      "mmlu_pro": 49.27415780141844
+     },
+     "rank": 56,
+     "id": "quazim0t0supernova14b",
+     "display_name": "Quazim0t0/SuperNova14b",
+     "vendor": "Quazim0t0",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Quazim0t0/Lineage-14B",
+     "organization": "Quazim0t0",
+     "score": 41.64,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 70.7042868477861,
+      "bbh": 56.02223040682762,
+      "math": 42.44712990936556,
+      "gpqa": 14.65324384787472,
+      "musr": 17.032812499999995,
+      "mmlu_pro": 49.006353427895974
+     },
+     "rank": 57,
+     "id": "quazim0t0lineage14b",
+     "display_name": "Quazim0t0/Lineage-14B",
+     "vendor": "Quazim0t0",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Sakalti/Oxyge1-33B",
+     "organization": "Sakalti",
+     "score": 41.61,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 45.48265269484966,
+      "bbh": 58.03229697403189,
+      "math": 49.62235649546828,
+      "gpqa": 17.67337807606264,
+      "musr": 24.29765625,
+      "mmlu_pro": 54.547133569739955
+     },
+     "rank": 58,
+     "id": "sakaltioxyge133b",
+     "display_name": "Sakalti/Oxyge1-33B",
+     "vendor": "Sakalti",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Qwen/Qwen2.5-14B-Instruct-1M",
+     "organization": "Qwen",
+     "score": 41.56,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 84.1356489669632,
+      "bbh": 45.658280600233155,
+      "math": 53.02114803625378,
+      "gpqa": 12.416107382550338,
+      "musr": 11.350000000000003,
+      "mmlu_pro": 42.77297576832151
+     },
+     "rank": 59,
+     "id": "qwenqwen2514binstruct1m",
+     "display_name": "Qwen/Qwen2.5-14B-Instruct-1M",
+     "vendor": "Qwen",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
+     "organization": "Lunzima",
+     "score": 41.55,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 70.27963581075988,
+      "bbh": 50.74642495052259,
+      "math": 42.37160120845921,
+      "gpqa": 16.778523489932887,
+      "musr": 21.06640625,
+      "mmlu_pro": 48.03671690307329
+     },
+     "rank": 60,
+     "id": "lunzimanqlsgqwen2514bmegafusionv88",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
+     "vendor": "Lunzima",
      "region": "other",
      "open": null,
      "trend": 0,
@@ -18242,6 +19430,54 @@
    }
   },
   {
+   "id": "1024mqwen14bb100",
+   "display_name": "1024m/QWEN-14B-B100",
+   "vendor": "1024m",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 51,
+     "score": 41.92,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "aryanneqwentileswap",
+   "display_name": "Aryanne/QwentileSwap",
+   "vendor": "Aryanne",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 31,
+     "score": 43.92,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
+   "display_name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+   "vendor": "BenevolenceMessiah",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 48,
+     "score": 42.27,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "claude3haiku",
    "display_name": "Claude-3-Haiku",
    "vendor": "Anthropic",
@@ -18322,6 +19558,102 @@
    }
   },
   {
+   "id": "combinhorizonjosiefiedabliteratedv4qwen2514binstbasemergeties",
+   "display_name": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
+   "vendor": "CombinHorizon",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 55,
+     "score": 41.77,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
+   "display_name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+   "vendor": "CombinHorizon",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 17,
+     "score": 45.66,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
+   "display_name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+   "vendor": "CombinHorizon",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 11,
+     "score": 46.76,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "cranmaytempmotacillacinerea0308",
+   "display_name": "Cran-May/tempmotacilla-cinerea-0308",
+   "vendor": "Cran-May",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 32,
+     "score": 43.64,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "daemontatoxllama3370bcognilink",
+   "display_name": "Daemontatox/Llama3.3-70B-CogniLink",
+   "vendor": "Daemontatox",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 45,
+     "score": 42.77,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "evaunit01evaqwen2572bv02",
+   "display_name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+   "vendor": "EVA-UNIT-01",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 27,
+     "score": 44.22,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "exaone4032b",
    "display_name": "EXAONE-4.0-32B",
    "vendor": "其他",
@@ -18332,6 +19664,22 @@
      "rank": 8,
      "score": 80.88,
      "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "finguairomboultima32b",
+   "display_name": "FINGU-AI/RomboUltima-32B",
+   "vendor": "FINGU-AI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 21,
+     "score": 44.73,
+     "metric": "Average (%)",
      "is_new": false,
      "trend": 0
     }
@@ -18402,6 +19750,54 @@
    }
   },
   {
+   "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
+   "display_name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+   "vendor": "Goekdeniz-Guelmez",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 46,
+     "score": 42.55,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "jungzoonat3qqwen2514binstruct1me3",
+   "display_name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
+   "vendor": "JungZoona",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 8,
+     "score": 47.09,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "jungzoonat3qqwen2514bv10e3",
+   "display_name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
+   "vendor": "JungZoona",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 9,
+     "score": 47.09,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "katcoderprov1",
    "display_name": "KAT-Coder-Pro-V1",
    "vendor": "其他",
@@ -18418,6 +19814,246 @@
    }
   },
   {
+   "id": "lunzimanqlsgqwen2514bmegafusionv8",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 44,
+     "score": 42.78,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "lunzimanqlsgqwen2514bmegafusionv87",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 41,
+     "score": 43.09,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "lunzimanqlsgqwen2514bmegafusionv88",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 60,
+     "score": 41.55,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "lunzimanqlsgqwen2514bmegafusionv89",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 47,
+     "score": 42.52,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "lunzimanqlsgqwen2514bmegafusionv91",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 37,
+     "score": 43.31,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "lunzimanqlsgqwen2514bmegafusionv92",
+   "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
+   "vendor": "Lunzima",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 40,
+     "score": 43.23,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme21qwen272b",
+   "display_name": "MaziyarPanahi/calme-2.1-qwen2-72b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 24,
+     "score": 44.4,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme21qwen2572b",
+   "display_name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 5,
+     "score": 47.86,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme21rys78b",
+   "display_name": "MaziyarPanahi/calme-2.1-rys-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 22,
+     "score": 44.64,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme22llama3170b",
+   "display_name": "MaziyarPanahi/calme-2.2-llama3.1-70b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 38,
+     "score": 43.31,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme22qwen272b",
+   "display_name": "MaziyarPanahi/calme-2.2-qwen2-72b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 28,
+     "score": 44.09,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme22qwen2572b",
+   "display_name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 7,
+     "score": 47.22,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme22rys78b",
+   "display_name": "MaziyarPanahi/calme-2.2-rys-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 25,
+     "score": 44.39,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme23llama3170b",
+   "display_name": "MaziyarPanahi/calme-2.3-llama3.1-70b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 39,
+     "score": 43.28,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme23rys78b",
+   "display_name": "MaziyarPanahi/calme-2.3-rys-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 23,
+     "score": 44.56,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "maziyarpanahicalme24rys78b",
    "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
    "vendor": "MaziyarPanahi",
@@ -18425,7 +20061,7 @@
    "open": null,
    "appearances": {
     "open_llm": {
-     "rank": 4,
+     "rank": 3,
      "score": 50.77,
      "metric": "Average (%)",
      "is_new": false,
@@ -18578,6 +20214,22 @@
    }
   },
   {
+   "id": "openbuddyopenbuddyllama3370bv241131k",
+   "display_name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
+   "vendor": "OpenBuddy",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 15,
+     "score": 45.74,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "opencodereasoningnemotron1132b",
    "display_name": "OpenCodeReasoning-Nemotron-1.1-32B",
    "vendor": "其他",
@@ -18610,6 +20262,118 @@
    }
   },
   {
+   "id": "quazim0t0fugazi14b",
+   "display_name": "Quazim0t0/Fugazi14b",
+   "vendor": "Quazim0t0",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 50,
+     "score": 41.94,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "quazim0t0lineage14b",
+   "display_name": "Quazim0t0/Lineage-14B",
+   "vendor": "Quazim0t0",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 57,
+     "score": 41.64,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "quazim0t0rune14b",
+   "display_name": "Quazim0t0/Rune-14b",
+   "vendor": "Quazim0t0",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 54,
+     "score": 41.82,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "quazim0t0supernova14b",
+   "display_name": "Quazim0t0/SuperNova14b",
+   "vendor": "Quazim0t0",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 56,
+     "score": 41.68,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwenqwen272binstruct",
+   "display_name": "Qwen/Qwen2-72B-Instruct",
+   "vendor": "Qwen",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 34,
+     "score": 43.59,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwenqwen2514binstruct1m",
+   "display_name": "Qwen/Qwen2.5-14B-Instruct-1M",
+   "vendor": "Qwen",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 59,
+     "score": 41.56,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwenqwen2532binstruct",
+   "display_name": "Qwen/Qwen2.5-32B-Instruct",
+   "vendor": "Qwen",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 12,
+     "score": 46.6,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
    "id": "qwenqwen2572binstruct",
    "display_name": "Qwen/Qwen2.5-72B-Instruct",
    "vendor": "Qwen",
@@ -18617,8 +20381,328 @@
    "open": null,
    "appearances": {
     "open_llm": {
-     "rank": 6,
+     "rank": 4,
      "score": 47.98,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sakaltioxyge133b",
+   "display_name": "Sakalti/Oxyge1-33B",
+   "vendor": "Sakalti",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 58,
+     "score": 41.61,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sakaltisaka14b",
+   "display_name": "Sakalti/Saka-14B",
+   "vendor": "Sakalti",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 52,
+     "score": 41.91,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sakaltiultiima32b",
+   "display_name": "Sakalti/ultiima-32B",
+   "vendor": "Sakalti",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 19,
+     "score": 45.4,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sakaltiultiima72b",
+   "display_name": "Sakalti/ultiima-72B",
+   "vendor": "Sakalti",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 10,
+     "score": 46.77,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sakaltiultiima72bv15",
+   "display_name": "Sakalti/ultiima-72B-v1.5",
+   "vendor": "Sakalti",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 20,
+     "score": 44.9,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "sao10k70bl33cirrusx1",
+   "display_name": "Sao10K/70B-L3.3-Cirrus-x1",
+   "vendor": "Sao10K",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 42,
+     "score": 43.0,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv132b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 6,
+     "score": 47.34,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv232b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 36,
+     "score": 43.34,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv332b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 13,
+     "score": 46.37,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv432b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 18,
+     "score": 45.61,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv532b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 16,
+     "score": 45.67,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "saxolinkbrickshorizonaiavengersv632b",
+   "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
+   "vendor": "Saxo",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 14,
+     "score": 46.23,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "steelskulll33msnevoria70b",
+   "display_name": "Steelskull/L3.3-MS-Nevoria-70b",
+   "vendor": "Steelskull",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 29,
+     "score": 44.04,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "steelskulll33nevoriar170b",
+   "display_name": "Steelskull/L3.3-Nevoria-R1-70b",
+   "vendor": "Steelskull",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 33,
+     "score": 43.61,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "tarek07progenitorv11llama70b",
+   "display_name": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+   "vendor": "Tarek07",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 43,
+     "score": 43.0,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "tarek07thalassicalphallama70b",
+   "display_name": "Tarek07/Thalassic-Alpha-LLaMa-70B",
+   "vendor": "Tarek07",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 49,
+     "score": 42.22,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "triangle104set70b",
+   "display_name": "Triangle104/Set-70b",
+   "vendor": "Triangle104",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 30,
+     "score": 44.03,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "tsunamithtsunami1014binstruct",
+   "display_name": "Tsunami-th/Tsunami-1.0-14B-Instruct",
+   "vendor": "Tsunami-th",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 53,
+     "score": 41.84,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "undi95mgfinalmix72b",
+   "display_name": "Undi95/MG-FinalMix-72B",
+   "vendor": "Undi95",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 26,
+     "score": 44.3,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "vagosolutionsllama31sauerkrautlm70binstruct",
+   "display_name": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+   "vendor": "VAGOsolutions",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 35,
+     "score": 43.41,
      "metric": "Average (%)",
      "is_new": false,
      "trend": 0
@@ -18674,22 +20758,6 @@
    }
   },
   {
-   "id": "dfurmancalmerys78borpov01",
-   "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
-   "vendor": "dfurman",
-   "region": "other",
-   "open": null,
-   "appearances": {
-    "open_llm": {
-     "rank": 3,
-     "score": 51.23,
-     "metric": "Average (%)",
-     "is_new": false,
-     "trend": 0
-    }
-   }
-  },
-  {
    "id": "grokcodefast1",
    "display_name": "grok-code-fast-1",
    "vendor": "xai",
@@ -18700,22 +20768,6 @@
      "rank": 137,
      "score": 1167.6088723002927,
      "metric": "Arena Score",
-     "is_new": false,
-     "trend": 0
-    }
-   }
-  },
-  {
-   "id": "huihuiaiqwen2572binstructabliterated",
-   "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
-   "vendor": "huihui-ai",
-   "region": "other",
-   "open": null,
-   "appearances": {
-    "open_llm": {
-     "rank": 5,
-     "score": 48.11,
-     "metric": "Average (%)",
      "is_new": false,
      "trend": 0
     }
@@ -18835,11 +20887,6 @@
   }
  ],
  "failures": [
-  {
-   "source": "open_llm",
-   "status": "fallback",
-   "error": "Open LLM Leaderboard: 清洗后无 chat 模型"
-  },
   {
    "source": "superclue",
    "status": "fallback",
