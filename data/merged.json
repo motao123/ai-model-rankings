@@ -1,0 +1,2508 @@
+{
+ "generated_at": "2026-10-08T14:33:57Z",
+ "date": "2026-10-08",
+ "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
+ "boards": {
+  "lmarena_text": {
+   "board": "LMArena 文本总榜（真人盲测）",
+   "metric": "Arena Score",
+   "kind": "human_preference",
+   "source_url": "https://arena.ai/leaderboard/text",
+   "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+   "license": "CC-BY-4.0",
+   "fetched_at": null,
+   "publish_date": "2026-10-02",
+   "compared_with": null,
+   "stale": true,
+   "manual": true,
+   "manual_note": "LMArena 官方数据托管在 Hugging Face 数据集，本地网络无法访问 HF 时展示此人工快照（依据 arena.ai 官方 Text Arena，2026-10-02，8,626,731 票）。GitHub Actions 每日会抓取官方最新数据覆盖。",
+   "retired": false,
+   "retired_note": null,
+   "price_unit": null,
+   "rows": [
+    {
+     "rank": 1,
+     "model": "gemini-4-argon-high",
+     "organization": "Google",
+     "score": 1525,
+     "votes": null,
+     "id": "gemini-4-argon",
+     "display_name": "Gemini 4 Argon",
+     "vendor": "Google",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 2,
+     "model": "claude-opus-4-6-high",
+     "organization": "Anthropic",
+     "score": 1505,
+     "votes": null,
+     "id": "claude-opus-4.6",
+     "display_name": "Claude Opus 4.6",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 3,
+     "model": "muse-spark-1.3-max",
+     "organization": "Meta",
+     "score": 1494,
+     "votes": null,
+     "id": "muse-spark-1.3",
+     "display_name": "Muse Spark 1.3",
+     "vendor": "Meta",
+     "region": "us",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 4,
+     "model": "kimi-k3-max",
+     "organization": "Moonshot",
+     "score": 1488,
+     "votes": null,
+     "id": "kimi-k3",
+     "display_name": "Kimi K3",
+     "vendor": "Moonshot",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 5,
+     "model": "gpt-5.6-sol-xhigh",
+     "organization": "OpenAI",
+     "score": 1484,
+     "votes": null,
+     "id": "gpt-5.6-sol",
+     "display_name": "GPT-5.6 Sol",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 6,
+     "model": "qwen3.8-max",
+     "organization": "Alibaba",
+     "score": 1482,
+     "votes": null,
+     "id": "qwen3.8-max",
+     "display_name": "通义千问 Qwen3.8-Max",
+     "vendor": "Alibaba",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 7,
+     "model": "mimo-v2.6-pro",
+     "organization": "Xiaomi",
+     "score": 1480,
+     "votes": null,
+     "id": "mimo-v2.6-pro",
+     "display_name": "MiMo V2.6 Pro",
+     "vendor": "Xiaomi",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 8,
+     "model": "glm-5.3-max",
+     "organization": "Z.ai",
+     "score": 1478,
+     "votes": null,
+     "id": "glm-5.3",
+     "display_name": "GLM-5.3",
+     "vendor": "Z.ai",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 9,
+     "model": "grok-4.20-beta1",
+     "organization": "xAI",
+     "score": 1475,
+     "votes": null,
+     "id": "grok-4.20",
+     "display_name": "Grok 4.20",
+     "vendor": "xAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 10,
+     "model": "deepseek-v4.1-flash-max",
+     "organization": "DeepSeek",
+     "score": 1474,
+     "votes": null,
+     "id": "deepseek-v4.1-flash",
+     "display_name": "DeepSeek V4.1-Flash",
+     "vendor": "DeepSeek",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 11,
+     "model": "ernie-5.1",
+     "organization": "Baidu",
+     "score": 1468,
+     "votes": null,
+     "id": "ernie-5.1",
+     "display_name": "文心一言 ERNIE 5.1",
+     "vendor": "Baidu",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 12,
+     "model": "doubao-seed-2.0-pro",
+     "organization": "ByteDance",
+     "score": 1456,
+     "votes": null,
+     "id": "doubao-seed-2.0-pro",
+     "display_name": "豆包 Doubao-Seed-2.0 Pro",
+     "vendor": "ByteDance",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 13,
+     "model": "hunyuan-t2",
+     "organization": "Tencent",
+     "score": 1456,
+     "votes": null,
+     "id": "hunyuan-t2",
+     "display_name": "混元 Hunyuan-T2",
+     "vendor": "Tencent",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 14,
+     "model": "step-5-preview",
+     "organization": "StepFun",
+     "score": 1454,
+     "votes": null,
+     "id": "step5preview",
+     "display_name": "step-5-preview",
+     "vendor": "StepFun",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 15,
+     "model": "minimax-m3",
+     "organization": "MiniMax",
+     "score": 1440,
+     "votes": null,
+     "id": "minimax-m3",
+     "display_name": "MiniMax M3",
+     "vendor": "MiniMax",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 16,
+     "model": "mistral-medium-3.5",
+     "organization": "Mistral AI",
+     "score": 1427,
+     "votes": null,
+     "id": "mistralmedium35",
+     "display_name": "mistral-medium-3.5",
+     "vendor": "Mistral AI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  },
+  "aa_intelligence": {
+   "board": "Artificial Analysis 智能指数榜",
+   "metric": "Intelligence Index",
+   "kind": "objective_benchmark",
+   "source_url": "https://artificialanalysis.ai/text/intelligence-index",
+   "dataset_url": "https://artificialanalysis.ai/",
+   "license": "© Artificial Analysis，本站仅聚合展示",
+   "fetched_at": "2026-10-08T14:31:17Z",
+   "publish_date": "2026-10-08",
+   "compared_with": null,
+   "stale": false,
+   "manual": false,
+   "manual_note": null,
+   "retired": false,
+   "retired_note": null,
+   "price_unit": "USD per 1M blended tokens",
+   "rows": [
+    {
+     "model": "Claude Opus 5.5",
+     "slug": "claude-opus-5-5",
+     "label": "Claude Opus 5.5 (max with fallback)",
+     "score": 57.62,
+     "price": 5.982012019521066,
+     "rank": 1,
+     "id": "claude-opus-5.5",
+     "display_name": "Claude Opus 5.5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude Fable 5.1",
+     "slug": "claude-fable-5-1",
+     "label": "Claude Fable 5.1 (max with fallback)",
+     "score": 53.35,
+     "price": 7.629706364004841,
+     "rank": 2,
+     "id": "claude-fable-5.1",
+     "display_name": "Claude Fable 5.1",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GPT-6 Astra",
+     "slug": "gpt-6-astra",
+     "label": "GPT-6 Astra (max)",
+     "score": 52.67,
+     "price": 3.2575003134834164,
+     "rank": 3,
+     "id": "gpt-6-astra",
+     "display_name": "GPT-6 Astra",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Gemini 4 Argon",
+     "slug": "gemini-4-argon",
+     "label": "Gemini 4 Argon (high)",
+     "score": 52.56,
+     "price": 1.990322379299008,
+     "rank": 4,
+     "id": "gemini-4-argon",
+     "display_name": "Gemini 4 Argon",
+     "vendor": "Google DeepMind",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GPT-6.1 Sol",
+     "slug": "gpt-6-1-sol",
+     "label": "GPT-6.1 Sol (max)",
+     "score": 51.83,
+     "price": 0.7241670655535033,
+     "rank": 5,
+     "id": "gpt-6.1-sol",
+     "display_name": "GPT-6.1 Sol",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Muse Spark 1.3",
+     "slug": "muse-spark-1-3",
+     "label": "Muse Spark 1.3 (max)",
+     "score": 48.09,
+     "price": 1.6048932100125866,
+     "rank": 6,
+     "id": "muse-spark-1.3",
+     "display_name": "Muse Spark 1.3",
+     "vendor": "Meta",
+     "region": "us",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Grok 4.7",
+     "slug": "grok-4-7",
+     "label": "Grok 4.7 (xhigh)",
+     "score": 46.45,
+     "price": 3.738325952106939,
+     "rank": 7,
+     "id": "grok-4.7",
+     "display_name": "Grok 4.7",
+     "vendor": "xAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "MiMo-V2.6-Pro",
+     "slug": "mimo-v2-6-pro",
+     "label": "MiMo-V2.6-Pro",
+     "score": 46.32,
+     "price": 0.13322318937213493,
+     "rank": 8,
+     "id": "mimo-v2.6-pro",
+     "display_name": "MiMo V2.6 Pro",
+     "vendor": "小米",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GLM-5.3",
+     "slug": "glm-5-3",
+     "label": "GLM-5.3 (max)",
+     "score": 44.78,
+     "price": 2.0056375150449584,
+     "rank": 9,
+     "id": "glm-5.3",
+     "display_name": "GLM-5.3",
+     "vendor": "智谱 AI",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "DeepSeek V4.1 Flash",
+     "slug": "deepseek-v4-1-flash",
+     "label": "DeepSeek V4.1 Flash (max)",
+     "score": 39.46,
+     "price": 0.26522527009606844,
+     "rank": 10,
+     "id": "deepseek-v4.1-flash",
+     "display_name": "DeepSeek V4.1-Flash",
+     "vendor": "深度求索",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  },
+  "superclue": {
+   "board": "SuperCLUE 中文大模型综合榜",
+   "metric": "综合得分",
+   "kind": "objective_benchmark",
+   "source_url": "https://www.superclueai.com/benchmark-list",
+   "dataset_url": "https://www.superclueai.com/",
+   "license": "© SuperCLUE，本站仅聚合展示",
+   "fetched_at": null,
+   "publish_date": "2026-09",
+   "compared_with": null,
+   "stale": true,
+   "manual": true,
+   "manual_note": "SuperCLUE 前端为混淆 SPA，自动抓取不稳定时展示此人工维护快照（依据官方 2026 年 9 月月度报告）。",
+   "retired": false,
+   "retired_note": null,
+   "price_unit": null,
+   "rows": [
+    {
+     "rank": 1,
+     "model": "通义千问 Qwen3.8-Max-0902",
+     "organization": "阿里巴巴",
+     "score": 72.62,
+     "id": "qwen3.8-max",
+     "display_name": "通义千问 Qwen3.8-Max",
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 2,
+     "model": "DeepSeek V4.1-Flash",
+     "organization": "深度求索",
+     "score": 71.81,
+     "id": "deepseek-v4.1-flash",
+     "display_name": "DeepSeek V4.1-Flash",
+     "vendor": "深度求索",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 3,
+     "model": "通义千问 Qwen3.8-Max",
+     "organization": "阿里巴巴",
+     "score": 71.48,
+     "id": "qwen3.8-max",
+     "display_name": "通义千问 Qwen3.8-Max",
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 4,
+     "model": "GLM-5.3",
+     "organization": "智谱 AI",
+     "score": 71.29,
+     "id": "glm-5.3",
+     "display_name": "GLM-5.3",
+     "vendor": "智谱 AI",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 5,
+     "model": "Kimi K3",
+     "organization": "月之暗面",
+     "score": 70.68,
+     "id": "kimi-k3",
+     "display_name": "Kimi K3",
+     "vendor": "月之暗面",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 6,
+     "model": "DeepSeek V4-Pro",
+     "organization": "深度求索",
+     "score": 70.1,
+     "id": "deepseek-v4-pro",
+     "display_name": "DeepSeek V4-Pro",
+     "vendor": "深度求索",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 7,
+     "model": "GLM-5.3-Flash",
+     "organization": "智谱 AI",
+     "score": 68.1,
+     "id": "glm-5.3-flash",
+     "display_name": "GLM-5.3-Flash",
+     "vendor": "智谱 AI",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 8,
+     "model": "通义千问 Qwen3.8-Flash",
+     "organization": "阿里巴巴",
+     "score": 66.41,
+     "id": "qwen3.8-flash",
+     "display_name": "通义千问 Qwen3.8-Flash",
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 9,
+     "model": "豆包 Doubao-Seed-2.1 Pro",
+     "organization": "字节跳动",
+     "score": 65.94,
+     "id": "doubao-seed-2.1-pro",
+     "display_name": "豆包 Doubao-Seed-2.1 Pro",
+     "vendor": "字节跳动",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 10,
+     "model": "DeepSeek V4-Flash",
+     "organization": "深度求索",
+     "score": 65.6,
+     "id": "deepseek-v4-flash",
+     "display_name": "DeepSeek V4-Flash",
+     "vendor": "深度求索",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  },
+  "lmarena_webdev": {
+   "board": "Code Arena / WebDev 榜（真人盲测）",
+   "metric": "Arena Score",
+   "kind": "human_preference",
+   "source_url": "https://arena.ai/leaderboard/code/webdev",
+   "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+   "license": "CC-BY-4.0",
+   "fetched_at": null,
+   "publish_date": "2026-10-01",
+   "compared_with": null,
+   "stale": true,
+   "manual": true,
+   "manual_note": "本地网络无法访问 Hugging Face 时展示此人工快照（依据 arena.ai 官方 Code Arena | WebDev，2026-10-01，838,388 票，138 模型）。GitHub Actions 每日抓取官方最新数据覆盖。",
+   "retired": false,
+   "retired_note": null,
+   "price_unit": null,
+   "rows": [
+    {
+     "rank": 1,
+     "model": "claude-opus-5.5-max",
+     "organization": "Anthropic",
+     "score": 1815,
+     "votes": 2062,
+     "id": "claude-opus-5.5",
+     "display_name": "Claude Opus 5.5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 2,
+     "model": "gpt-6-astra-max",
+     "organization": "OpenAI",
+     "score": 1788,
+     "votes": 6123,
+     "id": "gpt-6-astra",
+     "display_name": "GPT-6 Astra",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 3,
+     "model": "claude-sonnet-5.5-xhigh",
+     "organization": "Anthropic",
+     "score": 1786,
+     "votes": 1531,
+     "id": "claude-sonnet-5.5",
+     "display_name": "Claude Sonnet 5.5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 4,
+     "model": "gpt-6.1-sol-max",
+     "organization": "OpenAI",
+     "score": 1758,
+     "votes": 1620,
+     "id": "gpt-6.1-sol",
+     "display_name": "GPT-6.1 Sol",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 5,
+     "model": "claude-fable-5.1-max",
+     "organization": "Anthropic",
+     "score": 1749,
+     "votes": 6318,
+     "id": "claude-fable-5.1",
+     "display_name": "Claude Fable 5.1",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 6,
+     "model": "claude-sonnet-5.5-high",
+     "organization": "Anthropic",
+     "score": 1715,
+     "votes": 2527,
+     "id": "claude-sonnet-5.5",
+     "display_name": "Claude Sonnet 5.5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 7,
+     "model": "claude-opus-5-max",
+     "organization": "Anthropic",
+     "score": 1695,
+     "votes": 16954,
+     "id": "claude-opus-5",
+     "display_name": "Claude Opus 5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 8,
+     "model": "gpt-6-sol-max",
+     "organization": "OpenAI",
+     "score": 1689,
+     "votes": 3411,
+     "id": "gpt6solmax",
+     "display_name": "gpt-6-sol-max",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 9,
+     "model": "gemini-4-argon-high",
+     "organization": "Google",
+     "score": 1680,
+     "votes": 2422,
+     "id": "gemini-4-argon",
+     "display_name": "Gemini 4 Argon",
+     "vendor": "Google",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 10,
+     "model": "qwen3.8-max",
+     "organization": "Alibaba",
+     "score": 1671,
+     "votes": 3454,
+     "id": "qwen3.8-max",
+     "display_name": "通义千问 Qwen3.8-Max",
+     "vendor": "Alibaba",
+     "region": "cn",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 11,
+     "model": "claude-opus-5-high",
+     "organization": "Anthropic",
+     "score": 1660,
+     "votes": 21506,
+     "id": "claude-opus-5",
+     "display_name": "Claude Opus 5",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 12,
+     "model": "kimi-k3-max",
+     "organization": "Moonshot",
+     "score": 1658,
+     "votes": 16513,
+     "id": "kimi-k3",
+     "display_name": "Kimi K3",
+     "vendor": "Moonshot",
+     "region": "cn",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 13,
+     "model": "muse-spark-1.3-max",
+     "organization": "Meta",
+     "score": 1657,
+     "votes": 7249,
+     "id": "muse-spark-1.3",
+     "display_name": "Muse Spark 1.3",
+     "vendor": "Meta",
+     "region": "us",
+     "open": true,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 14,
+     "model": "grok-4.7-xhigh",
+     "organization": "xAI",
+     "score": 1638,
+     "votes": 3216,
+     "id": "grok-4.7",
+     "display_name": "Grok 4.7",
+     "vendor": "xAI",
+     "region": "us",
+     "open": false,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  },
+  "livecodebench": {
+   "board": "LiveCodeBench 编程榜（防污染滚动更新）",
+   "metric": "Avg. pass@1 (%)",
+   "kind": "objective_benchmark",
+   "source_url": "https://livecodebench.github.io/leaderboard.html",
+   "dataset_url": "https://livecodebench.github.io/performances_generation.json",
+   "license": "官方公开数据",
+   "fetched_at": "2026-10-08T14:31:22Z",
+   "publish_date": "2025-04-07",
+   "compared_with": null,
+   "stale": false,
+   "manual": false,
+   "manual_note": null,
+   "retired": false,
+   "retired_note": null,
+   "price_unit": null,
+   "rows": [
+    {
+     "model": "O4-Mini (High)",
+     "organization": null,
+     "score": 87.3,
+     "n_questions": 1055,
+     "rank": 1,
+     "id": "o4minihigh",
+     "display_name": "O4-Mini (High)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O3 (High)",
+     "organization": null,
+     "score": 84.74,
+     "n_questions": 1055,
+     "rank": 2,
+     "id": "o3high",
+     "display_name": "O3 (High)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O4-Mini (Medium)",
+     "organization": null,
+     "score": 84.45,
+     "n_questions": 1055,
+     "rank": 3,
+     "id": "o4minimedium",
+     "display_name": "O4-Mini (Medium)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "DeepSeek-R1-0528",
+     "organization": null,
+     "score": 84.36,
+     "n_questions": 1055,
+     "rank": 4,
+     "id": "deepseekr10528",
+     "display_name": "DeepSeek-R1-0528",
+     "vendor": "深度求索",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Gemini-2.5-Pro-06-05",
+     "organization": null,
+     "score": 84.27,
+     "n_questions": 1055,
+     "rank": 5,
+     "id": "gemini25pro0605",
+     "display_name": "Gemini-2.5-Pro-06-05",
+     "vendor": "Google DeepMind",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Gemini-2.5-Pro-05-06",
+     "organization": null,
+     "score": 82.75,
+     "n_questions": 1055,
+     "rank": 6,
+     "id": "gemini25pro0506",
+     "display_name": "Gemini-2.5-Pro-05-06",
+     "vendor": "Google DeepMind",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "OpenReasoning-Nemotron-32B",
+     "organization": null,
+     "score": 80.96,
+     "n_questions": 1055,
+     "rank": 7,
+     "id": "openreasoningnemotron32b",
+     "display_name": "OpenReasoning-Nemotron-32B",
+     "vendor": "其他",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "EXAONE-4.0-32B",
+     "organization": null,
+     "score": 80.88,
+     "n_questions": 1055,
+     "rank": 8,
+     "id": "exaone4032b",
+     "display_name": "EXAONE-4.0-32B",
+     "vendor": "其他",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Qwen3-235B-A22B",
+     "organization": null,
+     "score": 80.38,
+     "n_questions": 1055,
+     "rank": 9,
+     "id": "qwen3235ba22b",
+     "display_name": "Qwen3-235B-A22B",
+     "vendor": "阿里巴巴",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "XBai-o4-medium",
+     "organization": null,
+     "score": 80.09,
+     "n_questions": 1055,
+     "rank": 10,
+     "id": "xbaio4medium",
+     "display_name": "XBai-o4-medium",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "OpenCodeReasoning-Nemotron-1.1-32B",
+     "organization": null,
+     "score": 78.53,
+     "n_questions": 1055,
+     "rank": 11,
+     "id": "opencodereasoningnemotron1132b",
+     "display_name": "OpenCodeReasoning-Nemotron-1.1-32B",
+     "vendor": "其他",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Grok-3-Mini (High)",
+     "organization": null,
+     "score": 78.1,
+     "n_questions": 1055,
+     "rank": 12,
+     "id": "grok3minihigh",
+     "display_name": "Grok-3-Mini (High)",
+     "vendor": "xAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O3-Mini-2025-01-31 (High)",
+     "organization": null,
+     "score": 77.73,
+     "n_questions": 1055,
+     "rank": 13,
+     "id": "o3mini20250131high",
+     "display_name": "O3-Mini-2025-01-31 (High)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O4-Mini (Low)",
+     "organization": null,
+     "score": 77.44,
+     "n_questions": 1055,
+     "rank": 14,
+     "id": "o4minilow",
+     "display_name": "O4-Mini (Low)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Gemini-2.5-Flash-05-20",
+     "organization": null,
+     "score": 76.21,
+     "n_questions": 1055,
+     "rank": 15,
+     "id": "gemini25flash0520",
+     "display_name": "Gemini-2.5-Flash-05-20",
+     "vendor": "Google DeepMind",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O3-Mini-2025-01-31 (Med)",
+     "organization": null,
+     "score": 75.36,
+     "n_questions": 1055,
+     "rank": 16,
+     "id": "o3mini20250131med",
+     "display_name": "O3-Mini-2025-01-31 (Med)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Gemini-2.5-Flash-04-17",
+     "organization": null,
+     "score": 75.07,
+     "n_questions": 1055,
+     "rank": 17,
+     "id": "gemini25flash0417",
+     "display_name": "Gemini-2.5-Flash-04-17",
+     "vendor": "Google DeepMind",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "O3-Mini-2025-01-31 (Low)",
+     "organization": null,
+     "score": 70.62,
+     "n_questions": 1055,
+     "rank": 18,
+     "id": "o3mini20250131low",
+     "display_name": "O3-Mini-2025-01-31 (Low)",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-Opus-4 (Thinking)",
+     "organization": null,
+     "score": 70.43,
+     "n_questions": 1055,
+     "rank": 19,
+     "id": "claudeopus4thinking",
+     "display_name": "Claude-Opus-4 (Thinking)",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-Sonnet-4 (Thinking)",
+     "organization": null,
+     "score": 68.53,
+     "n_questions": 1055,
+     "rank": 20,
+     "id": "claudesonnet4thinking",
+     "display_name": "Claude-Sonnet-4 (Thinking)",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-Opus-4",
+     "organization": null,
+     "score": 62.37,
+     "n_questions": 1055,
+     "rank": 21,
+     "id": "claudeopus4",
+     "display_name": "Claude-Opus-4",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-Sonnet-4",
+     "organization": null,
+     "score": 59.43,
+     "n_questions": 1055,
+     "rank": 22,
+     "id": "claudesonnet4",
+     "display_name": "Claude-Sonnet-4",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "DeepSeek-V3",
+     "organization": null,
+     "score": 49.55,
+     "n_questions": 1055,
+     "rank": 23,
+     "id": "deepseekv3",
+     "display_name": "DeepSeek-V3",
+     "vendor": "深度求索",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-3.5-Sonnet-20241022",
+     "organization": null,
+     "score": 48.74,
+     "n_questions": 1055,
+     "rank": 24,
+     "id": "claude35sonnet20241022",
+     "display_name": "Claude-3.5-Sonnet-20241022",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GPT-4O-2024-08-06",
+     "organization": null,
+     "score": 38.3,
+     "n_questions": 1055,
+     "rank": 25,
+     "id": "gpt4o20240806",
+     "display_name": "GPT-4O-2024-08-06",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GPT-4-Turbo-2024-04-09",
+     "organization": null,
+     "score": 37.32,
+     "n_questions": 1055,
+     "rank": 26,
+     "id": "gpt4turbo20240409",
+     "display_name": "GPT-4-Turbo-2024-04-09",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "GPT-4O-mini-2024-07-18",
+     "organization": null,
+     "score": 35.52,
+     "n_questions": 1055,
+     "rank": 27,
+     "id": "gpt4omini20240718",
+     "display_name": "GPT-4O-mini-2024-07-18",
+     "vendor": "OpenAI",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "model": "Claude-3-Haiku",
+     "organization": null,
+     "score": 22.53,
+     "n_questions": 1055,
+     "rank": 28,
+     "id": "claude3haiku",
+     "display_name": "Claude-3-Haiku",
+     "vendor": "Anthropic",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  },
+  "open_llm": {
+   "board": "HF Open LLM Leaderboard v2（开源·已退役归档）",
+   "metric": "Average (%)",
+   "kind": "objective_benchmark",
+   "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+   "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+   "license": "归档数据（榜单已于 2025-03 退役）",
+   "fetched_at": null,
+   "publish_date": "2025-03",
+   "compared_with": null,
+   "stale": true,
+   "manual": true,
+   "manual_note": "本地网络无法访问 Hugging Face 数据集时展示此归档快照（HF Open LLM Leaderboard v2 退役前 Top 值）。GitHub Actions 每日从官方归档数据集抓取覆盖。",
+   "retired": true,
+   "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考，与其他实时榜单不可直接比较。",
+   "price_unit": null,
+   "rows": [
+    {
+     "rank": 1,
+     "model": "MaziyarPanahi/calme-3.2-instruct-78b",
+     "organization": "MaziyarPanahi",
+     "score": 52.08,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 80.63,
+      "bbh": 62.61,
+      "math": 40.33,
+      "gpqa": 20.36,
+      "musr": 38.53,
+      "mmlu_pro": 70.03
+     },
+     "id": "maziyarpanahicalme32instruct78b",
+     "display_name": "MaziyarPanahi/calme-3.2-instruct-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 2,
+     "model": "MaziyarPanahi/calme-3.1-instruct-78b",
+     "organization": "MaziyarPanahi",
+     "score": 51.29,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 81.36,
+      "bbh": 62.41,
+      "math": 39.27,
+      "gpqa": 19.4,
+      "musr": 36.5,
+      "mmlu_pro": 68.72
+     },
+     "id": "maziyarpanahicalme31instruct78b",
+     "display_name": "MaziyarPanahi/calme-3.1-instruct-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 3,
+     "model": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "organization": "dfurman",
+     "score": 51.23,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 81.63,
+      "bbh": 61.92,
+      "math": 40.63,
+      "gpqa": 20.02,
+      "musr": 37.37,
+      "mmlu_pro": 66.8
+     },
+     "id": "dfurmancalmerys78borpov01",
+     "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "vendor": "dfurman",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 4,
+     "model": "MaziyarPanahi/calme-2.4-rys-78b",
+     "organization": "MaziyarPanahi",
+     "score": 50.77,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 80.11,
+      "bbh": 62.16,
+      "math": 40.71,
+      "gpqa": 20.36,
+      "musr": 34.57,
+      "mmlu_pro": 65.16
+     },
+     "id": "maziyarpanahicalme24rys78b",
+     "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
+     "vendor": "MaziyarPanahi",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 5,
+     "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "organization": "huihui-ai",
+     "score": 48.11,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 85.93,
+      "bbh": 60.49,
+      "math": 60.12,
+      "gpqa": 19.35,
+      "musr": 12.34,
+      "mmlu_pro": 50.41
+     },
+     "id": "huihuiaiqwen2572binstructabliterated",
+     "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "vendor": "huihui-ai",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    },
+    {
+     "rank": 6,
+     "model": "Qwen/Qwen2.5-72B-Instruct",
+     "organization": "Qwen",
+     "score": 47.98,
+     "type": "chat",
+     "subscores": {
+      "ifeval": 86.38,
+      "bbh": 61.87,
+      "math": 59.82,
+      "gpqa": 16.67,
+      "musr": 11.74,
+      "mmlu_pro": 51.4
+     },
+     "id": "qwenqwen2572binstruct",
+     "display_name": "Qwen/Qwen2.5-72B-Instruct",
+     "vendor": "Qwen",
+     "region": "other",
+     "open": null,
+     "trend": 0,
+     "is_new": false
+    }
+   ]
+  }
+ },
+ "cross": [
+  {
+   "id": "gemini-4-argon",
+   "display_name": "Gemini 4 Argon",
+   "vendor": "Google",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 1,
+     "score": 1525,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "aa_intelligence": {
+     "rank": 4,
+     "score": 52.56,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 9,
+     "score": 1680,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "muse-spark-1.3",
+   "display_name": "Muse Spark 1.3",
+   "vendor": "Meta",
+   "region": "us",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 3,
+     "score": 1494,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "aa_intelligence": {
+     "rank": 6,
+     "score": 48.09,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 13,
+     "score": 1657,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "kimi-k3",
+   "display_name": "Kimi K3",
+   "vendor": "Moonshot",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 4,
+     "score": 1488,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "superclue": {
+     "rank": 5,
+     "score": 70.68,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 12,
+     "score": 1658,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwen3.8-max",
+   "display_name": "通义千问 Qwen3.8-Max",
+   "vendor": "Alibaba",
+   "region": "cn",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 6,
+     "score": 1482,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "superclue": {
+     "rank": 3,
+     "score": 71.48,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 10,
+     "score": 1671,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "glm-5.3",
+   "display_name": "GLM-5.3",
+   "vendor": "Z.ai",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 8,
+     "score": 1478,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "aa_intelligence": {
+     "rank": 9,
+     "score": 44.78,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "superclue": {
+     "rank": 4,
+     "score": 71.29,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4.1-flash",
+   "display_name": "DeepSeek V4.1-Flash",
+   "vendor": "DeepSeek",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 10,
+     "score": 1474,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "aa_intelligence": {
+     "rank": 10,
+     "score": 39.46,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "superclue": {
+     "rank": 2,
+     "score": 71.81,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "mimo-v2.6-pro",
+   "display_name": "MiMo V2.6 Pro",
+   "vendor": "Xiaomi",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 7,
+     "score": 1480,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    },
+    "aa_intelligence": {
+     "rank": 8,
+     "score": 46.32,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude-fable-5.1",
+   "display_name": "Claude Fable 5.1",
+   "vendor": "Anthropic",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "aa_intelligence": {
+     "rank": 2,
+     "score": 53.35,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 5,
+     "score": 1749,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude-opus-5.5",
+   "display_name": "Claude Opus 5.5",
+   "vendor": "Anthropic",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "aa_intelligence": {
+     "rank": 1,
+     "score": 57.62,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 1,
+     "score": 1815,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt-6-astra",
+   "display_name": "GPT-6 Astra",
+   "vendor": "OpenAI",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "aa_intelligence": {
+     "rank": 3,
+     "score": 52.67,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 2,
+     "score": 1788,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "display_name": "GPT-6.1 Sol",
+   "vendor": "OpenAI",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "aa_intelligence": {
+     "rank": 5,
+     "score": 51.83,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 4,
+     "score": 1758,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "grok-4.7",
+   "display_name": "Grok 4.7",
+   "vendor": "xAI",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "aa_intelligence": {
+     "rank": 7,
+     "score": 46.45,
+     "metric": "Intelligence Index",
+     "is_new": false,
+     "trend": 0
+    },
+    "lmarena_webdev": {
+     "rank": 14,
+     "score": 1638,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude-opus-4.6",
+   "display_name": "Claude Opus 4.6",
+   "vendor": "Anthropic",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 2,
+     "score": 1505,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "display_name": "GPT-5.6 Sol",
+   "vendor": "OpenAI",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 5,
+     "score": 1484,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "grok-4.20",
+   "display_name": "Grok 4.20",
+   "vendor": "xAI",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 9,
+     "score": 1475,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "ernie-5.1",
+   "display_name": "文心一言 ERNIE 5.1",
+   "vendor": "Baidu",
+   "region": "cn",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 11,
+     "score": 1468,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "doubao-seed-2.0-pro",
+   "display_name": "豆包 Doubao-Seed-2.0 Pro",
+   "vendor": "ByteDance",
+   "region": "cn",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 12,
+     "score": 1456,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "hunyuan-t2",
+   "display_name": "混元 Hunyuan-T2",
+   "vendor": "Tencent",
+   "region": "cn",
+   "open": false,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 13,
+     "score": 1456,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "step5preview",
+   "display_name": "step-5-preview",
+   "vendor": "StepFun",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 14,
+     "score": 1454,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "minimax-m3",
+   "display_name": "MiniMax M3",
+   "vendor": "MiniMax",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 15,
+     "score": 1440,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "mistralmedium35",
+   "display_name": "mistral-medium-3.5",
+   "vendor": "Mistral AI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "lmarena_text": {
+     "rank": 16,
+     "score": 1427,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude-opus-5",
+   "display_name": "Claude Opus 5",
+   "vendor": "Anthropic",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_webdev": {
+     "rank": 11,
+     "score": 1660,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude-sonnet-5.5",
+   "display_name": "Claude Sonnet 5.5",
+   "vendor": "Anthropic",
+   "region": "us",
+   "open": false,
+   "appearances": {
+    "lmarena_webdev": {
+     "rank": 6,
+     "score": 1715,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude3haiku",
+   "display_name": "Claude-3-Haiku",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 28,
+     "score": 22.53,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claude35sonnet20241022",
+   "display_name": "Claude-3.5-Sonnet-20241022",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 24,
+     "score": 48.74,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claudeopus4",
+   "display_name": "Claude-Opus-4",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 21,
+     "score": 62.37,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claudeopus4thinking",
+   "display_name": "Claude-Opus-4 (Thinking)",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 19,
+     "score": 70.43,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claudesonnet4",
+   "display_name": "Claude-Sonnet-4",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 22,
+     "score": 59.43,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "claudesonnet4thinking",
+   "display_name": "Claude-Sonnet-4 (Thinking)",
+   "vendor": "Anthropic",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 20,
+     "score": 68.53,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "display_name": "DeepSeek V4-Flash",
+   "vendor": "深度求索",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "superclue": {
+     "rank": 10,
+     "score": 65.6,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "display_name": "DeepSeek V4-Pro",
+   "vendor": "深度求索",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "superclue": {
+     "rank": 6,
+     "score": 70.1,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "deepseekr10528",
+   "display_name": "DeepSeek-R1-0528",
+   "vendor": "深度求索",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 4,
+     "score": 84.36,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "deepseekv3",
+   "display_name": "DeepSeek-V3",
+   "vendor": "深度求索",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 23,
+     "score": 49.55,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "exaone4032b",
+   "display_name": "EXAONE-4.0-32B",
+   "vendor": "其他",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 8,
+     "score": 80.88,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "glm-5.3-flash",
+   "display_name": "GLM-5.3-Flash",
+   "vendor": "智谱 AI",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "superclue": {
+     "rank": 7,
+     "score": 68.1,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt4turbo20240409",
+   "display_name": "GPT-4-Turbo-2024-04-09",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 26,
+     "score": 37.32,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt4o20240806",
+   "display_name": "GPT-4O-2024-08-06",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 25,
+     "score": 38.3,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt4omini20240718",
+   "display_name": "GPT-4O-mini-2024-07-18",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 27,
+     "score": 35.52,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gemini25flash0417",
+   "display_name": "Gemini-2.5-Flash-04-17",
+   "vendor": "Google DeepMind",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 17,
+     "score": 75.07,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gemini25flash0520",
+   "display_name": "Gemini-2.5-Flash-05-20",
+   "vendor": "Google DeepMind",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 15,
+     "score": 76.21,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gemini25pro0506",
+   "display_name": "Gemini-2.5-Pro-05-06",
+   "vendor": "Google DeepMind",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 6,
+     "score": 82.75,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gemini25pro0605",
+   "display_name": "Gemini-2.5-Pro-06-05",
+   "vendor": "Google DeepMind",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 5,
+     "score": 84.27,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "grok3minihigh",
+   "display_name": "Grok-3-Mini (High)",
+   "vendor": "xAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 12,
+     "score": 78.1,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme24rys78b",
+   "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 4,
+     "score": 50.77,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme31instruct78b",
+   "display_name": "MaziyarPanahi/calme-3.1-instruct-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 2,
+     "score": 51.29,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "maziyarpanahicalme32instruct78b",
+   "display_name": "MaziyarPanahi/calme-3.2-instruct-78b",
+   "vendor": "MaziyarPanahi",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 1,
+     "score": 52.08,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o3high",
+   "display_name": "O3 (High)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 2,
+     "score": 84.74,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o3mini20250131high",
+   "display_name": "O3-Mini-2025-01-31 (High)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 13,
+     "score": 77.73,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o3mini20250131low",
+   "display_name": "O3-Mini-2025-01-31 (Low)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 18,
+     "score": 70.62,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o3mini20250131med",
+   "display_name": "O3-Mini-2025-01-31 (Med)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 16,
+     "score": 75.36,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o4minihigh",
+   "display_name": "O4-Mini (High)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 1,
+     "score": 87.3,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o4minilow",
+   "display_name": "O4-Mini (Low)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 14,
+     "score": 77.44,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "o4minimedium",
+   "display_name": "O4-Mini (Medium)",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 3,
+     "score": 84.45,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "opencodereasoningnemotron1132b",
+   "display_name": "OpenCodeReasoning-Nemotron-1.1-32B",
+   "vendor": "其他",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 11,
+     "score": 78.53,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "openreasoningnemotron32b",
+   "display_name": "OpenReasoning-Nemotron-32B",
+   "vendor": "其他",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 7,
+     "score": 80.96,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwenqwen2572binstruct",
+   "display_name": "Qwen/Qwen2.5-72B-Instruct",
+   "vendor": "Qwen",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 6,
+     "score": 47.98,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwen3235ba22b",
+   "display_name": "Qwen3-235B-A22B",
+   "vendor": "阿里巴巴",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 9,
+     "score": 80.38,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "xbaio4medium",
+   "display_name": "XBai-o4-medium",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "livecodebench": {
+     "rank": 10,
+     "score": 80.09,
+     "metric": "Avg. pass@1 (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "dfurmancalmerys78borpov01",
+   "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
+   "vendor": "dfurman",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 3,
+     "score": 51.23,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "gpt6solmax",
+   "display_name": "gpt-6-sol-max",
+   "vendor": "OpenAI",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "lmarena_webdev": {
+     "rank": 8,
+     "score": 1689,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "huihuiaiqwen2572binstructabliterated",
+   "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+   "vendor": "huihui-ai",
+   "region": "other",
+   "open": null,
+   "appearances": {
+    "open_llm": {
+     "rank": 5,
+     "score": 48.11,
+     "metric": "Average (%)",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "doubao-seed-2.1-pro",
+   "display_name": "豆包 Doubao-Seed-2.1 Pro",
+   "vendor": "字节跳动",
+   "region": "cn",
+   "open": false,
+   "appearances": {
+    "superclue": {
+     "rank": 9,
+     "score": 65.94,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  },
+  {
+   "id": "qwen3.8-flash",
+   "display_name": "通义千问 Qwen3.8-Flash",
+   "vendor": "阿里巴巴",
+   "region": "cn",
+   "open": true,
+   "appearances": {
+    "superclue": {
+     "rank": 8,
+     "score": 66.41,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0
+    }
+   }
+  }
+ ],
+ "failures": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_webdev",
+   "status": "fallback",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_agent",
+   "status": "failed",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "open_llm",
+   "status": "fallback",
+   "error": "Open LLM Leaderboard: 归档数据集不可用"
+  },
+  {
+   "source": "superclue",
+   "status": "fallback",
+   "error": "SuperCLUE: 所有自动通道失败，需降级到人工数据"
+  }
+ ]
+}

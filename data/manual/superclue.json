@@ -1,0 +1,24 @@
+{
+  "source_id": "superclue",
+  "board": "SuperCLUE 中文大模型综合榜",
+  "metric": "综合得分",
+  "kind": "objective_benchmark",
+  "source_url": "https://www.superclueai.com/benchmark-list",
+  "dataset_url": "https://www.superclueai.com/",
+  "license": "© SuperCLUE，本站仅聚合展示",
+  "publish_date": "2026-09",
+  "manual": true,
+  "manual_note": "SuperCLUE 前端为混淆 SPA，自动抓取不稳定时展示此人工维护快照（依据官方 2026 年 9 月月度报告）。",
+  "rows": [
+    {"rank": 1, "model": "通义千问 Qwen3.8-Max-0902", "organization": "阿里巴巴", "score": 72.62},
+    {"rank": 2, "model": "DeepSeek V4.1-Flash", "organization": "深度求索", "score": 71.81},
+    {"rank": 3, "model": "通义千问 Qwen3.8-Max", "organization": "阿里巴巴", "score": 71.48},
+    {"rank": 4, "model": "GLM-5.3", "organization": "智谱 AI", "score": 71.29},
+    {"rank": 5, "model": "Kimi K3", "organization": "月之暗面", "score": 70.68},
+    {"rank": 6, "model": "DeepSeek V4-Pro", "organization": "深度求索", "score": 70.10},
+    {"rank": 7, "model": "GLM-5.3-Flash", "organization": "智谱 AI", "score": 68.10},
+    {"rank": 8, "model": "通义千问 Qwen3.8-Flash", "organization": "阿里巴巴", "score": 66.41},
+    {"rank": 9, "model": "豆包 Doubao-Seed-2.1 Pro", "organization": "字节跳动", "score": 65.94},
+    {"rank": 10, "model": "DeepSeek V4-Flash", "organization": "深度求索", "score": 65.60}
+  ]
+}

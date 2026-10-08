@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://motao123.github.io/ai-model-rankings/sitemap.xml

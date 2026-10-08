@@ -1,0 +1,30 @@
+{
+  "source_id": "lmarena_text",
+  "board": "LMArena 文本总榜（真人盲测）",
+  "metric": "Arena Score",
+  "kind": "human_preference",
+  "source_url": "https://arena.ai/leaderboard/text",
+  "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+  "license": "CC-BY-4.0",
+  "publish_date": "2026-10-02",
+  "manual": true,
+  "manual_note": "LMArena 官方数据托管在 Hugging Face 数据集，本地网络无法访问 HF 时展示此人工快照（依据 arena.ai 官方 Text Arena，2026-10-02，8,626,731 票）。GitHub Actions 每日会抓取官方最新数据覆盖。",
+  "rows": [
+    {"rank": 1, "model": "gemini-4-argon-high", "organization": "Google", "score": 1525, "votes": null},
+    {"rank": 2, "model": "claude-opus-4-6-high", "organization": "Anthropic", "score": 1505, "votes": null},
+    {"rank": 3, "model": "muse-spark-1.3-max", "organization": "Meta", "score": 1494, "votes": null},
+    {"rank": 4, "model": "kimi-k3-max", "organization": "Moonshot", "score": 1488, "votes": null},
+    {"rank": 5, "model": "gpt-5.6-sol-xhigh", "organization": "OpenAI", "score": 1484, "votes": null},
+    {"rank": 6, "model": "qwen3.8-max", "organization": "Alibaba", "score": 1482, "votes": null},
+    {"rank": 7, "model": "mimo-v2.6-pro", "organization": "Xiaomi", "score": 1480, "votes": null},
+    {"rank": 8, "model": "glm-5.3-max", "organization": "Z.ai", "score": 1478, "votes": null},
+    {"rank": 9, "model": "grok-4.20-beta1", "organization": "xAI", "score": 1475, "votes": null},
+    {"rank": 10, "model": "deepseek-v4.1-flash-max", "organization": "DeepSeek", "score": 1474, "votes": null},
+    {"rank": 11, "model": "ernie-5.1", "organization": "Baidu", "score": 1468, "votes": null},
+    {"rank": 12, "model": "doubao-seed-2.0-pro", "organization": "ByteDance", "score": 1456, "votes": null},
+    {"rank": 13, "model": "hunyuan-t2", "organization": "Tencent", "score": 1456, "votes": null},
+    {"rank": 14, "model": "step-5-preview", "organization": "StepFun", "score": 1454, "votes": null},
+    {"rank": 15, "model": "minimax-m3", "organization": "MiniMax", "score": 1440, "votes": null},
+    {"rank": 16, "model": "mistral-medium-3.5", "organization": "Mistral AI", "score": 1427, "votes": null}
+  ]
+}

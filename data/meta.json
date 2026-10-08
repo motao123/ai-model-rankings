@@ -1,0 +1,39 @@
+{
+ "generated_at": "2026-10-08T14:33:57Z",
+ "status": "partial",
+ "boards": [
+  "lmarena_text",
+  "aa_intelligence",
+  "superclue",
+  "lmarena_webdev",
+  "livecodebench",
+  "open_llm"
+ ],
+ "failures": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_webdev",
+   "status": "fallback",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_agent",
+   "status": "failed",
+   "error": "LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "open_llm",
+   "status": "fallback",
+   "error": "Open LLM Leaderboard: 归档数据集不可用"
+  },
+  {
+   "source": "superclue",
+   "status": "fallback",
+   "error": "SuperCLUE: 所有自动通道失败，需降级到人工数据"
+  }
+ ]
+}
