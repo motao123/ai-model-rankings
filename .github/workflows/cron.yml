@@ -38,6 +38,13 @@ jobs:
       - name: Fetch and merge rankings
         run: python src/main.py
 
+      # 每日刷新 sitemap 的 lastmod，向搜索引擎传递"内容有更新"的新鲜度信号
+      - name: Refresh sitemap lastmod
+        run: |
+          today=$(date -u '+%Y-%m-%d')
+          sed -i -E "s#<lastmod>[0-9-]+</lastmod>#<lastmod>${today}</lastmod>#" sitemap.xml
+          echo "sitemap lastmod -> ${today}"
+
       # 自愈闭环：把降级/失败同步成 Issue；恢复时自动关闭。
       # 不阻断流程（降级是设计内的容错行为），仅做人工可见的提醒。
       - name: Report degraded sources (auto-issue)
@@ -50,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ sitemap.xml
           if git diff --staged --quiet; then
             echo "No data changes to commit."
           else

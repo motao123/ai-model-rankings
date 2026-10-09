@@ -1,0 +1,96 @@
+{
+ "source_id": "aa_intelligence",
+ "board": "Artificial Analysis 智能指数榜",
+ "metric": "Intelligence Index",
+ "kind": "objective_benchmark",
+ "source_url": "https://artificialanalysis.ai/text/intelligence-index",
+ "dataset_url": "https://artificialanalysis.ai/",
+ "license": "© Artificial Analysis，本站仅聚合展示",
+ "fetched_at": "2026-10-09T02:10:06Z",
+ "publish_date": "2026-10-09",
+ "channel": "html-flight-payload",
+ "mirror_note": null,
+ "price_unit": "USD per 1M blended tokens",
+ "rows": [
+  {
+   "model": "Claude Opus 5.5",
+   "slug": "claude-opus-5-5",
+   "label": "Claude Opus 5.5 (max with fallback)",
+   "score": 57.62,
+   "price": 5.982012019521066,
+   "rank": 1
+  },
+  {
+   "model": "Claude Fable 5.1",
+   "slug": "claude-fable-5-1",
+   "label": "Claude Fable 5.1 (max with fallback)",
+   "score": 53.35,
+   "price": 7.629706364004841,
+   "rank": 2
+  },
+  {
+   "model": "GPT-6 Astra",
+   "slug": "gpt-6-astra",
+   "label": "GPT-6 Astra (max)",
+   "score": 52.67,
+   "price": 3.2575003134834164,
+   "rank": 3
+  },
+  {
+   "model": "Gemini 4 Argon",
+   "slug": "gemini-4-argon",
+   "label": "Gemini 4 Argon (high)",
+   "score": 52.56,
+   "price": 1.990322379299008,
+   "rank": 4
+  },
+  {
+   "model": "GPT-6.1 Sol",
+   "slug": "gpt-6-1-sol",
+   "label": "GPT-6.1 Sol (max)",
+   "score": 51.83,
+   "price": 0.7241670655535033,
+   "rank": 5
+  },
+  {
+   "model": "Muse Spark 1.3",
+   "slug": "muse-spark-1-3",
+   "label": "Muse Spark 1.3 (max)",
+   "score": 48.09,
+   "price": 1.6048932100125866,
+   "rank": 6
+  },
+  {
+   "model": "Grok 4.7",
+   "slug": "grok-4-7",
+   "label": "Grok 4.7 (xhigh)",
+   "score": 46.45,
+   "price": 3.738325952106939,
+   "rank": 7
+  },
+  {
+   "model": "MiMo-V2.6-Pro",
+   "slug": "mimo-v2-6-pro",
+   "label": "MiMo-V2.6-Pro",
+   "score": 46.32,
+   "price": 0.13322318937213493,
+   "rank": 8
+  },
+  {
+   "model": "GLM-5.3",
+   "slug": "glm-5-3",
+   "label": "GLM-5.3 (max)",
+   "score": 44.78,
+   "price": 2.0056375150449584,
+   "rank": 9
+  },
+  {
+   "model": "DeepSeek V4.1 Flash",
+   "slug": "deepseek-v4-1-flash",
+   "label": "DeepSeek V4.1 Flash (max)",
+   "score": 39.46,
+   "price": 0.26522527009606844,
+   "rank": 10
+  }
+ ]
+}

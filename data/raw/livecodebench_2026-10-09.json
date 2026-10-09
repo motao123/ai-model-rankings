@@ -1,0 +1,210 @@
+{
+ "source_id": "livecodebench",
+ "board": "LiveCodeBench 编程榜（防污染滚动更新）",
+ "metric": "Avg. pass@1 (%)",
+ "kind": "objective_benchmark",
+ "source_url": "https://livecodebench.github.io/leaderboard.html",
+ "dataset_url": "https://livecodebench.github.io/performances_generation.json",
+ "license": "官方公开数据",
+ "fetched_at": "2026-10-09T02:10:07Z",
+ "publish_date": "2025-04-07",
+ "channel": "official-json",
+ "rows": [
+  {
+   "model": "O4-Mini (High)",
+   "organization": null,
+   "score": 87.3,
+   "n_questions": 1055,
+   "rank": 1
+  },
+  {
+   "model": "O3 (High)",
+   "organization": null,
+   "score": 84.74,
+   "n_questions": 1055,
+   "rank": 2
+  },
+  {
+   "model": "O4-Mini (Medium)",
+   "organization": null,
+   "score": 84.45,
+   "n_questions": 1055,
+   "rank": 3
+  },
+  {
+   "model": "DeepSeek-R1-0528",
+   "organization": null,
+   "score": 84.36,
+   "n_questions": 1055,
+   "rank": 4
+  },
+  {
+   "model": "Gemini-2.5-Pro-06-05",
+   "organization": null,
+   "score": 84.27,
+   "n_questions": 1055,
+   "rank": 5
+  },
+  {
+   "model": "Gemini-2.5-Pro-05-06",
+   "organization": null,
+   "score": 82.75,
+   "n_questions": 1055,
+   "rank": 6
+  },
+  {
+   "model": "OpenReasoning-Nemotron-32B",
+   "organization": null,
+   "score": 80.96,
+   "n_questions": 1055,
+   "rank": 7
+  },
+  {
+   "model": "EXAONE-4.0-32B",
+   "organization": null,
+   "score": 80.88,
+   "n_questions": 1055,
+   "rank": 8
+  },
+  {
+   "model": "Qwen3-235B-A22B",
+   "organization": null,
+   "score": 80.38,
+   "n_questions": 1055,
+   "rank": 9
+  },
+  {
+   "model": "XBai-o4-medium",
+   "organization": null,
+   "score": 80.09,
+   "n_questions": 1055,
+   "rank": 10
+  },
+  {
+   "model": "OpenCodeReasoning-Nemotron-1.1-32B",
+   "organization": null,
+   "score": 78.53,
+   "n_questions": 1055,
+   "rank": 11
+  },
+  {
+   "model": "Grok-3-Mini (High)",
+   "organization": null,
+   "score": 78.1,
+   "n_questions": 1055,
+   "rank": 12
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (High)",
+   "organization": null,
+   "score": 77.73,
+   "n_questions": 1055,
+   "rank": 13
+  },
+  {
+   "model": "O4-Mini (Low)",
+   "organization": null,
+   "score": 77.44,
+   "n_questions": 1055,
+   "rank": 14
+  },
+  {
+   "model": "Gemini-2.5-Flash-05-20",
+   "organization": null,
+   "score": 76.21,
+   "n_questions": 1055,
+   "rank": 15
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (Med)",
+   "organization": null,
+   "score": 75.36,
+   "n_questions": 1055,
+   "rank": 16
+  },
+  {
+   "model": "Gemini-2.5-Flash-04-17",
+   "organization": null,
+   "score": 75.07,
+   "n_questions": 1055,
+   "rank": 17
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (Low)",
+   "organization": null,
+   "score": 70.62,
+   "n_questions": 1055,
+   "rank": 18
+  },
+  {
+   "model": "Claude-Opus-4 (Thinking)",
+   "organization": null,
+   "score": 70.43,
+   "n_questions": 1055,
+   "rank": 19
+  },
+  {
+   "model": "Claude-Sonnet-4 (Thinking)",
+   "organization": null,
+   "score": 68.53,
+   "n_questions": 1055,
+   "rank": 20
+  },
+  {
+   "model": "Claude-Opus-4",
+   "organization": null,
+   "score": 62.37,
+   "n_questions": 1055,
+   "rank": 21
+  },
+  {
+   "model": "Claude-Sonnet-4",
+   "organization": null,
+   "score": 59.43,
+   "n_questions": 1055,
+   "rank": 22
+  },
+  {
+   "model": "DeepSeek-V3",
+   "organization": null,
+   "score": 49.55,
+   "n_questions": 1055,
+   "rank": 23
+  },
+  {
+   "model": "Claude-3.5-Sonnet-20241022",
+   "organization": null,
+   "score": 48.74,
+   "n_questions": 1055,
+   "rank": 24
+  },
+  {
+   "model": "GPT-4O-2024-08-06",
+   "organization": null,
+   "score": 38.3,
+   "n_questions": 1055,
+   "rank": 25
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09",
+   "organization": null,
+   "score": 37.32,
+   "n_questions": 1055,
+   "rank": 26
+  },
+  {
+   "model": "GPT-4O-mini-2024-07-18",
+   "organization": null,
+   "score": 35.52,
+   "n_questions": 1055,
+   "rank": 27
+  },
+  {
+   "model": "Claude-3-Haiku",
+   "organization": null,
+   "score": 22.53,
+   "n_questions": 1055,
+   "rank": 28
+  }
+ ]
+}

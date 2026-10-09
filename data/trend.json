@@ -5,7 +5,8 @@
    "metric": "Intelligence Index",
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -14,6 +15,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -23,6 +25,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -32,6 +35,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      3,
       3
      ]
     },
@@ -41,6 +45,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      4,
       4
      ]
     },
@@ -50,6 +55,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      5,
       5
      ]
     },
@@ -59,6 +65,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -68,6 +75,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      7,
       7
      ]
     },
@@ -77,6 +85,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      8,
       8
      ]
     },
@@ -86,6 +95,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -95,6 +105,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      10,
       10
      ]
     }
@@ -105,7 +116,8 @@
    "metric": "Avg. pass@1 (%)",
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -114,6 +126,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -123,6 +136,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -132,6 +146,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      3,
       3
      ]
     },
@@ -141,6 +156,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      4,
       4
      ]
     },
@@ -150,6 +166,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      5,
       5
      ]
     },
@@ -159,6 +176,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -168,6 +186,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      7,
       7
      ]
     },
@@ -177,6 +196,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      8,
       8
      ]
     },
@@ -186,6 +206,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -195,6 +216,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      10,
       10
      ]
     },
@@ -204,6 +226,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      11,
       11
      ]
     },
@@ -213,6 +236,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      12,
       12
      ]
     }

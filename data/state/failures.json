@@ -1,17 +1,9 @@
 {
  "generated_at": "2026-10-09T02:12:42Z",
- "status": "partial",
- "boards": [
-  "lmarena_text",
-  "aa_intelligence",
-  "superclue",
-  "lmarena_webdev",
-  "lmarena_agent",
-  "livecodebench",
-  "open_llm"
- ],
+ "date": "2026-10-09",
+ "total": 5,
  "degraded": 5,
- "failures": [
+ "items": [
   {
    "source": "lmarena_text",
    "status": "fallback",
