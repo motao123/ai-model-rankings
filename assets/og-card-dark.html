@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>AI Model Rankings · Social Preview (1200×630)</title>
+<!--
+  仓库 Social Preview 卡片源文件（可复现）。
+  生成方式：agent-browser set viewport 1200 630 2 → screenshot assets/og-cover.png
+  设计：与站点同一套设计变量（墨黑 #16130e + 暖金 #9a7400，浅底 + 网格线），
+       零外部资源依赖；面板内模型数据取自 data/merged.json 真实值。
+-->
+<style>
+  :root{
+    --ink:#f4f1ea; --ink2:#cdc5b6; --muted:#8f8779; --faint:#6e6759;
+    --line:#2f2b23; --line-soft:#221f18;
+    --gold:#c79a2a; --gold2:#e3bc50; --gold-soft:#2b2413;
+    --bg:#14120f; --bg-alt:#1b1813; --bg-sunken:#211d17;
+    --badge-bd:#3f3318; --badge-fg:#dcb349;
+    --mono:"SF Mono",SFMono-Regular,ui-monospace,"Cascadia Code",Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
+  }
+  .card{
+    position:relative;width:1200px;height:630px;
+    padding:48px 58px 36px 68px;
+    display:flex;flex-direction:column;
+    background:
+      repeating-linear-gradient(0deg,var(--line-soft) 0 1px,transparent 1px 60px),
+      repeating-linear-gradient(90deg,var(--line-soft) 0 1px,transparent 1px 60px),
+      var(--bg);
+  }
+  /* 左侧暖金结构线（品牌记号） */
+  .card::before{content:"";position:absolute;left:0;top:0;width:6px;height:630px;background:var(--gold)}
+
+  header{position:relative;z-index:1;display:flex;align-items:center;gap:14px}
+  .mark{
+    width:44px;height:44px;flex:0 0 44px;background:#0b0a08;color:var(--gold2);
+    border:1px solid var(--line);
+    display:grid;place-items:center;border-radius:4px;
+    font-family:var(--mono);font-size:26px;font-weight:700;line-height:1;
+  }
+  .brand .cn{font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+  .brand .en{font-family:var(--mono);font-size:10.5px;font-weight:500;color:var(--muted);letter-spacing:.14em;margin-top:2px}
+  .sp{flex:1}
+  .stamp{
+    font-size:12px;color:var(--muted);border:1px solid var(--line);
+    background:var(--bg-alt);padding:6px 12px;border-radius:3px;white-space:nowrap;
+  }
+
+  main{position:relative;z-index:1;flex:1;display:flex;gap:52px;padding-top:30px}
+  .col-l{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+  .col-r{flex:0 0 404px;display:flex;flex-direction:column;gap:16px}
+
+  h1{font-size:50px;line-height:1.14;letter-spacing:-.03em;font-weight:800}
+  h1 .two{display:block;color:var(--ink)}
+  .rule{width:54px;height:4px;background:var(--gold);margin:22px 0 18px}
+  .sub{font-size:14.5px;color:var(--ink2);line-height:1.5}
+  .sub b{font-weight:600;color:var(--gold)}
+
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px}
+  .chips span{
+    font-family:var(--mono);font-size:11.5px;color:var(--ink2);
+    border:1px solid var(--line);background:var(--bg-alt);
+    padding:5px 10px;border-radius:3px;white-space:nowrap;
+  }
+
+  .feats{
+    display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;
+    margin-top:30px;list-style:none;
+  }
+  .feats li{position:relative;padding-left:13px;font-size:13px;color:var(--ink2);white-space:nowrap}
+  .feats li::before{
+    content:"";position:absolute;left:0;top:7px;
+    width:5px;height:5px;background:var(--gold);
+  }
+
+  .stats{display:flex;align-items:center;gap:20px;margin-top:auto;padding-top:24px}
+  .stats .st{display:flex;flex-direction:column;gap:1px}
+  .stats b{font-family:var(--mono);font-size:27px;font-weight:700;color:var(--gold);line-height:1;letter-spacing:-.02em}
+  .stats i{font-style:normal;font-size:11.5px;color:var(--muted)}
+  .stats .vr{width:1px;height:34px;background:var(--line)}
+
+  .panel{border:1px solid var(--line);background:var(--bg-alt);border-radius:4px;overflow:hidden}
+  .panel .ph{
+    display:flex;align-items:center;gap:8px;
+    padding:9px 13px;border-bottom:1px solid var(--line);
+    background:var(--bg);font-size:11.5px;color:var(--ink2);
+    font-family:var(--mono);letter-spacing:.01em;white-space:nowrap;
+  }
+  .panel .ph .dot{width:6px;height:6px;border-radius:50%;background:var(--faint);flex:0 0 6px}
+  .panel .ph .dot.g{background:var(--gold)}
+  .panel .ph .mt{margin-left:auto;color:var(--faint);font-size:10.5px}
+
+  .row{
+    display:flex;align-items:center;gap:10px;
+    padding:12px 13px;border-bottom:1px solid var(--line-soft);
+  }
+  .row:last-child{border-bottom:0}
+  .row.lead{background:var(--bg);box-shadow:inset 3px 0 0 var(--gold)}
+  .row .nm{flex:1;min-width:0;font-size:14px;font-weight:600;letter-spacing:-.01em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .sc{font-family:var(--mono);font-size:13.5px;font-weight:700;color:var(--ink);flex:0 0 auto}
+  .row .bd{
+    font-size:10.5px;color:var(--badge-fg);background:var(--gold-soft);
+    border:1px solid var(--badge-bd);border-radius:2px;padding:2px 6px;flex:0 0 auto;line-height:1.35;
+  }
+
+  footer{position:relative;z-index:1;display:flex;align-items:center;gap:14px;
+    padding-top:18px;border-top:1px solid var(--line)}
+  footer .url{font-family:var(--mono);font-size:12.5px;color:var(--gold);font-weight:600}
+  footer .fc{font-size:11.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <header>
+    <div class="mark">#</div>
+    <div class="brand">
+      <div class="cn">AI 模型排行榜</div>
+      <div class="en">AI MODEL RANKINGS</div>
+    </div>
+    <div class="sp"></div>
+    <div class="stamp">第三方权威数据聚合 · 每日自动更新</div>
+  </header>
+
+  <main>
+    <div class="col-l">
+      <h1>AI 大模型<span class="two">第三方权威排行榜</span></h1>
+      <div class="rule"></div>
+      <p class="sub">多榜同屏对比 · 排名升降 · 性价比象限 · 历史趋势<br>
+        只聚合原始榜单，<b>不修改分数</b>，不自行计算跨榜综合总分。</p>
+
+      <div class="chips">
+        <span>LMArena</span>
+        <span>Artificial Analysis</span>
+        <span>LiveCodeBench</span>
+        <span>SuperCLUE</span>
+        <span>HF Open LLM</span>
+      </div>
+
+      <ul class="feats">
+        <li>排名升降箭头</li>
+        <li>新上榜标记</li>
+        <li>国产 / 开源标签</li>
+        <li>性价比象限图</li>
+        <li>历史趋势折线</li>
+        <li>来源与免责声明</li>
+      </ul>
+
+      <div class="stats">
+        <div class="st"><b>7</b><i>榜单同屏</i></div>
+        <div class="vr"></div>
+        <div class="st"><b>423</b><i>交叉模型</i></div>
+        <div class="vr"></div>
+        <div class="st"><b>0</b><i>成本投入</i></div>
+      </div>
+    </div>
+
+    <div class="col-r">
+      <section class="panel">
+        <div class="ph"><span class="dot"></span>LMArena 文本<span class="mt">Arena Score</span></div>
+        <div class="row lead"><span class="nm">Gemini 4 Argon</span><span class="sc">1533</span></div>
+        <div class="row"><span class="nm">Claude Opus 5.5</span><span class="sc">1512</span></div>
+        <div class="row"><span class="nm">Claude Fable 5.1</span><span class="sc">1511</span></div>
+      </section>
+
+      <section class="panel">
+        <div class="ph"><span class="dot g"></span>SuperCLUE 中文<span class="mt">综合得分</span></div>
+        <div class="row lead"><span class="nm">通义千问 Qwen3.8-Max</span><span class="bd">国产</span><span class="sc">72.6</span></div>
+        <div class="row"><span class="nm">DeepSeek V4.1-Flash</span><span class="bd">国产</span><span class="sc">71.8</span></div>
+        <div class="row"><span class="nm">GLM-5.3</span><span class="bd">国产</span><span class="sc">71.3</span></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span class="url">motao123.github.io/ai-model-rankings</span>
+    <div class="sp"></div>
+    <span class="fc">零后端静态站 · GitHub Actions 每日抓取 · 各榜口径不同，分数不可直接横向比较</span>
+  </footer>
+
+</div>
+</body>
+</html>

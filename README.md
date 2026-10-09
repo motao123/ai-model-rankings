@@ -51,6 +51,11 @@
 │   └── meta.json                # 更新时间、失败/降级记录
 ├── index.html                   # 单文件前端（内联 CSS/JS，零外部依赖，SVG 手绘图表）
 ├── sw.js                        # Service Worker：离线可访问 + 数据 stale-while-revalidate
+├── assets/                      # 品牌 / 分享素材
+│   ├── og-card.html             # OG 卡片源文件（1200×630，浅色，与站点同款设计变量）
+│   ├── og-card-dark.html        # 同上，暗色变体（墨黑 + 暖金）
+│   ├── og-cover.png             # 浅色成品 —— index.html 的 og:image / twitter:image 指向它
+│   └── og-cover-dark.png        # 暗色成品 —— 建议用于 GitHub 仓库 Settings 的 Social preview
 ├── sitemap.xml / robots.txt / 404.html / .nojekyll
 └── requirements.txt
 ```
