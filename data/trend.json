@@ -761,6 +761,78 @@
    ],
    "models": [
     {
+     "id": "jungzoonat3qqwen2514binstruct1me3",
+     "name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      8,
+      1
+     ]
+    },
+    {
+     "id": "jungzoonat3qqwen2514bv10e3",
+     "name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      9,
+      2
+     ]
+    },
+    {
+     "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
+     "name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      11,
+      3
+     ]
+    },
+    {
+     "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
+     "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      17,
+      4
+     ]
+    },
+    {
+     "id": "finguairomboultima32b",
+     "name": "FINGU-AI/RomboUltima-32B",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      21,
+      5
+     ]
+    },
+    {
+     "id": "evaunit01evaqwen2572bv02",
+     "name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      27,
+      6
+     ]
+    },
+    {
      "id": "aryanneqwentileswap",
      "name": "Aryanne/QwentileSwap",
      "variant": null,
@@ -769,7 +841,55 @@
      "open": null,
      "ranks": [
       31,
-      1
+      7
+     ]
+    },
+    {
+     "id": "cranmaytempmotacillacinerea",
+     "name": "Cran-May/tempmotacilla-cinerea",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      32,
+      8
+     ]
+    },
+    {
+     "id": "daemontatoxllama3370bcognilink",
+     "name": "Daemontatox/Llama3.3-70B-CogniLink",
+     "variant": null,
+     "vendor": "Meta",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      45,
+      9
+     ]
+    },
+    {
+     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
+     "name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      46,
+      10
+     ]
+    },
+    {
+     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
+     "name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      48,
+      11
      ]
     },
     {
@@ -781,126 +901,6 @@
      "open": null,
      "ranks": [
       51,
-      2
-     ]
-    },
-    {
-     "id": "aashraf995qwenstock14b",
-     "name": "Aashraf995/QwenStock-14B",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      null,
-      3
-     ]
-    },
-    {
-     "id": "baaiinfinityinstruct3m0625llama370b",
-     "name": "BAAI/Infinity-Instruct-3M-0625-Llama3-70B",
-     "variant": null,
-     "vendor": "Meta",
-     "region": "us",
-     "open": null,
-     "ranks": [
-      null,
-      4
-     ]
-    },
-    {
-     "id": "1800llmsqwen2514bhindi",
-     "name": "1-800-LLMs/Qwen-2.5-14B-Hindi",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      null,
-      5
-     ]
-    },
-    {
-     "id": "baaiinfinityinstruct3m0613llama370b",
-     "name": "BAAI/Infinity-Instruct-3M-0613-Llama3-70B",
-     "variant": null,
-     "vendor": "Meta",
-     "region": "us",
-     "open": null,
-     "ranks": [
-      null,
-      6
-     ]
-    },
-    {
-     "id": "aashraf995gemmaevo10b",
-     "name": "Aashraf995/Gemma-Evo-10B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      null,
-      7
-     ]
-    },
-    {
-     "id": "01aiyi1534b",
-     "name": "01-ai/Yi-1.5-34B",
-     "variant": "chat",
-     "vendor": "零一万物",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      null,
-      8
-     ]
-    },
-    {
-     "id": "azure99blossomv614b",
-     "name": "Azure99/Blossom-V6-14B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      null,
-      9
-     ]
-    },
-    {
-     "id": "aellmgemma2aeriainfinity9b",
-     "name": "AELLM/gemma-2-aeria-infinity-9b",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      null,
-      10
-     ]
-    },
-    {
-     "id": "azure99blossomv67b",
-     "name": "Azure99/Blossom-V6-7B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      null,
-      11
-     ]
-    },
-    {
-     "id": "1800llmsqwen2514bhindicustom",
-     "name": "1-800-LLMs/Qwen-2.5-14B-Hindi-Custom",
-     "variant": "instruct",
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      null,
       12
      ]
     }
