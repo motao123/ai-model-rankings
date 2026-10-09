@@ -1,22 +1,108 @@
 {
-  "source_id": "open_llm",
-  "board": "HF Open LLM Leaderboard v2（开源·已退役归档）",
-  "metric": "Average (%)",
-  "kind": "objective_benchmark",
-  "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
-  "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
-  "license": "归档数据（榜单已于 2025-03 退役）",
-  "retired": true,
-  "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考，与其他实时榜单不可直接比较。",
-  "publish_date": "2025-03",
-  "manual": true,
-  "manual_note": "本地网络无法访问 Hugging Face 数据集时展示此归档快照（HF Open LLM Leaderboard v2 退役前 Top 值）。GitHub Actions 每日从官方归档数据集抓取覆盖。",
-  "rows": [
-    {"rank": 1, "model": "MaziyarPanahi/calme-3.2-instruct-78b", "organization": "MaziyarPanahi", "score": 52.08, "type": "chat", "subscores": {"ifeval": 80.63, "bbh": 62.61, "math": 40.33, "gpqa": 20.36, "musr": 38.53, "mmlu_pro": 70.03}},
-    {"rank": 2, "model": "MaziyarPanahi/calme-3.1-instruct-78b", "organization": "MaziyarPanahi", "score": 51.29, "type": "chat", "subscores": {"ifeval": 81.36, "bbh": 62.41, "math": 39.27, "gpqa": 19.40, "musr": 36.50, "mmlu_pro": 68.72}},
-    {"rank": 3, "model": "dfurman/CalmeRys-78B-Orpo-v0.1", "organization": "dfurman", "score": 51.23, "type": "chat", "subscores": {"ifeval": 81.63, "bbh": 61.92, "math": 40.63, "gpqa": 20.02, "musr": 37.37, "mmlu_pro": 66.80}},
-    {"rank": 4, "model": "MaziyarPanahi/calme-2.4-rys-78b", "organization": "MaziyarPanahi", "score": 50.77, "type": "chat", "subscores": {"ifeval": 80.11, "bbh": 62.16, "math": 40.71, "gpqa": 20.36, "musr": 34.57, "mmlu_pro": 65.16}},
-    {"rank": 5, "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated", "organization": "huihui-ai", "score": 48.11, "type": "chat", "subscores": {"ifeval": 85.93, "bbh": 60.49, "math": 60.12, "gpqa": 19.35, "musr": 12.34, "mmlu_pro": 50.41}},
-    {"rank": 6, "model": "Qwen/Qwen2.5-72B-Instruct", "organization": "Qwen", "score": 47.98, "type": "chat", "subscores": {"ifeval": 86.38, "bbh": 61.87, "math": 59.82, "gpqa": 16.67, "musr": 11.74, "mmlu_pro": 51.40}}
-  ]
+ "source_id": "open_llm",
+ "board": "HF Open LLM Leaderboard v2（开源·已退役归档）",
+ "metric": "Average (%)",
+ "kind": "objective_benchmark",
+ "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+ "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+ "license": "归档数据（榜单已于 2025-03 退役）",
+ "retired": true,
+ "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考，与其他实时榜单不可直接比较。",
+ "publish_date": "2025-03",
+ "manual": true,
+ "manual_note": "本地网络无法访问 Hugging Face 数据集时展示此归档快照（HF Open LLM Leaderboard v2 退役前 Top 值）。GitHub Actions 每日从官方归档数据集抓取覆盖。",
+ "rows": [
+  {
+   "rank": 1,
+   "model": "MaziyarPanahi/calme-3.2-instruct-78b",
+   "organization": "MaziyarPanahi",
+   "score": 52.08,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 80.63,
+    "bbh": 62.61,
+    "math": 40.33,
+    "gpqa": 20.36,
+    "musr": 38.53,
+    "mmlu_pro": 70.03
+   }
+  },
+  {
+   "rank": 2,
+   "model": "MaziyarPanahi/calme-3.1-instruct-78b",
+   "organization": "MaziyarPanahi",
+   "score": 51.29,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 81.36,
+    "bbh": 62.41,
+    "math": 39.27,
+    "gpqa": 19.4,
+    "musr": 36.5,
+    "mmlu_pro": 68.72
+   }
+  },
+  {
+   "rank": 3,
+   "model": "dfurman/CalmeRys-78B-Orpo-v0.1",
+   "organization": "dfurman",
+   "score": 51.23,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 81.63,
+    "bbh": 61.92,
+    "math": 40.63,
+    "gpqa": 20.02,
+    "musr": 37.37,
+    "mmlu_pro": 66.8
+   }
+  },
+  {
+   "rank": 4,
+   "model": "MaziyarPanahi/calme-2.4-rys-78b",
+   "organization": "MaziyarPanahi",
+   "score": 50.77,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 80.11,
+    "bbh": 62.16,
+    "math": 40.71,
+    "gpqa": 20.36,
+    "musr": 34.57,
+    "mmlu_pro": 65.16
+   }
+  },
+  {
+   "rank": 5,
+   "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+   "organization": "huihui-ai",
+   "score": 48.11,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 85.93,
+    "bbh": 60.49,
+    "math": 60.12,
+    "gpqa": 19.35,
+    "musr": 12.34,
+    "mmlu_pro": 50.41
+   }
+  },
+  {
+   "rank": 6,
+   "model": "Qwen/Qwen2.5-72B-Instruct",
+   "organization": "Qwen",
+   "score": 47.98,
+   "type": "chat",
+   "subscores": {
+    "ifeval": 86.38,
+    "bbh": 61.87,
+    "math": 59.82,
+    "gpqa": 16.67,
+    "musr": 11.74,
+    "mmlu_pro": 51.4
+   }
+  }
+ ],
+ "as_of": "2025-03-31",
+ "reviewed_at": "2026-10-09"
 }

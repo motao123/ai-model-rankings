@@ -1,28 +1,114 @@
 {
-  "source_id": "lmarena_webdev",
-  "board": "Code Arena / WebDev 榜（真人盲测）",
-  "metric": "Arena Score",
-  "kind": "human_preference",
-  "source_url": "https://arena.ai/leaderboard/code/webdev",
-  "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
-  "license": "CC-BY-4.0",
-  "publish_date": "2026-10-01",
-  "manual": true,
-  "manual_note": "本地网络无法访问 Hugging Face 时展示此人工快照（依据 arena.ai 官方 Code Arena | WebDev，2026-10-01，838,388 票，138 模型）。GitHub Actions 每日抓取官方最新数据覆盖。",
-  "rows": [
-    {"rank": 1, "model": "claude-opus-5.5-max", "organization": "Anthropic", "score": 1815, "votes": 2062},
-    {"rank": 2, "model": "gpt-6-astra-max", "organization": "OpenAI", "score": 1788, "votes": 6123},
-    {"rank": 3, "model": "claude-sonnet-5.5-xhigh", "organization": "Anthropic", "score": 1786, "votes": 1531},
-    {"rank": 4, "model": "gpt-6.1-sol-max", "organization": "OpenAI", "score": 1758, "votes": 1620},
-    {"rank": 5, "model": "claude-fable-5.1-max", "organization": "Anthropic", "score": 1749, "votes": 6318},
-    {"rank": 6, "model": "claude-sonnet-5.5-high", "organization": "Anthropic", "score": 1715, "votes": 2527},
-    {"rank": 7, "model": "claude-opus-5-max", "organization": "Anthropic", "score": 1695, "votes": 16954},
-    {"rank": 8, "model": "gpt-6-sol-max", "organization": "OpenAI", "score": 1689, "votes": 3411},
-    {"rank": 9, "model": "gemini-4-argon-high", "organization": "Google", "score": 1680, "votes": 2422},
-    {"rank": 10, "model": "qwen3.8-max", "organization": "Alibaba", "score": 1671, "votes": 3454},
-    {"rank": 11, "model": "claude-opus-5-high", "organization": "Anthropic", "score": 1660, "votes": 21506},
-    {"rank": 12, "model": "kimi-k3-max", "organization": "Moonshot", "score": 1658, "votes": 16513},
-    {"rank": 13, "model": "muse-spark-1.3-max", "organization": "Meta", "score": 1657, "votes": 7249},
-    {"rank": 14, "model": "grok-4.7-xhigh", "organization": "xAI", "score": 1638, "votes": 3216}
-  ]
+ "source_id": "lmarena_webdev",
+ "board": "Code Arena / WebDev 榜（真人盲测）",
+ "metric": "Arena Score",
+ "kind": "human_preference",
+ "source_url": "https://arena.ai/leaderboard/code/webdev",
+ "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+ "license": "CC-BY-4.0",
+ "publish_date": "2026-10-01",
+ "manual": true,
+ "manual_note": "本地网络无法访问 Hugging Face 时展示此人工快照（依据 arena.ai 官方 Code Arena | WebDev，2026-10-01，838,388 票，138 模型）。GitHub Actions 每日抓取官方最新数据覆盖。",
+ "rows": [
+  {
+   "rank": 1,
+   "model": "claude-opus-5.5-max",
+   "organization": "Anthropic",
+   "score": 1815,
+   "votes": 2062
+  },
+  {
+   "rank": 2,
+   "model": "gpt-6-astra-max",
+   "organization": "OpenAI",
+   "score": 1788,
+   "votes": 6123
+  },
+  {
+   "rank": 3,
+   "model": "claude-sonnet-5.5-xhigh",
+   "organization": "Anthropic",
+   "score": 1786,
+   "votes": 1531
+  },
+  {
+   "rank": 4,
+   "model": "gpt-6.1-sol-max",
+   "organization": "OpenAI",
+   "score": 1758,
+   "votes": 1620
+  },
+  {
+   "rank": 5,
+   "model": "claude-fable-5.1-max",
+   "organization": "Anthropic",
+   "score": 1749,
+   "votes": 6318
+  },
+  {
+   "rank": 6,
+   "model": "claude-sonnet-5.5-high",
+   "organization": "Anthropic",
+   "score": 1715,
+   "votes": 2527
+  },
+  {
+   "rank": 7,
+   "model": "claude-opus-5-max",
+   "organization": "Anthropic",
+   "score": 1695,
+   "votes": 16954
+  },
+  {
+   "rank": 8,
+   "model": "gpt-6-sol-max",
+   "organization": "OpenAI",
+   "score": 1689,
+   "votes": 3411
+  },
+  {
+   "rank": 9,
+   "model": "gemini-4-argon-high",
+   "organization": "Google",
+   "score": 1680,
+   "votes": 2422
+  },
+  {
+   "rank": 10,
+   "model": "qwen3.8-max",
+   "organization": "Alibaba",
+   "score": 1671,
+   "votes": 3454
+  },
+  {
+   "rank": 11,
+   "model": "claude-opus-5-high",
+   "organization": "Anthropic",
+   "score": 1660,
+   "votes": 21506
+  },
+  {
+   "rank": 12,
+   "model": "kimi-k3-max",
+   "organization": "Moonshot",
+   "score": 1658,
+   "votes": 16513
+  },
+  {
+   "rank": 13,
+   "model": "muse-spark-1.3-max",
+   "organization": "Meta",
+   "score": 1657,
+   "votes": 7249
+  },
+  {
+   "rank": 14,
+   "model": "grok-4.7-xhigh",
+   "organization": "xAI",
+   "score": 1638,
+   "votes": 3216
+  }
+ ],
+ "as_of": "2026-10-01",
+ "reviewed_at": "2026-10-09"
 }

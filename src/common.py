@@ -76,6 +76,50 @@ def http_get(url, *, timeout=TIMEOUT, retries=RETRIES, as_json=False,
     raise RuntimeError(f"GET 连续 {retries} 次失败: {url} -> {last_err}")
 
 
+def http_get_bytes(url, *, timeout=TIMEOUT, retries=RETRIES, headers=None,
+                   max_bytes=None):
+    """GET 二进制内容（如 xlsx 等文档型数据源），带 UA/超时/重试与线性退避。
+    失败抛 RuntimeError（由调用方决定降级）。"""
+    hdrs = {
+        "User-Agent": USER_AGENT,
+        "Accept": "*/*",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    }
+    if headers:
+        hdrs.update(headers)
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(url, headers=hdrs, timeout=timeout)
+            resp.raise_for_status()
+            data = resp.content
+            return data[:max_bytes] if max_bytes else data
+        except Exception as exc:  # noqa: BLE001
+            last_err = exc
+            warn(f"GET(bytes) {url} 第 {attempt}/{retries} 次失败: {exc}")
+            if attempt < retries:
+                time.sleep(BACKOFF * attempt)
+    raise RuntimeError(f"GET(bytes) 连续 {retries} 次失败: {url} -> {last_err}")
+
+
+def probe_url(url, *, timeout=15, headers=None) -> bool:
+    """轻量存在性探测：单次 GET，只看是否 200。不重试、不抛异常、不读全量 body。
+
+    专用于"候选路径逐个试"的场景（例如按月份探测榜单文件），
+    避免 http_get 的重试+退避在大量 404 上放大请求数与耗时。
+    """
+    hdrs = {"User-Agent": USER_AGENT, "Accept": "*/*"}
+    if headers:
+        hdrs.update(headers)
+    try:
+        resp = requests.get(url, headers=hdrs, timeout=timeout, stream=True)
+        ok = resp.status_code == 200
+        resp.close()
+        return ok
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def read_json(path, default=None):
     try:
         with open(path, "r", encoding="utf-8") as fh:

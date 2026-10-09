@@ -53,6 +53,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python src/report_issue.py
 
+      # 人工兜底数据的过期提醒：data/manual/ 手工维护、会随时间变旧，
+      # 超过阈值（默认 45 天未复核）时自动开/更新 manual-stale Issue。
+      - name: Check manual fallback freshness (auto-issue)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python src/check_manual.py
+
       - name: Commit and push data
         run: |
           git config user.name "github-actions[bot]"

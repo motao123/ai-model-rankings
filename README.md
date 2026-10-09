@@ -29,33 +29,37 @@
 
 ```
 ├── .github/workflows/cron.yml   # 每天 UTC 0 点抓取 + workflow_dispatch 手动触发
+├── .github/workflows/selftest.yml # 手动触发：兜底通道自检（演练镜像层，排障/验收用）
 ├── src/
 │   ├── main.py                  # 入口：串行抓取 → 清洗 → 合并 → 趋势聚合
 │   ├── common.py                # HTTP(UA/超时/重试)、快照管理、降级读取
 │   ├── models.py                # 模型注册表：厂商/国别/开源标签、跨榜别名归一化
 │   ├── fetch_lmarena.py         # LMArena（HF 数据集双通道）
 │   ├── fetch_aa.py              # Artificial Analysis（页面内嵌 JSON 解析）
-│   ├── fetch_superclue.py       # SuperCLUE（API 探测 + HTML 兜底 + 人工降级）
+│   ├── fetch_superclue.py       # SuperCLUE（官方静态 XLSX 直链探测 + 解析 + 人工降级）
 │   ├── fetch_livecodebench.py   # LiveCodeBench（官方 JSON）
 │   ├── fetch_openllm.py         # HF Open LLM v2（归档数据集）
 │   ├── fallback.py              # 多层兜底引擎：数据契约熔断 / LKG / 第三方镜像 / 失败报告
 │   ├── report_issue.py          # 把降级报告同步为 GitHub Issue（自愈闭环）
+│   ├── check_manual.py          # 人工兜底数据过期提醒（超期自动开 manual-stale Issue）
+│   ├── selftest_channels.py     # 兜底通道自检（主动演练 Wayback 镜像层）
 │   └── build_trend.py           # 从历史快照聚合趋势数据 → data/trend.json
 ├── data/
 │   ├── raw/<source>_<日期>.json # 每日原始快照（历史趋势的真相源，git 保留）
-│   ├── manual/<source>.json     # 人工兜底数据（自动抓取失败时降级展示，页面明确标注）
+│   ├── manual/<source>.json     # 人工兜底数据（含 as_of 数据日期 + reviewed_at 复核日期，供过期提醒）
 │   ├── state/lkg.json           # 最后已知良好（仅记录通过契约的批次）
 │   ├── state/failures.json      # 本轮降级/失败报告（供工作流开 Issue、前端横幅）
+│   ├── state/manual_check.json  # 人工数据过期检查结果（上次报警的源集合，避免重复刷屏）
 │   ├── merged.json              # 前端直接消费（含 trend 升降、新上榜、共识置信度）
 │   ├── trend.json               # 历史排名趋势（折线图数据）
 │   └── meta.json                # 更新时间、失败/降级记录
 ├── index.html                   # 单文件前端（内联 CSS/JS，零外部依赖，SVG 手绘图表）
 ├── sw.js                        # Service Worker：离线可访问 + 数据 stale-while-revalidate
 ├── assets/                      # 品牌 / 分享素材
-│   ├── og-card.html             # OG 卡片源文件（1200×630，浅色，与站点同款设计变量）
-│   ├── og-card-dark.html        # 同上，暗色变体（墨黑 + 暖金）
-│   ├── og-cover.png             # 浅色成品 —— index.html 的 og:image / twitter:image 指向它
-│   └── og-cover-dark.png        # 暗色成品 —— 建议用于 GitHub 仓库 Settings 的 Social preview
+│   ├── og-card.html             # OG 卡片源文件（1200×630，浅色变体）
+│   ├── og-card-dark.html        # 同上，暗色变体（墨黑 + 暖金，站点主视觉）
+│   ├── og-cover.png             # 浅色成品（备用）
+│   └── og-cover-dark.png        # 暗色成品 —— 页面 og:image / twitter:image 与仓库 Social preview 统一用它
 ├── sitemap.xml / robots.txt / 404.html / .nojekyll
 └── requirements.txt
 ```
@@ -77,6 +81,11 @@
 页面顶部有「数据新鲜度横幅」，任一榜降级都会写明**实际来源与滞后天数**，绝不静默展示旧数据。
 
 连续降级会由 `report_issue.py` 自动开/更新 GitHub Issue（带 `data-degraded` 标签），恢复后自动关闭。
+`data/manual/` 是**手工维护**的最后一级兜底，`check_manual.py` 会在某文件距上次复核（`reviewed_at`）
+超过 45 天时自动开/更新 `manual-stale` Issue，避免"兜底数据本身悄悄过期"却无人察觉。
+
+最外层镜像通道可随时主动演练：Actions → **Channel self-test** → Run workflow
+（跑 `src/selftest_channels.py`，在能访问 archive.org 的环境里验证"可用性查询 → `id_` 原始捕获 → 重解析"整条链路）。
 
 字段缺失一律降级为 `None` 展示「—」，不报错中断；HTTP 层带 UA、45s 超时、3 次重试、线性退避；全部失败时**保留旧 `merged.json` 不覆盖**。
 
@@ -101,9 +110,14 @@ python -m venv .venv && .venv\Scripts\pip install -r requirements.txt   # Window
 
 ## 已知限制
 
-- SuperCLUE 前端为混淆 SPA，自动通道目前打不通，默认展示人工快照（依据官方月度报告），页面有明确标注；
+- **SuperCLUE：已实现自动抓取**。官方榜单不是 API，而是**静态 XLSX 直链**
+  （`/data/generalboard/<期次>.xlsx`，期次形如 `2026年7月`）。抓取器按"近若干年 × 逐月 + 年度测评"
+  生成候选、从新到旧探测存在性，命中即下载并解析「总排行榜」sheet；期次由探测得出，**不硬编码**，
+  因此上游上线新期次后无需改代码。仅当该通道全部失败时才降级到 `data/manual/superclue.json`（页面明确标注）；
 - HF Open LLM Leaderboard 已于 2025-03 退役，本站抓的是**归档数据集**，页面标注「已退役归档」；
-- Artificial Analysis 无官方公开数据文件，解析其页面内嵌 JSON，前端改版可能导致失败（自动降级，见上）。
+- Artificial Analysis 无官方公开数据文件，解析其页面内嵌 JSON，前端改版可能导致失败（自动降级，见上）；
+- Internet Archive（镜像通道）在部分网络环境不可达（如本机常见代理 502），属已知环境限制，
+  不影响主链路，可用 Channel self-test 在线上确认。
 
 ## License
 

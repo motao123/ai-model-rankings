@@ -6,9 +6,10 @@
  "source_url": "https://www.superclueai.com/generalpage",
  "dataset_url": "https://www.superclueai.com/data/generalboard/",
  "license": "© SuperCLUE，本站仅聚合展示",
+ "fetched_at": "2026-10-09T05:44:01Z",
  "publish_date": "2026-07-01",
- "manual": true,
- "manual_note": "SuperCLUE 自动通道（官方静态 XLSX 直链）失败时的兜底快照；内容取自官方 2026年7月 通用榜 XLSX 的「总排行榜」。",
+ "data_period": "2026年7月",
+ "channel": "auto",
  "rows": [
   {
    "model": "Qwen3.8-Max-0902(max)",
@@ -118,8 +119,5 @@
    "score": 48.16,
    "rank": 18
   }
- ],
- "as_of": "2026-07-01",
- "data_period": "2026年7月",
- "reviewed_at": "2026-10-09"
+ ]
 }

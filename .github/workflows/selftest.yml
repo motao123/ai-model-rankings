@@ -1,0 +1,35 @@
+name: Channel self-test
+
+# 手动触发的兜底通道自检。
+# 专用于演练"最外层镜像通道"（Internet Archive Wayback）——本机网络通常访问不了
+# archive.org，只能在 Actions 这类环境里做真实可达性与重解析验证。
+# 不做定时调度：它不是数据管道的一部分，而是排障/验收工具。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run channel self-test
+        run: python src/selftest_channels.py
