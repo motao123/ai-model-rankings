@@ -725,23 +725,13 @@
      ]
     },
     {
-     "id": "openbuddyopenbuddyllama3370bv241131k",
-     "name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      15,
-      9
-     ]
-    },
-    {
      "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
      "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": null,
      "region": null,
      "ranks": [
       17,
-      10
+      9
      ]
     },
     {
@@ -751,7 +741,7 @@
      "region": null,
      "ranks": [
       21,
-      11
+      10
      ]
     },
     {
@@ -761,6 +751,134 @@
      "region": null,
      "ranks": [
       22,
+      11
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme23rys78b",
+     "name": "MaziyarPanahi/calme-2.3-rys-78b",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      23,
+      12
+     ]
+    }
+   ]
+  },
+  "superclue": {
+   "board": "SuperCLUE 中文大模型综合榜",
+   "metric": "综合得分",
+   "source_url": "https://www.superclueai.com/generalpage",
+   "dates": [
+    "2026-10-09"
+   ],
+   "models": [
+    {
+     "id": "qwen3.8-max",
+     "name": "Qwen3.8-Max-0902(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      3
+     ]
+    },
+    {
+     "id": "deepseek-v4.1-flash",
+     "name": "DeepSeek-V4.1-Flash(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      2
+     ]
+    },
+    {
+     "id": "qwen3.8-max",
+     "name": "Qwen3.8-Max(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      3
+     ]
+    },
+    {
+     "id": "glm-5.3",
+     "name": "GLM-5.3(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      4
+     ]
+    },
+    {
+     "id": "kimi-k3",
+     "name": "Kimi-K3(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      5
+     ]
+    },
+    {
+     "id": "deepseek-v4-pro",
+     "name": "DeepSeek-V4-Pro-0813(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      11
+     ]
+    },
+    {
+     "id": "glm-5.3-flash",
+     "name": "GLM-5.3-Flash(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      7
+     ]
+    },
+    {
+     "id": "qwen3.8-flash",
+     "name": "Qwen3.8-Flash(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      8
+     ]
+    },
+    {
+     "id": "doubao-seed-2.1-pro",
+     "name": "Doubao-Seed-2.1-pro(high)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      9
+     ]
+    },
+    {
+     "id": "deepseek-v4-flash",
+     "name": "DeepSeek-V4-Flash(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      10
+     ]
+    },
+    {
+     "id": "deepseek-v4-pro",
+     "name": "DeepSeek-V4-Pro(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      11
+     ]
+    },
+    {
+     "id": "glm-5.2",
+     "name": "GLM-5.2(max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
       12
      ]
     }

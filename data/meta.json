@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-09T04:11:05Z",
- "status": "partial",
+ "generated_at": "2026-10-09T05:50:19Z",
+ "status": "ok",
  "boards": [
   "lmarena_text",
   "aa_intelligence",
@@ -10,13 +10,6 @@
   "livecodebench",
   "open_llm"
  ],
- "degraded": 1,
- "failures": [
-  {
-   "source": "superclue",
-   "status": "fallback",
-   "layer": "manual",
-   "error": "抓取异常: SuperCLUE: 所有自动通道失败，需降级到人工数据"
-  }
- ]
+ "degraded": 0,
+ "failures": []
 }

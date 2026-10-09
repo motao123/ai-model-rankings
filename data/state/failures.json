@@ -1,14 +1,7 @@
 {
- "generated_at": "2026-10-09T04:11:05Z",
+ "generated_at": "2026-10-09T05:50:19Z",
  "date": "2026-10-09",
- "total": 1,
- "degraded": 1,
- "items": [
-  {
-   "source": "superclue",
-   "status": "fallback",
-   "layer": "manual",
-   "error": "抓取异常: SuperCLUE: 所有自动通道失败，需降级到人工数据"
-  }
- ]
+ "total": 0,
+ "degraded": 0,
+ "items": []
 }
