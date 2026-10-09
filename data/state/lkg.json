@@ -3,12 +3,36 @@
   "date": "2026-10-09",
   "rows": 10,
   "checksum": "40b2af418fdde1c7",
-  "promoted_at": "2026-10-09T02:10:06Z"
+  "promoted_at": "2026-10-09T02:14:14Z"
  },
  "livecodebench": {
   "date": "2026-10-09",
   "rows": 28,
   "checksum": "594295cb3a7b6f68",
-  "promoted_at": "2026-10-09T02:10:07Z"
+  "promoted_at": "2026-10-09T02:14:14Z"
+ },
+ "lmarena_text": {
+  "date": "2026-10-09",
+  "rows": 413,
+  "checksum": "354b3339c201f6ad",
+  "promoted_at": "2026-10-09T02:14:13Z"
+ },
+ "lmarena_webdev": {
+  "date": "2026-10-09",
+  "rows": 139,
+  "checksum": "185a5ebb660fdd25",
+  "promoted_at": "2026-10-09T02:14:13Z"
+ },
+ "lmarena_agent": {
+  "date": "2026-10-09",
+  "rows": 50,
+  "checksum": "a8829ec287ccb9a3",
+  "promoted_at": "2026-10-09T02:14:13Z"
+ },
+ "open_llm": {
+  "date": "2026-10-09",
+  "rows": 60,
+  "checksum": "3d6d93c339abae55",
+  "promoted_at": "2026-10-09T02:14:39Z"
  }
 }

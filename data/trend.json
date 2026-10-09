@@ -247,7 +247,8 @@
    "metric": "IPS Score",
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -256,6 +257,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -265,6 +267,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -274,6 +277,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      3,
       3
      ]
     },
@@ -283,6 +287,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      4,
       4
      ]
     },
@@ -292,6 +297,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      5,
       5
      ]
     },
@@ -301,6 +307,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -310,6 +317,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -319,6 +327,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      8,
       8
      ]
     },
@@ -328,6 +337,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -337,6 +347,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      10,
       10
      ]
     },
@@ -346,6 +357,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      11,
       11
      ]
     },
@@ -355,6 +367,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      12,
       12
      ]
     }
@@ -365,7 +378,8 @@
    "metric": "Arena Score",
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -374,6 +388,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -383,6 +398,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -392,6 +408,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      3,
       3
      ]
     },
@@ -401,6 +418,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -410,6 +428,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      7,
       7
      ]
     },
@@ -419,6 +438,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -428,6 +448,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      7,
       7
      ]
     },
@@ -437,6 +458,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      8,
       8
      ]
     },
@@ -446,6 +468,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -455,6 +478,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      10,
       10
      ]
     },
@@ -464,6 +488,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      14,
       14
      ]
     },
@@ -473,6 +498,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      12,
       12
      ]
     }
@@ -483,7 +509,8 @@
    "metric": "Arena Score",
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -492,6 +519,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -501,6 +529,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -510,6 +539,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -519,6 +549,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      4,
       4
      ]
     },
@@ -528,6 +559,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      5,
       5
      ]
     },
@@ -537,6 +569,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      6,
       6
      ]
     },
@@ -546,6 +579,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      12,
       12
      ]
     },
@@ -555,6 +589,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      8,
       8
      ]
     },
@@ -564,6 +599,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      9,
       9
      ]
     },
@@ -573,6 +609,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      11,
       11
      ]
     },
@@ -582,6 +619,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      11,
       11
      ]
     },
@@ -591,6 +629,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      12,
       12
      ]
     }
@@ -601,7 +640,8 @@
    "metric": "Average (%)",
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dates": [
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
    ],
    "models": [
     {
@@ -610,6 +650,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      1,
       1
      ]
     },
@@ -619,6 +660,7 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      2,
       2
      ]
     },
@@ -628,16 +670,8 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      3,
       3
-     ]
-    },
-    {
-     "id": "qwenqwen2572binstruct",
-     "name": "Qwen/Qwen2.5-72B-Instruct",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      4
      ]
     },
     {
@@ -646,16 +680,8 @@
      "vendor": null,
      "region": null,
      "ranks": [
-      5
-     ]
-    },
-    {
-     "id": "saxolinkbrickshorizonaiavengersv132b",
-     "name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      6
+      5,
+      4
      ]
     },
     {
@@ -664,7 +690,8 @@
      "vendor": null,
      "region": null,
      "ranks": [
-      7
+      7,
+      5
      ]
     },
     {
@@ -673,7 +700,8 @@
      "vendor": null,
      "region": null,
      "ranks": [
-      8
+      8,
+      6
      ]
     },
     {
@@ -682,16 +710,8 @@
      "vendor": null,
      "region": null,
      "ranks": [
-      9
-     ]
-    },
-    {
-     "id": "sakaltiultiima72b",
-     "name": "Sakalti/ultiima-72B",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      10
+      9,
+      7
      ]
     },
     {
@@ -700,15 +720,47 @@
      "vendor": null,
      "region": null,
      "ranks": [
+      11,
+      8
+     ]
+    },
+    {
+     "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
+     "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      17,
+      9
+     ]
+    },
+    {
+     "id": "finguairomboultima32b",
+     "name": "FINGU-AI/RomboUltima-32B",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      21,
+      10
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme21rys78b",
+     "name": "MaziyarPanahi/calme-2.1-rys-78b",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      22,
       11
      ]
     },
     {
-     "id": "qwenqwen2532binstruct",
-     "name": "Qwen/Qwen2.5-32B-Instruct",
+     "id": "maziyarpanahicalme23rys78b",
+     "name": "MaziyarPanahi/calme-2.3-rys-78b",
      "vendor": null,
      "region": null,
      "ranks": [
+      23,
       12
      ]
     }
