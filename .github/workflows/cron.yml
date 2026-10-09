@@ -6,9 +6,10 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch: {}   # 支持手动触发，调试必备
 
-# 允许工作流把数据文件提交回仓库
+# 允许工作流把数据文件提交回仓库，并把降级情况同步成 Issue
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: update-rankings
@@ -36,6 +37,14 @@ jobs:
 
       - name: Fetch and merge rankings
         run: python src/main.py
+
+      # 自愈闭环：把降级/失败同步成 Issue；恢复时自动关闭。
+      # 不阻断流程（降级是设计内的容错行为），仅做人工可见的提醒。
+      - name: Report degraded sources (auto-issue)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python src/report_issue.py
 
       - name: Commit and push data
         run: |

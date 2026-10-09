@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""入口：串行抓取各源 -> 单源降级 -> 写历史快照 -> 对比上期算升降 -> 合并 merged.json。
+"""入口：串行抓取各源 -> 契约熔断 -> 多层降级 -> 写历史快照 -> 对比上期算升降 -> 合并 merged.json。
 
 设计原则（对齐用户需求）：
-1. 单源失败不影响整体：每个源 try/except，失败时依次降级为
-   (a) 最近一次历史快照  (b) 人工维护数据 data/manual/<source>.json。
-2. 字段缺失降级而非报错：各 fetch 脚本内部已对缺失字段填 None。
-3. data/raw/<source>_<date>.json 保留每日快照，是趋势折线的真相源。
-4. 不修改原始分数、不跨榜计算综合总分：merged.json 只做字段对齐与
-   升降对比，各榜分数保持官方口径原样。
+1. 单源失败不影响整体：每个源 try/except。降级链按可信度排序，逐层尝试：
+   (a) 第三方镜像快照（Internet Archive，独立信任域）
+   (b) LKG 最后已知良好（仅记录通过契约的批次）
+   (c) 最近历史快照  (d) 人工维护数据 data/manual/<source>.json
+2. 数据契约熔断：实时结果先过契约（行数下限/跌幅/分数完整度），
+   不合格视为失败、不落盘、不晋级 LKG —— 坏数据永不进入展示层。
+3. 字段缺失降级而非报错：各 fetch 脚本内部已对缺失字段填 None。
+4. data/raw/<source>_<date>.json 保留每日快照，是趋势折线的真相源。
+5. 不修改原始分数、不跨榜计算综合总分：merged.json 只做字段对齐、
+   升降对比与方法论分组的"共识置信度"标签。
 
 运行：python src/main.py
-产物：data/raw/*.json（快照）、data/merged.json（前端消费）、data/meta.json
+产物：data/raw/*.json（快照）、data/merged.json（前端消费）、data/meta.json、
+     data/state/lkg.json（最后已知良好）、data/state/failures.json（降级报告）
 """
 
 import os
@@ -25,6 +30,7 @@ from common import (  # noqa: E402
     latest_snapshot_before, load_manual, snapshot_path,
 )
 from models import enrich, canonical_id  # noqa: E402
+import fallback as fb_engine  # noqa: E402
 
 import fetch_lmarena  # noqa: E402
 import fetch_aa  # noqa: E402
@@ -32,6 +38,20 @@ import fetch_livecodebench  # noqa: E402
 import fetch_openllm  # noqa: E402
 import fetch_superclue  # noqa: E402
 import build_trend  # noqa: E402
+
+
+# 声明"支持第三方镜像通道"的源：活源失败时可用 Wayback 快照重解析。
+# 数据集型源（HF datasets-server）无对应镜像页面，故不登记。
+_MIRROR_REGISTRY = {
+    fetch_aa.SOURCE_ID: fetch_aa,
+}
+
+# 方法论分组：用于"多源交叉置信度"，绝不做跨榜分数运算
+METHOD_GROUPS = {
+    "lmarena_text": "human", "lmarena_webdev": "human", "lmarena_agent": "human",
+    "aa_intelligence": "objective", "livecodebench": "objective", "open_llm": "objective",
+    "superclue": "chinese",
+}
 
 
 def _source_ids_for_lmarena():
@@ -46,9 +66,9 @@ BOARD_ORDER = [
 
 
 def _build_task_map(date_str):
-    """source_id -> (可调用 fetch 的函数, 是否 lmarena 子集)。
+    """返回 {task_key: 无参可调用}，调用后得到 {source_id: payload}。
 
-    lmarena 一次抓取产出多个 source_id，这里特殊处理。"""
+    lmarena 一次抓取产出多个 source_id，用 "_lmarena_group" 聚合处理。"""
     tasks = {}
 
     def lmarena_task():
@@ -62,23 +82,89 @@ def _build_task_map(date_str):
     return tasks
 
 
+def _prev_payload_for_check(source_id, date_str):
+    """契约校验的比较基准：优先用 LKG（已通过契约），否则用最近历史快照。"""
+    got = fb_engine.lkg_payload(source_id)
+    if got:
+        return got[0]
+    _, prev = latest_snapshot_before(source_id, date_str)
+    return prev
+
+
+def _mirror_payload(source_id, date_str):
+    """B 层：第三方镜像（Internet Archive）。仅对登记在册的 HTML 源启用。"""
+    mod = _MIRROR_REGISTRY.get(source_id)
+    if not mod or not getattr(mod, "MIRROR_OK", False):
+        return None
+    src_url = getattr(mod, "SOURCE_URL", None)
+    if not src_url:
+        return None
+    snap = fb_engine.wayback_fetch_text(src_url)
+    if not snap:
+        return None
+    try:
+        payload = mod.parse_html(
+            snap["html"], date_str,
+            channel="wayback-mirror",
+            mirror_note=f"活源失败，取自 Internet Archive 快照 {snap['timestamp']}",
+        )
+    except Exception as exc:  # noqa: BLE001
+        warn(f"镜像[{source_id}] 解析失败: {exc}")
+        return None
+    return payload
+
+
 def _fallback_payload(source_id, date_str):
-    """降级：先找最近历史快照，再找人工数据。返回 payload 或 None。"""
+    """替代降级链（按可信度排序，全部独立于"活源成功"这一前提）：
+
+      1. mirror   第三方镜像快照（独立信任域，与本站无关）
+      2. lkg      最后已知良好（通过契约的批次，可信度高于"最近快照"）
+      3. snapshot 最近历史快照（兼容原方案）
+      4. manual   人工维护数据（页面明确标注）
+
+    返回 (payload, layer)；全部不可用返回 (None, None)。
+    """
+    # 1) 镜像通道
+    mir = _mirror_payload(source_id, date_str)
+    if mir and mir.get("rows"):
+        mir["stale"] = True
+        mir["stale_from"] = date_str
+        log(f"降级[{source_id}] -> 第三方镜像快照（{len(mir['rows'])} 行）")
+        return mir, "mirror"
+
+    # 2) LKG：最后已知良好
+    got = fb_engine.lkg_payload(source_id)
+    if got:
+        payload, lkg_date = got
+        payload = dict(payload)
+        payload["stale"] = True
+        payload["stale_from"] = lkg_date
+        payload["channel"] = "lkg"
+        log(f"降级[{source_id}] -> LKG 最后已知良好（{lkg_date}，{len(payload['rows'])} 行）")
+        return payload, "lkg"
+
+    # 3) 最近历史快照
     prev_date, prev = latest_snapshot_before(source_id, date_str)
     if prev and prev.get("rows"):
-        log(f"降级[{source_id}] -> 使用 {prev_date} 历史快照（{len(prev['rows'])} 行）")
         prev = dict(prev)
         prev["stale"] = True
         prev["stale_from"] = prev_date
-        return prev
+        prev["channel"] = "snapshot"
+        log(f"降级[{source_id}] -> {prev_date} 历史快照（{len(prev['rows'])} 行）")
+        return prev, "snapshot"
+
+    # 4) 人工数据
     manual = load_manual(source_id)
     if manual and manual.get("rows"):
-        log(f"降级[{source_id}] -> 使用人工维护数据（{len(manual['rows'])} 行）")
         manual = dict(manual)
         manual["stale"] = True
         manual["manual"] = True
-        return manual
-    return None
+        manual["channel"] = "manual"
+        manual["stale_from"] = manual.get("publish_date")
+        log(f"降级[{source_id}] -> 人工维护数据（{len(manual['rows'])} 行）")
+        return manual, "manual"
+
+    return None, None
 
 
 def _add_trend(payload, source_id, date_str):
@@ -113,6 +199,17 @@ def _add_trend(payload, source_id, date_str):
     return payload
 
 
+def _degrade(source_id, date_str, error, failures, collected, status="fallback"):
+    """执行降级链并把结果记入 collected / failures。"""
+    payload, layer = _fallback_payload(source_id, date_str)
+    if payload:
+        collected[source_id] = _add_trend(payload, source_id, date_str)
+        failures.append({"source": source_id, "status": status,
+                         "layer": layer, "error": error})
+    else:
+        failures.append({"source": source_id, "status": "failed", "error": error})
+
+
 def main():
     date_str = today_str()
     os.makedirs(RAW_DIR, exist_ok=True)
@@ -131,33 +228,38 @@ def main():
             # 该组下所有 source_id 各自降级
             group_ids = _source_ids_for_lmarena() if task_key == "_lmarena_group" else [task_key]
             for sid in group_ids:
-                fb = _fallback_payload(sid, date_str)
-                if fb:
-                    collected[sid] = _add_trend(fb, sid, date_str)
-                    failures.append({"source": sid, "status": "fallback", "error": str(exc)})
-                else:
-                    failures.append({"source": sid, "status": "failed", "error": str(exc)})
+                _degrade(sid, date_str, f"抓取异常: {exc}", failures, collected)
             continue
 
-        # 成功：写快照 + 加 trend
+        # 成功：先过数据契约（熔断）。不合格视为失败，不落盘、不晋级，
+        # 直接进入降级链——坏数据永不进入展示层。
         for sid, payload in result.items():
+            prev = _prev_payload_for_check(sid, date_str)
+            ok, reasons = fb_engine.check_contract(sid, payload, prev)
+            if not ok:
+                warn(f"[{sid}] 数据契约不通过: {'; '.join(reasons)}")
+                _degrade(sid, date_str, "契约不通过: " + "; ".join(reasons),
+                         failures, collected, status="degraded")
+                continue
             write_snapshot(sid, payload, date_str)
+            fb_engine.promote_lkg(sid, payload, date_str)
             collected[sid] = _add_trend(payload, sid, date_str)
 
         # lmarena 组内若个别子集失败，补充降级
         if task_key == "_lmarena_group":
             for sid in _source_ids_for_lmarena():
                 if sid not in collected:
-                    fb = _fallback_payload(sid, date_str)
-                    if fb:
-                        collected[sid] = _add_trend(fb, sid, date_str)
-                        failures.append({"source": sid, "status": "fallback"})
+                    _degrade(sid, date_str, "组内子集缺失", failures, collected)
+
+    # 降级/失败情况落盘（供工作流自动开 Issue 与前端横幅展示）
+    fb_engine.write_failures(failures, date_str)
 
     if not collected:
         warn("所有数据源均失败，保留旧的 merged.json，不覆盖。")
         write_json(os.path.join(DATA_DIR, "meta.json"), {
             "generated_at": now_utc_iso(),
             "status": "all_failed",
+            "degraded": len(failures),
             "failures": failures,
         })
         return
@@ -175,6 +277,8 @@ def main():
         "generated_at": merged["generated_at"],
         "status": "ok" if not failures else "partial",
         "boards": list(merged["boards"].keys()),
+        "degraded": len([f for f in failures
+                         if f.get("status") in ("fallback", "degraded", "failed")]),
         "failures": failures,
     })
 
@@ -201,6 +305,10 @@ def build_merged(collected, date_str, failures):
             "publish_date": payload.get("publish_date"),
             "compared_with": payload.get("compared_with"),
             "stale": payload.get("stale", False),
+            "stale_from": payload.get("stale_from"),
+            "stale_days": fb_engine.stale_days(payload) if payload.get("stale") else 0,
+            "channel": payload.get("channel"),
+            "mirror_note": payload.get("mirror_note"),
             "manual": payload.get("manual", False),
             "manual_note": payload.get("manual_note"),
             "retired": payload.get("retired", False),
@@ -260,6 +368,21 @@ def build_cross(collected):
             }
 
     # 只保留出现在 >=2 个榜的模型才有"交叉对比"意义，但 1 个也留着供浏览
+    # 多源共识置信度：按"方法论分组"统计覆盖度。
+    # 注意：这不是跨榜分数运算，而是"该模型是否在相互独立的方法论下都被评测到"
+    # 的存在性证据分级（类似多预言机共识，但只做标签、不合成数值）。
+    for v in acc.values():
+        groups = {METHOD_GROUPS.get(sid, "other") for sid in v["appearances"]}
+        v["group_count"] = len(groups)
+        v["has_stale"] = any((collected.get(sid) or {}).get("stale")
+                             for sid in v["appearances"])
+        if len(groups) >= 2:
+            v["confidence"] = "verified"   # 跨方法论多源
+        elif len(v["appearances"]) >= 2:
+            v["confidence"] = "partial"    # 同方法论多榜
+        else:
+            v["confidence"] = "single"     # 单源
+
     cross = [v for v in acc.values() if v["appearances"]]
     # 按出现榜单数降序、再按 lmarena_text 名次升序，方便前端默认展示
     cross.sort(key=lambda m: (

@@ -38,27 +38,42 @@
 │   ├── fetch_superclue.py       # SuperCLUE（API 探测 + HTML 兜底 + 人工降级）
 │   ├── fetch_livecodebench.py   # LiveCodeBench（官方 JSON）
 │   ├── fetch_openllm.py         # HF Open LLM v2（归档数据集）
+│   ├── fallback.py              # 多层兜底引擎：数据契约熔断 / LKG / 第三方镜像 / 失败报告
+│   ├── report_issue.py          # 把降级报告同步为 GitHub Issue（自愈闭环）
 │   └── build_trend.py           # 从历史快照聚合趋势数据 → data/trend.json
 ├── data/
 │   ├── raw/<source>_<日期>.json # 每日原始快照（历史趋势的真相源，git 保留）
 │   ├── manual/<source>.json     # 人工兜底数据（自动抓取失败时降级展示，页面明确标注）
-│   ├── merged.json              # 前端直接消费（含 trend 升降、新上榜标记）
+│   ├── state/lkg.json           # 最后已知良好（仅记录通过契约的批次）
+│   ├── state/failures.json      # 本轮降级/失败报告（供工作流开 Issue、前端横幅）
+│   ├── merged.json              # 前端直接消费（含 trend 升降、新上榜、共识置信度）
 │   ├── trend.json               # 历史排名趋势（折线图数据）
 │   └── meta.json                # 更新时间、失败/降级记录
 ├── index.html                   # 单文件前端（内联 CSS/JS，零外部依赖，SVG 手绘图表）
+├── sw.js                        # Service Worker：离线可访问 + 数据 stale-while-revalidate
 ├── sitemap.xml / robots.txt / 404.html / .nojekyll
 └── requirements.txt
 ```
 
-## 容错与降级设计
+## 容错与降级设计（多层独立冗余）
 
-单源失败**不影响整体**，每个源独立走三级降级：
+单源失败**不影响整体**。每轮抓取先过**数据契约熔断**，不合格视为失败、不落盘、不晋级；
+随后按可信度依次尝试四层兜底，**每一层都独立于"活源成功"这一前提**：
 
-1. **实时抓取**（官方 API / 数据集 / JSON 优先，HTML 解析兜底）；
-2. **最近历史快照**（`data/raw/` 中上一日数据，页面标「旧快照」）；
-3. **人工维护数据**（`data/manual/<source>.json`，页面标「人工快照」并注明依据与日期）。
+| 层 | 机制 | 信任域 | 页面标注 |
+|---|---|---|---|
+| A 熔断 | 行数下限 / 较上期跌幅 / 分数完整度校验 | 本站 | — |
+| B 镜像 | 活源失败时改取 **Internet Archive** 最近快照重解析 | 完全外部第三方 | 「兜底数据 · 第三方镜像快照」 |
+| C LKG | 回填**上一次通过契约**的批次（比"最近快照"更可信） | 本站（已校验） | 「兜底数据 · 已知良好回退」 |
+| D 传统 | 最近历史快照 → `data/manual/` 人工数据 | 本站 | 「兜底数据 · 历史快照 / 人工数据」 |
 
-字段缺失一律降级为 `None` 展示「—」，不报错中断；HTTP 层带 UA、45s 超时、3 次重试、线性退避；全部失败时**保留旧 merged.json 不覆盖**，页面照常显示旧数据而非白屏。
+交付侧再加一层客户端容灾：`data/*.json` 支持**同源 → jsDelivr CDN → GitHub raw 多端点 failover**，
+叠加 **Service Worker 离线缓存**与 **localStorage 末次成功快照**——上游与仓库同时不可用时页面依旧不白屏。
+页面顶部有「数据新鲜度横幅」，任一榜降级都会写明**实际来源与滞后天数**，绝不静默展示旧数据。
+
+连续降级会由 `report_issue.py` 自动开/更新 GitHub Issue（带 `data-degraded` 标签），恢复后自动关闭。
+
+字段缺失一律降级为 `None` 展示「—」，不报错中断；HTTP 层带 UA、45s 超时、3 次重试、线性退避；全部失败时**保留旧 `merged.json` 不覆盖**。
 
 ## 本地运行
 

@@ -87,6 +87,16 @@ nav.anchor a:hover{color:var(--ink);background:var(--bg-sunken);border-color:var
 .disclaimer b{color:#4f3d0b}
 .disclaimer a{color:var(--gold);text-decoration:underline}
 
+/* ---------- Freshness banner（数据新鲜度 / 降级透明） ---------- */
+.freshness{margin:0 0 20px;padding:10px 16px;border-radius:3px;font-size:12.5px;line-height:1.6;display:none;border:1px solid var(--line);background:var(--bg-alt);color:var(--ink-2)}
+.freshness.show{display:block}
+.freshness.warn{background:var(--gold-soft);border-color:#e7d6a8;border-left:3px solid var(--gold);color:#6b5410}
+.freshness.offline{background:#f4f4f2;border-left:3px solid #8a8378;color:#57534b}
+.freshness .tag{font-weight:700;font-family:monospace;margin-right:6px}
+.freshness code{background:rgba(0,0,0,.05);padding:1px 5px;border-radius:2px;font-size:11.5px}
+.freshness .x{float:right;cursor:pointer;color:inherit;opacity:.55;font-weight:700;padding:0 2px}
+.freshness .x:hover{opacity:1}
+
 /* ---------- Sections ---------- */
 section{padding:34px 0;border-bottom:1px solid var(--line-soft)}
 .sec-hd{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
@@ -121,6 +131,10 @@ tbody tr:hover{background:var(--bg-alt)}
 .badge.cn{background:var(--cn-soft);color:var(--cn);border-color:#e7d6a8}
 .badge.open{background:#eef4f0;color:var(--down);border-color:#cfe3d8}
 .badge.new{background:var(--gold-soft);color:var(--gold);border-color:#e7d6a8}
+.badge.conf{font-family:monospace;font-weight:700}
+.badge.conf.verified{background:#eef4f0;color:#2f6b4f;border-color:#cfe3d8}
+.badge.conf.partial{background:var(--bg-sunken);color:var(--ink-2);border-color:var(--line)}
+.badge.conf.single{background:transparent;color:var(--faint);border-color:var(--line)}
 .rank-pill{display:inline-grid;place-items:center;min-width:30px;height:26px;padding:0 6px;border-radius:3px;font-family:monospace;font-weight:600;font-size:13px;background:var(--bg-sunken);color:var(--ink-2);border:1px solid var(--line)}
 .rank-pill.top1{background:var(--ink);color:var(--gold-2);border-color:var(--ink)}
 .rank-pill.top3{background:var(--gold-soft);color:var(--gold);border-color:#e7d6a8}
@@ -229,6 +243,8 @@ footer.site a:hover{text-decoration:underline}
     <b>数据来源与免责说明：</b><span id="disclaimer-text">本站为第三方数据聚合展示。所有分数与排名均来自各原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数<b>不可直接横向比较</b>，跨榜并列仅用于观察同一模型在不同方法论下的相对表现。</span>
   </div>
 
+  <div class="freshness" id="freshness" role="status" aria-live="polite"></div>
+
   <div id="app"><div class="loading"><div class="spin"></div><div>正在读取榜单数据…</div></div></div>
 
 </main>
@@ -264,7 +280,7 @@ footer.site a:hover{text-decoration:underline}
 const KIND_LABEL = { human_preference: "真人偏好", objective_benchmark: "客观基准" };
 const BOARD_TAB_ORDER = ["lmarena_text","lmarena_webdev","lmarena_agent","aa_intelligence","superclue","livecodebench","open_llm"];
 
-let STATE = { merged:null, trend:null, meta:null, curBoard:null, filter:"all", query:"", crossBoard:null };
+let STATE = { merged:null, trend:null, meta:null, curBoard:null, filter:"all", query:"", crossBoard:null, via:null, fromCache:false };
 
 /* ---------- 工具 ---------- */
 const $ = (s,el=document)=>el.querySelector(s);
@@ -287,6 +303,13 @@ function vendorBadges(row){
   const out=[];
   if(row.region==="cn") out.push('<span class="badge cn">国产</span>');
   if(row.open===true) out.push('<span class="badge open">开源</span>');
+  if(row.confidence){
+    const t={verified:"多源交叉",partial:"同方法论多榜",single:"单源"}[row.confidence]||row.confidence;
+    const title={verified:"在真人偏好与客观基准等相互独立的方法论下均被评测到",
+      partial:"在多个榜单出现，但同属一类方法论",
+      single:"仅在一个榜单出现"}[row.confidence]||"";
+    out.push(`<span class="badge conf ${row.confidence}" title="${esc(title)}">${esc(t)}</span>`);
+  }
   return out.join(" ");
 }
 function rankPill(rank){
@@ -295,19 +318,100 @@ function rankPill(rank){
   return `<span class="rank-pill ${cls}">${rank}</span>`;
 }
 
-/* ---------- 加载数据 ---------- */
-async function loadJSON(path){
-  try{ const r=await fetch(path,{cache:"no-store"}); if(!r.ok)return null; return await r.json(); }
-  catch(e){ return null; }
+/* ---------- 数据加载：多端点容灾 + 本地末次成功缓存 ----------
+   同一份 data/*.json 存在三个互相独立的取数端点，任一可用即可渲染：
+   1) 同源（GitHub Pages / 本地服务器，最快，常规路径）
+   2) jsDelivr CDN（multi-CDN + 独立缓存，同源文件缺失/被 CDN 拦截时的冗余）
+   3) raw.githubusercontent.com（GitHub 直连，前两者同时故障时的最后手段）
+   再叠加 localStorage 末次成功快照，实现"全网络失败也不白屏"。 */
+const DATA_BASES = [
+  { base:"", label:"同源" },
+  { base:"https://cdn.jsdelivr.net/gh/motao123/ai-model-rankings@main/", label:"jsDelivr CDN" },
+  { base:"https://raw.githubusercontent.com/motao123/ai-model-rankings/main/", label:"GitHub raw" },
+];
+const LS_PREFIX = "amr:last-good:v1:";
+
+function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+
+async function fetchJSONFrom(base,path){
+  const r = await fetch(base+path,{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  return await r.json();
 }
+
+/* 单文件按端点顺序 failover，返回 {data, via, fromCache} */
+async function loadJSON(path){
+  for(const ep of DATA_BASES){
+    try{
+      const data = await fetchJSONFrom(ep.base, path);
+      if(data){ lsSet(LS_PREFIX+path, data); return {data, via:ep.label, fromCache:false}; }
+    }catch(e){ /* 该端点不可用，尝试下一个 */ }
+  }
+  const cached = lsGet(LS_PREFIX+path);
+  if(cached) return {data:cached, via:"本机缓存", fromCache:true};
+  return {data:null, via:null, fromCache:false};
+}
+
+/* 数据新鲜度横幅：降级/缓存/离线时给用户明确交代，绝不"静默展示旧数据" */
+function renderFreshness(){
+  const box = $("#freshness"); if(!box) return;
+  const m = STATE.merged, meta = STATE.meta;
+  const notes = [];
+
+  if(STATE.fromCache){
+    box.className = "freshness offline show";
+    notes.push('<span class="tag">离线缓存</span>当前展示的是<code>本机缓存</code>的最近一次数据，可能不是最新。网络恢复后刷新即可获取最新榜单。');
+  } else {
+    const degraded = (meta && meta.degraded) || 0;
+    const status = meta && meta.status;
+    const staleBoards = [];
+    if(m && m.boards){ for(const k in m.boards){ const b=m.boards[k]; if(b.stale) staleBoards.push({k,b}); } }
+    if(status === "all_failed"){
+      box.className = "freshness warn show";
+      notes.push('<span class="tag">数据未更新</span>本次定时抓取全部失败，页面展示的是上一次成功数据。');
+    } else if(degraded > 0 || staleBoards.length){
+      box.className = "freshness warn show";
+      const detail = staleBoards.map(x=>{
+        const lb = esc(x.b.board||x.k);
+        const how = x.b.manual ? "人工快照" : (x.b.channel === "wayback-mirror" ? "第三方镜像" : x.b.channel === "lkg" ? "已知良好回退" : "历史快照");
+        const days = x.b.stale_days ? `，滞后 ${x.b.stale_days} 天` : "";
+        return `${lb}（${how}${days}）`;
+      });
+      notes.push('<span class="tag">部分降级</span>' + (degraded>0?`本次有 ${degraded} 个数据源未取到最新值，`:"") +
+                 '以下榜单使用了兜底数据：' + (detail.length?detail.join("、"):"见各榜标注") + '。各榜均已标注数据来源与是否降级。');
+    } else if(STATE.via && STATE.via !== "同源"){
+      box.className = "freshness show";
+      notes.push('<span class="tag">CDN 读取</span>同源数据不可用，已自动切换到 ' + esc(STATE.via) + ' 读取（内容一致）。');
+    } else {
+      box.className = "freshness"; box.innerHTML = ""; return;
+    }
+  }
+  box.innerHTML = '<span class="x" role="button" tabindex="0" aria-label="关闭提示">×</span>' + notes.join(" ");
+  const x = box.querySelector(".x");
+  if(x){ x.addEventListener("click", ()=>{ box.className = "freshness"; }); }
+}
+
+/* ---------- 加载数据 ---------- */
 async function boot(){
-  const [merged,trend,meta]=await Promise.all([loadJSON("data/merged.json"),loadJSON("data/trend.json"),loadJSON("data/meta.json")]);
-  STATE.merged=merged; STATE.trend=trend; STATE.meta=meta;
-  if(!merged||!merged.boards){ $("#app").innerHTML='<div class="empty-hint">未能加载数据。请在仓库根目录用本地服务器打开（如 <code>python -m http.server</code>），或等待 GitHub Actions 首次生成 <code>data/merged.json</code>。</div>'; return; }
-  if(merged.disclaimer) $("#disclaimer-text").innerHTML = esc(merged.disclaimer).replace(/不可直接横向比较/g,'<b>不可直接横向比较</b>');
+  const [m,t,mt] = await Promise.all([
+    loadJSON("data/merged.json"), loadJSON("data/trend.json"), loadJSON("data/meta.json"),
+  ]);
+  STATE.merged=m.data; STATE.trend=t.data; STATE.meta=mt.data;
+  STATE.via=m.via; STATE.fromCache=m.fromCache;
+  if(!STATE.merged||!STATE.merged.boards){ $("#app").innerHTML='<div class="empty-hint">未能加载数据。请在仓库根目录用本地服务器打开（如 <code>python -m http.server</code>），或等待 GitHub Actions 首次生成 <code>data/merged.json</code>。</div>'; return; }
+  if(STATE.merged.disclaimer) $("#disclaimer-text").innerHTML = esc(STATE.merged.disclaimer).replace(/不可直接横向比较/g,'<b>不可直接横向比较</b>');
+  renderFreshness();
   renderUpdated();
   STATE.curBoard = pickDefaultBoard();
   render();
+}
+
+/* 注册 Service Worker：离线可访问 + 数据 stale-while-revalidate */
+if("serviceWorker" in navigator){
+  window.addEventListener("load", ()=>{
+    navigator.serviceWorker.register("sw.js").catch(()=>{ /* 本地 file:// 或旧浏览器忽略 */ });
+  });
 }
 function pickDefaultBoard(){
   const b=STATE.merged.boards;
@@ -436,7 +540,7 @@ function renderCrossTable(){
 function buildBoardsSection(){
   const sec=el("section",{id:"boards"});
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"分榜明细"),el("span",{class:"en"},"Boards")));
-  sec.appendChild(el("p",{class:"sec-desc"},"切换查看各原始榜单的完整排名、分数、升降与来源。每榜标注原始链接、更新时间与数据口径；带「人工快照」标记的表示当前无法从官方自动抓取，展示的是人工维护的兜底数据。"));
+  sec.appendChild(el("p",{class:"sec-desc"},"切换查看各原始榜单的完整排名、分数、升降与来源。每榜标注原始链接、更新时间与数据口径；带「兜底数据」标记的表示活源未取到最新值，已按可信度依次改用第三方镜像快照 / 已知良好回退 / 历史快照 / 人工数据，并在标记中注明实际来源与滞后天数。"));
 
   const boards=STATE.merged.boards;
   const keys=BOARD_TAB_ORDER.filter(k=>boards[k]&&boards[k].rows&&boards[k].rows.length);
@@ -468,7 +572,16 @@ function renderBoard(){
   meta.appendChild(el("span",{html:`指标：<b class="mono">${esc(b.metric||"—")}</b>`}));
   meta.appendChild(el("span",{html:`更新：${esc(fmtDate(b.publish_date)||"—")}`+(b.compared_with?` · 对比 ${esc(b.compared_with)}`:"")}));
   meta.appendChild(el("span",{class:"link",html:`来源：<a href="${esc(b.source_url)}" target="_blank" rel="noopener">原始榜单 ↗</a>`}));
-  if(b.stale) meta.appendChild(el("span",{class:"stale-flag"},b.manual?"人工快照":"旧快照 "+(b.stale_from||"")));
+  if(b.stale){
+    const how = b.manual ? "人工快照"
+      : b.channel === "wayback-mirror" ? "第三方镜像快照"
+      : b.channel === "lkg" ? "已知良好回退"
+      : b.channel === "local-cache" ? "本机缓存"
+      : "历史快照";
+    const days = b.stale_days ? ` · 滞后 ${b.stale_days} 天` : "";
+    const src = b.stale_from ? `（截至 ${b.stale_from}）` : "";
+    meta.appendChild(el("span",{class:"stale-flag",title:b.mirror_note||""}, `兜底数据 · ${how}${src}${days}`));
+  }
   if(b.retired) meta.appendChild(el("span",{class:"retired-flag"},"已退役归档"));
   holder.appendChild(meta);
   if(b.manual_note||b.retired_note) holder.appendChild(el("p",{class:"legend-note",style:"margin:-6px 0 12px;color:#a9691f"},esc(b.manual_note||b.retired_note)));
@@ -634,7 +747,7 @@ function buildSourcesSection(){
     card.innerHTML=`
       <div class="t"><span>${esc(b.board)}</span>${b.retired?'<span class="retired-flag" style="font-size:10px">已退役</span>':""}</div>
       <div class="m">口径：${esc(kindTxt)} · 指标：${esc(b.metric||"—")}</div>
-      <div class="m">更新：${esc(fmtDate(b.publish_date)||"—")}${b.stale?(b.manual?" · 人工快照":" · 旧快照"):""}</div>
+      <div class="m">更新：${esc(fmtDate(b.publish_date)||"—")}${b.stale?` · <span style="color:#a9691f">${esc(b.manual?"人工快照":(b.channel==="wayback-mirror"?"第三方镜像":(b.channel==="lkg"?"已知良好回退":"历史快照")))}${b.stale_days?`，滞后 ${b.stale_days} 天`:""}</span>`:""}</div>
       <div class="m" style="color:#857e72">${esc(b.license||"")}</div>
       <div class="link"><a href="${esc(b.source_url)}" target="_blank" rel="noopener">查看原始榜单 ↗</a>${b.dataset_url&&b.dataset_url!==b.source_url?` · <a href="${esc(b.dataset_url)}" target="_blank" rel="noopener">数据集 ↗</a>`:""}</div>`;
     grid.appendChild(card);
@@ -642,8 +755,9 @@ function buildSourcesSection(){
   sec.appendChild(grid);
   if(STATE.meta&&STATE.meta.failures&&STATE.meta.failures.length){
     const f=STATE.meta.failures;
+    const layerTxt={mirror:"第三方镜像快照",lkg:"已知良好回退",snapshot:"历史快照",manual:"人工数据"};
     sec.appendChild(el("p",{class:"legend-note",style:"margin-top:14px",html:
-      `本次更新有 ${f.length} 个数据源触发降级（抓取失败改用历史/人工快照）：${f.map(x=>esc(x.source)+"("+x.status+")").join("、")}。这是设计的容错行为，不影响其他榜单。`}));
+      `本次更新有 ${f.length} 个数据源触发兜底（活源未取到最新值）：${f.map(x=>esc(x.source)+"（"+esc(layerTxt[x.layer]||x.status)+"）").join("、")}。这是设计好的容错行为，各榜均已标注实际来源，不影响其他榜单。`}));
   }
   return sec;
 }

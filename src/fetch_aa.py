@@ -24,6 +24,12 @@ from models import normalize
 SOURCE_PAGE = "https://artificialanalysis.ai/"
 SOURCE_ID = "aa_intelligence"
 
+# 供 fallback 引擎使用的元信息：
+# - MIRROR_OK：活源失败时，是否允许走第三方镜像（Wayback）取同一页面 HTML 再解析
+# - SOURCE_URL：镜像查询的规范化 URL
+MIRROR_OK = True
+SOURCE_URL = SOURCE_PAGE
+
 # slug 归一化 -> canonical 名（AA 的 slug 已是标准短横线形式）
 _TRIPLE = re.compile(
     r'"label":"([^"]{2,60})","color":"#[0-9a-fA-F]{3,8}",'
@@ -46,6 +52,12 @@ def _unescape(html_text: str) -> str:
 
 def fetch(date_str: str):
     html = http_get(SOURCE_PAGE, timeout=60, max_bytes=6_000_000)
+    return parse_html(html, date_str)
+
+
+def parse_html(html: str, date_str: str, *, channel: str = "html-flight-payload",
+               mirror_note: str = None):
+    """从 AA 页面 HTML（活源或 Wayback 快照）解析 Intelligence Index + 价格。"""
     s = _unescape(html)
     triples = _TRIPLE.findall(s)
     if not triples:
@@ -97,7 +109,8 @@ def fetch(date_str: str):
         "license": "© Artificial Analysis，本站仅聚合展示",
         "fetched_at": now_utc_iso(),
         "publish_date": date_str,
-        "channel": "html-flight-payload",
+        "channel": channel,
+        "mirror_note": mirror_note,
         "price_unit": "USD per 1M blended tokens",
         "rows": rows,
     }
