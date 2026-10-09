@@ -256,6 +256,40 @@ tbody tr:hover td:first-child{box-shadow:inset 2px 0 0 var(--accent)}
 .var-note{font-size:var(--fs-10);color:var(--faint);font-family:var(--font-mono);
   margin-left:6px;padding-left:6px;border-left:1px solid var(--line)}
 
+/* ---------- 「各维度当前第一」摘要条：发丝分隔的横排事实陈述 ---------- */
+.leaders{display:flex;flex-wrap:wrap;border-top:var(--rule);border-bottom:var(--rule);margin:0 0 14px}
+.leader{flex:1 1 150px;min-width:150px;padding:11px 16px 11px 0;margin-right:16px;
+  border-right:var(--rule-soft);display:flex;flex-direction:column;gap:3px}
+.leader:last-child{border-right:none;margin-right:0}
+.leader-k{font-size:var(--fs-10);color:var(--faint);letter-spacing:.08em;text-transform:uppercase}
+.leader-v{font-size:var(--fs-13);font-weight:600;color:var(--ink);line-height:1.4}
+.leader-m{font-size:var(--fs-11);color:var(--accent);font-family:var(--font-mono)}
+
+/* ---------- 参考组：标灰（列出但不参与排序） ---------- */
+tr.ref td{opacity:.55}
+tr.ref:hover td{opacity:.85}
+.badge.ref{color:var(--faint);border-left-color:var(--line)}
+
+/* ---------- 行级溯源：展开的原始口径面板 ---------- */
+.trace-btn{font-family:var(--font-mono);font-size:var(--fs-10);color:var(--muted);
+  background:none;border:none;cursor:pointer;padding:0 0 0 8px;margin-left:6px;
+  border-left:1px solid var(--line);transition:color .15s}
+.trace-btn:hover{color:var(--accent)}
+tr.trace-row td{background:var(--bg-alt);padding:0}
+.trace{padding:12px 16px 14px}
+.trace-hd{font-size:var(--fs-11);color:var(--muted);margin-bottom:9px;display:flex;
+  justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.trace-item{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
+  padding:7px 0;border-top:var(--rule-soft);font-size:var(--fs-11);color:var(--muted)}
+.trace-item:first-of-type{border-top:none}
+.trace-b{font-weight:600;color:var(--ink-2);min-width:150px}
+.trace-r b,.trace-s b{font-family:var(--font-mono);color:var(--ink);font-weight:700}
+.trace-m{color:var(--faint)}
+.trace-v{color:var(--faint);font-family:var(--font-mono)}
+.trace-stale{color:var(--warn)}
+.trace-a{color:var(--accent);text-decoration:none}
+.trace-a:hover{text-decoration:underline}
+
 /* ---------- 分榜 tab：下划线式（非卡片式） ---------- */
 .tabs{display:flex;gap:22px;flex-wrap:wrap;border-bottom:var(--rule);margin-bottom:0}
 .tab{font-size:var(--fs-13);padding:10px 0;border:none;background:transparent;cursor:pointer;
@@ -349,6 +383,7 @@ footer.site a:hover{text-decoration:underline}
       <a href="#quadrant">性价比象限</a>
       <a href="#trend">历史趋势</a>
       <a href="#sources">数据来源</a>
+      <a href="methodology.html">方法论</a>
     </nav>
   </div>
 </header>
@@ -392,7 +427,7 @@ footer.site a:hover{text-decoration:underline}
       </div>
     </div>
     <div style="margin-top:22px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:11.5px">
-      <span id="footer-updated"></span> · 构建于 GitHub Actions + GitHub Pages · <a href="sitemap.xml">sitemap</a> · <a href="https://github.com/motao123/ai-model-rankings/issues" target="_blank" rel="noopener">反馈问题</a>
+      <span id="footer-updated"></span> · 构建于 GitHub Actions + GitHub Pages · <a href="methodology.html">方法论</a> · <a href="sitemap.xml">sitemap</a> · <a href="https://github.com/motao123/ai-model-rankings/issues" target="_blank" rel="noopener">反馈问题</a>
     </div>
   </div>
 </footer>
@@ -408,7 +443,25 @@ footer.site a:hover{text-decoration:underline}
 const KIND_LABEL = { human_preference: "真人偏好", objective_benchmark: "客观基准" };
 const BOARD_TAB_ORDER = ["lmarena_text","lmarena_webdev","lmarena_agent","aa_intelligence","superclue","livecodebench","open_llm"];
 
-let STATE = { merged:null, trend:null, meta:null, curBoard:null, filter:"all", query:"", crossBoard:null, crossLimit:50, crossSort:null, boardLimit:60, via:null, fromCache:false };
+/* 任务名兜底映射：数据里的 task_label 缺失时（旧数据/异常）回退到这里，不阻断渲染。
+   与 src/main.py 的 BOARD_TASK_LABEL 保持一致。 */
+const FALLBACK_TASK = {
+  lmarena_text:"对话偏好", lmarena_webdev:"前端生成", lmarena_agent:"智能体交互",
+  aa_intelligence:"综合智能", superclue:"中文综合", livecodebench:"代码生成", open_llm:"开源通用",
+};
+/* 双层命名：先让访客看懂"这个榜在测什么"（任务名），再给原始榜名。 */
+function boardLabel(k){
+  const b=(STATE.merged&&STATE.merged.boards[k])||{};
+  const task=b.task_label||FALLBACK_TASK[k]||"";
+  const short=String(b.board||k).replace(/（.*?）/g,"").replace(/\s+/g," ").trim();
+  return task? task+"（"+short+"）" : short;
+}
+function boardTask(k){
+  const b=(STATE.merged&&STATE.merged.boards[k])||{};
+  return b.task_label||FALLBACK_TASK[k]||"";
+}
+
+let STATE = { merged:null, trend:null, meta:null, curBoard:null, filter:"all", region:"all", query:"", crossBoard:null, crossLimit:50, crossSort:null, boardLimit:60, via:null, fromCache:false, openTrace:{} };
 
 /* ---------- 工具 ---------- */
 const $ = (s,el=document)=>el.querySelector(s);
@@ -557,6 +610,46 @@ function initTheme(){
   }catch(e){}
 }
 
+/* ---------- URL 可分享状态 ----------
+   把「我正在看的这份对比」编码进 query string，便于分享与复现：
+     ?f=open&region=cn&q=glm&cols=lmarena_text,superclue&sort=__n__:-1&board=superclue
+   用 history.replaceState 写入（不产生历史记录条目，避免后退键被状态变更占满）。
+   恢复时做白名单校验：非法值一律忽略，回落到默认，绝不因 URL 报错。 */
+function readURLState(){
+  let sp;
+  try{ sp=new URLSearchParams(location.search); }catch(e){ return; }
+  const f=sp.get("f");
+  if(["all","open","multi"].includes(f)) STATE.filter=f;
+  const rg=sp.get("region");
+  if(["all","cn","us","other"].includes(rg)) STATE.region=rg;
+  const q=sp.get("q");
+  if(q!=null) STATE.query=q;
+  const cols=(sp.get("cols")||"").split(",").map(s=>s.trim()).filter(Boolean);
+  if(cols.length) STATE.crossBoard=cols;   // 有效性在 buildCompareSection 里再过滤一次
+  const sort=sp.get("sort");
+  if(sort){
+    const i=sort.lastIndexOf(":");
+    const key=sort.slice(0,i), dir=parseInt(sort.slice(i+1),10);
+    if(key && (dir===1||dir===-1)) STATE.crossSort={key,dir};
+  }
+  const board=sp.get("board");
+  if(board) STATE._urlBoard=board;
+}
+function writeURLState(){
+  try{
+    const sp=new URLSearchParams();
+    if(STATE.filter!=="all") sp.set("f",STATE.filter);
+    if(STATE.region!=="all") sp.set("region",STATE.region);
+    if(STATE.query) sp.set("q",STATE.query);
+    if(STATE.crossBoard&&STATE.crossBoard.length) sp.set("cols",STATE.crossBoard.join(","));
+    if(STATE.crossSort) sp.set("sort",STATE.crossSort.key+":"+STATE.crossSort.dir);
+    if(STATE.curBoard) sp.set("board",STATE.curBoard);
+    const qs=sp.toString();
+    const url=location.pathname+(qs?"?"+qs:"")+location.hash;
+    history.replaceState(null,"",url);
+  }catch(e){ /* file:// 或旧浏览器忽略 */ }
+}
+
 /* ---------- 加载数据 ---------- */
 async function boot(){
   initTheme();
@@ -566,10 +659,11 @@ async function boot(){
   STATE.merged=m.data; STATE.trend=t.data; STATE.meta=mt.data;
   STATE.via=m.via; STATE.fromCache=m.fromCache;
   if(!STATE.merged||!STATE.merged.boards){ $("#app").innerHTML='<div class="empty-hint">未能加载数据。请在仓库根目录用本地服务器打开（如 <code>python -m http.server</code>），或等待 GitHub Actions 首次生成 <code>data/merged.json</code>。</div>'; return; }
+  readURLState();
   if(STATE.merged.disclaimer) $("#disclaimer-text").innerHTML = esc(STATE.merged.disclaimer).replace(/不可直接横向比较/g,'<b>不可直接横向比较</b>');
   renderFreshness();
   renderUpdated();
-  STATE.curBoard = pickDefaultBoard();
+  STATE.curBoard = STATE._urlBoard && STATE.merged.boards[STATE._urlBoard] ? STATE._urlBoard : pickDefaultBoard();
   render();
 }
 
@@ -588,8 +682,10 @@ function renderUpdated(){
   const m=STATE.merged, meta=STATE.meta;
   const gen = fmtDateTime(m.generated_at);
   const status = meta&&meta.status==="partial" ? '<span style="color:var(--warn)">部分源降级</span>' : '';
-  $("#updated").innerHTML = `最近更新 <b>${gen}</b><br>${status}`;
-  $("#footer-updated").textContent = `数据生成于 ${gen}`;
+  // 语义化：明确这是"数据抓取时间"，不是页面打开/渲染时间，也不是部署时间。
+  // 静态页面可能被缓存数小时，但数据时间只在成功抓到新数据时前进。
+  $("#updated").innerHTML = `数据抓取 <b>${gen}</b><br>${status}`;
+  $("#footer-updated").textContent = `数据抓取于 ${gen}（非页面渲染时间）`;
 }
 
 /* ---------- 主渲染 ---------- */
@@ -608,39 +704,70 @@ function buildCompareSection(){
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"三榜同屏对比"),el("span",{class:"en"},"Cross-board")));
   sec.appendChild(el("p",{class:"sec-desc"},
     "同一模型在不同榜单的原始名次并列展示（左：真人偏好类 · 右：客观基准类）。这里只做并列，绝不加总或计算综合分——各榜口径不同，名次不可直接比较。"
-    +"本表只列出现在 ≥2 个榜单的模型；同一模型的不同推理档位与期次（如 -high/-max/(thinking)/日期戳）已归并为一个实体，取该榜最好名次，档位在模型名下方标注。仅出现在单个榜的模型不在此表，完整保留在下方「分榜明细」。国产模型标注「国产」，开源模型标注「开源」。"));
+    +"本表只列出现在 ≥2 个榜单的模型；同一模型的不同推理档位与期次（如 -high/-max/(thinking)/日期戳）已归并为一个实体，取该榜最好名次，档位在模型名下方标注。仅出现在单个榜的模型不在此表，完整保留在下方「分榜明细」。"
+    +"厂商与国别都推不出的模型标灰沉底、不参与排序（见方法论页）。点击行内「溯源」可展开该模型在各榜的原始名次、分数与来源链接。"));
+
+  // 「各维度当前第一」摘要条：只陈述每个榜上的第一名是谁（各榜原始分数，
+  // 不做任何换算或加总）。已退役归档的榜不出现。数据来自 cross_meta.dimension_leaders。
+  const dl=(STATE.merged.cross_meta||{}).dimension_leaders||[];
+  if(dl.length){
+    const bar=el("div",{class:"leaders",role:"list","aria-label":"各维度当前第一"});
+    dl.forEach(d=>{
+      const val=d.value_label!=null?d.value_label:(d.score!=null?fmtScore(d.score):"—");
+      const tie=(d.tie_size>1)?`（并列 ${d.tie_size} 个）`:"";
+      bar.appendChild(el("div",{class:"leader",role:"listitem",title:(d.basis||"")+" · 口径见方法论页"},
+        el("span",{class:"leader-k"},d.label),
+        el("span",{class:"leader-v"},(d.model||"—")+tie),
+        el("span",{class:"leader-m"},val)));
+    });
+    sec.appendChild(bar);
+    sec.appendChild(el("p",{class:"legend-note",style:"margin:-8px 0 18px"},
+      "以上仅陈述「各榜当前第一名是谁」（各榜原始口径，不换算、不加总）；带「并列」的表示上游公布了容差口径且存在统计并列。已退役归档的榜不参与。"));
+  }
 
   // 选择要并列的榜单（默认三个代表榜）
   const boards=STATE.merged.boards;
   const focusCandidates=["lmarena_text","aa_intelligence","superclue","lmarena_webdev","livecodebench","open_llm"];
   const available=focusCandidates.filter(k=>boards[k]&&boards[k].rows&&boards[k].rows.length);
   const defaultCols=available.filter(k=>["lmarena_text","aa_intelligence","superclue"].includes(k));
-  STATE.crossBoard = STATE.crossBoard && STATE.crossBoard.length ? STATE.crossBoard.filter(k=>available.includes(k)) : defaultCols.length?defaultCols:available.slice(0,3);
+  // URL 恢复的 cols 可能含已下线/拼错的榜：过滤后若为空则回落默认，不让列选择器全灭
+  const restored=STATE.crossBoard&&STATE.crossBoard.length?STATE.crossBoard.filter(k=>available.includes(k)):null;
+  STATE.crossBoard = (restored&&restored.length)?restored:(defaultCols.length?defaultCols:available.slice(0,3));
 
-  // 工具条：搜索 + 筛选 + 列选择
+  // 工具条：搜索 + 属性筛选 + 国别筛选（两组互不干扰）
   const tb=el("div",{class:"toolbar"});
   const search=el("div",{class:"search"},
     el("svg",{width:"15",height:"15",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":"2"},el("circle",{cx:"11",cy:"11",r:"7"}),el("path",{d:"M21 21l-4-4"})),
     (()=>{const i=el("input",{type:"search","aria-label":"搜索模型或厂商",placeholder:"搜索模型或厂商…",value:STATE.query});i.addEventListener("input",e=>{STATE.query=e.target.value;STATE.crossLimit=50;renderCrossTable();});return i;})());
   tb.appendChild(search);
-  const filters=el("div",{class:"filters"});
-  [["all","全部"],["cn","仅国产"],["open","仅开源"],["multi","多榜出现"]].forEach(([k,label])=>{
-    filters.appendChild(el("button",{class:"fbtn"+(STATE.filter===k?" on":""),onclick:()=>{STATE.filter=k;STATE.crossLimit=50;document.querySelectorAll(".toolbar .fbtn").forEach(b=>b.classList.remove("on"));renderCrossTable();}},label));
-  });
-  tb.appendChild(filters);
+  const mkGroup=(items,get,set,aria)=>{
+    const g=el("div",{class:"filters",role:"group","aria-label":aria});
+    items.forEach(([k,label])=>{
+      g.appendChild(el("button",{class:"fbtn"+(get()===k?" on":""),onclick:e=>{
+        set(k); STATE.crossLimit=50;
+        g.querySelectorAll(".fbtn").forEach(b=>b.classList.remove("on"));
+        e.currentTarget.classList.add("on");
+        renderCrossTable();
+      }},label));
+    });
+    return g;
+  };
+  tb.appendChild(mkGroup([["all","全部"],["open","仅开源"],["multi","多榜出现"]],
+    ()=>STATE.filter, v=>{STATE.filter=v;}, "属性筛选"));
+  tb.appendChild(mkGroup([["all","全部地区"],["cn","中国大陆"],["us","美国"],["other","其他/未标注"]],
+    ()=>STATE.region, v=>{STATE.region=v;}, "国别筛选"));
   sec.appendChild(tb);
 
-  // 列选择器
+  // 列选择器：按钮显示「任务名」，完整榜名放 title（双层命名）
   const colsel=el("div",{class:"filters",style:"margin-bottom:14px"});
   colsel.appendChild(el("span",{style:"font-size:12px;color:var(--muted);align-self:center;margin-right:4px"},"并列榜单："));
   available.forEach(k=>{
     const on=STATE.crossBoard.includes(k);
-    const short=boards[k].board.replace(/（.*?）/g,"").replace(/\s+/g," ").trim();
     colsel.appendChild(el("button",{class:"fbtn"+(on?" on":""),title:boards[k].board,onclick:e=>{
       if(STATE.crossBoard.includes(k)) STATE.crossBoard=STATE.crossBoard.filter(x=>x!==k);
       else STATE.crossBoard.push(k);
       e.currentTarget.classList.toggle("on"); renderCrossTable();
-    }},short));
+    }},boardTask(k)||boards[k].board));
   });
   sec.appendChild(colsel);
 
@@ -668,11 +795,12 @@ function renderCrossTable(){
 
   let rows=cross.filter(m=>{
     if(q){ const hay=(m.display_name+" "+m.vendor+" "+m.id).toLowerCase(); if(!hay.includes(q))return false; }
-    if(STATE.filter==="cn") return m.region==="cn";
     if(STATE.filter==="open") return m.open===true;
     if(STATE.filter==="multi") return (m.appearance_count!=null?m.appearance_count:Object.keys(m.appearances||{}).length)>=2;
     return true;
   });
+  // 国别筛选：与属性筛选正交，可叠加（如「中国大陆 + 仅开源」）
+  if(STATE.region!=="all") rows=rows.filter(m=>(m.region||"other")===STATE.region);
   // 只保留在所选列中至少出现一次的
   rows=rows.filter(m=>cols.some(c=>m.appearances&&m.appearances[c]));
 
@@ -698,8 +826,8 @@ function renderCrossTable(){
 
   const wrap=el("div",{class:"table-wrap"});
   const tb=el("table");
-  tb.appendChild(el("caption",{class:"sr-only"},"跨榜对比表：每行为一个模型，列为所选榜单，单元格显示该榜名次、分数与升降。"));
-  // 表头（可点击排序）
+  tb.appendChild(el("caption",{class:"sr-only"},"跨榜对比表：每行为一个模型，列为所选榜单，单元格显示该榜名次、分数与升降；点击「溯源」展开该模型在各榜的原始名次、分数与来源链接。"));
+  // 表头（可点击排序）：双层命名——表头显示任务名，完整榜名与指标放 title
   const thead=el("thead");
   const hr=el("tr");
   hr.appendChild(el("th",{class:"sub",scope:"col"},"模型 / 厂商"));
@@ -707,8 +835,8 @@ function renderCrossTable(){
     const b=STATE.merged.boards[c]; const kind=b.kind==="human_preference"?"hp":"ob";
     const active=sort&&sort.key===c;
     const th=el("th",{class:"sub",scope:"col","aria-sort":active?(sort.dir>0?"ascending":"descending"):"none",
-      title:"点击按该榜名次排序",
-      html:`${esc(b.board.replace(/（.*?）/g,""))} <span class="kind ${kind}">${KIND_LABEL[b.kind]||""}</span>${active?(sort.dir>0?" ↑":" ↓"):""}`});
+      title:b.board+" · 指标 "+(b.metric||"—"),
+      html:`${esc(boardTask(c)||b.board.replace(/（.*?）/g,""))} <span class="kind ${kind}">${KIND_LABEL[b.kind]||""}</span>${active?(sort.dir>0?" ↑":" ↓"):""}`});
     th.style.cursor="pointer"; th.style.whiteSpace="normal"; th.style.minWidth="84px"; th.style.maxWidth="160px";
     th.addEventListener("click",()=>{ STATE.crossSort=(active&&sort.dir>0)?{key:c,dir:-1}:{key:c,dir:1}; renderCrossTable(); });
     hr.appendChild(th);
@@ -723,12 +851,14 @@ function renderCrossTable(){
 
   const tbody=el("tbody");
   const shown=rows.slice(0,STATE.crossLimit);
+  const refCount=shown.filter(m=>m.reference_only).length;
   shown.forEach(m=>{
-    const tr=el("tr");
+    const isRef=!!m.reference_only;
+    const tr=el("tr",{class:isRef?"ref":""});
     const varTxt=(m.variants&&m.variants.length)?esc(m.variants.join(" / ")):"";
     const mc=el("td");
-    mc.innerHTML=`<div class="model-cell"><div><div class="model-name">${esc(m.display_name)} ${vendorBadges(m)}</div>`
-      +`<div class="model-vendor">${esc(m.vendor||"—")}${varTxt?' <span class="var-note" title="该模型在各榜出现的推理档位/变体">'+varTxt+'</span>':''}</div></div></div>`;
+    mc.innerHTML=`<div class="model-cell"><div><div class="model-name">${esc(m.display_name)} ${vendorBadges(m)}${isRef?'<span class="badge ref" title="厂商与国别都无法识别：列出但标灰、不参与排序，本站不猜测">参考</span>':""}</div>`
+      +`<div class="model-vendor">${esc(m.vendor||"—")}${varTxt?' <span class="var-note" title="该模型在各榜出现的推理档位/变体">'+varTxt+'</span>':''} <button class="trace-btn" data-trace="${esc(m.id)}" aria-expanded="${STATE.openTrace[m.id]?"true":"false"}">溯源${STATE.openTrace[m.id]?" ▾":" ▸"}</button></div></div></div>`;
     tr.appendChild(mc);
     cols.forEach(c=>{
       const td=el("td",{class:"num"});
@@ -742,8 +872,38 @@ function renderCrossTable(){
     const n=cols.filter(c=>m.appearances&&m.appearances[c]&&m.appearances[c].rank!=null).length;
     tr.appendChild(el("td",{class:"num",html:`<b>${n}</b>`}));
     tbody.appendChild(tr);
+
+    // 行级溯源：展开一行，列出该模型在每个榜的原始名次/分数/指标/档位/来源链接。
+    // 数据全部来自 appearances（已随 merged.json 下发），不新增任何抓取。
+    if(STATE.openTrace[m.id]){
+      const trc=el("tr",{class:"trace-row"});
+      const td=el("td",{colspan:String(cols.length+2)});
+      const list=el("div",{class:"trace"});
+      list.appendChild(el("div",{class:"trace-hd"},
+        el("span",{},"溯源 · "+m.display_name+"：以下名次与分数均为各榜原始口径，本站未做任何换算")));
+      Object.keys(m.appearances||{}).forEach(sid=>{
+        const ap=m.appearances[sid]; const b=STATE.merged.boards[sid]||{};
+        const item=el("div",{class:"trace-item"});
+        item.innerHTML=
+          `<span class="trace-b">${esc(boardLabel(sid))}</span>`
+          +`<span class="trace-r">名次 <b>${ap.rank!=null?ap.rank:"—"}</b></span>`
+          +`<span class="trace-s">分数 <b>${fmtScore(ap.score)}</b></span>`
+          +`<span class="trace-m">${esc(ap.metric||b.metric||"—")}</span>`
+          +(ap.variant?`<span class="trace-v">档位 ${esc(ap.variant)}</span>`:"")
+          +(b.stale?`<span class="trace-stale">兜底数据${b.stale_days?" · 滞后 "+b.stale_days+" 天":""}</span>`:"")
+          +(b.source_url?`<a class="trace-a" href="${esc(b.source_url)}" target="_blank" rel="noopener">原始榜单 ↗</a>`:"");
+        list.appendChild(item);
+      });
+      td.appendChild(list); trc.appendChild(td); tbody.appendChild(trc);
+    }
   });
   tb.appendChild(tbody); wrap.appendChild(tb); holder.appendChild(wrap);
+
+  // 参考组说明（标灰行的含义）
+  if(refCount){
+    holder.appendChild(el("p",{class:"legend-note"},
+      `本视图含 <b>${refCount}</b> 个标灰的「参考」模型：厂商与国别都无法识别，本站不猜测，故列出但不参与排序（已沉底）。`));
+  }
 
   // 分页：替代原「静默截断前 80 行」
   if(rows.length>shown.length){
@@ -751,7 +911,18 @@ function renderCrossTable(){
       el("button",{class:"fbtn",onclick:()=>{STATE.crossLimit+=50;renderCrossTable();}},
         `加载更多（已显示 ${shown.length} / ${rows.length}）`)));
   }
+  writeURLState();
 }
+
+/* 溯源按钮事件委托：绑在 document 上（holder 是 render() 之后才创建的，
+   脚本解析时还不存在，故不能用 holder 级委托）。 */
+document.addEventListener("click",e=>{
+  const btn=e.target.closest?e.target.closest("[data-trace]"):null;
+  if(!btn) return;
+  const id=btn.getAttribute("data-trace");
+  if(STATE.openTrace[id]) delete STATE.openTrace[id]; else STATE.openTrace[id]=true;
+  renderCrossTable();
+});
 
 /* ===== 2. 分榜明细 ===== */
 function buildBoardsSection(){
@@ -766,10 +937,9 @@ function buildBoardsSection(){
   const tabs=el("div",{class:"tabs",id:"board-tabs",role:"tablist","aria-label":"分榜切换"});
   keys.forEach(k=>{
     const b=boards[k]; const kind=b.kind==="human_preference"?"hp":"ob";
-    const short=b.board.replace(/（.*?）/g,"").replace(/\s+/g," ").trim();
     tabs.appendChild(el("button",{class:"tab"+(k===STATE.curBoard?" on":""),"data-k":k,
       role:"tab","aria-selected":(k===STATE.curBoard?"true":"false"),title:b.board,
-      html:`${esc(short)}<span class="kind ${kind}">${KIND_LABEL[b.kind]||""}</span>`,
+      html:`${esc(boardTask(k)||b.board.replace(/（.*?）/g,"").replace(/\s+/g," ").trim())}<span class="kind ${kind}">${KIND_LABEL[b.kind]||""}</span>`,
       onclick:()=>{STATE.curBoard=k;STATE.boardLimit=60;document.querySelectorAll(".tab").forEach(t=>{const on=t.dataset.k===k;t.classList.toggle("on",on);t.setAttribute("aria-selected",on?"true":"false");});renderBoard();}}));
   });
   sec.appendChild(tabs);
@@ -835,18 +1005,19 @@ function renderBoard(){
   }
   holder.appendChild(el("p",{class:"legend-note",html:
     `共 ${b.rows.length} 个模型 · 数据版权归 ${esc((b.license||"原榜单").replace("© ",""))} · <a href="${esc(b.dataset_url||b.source_url)}" target="_blank" rel="noopener" style="color:var(--gold)">数据集/原始页面 ↗</a>`}));
+  writeURLState();
 }
 
 /* ===== 3. 性价比象限图（AA 智能指数 vs 价格）===== */
 function buildQuadrantSection(){
   const sec=el("section",{id:"quadrant"});
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"性价比象限"),el("span",{class:"en"},"Value quadrant")));
-  sec.appendChild(el("p",{class:"sec-desc"},"横轴为 Artificial Analysis 混合价格（$/百万 token，越左越便宜），纵轴为 Intelligence Index 智能指数（越上越强）。<b>左上角＝高性价比区</b>。两个数值均为 AA 官方原始口径，本站只做散点定位，不做任何换算或加权。"));
+  sec.appendChild(el("p",{class:"sec-desc"},"横轴为 Artificial Analysis 混合价格（$/百万 token，越左越便宜），纵轴为 Intelligence Index 智能指数（越上越强）。<b>左上角＝高性价比区</b>。两个数值均为 AA 官方原始口径，本站只做散点定位，不做任何换算或加权。阶梯状实线为 <b>Pareto 前沿</b>：对任意价格，不超过该价格所能达到的最高智能指数；落在线上的点（加描边环）表示「不存在另一个更便宜且更强的模型」。"));
   const card=el("div",{class:"chart-card"});
   const holder=el("div",{id:"quadrant-holder"});
   card.appendChild(holder);
   card.appendChild(el("div",{class:"quadrant-legend",html:
-    '<span><i class="dot cn"></i>国产模型</span><span><i class="dot intl"></i>海外模型</span><span>点大小≈固定；虚线为中位价格 / 中位智能指数分界</span>'}));
+    '<span><i class="dot cn"></i>国产模型</span><span><i class="dot intl"></i>海外模型</span><span>描边环＝位于 Pareto 前沿</span><span>虚线为中位价格 / 中位智能指数分界</span>'}));
   sec.appendChild(card);
   setTimeout(renderQuadrant,0);
   return sec;
@@ -888,17 +1059,39 @@ function renderQuadrant(){
   // 中线
   svg+=`<line x1="${X(medP)}" y1="${pad.t}" x2="${X(medP)}" y2="${pad.t+ih}" stroke="${cAccent2}" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>`;
   svg+=`<line x1="${pad.l}" y1="${Y(medS)}" x2="${pad.l+iw}" y2="${Y(medS)}" stroke="${cAccent2}" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>`;
+  // Pareto 前沿（阶梯线）：对任意价格，"不超过该价格所能达到的最高智能指数"。
+  // 最优点 = 不存在另一个点"更便宜且更强"（price<= 且 score>=，且至少一项严格更优）。
+  // 只陈述原始数据的边界，不做任何换算；点数过少时不画，避免误导。
+  const front=pts.filter(p=>!pts.some(q=>q!==p && q.price<=p.price && q.score>=p.score && (q.price<p.price||q.score>p.score)))
+                 .sort((a,b)=>a.price-b.price);
+  const frontSet=new Set(front);
+  if(front.length>=2){
+    let d=`M ${X(front[0].price).toFixed(1)} ${Y(front[0].score).toFixed(1)}`;
+    for(let i=1;i<front.length;i++){
+      d+=` L ${X(front[i].price).toFixed(1)} ${Y(front[i-1].score).toFixed(1)}`;  // 水平：沿上一最优点的智能指数走到当前价格
+      d+=` L ${X(front[i].price).toFixed(1)} ${Y(front[i].score).toFixed(1)}`;  // 垂直：跳到当前最优点的智能指数
+    }
+    d+=` L ${(pad.l+iw).toFixed(1)} ${Y(front[front.length-1].score).toFixed(1)}`;  // 水平延伸到右边界
+    svg+=`<path d="${d}" fill="none" stroke="${cAccent2}" stroke-width="1.5" opacity="0.85"/>`;
+    svg+=`<text x="${pad.l+iw-6}" y="${(Y(front[front.length-1].score)-7).toFixed(1)}" font-size="10" fill="${cAccent2}" text-anchor="end">Pareto 前沿</text>`;
+  }
   // 高性价比区标注
   svg+=`<text x="${pad.l+8}" y="${pad.t+14}" font-size="10.5" fill="${cAccent}" font-weight="600">← 高性价比区</text>`;
   // 轴标题
   svg+=`<text x="${pad.l+iw/2}" y="${H-6}" font-size="11" fill="${cMuted}" text-anchor="middle">混合价格 $/百万 token（对数轴，越左越便宜）</text>`;
   svg+=`<text transform="translate(14,${pad.t+ih/2}) rotate(-90)" font-size="11" fill="${cMuted}" text-anchor="middle">Intelligence Index（越上越强）</text>`;
-  // 点
+  // 点（落在 Pareto 前沿上的加描边环）
   pts.forEach(p=>{
     const cx=X(p.price), cy=Y(p.score), isCn=p.region==="cn";
     const color=isCn?cAccent:cFaint;
-    svg+=`<circle cx="${cx}" cy="${cy}" r="6" fill="${color}" opacity="0.9" stroke="${cBg}" stroke-width="1.5"><title>${esc(p.display_name||p.model)}\n智能指数 ${fmtScore(p.score)} · $${p.price.toFixed(2)}/M\n${esc(p.vendor||"")}</title></circle>`;
-    svg+=`<text x="${cx+9}" y="${cy+3.5}" font-size="10" fill="${cInk2}">${esc((p.display_name||p.model).length>16?(p.display_name||p.model).slice(0,16)+"…":(p.display_name||p.model))}</text>`;
+    const onF=frontSet.has(p);
+    svg+=`<circle cx="${cx}" cy="${cy}" r="6" fill="${color}" opacity="0.9" stroke="${onF?cAccent2:cBg}" stroke-width="${onF?2:1.5}"><title>${esc(p.display_name||p.model)}\n智能指数 ${fmtScore(p.score)} · $${p.price.toFixed(2)}/M\n${esc(p.vendor||"")}${onF?"\n位于 Pareto 前沿":""}</title></circle>`;
+    // 标签夹取：靠近右边界时改画在点左侧，避免文字被裁掉
+    const name=(p.display_name||p.model);
+    const label=name.length>16?name.slice(0,16)+"…":name;
+    const nearRight=cx > pad.l+iw-120;
+    if(nearRight) svg+=`<text x="${cx-9}" y="${cy+3.5}" font-size="10" fill="${cInk2}" text-anchor="end">${esc(label)}</text>`;
+    else svg+=`<text x="${cx+9}" y="${cy+3.5}" font-size="10" fill="${cInk2}">${esc(label)}</text>`;
   });
   svg+=`</svg>`;
   holder.innerHTML=svg;

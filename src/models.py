@@ -519,3 +519,25 @@ def enrich(name: str, organization=None) -> dict:
         r["vendor"] = v or "未标注"
         r["region"] = REGION_BY_VENDOR.get(r["vendor"], "other")
     return r
+
+
+def registry_stats() -> dict:
+    """主数据层规模自述，供方法论页展示（数字必须与代码同源，前端不得自行估算）。
+
+    self_check_pass: 注册表内每个实体的正式 display name 经 resolve() 能否还原为自身。
+    这是「变体折叠不会误伤正式名」的自动化校验；若为 False，说明折叠或别名规则
+    出现了回归，需要在发布前修掉。
+    """
+    bad = []
+    for cid, meta in MODELS.items():
+        nm = meta.get("name")
+        if not nm:
+            continue
+        if resolve(nm)["id"] != cid:
+            bad.append({"id": cid, "name": nm, "resolved_to": resolve(nm)["id"]})
+    return {
+        "entities": len(MODELS),
+        "aliases": len(ALIASES),
+        "self_check_pass": not bad,
+        "self_check_failures": bad[:20],
+    }

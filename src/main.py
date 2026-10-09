@@ -29,7 +29,7 @@ from common import (  # noqa: E402
     write_snapshot, write_json, read_json, list_snapshots,
     latest_snapshot_before, load_manual, snapshot_path,
 )
-from models import enrich, canonical_id  # noqa: E402
+from models import enrich, canonical_id, registry_stats  # noqa: E402
 import fallback as fb_engine  # noqa: E402
 
 import fetch_lmarena  # noqa: E402
@@ -59,6 +59,125 @@ CROSS_MIN_BOARDS = 2
 
 # 默认代表榜优先级（用于同分排序与前端默认并列列）
 _PREF_BOARDS = ["lmarena_text", "aa_intelligence", "superclue", "lmarena_webdev"]
+
+# 中文任务名：前端以「任务名（原榜名）」双层命名呈现——先让访客看懂"这个榜在测什么"，
+# 再让他看到原始榜名。缺失时前端回退到内置映射，不阻断渲染。
+BOARD_TASK_LABEL = {
+    "lmarena_text": "对话偏好",
+    "lmarena_webdev": "前端生成",
+    "lmarena_agent": "智能体交互",
+    "aa_intelligence": "综合智能",
+    "superclue": "中文综合",
+    "livecodebench": "代码生成",
+    "open_llm": "开源通用",
+}
+
+# 统计并列：**只有上游公布了容差口径的榜才启用**，其余榜保留原始名次。
+#
+# 为什么不用「全距 × 比率」这类自适应阈值：聚合站拿不到各榜的标准误 / 置信区间，
+# 用任意比率去合并名次等于凭空制造精度。实测该做法在 LMArena Text（414 行，分数全距
+# 700 分，全距被尾部差模型拉大）上把阈值放大到 5.6 分，导致头部真实分差 3~4 分的
+# 模型被并成同一名次，414 行里 400 行卷入并列，名次彻底失去区分度。
+#
+# 因此改为白名单：口径必须有出处，并在页面如实标注；未列入的榜不做并列处理，
+# 由前端说明「上游未公布容差，名次按原始排序展示，相邻分差不代表显著性」。
+TIE_TOLERANCE = {
+    # SuperCLUE 官方口径：「为减少波动影响，榜单将分差 1 分值内的模型视为并列排名」
+    "superclue": {
+        "abs": 1.0,
+        "source": "SuperCLUE 官方口径：分差 1 分以内视为并列排名",
+    },
+}
+
+# 方法论版本号：每当改动「变体折叠 / 厂商归一 / 跨榜收录门槛 / 排序规则 / 并列规则」
+# 任一项就升版，并在页面显式展示。作用对标 Artificial Analysis 的 Intelligence Index
+# 版本号——让读者能判断"我看到的这套结论是按哪一版规则算出来的"，也让历史结论可追溯。
+METHODOLOGY_VERSION = "cross-v2"
+METHODOLOGY_CHANGES = [
+    ("cross-v2", "统计并列改为「仅上游公布容差的榜启用」（白名单 + 出处），不再用全距比率自适应阈值；"
+                 "厂商与国别都推不出的模型改为「列出但标灰、不参与排序」；已退役归档榜不再产出「当前第一」；"
+                 "榜单改「任务名（原榜名）」双层命名"),
+    ("cross-v1", "建立模型主数据层：变体折叠 + 厂商归一；跨榜表只收 ≥2 榜模型；id 一律由主数据重算"),
+]
+
+# 「各维度当前第一」摘要条的数据来源配置：(榜 id, 中文维度名, 该维度的度量依据)
+# 每一项都只是**陈述某个榜上的第一名是谁**（事实），不做任何跨榜加总或换算。
+# 某榜缺数据或已退役时该项自动省略，不阻断渲染。
+DIMENSION_LEADERS = [
+    ("aa_intelligence", "综合智能", "Artificial Analysis Intelligence Index"),
+    ("lmarena_text", "对话偏好", "LMArena Text Arena Score"),
+    ("livecodebench", "代码生成", "LiveCodeBench pass@1"),
+    ("superclue", "中文综合", "SuperCLUE 智能指数"),
+]
+
+
+def _tie_meta(sid):
+    """该榜的并列口径：返回 {'abs': 容差或 None, 'source': 出处说明或 None}。
+
+    未列入白名单的榜返回空值 → _apply_tie_ranking 不做合并，前端据此说明
+    「上游未公布容差，名次按原始排序展示，相邻分差不代表显著性」。
+    """
+    t = TIE_TOLERANCE.get(sid)
+    if not t:
+        return {"abs": None, "source": None}
+    return {"abs": t.get("abs"), "source": t.get("source")}
+
+
+def _apply_tie_ranking(rows, tol=None):
+    """为榜单行计算统计并列，返回**新列表**（不修改入参行对象）。
+
+    tol 为 None 时不做任何合并，仅补齐 tie_rank=rank / tie_size=1，保证字段齐整。
+
+    分组规则（tol 为绝对容差时）：按分数降序扫描；若某行与「当前并列组最高分」之差
+    不超过 tol，则并入该组，否则另起一组。与**组首**比较而非与相邻行比较，可避免
+    链式漂移（A≈B、B≈C 但 A≫C 仍被并成一组）。
+
+    编号规则：并列组按出现顺序密集编号（1,1,2,2,2,3…），即 dense ranking，
+    与 SuperCLUE 官方榜单的显示口径一致——本站不改动上游名次，读者交叉核对
+    同一榜单时应看到相同数字。仅当全部行都有分数时启用密集编号；若存在无分数的行
+    （编号会与原始名次错位），退回「取组内最小原始名次」以保证单调不回退。
+    """
+    out = [dict(r) for r in rows]
+
+    # 先无条件重置并列字段，再做分组覆盖。
+    # 必须重置而非 setdefault：入参行可能已带上一次运行按旧策略算出的
+    # tie_rank / tie_size（例如 merged.json 回读、或策略调整后重跑），
+    # setdefault 会让旧值存活下来，导致输出与实际策略不符。
+    # 顺序上重置必须在分组**之前**——放在末尾会把刚算好的分组结果抹掉。
+    for r in out:
+        r["tie_rank"] = r.get("rank")
+        r["tie_size"] = 1
+
+    if tol is None or tol <= 0:
+        return out
+
+    scored = [r for r in out if isinstance(r.get("score"), (int, float))]
+    if len(scored) < 2:
+        return out
+
+    ordered = sorted(scored, key=lambda r: -r["score"])
+    groups, cur, best = [], [], None
+    for r in ordered:
+        if best is None or (best - r["score"]) <= tol:
+            cur.append(r)
+            if best is None:
+                best = r["score"]
+        else:
+            groups.append(cur)
+            cur, best = [r], r["score"]
+    if cur:
+        groups.append(cur)
+
+    all_scored = len(scored) == len(out)
+    for idx, g in enumerate(groups, start=1):
+        ranks = [m["rank"] for m in g if isinstance(m.get("rank"), int)]
+        fallback = min(ranks) if ranks else None
+        for m in g:
+            m["tie_rank"] = idx if all_scored else (fallback if fallback is not None
+                                                    else m.get("rank"))
+            m["tie_size"] = len(g)
+
+    return out
 
 
 def _source_ids_for_lmarena():
@@ -308,8 +427,10 @@ def build_merged(collected, date_str, failures):
     ordered += [b for b in collected if b not in BOARD_ORDER]
     for sid in ordered:
         payload = collected[sid]
+        tie = _tie_meta(sid)
         boards[sid] = {
             "board": payload.get("board"),
+            "task_label": BOARD_TASK_LABEL.get(sid, ""),
             "metric": payload.get("metric"),
             "kind": payload.get("kind"),
             "source_url": payload.get("source_url"),
@@ -328,10 +449,44 @@ def build_merged(collected, date_str, failures):
             "retired": payload.get("retired", False),
             "retired_note": payload.get("retired_note"),
             "price_unit": payload.get("price_unit"),
-            "rows": payload.get("rows", []),
+            "tie_tolerance": tie.get("abs"),
+            "tie_rule": tie.get("source"),
+            # 统计并列：返回新列表，不改动 payload 里的原始行对象。
+            # 仅对白名单榜生效，其余榜 tol=None → tie_rank 等于原始 rank。
+            "rows": _apply_tie_ranking(payload.get("rows", []), tie.get("abs")),
         }
 
     cross, cross_meta = build_cross(collected)
+
+    # 跨榜元信息补充：方法论版本、双层命名映射、并列规则、维度冠军、参考组。
+    # 放在 build_merged 而非 build_cross 里，因为这几项都要读 boards（含 tie_rank
+    # 与 task_label），而 boards 字典正是在这里组装的。
+    cross_meta["methodology_version"] = METHODOLOGY_VERSION
+    cross_meta["methodology_changes"] = [
+        {"version": v, "changes": c} for v, c in METHODOLOGY_CHANGES
+    ]
+    # 并列口径：逐榜给出「容差 + 出处」，而不是一个全站比率。
+    # 前端据此区分两种情况——有出处的榜标 "="，没出处的榜明确说明不做并列。
+    tie_policy = {sid: _tie_meta(sid) for sid in boards}
+    cross_meta["tie_policy"] = {
+        sid: {"tolerance": t["abs"], "source": t["source"]}
+        for sid, t in tie_policy.items()
+    }
+    cross_meta["tie_boards"] = [sid for sid, t in tie_policy.items() if t["abs"]]
+    cross_meta["tie_note"] = (
+        "仅对上游公布了容差口径的榜启用统计并列（名次前标 =）；其余榜保留原始名次——"
+        "聚合站拿不到各榜的标准误，用自定阈值合并名次等于凭空制造精度。"
+    )
+    cross_meta["task_labels"] = {
+        sid: {"task": BOARD_TASK_LABEL.get(sid, ""), "board": b.get("board")}
+        for sid, b in boards.items()
+    }
+    cross_meta["dimension_leaders"] = _compute_dimension_leaders(boards)
+    cross_meta["reference_only"] = _compute_reference_only(cross)
+    # 主数据层规模：注册表实体数、别名条数，以及「正式名能否解析回自身」的自检结果。
+    # 方法论页要展示这些数字，由数据层提供才能保证页面与代码严格同源
+    # （前端不应自己从 cross 里估算注册表规模——那只覆盖到出现在榜上的实体）。
+    cross_meta["registry"] = registry_stats()
 
     return {
         "generated_at": now_utc_iso(),
@@ -358,6 +513,104 @@ def _best_rank(model):
     ranks = [a.get("rank") for a in model["appearances"].values()
              if isinstance(a.get("rank"), int)]
     return min(ranks) if ranks else 9999
+
+
+def _leader_from_board(boards, sid, label, basis):
+    """取某榜当前第一名，返回摘要条所需的最小事实集合；无数据返回 None。
+
+    只陈述"这个榜上排第一的是谁、分数多少"，不做任何换算或跨榜比较。
+    并列名次沿用 _apply_tie_ranking 的结果（tie_rank / tie_size 如实带出）。
+
+    已退役归档的榜（retired=True）不产出"当前第一"——归档快照是历史数据，
+    拿它当现状陈述会误导读者（如 HF Open LLM Leaderboard 已于 2025-03 停更）。
+    """
+    b = boards.get(sid)
+    if not b or b.get("retired"):
+        return None
+    rows = b.get("rows") or []
+    scored = [r for r in rows if isinstance(r.get("score"), (int, float))]
+    if not scored:
+        return None
+    best = min(scored, key=lambda r: (r.get("tie_rank") if isinstance(r.get("tie_rank"), int)
+                                      else (r.get("rank") if isinstance(r.get("rank"), int) else 10**6),
+                                      -r["score"]))
+    return {
+        "key": sid,
+        "label": label,
+        "basis": basis,
+        "board": b.get("board"),
+        "id": best.get("id"),
+        "model": best.get("display_name") or best.get("model"),
+        "vendor": best.get("vendor"),
+        "region": best.get("region"),
+        "open": best.get("open"),
+        "score": best.get("score"),
+        "rank": best.get("rank"),
+        "tie_rank": best.get("tie_rank"),
+        "tie_size": best.get("tie_size", 1),
+        "metric": b.get("metric"),
+        "value_label": None,
+    }
+
+
+def _cheapest_from_board(boards, sid="aa_intelligence"):
+    """取该榜中价格最低的一项（纯事实：官方报价，不做任何性价比换算）。
+
+    与 _leader_from_board 同样跳过已退役归档的榜。
+    """
+    b = boards.get(sid)
+    if not b or b.get("retired"):
+        return None
+    rows = b.get("rows") or []
+    priced = [r for r in rows if isinstance(r.get("price"), (int, float))]
+    if not priced:
+        return None
+    best = min(priced, key=lambda r: r["price"])
+    return {
+        "key": f"{sid}_cheapest",
+        "label": "最低价格",
+        "basis": "Artificial Analysis 混合价格（$/百万 token）",
+        "board": b.get("board"),
+        "id": best.get("id"),
+        "model": best.get("display_name") or best.get("model"),
+        "vendor": best.get("vendor"),
+        "region": best.get("region"),
+        "open": best.get("open"),
+        "score": None,
+        "rank": best.get("rank"),
+        "tie_rank": None,
+        "tie_size": 1,
+        "metric": b.get("price_unit"),
+        "value_label": f"${best['price']:.2f}",
+    }
+
+
+def _compute_dimension_leaders(boards):
+    """汇总「各维度当前第一」摘要条数据（对标 LLM Stats 首屏摘要）。"""
+    out = []
+    for sid, label, basis in DIMENSION_LEADERS:
+        item = _leader_from_board(boards, sid, label, basis)
+        if item:
+            out.append(item)
+    cheap = _cheapest_from_board(boards)
+    if cheap:
+        out.append(cheap)
+    return out
+
+
+def _compute_reference_only(cross):
+    """统计参考组（列出但不参与排序的模型）。
+
+    口径与 reference_only 一致：上游未提供可识别厂商 / 开源状态（未登记实体），
+    或国别无法判定（region=other）。做法对标 SuperCLUE 对海外模型的处理——
+    列出但标灰，而不是直接从表里消失（隐藏数据比标注数据更糟）。
+    """
+    refs = [m for m in cross if m.get("reference_only")]
+    return {
+        "count": len(refs),
+        "rule": "上游未提供可识别厂商/开源状态，或国别无法判定：列出但标灰、不参与排序，本站不猜测",
+        "ids": [m["id"] for m in refs][:50],
+    }
 
 
 def build_cross(collected):
@@ -430,12 +683,24 @@ def build_cross(collected):
             v["confidence"] = "partial"    # 同方法论多榜
         else:
             v["confidence"] = "single"     # 单源
+        # 参考项：**厂商与国别都推不出来**的模型（未登记实体，且名称关键词也认不出）。
+        # 不剔除、不猜厂商，改为「列出但标灰、不参与排序」——各榜（如 SuperCLUE 对
+        # 海外模型）的通行做法：隐藏数据比标注数据更糟。
+        #
+        # 注意判据必须是「厂商/国别是否可识别」，而不是 registered（是否在手写注册表
+        # 里）。enrich() 的关键词兜底能在未注册时认出 claude-*→Anthropic、
+        # gemini-*→Google DeepMind，这类模型厂商明确，不该被标为参考项。
+        v["reference_only"] = bool(
+            v["vendor"] in (None, "", "未标注") or v["region"] == "other"
+        )
 
     all_models = [v for v in acc.values() if v["appearances"]]
     cross = [v for v in all_models if v["appearance_count"] >= CROSS_MIN_BOARDS]
     # 排序规则（前端会原样展示，保证"怎么排的"可解释）：
+    #   ⓪ 参考项沉底（reference_only 为 True 的排最后，不参与名次竞争）
     #   ① 上榜数降序 ② 方法论覆盖数降序 ③ 代表名次升序 ④ 名称
     cross.sort(key=lambda m: (
+        bool(m.get("reference_only")),
         -m["appearance_count"],
         -m["group_count"],
         _best_rank(m),
@@ -448,7 +713,7 @@ def build_cross(collected):
         "single_board": len(all_models) - len(cross),
         "min_boards": CROSS_MIN_BOARDS,
         "boards": [sid for sid in order if (collected.get(sid) or {}).get("rows")],
-        "sort_rule": "上榜数 ↓ · 方法论覆盖 ↓ · 代表名次 ↑ · 名称",
+        "sort_rule": "上榜数 ↓ · 方法论覆盖 ↓ · 代表名次 ↑ · 名称（参考项沉底）",
     }
     return cross, cross_meta
 
