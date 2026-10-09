@@ -56,10 +56,11 @@
 ├── index.html                   # 单文件前端（内联 CSS/JS，零外部依赖，SVG 手绘图表）
 ├── sw.js                        # Service Worker：离线可访问 + 数据 stale-while-revalidate
 ├── assets/                      # 品牌 / 分享素材
-│   ├── og-card.html             # OG 卡片源文件（1200×630，浅色变体）
+│   ├── og-card.html             # OG 卡片源文件（1200×630 版式；实际导出为 1262×630）
 │   ├── og-card-dark.html        # 同上，暗色变体（墨黑 + 暖金，站点主视觉）
 │   ├── og-cover.png             # 浅色成品（备用）
-│   └── og-cover-dark.png        # 暗色成品 —— 页面 og:image / twitter:image 与仓库 Social preview 统一用它
+│   └── og-cover-dark.png        # 暗色成品 1262×630 —— 页面 og:image / twitter:image 与仓库 Social preview 统一用它
+│                                # （og:image:width/height 声明的是图片真实尺寸，已在 index.html 同步为 1262×630）
 ├── sitemap.xml / robots.txt / 404.html / .nojekyll
 └── requirements.txt
 ```
