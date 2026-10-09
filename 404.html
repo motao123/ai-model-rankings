@@ -5,18 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>404 · AI 大模型第三方权威排行榜</title>
+<script>
+(function(){try{var t=localStorage.getItem("amr:theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
+</script>
 <style>
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#fff;color:#16130e;display:grid;place-items:center;min-height:100vh;margin:0}
-.box{text-align:center;padding:40px 20px}
-h1{font-size:64px;margin:0;font-family:monospace;color:#9a7400}
-p{color:#857e72;margin:12px 0 24px}
-a{display:inline-block;padding:10px 22px;background:#16130e;color:#fff;text-decoration:none;border-radius:4px;font-size:14px}
+/* 与全站同一套设计系统（token 内联复用；零外部依赖） */
+:root{
+  --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --font-serif:"Songti SC","Source Han Serif SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  --font-mono:"SF Mono",SFMono-Regular,ui-monospace,"Cascadia Code",Consolas,monospace;
+  --bg:#fbfaf7; --ink:#14110b; --muted:#7b7365; --faint:#a39b8c;
+  --line:#dbd5c9; --accent:#8a6a00;
+}
+[data-theme="dark"]{
+  --bg:#14120e; --ink:#f2efe8; --muted:#9a9284; --faint:#6f685c;
+  --line:#332e26; --accent:#d8b45c;
+}
+@media (prefers-color-scheme: dark){
+  html:not([data-theme]){
+    --bg:#14120e; --ink:#f2efe8; --muted:#9a9284; --faint:#6f685c;
+    --line:#332e26; --accent:#d8b45c;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--ink);
+  display:grid;place-items:center;min-height:100vh;
+  font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+.box{text-align:center;padding:40px 20px;max-width:560px}
+.mark{font-family:var(--font-serif);font-size:20px;color:var(--accent);font-weight:700}
+h1{font-family:var(--font-mono);font-size:64px;margin:10px 0 0;color:var(--accent);font-weight:700}
+p{color:var(--muted);margin:14px 0 26px;font-size:13.5px;line-height:1.8}
+a{display:inline-block;padding:9px 20px;border:1px solid var(--line);color:var(--ink);
+  text-decoration:none;font-size:13px;transition:color .15s,border-color .15s}
+a:hover{color:var(--accent);border-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
 <div class="box">
+  <div class="mark" aria-hidden="true">#</div>
   <h1>404</h1>
-  <p>页面不存在。榜单数据每日更新，请返回首页查看最新排名。</p>
+  <p>页面不存在。榜单数据每日更新，请返回首页查看最新排名；<br>想了解数据如何计算，可阅读方法论页。</p>
   <a href="./">返回排行榜首页</a>
 </div>
 </body>

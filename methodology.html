@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>方法论 · AI 大模型第三方权威排行榜</title>
+<meta name="description" content="本站的数据如何来、如何清洗、如何合并：变体折叠规则、厂商归一优先级、跨榜收录门槛、排序规则、统计并列口径、降级链，以及我们明确不做什么与已知局限。">
+<meta name="keywords" content="方法论,methodology,数据口径,变体折叠,厂商归一,统计并列,降级链,AI大模型排行榜">
+<meta name="author" content="ai-model-rankings">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://motao123.github.io/ai-model-rankings/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="方法论 · AI 大模型第三方权威排行榜">
+<meta property="og:description" content="变体折叠、厂商归一、跨榜收录门槛、统计并列口径与已知局限的完整说明。">
+<meta property="og:url" content="https://motao123.github.io/ai-model-rankings/methodology.html">
+<meta property="og:site_name" content="AI Model Rankings">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2314120f'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%23a67c00' font-family='monospace'>#</text></svg>
+
+<!-- 主题引导：在样式生效前套用已保存的配色，避免闪烁（无 JS 时回落到系统偏好） -->
+<script>
+(function(){try{var t=localStorage.getItem("amr:theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
+</script>
+
+<style>
+/* =========================================================================
+   与 index.html 同一套设计系统（技术出版物 / 数据年鉴方向）。
+   本项目约定：每页自包含、零外部依赖，故 token 在此内联复用；
+   两处必须保持一致，改 token 时同步修改。
+   ========================================================================= */
+:root{
+  --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --font-serif:"Songti SC","Source Han Serif SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  --font-mono:"SF Mono",SFMono-Regular,ui-monospace,"Cascadia Code",Consolas,monospace;
+  --fs-10:10.5px; --fs-11:11.5px; --fs-12:12.5px; --fs-13:13.5px;
+  --fs-15:15px; --fs-18:18px; --fs-21:21px;
+  --bg:#fbfaf7; --bg-alt:#f6f4ef; --bg-sunken:#efece4;
+  --ink:#14110b; --ink-2:#3b352c; --muted:#7b7365; --faint:#a39b8c;
+  --line:#dbd5c9; --line-soft:#ebe7de;
+  --accent:#8a6a00; --accent-2:#b8912a; --accent-soft:#f3e9cf; --accent-line:#d6c186;
+  --up:#a8281c; --down:#1c6b45; --warn:#94570f; --flat:#a39b8c;
+  --seq-1:#2f2b23; --seq-2:#4b4438; --seq-3:#665e4d;
+  --seq-4:#827a66; --seq-5:#9e9580; --seq-6:#b8ae98;
+  --gold:var(--accent);
+  --maxw:900px;
+  --rule:1px solid var(--line);
+  --rule-soft:1px solid var(--line-soft);
+}
+[data-theme="dark"]{
+  --bg:#14120e; --bg-alt:#1b1813; --bg-sunken:#221e18;
+  --ink:#f2efe8; --ink-2:#cdc7ba; --muted:#9a9284; --faint:#6f685c;
+  --line:#332e26; --line-soft:#26221c;
+  --accent:#d8b45c; --accent-2:#e3c67e; --accent-soft:#2b2417; --accent-line:#54461f;
+  --up:#e0715f; --down:#4fae7f; --warn:#d09a4a; --flat:#6f685c;
+  --seq-1:#e8e3d8; --seq-2:#cdc6b6; --seq-3:#b1a894;
+  --seq-4:#958c78; --seq-5:#79715f; --seq-6:#5d5849;
+}
+@media (prefers-color-scheme: dark){
+  html:not([data-theme]){
+    --bg:#14120e; --bg-alt:#1b1813; --bg-sunken:#221e18;
+    --ink:#f2efe8; --ink-2:#cdc7ba; --muted:#9a9284; --faint:#6f685c;
+    --line:#332e26; --line-soft:#26221c;
+    --accent:#d8b45c; --accent-2:#e3c67e; --accent-soft:#2b2417; --accent-line:#54461f;
+    --up:#e0715f; --down:#4fae7f; --warn:#d09a4a; --flat:#6f685c;
+    --seq-1:#e8e3d8; --seq-2:#cdc6b6; --seq-3:#b1a894;
+    --seq-4:#958c78; --seq-5:#79715f; --seq-6:#5d5849;
+  }
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans); background:var(--bg); color:var(--ink);
+  line-height:1.62; -webkit-font-smoothing:antialiased; font-size:var(--fs-15);
+  font-variant-numeric:tabular-nums;
+  transition:background .18s ease,color .18s ease;
+}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.mono{font-family:var(--font-mono)}
+h1,h2,h3,h4{font-weight:600}
+code{font-family:var(--font-mono);font-size:.92em;background:var(--bg-sunken);
+  padding:1px 5px;color:var(--ink-2)}
+
+/* ---------- 报头 ---------- */
+header.site{border-bottom:var(--rule);background:var(--bg);position:sticky;top:0;z-index:40}
+.hd{display:flex;align-items:center;gap:18px;padding:14px 0 12px;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo .mark{font-family:var(--font-serif);font-size:20px;line-height:1;font-weight:700;color:var(--accent)}
+.logo .name{font-family:var(--font-serif);font-size:var(--fs-18);font-weight:700;letter-spacing:-.01em;line-height:1.15}
+.hd .spacer{flex:1}
+.back{font-size:var(--fs-12);color:var(--muted);text-decoration:none;padding:2px 0;
+  border-bottom:1px solid transparent;transition:color .15s,border-color .15s}
+.back:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.themebtn{font-family:var(--font-mono);letter-spacing:.02em;white-space:nowrap}
+.fbtn{font-size:var(--fs-12);padding:6px 12px;border:var(--rule);background:transparent;cursor:pointer;
+  color:var(--muted);font-family:inherit;transition:color .15s,border-color .15s,background .15s}
+.fbtn:hover{color:var(--ink);border-color:var(--ink)}
+
+/* ---------- 无障碍 ---------- */
+.skip{position:absolute;left:-9999px;top:0;z-index:100}
+.skip:focus{position:fixed;left:12px;top:12px;background:var(--bg);color:var(--ink);
+  border:var(--rule);padding:8px 14px;font-size:var(--fs-12);text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;
+    transition-duration:.001ms !important}
+}
+
+/* ---------- 刊头 ---------- */
+.hero{padding:44px 0 24px;border-bottom:var(--rule)}
+.hero h1{font-family:var(--font-serif);font-size:clamp(26px,4.2vw,34px);letter-spacing:-.02em;
+  font-weight:700;line-height:1.18}
+.hero .sub{margin-top:14px;color:var(--ink-2);max-width:760px;font-size:var(--fs-15);line-height:1.78}
+.hero .tags{margin-top:20px;display:flex;gap:0 20px;flex-wrap:wrap}
+.chip{font-size:var(--fs-11);color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.chip::before{content:"—";color:var(--faint)}
+.chip.gold{color:var(--accent)}
+.chip.gold::before{color:var(--accent-2)}
+.chip b{font-family:var(--font-mono);font-weight:700}
+
+/* ---------- 目录 ---------- */
+nav.toc{padding:20px 0;border-bottom:var(--rule-soft)}
+nav.toc ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px 26px}
+nav.toc a{font-size:var(--fs-12);color:var(--muted);text-decoration:none;display:flex;gap:9px;
+  padding:3px 0;transition:color .15s}
+nav.toc a:hover{color:var(--ink)}
+nav.toc a .n{font-family:var(--font-mono);color:var(--faint);font-size:var(--fs-10);
+  min-width:2.4em;padding-top:2px}
+nav.toc a:hover .n{color:var(--accent)}
+
+/* ---------- 区块 ---------- */
+section{padding:38px 0;border-bottom:var(--rule)}
+.sec-hd{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.sec-hd h2{font-family:var(--font-serif);font-size:var(--fs-21);letter-spacing:-.01em;font-weight:700}
+.sec-hd .n{font-family:var(--font-mono);font-size:var(--fs-11);color:var(--accent);font-weight:700}
+.sec-hd .en{font-size:var(--fs-10);color:var(--faint);text-transform:uppercase;
+  letter-spacing:.18em;font-family:var(--font-mono)}
+p{margin:12px 0;color:var(--ink-2);font-size:var(--fs-13);line-height:1.85}
+h3{font-size:var(--fs-15);margin:26px 0 8px;color:var(--ink)}
+h4{font-size:var(--fs-13);margin:20px 0 6px;color:var(--ink-2);font-weight:600}
+ul,ol{margin:10px 0 12px 22px}
+li{font-size:var(--fs-13);color:var(--ink-2);line-height:1.85;margin:5px 0}
+strong,b{color:var(--ink);font-weight:600}
+
+/* 原则条：左边发丝强调，不用卡片 */
+.principle{border-left:3px solid var(--accent);background:var(--bg-alt);padding:13px 16px;
+  margin:20px 0;font-size:var(--fs-12);color:var(--ink-2);line-height:1.8}
+.principle b{color:var(--ink)}
+.principle.warn{border-left-color:var(--warn)}
+.principle.dont{border-left-color:var(--faint)}
+
+/* 表格：发丝网格（与首页一致，无外框无圆角） */
+.table-wrap{overflow-x:auto;border-top:var(--rule);border-bottom:var(--rule);margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:var(--fs-12)}
+thead th{text-align:left;font-weight:600;font-size:var(--fs-10);color:var(--muted);
+  padding:9px 11px;border-bottom:var(--rule);white-space:nowrap;letter-spacing:.06em;text-transform:uppercase}
+tbody td{padding:9px 11px;border-bottom:var(--rule-soft);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--bg-alt)}
+td.k{font-family:var(--font-mono);font-size:var(--fs-11);color:var(--ink);white-space:nowrap}
+td.num{text-align:right;font-family:var(--font-mono)}
+.tbl-note{font-size:var(--fs-11);color:var(--faint);margin:-6px 0 18px;line-height:1.75}
+
+/* 示例块：折叠链演示 */
+.example{background:var(--bg-alt);border-top:var(--rule-soft);border-bottom:var(--rule-soft);
+  padding:13px 16px;margin:14px 0;font-family:var(--font-mono);font-size:var(--fs-11);
+  line-height:1.95;color:var(--ink-2);overflow-x:auto}
+.example .raw{color:var(--ink)}
+.example .arrow{color:var(--faint)}
+.example .out{color:var(--accent);font-weight:700}
+.example .lbl{color:var(--muted)}
+.example .cmt{color:var(--faint);font-family:var(--font-sans)}
+
+/* 流程步骤 */
+.steps{counter-reset:s;list-style:none;margin:14px 0;padding:0}
+.steps li{counter-increment:s;position:relative;padding-left:34px;margin:10px 0;font-size:var(--fs-13)}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:2px;
+  font-family:var(--font-mono);font-size:var(--fs-10);font-weight:700;color:var(--accent)}
+
+/* 降级链 */
+.chain{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin:16px 0}
+.chain .node{border-top:var(--rule);border-bottom:var(--rule);padding:11px 15px;min-width:150px;flex:1}
+.chain .node:first-child{border-left:var(--rule)}
+.chain .node:last-child{border-right:var(--rule)}
+.chain .node .t{font-size:var(--fs-12);font-weight:600;color:var(--ink)}
+.chain .node .m{font-size:var(--fs-10);color:var(--muted);margin-top:4px;line-height:1.6}
+.chain .node.fallback .t{color:var(--warn)}
+.chain .node.best .t{color:var(--down)}
+
+/* 页脚 */
+footer.site{padding:30px 0 48px;color:var(--muted);font-size:var(--fs-12);line-height:1.8;border-top:var(--rule)}
+footer.site a{color:var(--accent);text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site b{color:var(--ink-2)}
+
+.empty-hint{padding:36px 20px;text-align:center;color:var(--muted);font-size:var(--fs-13);
+  background:var(--bg-alt);border-top:var(--rule-soft);border-bottom:var(--rule-soft)}
+@media (max-width:640px){
+  .chain .node{min-width:100%;border-left:var(--rule) !important;border-right:var(--rule) !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="site">
+  <div class="wrap hd">
+    <a class="logo" href="./"><span class="mark">#</span><span class="name">AI 大模型第三方权威排行榜</span></a>
+    <div class="spacer"></div>
+    <a class="back" href="./">← 返回排行榜</a>
+    <button class="fbtn themebtn" id="theme-toggle" type="button" title="切换配色（跟随系统 / 浅色 / 深色）"
+      style="font-size:12.5px;padding:6px 12px;border:var(--rule);background:transparent;cursor:pointer;color:var(--muted);font-family:var(--font-mono)">配色：跟随系统</button>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+
+<div class="hero">
+  <h1>方法论</h1>
+  <p class="sub">
+    这一页说明本站的数据从哪里来、经过哪些清洗、按什么规则合并，以及<strong>我们明确不做什么</strong>。
+    榜单页上的每一个名次都可追溯到原始榜单；本页的规则与 <code>src/</code> 下的实现一一对应，
+    改动规则会升方法论版本号并记录在变更日志里。
+  </p>
+  <div class="tags">
+    <span class="chip gold">方法论版本 <b id="m-ver">cross-v2</b></span>
+    <span class="chip">收录榜单 <b id="m-boards">7</b></span>
+    <span class="chip">折叠后模型实体 <b id="m-total">—</b></span>
+    <span class="chip">注册表实体 <b id="m-entities">—</b></span>
+    <span class="chip">别名 <b id="m-aliases">—</b></span>
+    <span class="chip">跨榜收录门槛 <b id="m-min">≥2</b></span>
+    <span class="chip">数据时间 <b id="m-at">—</b></span>
+  </div>
+</div>
+
+<nav class="toc" aria-label="本页目录">
+  <ol>
+    <li><a href="#s1"><span class="n">01</span>核心原则：聚合不篡改</a></li>
+    <li><a href="#s2"><span class="n">02</span>数据来源与口径边界</a></li>
+    <li><a href="#s3"><span class="n">03</span>模型主数据层</a></li>
+    <li><a href="#s4"><span class="n">04</span>变体折叠规则</a></li>
+    <li><a href="#s5"><span class="n">05</span>厂商与国别归一</a></li>
+    <li><a href="#s6"><span class="n">06</span>跨榜合并与排序</a></li>
+    <li><a href="#s7"><span class="n">07</span>统计并列口径</a></li>
+    <li><a href="#s8"><span class="n">08</span>抓取失败与降级链</a></li>
+    <li><a href="#s9"><span class="n">09</span>已知局限</a></li>
+    <li><a href="#s10"><span class="n">10</span>版本与变更日志</a></li>
+  </ol>
+</nav>
+
+<section id="s1">
+  <div class="sec-hd"><span class="n">01</span><h2>核心原则：聚合不篡改</h2><span class="en">Principles</span></div>
+
+  <p>本站是<strong>第三方聚合展示</strong>，不是评测机构。我们不跑任何评测，不产生任何分数。</p>
+
+  <div class="principle">
+    <b>我们做的三件事：</b>把多个独立榜单的原始名次与分数取回来；把「同一个模型的不同写法」认成同一个实体；
+    把各榜口径与新鲜度如实标注出来。
+  </div>
+
+  <div class="principle dont">
+    <b>我们明确不做的三件事：</b>
+    ① 不修改任何原始分数；
+    ② <b>不计算跨榜综合总分</b>——各榜方法论不同，Elo 分、百分制、IPS 分不可相加，
+    任何加权都是主观选择，会把口径差异伪装成客观结论；
+    ③ 不猜测厂商、国别与开源状态，推不出来就写「未标注」。
+  </div>
+
+  <p>
+    因此「跨榜对比」在本站的含义是：<strong>并列展示同一个模型在不同方法论下的名次</strong>，
+    供你观察它在不同评测体系里是否一致地强（或一致地弱），而不是给出一个"总分第一"。
+    这也是为什么跨榜表里有「上榜数」和「方法论覆盖」两列，却没有「综合分」列。
+  </p>
+</section>
+
+<section id="s2">
+  <div class="sec-hd"><span class="n">02</span><h2>数据来源与口径边界</h2><span class="en">Sources</span></div>
+
+  <p>下表列出每个榜的度量口径与使用限制。<strong>分数只在同一个榜内部可比</strong>，跨行比较无意义。</p>
+
+  <div id="src-table"></div>
+  <p class="tbl-note">「状态」列如实反映上游情况：已退役的榜保留归档快照供参考，但<strong>不会</strong>被用来产出「当前第一」这类现状陈述。</p>
+
+  <h3>为什么口径边界重要</h3>
+  <ul>
+    <li><strong>真人盲测（Elo / Arena Score）测的是偏好，不是正确性。</strong>用户更喜欢答案，不等于答案更对；且投票人群有构成偏差。</li>
+    <li><strong>客观基准测的是特定能力族。</strong>代码榜的成绩与所用的 Agent harness（脚手架）强相关——同一个底座模型，弱 harness 与强 harness 之间可能相差数十分。</li>
+    <li><strong>公开题集可能被专项优化。</strong>模型可能在训练阶段见过公开题目，导致成绩高于真实泛化能力。</li>
+    <li><strong>推理档位是成绩的一部分。</strong>同一模型开启/关闭扩展思考（<code>high</code>/<code>max</code>/<code>thinking</code>），排名可能相差多个位次。本站保留档位标注（见 §04），不把不同档位的成绩混为一谈。</li>
+  </ul>
+</section>
+
+<section id="s3">
+  <div class="sec-hd"><span class="n">03</span><h2>模型主数据层</h2><span class="en">Master data</span></div>
+
+  <p>
+    各榜对同一个模型的写法往往不同：<code>claude-3-5-sonnet-20241022</code>、<code>Claude Opus 4.5 (High)</code>、
+    <code>Qwen3.8-Max-0902(max)</code>、<code>GPT-4o-mini-2024-07-18</code>。
+    如果按原始字符串直接聚合，同一个模型会被拆成多行，长尾 ID 还会淹没主表——这是聚合站最常见的数据混乱来源。
+  </p>
+
+  <p>本站因此建立了一层<strong>模型主数据（master data）</strong>：一个 canonical 实体 + 若干变体写法。</p>
+
+  <h3>匹配策略：先确定、后猜测</h3>
+  <ol class="steps">
+    <li><strong>精确匹配</strong>：把原始名按 §04 递归剥掉变体尾巴，得到一串候选（从「最折叠的基座名」到「原串」）。从最折叠的一端开始，逐个查注册表与别名表，命中即返回。</li>
+    <li><strong>别名兜底</strong>：仍未命中时，用归一化后的基座名做包含匹配（例如 <code>hy3</code> → <code>hunyuan-hy3</code>）。</li>
+    <li><strong>未注册</strong>：都没命中就用折叠后的归一化名作为 id，<code>registered=false</code>，并如实标注厂商/国别未知。</li>
+  </ol>
+
+  <div class="principle">
+    <b>「从最折叠的一端开始匹配」是关键设计。</b>它保证 <code>Qwen3.8-Max-0902(max)</code> 会先尝试
+    <code>Qwen3.8-Max</code>（正式实体）而不是停在 <code>Qwen3.8</code>——正式名里的 Max/Pro/Flash/Mini
+    不会被当作可剥离的档位词丢掉。
+  </div>
+  <p style="font-size:var(--fs-12);color:var(--muted)">
+    折叠自检：<span id="m-selfcheck">—</span>。
+    该校验在每次生成数据时自动运行，结果写入 <code>data/merged.json</code>，
+    因此这里显示的永远是当次构建的真实结果，而非一句写死的承诺。
+  </p>
+
+  <h3>字段必填：把「未知」写成显式状态</h3>
+  <p>三个标签字段一律非空，避免"空值"被下游误读成"否"：</p>
+  <ul>
+    <li><code>vendor</code> —— 恒为字符串。推不出时是 <code>"未标注"</code>，不是空串。</li>
+    <li><code>region</code> —— 恒为字符串。推不出时是 <code>"other"</code>。</li>
+    <li><code>open</code> —— <code>true</code> / <code>false</code> / <code>null</code> 三态。<code>null</code> 表示<strong>上游未声明</strong>，显式表达「未知」，而不是当成闭源。</li>
+  </ul>
+  <p>这样页面上的「开源」标注才是可信的：没标就是不知道，不是"我们判定它不开源"。</p>
+</section>
+
+<section id="s4">
+  <div class="sec-hd"><span class="n">04</span><h2>变体折叠规则</h2><span class="en">Variant folding</span></div>
+
+  <p>
+    折叠是递归的：每轮尝试剥掉一层「变体尾巴」，直到无可剥。被剥掉的内容<strong>不会丢弃</strong>，
+    而是记为档位标注（<code>variant</code>），在页面上以小字显示在模型名下方。
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <caption class="sr-only">四类可剥离的变体尾巴</caption>
+    <thead><tr><th>类别</th><th>形态</th><th>示例</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td class="k">paren</td><td>结尾括号内容</td><td><code>(High)</code> <code>(max)</code> <code>(thinking)</code></td><td>推理档位或期次标注</td></tr>
+      <tr><td class="k">date</td><td>结尾日期戳</td><td><code>20241022</code> <code>2025-01-31</code> <code>06-05</code> <code>0902</code></td><td>4 位纯数字需校验「前两位 1–12、后两位 1–31」，避免把 <code>grok-4.20</code> 误判为日期</td></tr>
+      <tr><td class="k">ctx</td><td>上下文长度后缀</td><td><code>-32k</code> <code>-128K</code> <code>-1M</code></td><td>同一模型的不同上下文窗口配置</td></tr>
+      <tr><td class="k">mode</td><td>档位/阶段词</td><td><code>-high</code> <code>-medium</code> <code>-low</code> <code>-xhigh</code> <code>-thinking</code> <code>-preview</code> <code>-exp</code> <code>-max</code></td><td><strong>不含</strong> <code>pro</code>/<code>flash</code>/<code>mini</code>/<code>lite</code>——这些是正式名的一部分</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>实际折叠示例</h3>
+  <div class="example">
+    <div><span class="raw">claude-3-5-sonnet-20241022</span> <span class="arrow">→</span> <span class="out">Claude 3.5 Sonnet</span> <span class="lbl">[date: 20241022]</span></div>
+    <div><span class="raw">Qwen3.8-Max-0902(max)</span> <span class="arrow">→</span> <span class="out">通义千问 Qwen3.8-Max</span> <span class="lbl">[date: 0902, paren: max]</span></div>
+    <div><span class="raw">DeepSeek-V4-Pro-0813(max)</span> <span class="arrow">→</span> <span class="out">DeepSeek V4-Pro</span> <span class="lbl">[date: 0813, paren: max]</span></div>
+    <div><span class="raw">claude-opus-4-20250514-thinking-16k</span> <span class="arrow">→</span> <span class="out">Claude Opus 4</span> <span class="lbl">[ctx: 16k, mode: thinking, date: 20250514]</span></div>
+  </div>
+  <p class="tbl-note">
+    注意 <code>Qwen3.8-Max</code>：结尾的 <code>Max</code> 属于正式名（注册表里有 <code>qwen3.8-max</code> 这个实体），
+    因此<strong>不会</strong>被剥掉；而括号里的 <code>(max)</code> 是档位标注，会被剥掉并记入 variant。
+    两者同名但性质不同——这正是「从最折叠端开始匹配」要解决的问题。
+  </p>
+
+  <h3>同一榜内出现多个变体时</h3>
+  <p>
+    有些榜会同时列出同一模型的不同档位（如 <code>-high</code> 与 <code>-low</code>）。
+    本站把它们折叠为一个实体，<strong>取该榜上的最好名次</strong>，并把所有出现过的档位合并记入
+    <code>variants</code>。原始榜单快照本身不被修改。
+  </p>
+  <div class="principle warn">
+    <b>这是一个需要明示的取舍。</b>取「最好名次」会让该模型在这个榜上的表现偏乐观。
+    我们不隐藏它：档位标注会显示在页面上（如 <code>32k / high</code>），
+    点进溯源可以看到原始写法。若你认为应按「默认档位」取值，欢迎在
+    <a href="https://github.com/motao123/ai-model-rankings/issues" target="_blank" rel="noopener">Issues</a> 提出。
+  </div>
+</section>
+
+<section id="s5">
+  <div class="sec-hd"><span class="n">05</span><h2>厂商与国别归一</h2><span class="en">Vendor &amp; region</span></div>
+
+  <p>
+    上游各榜给出的「机构」字段口径不一：LMArena 与 HF 用 slug（<code>openai</code>、<code>z-ai</code>、<code>google</code>），
+    SuperCLUE 用中文名（<code>阿里巴巴</code>），HF 榜里还混有<strong>上传者用户名</strong>
+    （如 <code>Lunzima</code>、<code>MaziyarPanahi</code>）——它们不是厂商。
+    直接展示会出现 <code>openai</code> 与 <code>OpenAI</code> 并存、以及把个人账号当厂商的情况。
+  </p>
+
+  <h3>厂商判定优先级</h3>
+  <ol class="steps">
+    <li><strong>注册表</strong>：该模型已登记，直接取登记的厂商（最高可信度）。</li>
+    <li><strong>机构 slug 归一</strong>：未登记时，把上游机构字段查别名表（约 50 条，如 <code>zai</code>/<code>z-ai</code> → <code>智谱 AI</code>）；含中日韩字符的机构名直接保留。</li>
+    <li><strong>名称关键词</strong>：机构字段也认不出时，按模型名猜（<code>claude*</code> → Anthropic、<code>gemini*</code> → Google DeepMind、<code>glm*</code> → 智谱 AI 等约 40 条规则）。</li>
+    <li><strong>放弃</strong>：以上都不成立，写 <code>"未标注"</code>，<strong>不猜</strong>。</li>
+  </ol>
+
+  <p>国别由厂商推导（同一张映射表），原始机构字段另存为 <code>vendor_raw</code> 供追溯，页面上悬停厂商名即可看到。</p>
+
+  <h3>「未标注」模型的处理：列出但不参与排名</h3>
+  <p>
+    厂商与国别<strong>都</strong>推不出来的模型（判定条件：<code>vendor == "未标注"</code> 或 <code>region == "other"</code>），
+    本站<strong>不剔除</strong>，而是：
+  </p>
+  <ul>
+    <li>照常列出，但整行<strong>标灰</strong>；</li>
+    <li>沉到跨榜表<strong>末尾</strong>，不参与名次竞争；</li>
+    <li>单独计数并在页面上说明数量与原因。</li>
+  </ul>
+  <div class="principle">
+    <b>为什么不直接剔除？</b>隐藏数据比标注数据更糟——读者会以为榜单是完整的。
+    这也是 SuperCLUE 对海外模型的处理方式（列出但标 <code>-</code> 前缀、不参与排名）。
+    当前数据中这类模型有 <b id="m-refcount">—</b> 个。
+  </div>
+  <div class="principle warn">
+    <b>判据的边界要说清楚。</b>我们用的是「厂商/国别能否识别」，<strong>不是</strong>「是否在本站注册表里」。
+    这两者不等价：<code>claude-opus-4</code> 虽未注册，但名称关键词能认出它属 Anthropic、国别 us，
+    因此<strong>不算</strong>参考项。早期版本误用了 <code>registered</code> 作判据，把这类厂商明确的模型也标灰了，已修正。
+  </div>
+</section>
+
+<section id="s6">
+  <div class="sec-hd"><span class="n">06</span><h2>跨榜合并与排序</h2><span class="en">Cross-board merge</span></div>
+
+  <h3>收录门槛</h3>
+  <p>
+    跨榜表只收录出现在 <strong>≥ <span id="m-min2">2</span> 个榜</strong>的模型。
+    单榜模型信息量低（无法做跨方法论对照），且会把大量长尾原始 ID 带进主表。
+    它们<strong>完整保留</strong>在「分榜明细」里，一个不少。
+  </p>
+  <div id="m-cross-stats"></div>
+
+  <h3>id 一律重算</h3>
+  <p>
+    合并时每个模型的 canonical id <strong>都由主数据层重新计算</strong>，不信任上游或历史数据里存的 id。
+    原因是历史快照可能是旧算法产物，直接沿用会让同一模型在不同批次里落到不同 key，
+    表现为「表里出现两条同名记录」。重算保证了幂等：同一份输入无论跑多少次，结果一致。
+  </p>
+
+  <h3>排序规则</h3>
+  <p>默认排序为四个键，依次比较：</p>
+  <div class="table-wrap">
+  <table>
+    <caption class="sr-only">跨榜表默认排序的四个键</caption>
+    <thead><tr><th>#</th><th>键</th><th>方向</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td class="num">0</td><td class="k">reference_only</td><td>参考项沉底</td><td>厂商/国别不明的不参与名次竞争（见 §05）</td></tr>
+      <tr><td class="num">1</td><td class="k">appearance_count</td><td>↓ 降序</td><td>被越多榜收录，跨方法论证据越强</td></tr>
+      <tr><td class="num">2</td><td class="k">group_count</td><td>↓ 降序</td><td>覆盖的<strong>方法论类别</strong>数（真人偏好 / 客观基准），比单纯榜数更能说明证据多样性</td></tr>
+      <tr><td class="num">3</td><td class="k">代表名次</td><td>↑ 升序</td><td>优先取代表榜的名次，都没有则取全部名次里的最好值</td></tr>
+      <tr><td class="num">4</td><td class="k">display_name</td><td>字典序</td><td>打破平局，保证排序稳定可复现</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tbl-note">页面上的表头可点击，按任一榜的名次重排；排序规则文案由数据文件动态提供，与实际实现同源。</p>
+
+  <h3>方法论覆盖与共识置信度</h3>
+  <p>每行有一个 <code>confidence</code> 标签，它<strong>不是分数</strong>，而是「证据强度」的存在性分级：</p>
+  <ul>
+    <li><code>verified</code> —— 在 <strong>≥2 类不同方法论</strong>下都被评测到（如同时有真人盲测与客观基准）</li>
+    <li><code>partial</code> —— 出现在 ≥2 个榜，但都属同一方法论类别</li>
+    <li><code>single</code> —— 只有一个来源（此类模型不进入跨榜表）</li>
+  </ul>
+</section>
+
+<section id="s7">
+  <div class="sec-hd"><span class="n">07</span><h2>统计并列口径</h2><span class="en">Tie policy</span></div>
+
+  <p>
+    名次是点估计。两个模型分差 0.05 时，说"第 3 名比第 4 名强"在统计上站不住脚。
+    但<strong>承认噪声需要一个有出处的阈值</strong>，否则就是把主观判断伪装成精确性。
+  </p>
+
+  <div class="principle dont">
+    <b>我们不用自适应阈值。</b>本站曾尝试「同榜分数全距 × 0.8%」这类按比例自动计算的阈值，实测结果很糟：
+    全距会被尾部差模型拉大——LMArena Text 分数跨度约 700 分，算出阈值 5.6 分，
+    导致头部真实分差 3~4 分的模型被并成同一名次，<b>414 行里 400 行卷入并列</b>，名次彻底失去区分度。
+    聚合站拿不到各榜的标准误，任何自定阈值都等于凭空制造精度。
+  </div>
+
+  <h3>现行规则：白名单 + 出处</h3>
+  <p>只有<strong>上游自己公布了容差口径</strong>的榜才启用统计并列，且出处写明：</p>
+  <div id="m-tie-table"></div>
+
+  <h3>编号方式：与上游一致</h3>
+  <p>
+    并列组采用<strong>密集编号</strong>（dense ranking：<code>1, 1, 2, 2, 2, 3, 4</code>），
+    而不是竞赛编号（<code>1, 1, 3, 3, 3, 6</code>）。选择密集编号是为了<strong>与上游显示一致</strong>——
+    以 SuperCLUE 为例，按官方口径（分差 1 分内并列）计算，本站得到
+    <code>1, 1, 2, 2, 2, 3, 4, 5</code>，与其官网榜单逐项相同。
+    读者交叉核对同一榜单时应看到相同数字，这是聚合站的基本要求。
+  </p>
+  <p class="tbl-note">
+    分组时与<strong>组首分数</strong>比较而非与相邻行比较，避免链式漂移
+    （A≈B、B≈C，但 A 与 C 差距已超容差，不应并成一组）。
+  </p>
+
+  <h3>未启用并列的榜怎么看</h3>
+  <p>
+    其余榜保留原始名次，页面上会说明「上游未公布容差」。这意味着：
+    <strong>相邻两名的分差不代表显著性差异</strong>。判断两个模型是否真的有高下，
+    应回到原始榜单看它是否提供置信区间（如 LMArena 的 95% bootstrap 区间）。
+  </p>
+</section>
+
+<section id="s8">
+  <div class="sec-hd"><span class="n">08</span><h2>抓取失败与降级链</h2><span class="en">Fallback chain</span></div>
+
+  <p>
+    上游站点会改版、限流、被墙。本站的原则是：<strong>宁可标注降级，也不静默展示旧数据或空数据</strong>。
+  </p>
+
+  <h3>四层独立冗余</h3>
+  <div class="chain">
+    <div class="node best"><div class="t">① 实时抓取</div><div class="m">直接取上游，最新最可信</div></div>
+    <div class="node fallback"><div class="t">② 第三方镜像</div><div class="m">Internet Archive 快照。与本站无共享信任域，属独立冗余</div></div>
+    <div class="node fallback"><div class="t">③ 已知良好回退</div><div class="m">LKG：只记录<strong>通过数据契约</strong>的历史批次</div></div>
+    <div class="node fallback"><div class="t">④ 人工数据</div><div class="m">最后手段，页面明确标注「人工快照」与滞后天数</div></div>
+  </div>
+
+  <h3>数据契约（坏数据不落盘）</h3>
+  <p>
+    实时抓取的结果要先通过契约校验才会被采用并晋级为 LKG：行数下限、较上期跌幅、分数完整度。
+    不合格的结果<strong>不写入展示数据</strong>，转而走降级链。
+    这一步防的是「上游改版导致解析出半张表，页面照常展示」这种静默错误。
+  </p>
+
+  <h3>页面上的可见性</h3>
+  <ul>
+    <li>任何榜降级，页面顶部出现<strong>降级横幅</strong>，写明是哪几个榜、走了哪一层、滞后多少天。</li>
+    <li>分榜明细里每榜标注<strong>实际来源</strong>与数据版权。</li>
+    <li>降级时自动在 GitHub 开 Issue（带 <code>data-degraded</code> 标签），恢复后自动评论并关闭。</li>
+    <li>前端取数也有多端点容灾：同源 → jsDelivr CDN → GitHub raw，再叠加浏览器本地末次成功缓存，全网络失败也不白屏。</li>
+  </ul>
+
+  <h3>关于「数据时间」</h3>
+  <p>
+    页面上显示的时间是<strong>数据抓取时间</strong>，不是页面打开时间，也不是部署时间。
+    静态站点的页面可能在你打开前已缓存数小时，但数据时间只在成功抓取新数据时前进。
+  </p>
+</section>
+
+<section id="s9">
+  <div class="sec-hd"><span class="n">09</span><h2>已知局限</h2><span class="en">Limitations</span></div>
+
+  <p>如实列出本站<strong>做不到</strong>或<strong>可能出错</strong>的地方。这些不是待办，是当前设计的边界。</p>
+
+  <h3>1. 没有置信区间</h3>
+  <p>
+    上游多数榜不公开标准误，本站因此无法给出置信区间，也无法做严格的显著性检验。
+    这正是 §07 不采用自适应并列阈值的原因——没有误差量级，任何阈值都是编的。
+    需要统计严谨性时，请回到原始榜单（LMArena 提供 95% bootstrap 区间）。
+  </p>
+
+  <h3>2. 注册表是手工维护的，会有漏网</h3>
+  <p>
+    canonical 实体表靠人工登记，新模型发布到登记之间存在时间差。未登记的模型会走关键词兜底，
+    兜不住就标为「未标注」并沉入参考组。
+    <strong>当前多榜模型中未能识别的有 <span id="m-refcount2">—</span> 个</strong>，它们的 id 直接来自原始名。
+  </p>
+
+  <h3>3. 别名包含匹配可能过宽</h3>
+  <p>
+    第②级兜底用「归一化名包含别名」匹配，理论上可能把不同实体并到一起。
+    已知案例：<code>GPT-5.5 Pro</code> 会被解析为 <code>GPT-5.5</code>（注册表中无 <code>gpt-5.5-pro</code> 实体，
+    被包含匹配命中）。该写法在当前数据中<strong>出现 0 次</strong>，暂无实际影响，
+    但若上游开始使用 Pro 后缀变体，需要为它单独登记实体。
+  </p>
+
+  <h3>4. 取「最好名次」的乐观偏差</h3>
+  <p>同榜多变体折叠时取最好名次（§04）。这会让模型在该榜的表现偏乐观，档位标注是唯一对冲手段。</p>
+
+  <h3>5. 趋势数据点很少</h3>
+  <p>
+    历史趋势依赖每日快照累积。站点上线初期只有少数几个日期点，
+    此时趋势图<strong>不足以判断长期走向</strong>，只能看到最近的变化。
+    「与自己比」的漂移监控需要更多数据点才有意义，暂未实现。
+  </p>
+
+  <h3>6. 不覆盖的维度</h3>
+  <p>
+    本站不测量速度（tokens/s）、首字延迟、真实使用量。价格仅在 Artificial Analysis 榜可用，
+    因此性价比象限图只基于该榜数据（约 10 个模型），不代表全量模型的性价比排名。
+  </p>
+
+  <h3>7. 上游刷榜无法识别</h3>
+  <p>
+    若某榜存在刷榜，本站会如实呈现其结果。我们无法独立验证上游评测过程的公正性，
+    只能通过<strong>多榜交叉</strong>间接暴露异常（某模型在单一榜极高、其余榜极低时，
+    「方法论覆盖」列会显示为 1，共识置信度为 <code>partial</code>）。
+  </p>
+</section>
+
+<section id="s10">
+  <div class="sec-hd"><span class="n">10</span><h2>版本与变更日志</h2><span class="en">Changelog</span></div>
+
+  <p>
+    每当改动「变体折叠 / 厂商归一 / 跨榜收录门槛 / 排序规则 / 并列规则」任一项，
+    方法论版本号就会递增。作用是让读者能判断「我看到的这套结论是按哪一版规则算出来的」，
+    也让历史数据可追溯。
+  </p>
+  <div id="m-changelog"></div>
+
+  <h3>复现</h3>
+  <p>
+    抓取、清洗、合并全流程开源。数据文件（<code>data/merged.json</code> 等）与生成它们的代码在同一仓库、同一提交，
+    因此任何一期榜单都可以按提交历史复现。
+  </p>
+  <p>
+    <a href="https://github.com/motao123/ai-model-rankings" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+    · <a href="https://github.com/motao123/ai-model-rankings/blob/main/src/models.py" target="_blank" rel="noopener">主数据层实现 <code>src/models.py</code> ↗</a>
+    · <a href="https://github.com/motao123/ai-model-rankings/blob/main/src/main.py" target="_blank" rel="noopener">合并逻辑 <code>src/main.py</code> ↗</a>
+    · <a href="https://github.com/motao123/ai-model-rankings/issues" target="_blank" rel="noopener">反馈问题 ↗</a>
+  </p>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <b>合规声明</b><br>
+    本站非任何榜单官方，仅做聚合展示与可视化。原始数据版权归 LMArena、Artificial Analysis、SuperCLUE、
+    LiveCodeBench、Hugging Face 等各自所有。各榜分数口径不同，不可直接比较，不构成任何采购或投资建议。
+    <div style="margin-top:18px;padding-top:14px;border-top:var(--rule-soft);color:var(--faint);font-size:11.5px">
+      <span id="footer-updated"></span> · <a href="./">返回排行榜</a> · <a href="sitemap.xml">sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- 主题（与 index.html 同一套逻辑与存储键） ---------- */
+const THEME_KEY="amr:theme";
+const THEME_ORDER=["system","light","dark"];
+function themeMode(){ try{const v=localStorage.getItem(THEME_KEY);return (v==="light"||v==="dark")?v:"system";}catch(e){return "system";} }
+function themeLabel(m){ return m==="system"?"配色：跟随系统":(m==="light"?"配色：浅色":"配色：深色"); }
+function applyTheme(m){
+  const root=document.documentElement;
+  if(m==="system") root.removeAttribute("data-theme"); else root.setAttribute("data-theme",m);
+  try{ if(m==="system") localStorage.removeItem(THEME_KEY); else localStorage.setItem(THEME_KEY,m); }catch(e){}
+  const btn=document.getElementById("theme-toggle");
+  if(btn){ btn.textContent=themeLabel(m); btn.setAttribute("aria-label",themeLabel(m)+"（点击切换）"); }
+}
+(function(){
+  const btn=document.getElementById("theme-toggle");
+  if(btn) btn.addEventListener("click",()=>applyTheme(THEME_ORDER[(THEME_ORDER.indexOf(themeMode())+1)%THEME_ORDER.length]));
+  applyTheme(themeMode());
+})();
+
+/* ---------- 工具 ---------- */
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $ = s => document.querySelector(s);
+const fmtDate = iso => { if(!iso)return "—"; const d=new Date(iso); if(isNaN(d))return iso; return d.toISOString().slice(0,10); };
+
+/* ---------- 数据加载：与首页同一套多端点容灾 ---------- */
+const DATA_BASES = [
+  { base:"", label:"同源" },
+  { base:"https://cdn.jsdelivr.net/gh/motao123/ai-model-rankings@main/", label:"jsDelivr CDN" },
+  { base:"https://raw.githubusercontent.com/motao123/ai-model-rankings/main/", label:"GitHub raw" },
+];
+const LS_PREFIX = "amr:last-good:v1:";
+function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } }
+async function loadJSON(path){
+  for(const ep of DATA_BASES){
+    try{
+      const r = await fetch(ep.base+path,{cache:"no-store"});
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      const data = await r.json();
+      if(data) return data;
+    }catch(e){ /* 换下一个端点 */ }
+  }
+  return lsGet(LS_PREFIX+path);   /* 首页写入的末次成功缓存 */
+}
+
+/* 各榜口径说明（人工撰写，与 §02 表格配套；数据字段来自 merged.json） */
+const BOARD_NOTES = {
+  lmarena_text:    ["真人盲测二选一，累积投票换算 Elo/Bradley-Terry", "偏好 ≠ 正确性；投票人群有构成偏差；应看 95% 置信区间"],
+  lmarena_webdev:  ["真人盲测，聚焦前端/网页代码生成", "同上；测的是产出被偏好的程度，不是代码正确性"],
+  lmarena_agent:   ["真人盲测，聚焦多轮智能体交互", "IPS 分与 Arena Score 量级不同，不可与其它榜的分数横比"],
+  aa_intelligence: ["第三方机构自跑约 10 项评测加权成 Intelligence Index", "复合分受权重设计影响；会掩盖任务特定强弱"],
+  superclue:       ["中文原创题库，六维加权（编程/数学/科学/指令遵循/幻觉控制/任务规划）", "权重公开；官方以分差 1 分内为并列"],
+  livecodebench:   ["滚动更新题目以降低数据污染", "成绩与 Agent harness 强相关，同底座可差数十分"],
+  open_llm:        ["标准化公开基准（ARC/HLE/IFEval 等）", "已退役归档：公开题集可能被专项优化，且不再更新"],
+};
+
+async function boot(){
+  const m = await loadJSON("data/merged.json");
+  if(!m || !m.boards){
+    $("#src-table").innerHTML = '<div class="empty-hint">未能加载数据。规则说明仍可阅读；带数字的部分需联网或在仓库根目录用本地服务器打开。</div>';
+    return;
+  }
+  const cm = m.cross_meta || {};
+
+  /* 刊头数字 */
+  const set = (id,v)=>{ const e=$(id); if(e&&v!=null&&v!=="") e.textContent=v; };
+  set("#m-ver", cm.methodology_version);
+  set("#m-boards", Object.keys(m.boards).length);
+  set("#m-total", cm.total_models);
+  set("#m-min", "≥"+(cm.min_boards||2));
+  set("#m-min2", cm.min_boards||2);
+  set("#m-at", fmtDate(m.generated_at));
+  set("#m-refcount", (cm.reference_only||{}).count);
+  set("#m-refcount2", (cm.reference_only||{}).count);
+  set("#footer-updated", "数据时间 "+fmtDate(m.generated_at));
+  /* 注册表规模与折叠自检：由数据层给出，前端不自行估算 */
+  const reg = cm.registry || {};
+  set("#m-entities", reg.entities);
+  set("#m-aliases", reg.aliases);
+  const sc = $("#m-selfcheck");
+  if(sc){
+    sc.innerHTML = reg.self_check_pass
+      ? '<span style="color:var(--down)">通过</span> — 注册表内 '+esc(String(reg.entities))
+        +' 个实体的正式名，经折叠逻辑解析后全部还原为自身'
+      : '<span style="color:var(--warn)">未通过</span> — '+esc(String((reg.self_check_failures||[]).length))
+        +' 个实体解析异常：'+esc((reg.self_check_failures||[]).map(f=>f.name+"→"+f.resolved_to).join("，"));
+  }
+
+  /* §02 数据来源表 */
+  let h = '<div class="table-wrap"><table><caption class="sr-only">各数据来源的口径与使用限制</caption>'
+    + '<thead><tr><th>榜单</th><th>度量口径</th><th>使用限制</th><th>行数</th><th>更新</th><th>状态</th></tr></thead><tbody>';
+  Object.keys(m.boards).forEach(sid=>{
+    const b = m.boards[sid], note = BOARD_NOTES[sid] || ["—","—"];
+    const st = b.retired ? '<span style="color:var(--faint)">已退役归档</span>'
+              : b.stale ? '<span style="color:var(--warn)">兜底数据'+(b.stale_days?' · 滞后 '+b.stale_days+' 天':'')+'</span>'
+              : '<span style="color:var(--down)">实时</span>';
+    h += '<tr><td class="k">'+esc(b.board||sid)+'</td>'
+      + '<td>'+esc(note[0])+'</td>'
+      + '<td>'+esc(note[1])+'</td>'
+      + '<td class="num">'+(b.rows?b.rows.length:0)+'</td>'
+      + '<td class="k">'+esc(fmtDate(b.publish_date))+'</td>'
+      + '<td>'+st+'</td></tr>';
+  });
+  h += '</tbody></table></div>';
+  $("#src-table").innerHTML = h;
+
+  /* §06 收录统计 */
+  $("#m-cross-stats").innerHTML = '<div class="principle">'
+    + '当前数据：折叠后共 <b>'+esc(String(cm.total_models!=null?cm.total_models:"—"))+'</b> 个模型实体，其中 '
+    + '<b>'+esc(String(cm.multi_board!=null?cm.multi_board:"—"))+'</b> 个出现在 ≥'+esc(String(cm.min_boards||2))
+    + ' 个榜（即跨榜表全集），其余 <b>'+esc(String(cm.single_board!=null?cm.single_board:"—"))
+    + '</b> 个单榜模型见分榜明细。默认排序：'+esc(cm.sort_rule||"—")+'。</div>';
+
+  /* §07 并列白名单表 */
+  const tp = cm.tie_policy || {};
+  const tieBoards = cm.tie_boards || [];
+  let t = '<div class="table-wrap"><table><caption class="sr-only">统计并列启用情况</caption>'
+    + '<thead><tr><th>榜单</th><th>启用并列</th><th>容差</th><th>口径出处</th></tr></thead><tbody>';
+  Object.keys(tp).forEach(sid=>{
+    const p = tp[sid] || {};
+    const b = m.boards[sid] || {};
+    const on = p.tolerance != null;
+    t += '<tr><td class="k">'+esc(b.board||sid)+'</td>'
+      + '<td>'+(on?'<b style="color:var(--accent)">是</b>':'<span style="color:var(--faint)">否</span>')+'</td>'
+      + '<td class="num">'+(on?esc(String(p.tolerance))+' 分':'—')+'</td>'
+      + '<td>'+(on?esc(p.source||"—"):'上游未公布容差，保留原始名次')+'</td></tr>';
+  });
+  t += '</tbody></table></div>';
+  t += '<p class="tbl-note">'+esc(cm.tie_note||"")+'</p>';
+  $("#m-tie-table").innerHTML = t;
+
+  /* §10 变更日志 */
+  const cl = cm.methodology_changes || [];
+  let c = '<div class="table-wrap"><table><caption class="sr-only">方法论变更日志</caption>'
+    + '<thead><tr><th>版本</th><th>变更内容</th></tr></thead><tbody>';
+  cl.forEach(x=>{ c += '<tr><td class="k">'+esc(x.version)+'</td><td>'+esc(x.changes)+'</td></tr>'; });
+  if(!cl.length) c += '<tr><td class="k">'+esc(cm.methodology_version||"—")+'</td><td>—</td></tr>';
+  c += '</tbody></table></div>';
+  $("#m-changelog").innerHTML = c;
+}
+boot();
+</script>
+</body>
+</html>

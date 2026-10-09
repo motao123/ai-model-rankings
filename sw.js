@@ -10,10 +10,10 @@
  * 使多端点 failover 在离线时也有一份可用的兜底副本。
  * 任一缓存写入失败都不影响响应，绝不因 SW 异常导致页面打不开。
  */
-const VERSION = "amr-sw-v3";
+const VERSION = "amr-sw-v4";
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE = `${VERSION}-data`;
-const SHELL = ["./", "./index.html", "./404.html"];
+const SHELL = ["./", "./index.html", "./404.html", "./methodology.html"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
