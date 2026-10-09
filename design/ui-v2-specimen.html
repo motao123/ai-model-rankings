@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UI 方向样张 v2 · AI 大模型排行榜</title>
+<meta name="robots" content="noindex">
+<style>
+/* ============================================================
+   设计样张（specimen）—— 仅用于确认视觉方向，不参与线上构建
+   方向：技术出版物 / 数据年鉴（editorial），而非 SaaS 仪表盘
+   ============================================================ */
+
+:root{
+  color-scheme: light;
+  --bg:#ffffff;
+  --bg-subtle:#f8f7f5;
+  --bg-sunken:#f1efeb;
+  --ink:#131210;
+  --ink-2:#3b3934;
+  --muted:#6d6a64;
+  --faint:#9b978f;
+  --line:#e8e6e1;
+  --line-strong:#d2cfc8;
+  --accent:#8a6a00;
+  --accent-tint:#f5efdb;
+  --accent-line:#e7dab2;
+  --up:#b3261e;
+  --down:#1f7a4d;
+  --warn:#8a5a00;
+  --warn-bg:#fbf4e3;
+  --warn-line:#eddcb3;
+
+  --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --font-serif:ui-serif,Georgia,"Times New Roman","Songti SC","SimSun",serif;
+  --font-mono:ui-monospace,"SF Mono",SFMono-Regular,"Cascadia Code",Consolas,monospace;
+
+  --maxw:1240px;
+  --r:2px;                 /* 圆角：收敛到近乎直角 */
+  --sp:8px;                /* 基线网格 */
+}
+html[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0e0d0b;
+  --bg-subtle:#161513;
+  --bg-sunken:#1c1a17;
+  --ink:#f4f2ee;
+  --ink-2:#c8c5bd;
+  --muted:#948f86;
+  --faint:#6d6960;
+  --line:#28251f;
+  --line-strong:#3b362c;
+  --accent:#d8b45c;
+  --accent-tint:#241e12;
+  --accent-line:#4a3f22;
+  --up:#e5675c;
+  --down:#4cbd86;
+  --warn:#e0b567;
+  --warn-bg:#241d10;
+  --warn-line:#4a3d20;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans);
+  background:var(--bg);color:var(--ink);
+  font-size:14px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  transition:background .18s ease,color .18s ease;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* 技术出版物的"标签"文字：小号大写 + 字距 */
+.lbl{
+  font-family:var(--font-mono);font-size:10.5px;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--faint);
+}
+.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+
+/* ================= 报头 ================= */
+header.masthead{background:var(--bg)}
+.mast{display:flex;align-items:flex-end;gap:20px;padding:22px 0 14px;flex-wrap:wrap}
+.wordmark{font-family:var(--font-serif);font-size:30px;font-weight:600;letter-spacing:-.015em;line-height:1}
+.wordmark .dot{color:var(--accent)}
+.wordmark small{display:block;font-family:var(--font-sans);font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.02em;margin-top:7px}
+.mast .sp{flex:1}
+.mast-meta{display:flex;gap:22px;align-items:flex-end}
+.mast-meta .cell .lbl{display:block;margin-bottom:3px}
+.mast-meta .cell .v{font-size:13px;color:var(--ink-2);font-weight:600}
+
+/* 主题切换：克制的小控件，不是花哨的开关 */
+.theme-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:7px 12px;border:1px solid var(--line-strong);border-radius:var(--r);
+  background:transparent;color:var(--ink-2);cursor:pointer;
+  font-family:var(--font-sans);font-size:12px;font-weight:500;
+  transition:border-color .14s ease,color .14s ease,background .14s ease;
+}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.theme-btn svg{display:block}
+
+/* 导航：底线 + 当前项 accent 下划线（滑动指示条） */
+nav.rule-nav{position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav.rule-nav ul{display:flex;gap:2px;list-style:none;flex-wrap:wrap}
+nav.rule-nav a{
+  position:relative;display:block;padding:12px 15px;
+  font-size:12.5px;letter-spacing:.01em;color:var(--muted);
+  transition:color .14s ease;
+}
+nav.rule-nav a:hover{color:var(--ink)}
+nav.rule-nav a.on{color:var(--ink);font-weight:600}
+nav.rule-nav a.on::after{
+  content:"";position:absolute;left:15px;right:15px;bottom:-1px;height:2px;background:var(--accent);
+}
+
+/* ================= 本期要点（取代 hero 大块） ================= */
+.lede{border-bottom:1px solid var(--line);padding:30px 0}
+.lede p{font-size:15px;color:var(--ink-2);max-width:74ch}
+.lede p b{color:var(--ink);font-weight:650}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:24px;border-top:1px solid var(--line)}
+.fact{padding:16px 18px 4px 0;border-right:1px solid var(--line)}
+.fact:last-child{border-right:none;padding-right:0}
+.fact .k{font-size:11.5px;color:var(--muted);margin-bottom:9px}
+.fact .v{font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-size:27px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.fact .d{font-size:11.5px;color:var(--faint);margin-top:7px}
+.fact .v .u{color:var(--up)} .fact .v .g{color:var(--down)}
+
+/* ================= 章节骨架：用分隔线和留白，不用卡片 ================= */
+section{padding:38px 0;border-bottom:1px solid var(--line)}
+.sec-hd{display:flex;align-items:baseline;gap:13px;margin-bottom:5px}
+.sec-hd .idx{color:var(--accent);font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.06em}
+.sec-hd h2{font-family:var(--font-serif);font-size:25px;font-weight:600;letter-spacing:-.01em}
+.sec-hd .en{margin-left:auto;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.sec-desc{color:var(--muted);font-size:13px;margin-bottom:22px;max-width:82ch}
+
+/* 工具条 */
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.search{flex:1;min-width:220px;position:relative}
+.search input{
+  width:100%;padding:10px 12px 10px 34px;border:1px solid var(--line-strong);
+  border-radius:var(--r);background:var(--bg);color:var(--ink);font-family:inherit;font-size:13.5px;
+  transition:border-color .14s ease;
+}
+.search input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.42}
+.filters{display:flex;gap:0;border:1px solid var(--line-strong);border-radius:var(--r);overflow:hidden}
+.fbtn{
+  padding:9px 14px;background:transparent;border:none;border-right:1px solid var(--line);
+  color:var(--muted);cursor:pointer;font-family:inherit;font-size:12.5px;
+  transition:background .14s ease,color .14s ease;
+}
+.fbtn:last-child{border-right:none}
+.fbtn:hover{color:var(--ink);background:var(--bg-subtle)}
+.fbtn.on{background:var(--ink);color:var(--bg);font-weight:600}
+
+/* ================= 表格：发丝网格，不用卡片外框 ================= */
+.table-wrap{overflow-x:auto;border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+thead th{
+  position:sticky;top:0;background:var(--bg);text-align:left;
+  font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);padding:12px 14px;border-bottom:1px solid var(--line-strong);white-space:nowrap;z-index:2;
+}
+thead th.r{text-align:right}
+tbody td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+tbody tr:last-child td{border-bottom:none}
+tbody tr{transition:background .12s ease}
+tbody tr:hover{background:var(--bg-subtle)}
+
+.rank{font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-size:15px;color:var(--muted);text-align:right;width:52px}
+tr.top td .rank{color:var(--accent);font-weight:600}
+.mname{display:flex;align-items:center;gap:9px}
+.mname b{font-weight:600}
+.mname .ven{font-size:11.5px;color:var(--faint)}
+
+/* 标注：从"彩色 pill"降级为 文字/小写标签 */
+.mark{font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.06em;padding:0 6px;line-height:17px;border:1px solid var(--line-strong);border-radius:0;color:var(--muted);text-transform:uppercase}
+.mark.cn{border-color:var(--accent-line);color:var(--accent);background:var(--accent-tint)}
+.dot-new{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:5px;vertical-align:middle}
+
+.td-num{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-weight:600}
+.td-num .sub{display:block;font-weight:400;font-size:11px;color:var(--faint);letter-spacing:0}
+.trend{font-family:var(--font-mono);font-size:12px;font-weight:600;white-space:nowrap}
+.trend.up{color:var(--up)} .trend.down{color:var(--down)} .trend.flat{color:var(--faint)}
+.absent{color:var(--faint)}
+
+/* 数据存在感：极细的能力条，不用彩色填充块 */
+.bar{height:3px;background:var(--bg-sunken);width:88px;margin-top:6px}
+.bar>i{display:block;height:100%;background:var(--ink-2)}
+tr.top .bar>i{background:var(--accent)}
+
+/* ================= 标签页（分榜） ================= */
+.tabs{display:flex;gap:26px;border-bottom:1px solid var(--line-strong);margin-bottom:0;flex-wrap:wrap}
+.tab{
+  position:relative;padding:11px 0;background:none;border:none;cursor:pointer;
+  font-family:inherit;font-size:13px;color:var(--muted);transition:color .14s ease;
+}
+.tab:hover{color:var(--ink)}
+.tab.on{color:var(--ink);font-weight:600}
+.tab.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent)}
+.tab .kind{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;color:var(--faint);margin-left:6px}
+
+/* ================= 图表框：极简轴线 ================= */
+.chart{border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);padding:22px 0}
+.chart-hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.chart-hd h3{font-size:14.5px;font-weight:650}
+.chart-hd .hint{font-size:11.5px;color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+/* ================= 新鲜度横幅：一条细横条，不是大色块 ================= */
+.fresh{
+  display:flex;gap:11px;align-items:flex-start;
+  padding:11px 15px;border-left:2px solid var(--warn);background:var(--warn-bg);
+  color:var(--ink-2);font-size:12.5px;line-height:1.6;
+}
+.fresh .tag{font-family:var(--font-mono);font-weight:700;color:var(--warn);white-space:nowrap}
+.fresh code{font-family:var(--font-mono);background:rgba(128,110,60,.12);padding:1px 5px;border-radius:0;font-size:11.5px}
+
+/* ================= 数据来源：定义列表，不是卡片网格 ================= */
+.srcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0}
+.src{padding:16px 20px 16px 0;border-top:1px solid var(--line)}
+.src:nth-child(odd){padding-right:20px}
+.src .t{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:13.5px;font-weight:650}
+.src .t .lbl{font-weight:600}
+.src .m{font-size:12px;color:var(--muted);margin-top:5px}
+.src .lk{font-size:11.5px;margin-top:8px}
+.src .lk a{color:var(--accent);border-bottom:1px solid var(--accent-line)}
+
+/* ================= 页脚 ================= */
+footer{padding:26px 0 52px;color:var(--muted);font-size:12px;line-height:1.75}
+footer b{color:var(--ink-2)}
+
+/* ================= 底部：token 速览（样张专用） ================= */
+.swatches{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line-strong);margin-top:8px}
+.sw{flex:1;min-width:96px;padding:14px 14px}
+.sw .box{height:34px;border:1px solid var(--line);margin-bottom:8px}
+.sw .n{font-family:var(--font-mono);font-size:10px;color:var(--faint);letter-spacing:.04em}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* 动效：少而准；尊重减弱动效偏好 */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+@media(max-width:640px){
+  .mast-meta{gap:14px}
+  .wordmark{font-size:25px}
+  .lede p{font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast">
+      <div class="wordmark">模型榜<span class="dot">.</span><small>AI MODEL RANKINGS · 第三方榜单聚合</small></div>
+      <div class="sp"></div>
+      <div class="mast-meta">
+        <div class="cell"><span class="lbl">Last sync</span><span class="v num">2026-10-09 05:50Z</span></div>
+        <div class="cell"><span class="lbl">Boards</span><span class="v num">7 / 7 实时</span></div>
+        <button class="theme-btn" id="theme" aria-label="切换明暗主题">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+          <span id="theme-label">跟随系统</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="rule-nav" aria-label="页面导航">
+    <div class="wrap">
+      <ul>
+        <li><a href="#s1" class="on">三榜同屏</a></li>
+        <li><a href="#s2">分榜明细</a></li>
+        <li><a href="#s3">性价比象限</a></li>
+        <li><a href="#s4">数据来源</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- 本期要点 -->
+  <section class="lede" style="border-bottom:1px solid var(--line)">
+    <span class="lbl">本期要点</span>
+    <p style="margin-top:10px">聚合 <b>LMArena</b> 真人盲测、<b>Artificial Analysis</b> 智能指数与价格、<b>SuperCLUE</b> 中文榜、<b>LiveCodeBench</b>、<b>HF Open LLM</b> 共 7 个第三方榜单。同一模型在「真人偏好」与「客观基准」下同屏并列，看谁全能、谁偏科。</p>
+    <div class="facts">
+      <div class="fact"><div class="k">覆盖模型</div><div class="v num">418</div><div class="d">跨 7 榜去重后</div></div>
+      <div class="fact"><div class="k">本轮新增</div><div class="v num">6</div><div class="d">首次上榜</div></div>
+      <div class="fact"><div class="k">榜首易主</div><div class="v num">2</div><div class="d">较上一期</div></div>
+      <div class="fact"><div class="k">数据降级</div><div class="v num">0</div><div class="d">全部实时抓取</div></div>
+    </div>
+  </section>
+
+  <!-- 三榜同屏 -->
+  <section id="s1">
+    <div class="sec-hd"><span class="idx">01</span><h2>三榜同屏对比</h2><span class="en">Cross-board</span></div>
+    <p class="sec-desc">同一模型在真人偏好榜与客观基准榜上的并列表现。各榜口径不同，分数不可直接比较，此处仅观察方法论差异下的相对位置。</p>
+
+    <div class="fresh" role="status" style="margin-bottom:20px">
+      <span class="tag">降级说明</span>
+      <span><code>HF Open LLM</code> 已于 2025-03 退役，本榜展示归档快照，数据日期 <code>2025-03-27</code>，滞后 561 天。</span>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="搜索模型或厂商…" aria-label="搜索模型或厂商">
+      </div>
+      <div class="filters" role="group" aria-label="筛选">
+        <button class="fbtn on">全部</button>
+        <button class="fbtn">仅国产</button>
+        <button class="fbtn">仅开源</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">跨榜模型对比表</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="r"><span class="sr-only">排名</span>#</th>
+            <th scope="col">模型</th>
+            <th scope="col" class="r">LMArena Elo</th>
+            <th scope="col" class="r">AA 智能指数</th>
+            <th scope="col" class="r">SuperCLUE</th>
+            <th scope="col" class="r">价格 /M<span class="sr-only">token</span></th>
+            <th scope="col" class="r">趋势</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="top">
+            <td class="rank">1</td>
+            <td><div class="mname"><b>GPT-5.2</b><span class="mark">闭源</span><span class="ven">OpenAI</span></div>
+              <div class="bar"><i style="width:96%"></i></div></td>
+            <td class="td-num">1478<span class="sub">区间 1466–1490</span></td>
+            <td class="td-num">72.4<span class="sub">置信 ±0.6</span></td>
+            <td class="td-num">—<span class="sub">该榜未收录</span></td>
+            <td class="td-num">$1.25<span class="sub">输入</span></td>
+            <td class="td-num"><span class="trend up">▲ 2</span></td>
+          </tr>
+          <tr class="top">
+            <td class="rank">2</td>
+            <td><div class="mname"><b>Claude Opus 4.5</b><span class="mark">闭源</span><span class="ven">Anthropic</span></div>
+              <div class="bar"><i style="width:93%"></i></div></td>
+            <td class="td-num">1461<span class="sub">区间 1449–1473</span></td>
+            <td class="td-num">70.8<span class="sub">置信 ±0.5</span></td>
+            <td class="td-num">—<span class="sub">该榜未收录</span></td>
+            <td class="td-num">$3.00<span class="sub">输入</span></td>
+            <td class="td-num"><span class="trend flat">—</span></td>
+          </tr>
+          <tr>
+            <td class="rank">3</td>
+            <td><div class="mname"><b>DeepSeek-V4</b><span class="mark cn">国产</span><span class="mark">开源</span><span class="ven">深度求索</span></div>
+              <div class="bar"><i style="width:89%"></i></div></td>
+            <td class="td-num">1435<span class="sub">区间 1424–1446</span></td>
+            <td class="td-num">67.1<span class="sub">置信 ±0.7</span></td>
+            <td class="td-num">82.6<span class="sub">中文综合</span></td>
+            <td class="td-num">$0.28<span class="sub">输入</span></td>
+            <td class="td-num"><span class="trend up">▲ 5</span> <span class="dot-new" title="首次进入前三"></span></td>
+          </tr>
+          <tr>
+            <td class="rank">4</td>
+            <td><div class="mname"><b>Qwen3.8-Max</b><span class="mark cn">国产</span><span class="mark">开源</span><span class="ven">阿里通义</span></div>
+              <div class="bar"><i style="width:86%"></i></div></td>
+            <td class="td-num">1428<span class="sub">区间 1417–1439</span></td>
+            <td class="td-num">66.3<span class="sub">置信 ±0.6</span></td>
+            <td class="td-num">80.1<span class="sub">中文综合</span></td>
+            <td class="td-num">$0.40<span class="sub">输入</span></td>
+            <td class="td-num"><span class="trend down">▼ 1</span></td>
+          </tr>
+          <tr>
+            <td class="rank">5</td>
+            <td><div class="mname"><b>Gemini 3 Pro</b><span class="mark">闭源</span><span class="ven">Google</span></div>
+              <div class="bar"><i style="width:84%"></i></div></td>
+            <td class="td-num">1419<span class="sub">区间 1408–1430</span></td>
+            <td class="td-num">65.0<span class="sub">置信 ±0.8</span></td>
+            <td class="td-num">—<span class="sub">该榜未收录</span></td>
+            <td class="td-num">$1.25<span class="sub">输入</span></td>
+            <td class="td-num"><span class="trend up">▲ 1</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:11px;color:var(--faint);margin-top:10px">趋势为较上一期排名的变化。▲ 上升（红）／▼ 下降（绿），沿用中文财经习惯。</p>
+  </section>
+
+  <!-- 分榜明细 -->
+  <section id="s2">
+    <div class="sec-hd"><span class="idx">02</span><h2>分榜明细</h2><span class="en">By board</span></div>
+    <p class="sec-desc">每个榜单单独查看，保留原始分数与来源标注，不做任何加权或合并。</p>
+    <div class="tabs" role="tablist" aria-label="选择榜单">
+      <button class="tab on" role="tab" aria-selected="true">LMArena 文本<span class="kind">真人</span></button>
+      <button class="tab" role="tab" aria-selected="false">Artificial Analysis<span class="kind">客观</span></button>
+      <button class="tab" role="tab" aria-selected="false">SuperCLUE<span class="kind">客观</span></button>
+      <button class="tab" role="tab" aria-selected="false">LiveCodeBench<span class="kind">客观</span></button>
+    </div>
+    <div class="table-wrap" style="border-top:none;margin-top:20px">
+      <table>
+        <thead><tr><th class="r">#</th><th>模型</th><th class="r">分数</th><th class="r">来源</th></tr></thead>
+        <tbody>
+          <tr class="top"><td class="rank">1</td><td><div class="mname"><b>GPT-5.2</b><span class="ven">OpenAI</span></div></td><td class="td-num">1478</td><td class="td-num" style="font-weight:400;font-size:11.5px;color:var(--muted)">hf-datasets</td></tr>
+          <tr class="top"><td class="rank">2</td><td><div class="mname"><b>Claude Opus 4.5</b><span class="ven">Anthropic</span></div></td><td class="td-num">1461</td><td class="td-num" style="font-weight:400;font-size:11.5px;color:var(--muted)">hf-datasets</td></tr>
+          <tr><td class="rank">3</td><td><div class="mname"><b>DeepSeek-V4</b><span class="ven">深度求索</span></div></td><td class="td-num">1435</td><td class="td-num" style="font-weight:400;font-size:11.5px;color:var(--muted)">hf-datasets</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 性价比象限 -->
+  <section id="s3">
+    <div class="sec-hd"><span class="idx">03</span><h2>性价比象限</h2><span class="en">Value map</span></div>
+    <p class="sec-desc">横轴为 API 价格（对数），纵轴为智能指数。越靠左上越"高能低价"。仅收录同时提供两项数据的模型。</p>
+    <div class="chart">
+      <div class="chart-hd"><h3>能力 × 价格分布</h3><span class="hint">n = 10 · 数据来自 Artificial Analysis</span></div>
+      <svg viewBox="0 0 720 300" width="100%" height="300" role="img" aria-label="性价比象限散点图">
+        <!-- 轴线 -->
+        <line x1="60" y1="20" x2="60" y2="255" stroke="var(--line-strong)" stroke-width="1"/>
+        <line x1="60" y1="255" x2="700" y2="255" stroke="var(--line-strong)" stroke-width="1"/>
+        <!-- 参考网格 -->
+        <g stroke="var(--line)" stroke-width="1">
+          <line x1="220" y1="20" x2="220" y2="255"/>
+          <line x1="380" y1="20" x2="380" y2="255"/>
+          <line x1="540" y1="20" x2="540" y2="255"/>
+          <line x1="60" y1="140" x2="700" y2="140"/>
+        </g>
+        <!-- 轴标签 -->
+        <text x="52" y="24" font-size="10" fill="var(--faint)" text-anchor="end">高</text>
+        <text x="52" y="259" font-size="10" fill="var(--faint)" text-anchor="end">低</text>
+        <text x="66" y="272" font-size="10" fill="var(--faint)">低价</text>
+        <text x="694" y="272" font-size="10" fill="var(--faint)" text-anchor="end">高价</text>
+        <text x="60" y="288" font-size="10" fill="var(--faint)" font-family="monospace">智能指数 ↑ / 价格 →（对数）</text>
+        <!-- 数据点：国际=灰空心，国产=accent 实心 -->
+        <g>
+          <circle cx="430" cy="52" r="5" fill="none" stroke="var(--muted)" stroke-width="1.6"/>
+          <text x="430" y="42" font-size="10" fill="var(--muted)" text-anchor="middle">GPT-5.2</text>
+          <circle cx="560" cy="66" r="5" fill="none" stroke="var(--muted)" stroke-width="1.6"/>
+          <text x="560" y="56" font-size="10" fill="var(--muted)" text-anchor="middle">Opus 4.5</text>
+          <circle cx="150" cy="88" r="5.5" fill="var(--accent)"/>
+          <text x="150" y="78" font-size="10" fill="var(--accent)" text-anchor="middle">DeepSeek-V4</text>
+          <circle cx="196" cy="104" r="5.5" fill="var(--accent)"/>
+          <text x="196" y="122" font-size="10" fill="var(--accent)" text-anchor="middle">Qwen3.8-Max</text>
+          <circle cx="500" cy="86" r="5" fill="none" stroke="var(--muted)" stroke-width="1.6"/>
+          <text x="500" y="76" font-size="10" fill="var(--muted)" text-anchor="middle">Gemini 3 Pro</text>
+        </g>
+      </svg>
+      <div class="legend">
+        <span><span style="width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block"></span>国产模型</span>
+        <span><span style="width:9px;height:9px;border-radius:50%;border:1.6px solid var(--muted);display:inline-block"></span>国际模型</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据来源 -->
+  <section id="s4">
+    <div class="sec-hd"><span class="idx">04</span><h2>数据来源</h2><span class="en">Sources</span></div>
+    <p class="sec-desc">所有分数与排名原样搬运，不修改、不加权、不计算跨榜综合总分。数据版权归各原作者所有。</p>
+    <div class="srcs">
+      <div class="src"><div class="t">LMArena / Arena.ai<span class="lbl">实时</span></div><div class="m">真人盲测 Elo · CC-BY-4.0</div><div class="lk"><a href="#">lmarena.ai ↗</a></div></div>
+      <div class="src"><div class="t">Artificial Analysis<span class="lbl">实时</span></div><div class="m">智能指数 + API 价格</div><div class="lk"><a href="#">artificialanalysis.ai ↗</a></div></div>
+      <div class="src"><div class="t">SuperCLUE<span class="lbl">实时</span></div><div class="m">中文综合能力榜</div><div class="lk"><a href="#">superclueai.com ↗</a></div></div>
+      <div class="src"><div class="t">LiveCodeBench<span class="lbl">实时</span></div><div class="m">滚动出题编程评测</div><div class="lk"><a href="#">livecodebench ↗</a></div></div>
+      <div class="src"><div class="t">HF Open LLM v2<span class="lbl">归档</span></div><div class="m">已于 2025-03 退役，展示快照</div><div class="lk"><a href="#">huggingface.co ↗</a></div></div>
+    </div>
+  </section>
+
+  <!-- 样张专用：设计变量速览 -->
+  <section style="border-bottom:none">
+    <div class="sec-hd"><span class="idx">§</span><h2>设计变量</h2><span class="en">Tokens</span></div>
+    <p class="sec-desc">下单色系 9 阶灰 + 1 个强调色（暖金）+ 2 个语义色（涨红／跌绿）+ 1 个告警色。全部收敛为 CSS 变量，明暗两套自动跟随系统。</p>
+    <div class="swatches">
+      <div class="sw"><div class="box" style="background:var(--ink)"></div><div class="n">--ink</div></div>
+      <div class="sw"><div class="box" style="background:var(--ink-2)"></div><div class="n">--ink-2</div></div>
+      <div class="sw"><div class="box" style="background:var(--muted)"></div><div class="n">--muted</div></div>
+      <div class="sw"><div class="box" style="background:var(--faint)"></div><div class="n">--faint</div></div>
+      <div class="sw"><div class="box" style="background:var(--line)"></div><div class="n">--line</div></div>
+      <div class="sw"><div class="box" style="background:var(--accent)"></div><div class="n">--accent</div></div>
+      <div class="sw"><div class="box" style="background:var(--up)"></div><div class="n">--up 涨</div></div>
+      <div class="sw"><div class="box" style="background:var(--down)"></div><div class="n">--down 跌</div></div>
+      <div class="sw"><div class="box" style="background:var(--warn)"></div><div class="n">--warn</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>说明</b>：这是视觉方向样张（specimen），用于确认配色、排版与组件风格，尚未接入真实数据，也不参与线上构建。</div>
+    <div style="margin-top:6px">方向关键词：技术出版物 · 发丝网格 · 数字优先 · 单一强调色 · 明暗双主题</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("theme"), lab=document.getElementById("theme-label");
+  var mq=window.matchMedia("(prefers-color-scheme: dark)");
+  var saved=null; try{saved=localStorage.getItem("spec-theme");}catch(e){}
+  function apply(mode){
+    var eff = mode==="light"||mode==="dark" ? mode : (mq.matches?"dark":"light");
+    root.setAttribute("data-theme", eff);
+    lab.textContent = mode==="light" ? "浅色" : mode==="dark" ? "深色" : "跟随系统";
+  }
+  apply(saved||"system");
+  btn.addEventListener("click",function(){
+    var order=[null,"light","dark"]; // 跟随系统 → 浅色 → 深色 → 跟随系统
+    var cur=(function(){try{return localStorage.getItem("spec-theme");}catch(e){return null;}})();
+    var next=order[(order.indexOf(cur)+1)%order.length];
+    try{ next?localStorage.setItem("spec-theme",next):localStorage.removeItem("spec-theme"); }catch(e){}
+    apply(next||"system");
+  });
+  mq.addEventListener("change",function(){ var cur=null;try{cur=localStorage.getItem("spec-theme");}catch(e){} if(!cur)apply("system"); });
+
+  // 导航高亮（演示用）
+  document.querySelectorAll("nav.rule-nav a").forEach(function(a){
+    a.addEventListener("click",function(e){
+      if(a.getAttribute("href").startsWith("#")){
+        document.querySelectorAll("nav.rule-nav a").forEach(function(x){x.classList.remove("on");});
+        a.classList.add("on");
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

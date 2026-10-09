@@ -13,7 +13,7 @@ import os
 from common import (
     RAW_DIR, DATA_DIR, list_snapshots, read_json, write_json, log, warn,
 )
-from models import canonical_id
+from models import enrich
 
 TOP_N_PER_BOARD = 12   # 每个榜追踪前 N 名的历史
 MAX_POINTS = 60        # 每条折线最多多少个日期点（防止快照过多导致文件膨胀）
@@ -44,16 +44,25 @@ def build_trend():
         if not latest_rows:
             continue
 
-        # 重点模型 = 最新榜按 rank 升序取前 TOP_N
-        tracked = []
-        for row in sorted(latest_rows, key=lambda r: r.get("rank", 999))[:TOP_N_PER_BOARD]:
-            cid = row.get("id") or canonical_id(row.get("model", ""))
+        # 重点模型 = 最新榜按 rank 升序取前 TOP_N（按 canonical id 去重：
+        # 主数据折叠后同一模型的不同变体只保留名次最好的那一条）
+        tracked, seen = [], set()
+        for row in sorted(latest_rows, key=lambda r: r.get("rank", 999)):
+            meta = enrich(row.get("model", ""), row.get("organization"))
+            cid = row.get("id") or meta["id"]
+            if cid in seen:
+                continue
+            seen.add(cid)
             tracked.append({
                 "id": cid,
-                "name": row.get("display_name") or row.get("model"),
-                "vendor": row.get("vendor"),
-                "region": row.get("region"),
+                "name": row.get("display_name") or meta["display_name"],
+                "variant": meta.get("variant"),
+                "vendor": meta["vendor"],
+                "region": meta["region"],
+                "open": meta["open"],
             })
+            if len(tracked) >= TOP_N_PER_BOARD:
+                break
         tracked_ids = {t["id"] for t in tracked}
 
         # 遍历每个日期，构建 rank 时间序列
@@ -64,9 +73,12 @@ def build_trend():
             rows = snap.get("rows", []) if isinstance(snap, dict) else []
             rank_by_cid = {}
             for row in rows:
-                cid = row.get("id") or canonical_id(row.get("model", ""))
+                meta = enrich(row.get("model", ""), row.get("organization"))
+                cid = row.get("id") or meta["id"]
                 if cid in tracked_ids and isinstance(row.get("rank"), int):
-                    rank_by_cid[cid] = row["rank"]
+                    prev = rank_by_cid.get(cid)
+                    if prev is None or row["rank"] < prev:   # 多变体取最好名次
+                        rank_by_cid[cid] = row["rank"]
             dates.append(date_str)
             for cid in tracked_ids:
                 series[cid].append(rank_by_cid.get(cid))  # None = 当期未上榜

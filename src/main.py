@@ -53,6 +53,13 @@ METHOD_GROUPS = {
     "superclue": "chinese",
 }
 
+# 跨榜对比只呈现「至少出现在 N 个榜」的模型：单榜模型信息量低、会把长尾原始 ID
+# 淹没主表；它们仍完整保留在各自的分榜明细里。
+CROSS_MIN_BOARDS = 2
+
+# 默认代表榜优先级（用于同分排序与前端默认并列列）
+_PREF_BOARDS = ["lmarena_text", "aa_intelligence", "superclue", "lmarena_webdev"]
+
 
 def _source_ids_for_lmarena():
     return [f"lmarena_{c}" for c in fetch_lmarena.CONFIGS]
@@ -178,13 +185,20 @@ def _add_trend(payload, source_id, date_str):
                 prev_rank[cid] = r["rank"]
 
     for row in payload["rows"]:
-        cid = canonical_id(row.get("model", ""))
+        raw_name = row.get("model", "")
+        # 厂商以「模型主数据（注册表 / 机构 slug 归一）」为准，原始 slug 另存
+        # vendor_raw 供追溯。修复原实现 row.vendor = organization 导致
+        # openai / OpenAI / zai / HF 用户名等脏值直接进展示层的问题。
+        meta = enrich(raw_name, row.get("organization"))
+        cid = meta["id"]
         row["id"] = cid
-        meta = enrich(row.get("model", ""))
         row["display_name"] = meta["display_name"]
-        row["vendor"] = row.get("organization") or meta["vendor"]
+        row["vendor"] = meta["vendor"]
+        row["vendor_raw"] = row.get("organization") or None
         row["region"] = meta["region"]
         row["open"] = meta["open"]
+        row["variant"] = meta.get("variant")
+        row["registered"] = meta.get("registered", False)
         if prev_rank:
             if cid in prev_rank:
                 row["trend"] = prev_rank[cid] - row["rank"]  # 正数=上升
@@ -317,7 +331,7 @@ def build_merged(collected, date_str, failures):
             "rows": payload.get("rows", []),
         }
 
-    cross = build_cross(collected)
+    cross, cross_meta = build_cross(collected)
 
     return {
         "generated_at": now_utc_iso(),
@@ -330,50 +344,84 @@ def build_merged(collected, date_str, failures):
         ),
         "boards": boards,
         "cross": cross,
+        "cross_meta": cross_meta,
         "failures": failures,
     }
 
 
-def build_cross(collected):
-    """跨榜同屏对比：以 canonical id 聚合每个模型在各榜的排名/分数。
+def _best_rank(model):
+    """代表名次：优先取代表榜的名次，都没有则取全部名次里的最好值。"""
+    for sid in _PREF_BOARDS:
+        ap = model["appearances"].get(sid)
+        if ap and isinstance(ap.get("rank"), int):
+            return ap["rank"]
+    ranks = [a.get("rank") for a in model["appearances"].values()
+             if isinstance(a.get("rank"), int)]
+    return min(ranks) if ranks else 9999
 
-    注意：这里只做「并列展示各榜原始名次与分数」，绝不加总、不排序成一个
-    综合分，严格避免跨榜口径混算。"""
-    # 参与交叉对比的三类代表榜：真人偏好(lmarena_text)、客观基准(aa)、中文(superclue)
-    focus = ["lmarena_text", "aa_intelligence", "superclue",
-             "lmarena_webdev", "livecodebench", "open_llm"]
-    acc = {}  # cid -> {display_name, vendor, region, open, appearances:{sid:{rank,score}}}
-    for sid in focus:
+
+def build_cross(collected):
+    """跨榜同屏对比：以 canonical id 聚合每个模型在各榜的表现。
+
+    返回 (cross, cross_meta)。
+
+    只做「并列展示各榜原始名次与分数」，绝不加总、不合成综合分。
+    - 同一模型在同一榜的不同变体（`-high` / `-max` / `(thinking)` / 日期戳）
+      通过模型主数据折叠为同一实体，取**最好名次**，变体名记入
+      appearances[sid]['variant']；榜单原始快照不被修改。
+    - 仅收录出现在 >= CROSS_MIN_BOARDS 个榜的模型；单榜模型不在此表，
+      但仍完整保留在分榜明细中（cross_meta 里给出数量）。
+    """
+    order = [b for b in BOARD_ORDER if b in collected]
+    order += [b for b in collected if b not in BOARD_ORDER]
+
+    acc = {}  # cid -> 聚合项
+    for sid in order:
         payload = collected.get(sid)
         if not payload:
             continue
         for row in payload.get("rows", []):
-            cid = row.get("id") or canonical_id(row.get("model", ""))
-            if cid not in acc:
-                meta = enrich(row.get("model", ""))
-                acc[cid] = {
+            # id 一律由模型主数据重算（不信任 row["id"]），确保同一模型无论来自
+            # 哪个榜/哪个变体都落到同一 key，且 id 与 display_name 恒一致。
+            meta = enrich(row.get("model", ""), row.get("organization"))
+            cid = meta["id"]
+            v = acc.get(cid)
+            if v is None:
+                v = {
                     "id": cid,
-                    "display_name": row.get("display_name") or meta["display_name"],
-                    "vendor": row.get("vendor") or meta["vendor"],
+                    "display_name": meta["display_name"],
+                    "vendor": meta["vendor"],
                     "region": meta["region"],
                     "open": meta["open"],
+                    "registered": meta["registered"],
+                    "variants": [],
                     "appearances": {},
                 }
-            acc[cid]["appearances"][sid] = {
-                "rank": row.get("rank"),
+                acc[cid] = v
+            var = meta.get("variant")
+            if var and var not in v["variants"]:
+                v["variants"].append(var)
+            rank = row.get("rank")
+            cur = v["appearances"].get(sid)
+            # 同榜多变体：保留最好名次（名次数字最小）
+            if (cur and isinstance(cur.get("rank"), int)
+                    and isinstance(rank, int) and cur["rank"] <= rank):
+                continue
+            v["appearances"][sid] = {
+                "rank": rank,
                 "score": row.get("score"),
                 "metric": payload.get("metric"),
                 "is_new": row.get("is_new", False),
                 "trend": row.get("trend", 0),
+                "variant": var,
             }
 
-    # 只保留出现在 >=2 个榜的模型才有"交叉对比"意义，但 1 个也留着供浏览
-    # 多源共识置信度：按"方法论分组"统计覆盖度。
-    # 注意：这不是跨榜分数运算，而是"该模型是否在相互独立的方法论下都被评测到"
-    # 的存在性证据分级（类似多预言机共识，但只做标签、不合成数值）。
+    # 多源共识置信度：按"方法论分组"统计覆盖度。不是跨榜分数运算，而是
+    # "该模型是否在相互独立的方法论下都被评测到"的存在性证据分级。
     for v in acc.values():
         groups = {METHOD_GROUPS.get(sid, "other") for sid in v["appearances"]}
         v["group_count"] = len(groups)
+        v["appearance_count"] = len(v["appearances"])
         v["has_stale"] = any((collected.get(sid) or {}).get("stale")
                              for sid in v["appearances"])
         if len(groups) >= 2:
@@ -383,14 +431,26 @@ def build_cross(collected):
         else:
             v["confidence"] = "single"     # 单源
 
-    cross = [v for v in acc.values() if v["appearances"]]
-    # 按出现榜单数降序、再按 lmarena_text 名次升序，方便前端默认展示
+    all_models = [v for v in acc.values() if v["appearances"]]
+    cross = [v for v in all_models if v["appearance_count"] >= CROSS_MIN_BOARDS]
+    # 排序规则（前端会原样展示，保证"怎么排的"可解释）：
+    #   ① 上榜数降序 ② 方法论覆盖数降序 ③ 代表名次升序 ④ 名称
     cross.sort(key=lambda m: (
-        -len(m["appearances"]),
-        m["appearances"].get("lmarena_text", {}).get("rank", 999),
+        -m["appearance_count"],
+        -m["group_count"],
+        _best_rank(m),
         m["display_name"],
     ))
-    return cross
+
+    cross_meta = {
+        "total_models": len(all_models),
+        "multi_board": len(cross),
+        "single_board": len(all_models) - len(cross),
+        "min_boards": CROSS_MIN_BOARDS,
+        "boards": [sid for sid in order if (collected.get(sid) or {}).get("rows")],
+        "sort_rule": "上榜数 ↓ · 方法论覆盖 ↓ · 代表名次 ↑ · 名称",
+    }
+    return cross, cross_meta
 
 
 if __name__ == "__main__":
