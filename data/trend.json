@@ -252,33 +252,13 @@
    ],
    "models": [
     {
-     "id": "claude-fable-5.1",
-     "name": "Claude Fable 5.1 (Max)",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      1,
-      1
-     ]
-    },
-    {
      "id": "claude-opus-5.5",
      "name": "Claude Opus 5.5 (High)",
      "vendor": null,
      "region": null,
      "ranks": [
       2,
-      2
-     ]
-    },
-    {
-     "id": "claude-sonnet-5.5",
-     "name": "Claude Sonnet 5.5 (Max)",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      3,
-      3
+      1
      ]
     },
     {
@@ -288,6 +268,26 @@
      "region": null,
      "ranks": [
       4,
+      2
+     ]
+    },
+    {
+     "id": "claude-fable-5.1",
+     "name": "Claude Fable 5.1 (Max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      1,
+      3
+     ]
+    },
+    {
+     "id": "claude-sonnet-5.5",
+     "name": "Claude Sonnet 5.5 (Max)",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      3,
       4
      ]
     },
@@ -312,13 +312,13 @@
      ]
     },
     {
-     "id": "claude-opus-5",
-     "name": "Claude Opus 5 (High)",
+     "id": "gemini-4-argon",
+     "name": "Gemini 4 Argon (High)",
      "vendor": null,
      "region": null,
      "ranks": [
-      9,
-      9
+      10,
+      7
      ]
     },
     {
@@ -338,16 +338,16 @@
      "region": null,
      "ranks": [
       9,
-      9
+      10
      ]
     },
     {
-     "id": "gemini-4-argon",
-     "name": "Gemini 4 Argon (High)",
+     "id": "claude-opus-5",
+     "name": "Claude Opus 5 (High)",
      "vendor": null,
      "region": null,
      "ranks": [
-      10,
+      9,
       10
      ]
     },
@@ -429,7 +429,7 @@
      "region": null,
      "ranks": [
       7,
-      7
+      8
      ]
     },
     {
@@ -443,33 +443,23 @@
      ]
     },
     {
-     "id": "claude-opus-4.6",
-     "name": "claude-opus-4-6",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      7,
-      7
-     ]
-    },
-    {
      "id": "gemini-3.8-flash",
      "name": "gemini-3.8-flash-high",
      "vendor": null,
      "region": null,
      "ranks": [
       8,
-      8
+      7
      ]
     },
     {
-     "id": "claude-fable-5",
-     "name": "claude-fable-5-high",
+     "id": "claude-opus-4.6",
+     "name": "claude-opus-4-6",
      "vendor": null,
      "region": null,
      "ranks": [
-      9,
-      9
+      7,
+      8
      ]
     },
     {
@@ -479,6 +469,16 @@
      "region": null,
      "ranks": [
       10,
+      9
+     ]
+    },
+    {
+     "id": "claude-fable-5",
+     "name": "claude-fable-5-high",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      9,
       10
      ]
     },
@@ -489,7 +489,7 @@
      "region": null,
      "ranks": [
       14,
-      14
+      15
      ]
     },
     {
@@ -605,7 +605,7 @@
     },
     {
      "id": "qwen3.8-max",
-     "name": "qwen3.8-max",
+     "name": "qwen3.8-max-0902",
      "vendor": null,
      "region": null,
      "ranks": [
@@ -615,7 +615,7 @@
     },
     {
      "id": "qwen3.8-max",
-     "name": "qwen3.8-max-0902",
+     "name": "qwen3.8-max",
      "vendor": null,
      "region": null,
      "ranks": [
@@ -725,13 +725,23 @@
      ]
     },
     {
+     "id": "openbuddyopenbuddyllama3370bv241131k",
+     "name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
+     "vendor": null,
+     "region": null,
+     "ranks": [
+      15,
+      9
+     ]
+    },
+    {
      "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
      "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": null,
      "region": null,
      "ranks": [
       17,
-      9
+      10
      ]
     },
     {
@@ -741,7 +751,7 @@
      "region": null,
      "ranks": [
       21,
-      10
+      11
      ]
     },
     {
@@ -751,16 +761,6 @@
      "region": null,
      "ranks": [
       22,
-      11
-     ]
-    },
-    {
-     "id": "maziyarpanahicalme23rys78b",
-     "name": "MaziyarPanahi/calme-2.3-rys-78b",
-     "vendor": null,
-     "region": null,
-     "ranks": [
-      23,
       12
      ]
     }
