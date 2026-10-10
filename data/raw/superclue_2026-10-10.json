@@ -1,0 +1,123 @@
+{
+ "source_id": "superclue",
+ "board": "SuperCLUE 中文大模型综合榜",
+ "metric": "综合得分",
+ "kind": "objective_benchmark",
+ "source_url": "https://www.superclueai.com/generalpage",
+ "dataset_url": "https://www.superclueai.com/data/generalboard/",
+ "license": "© SuperCLUE，本站仅聚合展示",
+ "fetched_at": "2026-10-10T03:55:15Z",
+ "publish_date": "2026-07-01",
+ "data_period": "2026年7月",
+ "channel": "auto",
+ "rows": [
+  {
+   "model": "Qwen3.8-Max-0902(max)",
+   "organization": "阿里巴巴",
+   "score": 72.62,
+   "rank": 1
+  },
+  {
+   "model": "DeepSeek-V4.1-Flash(max)",
+   "organization": "深度求索",
+   "score": 71.81,
+   "rank": 2
+  },
+  {
+   "model": "Qwen3.8-Max(max)",
+   "organization": "阿里巴巴",
+   "score": 71.48,
+   "rank": 3
+  },
+  {
+   "model": "GLM-5.3(max)",
+   "organization": "智谱AI",
+   "score": 71.29,
+   "rank": 4
+  },
+  {
+   "model": "Kimi-K3(max)",
+   "organization": "月之暗面",
+   "score": 70.68,
+   "rank": 5
+  },
+  {
+   "model": "DeepSeek-V4-Pro-0813(max)",
+   "organization": "深度求索",
+   "score": 70.1,
+   "rank": 6
+  },
+  {
+   "model": "GLM-5.3-Flash(max)",
+   "organization": "智谱AI",
+   "score": 68.1,
+   "rank": 7
+  },
+  {
+   "model": "Qwen3.8-Flash(max)",
+   "organization": "阿里巴巴",
+   "score": 66.41,
+   "rank": 8
+  },
+  {
+   "model": "Doubao-Seed-2.1-pro(high)",
+   "organization": "字节跳动",
+   "score": 65.94,
+   "rank": 9
+  },
+  {
+   "model": "DeepSeek-V4-Flash(max)",
+   "organization": "深度求索",
+   "score": 65.6,
+   "rank": 10
+  },
+  {
+   "model": "DeepSeek-V4-Pro(max)",
+   "organization": "深度求索",
+   "score": 64.4,
+   "rank": 11
+  },
+  {
+   "model": "GLM-5.2(max)",
+   "organization": "智谱AI",
+   "score": 63.27,
+   "rank": 12
+  },
+  {
+   "model": "Hy3(high)",
+   "organization": "腾讯",
+   "score": 62.13,
+   "rank": 13
+  },
+  {
+   "model": "MiniMax-M3",
+   "organization": "稀宇科技",
+   "score": 56.9,
+   "rank": 14
+  },
+  {
+   "model": "ERNIE 5.1(max)",
+   "organization": "百度",
+   "score": 54.56,
+   "rank": 15
+  },
+  {
+   "model": "LongCat-2.0",
+   "organization": "美团",
+   "score": 54.22,
+   "rank": 16
+  },
+  {
+   "model": "MiMo-V2.5-Pro",
+   "organization": "小米集团",
+   "score": 53.01,
+   "rank": 17
+  },
+  {
+   "model": "Step-3.7-Flash(high)",
+   "organization": "阶跃星辰",
+   "score": 48.16,
+   "rank": 18
+  }
+ ]
+}

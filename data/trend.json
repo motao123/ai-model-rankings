@@ -6,7 +6,8 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -17,6 +18,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1
      ]
@@ -30,6 +32,7 @@
      "open": false,
      "ranks": [
       2,
+      2,
       2
      ]
     },
@@ -41,6 +44,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      3,
       3,
       3
      ]
@@ -54,6 +58,7 @@
      "open": false,
      "ranks": [
       4,
+      4,
       4
      ]
     },
@@ -65,6 +70,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      5,
       5,
       5
      ]
@@ -78,6 +84,7 @@
      "open": true,
      "ranks": [
       6,
+      6,
       6
      ]
     },
@@ -89,6 +96,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      7,
       7,
       7
      ]
@@ -102,6 +110,7 @@
      "open": true,
      "ranks": [
       8,
+      8,
       8
      ]
     },
@@ -113,6 +122,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      9,
       9,
       9
      ]
@@ -126,6 +136,7 @@
      "open": true,
      "ranks": [
       10,
+      10,
       10
      ]
     }
@@ -137,7 +148,8 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -148,6 +160,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1
      ]
@@ -161,6 +174,7 @@
      "open": false,
      "ranks": [
       2,
+      2,
       2
      ]
     },
@@ -172,6 +186,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      4,
       4,
       4
      ]
@@ -185,6 +200,7 @@
      "open": false,
      "ranks": [
       5,
+      5,
       5
      ]
     },
@@ -196,6 +212,7 @@
      "region": "us",
      "open": null,
      "ranks": [
+      7,
       7,
       7
      ]
@@ -209,6 +226,7 @@
      "open": null,
      "ranks": [
       8,
+      8,
       8
      ]
     },
@@ -220,6 +238,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      9,
       9,
       9
      ]
@@ -233,6 +252,7 @@
      "open": null,
      "ranks": [
       10,
+      10,
       10
      ]
     },
@@ -244,6 +264,7 @@
      "region": "us",
      "open": null,
      "ranks": [
+      11,
       11,
       11
      ]
@@ -257,6 +278,7 @@
      "open": false,
      "ranks": [
       12,
+      12,
       12
      ]
     },
@@ -268,6 +290,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      13,
       13,
       13
      ]
@@ -281,6 +304,7 @@
      "open": null,
      "ranks": [
       15,
+      15,
       15
      ]
     }
@@ -292,7 +316,8 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -304,6 +329,7 @@
      "open": false,
      "ranks": [
       2,
+      1,
       1
      ]
     },
@@ -316,6 +342,7 @@
      "open": false,
      "ranks": [
       4,
+      2,
       2
      ]
     },
@@ -328,6 +355,7 @@
      "open": false,
      "ranks": [
       1,
+      3,
       3
      ]
     },
@@ -340,6 +368,7 @@
      "open": false,
      "ranks": [
       3,
+      4,
       4
      ]
     },
@@ -351,6 +380,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      5,
       5,
       5
      ]
@@ -364,6 +394,7 @@
      "open": false,
      "ranks": [
       6,
+      6,
       6
      ]
     },
@@ -376,6 +407,7 @@
      "open": false,
      "ranks": [
       10,
+      7,
       7
      ]
     },
@@ -387,6 +419,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      8,
       8,
       8
      ]
@@ -400,6 +433,7 @@
      "open": false,
      "ranks": [
       7,
+      9,
       9
      ]
     },
@@ -411,6 +445,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      11,
       11,
       11
      ]
@@ -424,6 +459,7 @@
      "open": false,
      "ranks": [
       12,
+      12,
       12
      ]
     },
@@ -436,6 +472,7 @@
      "open": false,
      "ranks": [
       13,
+      13,
       13
      ]
     }
@@ -447,7 +484,8 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -458,6 +496,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1
      ]
@@ -471,6 +510,7 @@
      "open": false,
      "ranks": [
       2,
+      2,
       2
      ]
     },
@@ -483,6 +523,7 @@
      "open": false,
      "ranks": [
       3,
+      3,
       3
      ]
     },
@@ -494,6 +535,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      4,
       4,
       4
      ]
@@ -507,6 +549,7 @@
      "open": false,
      "ranks": [
       5,
+      5,
       5
      ]
     },
@@ -519,6 +562,7 @@
      "open": false,
      "ranks": [
       8,
+      7,
       7
      ]
     },
@@ -531,6 +575,7 @@
      "open": true,
      "ranks": [
       10,
+      9,
       9
      ]
     },
@@ -543,6 +588,7 @@
      "open": false,
      "ranks": [
       9,
+      10,
       10
      ]
     },
@@ -554,6 +600,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      11,
       11,
       11
      ]
@@ -567,6 +614,7 @@
      "open": true,
      "ranks": [
       12,
+      12,
       12
      ]
     },
@@ -578,6 +626,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      13,
       13,
       13
      ]
@@ -591,6 +640,7 @@
      "open": false,
      "ranks": [
       16,
+      14,
       14
      ]
     }
@@ -602,7 +652,8 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -613,6 +664,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1
      ]
@@ -626,6 +678,7 @@
      "open": false,
      "ranks": [
       2,
+      2,
       2
      ]
     },
@@ -637,6 +690,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      3,
       3,
       3
      ]
@@ -650,6 +704,7 @@
      "open": false,
      "ranks": [
       4,
+      4,
       4
      ]
     },
@@ -661,6 +716,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      5,
       5,
       5
      ]
@@ -674,6 +730,7 @@
      "open": false,
      "ranks": [
       7,
+      7,
       7
      ]
     },
@@ -685,6 +742,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      8,
       8,
       8
      ]
@@ -698,6 +756,7 @@
      "open": false,
      "ranks": [
       9,
+      9,
       9
      ]
     },
@@ -709,6 +768,7 @@
      "region": "cn",
      "open": false,
      "ranks": [
+      10,
       10,
       10
      ]
@@ -722,6 +782,7 @@
      "open": true,
      "ranks": [
       13,
+      13,
       13
      ]
     },
@@ -733,6 +794,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      14,
       14,
       14
      ]
@@ -746,6 +808,7 @@
      "open": false,
      "ranks": [
       15,
+      15,
       15
      ]
     }
@@ -757,9 +820,101 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dates": [
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
+    {
+     "id": "maziyarpanahicalme32instruct78b",
+     "name": "MaziyarPanahi/calme-3.2-instruct-78b",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      1,
+      null,
+      1
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme31instruct78b",
+     "name": "MaziyarPanahi/calme-3.1-instruct-78b",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      2,
+      null,
+      2
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme24rys78b",
+     "name": "MaziyarPanahi/calme-2.4-rys-78b",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      3,
+      null,
+      3
+     ]
+    },
+    {
+     "id": "qwenqwen2572b",
+     "name": "Qwen/Qwen2.5-72B",
+     "variant": "instruct",
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      4,
+      null,
+      4
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme21qwen2572b",
+     "name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      5,
+      null,
+      5
+     ]
+    },
+    {
+     "id": "saxolinkbrickshorizonaiavengersv132b",
+     "name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      6,
+      null,
+      6
+     ]
+    },
+    {
+     "id": "maziyarpanahicalme22qwen2572b",
+     "name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      7,
+      null,
+      7
+     ]
+    },
     {
      "id": "jungzoonat3qqwen2514binstruct1me3",
      "name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
@@ -769,7 +924,8 @@
      "open": null,
      "ranks": [
       8,
-      1
+      1,
+      8
      ]
     },
     {
@@ -781,7 +937,21 @@
      "open": null,
      "ranks": [
       9,
-      2
+      2,
+      9
+     ]
+    },
+    {
+     "id": "sakaltiultiima72b",
+     "name": "Sakalti/ultiima-72B",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      10,
+      null,
+      10
      ]
     },
     {
@@ -793,114 +963,20 @@
      "open": null,
      "ranks": [
       11,
-      3
-     ]
-    },
-    {
-     "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
-     "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      17,
-      4
-     ]
-    },
-    {
-     "id": "finguairomboultima32b",
-     "name": "FINGU-AI/RomboUltima-32B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      21,
-      5
-     ]
-    },
-    {
-     "id": "evaunit01evaqwen2572bv02",
-     "name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      27,
-      6
-     ]
-    },
-    {
-     "id": "aryanneqwentileswap",
-     "name": "Aryanne/QwentileSwap",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      31,
-      7
-     ]
-    },
-    {
-     "id": "cranmaytempmotacillacinerea",
-     "name": "Cran-May/tempmotacilla-cinerea",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      32,
-      8
-     ]
-    },
-    {
-     "id": "daemontatoxllama3370bcognilink",
-     "name": "Daemontatox/Llama3.3-70B-CogniLink",
-     "variant": null,
-     "vendor": "Meta",
-     "region": "us",
-     "open": null,
-     "ranks": [
-      45,
-      9
-     ]
-    },
-    {
-     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
-     "name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      46,
-      10
-     ]
-    },
-    {
-     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
-     "name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      48,
+      3,
       11
      ]
     },
     {
-     "id": "1024mqwen14bb100",
-     "name": "1024m/QWEN-14B-B100",
-     "variant": null,
+     "id": "qwenqwen2532b",
+     "name": "Qwen/Qwen2.5-32B",
+     "variant": "instruct",
      "vendor": "阿里巴巴",
      "region": "cn",
      "open": null,
      "ranks": [
-      51,
+      12,
+      null,
       12
      ]
     }
@@ -911,7 +987,8 @@
    "metric": "综合得分",
    "source_url": "https://www.superclueai.com/generalpage",
    "dates": [
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
    ],
    "models": [
     {
@@ -922,6 +999,7 @@
      "region": "cn",
      "open": false,
      "ranks": [
+      1,
       1
      ]
     },
@@ -933,6 +1011,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      2,
       2
      ]
     },
@@ -944,6 +1023,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      4,
       4
      ]
     },
@@ -955,6 +1035,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      5,
       5
      ]
     },
@@ -966,6 +1047,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      6,
       6
      ]
     },
@@ -977,6 +1059,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      7,
       7
      ]
     },
@@ -988,6 +1071,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      8,
       8
      ]
     },
@@ -999,6 +1083,7 @@
      "region": "cn",
      "open": false,
      "ranks": [
+      9,
       9
      ]
     },
@@ -1010,6 +1095,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      10,
       10
      ]
     },
@@ -1021,6 +1107,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      12,
       12
      ]
     },
@@ -1032,6 +1119,7 @@
      "region": "cn",
      "open": null,
      "ranks": [
+      13,
       13
      ]
     },
@@ -1043,6 +1131,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      14,
       14
      ]
     }
