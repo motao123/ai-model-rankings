@@ -1,0 +1,916 @@
+{
+ "source_id": "open_llm",
+ "board": "HF Open LLM Leaderboard v2（开源·已退役归档）",
+ "metric": "Average (%)",
+ "kind": "objective_benchmark",
+ "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+ "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+ "license": "归档数据（榜单已于 2025-03 退役）",
+ "retired": true,
+ "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考。",
+ "fetched_at": "2026-10-12T03:53:08Z",
+ "publish_date": "2025-03",
+ "channel": "hf-datasets-server",
+ "rows": [
+  {
+   "model": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+   "organization": "CombinHorizon",
+   "score": 46.76,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 83.28136012446973,
+    "bbh": 56.82740697772572,
+    "math": 58.53474320241692,
+    "gpqa": 15.659955257270694,
+    "musr": 14.224479166666663,
+    "mmlu_pro": 52.05378250591017
+   },
+   "rank": 1
+  },
+  {
+   "model": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+   "organization": "CombinHorizon",
+   "score": 45.66,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 82.06237228331938,
+    "bbh": 56.04478184089901,
+    "math": 59.44108761329305,
+    "gpqa": 11.85682326621924,
+    "musr": 12.091145833333337,
+    "mmlu_pro": 52.45087174940899
+   },
+   "rank": 2
+  },
+  {
+   "model": "FINGU-AI/RomboUltima-32B",
+   "organization": "FINGU-AI",
+   "score": 44.73,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 66.71509372908326,
+    "bbh": 56.67376969863417,
+    "math": 53.85196374622356,
+    "gpqa": 16.21923937360179,
+    "musr": 21.721093749999998,
+    "mmlu_pro": 53.20811170212767
+   },
+   "rank": 3
+  },
+  {
+   "model": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+   "organization": "EVA-UNIT-01",
+   "score": 44.22,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 68.78837041272712,
+    "bbh": 59.0667326828602,
+    "math": 43.126888217522655,
+    "gpqa": 21.140939597315437,
+    "musr": 19.730729166666666,
+    "mmlu_pro": 53.47591607565011
+   },
+   "rank": 4
+  },
+  {
+   "model": "Aryanne/QwentileSwap",
+   "organization": "Aryanne",
+   "score": 43.92,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 73.78422585406722,
+    "bbh": 57.67565555333628,
+    "math": 42.220543806646525,
+    "gpqa": 15.659955257270694,
+    "musr": 19.20520833333333,
+    "mmlu_pro": 54.95345744680851
+   },
+   "rank": 5
+  },
+  {
+   "model": "Cran-May/tempmotacilla-cinerea-0308",
+   "organization": "Cran-May",
+   "score": 43.64,
+   "type": "💬 chat models (rlhf, dpo, ift, ...)",
+   "subscores": {
+    "ifeval": 80.84837121061007,
+    "bbh": 50.59894860885105,
+    "math": 55.51359516616314,
+    "gpqa": 14.988814317673373,
+    "musr": 12.669531249999999,
+    "mmlu_pro": 47.224069148936174
+   },
+   "rank": 6
+  },
+  {
+   "model": "Daemontatox/Llama3.3-70B-CogniLink",
+   "organization": "Daemontatox",
+   "score": 42.77,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 69.31042965996889,
+    "bbh": 52.12466257626164,
+    "math": 41.389728096676734,
+    "gpqa": 26.062639821029084,
+    "musr": 21.395572916666662,
+    "mmlu_pro": 46.36524822695035
+   },
+   "rank": 7
+  },
+  {
+   "model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+   "organization": "Goekdeniz-Guelmez",
+   "score": 42.55,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 82.91666112581285,
+    "bbh": 48.05226992969286,
+    "math": 54.229607250755286,
+    "gpqa": 12.304250559284117,
+    "musr": 13.15,
+    "mmlu_pro": 44.64760638297872
+   },
+   "rank": 8
+  },
+  {
+   "model": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+   "organization": "BenevolenceMessiah",
+   "score": 42.27,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 54.73499204333391,
+    "bbh": 61.91149453060484,
+    "math": 57.85498489425982,
+    "gpqa": 15.659955257270694,
+    "musr": 12.016666666666671,
+    "mmlu_pro": 51.425827423167846
+   },
+   "rank": 9
+  },
+  {
+   "model": "1024m/QWEN-14B-B100",
+   "organization": "1024m",
+   "score": 41.92,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 77.62104549262622,
+    "bbh": 49.77664782103219,
+    "math": 54.38066465256798,
+    "gpqa": 13.422818791946312,
+    "musr": 9.883333333333335,
+    "mmlu_pro": 46.429890661938536
+   },
+   "rank": 10
+  },
+  {
+   "model": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
+   "organization": "CombinHorizon",
+   "score": 41.77,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 82.39958864701215,
+    "bbh": 48.19594986631396,
+    "math": 53.17220543806647,
+    "gpqa": 9.955257270693513,
+    "musr": 12.65390625,
+    "mmlu_pro": 44.213578605200944
+   },
+   "rank": 11
+  },
+  {
+   "model": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
+   "organization": "CombinHorizon",
+   "score": 41.47,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 81.75762532303177,
+    "bbh": 47.767346005909815,
+    "math": 54.7583081570997,
+    "gpqa": 8.612975391498878,
+    "musr": 12.453906250000001,
+    "mmlu_pro": 43.44710401891253
+   },
+   "rank": 12
+  },
+  {
+   "model": "Baptiste-HUVELLE-10/LeTriomphant2.2_ECE_iLAB",
+   "organization": "Baptiste-HUVELLE-10",
+   "score": 41.3,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 50.76330802271307,
+    "bbh": 61.61232489960707,
+    "math": 44.48640483383686,
+    "gpqa": 19.910514541387023,
+    "musr": 17.15234375,
+    "mmlu_pro": 53.90070921985816
+   },
+   "rank": 13
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-ReasoningMerge",
+   "organization": "CultriX",
+   "score": 40.65,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 46.05469044357859,
+    "bbh": 50.867897804151305,
+    "math": 52.0392749244713,
+    "gpqa": 21.029082774049215,
+    "musr": 25.60755208333333,
+    "mmlu_pro": 48.27681737588653
+   },
+   "rank": 14
+  },
+  {
+   "model": "Daemontatox/PathFinderAi3.0",
+   "organization": "Daemontatox",
+   "score": 40.46,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 42.70989862453845,
+    "bbh": 55.53835541644173,
+    "math": 50.453172205438065,
+    "gpqa": 21.140939597315437,
+    "musr": 20.05260416666666,
+    "mmlu_pro": 52.85719562647754
+   },
+   "rank": 15
+  },
+  {
+   "model": "FINGU-AI/Chocolatine-Fusion-14B",
+   "organization": "FINGU-AI",
+   "score": 40.36,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 69.49028577507679,
+    "bbh": 48.600901490542746,
+    "math": 38.51963746223565,
+    "gpqa": 16.21923937360179,
+    "musr": 21.985937499999995,
+    "mmlu_pro": 47.35335401891253
+   },
+   "rank": 16
+  },
+  {
+   "model": "Cran-May/merge_model_20250308_2",
+   "organization": "Cran-May",
+   "score": 40.26,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 59.32370554572978,
+    "bbh": 50.99569841983836,
+    "math": 43.80664652567976,
+    "gpqa": 18.791946308724835,
+    "musr": 19.519270833333326,
+    "mmlu_pro": 49.10793439716312
+   },
+   "rank": 17
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-HyperMarck-dl",
+   "organization": "CultriX",
+   "score": 39.89,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 66.50276821057017,
+    "bbh": 43.78585928068085,
+    "math": 52.87009063444109,
+    "gpqa": 15.659955257270694,
+    "musr": 15.095312499999997,
+    "mmlu_pro": 45.4510195035461
+   },
+   "rank": 18
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Brocav3",
+   "organization": "CultriX",
+   "score": 39.85,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 69.51776841004092,
+    "bbh": 49.04911178348141,
+    "math": 38.74622356495468,
+    "gpqa": 14.541387024608499,
+    "musr": 19.254427083333326,
+    "mmlu_pro": 47.972074468085104
+   },
+   "rank": 19
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Brocav6",
+   "organization": "CultriX",
+   "score": 39.84,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 69.95239298394925,
+    "bbh": 47.81922480607394,
+    "math": 38.74622356495468,
+    "gpqa": 15.659955257270694,
+    "musr": 18.87604166666667,
+    "mmlu_pro": 47.99054373522459
+   },
+   "rank": 20
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Hyperionv3",
+   "organization": "CultriX",
+   "score": 39.76,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 68.36371937570092,
+    "bbh": 49.95005488379496,
+    "math": 37.00906344410876,
+    "gpqa": 16.10738255033557,
+    "musr": 18.921093749999994,
+    "mmlu_pro": 48.22140957446809
+   },
+   "rank": 21
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Hyperionv5",
+   "organization": "CultriX",
+   "score": 39.72,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.29211824625327,
+    "bbh": 48.948279827370094,
+    "math": 38.21752265861027,
+    "gpqa": 16.21923937360179,
+    "musr": 19.876041666666662,
+    "mmlu_pro": 47.796616430260045
+   },
+   "rank": 22
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Brocav7",
+   "organization": "CultriX",
+   "score": 39.62,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 67.23715297632504,
+    "bbh": 48.90536078331687,
+    "math": 38.4441087613293,
+    "gpqa": 15.659955257270694,
+    "musr": 20.150520833333328,
+    "mmlu_pro": 47.307180851063826
+   },
+   "rank": 23
+  },
+  {
+   "model": "EpistemeAI/DeepThinkers-Phi4",
+   "organization": "EpistemeAI",
+   "score": 39.41,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 69.3978643333023,
+    "bbh": 53.786668719353166,
+    "math": 45.84592145015105,
+    "gpqa": 12.080536912751676,
+    "musr": 8.024479166666667,
+    "mmlu_pro": 47.307180851063826
+   },
+   "rank": 24
+  },
+  {
+   "model": "Daemontatox/CogitoZ",
+   "organization": "Daemontatox",
+   "score": 39.38,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 39.67240255854466,
+    "bbh": 53.889571248021504,
+    "math": 52.416918429003026,
+    "gpqa": 19.35123042505593,
+    "musr": 19.940885416666664,
+    "mmlu_pro": 51.028738179669034
+   },
+   "rank": 25
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-BrocaV9",
+   "organization": "CultriX",
+   "score": 39.26,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.62933460994606,
+    "bbh": 48.05322494738571,
+    "math": 38.14199395770393,
+    "gpqa": 15.212527964205815,
+    "musr": 18.395572916666662,
+    "mmlu_pro": 48.119828605200944
+   },
+   "rank": 26
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-partialmergept1",
+   "organization": "CultriX",
+   "score": 39.11,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 63.3728507028019,
+    "bbh": 44.5944042928325,
+    "math": 45.392749244712995,
+    "gpqa": 14.876957494407161,
+    "musr": 19.662239583333328,
+    "mmlu_pro": 46.75310283687944
+   },
+   "rank": 27
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Ultimav2",
+   "organization": "CultriX",
+   "score": 38.84,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 55.00228283177525,
+    "bbh": 50.441052694140744,
+    "math": 38.4441087613293,
+    "gpqa": 18.008948545861294,
+    "musr": 22.036979166666658,
+    "mmlu_pro": 49.0802304964539
+   },
+   "rank": 28
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-MegaMerge-pt2",
+   "organization": "CultriX",
+   "score": 38.8,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 56.8307645935008,
+    "bbh": 50.9079030473653,
+    "math": 39.95468277945619,
+    "gpqa": 17.225950782997764,
+    "musr": 18.74270833333333,
+    "mmlu_pro": 49.11716903073285
+   },
+   "rank": 29
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-MergeStock",
+   "organization": "CultriX",
+   "score": 38.74,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 56.85326046002385,
+    "bbh": 51.00939101332111,
+    "math": 41.46525679758308,
+    "gpqa": 16.442953020134222,
+    "musr": 17.854427083333334,
+    "mmlu_pro": 48.84013002364066
+   },
+   "rank": 30
+  },
+  {
+   "model": "CultriX/SeQwence-14Bv2",
+   "organization": "CultriX",
+   "score": 38.74,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 57.859922782661116,
+    "bbh": 46.52922387651957,
+    "math": 47.583081570996974,
+    "gpqa": 14.76510067114094,
+    "musr": 17.546354166666664,
+    "mmlu_pro": 48.1567671394799
+   },
+   "rank": 31
+  },
+  {
+   "model": "CultriX/SeQwence-14Bv3",
+   "organization": "CultriX",
+   "score": 38.67,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 57.19047682371663,
+    "bbh": 46.38536750450479,
+    "math": 47.65861027190332,
+    "gpqa": 15.324384787472036,
+    "musr": 17.270052083333336,
+    "mmlu_pro": 48.16600177304965
+   },
+   "rank": 32
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Emergedv3",
+   "organization": "CultriX",
+   "score": 38.66,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 63.884936413161526,
+    "bbh": 44.731608242608615,
+    "math": 43.58006042296073,
+    "gpqa": 14.76510067114094,
+    "musr": 18.601562500000004,
+    "mmlu_pro": 46.3744828605201
+   },
+   "rank": 33
+  },
+  {
+   "model": "CultriX/SeQwence-14Bv1",
+   "organization": "CultriX",
+   "score": 38.63,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 66.78003253589365,
+    "bbh": 47.190897916289224,
+    "math": 36.102719033232624,
+    "gpqa": 14.876957494407161,
+    "musr": 18.80338541666666,
+    "mmlu_pro": 47.99977836879433
+   },
+   "rank": 34
+  },
+  {
+   "model": "CultriX/Qwestion-14B",
+   "organization": "CultriX",
+   "score": 38.55,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 63.178034282370774,
+    "bbh": 48.75703449690036,
+    "math": 37.235649546827794,
+    "gpqa": 15.771812080536915,
+    "musr": 17.217187500000005,
+    "mmlu_pro": 49.13563829787233
+   },
+   "rank": 35
+  },
+  {
+   "model": "CultriX/SeQwence-14B-EvolMergev1",
+   "organization": "CultriX",
+   "score": 38.46,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 55.546837945540055,
+    "bbh": 50.30225894842213,
+    "math": 42.14501510574018,
+    "gpqa": 16.890380313199106,
+    "musr": 17.08385416666667,
+    "mmlu_pro": 48.81242612293145
+   },
+   "rank": 36
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Wernickev3",
+   "organization": "CultriX",
+   "score": 38.38,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 70.48198779239087,
+    "bbh": 44.576274906181084,
+    "math": 35.422960725075534,
+    "gpqa": 14.988814317673373,
+    "musr": 18.69166666666666,
+    "mmlu_pro": 46.12514775413712
+   },
+   "rank": 37
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Unity",
+   "organization": "CultriX",
+   "score": 38.3,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.38952645646884,
+    "bbh": 42.25861689291335,
+    "math": 43.126888217522655,
+    "gpqa": 12.975391498881436,
+    "musr": 18.760156249999994,
+    "mmlu_pro": 45.28479609929077
+   },
+   "rank": 38
+  },
+  {
+   "model": "Daemontatox/PathfinderAI",
+   "organization": "Daemontatox",
+   "score": 38.13,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 37.45173916319809,
+    "bbh": 52.64654733435329,
+    "math": 47.583081570996974,
+    "gpqa": 19.239373601789712,
+    "musr": 20.829166666666662,
+    "mmlu_pro": 51.037972813238774
+   },
+   "rank": 39
+  },
+  {
+   "model": "CultriX/SeQwence-14B-EvolMerge",
+   "organization": "CultriX",
+   "score": 38.02,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 53.81576439403007,
+    "bbh": 50.780351477179785,
+    "math": 36.70694864048338,
+    "gpqa": 17.4496644295302,
+    "musr": 20.26041666666666,
+    "mmlu_pro": 49.09869976359338
+   },
+   "rank": 40
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Emerged",
+   "organization": "CultriX",
+   "score": 37.95,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 70.00237148543641,
+    "bbh": 45.932419368684656,
+    "math": 32.477341389728096,
+    "gpqa": 14.317673378076066,
+    "musr": 18.47005208333333,
+    "mmlu_pro": 46.51300236406619
+   },
+   "rank": 41
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Wernicke",
+   "organization": "CultriX",
+   "score": 37.94,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 52.34699486252033,
+    "bbh": 50.642876092422625,
+    "math": 38.14199395770393,
+    "gpqa": 19.12751677852349,
+    "musr": 18.24661458333333,
+    "mmlu_pro": 49.15410756501182
+   },
+   "rank": 42
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Broca",
+   "organization": "CultriX",
+   "score": 37.92,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 56.0414145578177,
+    "bbh": 50.034411781701095,
+    "math": 35.80060422960725,
+    "gpqa": 18.232662192393736,
+    "musr": 18.94869791666667,
+    "mmlu_pro": 48.48921394799055
+   },
+   "rank": 43
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Hyper",
+   "organization": "CultriX",
+   "score": 37.76,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 53.91317260424563,
+    "bbh": 49.759879377498386,
+    "math": 34.3655589123867,
+    "gpqa": 18.903803131991047,
+    "musr": 21.029166666666665,
+    "mmlu_pro": 48.60002955082743
+   },
+   "rank": 44
+  },
+  {
+   "model": "Daemontatox/Sphinx2.0",
+   "organization": "Daemontatox",
+   "score": 37.69,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 71.23133286346894,
+    "bbh": 49.39675153748764,
+    "math": 40.181268882175225,
+    "gpqa": 5.8165548098433995,
+    "musr": 13.053906249999997,
+    "mmlu_pro": 46.485298463356976
+   },
+   "rank": 45
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Hyperionv4",
+   "organization": "CultriX",
+   "score": 37.67,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 54.157967526163915,
+    "bbh": 49.07652018118392,
+    "math": 34.74320241691843,
+    "gpqa": 19.686800894854585,
+    "musr": 19.86640625,
+    "mmlu_pro": 48.48921394799055
+   },
+   "rank": 46
+  },
+  {
+   "model": "CultriX/SeQwence-14B-v5",
+   "organization": "CultriX",
+   "score": 37.61,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 59.1988147005501,
+    "bbh": 49.99573116031767,
+    "math": 33.081570996978854,
+    "gpqa": 15.99552572706935,
+    "musr": 18.327083333333334,
+    "mmlu_pro": 49.05252659574468
+   },
+   "rank": 47
+  },
+  {
+   "model": "Cran-May/merge_model_20250308_4",
+   "organization": "Cran-May",
+   "score": 37.57,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 45.39521802151624,
+    "bbh": 52.02370667184541,
+    "math": 41.99395770392749,
+    "gpqa": 19.686800894854585,
+    "musr": 17.801562500000003,
+    "mmlu_pro": 48.51691784869976
+   },
+   "rank": 48
+  },
+  {
+   "model": "BAAI/Infinity-Instruct-7M-Gen-Llama3_1-70B",
+   "organization": "BAAI",
+   "score": 37.48,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 73.35458804859994,
+    "bbh": 52.49894685232329,
+    "math": 25.226586102719033,
+    "gpqa": 16.778523489932887,
+    "musr": 16.97161458333333,
+    "mmlu_pro": 40.076462765957444
+   },
+   "rank": 49
+  },
+  {
+   "model": "Aashraf995/QwenStock-14B",
+   "organization": "Aashraf995",
+   "score": 37.13,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 50.08632650256874,
+    "bbh": 50.433898707168744,
+    "math": 35.725075528700906,
+    "gpqa": 18.568232662192393,
+    "musr": 19.274218750000003,
+    "mmlu_pro": 48.69237588652482
+   },
+   "rank": 50
+  },
+  {
+   "model": "BAAI/Infinity-Instruct-3M-0625-Llama3-70B",
+   "organization": "BAAI",
+   "score": 36.91,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 74.42120240960651,
+    "bbh": 52.02816164280523,
+    "math": 22.507552870090635,
+    "gpqa": 14.317673378076066,
+    "musr": 18.34036458333333,
+    "mmlu_pro": 39.84559692671394
+   },
+   "rank": 51
+  },
+  {
+   "model": "CultriX/SeQwence-14B",
+   "organization": "CultriX",
+   "score": 36.89,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 53.51600420218354,
+    "bbh": 50.16357763465521,
+    "math": 35.34743202416919,
+    "gpqa": 14.76510067114094,
+    "musr": 18.426822916666662,
+    "mmlu_pro": 49.09869976359338
+   },
+   "rank": 52
+  },
+  {
+   "model": "Daemontatox/PathfinderAI",
+   "organization": "Daemontatox",
+   "score": 36.55,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 48.55006937148987,
+    "bbh": 52.32216296509384,
+    "math": 48.413897280966765,
+    "gpqa": 7.941834451901568,
+    "musr": 11.59921875,
+    "mmlu_pro": 50.465425531914896
+   },
+   "rank": 53
+  },
+  {
+   "model": "CultriX/Qwen2.5-14B-Wernicke-SLERP",
+   "organization": "CultriX",
+   "score": 36.54,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 55.88904107767391,
+    "bbh": 49.372327095724025,
+    "math": 44.864048338368576,
+    "gpqa": 12.527964205816552,
+    "musr": 11.120572916666662,
+    "mmlu_pro": 45.48795803782507
+   },
+   "rank": 54
+  },
+  {
+   "model": "1-800-LLMs/Qwen-2.5-14B-Hindi",
+   "organization": "1-800-LLMs",
+   "score": 36.27,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 58.2570911847232,
+    "bbh": 49.32988995210337,
+    "math": 33.30815709969788,
+    "gpqa": 14.988814317673373,
+    "musr": 14.350520833333334,
+    "mmlu_pro": 47.362588652482266
+   },
+   "rank": 55
+  },
+  {
+   "model": "Daemontatox/PathFinderAI2.0",
+   "organization": "Daemontatox",
+   "score": 36.26,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 45.41017832683946,
+    "bbh": 52.95651298557802,
+    "math": 50.755287009063444,
+    "gpqa": 6.935123042505594,
+    "musr": 10.961979166666666,
+    "mmlu_pro": 50.520833333333336
+   },
+   "rank": 56
+  },
+  {
+   "model": "Etherll/Qwen2.5-7B-della-test",
+   "organization": "Etherll",
+   "score": 35.82,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 76.24968417133206,
+    "bbh": 35.54689390845198,
+    "math": 48.94259818731118,
+    "gpqa": 7.829977628635347,
+    "musr": 8.987239583333334,
+    "mmlu_pro": 37.34301122931442
+   },
+   "rank": 57
+  },
+  {
+   "model": "Cran-May/T.E-8.1",
+   "organization": "Cran-May",
+   "score": 35.7,
+   "type": "💬 chat models (rlhf, dpo, ift, ...)",
+   "subscores": {
+    "ifeval": 70.76922565459647,
+    "bbh": 37.02437662584371,
+    "math": 44.561933534743204,
+    "gpqa": 8.389261744966444,
+    "musr": 15.31510416666667,
+    "mmlu_pro": 38.13718971631205
+   },
+   "rank": 58
+  },
+  {
+   "model": "Isaak-Carter/Josiefied-Qwen2.5-7B-Instruct-abliterated-v2",
+   "organization": "Isaak-Carter",
+   "score": 35.69,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 78.41039552830932,
+    "bbh": 33.2945398202129,
+    "math": 47.205438066465256,
+    "gpqa": 6.487695749440718,
+    "musr": 13.957812500000003,
+    "mmlu_pro": 34.757313829787236
+   },
+   "rank": 59
+  },
+  {
+   "model": "BAAI/Infinity-Instruct-3M-0613-Llama3-70B",
+   "organization": "BAAI",
+   "score": 35.58,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 68.21134589555712,
+    "bbh": 51.327160982522116,
+    "math": 21.525679758308158,
+    "gpqa": 14.429530201342287,
+    "musr": 16.53255208333333,
+    "mmlu_pro": 41.44318853427896
+   },
+   "rank": 60
+  }
+ ]
+}
