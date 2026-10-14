@@ -1,7 +1,26 @@
 {
- "generated_at": "2026-10-13T05:04:02Z",
- "date": "2026-10-13",
- "total": 0,
- "degraded": 0,
- "items": []
+ "generated_at": "2026-10-14T03:11:23Z",
+ "date": "2026-10-14",
+ "total": 3,
+ "degraded": 3,
+ "items": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_webdev",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_agent",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  }
+ ]
 }

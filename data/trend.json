@@ -10,7 +10,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
    ],
    "models": [
     {
@@ -21,6 +22,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -42,6 +44,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -53,6 +56,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      3,
       3,
       3,
       3,
@@ -74,6 +78,7 @@
       4,
       4,
       4,
+      4,
       4
      ]
     },
@@ -90,6 +95,7 @@
       null,
       null,
       null,
+      5,
       5
      ]
     },
@@ -106,6 +112,7 @@
       5,
       5,
       5,
+      6,
       6
      ]
     },
@@ -117,6 +124,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      7,
       7,
       7,
       7,
@@ -138,6 +146,7 @@
       8,
       8,
       8,
+      8,
       8
      ]
     },
@@ -149,6 +158,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      9,
       9,
       9,
       9,
@@ -170,6 +180,7 @@
       10,
       10,
       10,
+      10,
       10
      ]
     }
@@ -185,7 +196,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
    ],
    "models": [
     {
@@ -196,6 +208,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -217,6 +230,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -228,6 +242,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      4,
       4,
       4,
       4,
@@ -249,6 +264,7 @@
       5,
       5,
       5,
+      5,
       5
      ]
     },
@@ -260,6 +276,7 @@
      "region": "us",
      "open": null,
      "ranks": [
+      7,
       7,
       7,
       7,
@@ -281,6 +298,7 @@
       8,
       8,
       8,
+      8,
       8
      ]
     },
@@ -292,6 +310,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      9,
       9,
       9,
       9,
@@ -313,6 +332,7 @@
       10,
       10,
       10,
+      10,
       10
      ]
     },
@@ -324,6 +344,7 @@
      "region": "us",
      "open": null,
      "ranks": [
+      11,
       11,
       11,
       11,
@@ -345,6 +366,7 @@
       12,
       12,
       12,
+      12,
       12
      ]
     },
@@ -361,6 +383,7 @@
       13,
       13,
       13,
+      13,
       13
      ]
     },
@@ -372,6 +395,7 @@
      "region": "us",
      "open": null,
      "ranks": [
+      15,
       15,
       15,
       15,
@@ -1013,7 +1037,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
    ],
    "models": [
     {
@@ -1029,6 +1054,7 @@
       1,
       1,
       null,
+      1,
       1
      ]
     },
@@ -1045,7 +1071,25 @@
       2,
       2,
       null,
+      2,
       2
+     ]
+    },
+    {
+     "id": "dfurmancalmerys78borpov01",
+     "name": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3
      ]
     },
     {
@@ -1061,7 +1105,25 @@
       3,
       3,
       null,
-      3
+      3,
+      4
+     ]
+    },
+    {
+     "id": "huihuiaiqwen2572binstructabliterated",
+     "name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      5
      ]
     },
     {
@@ -1077,7 +1139,8 @@
       4,
       4,
       null,
-      4
+      4,
+      6
      ]
     },
     {
@@ -1093,7 +1156,25 @@
       5,
       5,
       null,
-      5
+      5,
+      7
+     ]
+    },
+    {
+     "id": "ehristoforuqwen25test32bit",
+     "name": "ehristoforu/qwen2.5-test-32b-it",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      8
      ]
     },
     {
@@ -1109,7 +1190,8 @@
       6,
       6,
       null,
-      6
+      6,
+      9
      ]
     },
     {
@@ -1125,7 +1207,25 @@
       7,
       7,
       null,
-      7
+      7,
+      10
+     ]
+    },
+    {
+     "id": "fluentlylmfluentlylmprinum",
+     "name": "fluently-lm/FluentlyLM-Prinum",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      11
      ]
     },
     {
@@ -1141,70 +1241,7 @@
       8,
       8,
       null,
-      8
-     ]
-    },
-    {
-     "id": "jungzoonat3qqwen2514bv10e3",
-     "name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      9,
-      2,
-      9,
-      9,
-      null,
-      9
-     ]
-    },
-    {
-     "id": "sakaltiultiima72b",
-     "name": "Sakalti/ultiima-72B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      10,
-      null,
-      10,
-      10,
-      null,
-      10
-     ]
-    },
-    {
-     "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
-     "name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      11,
-      3,
-      11,
-      11,
-      1,
-      11
-     ]
-    },
-    {
-     "id": "qwenqwen2532b",
-     "name": "Qwen/Qwen2.5-32B",
-     "variant": "instruct",
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      12,
-      null,
-      12,
-      12,
-      null,
+      8,
       12
      ]
     }
@@ -1219,7 +1256,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
    ],
    "models": [
     {
@@ -1230,6 +1268,7 @@
      "region": "cn",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -1249,6 +1288,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -1260,6 +1300,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      4,
       4,
       4,
       4,
@@ -1279,6 +1320,7 @@
       5,
       5,
       5,
+      5,
       5
      ]
     },
@@ -1290,6 +1332,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      6,
       6,
       6,
       6,
@@ -1309,6 +1352,7 @@
       7,
       7,
       7,
+      7,
       7
      ]
     },
@@ -1320,6 +1364,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      8,
       8,
       8,
       8,
@@ -1339,6 +1384,7 @@
       9,
       9,
       9,
+      9,
       9
      ]
     },
@@ -1350,6 +1396,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      10,
       10,
       10,
       10,
@@ -1369,6 +1416,7 @@
       12,
       12,
       12,
+      12,
       12
      ]
     },
@@ -1384,6 +1432,7 @@
       13,
       13,
       13,
+      13,
       13
      ]
     },
@@ -1395,6 +1444,7 @@
      "region": "cn",
      "open": true,
      "ranks": [
+      14,
       14,
       14,
       14,

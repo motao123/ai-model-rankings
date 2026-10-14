@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-13T05:04:02Z",
- "status": "ok",
+ "generated_at": "2026-10-14T03:11:23Z",
+ "status": "partial",
  "boards": [
   "lmarena_text",
   "aa_intelligence",
@@ -10,6 +10,25 @@
   "livecodebench",
   "open_llm"
  ],
- "degraded": 0,
- "failures": []
+ "degraded": 3,
+ "failures": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_webdev",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  },
+  {
+   "source": "lmarena_agent",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "抓取异常: LMArena 全部子榜抓取失败"
+  }
+ ]
 }
