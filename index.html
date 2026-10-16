@@ -83,6 +83,13 @@
   --accent:#8a6a00; --accent-2:#b8912a; --accent-soft:#f3e9cf; --accent-line:#d6c186;
   --up:#a8281c; --down:#1c6b45; --warn:#94570f; --flat:#78705f;
 
+  /* 方法论类别色 —— 本站最核心的区分维度（真人偏好 vs 客观基准）。
+     此前这两类仅靠文字标签区分，扫视表格时无法快速分离；配色相后
+     列头、类别徽章、冠军卡可一眼分出归属。属功能性用色，非装饰。
+     对比度已按 WCAG AA 核定：human 6.82:1 / obj 6.08:1（背景 #fbfaf7）。 */
+  --human:#2f5a8a; --human-soft:#e9eff7; --human-line:#c3d3e6;
+  --obj:#276b51;   --obj-soft:#e7f1ec;   --obj-line:#bfd9cc;
+
   /* 图表顺序色（6 阶灰，用于趋势折线区分；避免"彩虹面条"） */
   --seq-1:#2f2b23; --seq-2:#4b4438; --seq-3:#665e4d;
   --seq-4:#827a66; --seq-5:#9e9580; --seq-6:#b8ae98;
@@ -105,6 +112,8 @@
   --line:#332e26; --line-soft:#26221c;
   --accent:#d8b45c; --accent-2:#e3c67e; --accent-soft:#2b2417; --accent-line:#54461f;
   --up:#e0715f; --down:#4fae7f; --warn:#d09a4a; --flat:#8a8275;
+  --human:#7ea8d8; --human-soft:#1a232e; --human-line:#2c3f52;
+  --obj:#63bd93;   --obj-soft:#16241d;   --obj-line:#28453a;
   --seq-1:#e8e3d8; --seq-2:#cdc6b6; --seq-3:#b1a894;
   --seq-4:#958c78; --seq-5:#79715f; --seq-6:#5d5849;
 }
@@ -115,6 +124,8 @@
     --line:#332e26; --line-soft:#26221c;
     --accent:#d8b45c; --accent-2:#e3c67e; --accent-soft:#2b2417; --accent-line:#54461f;
     --up:#e0715f; --down:#4fae7f; --warn:#d09a4a; --flat:#8a8275;
+  --human:#7ea8d8; --human-soft:#1a232e; --human-line:#2c3f52;
+  --obj:#63bd93;   --obj-soft:#16241d;   --obj-line:#28453a;
     --seq-1:#e8e3d8; --seq-2:#cdc6b6; --seq-3:#b1a894;
     --seq-4:#958c78; --seq-5:#79715f; --seq-6:#5d5849;
   }
@@ -200,6 +211,14 @@ section{padding:38px 0;border-bottom:var(--rule)}
   color:var(--muted);font-family:inherit;transition:color .15s,border-color .15s,background .15s}
 .fbtn:hover{color:var(--ink);border-color:var(--ink)}
 .fbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* 「并列榜单」选择器前置类别圆点：使真人偏好 / 客观基准在选中与未选中状态下都可辨
+   （选中态仍用中性深底，避免与类别色叠加后对比度不足）。 */
+.fbtn.k-human::before,.fbtn.k-obj::before{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+  margin-right:5px;vertical-align:middle;position:relative;top:-1px;
+}
+.fbtn.k-human::before{background:var(--human)}
+.fbtn.k-obj::before{background:var(--obj)}
 .reset-btn{margin-left:auto}
 .fbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
@@ -276,8 +295,11 @@ tbody tr:hover td:first-child{box-shadow:inset 2px 0 0 var(--accent)}
 
 /* ---------- 「各维度当前第一」摘要条：发丝分隔的横排事实陈述 ---------- */
 .leaders{display:flex;flex-wrap:wrap;border-top:var(--rule);border-bottom:var(--rule);margin:0 0 14px}
-.leader{flex:1 1 150px;min-width:150px;padding:11px 16px 11px 0;margin-right:16px;
+.leader{flex:1 1 150px;min-width:150px;padding:13px 16px 11px 0;margin-right:16px;
+  border-top:2px solid transparent;           /* 由 .human / .obj 着色，标示该维度的方法论归属 */
   border-right:var(--rule-soft);display:flex;flex-direction:column;gap:3px}
+.leader.human{border-top-color:var(--human)}
+.leader.obj{border-top-color:var(--obj)}
 .leader:last-child{border-right:none;margin-right:0}
 .leader-k{font-size:var(--fs-10);color:var(--faint);letter-spacing:.08em;text-transform:uppercase}
 .leader-v{font-size:var(--fs-13);font-weight:600;color:var(--ink);line-height:1.4}
@@ -319,8 +341,16 @@ tr.trace-row td{background:var(--bg-alt);padding:0}
 /* 表头内的方法类别徽章独立成行：此前与任务名同行竞争列宽，导致中文被从词中折断
    （桌面端实测出现「真人偏／好」「客观基／准」）。 */
 thead th .kind{display:block;margin-left:0;margin-top:3px;vertical-align:baseline}
-.kind.hp{color:var(--muted)}
-.kind.ob{color:var(--faint)}
+.kind.hp{color:var(--human)}
+.kind.ob{color:var(--obj)}
+
+/* 列头按方法论类别着色：顶部 2px 色条（用 ::before，不占布局、不与 sticky 首列的
+   box-shadow 冲突）。加色后扫视表头即可分出哪几列属真人偏好、哪几列属客观基准。 */
+thead th.k-human::before,thead th.k-obj::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:2px;
+}
+thead th.k-human::before{background:var(--human)}
+thead th.k-obj::before{background:var(--obj)}
 .board-meta{display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;padding:12px 0;
   font-size:var(--fs-12);color:var(--muted);border-bottom:var(--rule-soft);margin-bottom:16px}
 .board-meta a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-line)}
@@ -414,11 +444,20 @@ footer.site a:hover{text-decoration:underline}
   header.site .updated{text-align:left}
   header.site .themebtn{align-self:flex-start}
   header.site nav.anchor{
-    flex-direction:column;flex-wrap:nowrap;gap:1px;padding:0;
-    border-top:var(--rule);margin-top:18px;padding-top:14px;overflow:visible;
+    /* 分区线同样出血到侧栏边缘（margin 负值），内容仍在 14px——
+       与导航项的高亮条保持同一条左基线，避免"线在 14、条在 0"的新偏差。 */
+    flex-direction:column;flex-wrap:nowrap;gap:1px;
+    border-top:var(--rule);
+    margin:18px -14px 0;padding:14px 14px 0;overflow:visible;
   }
   header.site nav.anchor a{
-    padding:8px 10px;border-left:2px solid transparent;border-bottom:none;
+    /* 左侧对齐基线统一为 14px（= .wrap 的 padding），与 logo 的 # / 按钮 / 数据时间一致。
+       做法：用负 margin 把整块拉到侧栏最左（0），再用 border + padding 把文字推回 14px——
+       这样高亮条落在侧栏边缘，而文字左缘与其他元素严格对齐。
+       此前 border(2) + padding(10) 使文字位于 26px，比上方元素多缩进 12px。 */
+    margin-left:-14px;
+    padding:8px 12px;
+    border-left:2px solid transparent;border-bottom:none;
     font-size:var(--fs-13);color:var(--ink-2);white-space:normal;
   }
   header.site nav.anchor a:hover{background:var(--bg-alt);color:var(--ink)}
@@ -870,6 +909,17 @@ function setupScrollSpy(){
   }
 }
 
+/* 查询某个「维度冠军」所属的方法论类别（用于着色为 human / obj）。
+   d.key 多数就是 board key；但派生维度（如「最低价格」的 key 是
+   aa_intelligence_cheapest）不在 boards 中，需回退用榜名匹配。
+   两者都不命中则返回 null —— 调用方应保持不着色，不做猜测。 */
+function leaderKindOf(d){
+  const bs=(STATE.merged&&STATE.merged.boards)||{};
+  if(d.key&&bs[d.key]) return bs[d.key].kind;
+  for(const k in bs){ if(bs[k].board===d.board) return bs[k].kind; }
+  return null;
+}
+
 /* ===== 1. 三榜同屏对比 ===== */
 function buildCompareSection(){
   const sec=el("section",{id:"compare"});
@@ -888,7 +938,12 @@ function buildCompareSection(){
     dl.forEach(d=>{
       const val=d.value_label!=null?d.value_label:(d.score!=null?fmtScore(d.score):"—");
       const tie=(d.tie_size>1)?`（<a class="term" href="methodology.html#s7" title="统计并列口径：仅上游公布容差的榜单启用">并列 ${d.tie_size} 个</a>）`:"";
-      bar.appendChild(el("div",{class:"leader",role:"listitem",title:(d.basis||"")+" · 口径见方法论页"},
+      // 按方法论归属着色（顶部色线）。注意：d.key 多数就是 board key，但派生维度
+      // （如「最低价格」的 key 是 aa_intelligence_cheapest）不在 boards 里，
+      // 需回退用榜名匹配，否则这些卡片会没有颜色。
+      const lkind=leaderKindOf(d);
+      const kcls=lkind==="human_preference"?" human":(lkind==="objective_benchmark"?" obj":"");
+      bar.appendChild(el("div",{class:"leader"+kcls,role:"listitem",title:(d.basis||"")+" · 口径见方法论页"},
         el("span",{class:"leader-k"},d.label),
         el("span",{class:"leader-v",html:esc(d.model||"—")+tie}),
         el("span",{class:"leader-m"},val)));
@@ -946,7 +1001,7 @@ function buildCompareSection(){
   colsel.appendChild(el("span",{style:"font-size:12px;color:var(--muted);align-self:center;margin-right:4px"},"并列榜单："));
   available.forEach(k=>{
     const on=STATE.crossBoard.includes(k);
-    colsel.appendChild(el("button",{class:"fbtn"+(on?" on":""),title:boards[k].board,onclick:e=>{
+    colsel.appendChild(el("button",{class:"fbtn"+(on?" on":"")+(boards[k].kind==="human_preference"?" k-human":" k-obj"),title:boards[k].board,onclick:e=>{
       if(STATE.crossBoard.includes(k)) STATE.crossBoard=STATE.crossBoard.filter(x=>x!==k);
       else STATE.crossBoard.push(k);
       e.currentTarget.classList.toggle("on"); renderCrossTable();
@@ -1021,7 +1076,7 @@ function renderCrossTable(){
   cols.forEach(c=>{
     const b=STATE.merged.boards[c]; const kind=b.kind==="human_preference"?"hp":"ob";
     const active=sort&&sort.key===c;
-    const th=el("th",{class:"sub",scope:"col","aria-sort":active?(sort.dir>0?"ascending":"descending"):"none",
+    const th=el("th",{class:"sub "+(kind==="hp"?"k-human":"k-obj"),scope:"col","aria-sort":active?(sort.dir>0?"ascending":"descending"):"none",
       title:b.board+" · 指标 "+(b.metric||"—"),
       html:`${esc(boardTask(c)||b.board.replace(/（.*?）/g,""))} <span class="kind ${kind}">${KIND_LABEL[b.kind]||""}</span>${active?(sort.dir>0?" ↑":" ↓"):""}`});
     th.style.cursor="pointer"; th.style.whiteSpace="normal"; th.style.minWidth="84px"; th.style.maxWidth="160px";
