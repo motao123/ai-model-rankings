@@ -91,7 +91,7 @@
   --gold:var(--accent); --gold-2:var(--accent-2); --gold-soft:var(--accent-soft);
   --cn:var(--accent); --cn-soft:var(--accent-soft);
 
-  --maxw:1200px; --pad-x:22px;   /* 水平内边距：.wrap 与 .table-wrap 的通栏负边距共用此变量，
+  --maxw:1200px; --nav-w:212px; --pad-x:22px;   /* 水平内边距：.wrap 与 .table-wrap 的通栏负边距共用此变量，
                                     避免两处数值失配导致页面级横向溢出（曾因 1024px 断点只改 .wrap
                                     而负边距仍为 -22px，产生 4px 溢出） */
   --rule:1px solid var(--line);
@@ -390,6 +390,48 @@ footer.site a:hover{text-decoration:underline}
 .loading .spin::after{content:"";position:absolute;inset:0;width:28%;background:var(--accent);
   animation:sk 1.2s ease-in-out infinite}
 @keyframes sk{0%{transform:translateX(-110%)}100%{transform:translateX(380%)}}
+
+/* ---------- 桌面（≥1025px）：侧栏 + 主区看板布局 ----------
+   借鉴 OhMyInspire `dashboard` 模板的结构骨架：固定侧栏承载品牌 / 导航 / 状态，
+   主区专注数据。与既有断点互补（≤640 移动 / 641–1024 平板 / ≥1025 侧栏），无重叠。
+   关键：主列必须 minmax(0,1fr)，否则宽表格会把 grid 撑破（这是此类布局最常见的坑）。 */
+@media(min-width:1025px){
+  body{display:grid;grid-template-columns:var(--nav-w) minmax(0,1fr);align-items:start}
+  header.site{
+    grid-column:1;grid-row:1/3;align-self:start;
+    position:sticky;top:0;height:100vh;overflow-y:auto;overscroll-behavior:contain;
+    border-bottom:none;border-right:var(--rule);
+    display:flex;flex-direction:column;
+  }
+  header.site .wrap{max-width:none;padding:22px 14px 26px;width:100%}
+  /* 侧栏仅 212px，英文副标题会折成 3 行，信息密度反而下降——侧栏模式下隐藏，
+     完整站点名在 <title> 与页脚中仍然保留（不影响 SEO/可访问性）。 */
+  header.site .logo .name small{display:none}
+  header.site .logo .name{font-size:var(--fs-18);line-height:1.25}
+  header.site .logo .mark{font-size:19px}
+  header.site .hd{flex-direction:column;align-items:stretch;gap:14px;padding:0}
+  header.site .spacer{display:none}
+  header.site .updated{text-align:left}
+  header.site .themebtn{align-self:flex-start}
+  header.site nav.anchor{
+    flex-direction:column;flex-wrap:nowrap;gap:1px;padding:0;
+    border-top:var(--rule);margin-top:18px;padding-top:14px;overflow:visible;
+  }
+  header.site nav.anchor a{
+    padding:8px 10px;border-left:2px solid transparent;border-bottom:none;
+    font-size:var(--fs-13);color:var(--ink-2);white-space:normal;
+  }
+  header.site nav.anchor a:hover{background:var(--bg-alt);color:var(--ink)}
+  /* 当前所在区块：由 scrollspy 写入 aria-current */
+  header.site nav.anchor a[aria-current="true"]{
+    color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600;
+  }
+  main.wrap{grid-column:2;max-width:none;padding:0 30px;width:100%}
+  footer.site{grid-column:2}
+  footer.site .wrap{max-width:none;padding:0 30px}
+  footer.site .cols{max-width:1100px}
+  .totop{right:28px}
+}
 
 /* 平板档：此前仅 640px 一个断点，768–1024px 直接继承桌面布局——
    跨榜表 5–7 列在该区间拥挤最明显（表头中文断行就出现在此区间）。 */
@@ -792,6 +834,40 @@ function render(){
   app.appendChild(buildQuadrantSection());
   app.appendChild(buildTrendSection());
   app.appendChild(buildSourcesSection());
+  setupScrollSpy();   // 区块是动态渲染的，必须在这里挂载观察器
+}
+
+/* 侧栏导航高亮：跟随滚动标记当前区块（仅桌面侧栏布局下有意义）。
+   用 IntersectionObserver 而非 scroll 事件——后者在高频滚动时会掉帧。
+   rootMargin 上收 15% / 下收 70%，让"当前区块"取视口上部的那个，符合阅读直觉。 */
+let _spy=null;
+function setupScrollSpy(){
+  if(_spy){ _spy.disconnect(); _spy=null; }
+  if(!window.matchMedia("(min-width:1025px)").matches) return;
+  const links=[...document.querySelectorAll('header.site nav.anchor a[href^="#"]')];
+  if(!links.length) return;
+  const pair=new Map();
+  links.forEach(a=>{
+    const sec=document.querySelector(a.getAttribute("href"));
+    if(sec) pair.set(sec,a);
+  });
+  if(!pair.size) return;
+  _spy=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const a=pair.get(e.target);
+      if(!a) return;
+      links.forEach(x=>x.removeAttribute("aria-current"));
+      a.setAttribute("aria-current","true");
+    });
+  },{rootMargin:"-15% 0px -70% 0px"});
+  pair.forEach((a,sec)=>_spy.observe(sec));
+  // 初始态：IntersectionObserver 只在滚动时回调，页面刚渲染完需要手动点亮第一项，
+  // 否则侧栏会出现"没有任何项处于选中态"的空档。
+  const first=links[0];
+  if(first && !document.querySelector('header.site nav.anchor a[aria-current="true"]')){
+    first.setAttribute("aria-current","true");
+  }
 }
 
 /* ===== 1. 三榜同屏对比 ===== */
