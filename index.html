@@ -356,6 +356,16 @@ svg text{font-family:var(--font-sans)}
 .src-card .link a{color:var(--accent);text-decoration:none}
 .src-card .link a:hover{text-decoration:underline}
 
+/* 术语就近释义：虚线标记 + 跳转到方法论页对应章节。
+   本页术语密度较高（折叠 / 兜底数据 / 统计并列 / Pareto 前沿等），
+   此前只有长段说明与 title，非技术背景读者缺少就近入口。 */
+.term{border-bottom:1px dashed var(--line);text-decoration:none;color:inherit;cursor:help}
+.term:hover,.term:focus-visible{border-bottom-color:var(--accent);color:var(--accent)}
+
+/* 加载更多后 scrollIntoView 到新行时，避开 sticky 头部（桌面约 105px / 移动约 119px） */
+tbody tr{scroll-margin-top:132px}
+@media(max-width:640px){tbody tr{scroll-margin-top:126px}}
+
 /* ---------- 回到顶部：长页面（首页 5 个区块、方法论页约 8900px）的必备导航 ---------- */
 .totop{position:fixed;right:20px;bottom:24px;width:40px;height:40px;border:var(--rule);
   background:var(--bg);color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center;
@@ -574,7 +584,7 @@ function vendorBadges(row){
     const title={verified:"在真人偏好与客观基准等相互独立的方法论下均被评测到",
       partial:"在多个榜单出现，但同属一类方法论",
       single:"仅在一个榜单出现"}[row.confidence]||"";
-    out.push(`<span class="badge conf ${row.confidence}" title="${esc(title)}">${esc(t)}</span>`);
+    out.push(`<a class="badge conf ${row.confidence}" href="methodology.html#s6" title="${esc(title)} · 点击查看方法论「跨榜合并」">${esc(t)}</a>`);
   }
   return out.join(" ");
 }
@@ -788,10 +798,11 @@ function render(){
 function buildCompareSection(){
   const sec=el("section",{id:"compare"});
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"三榜同屏对比"),el("span",{class:"en"},"Cross-board")));
-  sec.appendChild(el("p",{class:"sec-desc"},
+  sec.appendChild(el("p",{class:"sec-desc",html:
     "同一模型在不同榜单的原始名次并列展示（左：真人偏好类 · 右：客观基准类）。这里只做并列，绝不加总或计算综合分——各榜口径不同，名次不可直接比较。"
-    +"本表只列出现在 ≥2 个榜单的模型；同一模型的不同推理档位与期次（如 -high/-max/(thinking)/日期戳）已归并为一个实体，取该榜最好名次，档位在模型名下方标注。仅出现在单个榜的模型不在此表，完整保留在下方「分榜明细」。"
-    +"厂商与国别都推不出的模型标灰沉底、不参与排序（见方法论页）。点击行内「溯源」可展开该模型在各榜的原始名次、分数与来源链接。"));
+    +"本表只列出现在 ≥2 个榜单的模型；同一模型的不同推理档位与期次（如 -high/-max/(thinking)/日期戳）已<a class=\"term\" href=\"methodology.html#s4\" title=\"变体折叠规则\">归并</a>为一个实体，取该榜最好名次，档位在模型名下方标注。仅出现在单个榜的模型不在此表，完整保留在下方「分榜明细」。"
+    +"<a class=\"term\" href=\"methodology.html#s5\" title=\"厂商与国别归一规则\">厂商与国别都推不出</a>的模型标灰沉底、不参与排序。点击行内「溯源」可展开该模型在各榜的原始名次、分数与来源链接。"
+    +"默认按 <a class=\"term\" href=\"methodology.html#s6\" title=\"跨榜合并与排序规则\">上榜数 → 方法论覆盖 → 代表名次</a> 排序，点击表头可改按某榜名次重排。"}));
 
   // 「各维度当前第一」摘要条：只陈述每个榜上的第一名是谁（各榜原始分数，
   // 不做任何换算或加总）。已退役归档的榜不出现。数据来自 cross_meta.dimension_leaders。
@@ -800,10 +811,10 @@ function buildCompareSection(){
     const bar=el("div",{class:"leaders",role:"list","aria-label":"各维度当前第一"});
     dl.forEach(d=>{
       const val=d.value_label!=null?d.value_label:(d.score!=null?fmtScore(d.score):"—");
-      const tie=(d.tie_size>1)?`（并列 ${d.tie_size} 个）`:"";
+      const tie=(d.tie_size>1)?`（<a class="term" href="methodology.html#s7" title="统计并列口径：仅上游公布容差的榜单启用">并列 ${d.tie_size} 个</a>）`:"";
       bar.appendChild(el("div",{class:"leader",role:"listitem",title:(d.basis||"")+" · 口径见方法论页"},
         el("span",{class:"leader-k"},d.label),
-        el("span",{class:"leader-v"},(d.model||"—")+tie),
+        el("span",{class:"leader-v",html:esc(d.model||"—")+tie}),
         el("span",{class:"leader-m"},val)));
     });
     sec.appendChild(bar);
@@ -1006,10 +1017,19 @@ function renderCrossTable(){
       `本视图含 <b>${refCount}</b> 个标灰的「参考」模型：厂商与国别都无法识别，本站不猜测，故列出但不参与排序（已沉底）。`));
   }
 
-  // 分页：替代原「静默截断前 80 行」
+  // 分页：替代原「静默截断前 80 行」。
+  // 加载更多后必须主动定位到新一批的首行：实测（Chrome scroll anchoring 介入）
+  // 点击后视口会自行跳动约 1500px 直达表格末尾，等于跳过刚展开的 50 行内容。
   if(rows.length>shown.length){
     holder.appendChild(el("div",{class:"load-more"},
-      el("button",{class:"fbtn",onclick:()=>{STATE.crossLimit+=50;renderCrossTable();}},
+      el("button",{class:"fbtn",onclick:()=>{
+        const firstNew=STATE.crossLimit;          // 新一批的首行索引（0-based）
+        STATE.crossLimit+=50;
+        renderCrossTable();
+        const trs=document.querySelectorAll("#cross-holder tbody tr:not(.trace-row)");
+        const tgt=trs[firstNew];
+        if(tgt) tgt.scrollIntoView({block:"start"});   // 配合 scroll-margin-top 避开 sticky 头部
+      }},
         `加载更多（已显示 ${shown.length} / ${rows.length}）`)));
   }
   writeURLState();
@@ -1029,7 +1049,8 @@ document.addEventListener("click",e=>{
 function buildBoardsSection(){
   const sec=el("section",{id:"boards"});
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"分榜明细"),el("span",{class:"en"},"Boards")));
-  sec.appendChild(el("p",{class:"sec-desc"},"切换查看各原始榜单的完整排名、分数、升降与来源。每榜标注原始链接、更新时间与数据口径；带「兜底数据」标记的表示活源未取到最新值，已按可信度依次改用第三方镜像快照 / 已知良好回退 / 历史快照 / 人工数据，并在标记中注明实际来源与滞后天数。"));
+  sec.appendChild(el("p",{class:"sec-desc",html:
+    "切换查看各原始榜单的完整排名、分数、升降与来源。每榜标注原始链接、数据日期与抓取时间；带「<a class=\"term\" href=\"methodology.html#s8\" title=\"抓取失败与降级链\">兜底数据</a>」标记的表示活源未取到最新值，已按可信度依次改用第三方镜像快照 / 已知良好回退 / 历史快照 / 人工数据，并在标记中注明实际来源与滞后天数。"}));
 
   const boards=STATE.merged.boards;
   const keys=BOARD_TAB_ORDER.filter(k=>boards[k]&&boards[k].rows&&boards[k].rows.length);
@@ -1072,7 +1093,7 @@ function renderBoard(){
       : "历史快照";
     const days = b.stale_days ? ` · 滞后 ${b.stale_days} 天` : "";
     const src = b.stale_from ? `（截至 ${b.stale_from}）` : "";
-    meta.appendChild(el("span",{class:"stale-flag",title:b.mirror_note||""}, `兜底数据 · ${how}${src}${days}`));
+    meta.appendChild(el("span",{class:"stale-flag",html:`<a class="term" href="methodology.html#s8" title="${esc(b.mirror_note||"")} · 降级链说明见方法论页" style="border-bottom-color:currentColor">兜底数据</a> · ${esc(how)}${esc(src)}${esc(days)}`}));
   }
   if(b.retired) meta.appendChild(el("span",{class:"retired-flag"},"已退役归档"));
   holder.appendChild(meta);
@@ -1110,7 +1131,14 @@ function renderBoard(){
   // 分页：分榜明细同样不再全量平铺（LMArena 单榜 400+ 行会让整页长达 30 屏）
   if(b.rows.length>shown.length){
     holder.appendChild(el("div",{class:"load-more"},
-      el("button",{class:"fbtn",onclick:()=>{STATE.boardLimit+=60;renderBoard();}},
+      el("button",{class:"fbtn",onclick:()=>{
+        const firstNew=STATE.boardLimit;
+        STATE.boardLimit+=60;
+        renderBoard();
+        const trs=document.querySelectorAll("#board-holder tbody tr");
+        const tgt=trs[firstNew];
+        if(tgt) tgt.scrollIntoView({block:"start"});
+      }},
         `加载更多（已显示 ${shown.length} / ${b.rows.length}）`)));
   }
   holder.appendChild(el("p",{class:"legend-note",html:
@@ -1122,7 +1150,10 @@ function renderBoard(){
 function buildQuadrantSection(){
   const sec=el("section",{id:"quadrant"});
   sec.appendChild(el("div",{class:"sec-hd"},el("h2",{},"性价比象限"),el("span",{class:"en"},"Value quadrant")));
-  sec.appendChild(el("p",{class:"sec-desc"},"横轴为 Artificial Analysis 混合价格（$/百万 token，越左越便宜），纵轴为 Intelligence Index 智能指数（越上越强）。<b>左上角＝高性价比区</b>。两个数值均为 AA 官方原始口径，本站只做散点定位，不做任何换算或加权。阶梯状实线为 <b>Pareto 前沿</b>：对任意价格，不超过该价格所能达到的最高智能指数；落在线上的点（加描边环）表示「不存在另一个更便宜且更强的模型」。"));
+  // 注意：这里必须用 html 属性而非文本子节点——el() 对字符串走 createTextNode，
+  // 会把内联标签转义成字面文本（此前 <b> 被原样显示成 "<b>左上角＝高性价比区</b>"）。
+  sec.appendChild(el("p",{class:"sec-desc",html:
+    "横轴为 Artificial Analysis 混合价格（$/百万 token，越左越便宜），纵轴为 Intelligence Index 智能指数（越上越强）。<b>左上角＝高性价比区</b>。两个数值均为 AA 官方原始口径，本站只做散点定位，不做任何换算或加权。阶梯状实线为 <a class=\"term\" href=\"methodology.html#s9\" title=\"价格数据仅覆盖 AA 榜，局限见方法论页\">Pareto 前沿</a>：对任意价格，不超过该价格所能达到的最高智能指数；落在线上的点（加描边环）表示「不存在另一个更便宜且更强的模型」。"}));
   const card=el("div",{class:"chart-card"});
   const holder=el("div",{id:"quadrant-holder"});
   card.appendChild(holder);
