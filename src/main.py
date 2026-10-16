@@ -323,10 +323,13 @@ def _add_trend(payload, source_id, date_str):
                 row["trend"] = prev_rank[cid] - row["rank"]  # 正数=上升
                 row["is_new"] = False
             else:
-                row["trend"] = 0
+                row["trend"] = 0      # 新上榜：与"上期不在榜"相比确无升降，0 是准确表达
                 row["is_new"] = True
         else:
-            row["trend"] = 0
+            # 该榜没有可比对的上一期数据：用 null 显式表达"无法比较"。
+            # 前端据此显示「无对比」而非「持平」——把"未知"渲染成"无变化"是不实陈述，
+            # 也与本项目「未知要做成显式状态」的一贯设计冲突。
+            row["trend"] = None
             row["is_new"] = False
     payload["compared_with"] = prev_date
     return payload
