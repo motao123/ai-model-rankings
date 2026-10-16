@@ -8,7 +8,7 @@
  "license": "归档数据（榜单已于 2025-03 退役）",
  "retired": true,
  "retired_note": "该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考。",
- "fetched_at": "2026-10-16T02:46:43Z",
+ "fetched_at": "2026-10-16T04:18:39Z",
  "publish_date": "2025-03",
  "channel": "hf-datasets-server",
  "rows": [
@@ -88,21 +88,6 @@
    "rank": 5
   },
   {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
-   "organization": "Saxo",
-   "score": 47.34,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 79.71681804279312,
-    "bbh": 57.633928620802884,
-    "math": 60.27190332326284,
-    "gpqa": 14.988814317673373,
-    "musr": 18.155989583333334,
-    "mmlu_pro": 53.25428486997635
-   },
-   "rank": 6
-  },
-  {
    "model": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
    "organization": "MaziyarPanahi",
    "score": 47.22,
@@ -115,7 +100,7 @@
     "musr": 12.016666666666671,
     "mmlu_pro": 51.305777186761226
    },
-   "rank": 7
+   "rank": 6
   },
   {
    "model": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
@@ -130,7 +115,7 @@
     "musr": 38.688020833333326,
     "mmlu_pro": 54.270094562647756
    },
-   "rank": 8
+   "rank": 7
   },
   {
    "model": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
@@ -145,22 +130,7 @@
     "musr": 38.688020833333326,
     "mmlu_pro": 54.270094562647756
    },
-   "rank": 9
-  },
-  {
-   "model": "Sakalti/ultiima-72B",
-   "organization": "Sakalti",
-   "score": 46.77,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 71.4012154416947,
-    "bbh": 61.10313258693403,
-    "math": 53.54984894259819,
-    "gpqa": 21.923937360178968,
-    "musr": 18.115104166666665,
-    "mmlu_pro": 54.510195035460995
-   },
-   "rank": 10
+   "rank": 8
   },
   {
    "model": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
@@ -175,7 +145,7 @@
     "musr": 14.224479166666663,
     "mmlu_pro": 52.05378250591017
    },
-   "rank": 11
+   "rank": 9
   },
   {
    "model": "Qwen/Qwen2.5-32B-Instruct",
@@ -190,37 +160,7 @@
     "musr": 13.498958333333329,
     "mmlu_pro": 51.85062056737589
    },
-   "rank": 12
-  },
-  {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
-   "organization": "Saxo",
-   "score": 46.37,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 82.48702332034557,
-    "bbh": 56.527924000253876,
-    "math": 61.78247734138973,
-    "gpqa": 11.74496644295302,
-    "musr": 13.832291666666665,
-    "mmlu_pro": 51.822916666666664
-   },
-   "rank": 13
-  },
-  {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
-   "organization": "Saxo",
-   "score": 46.23,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 82.08985491828349,
-    "bbh": 56.186576093303636,
-    "math": 62.2356495468278,
-    "gpqa": 11.297539149888143,
-    "musr": 13.661718749999997,
-    "mmlu_pro": 51.915263002364064
-   },
-   "rank": 14
+   "rank": 10
   },
   {
    "model": "OpenBuddy/openbuddy-llama3.3-70b-v24.1-131k",
@@ -235,22 +175,7 @@
     "musr": 22.265885416666666,
     "mmlu_pro": 48.082890070921984
    },
-   "rank": 15
-  },
-  {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
-   "organization": "Saxo",
-   "score": 45.67,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 75.15558717536138,
-    "bbh": 56.67538301839144,
-    "math": 54.607250755287005,
-    "gpqa": 14.093959731543624,
-    "musr": 20.591406250000002,
-    "mmlu_pro": 52.912603427895974
-   },
-   "rank": 16
+   "rank": 11
   },
   {
    "model": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
@@ -265,52 +190,7 @@
     "musr": 12.091145833333337,
     "mmlu_pro": 52.45087174940899
    },
-   "rank": 17
-  },
-  {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
-   "organization": "Saxo",
-   "score": 45.61,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 76.30963620970138,
-    "bbh": 56.552203892922165,
-    "math": 53.625377643504535,
-    "gpqa": 14.876957494407161,
-    "musr": 19.465885416666666,
-    "mmlu_pro": 52.8017878250591
-   },
-   "rank": 18
-  },
-  {
-   "model": "Sakalti/ultiima-32B",
-   "organization": "Sakalti",
-   "score": 45.4,
-   "type": "🤝 base merges and moerges",
-   "subscores": {
-    "ifeval": 68.54357549080883,
-    "bbh": 58.112446786765965,
-    "math": 49.62235649546828,
-    "gpqa": 17.4496644295302,
-    "musr": 24.134895833333335,
-    "mmlu_pro": 54.55636820330969
-   },
-   "rank": 19
-  },
-  {
-   "model": "Sakalti/ultiima-72B-v1.5",
-   "organization": "Sakalti",
-   "score": 44.9,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 65.49610588793291,
-    "bbh": 63.438206058920265,
-    "math": 43.957703927492446,
-    "gpqa": 21.812080536912756,
-    "musr": 18.536718749999995,
-    "mmlu_pro": 56.153959810874696
-   },
-   "rank": 20
+   "rank": 12
   },
   {
    "model": "FINGU-AI/RomboUltima-32B",
@@ -325,7 +205,7 @@
     "musr": 21.721093749999998,
     "mmlu_pro": 53.20811170212767
    },
-   "rank": 21
+   "rank": 13
   },
   {
    "model": "MaziyarPanahi/calme-2.1-rys-78b",
@@ -340,7 +220,7 @@
     "musr": 18.99739583333333,
     "mmlu_pro": 49.37573877068559
    },
-   "rank": 22
+   "rank": 14
   },
   {
    "model": "MaziyarPanahi/calme-2.3-rys-78b",
@@ -355,7 +235,7 @@
     "musr": 16.999218749999997,
     "mmlu_pro": 49.7266548463357
    },
-   "rank": 23
+   "rank": 15
   },
   {
    "model": "MaziyarPanahi/calme-2.1-qwen2-72b",
@@ -370,7 +250,7 @@
     "musr": 20.15234375,
     "mmlu_pro": 49.05252659574468
    },
-   "rank": 24
+   "rank": 16
   },
   {
    "model": "MaziyarPanahi/calme-2.2-rys-78b",
@@ -385,7 +265,7 @@
     "musr": 16.82864583333333,
     "mmlu_pro": 48.72931442080378
    },
-   "rank": 25
+   "rank": 17
   },
   {
    "model": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
@@ -400,7 +280,7 @@
     "musr": 19.730729166666666,
     "mmlu_pro": 53.47591607565011
    },
-   "rank": 26
+   "rank": 18
   },
   {
    "model": "MaziyarPanahi/calme-2.2-qwen2-72b",
@@ -415,22 +295,7 @@
     "musr": 16.516927083333332,
     "mmlu_pro": 49.27415780141844
    },
-   "rank": 27
-  },
-  {
-   "model": "Steelskull/L3.3-MS-Nevoria-70b",
-   "organization": "Steelskull",
-   "score": 44.04,
-   "type": "🤝 base merges and moerges",
-   "subscores": {
-    "ifeval": 69.63268571833845,
-    "bbh": 56.60264873723427,
-    "math": 39.577039274924466,
-    "gpqa": 29.418344519015662,
-    "musr": 18.628645833333337,
-    "mmlu_pro": 50.39154846335697
-   },
-   "rank": 28
+   "rank": 19
   },
   {
    "model": "Aryanne/QwentileSwap",
@@ -445,7 +310,7 @@
     "musr": 19.20520833333333,
     "mmlu_pro": 54.95345744680851
    },
-   "rank": 29
+   "rank": 20
   },
   {
    "model": "Cran-May/tempmotacilla-cinerea-0308",
@@ -460,22 +325,7 @@
     "musr": 12.669531249999999,
     "mmlu_pro": 47.224069148936174
    },
-   "rank": 30
-  },
-  {
-   "model": "Steelskull/L3.3-Nevoria-R1-70b",
-   "organization": "Steelskull",
-   "score": 43.61,
-   "type": "🤝 base merges and moerges",
-   "subscores": {
-    "ifeval": 60.23794642659256,
-    "bbh": 56.167288330479515,
-    "math": 46.299093655589125,
-    "gpqa": 29.194630872483216,
-    "musr": 20.191406249999996,
-    "mmlu_pro": 49.5881353427896
-   },
-   "rank": 31
+   "rank": 21
   },
   {
    "model": "Qwen/Qwen2-72B-Instruct",
@@ -490,22 +340,7 @@
     "musr": 17.167968749999996,
     "mmlu_pro": 48.92324172576833
    },
-   "rank": 32
-  },
-  {
-   "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
-   "organization": "Saxo",
-   "score": 43.34,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 79.56444456264933,
-    "bbh": 58.07744907944319,
-    "math": 56.646525679758305,
-    "gpqa": 2.1252796420581683,
-    "musr": 11.179427083333337,
-    "mmlu_pro": 52.44163711583924
-   },
-   "rank": 33
+   "rank": 22
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
@@ -520,7 +355,7 @@
     "musr": 14.757812499999998,
     "mmlu_pro": 47.23330378250591
    },
-   "rank": 34
+   "rank": 23
   },
   {
    "model": "MaziyarPanahi/calme-2.2-llama3.1-70b",
@@ -535,7 +370,7 @@
     "musr": 17.06953125,
     "mmlu_pro": 49.05252659574468
    },
-   "rank": 35
+   "rank": 24
   },
   {
    "model": "MaziyarPanahi/calme-2.3-llama3.1-70b",
@@ -550,7 +385,7 @@
     "musr": 17.736197916666658,
     "mmlu_pro": 48.4799793144208
    },
-   "rank": 36
+   "rank": 25
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
@@ -565,7 +400,7 @@
     "musr": 15.261718749999995,
     "mmlu_pro": 47.593454491725765
    },
-   "rank": 37
+   "rank": 26
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
@@ -580,37 +415,7 @@
     "musr": 15.157812499999997,
     "mmlu_pro": 47.131722813238774
    },
-   "rank": 38
-  },
-  {
-   "model": "Sao10K/70B-L3.3-Cirrus-x1",
-   "organization": "Sao10K",
-   "score": 43.0,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 66.80751517085777,
-    "bbh": 57.132312166381276,
-    "math": 37.38670694864049,
-    "gpqa": 26.62192393736018,
-    "musr": 21.42083333333333,
-    "mmlu_pro": 48.646202718676115
-   },
-   "rank": 39
-  },
-  {
-   "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
-   "organization": "Tarek07",
-   "score": 43.0,
-   "type": "🤝 base merges and moerges",
-   "subscores": {
-    "ifeval": 69.06064796960952,
-    "bbh": 56.24697023586278,
-    "math": 35.725075528700906,
-    "gpqa": 27.740492170022367,
-    "musr": 19.62864583333333,
-    "mmlu_pro": 49.61583924349882
-   },
-   "rank": 40
+   "rank": 27
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
@@ -625,7 +430,7 @@
     "musr": 15.18723958333333,
     "mmlu_pro": 46.734633569739955
    },
-   "rank": 41
+   "rank": 28
   },
   {
    "model": "Daemontatox/Llama3.3-70B-CogniLink",
@@ -640,7 +445,7 @@
     "musr": 21.395572916666662,
     "mmlu_pro": 46.36524822695035
    },
-   "rank": 42
+   "rank": 29
   },
   {
    "model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
@@ -655,7 +460,7 @@
     "musr": 13.15,
     "mmlu_pro": 44.64760638297872
    },
-   "rank": 43
+   "rank": 30
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
@@ -670,7 +475,7 @@
     "musr": 14.269531249999995,
     "mmlu_pro": 46.660756501182036
    },
-   "rank": 44
+   "rank": 31
   },
   {
    "model": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
@@ -685,22 +490,7 @@
     "musr": 12.016666666666671,
     "mmlu_pro": 51.425827423167846
    },
-   "rank": 45
-  },
-  {
-   "model": "Tarek07/Thalassic-Alpha-LLaMa-70B",
-   "organization": "Tarek07",
-   "score": 42.22,
-   "type": "🤝 base merges and moerges",
-   "subscores": {
-    "ifeval": 70.03484088884161,
-    "bbh": 55.95412538254855,
-    "math": 31.49546827794562,
-    "gpqa": 25.838926174496642,
-    "musr": 20.72473958333333,
-    "mmlu_pro": 49.27415780141844
-   },
-   "rank": 46
+   "rank": 32
   },
   {
    "model": "Quazim0t0/Fugazi14b",
@@ -715,7 +505,7 @@
     "musr": 16.419010416666662,
     "mmlu_pro": 49.0802304964539
    },
-   "rank": 47
+   "rank": 33
   },
   {
    "model": "1024m/QWEN-14B-B100",
@@ -730,22 +520,7 @@
     "musr": 9.883333333333335,
     "mmlu_pro": 46.429890661938536
    },
-   "rank": 48
-  },
-  {
-   "model": "Sakalti/Saka-14B",
-   "organization": "Sakalti",
-   "score": 41.91,
-   "type": "🔶 fine-tuned on domain-specific datasets",
-   "subscores": {
-    "ifeval": 71.74341857382856,
-    "bbh": 49.72322791125956,
-    "math": 40.93655589123867,
-    "gpqa": 19.463087248322143,
-    "musr": 20.740885416666668,
-    "mmlu_pro": 48.84013002364066
-   },
-   "rank": 49
+   "rank": 34
   },
   {
    "model": "Quazim0t0/Rune-14b",
@@ -760,7 +535,7 @@
     "musr": 16.29348958333333,
     "mmlu_pro": 49.01558806146573
    },
-   "rank": 50
+   "rank": 35
   },
   {
    "model": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
@@ -775,7 +550,7 @@
     "musr": 12.65390625,
     "mmlu_pro": 44.213578605200944
    },
-   "rank": 51
+   "rank": 36
   },
   {
    "model": "Quazim0t0/SuperNova14b",
@@ -790,7 +565,7 @@
     "musr": 16.31510416666666,
     "mmlu_pro": 49.27415780141844
    },
-   "rank": 52
+   "rank": 37
   },
   {
    "model": "Quazim0t0/Lineage-14B",
@@ -805,7 +580,7 @@
     "musr": 17.032812499999995,
     "mmlu_pro": 49.006353427895974
    },
-   "rank": 53
+   "rank": 38
   },
   {
    "model": "Sakalti/Oxyge1-33B",
@@ -820,7 +595,7 @@
     "musr": 24.29765625,
     "mmlu_pro": 54.547133569739955
    },
-   "rank": 54
+   "rank": 39
   },
   {
    "model": "Qwen/Qwen2.5-14B-Instruct-1M",
@@ -835,7 +610,7 @@
     "musr": 11.350000000000003,
     "mmlu_pro": 42.77297576832151
    },
-   "rank": 55
+   "rank": 40
   },
   {
    "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
@@ -850,7 +625,7 @@
     "musr": 21.06640625,
     "mmlu_pro": 48.03671690307329
    },
-   "rank": 56
+   "rank": 41
   },
   {
    "model": "Quazim0t0/MFGRIMM-14B",
@@ -865,7 +640,7 @@
     "musr": 13.783593750000001,
     "mmlu_pro": 49.07099586288417
    },
-   "rank": 57
+   "rank": 42
   },
   {
    "model": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
@@ -880,7 +655,7 @@
     "musr": 12.453906250000001,
     "mmlu_pro": 43.44710401891253
    },
-   "rank": 58
+   "rank": 43
   },
   {
    "model": "RDson/WomboCombo-R1-Coder-14B-Preview",
@@ -895,7 +670,7 @@
     "musr": 22.014843749999997,
     "mmlu_pro": 46.30984042553191
    },
-   "rank": 59
+   "rank": 44
   },
   {
    "model": "Quazim0t0/MFDOOM-14B",
@@ -909,6 +684,231 @@
     "gpqa": 9.731543624161072,
     "musr": 14.207031250000005,
     "mmlu_pro": 49.17257683215129
+   },
+   "rank": 45
+  },
+  {
+   "model": "Quazim0t0/Nova-14b-sce",
+   "organization": "Quazim0t0",
+   "score": 41.41,
+   "type": "🔶 fine-tuned on domain-specific datasets",
+   "subscores": {
+    "ifeval": 70.2196837723906,
+    "bbh": 56.034331914713114,
+    "math": 41.616314199395774,
+    "gpqa": 15.100671140939594,
+    "musr": 16.4328125,
+    "mmlu_pro": 49.03405732860521
+   },
+   "rank": 46
+  },
+  {
+   "model": "Quazim0t0/Geedorah-14B",
+   "organization": "Quazim0t0",
+   "score": 41.39,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 68.72841837435782,
+    "bbh": 56.46229284952974,
+    "math": 44.48640483383686,
+    "gpqa": 12.975391498881436,
+    "musr": 16.567968749999995,
+    "mmlu_pro": 49.1264036643026
+   },
+   "rank": 47
+  },
+  {
+   "model": "Quazim0t0/Alice-14B",
+   "organization": "Quazim0t0",
+   "score": 41.35,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 68.36371937570092,
+    "bbh": 56.00650513096938,
+    "math": 45.69486404833837,
+    "gpqa": 13.534675615212524,
+    "musr": 15.42682291666666,
+    "mmlu_pro": 49.09869976359338
+   },
+   "rank": 48
+  },
+  {
+   "model": "Quazim0t0/NovaScotia-14b-stock",
+   "organization": "Quazim0t0",
+   "score": 41.35,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.87412953186434,
+    "bbh": 56.02714781885254,
+    "math": 46.299093655589125,
+    "gpqa": 13.19910514541387,
+    "musr": 15.70130208333333,
+    "mmlu_pro": 48.9878841607565
+   },
+   "rank": 49
+  },
+  {
+   "model": "Quazim0t0/ODB-14b-sce",
+   "organization": "Quazim0t0",
+   "score": 41.34,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 70.15973173402128,
+    "bbh": 56.192610781815496,
+    "math": 41.1631419939577,
+    "gpqa": 14.988814317673373,
+    "musr": 16.49947916666667,
+    "mmlu_pro": 49.01558806146573
+   },
+   "rank": 50
+  },
+  {
+   "model": "Quazim0t0/Rosemary-14b",
+   "organization": "Quazim0t0",
+   "score": 41.34,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 69.15306941138402,
+    "bbh": 56.38346045501811,
+    "math": 43.8821752265861,
+    "gpqa": 14.205816554809845,
+    "musr": 15.552343749999997,
+    "mmlu_pro": 48.84936465721041
+   },
+   "rank": 51
+  },
+  {
+   "model": "Quazim0t0/Ponder-14B-linear",
+   "organization": "Quazim0t0",
+   "score": 41.31,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 69.06064796960952,
+    "bbh": 56.21485209781756,
+    "math": 42.82477341389728,
+    "gpqa": 14.429530201342287,
+    "musr": 16.336718750000003,
+    "mmlu_pro": 48.97864952718677
+   },
+   "rank": 52
+  },
+  {
+   "model": "Qwen/Qwen2.5-14B-Instruct",
+   "organization": "Qwen",
+   "score": 41.31,
+   "type": "💬 chat models (rlhf, dpo, ift, ...)",
+   "subscores": {
+    "ifeval": 81.57776920792386,
+    "bbh": 48.36070661282705,
+    "math": 54.7583081570997,
+    "gpqa": 9.61968680089485,
+    "musr": 10.157812500000004,
+    "mmlu_pro": 43.382461583924346
+   },
+   "rank": 53
+  },
+  {
+   "model": "Baptiste-HUVELLE-10/LeTriomphant2.2_ECE_iLAB",
+   "organization": "Baptiste-HUVELLE-10",
+   "score": 41.3,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 50.76330802271307,
+    "bbh": 61.61232489960707,
+    "math": 44.48640483383686,
+    "gpqa": 19.910514541387023,
+    "musr": 17.15234375,
+    "mmlu_pro": 53.90070921985816
+   },
+   "rank": 54
+  },
+  {
+   "model": "OpenBuddy/openbuddy-llama3.1-70b-v22.1-131k",
+   "organization": "OpenBuddy",
+   "score": 41.25,
+   "type": "💬 chat models (rlhf, dpo, ift, ...)",
+   "subscores": {
+    "ifeval": 73.32710541363582,
+    "bbh": 51.94077625159233,
+    "math": 39.50151057401813,
+    "gpqa": 16.666666666666664,
+    "musr": 18.23645833333333,
+    "mmlu_pro": 47.82432033096927
+   },
+   "rank": 55
+  },
+  {
+   "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v3",
+   "organization": "Lunzima",
+   "score": 41.23,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 70.48697456083192,
+    "bbh": 49.31202888085861,
+    "math": 41.616314199395774,
+    "gpqa": 17.561521252796418,
+    "musr": 19.59375,
+    "mmlu_pro": 48.82166075650118
+   },
+   "rank": 56
+  },
+  {
+   "model": "Quazim0t0/caramel-14B",
+   "organization": "Quazim0t0",
+   "score": 41.22,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.44947849483815,
+    "bbh": 55.75618206414753,
+    "math": 47.129909365558916,
+    "gpqa": 12.639821029082773,
+    "musr": 15.071875000000004,
+    "mmlu_pro": 49.28339243498819
+   },
+   "rank": 57
+  },
+  {
+   "model": "Quazim0t0/Wendy-14B",
+   "organization": "Quazim0t0",
+   "score": 41.21,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 67.72175605172055,
+    "bbh": 56.172047866798856,
+    "math": 48.338368580060425,
+    "gpqa": 10.96196868008949,
+    "musr": 14.783593750000003,
+    "mmlu_pro": 49.27415780141844
+   },
+   "rank": 58
+  },
+  {
+   "model": "Quazim0t0/time-14b-stock",
+   "organization": "Quazim0t0",
+   "score": 41.18,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 66.99235805440674,
+    "bbh": 55.35905866101553,
+    "math": 50.83081570996979,
+    "gpqa": 11.297539149888143,
+    "musr": 13.473697916666664,
+    "mmlu_pro": 49.09869976359338
+   },
+   "rank": 59
+  },
+  {
+   "model": "Quazim0t0/1up-14b",
+   "organization": "Quazim0t0",
+   "score": 41.15,
+   "type": "🤝 base merges and moerges",
+   "subscores": {
+    "ifeval": 68.88079185450161,
+    "bbh": 55.83975950522497,
+    "math": 41.616314199395774,
+    "gpqa": 14.988814317673373,
+    "musr": 16.625000000000004,
+    "mmlu_pro": 48.96018026004729
    },
    "rank": 60
   }
