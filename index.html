@@ -91,7 +91,9 @@
   --gold:var(--accent); --gold-2:var(--accent-2); --gold-soft:var(--accent-soft);
   --cn:var(--accent); --cn-soft:var(--accent-soft);
 
-  --maxw:1200px;
+  --maxw:1200px; --pad-x:22px;   /* 水平内边距：.wrap 与 .table-wrap 的通栏负边距共用此变量，
+                                    避免两处数值失配导致页面级横向溢出（曾因 1024px 断点只改 .wrap
+                                    而负边距仍为 -22px，产生 4px 溢出） */
   --rule:1px solid var(--line);
   --rule-soft:1px solid var(--line-soft);
 }
@@ -127,7 +129,7 @@ body{
   transition:background .18s ease,color .18s ease;
 }
 a{color:inherit}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad-x)}
 .mono{font-family:var(--font-mono)}
 h1,h2,h3{font-weight:600}
 .num,.score-cell,.price-cell,.cell-score,.rank-pill{font-variant-numeric:tabular-nums}
@@ -382,7 +384,7 @@ footer.site a:hover{text-decoration:underline}
 /* 平板档：此前仅 640px 一个断点，768–1024px 直接继承桌面布局——
    跨榜表 5–7 列在该区间拥挤最明显（表头中文断行就出现在此区间）。 */
 @media(max-width:1024px){
-  .wrap{padding:0 18px}
+  :root{--pad-x:18px}
   thead th,tbody td{padding:10px 10px}
   .leader{flex:1 1 132px;min-width:132px}
 }
@@ -406,7 +408,7 @@ footer.site a:hover{text-decoration:underline}
   nav.anchor::-webkit-scrollbar{display:none}
   nav.anchor a{font-size:var(--fs-11);white-space:nowrap}
   thead th,tbody td{padding:9px 8px}
-  .table-wrap{margin:0 -22px;padding:0 22px}
+  .table-wrap{margin:0 calc(-1 * var(--pad-x));padding:0 var(--pad-x)}
   .sources-grid{grid-template-columns:1fr}
   .sec-desc{font-size:var(--fs-12)}
 }
