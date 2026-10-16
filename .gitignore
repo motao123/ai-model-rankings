@@ -3,3 +3,8 @@
 __pycache__/
 *.pyc
 .workbuddy/
+
+# 内部过程文档：仅保留在本地，不进仓库
+# 原因：Pages 会发布仓库全量内容，这些文档会暴露项目的调研与设计过程
+docs/
+design/
