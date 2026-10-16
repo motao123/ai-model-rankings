@@ -155,6 +155,8 @@ header.site{border-bottom:var(--rule);background:var(--bg);position:sticky;top:0
   color:var(--faint);letter-spacing:.15em;text-transform:uppercase;margin-top:5px}
 .hd .spacer{flex:1}
 .updated{font-size:var(--fs-11);color:var(--muted);text-align:right;line-height:1.5}
+/* 时区标注：侧栏模式下另起一行，避免整串在「（北／京时间）」处词内断行 */
+.upd-zone{margin-left:6px;color:var(--faint);white-space:nowrap}
 .updated b{color:var(--ink-2);font-weight:600;font-family:var(--font-mono)}
 nav.anchor{display:flex;gap:20px;padding:0 0 12px;flex-wrap:wrap}
 nav.anchor a{font-size:var(--fs-12);color:var(--muted);text-decoration:none;padding:2px 0;
@@ -437,11 +439,20 @@ footer.site a:hover{text-decoration:underline}
   /* 侧栏仅 212px，英文副标题会折成 3 行，信息密度反而下降——侧栏模式下隐藏，
      完整站点名在 <title> 与页脚中仍然保留（不影响 SEO/可访问性）。 */
   header.site .logo .name small{display:none}
-  header.site .logo .name{font-size:var(--fs-18);line-height:1.25}
+  header.site .logo .name{font-size:var(--fs-15);line-height:1.3}
+  /* 中文默认可逐字断行，会在「第三方排／行榜」这类词中间折断。
+     auto-phrase 让浏览器按词组断行（Chrome 119+ 支持），不支持时自动退回默认行为，
+     不影响可读性。配合 fs-15 后「AI 大模型第三方排行榜」为 152.3px < 184px，单行容纳。 */
+  header.site .logo .name{word-break:auto-phrase;text-wrap:pretty}
   header.site .logo .mark{font-size:19px}
   header.site .hd{flex-direction:column;align-items:stretch;gap:14px;padding:0}
   header.site .spacer{display:none}
   header.site .updated{text-align:left}
+  /* 侧栏内两个时间片段按需换行：日期组放不下时「北京时间」自动另起一行，
+     避免整串从「（北／京时间）」词中折断。宽度充足时不换行。 */
+  header.site .updated{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 6px}
+  header.site .updated .upd-main{white-space:nowrap}
+  header.site .updated .upd-status{flex-basis:100%}
   header.site .themebtn{align-self:flex-start}
   header.site nav.anchor{
     /* 分区线同样出血到侧栏边缘（margin 负值），内容仍在 14px——
@@ -859,9 +870,17 @@ function renderUpdated(){
   const m=STATE.merged, meta=STATE.meta;
   const gen = fmtDateTime(m.generated_at);
   const status = meta&&meta.status==="partial" ? '<span style="color:var(--warn)">部分源降级</span>' : '';
+  // 侧栏仅 212px（内容 184px），整串「数据抓取 2026-10-16 12:18（北京时间）」
+  // 会从「（北／京时间）」词内断行。拆成两个可独立换行的单元：
+  // 侧栏模式下「北京时间」另起一行；移动端宽度充足，仍是行内连排。
+  // 注意：每段必须包在元素里——若直接把裸文本交给 flex 容器，
+  // 文本节点会各自成为匿名 flex item，导致「数据抓取」与日期被拆到两行。
   // 语义化：明确这是"数据抓取时间"，不是页面打开/渲染时间，也不是部署时间。
-  // 静态页面可能被缓存数小时，但数据时间只在成功抓到新数据时前进。
-  $("#updated").innerHTML = `数据抓取 <b>${gen}</b><br>${status}`;
+  const dt = gen.replace("（北京时间）","");
+  $("#updated").innerHTML =
+    `<span class="upd-main">数据抓取 <b>${dt}</b></span>`
+    + `<span class="upd-zone">北京时间</span>`
+    + (status?`<span class="upd-status">${status}</span>`:"");
   $("#footer-updated").textContent = `数据抓取于 ${gen}（非页面渲染时间）`;
 }
 
