@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-16T04:18:44Z",
- "date": "2026-10-16",
+ "generated_at": "2026-10-17T02:38:29Z",
+ "date": "2026-10-17",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-16T04:18:09Z",
+   "fetched_at": "2026-10-17T02:37:49Z",
    "publish_date": "2026-10-15",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -110,7 +110,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 2,
+     "trend": 1,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
@@ -132,7 +132,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
@@ -176,7 +176,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 7,
      "tie_size": 1
@@ -418,7 +418,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 70,
+     "trend": 71,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -462,7 +462,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -484,7 +484,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -528,7 +528,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 65,
+     "trend": 66,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -550,7 +550,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -572,7 +572,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 25,
      "tie_size": 1
@@ -638,7 +638,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 92,
+     "trend": 93,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -704,7 +704,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -726,7 +726,7 @@
      "open": null,
      "variant": "preview / max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -748,7 +748,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 198,
+     "trend": 199,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -792,7 +792,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 85,
+     "trend": 86,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -858,7 +858,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -880,7 +880,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -1078,7 +1078,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 183,
+     "trend": 184,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -1188,7 +1188,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 106,
+     "trend": 107,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -1298,7 +1298,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 173,
+     "trend": 174,
      "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
@@ -1320,7 +1320,7 @@
      "open": null,
      "variant": "preview / max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
@@ -1430,7 +1430,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 64,
      "tie_size": 1
@@ -1474,7 +1474,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 29,
+     "trend": 30,
      "is_new": false,
      "tie_rank": 66,
      "tie_size": 1
@@ -1540,7 +1540,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 69,
      "tie_size": 1
@@ -1584,7 +1584,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": 24,
+     "trend": 25,
      "is_new": false,
      "tie_rank": 71,
      "tie_size": 1
@@ -1606,7 +1606,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 72,
      "tie_size": 1
@@ -1628,7 +1628,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 73,
      "tie_size": 1
@@ -1650,7 +1650,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 74,
      "tie_size": 1
@@ -1672,7 +1672,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 75,
      "tie_size": 1
@@ -1738,7 +1738,7 @@
      "open": false,
      "variant": "latest / chat",
      "registered": true,
-     "trend": 57,
+     "trend": 58,
      "is_new": false,
      "tie_rank": 78,
      "tie_size": 1
@@ -1760,7 +1760,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 10,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 79,
      "tie_size": 1
@@ -1782,7 +1782,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 70,
+     "trend": 71,
      "is_new": false,
      "tie_rank": 80,
      "tie_size": 1
@@ -1804,7 +1804,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 81,
      "tie_size": 1
@@ -1826,7 +1826,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 82,
      "tie_size": 1
@@ -1870,7 +1870,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 84,
      "tie_size": 1
@@ -1958,7 +1958,7 @@
      "open": false,
      "variant": "32k / high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 88,
      "tie_size": 1
@@ -1980,7 +1980,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 89,
      "tie_size": 1
@@ -2068,7 +2068,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 138,
+     "trend": 139,
      "is_new": false,
      "tie_rank": 93,
      "tie_size": 1
@@ -2090,7 +2090,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 94,
      "tie_size": 1
@@ -2112,7 +2112,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 95,
      "tie_size": 1
@@ -2134,7 +2134,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 96,
      "tie_size": 1
@@ -2178,7 +2178,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 98,
      "tie_size": 1
@@ -2200,7 +2200,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 99,
      "tie_size": 1
@@ -2244,7 +2244,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 79,
+     "trend": 80,
      "is_new": false,
      "tie_rank": 101,
      "tie_size": 1
@@ -2530,7 +2530,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 37,
+     "trend": 38,
      "is_new": false,
      "tie_rank": 114,
      "tie_size": 1
@@ -2596,7 +2596,7 @@
      "open": null,
      "variant": "chat / experimental",
      "registered": false,
-     "trend": 76,
+     "trend": 77,
      "is_new": false,
      "tie_rank": 117,
      "tie_size": 1
@@ -2640,7 +2640,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 119,
      "tie_size": 1
@@ -2662,7 +2662,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": 4,
+     "trend": 5,
      "is_new": false,
      "tie_rank": 120,
      "tie_size": 1
@@ -2684,7 +2684,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 121,
      "tie_size": 1
@@ -2750,7 +2750,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 124,
      "tie_size": 1
@@ -2772,7 +2772,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 125,
      "tie_size": 1
@@ -2794,7 +2794,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 60,
+     "trend": 61,
      "is_new": false,
      "tie_rank": 126,
      "tie_size": 1
@@ -2860,7 +2860,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 6,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 129,
      "tie_size": 1
@@ -2904,7 +2904,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 131,
      "tie_size": 1
@@ -2926,7 +2926,7 @@
      "open": null,
      "variant": "chat / experimental",
      "registered": false,
-     "trend": 61,
+     "trend": 62,
      "is_new": false,
      "tie_rank": 132,
      "tie_size": 1
@@ -2992,7 +2992,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 135,
      "tie_size": 1
@@ -3014,7 +3014,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 136,
      "tie_size": 1
@@ -3036,7 +3036,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 94,
+     "trend": 95,
      "is_new": false,
      "tie_rank": 137,
      "tie_size": 1
@@ -3080,7 +3080,7 @@
      "open": true,
      "variant": "non-thinking",
      "registered": true,
-     "trend": 21,
+     "trend": 23,
      "is_new": false,
      "tie_rank": 139,
      "tie_size": 1
@@ -3125,7 +3125,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 141,
      "tie_size": 1
     },
@@ -3146,7 +3146,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 142,
      "tie_size": 1
@@ -3168,7 +3168,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 143,
      "tie_size": 1
@@ -3190,7 +3190,7 @@
      "open": false,
      "variant": "chat",
      "registered": true,
-     "trend": 10,
+     "trend": 11,
      "is_new": false,
      "tie_rank": 144,
      "tie_size": 1
@@ -3212,7 +3212,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 145,
      "tie_size": 1
@@ -3234,7 +3234,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 85,
+     "trend": 86,
      "is_new": false,
      "tie_rank": 146,
      "tie_size": 1
@@ -3256,7 +3256,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 147,
      "tie_size": 1
@@ -3278,7 +3278,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 148,
      "tie_size": 1
@@ -3300,7 +3300,7 @@
      "open": false,
      "variant": "chat",
      "registered": true,
-     "trend": 82,
+     "trend": 83,
      "is_new": false,
      "tie_rank": 149,
      "tie_size": 1
@@ -3322,7 +3322,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 150,
      "tie_size": 1
@@ -3344,7 +3344,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 151,
      "tie_size": 1
@@ -3366,7 +3366,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 152,
      "tie_size": 1
@@ -3388,7 +3388,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 153,
      "tie_size": 1
@@ -3410,7 +3410,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 154,
      "tie_size": 1
@@ -3432,7 +3432,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 155,
      "tie_size": 1
@@ -3454,7 +3454,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 156,
      "tie_size": 1
@@ -3476,7 +3476,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 157,
      "tie_size": 1
@@ -3498,7 +3498,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 158,
      "tie_size": 1
@@ -3520,7 +3520,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 159,
      "tie_size": 1
@@ -3542,7 +3542,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 160,
      "tie_size": 1
@@ -3586,7 +3586,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 162,
      "tie_size": 1
@@ -3608,7 +3608,7 @@
      "open": null,
      "variant": "chat / experimental",
      "registered": false,
-     "trend": 30,
+     "trend": 31,
      "is_new": false,
      "tie_rank": 163,
      "tie_size": 1
@@ -3630,7 +3630,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 164,
      "tie_size": 1
@@ -3652,7 +3652,7 @@
      "open": true,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 165,
      "tie_size": 1
@@ -3674,7 +3674,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 166,
      "tie_size": 1
@@ -3718,7 +3718,7 @@
      "open": false,
      "variant": "latest / chat",
      "registered": true,
-     "trend": 63,
+     "trend": 64,
      "is_new": false,
      "tie_rank": 168,
      "tie_size": 1
@@ -3740,7 +3740,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 169,
      "tie_size": 1
@@ -3762,7 +3762,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 170,
      "tie_size": 1
@@ -3784,7 +3784,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 171,
      "tie_size": 1
@@ -3806,7 +3806,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 172,
      "tie_size": 1
@@ -3828,7 +3828,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": 9,
+     "trend": 10,
      "is_new": false,
      "tie_rank": 173,
      "tie_size": 1
@@ -3850,7 +3850,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 174,
      "tie_size": 1
@@ -3872,7 +3872,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 175,
      "tie_size": 1
@@ -3894,7 +3894,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 56,
+     "trend": 57,
      "is_new": false,
      "tie_rank": 176,
      "tie_size": 1
@@ -3938,7 +3938,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 178,
      "tie_size": 1
@@ -3960,7 +3960,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 44,
+     "trend": 45,
      "is_new": false,
      "tie_rank": 179,
      "tie_size": 1
@@ -3982,7 +3982,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 51,
+     "trend": 52,
      "is_new": false,
      "tie_rank": 180,
      "tie_size": 1
@@ -4004,7 +4004,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 181,
      "tie_size": 1
@@ -4026,7 +4026,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 49,
+     "trend": 50,
      "is_new": false,
      "tie_rank": 182,
      "tie_size": 1
@@ -4048,7 +4048,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 183,
      "tie_size": 1
@@ -4070,7 +4070,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 184,
      "tie_size": 1
@@ -4092,7 +4092,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 7,
+     "trend": 8,
      "is_new": false,
      "tie_rank": 185,
      "tie_size": 1
@@ -4114,7 +4114,7 @@
      "open": null,
      "variant": "thinking / preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 186,
      "tie_size": 1
@@ -4136,7 +4136,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 187,
      "tie_size": 1
@@ -4158,7 +4158,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 188,
      "tie_size": 1
@@ -4180,7 +4180,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 189,
      "tie_size": 1
@@ -4224,7 +4224,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 13,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 191,
      "tie_size": 1
@@ -4246,7 +4246,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 192,
      "tie_size": 1
@@ -4268,7 +4268,7 @@
      "open": false,
      "variant": "beta",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 193,
      "tie_size": 1
@@ -4290,7 +4290,7 @@
      "open": null,
      "variant": "chat / experimental",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 194,
      "tie_size": 1
@@ -4312,7 +4312,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 195,
      "tie_size": 1
@@ -4356,7 +4356,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 197,
      "tie_size": 1
@@ -4378,7 +4378,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 198,
      "tie_size": 1
@@ -4400,7 +4400,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 199,
      "tie_size": 1
@@ -4422,7 +4422,7 @@
      "open": true,
      "variant": "instruct",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 200,
      "tie_size": 1
@@ -4444,7 +4444,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 201,
      "tie_size": 1
@@ -4466,7 +4466,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 202,
      "tie_size": 1
@@ -4488,7 +4488,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 203,
      "tie_size": 1
@@ -4510,7 +4510,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 204,
      "tie_size": 1
@@ -4532,7 +4532,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 205,
      "tie_size": 1
@@ -4554,7 +4554,7 @@
      "open": null,
      "variant": "32k / thinking",
      "registered": false,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 206,
      "tie_size": 1
@@ -4576,7 +4576,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 207,
      "tie_size": 1
@@ -4598,7 +4598,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 208,
      "tie_size": 1
@@ -4620,7 +4620,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 209,
      "tie_size": 1
@@ -4642,7 +4642,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 210,
      "tie_size": 1
@@ -4664,7 +4664,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 211,
      "tie_size": 1
@@ -4686,7 +4686,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 212,
      "tie_size": 1
@@ -4708,7 +4708,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 213,
      "tie_size": 1
@@ -4730,7 +4730,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 214,
      "tie_size": 1
@@ -4752,7 +4752,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 215,
      "tie_size": 1
@@ -4774,7 +4774,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 216,
      "tie_size": 1
@@ -4796,7 +4796,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 217,
      "tie_size": 1
@@ -4818,7 +4818,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 218,
      "tie_size": 1
@@ -4840,7 +4840,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 16,
+     "trend": 17,
      "is_new": false,
      "tie_rank": 219,
      "tie_size": 1
@@ -4862,7 +4862,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 220,
      "tie_size": 1
@@ -4884,7 +4884,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 221,
      "tie_size": 1
@@ -4906,7 +4906,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 222,
      "tie_size": 1
@@ -4928,7 +4928,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 223,
      "tie_size": 1
@@ -4950,7 +4950,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 224,
      "tie_size": 1
@@ -4972,7 +4972,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 225,
      "tie_size": 1
@@ -4994,7 +4994,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 30,
+     "trend": 31,
      "is_new": false,
      "tie_rank": 226,
      "tie_size": 1
@@ -5016,7 +5016,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 227,
      "tie_size": 1
@@ -5038,7 +5038,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 111,
+     "trend": 112,
      "is_new": false,
      "tie_rank": 228,
      "tie_size": 1
@@ -5060,7 +5060,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 229,
      "tie_size": 1
@@ -5082,7 +5082,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 230,
      "tie_size": 1
@@ -5104,7 +5104,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 231,
      "tie_size": 1
@@ -5126,7 +5126,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 232,
      "tie_size": 1
@@ -5148,7 +5148,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 233,
      "tie_size": 1
@@ -5170,7 +5170,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 234,
      "tie_size": 1
@@ -5192,7 +5192,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 235,
      "tie_size": 1
@@ -5214,7 +5214,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 236,
      "tie_size": 1
@@ -5236,7 +5236,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 237,
      "tie_size": 1
@@ -5258,7 +5258,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 238,
      "tie_size": 1
@@ -5280,7 +5280,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 239,
      "tie_size": 1
@@ -5302,7 +5302,7 @@
      "open": null,
      "variant": "32k / thinking",
      "registered": false,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 240,
      "tie_size": 1
@@ -5324,7 +5324,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 241,
      "tie_size": 1
@@ -5346,7 +5346,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 242,
      "tie_size": 1
@@ -5368,7 +5368,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 243,
      "tie_size": 1
@@ -5390,7 +5390,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 244,
      "tie_size": 1
@@ -5412,7 +5412,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 245,
      "tie_size": 1
@@ -5434,7 +5434,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 246,
      "tie_size": 1
@@ -5456,7 +5456,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 19,
+     "trend": 20,
      "is_new": false,
      "tie_rank": 247,
      "tie_size": 1
@@ -5478,7 +5478,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 248,
      "tie_size": 1
@@ -5500,7 +5500,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 249,
      "tie_size": 1
@@ -5522,7 +5522,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 250,
      "tie_size": 1
@@ -5544,7 +5544,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 19,
+     "trend": 20,
      "is_new": false,
      "tie_rank": 251,
      "tie_size": 1
@@ -5566,7 +5566,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 28,
+     "trend": 29,
      "is_new": false,
      "tie_rank": 252,
      "tie_size": 1
@@ -5588,7 +5588,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 253,
      "tie_size": 1
@@ -5610,7 +5610,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 254,
      "tie_size": 1
@@ -5632,7 +5632,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 255,
      "tie_size": 1
@@ -5654,7 +5654,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 256,
      "tie_size": 1
@@ -5676,7 +5676,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 257,
      "tie_size": 1
@@ -5698,7 +5698,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 258,
      "tie_size": 1
@@ -5720,7 +5720,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 259,
      "tie_size": 1
@@ -5742,7 +5742,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 260,
      "tie_size": 1
@@ -5764,7 +5764,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 261,
      "tie_size": 1
@@ -5786,7 +5786,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 262,
      "tie_size": 1
@@ -5808,7 +5808,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 263,
      "tie_size": 1
@@ -5830,7 +5830,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 264,
      "tie_size": 1
@@ -5852,7 +5852,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 265,
      "tie_size": 1
@@ -5874,7 +5874,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 266,
      "tie_size": 1
@@ -5896,7 +5896,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 267,
      "tie_size": 1
@@ -5940,7 +5940,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 269,
      "tie_size": 1
@@ -5962,7 +5962,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 270,
      "tie_size": 1
@@ -5984,7 +5984,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 271,
      "tie_size": 1
@@ -6006,7 +6006,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 272,
      "tie_size": 1
@@ -6028,7 +6028,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 273,
      "tie_size": 1
@@ -6050,7 +6050,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 274,
      "tie_size": 1
@@ -6072,7 +6072,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 275,
      "tie_size": 1
@@ -6094,7 +6094,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 276,
      "tie_size": 1
@@ -6116,7 +6116,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 42,
+     "trend": 43,
      "is_new": false,
      "tie_rank": 277,
      "tie_size": 1
@@ -6138,7 +6138,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 278,
      "tie_size": 1
@@ -6160,7 +6160,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 279,
      "tie_size": 1
@@ -6182,7 +6182,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 280,
      "tie_size": 1
@@ -6204,7 +6204,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 281,
      "tie_size": 1
@@ -6226,7 +6226,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 282,
      "tie_size": 1
@@ -6248,7 +6248,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 283,
      "tie_size": 1
@@ -6270,7 +6270,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 284,
      "tie_size": 1
@@ -6292,7 +6292,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 285,
      "tie_size": 1
@@ -6314,7 +6314,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": 41,
+     "trend": 42,
      "is_new": false,
      "tie_rank": 286,
      "tie_size": 1
@@ -6336,7 +6336,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 287,
      "tie_size": 1
@@ -6358,7 +6358,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": 39,
+     "trend": 40,
      "is_new": false,
      "tie_rank": 288,
      "tie_size": 1
@@ -6380,7 +6380,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 289,
      "tie_size": 1
@@ -6402,7 +6402,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 290,
      "tie_size": 1
@@ -6424,7 +6424,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 291,
      "tie_size": 1
@@ -6446,7 +6446,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 292,
      "tie_size": 1
@@ -6468,7 +6468,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 293,
      "tie_size": 1
@@ -6490,7 +6490,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 294,
      "tie_size": 1
@@ -6512,7 +6512,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 295,
      "tie_size": 1
@@ -6534,7 +6534,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 296,
      "tie_size": 1
@@ -6556,7 +6556,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 297,
      "tie_size": 1
@@ -6578,7 +6578,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 298,
      "tie_size": 1
@@ -6600,7 +6600,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 299,
      "tie_size": 1
@@ -6622,7 +6622,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 300,
      "tie_size": 1
@@ -6644,7 +6644,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 301,
      "tie_size": 1
@@ -6666,7 +6666,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 302,
      "tie_size": 1
@@ -6688,7 +6688,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 303,
      "tie_size": 1
@@ -6710,7 +6710,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 304,
      "tie_size": 1
@@ -6732,7 +6732,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 305,
      "tie_size": 1
@@ -6754,7 +6754,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 306,
      "tie_size": 1
@@ -6776,7 +6776,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 307,
      "tie_size": 1
@@ -6798,7 +6798,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 308,
      "tie_size": 1
@@ -6820,7 +6820,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 309,
      "tie_size": 1
@@ -6842,7 +6842,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 310,
      "tie_size": 1
@@ -6864,7 +6864,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 311,
      "tie_size": 1
@@ -6886,7 +6886,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 312,
      "tie_size": 1
@@ -6908,7 +6908,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 313,
      "tie_size": 1
@@ -6930,7 +6930,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 314,
      "tie_size": 1
@@ -6952,7 +6952,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 315,
      "tie_size": 1
@@ -6974,7 +6974,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 316,
      "tie_size": 1
@@ -6996,7 +6996,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 11,
      "is_new": false,
      "tie_rank": 317,
      "tie_size": 1
@@ -7018,7 +7018,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 318,
      "tie_size": 1
@@ -7040,7 +7040,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 319,
      "tie_size": 1
@@ -7062,7 +7062,7 @@
      "open": null,
      "variant": "256k",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 320,
      "tie_size": 1
@@ -7084,7 +7084,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 321,
      "tie_size": 1
@@ -7106,7 +7106,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 322,
      "tie_size": 1
@@ -7128,7 +7128,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 323,
      "tie_size": 1
@@ -7150,7 +7150,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 324,
      "tie_size": 1
@@ -7172,7 +7172,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 325,
      "tie_size": 1
@@ -7194,7 +7194,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 326,
      "tie_size": 1
@@ -7216,7 +7216,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 327,
      "tie_size": 1
@@ -7238,7 +7238,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 328,
      "tie_size": 1
@@ -7260,7 +7260,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 329,
      "tie_size": 1
@@ -7282,7 +7282,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 330,
      "tie_size": 1
@@ -7304,7 +7304,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 331,
      "tie_size": 1
@@ -7326,7 +7326,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 332,
      "tie_size": 1
@@ -7348,7 +7348,7 @@
      "open": null,
      "variant": "online",
      "registered": false,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 333,
      "tie_size": 1
@@ -7370,7 +7370,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 334,
      "tie_size": 1
@@ -7392,7 +7392,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 335,
      "tie_size": 1
@@ -7414,7 +7414,7 @@
      "open": null,
      "variant": "medium",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 336,
      "tie_size": 1
@@ -7436,7 +7436,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 337,
      "tie_size": 1
@@ -7458,7 +7458,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 338,
      "tie_size": 1
@@ -7480,7 +7480,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 339,
      "tie_size": 1
@@ -7502,7 +7502,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 340,
      "tie_size": 1
@@ -7524,7 +7524,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 341,
      "tie_size": 1
@@ -7546,7 +7546,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 342,
      "tie_size": 1
@@ -7568,7 +7568,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 343,
      "tie_size": 1
@@ -7590,7 +7590,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 344,
      "tie_size": 1
@@ -7612,7 +7612,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 345,
      "tie_size": 1
@@ -7634,7 +7634,7 @@
      "open": null,
      "variant": "instruct / 4k / medium",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 346,
      "tie_size": 1
@@ -7656,7 +7656,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 347,
      "tie_size": 1
@@ -7678,7 +7678,7 @@
      "open": null,
      "variant": "beta",
      "registered": false,
-     "trend": 13,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 348,
      "tie_size": 1
@@ -7700,7 +7700,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 349,
      "tie_size": 1
@@ -7722,7 +7722,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 350,
      "tie_size": 1
@@ -7744,7 +7744,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 351,
      "tie_size": 1
@@ -7766,7 +7766,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 352,
      "tie_size": 1
@@ -7788,7 +7788,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 353,
      "tie_size": 1
@@ -7810,7 +7810,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 15,
+     "trend": 16,
      "is_new": false,
      "tie_rank": 354,
      "tie_size": 1
@@ -7832,7 +7832,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 355,
      "tie_size": 1
@@ -7854,7 +7854,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 356,
      "tie_size": 1
@@ -7876,7 +7876,7 @@
      "open": null,
      "variant": "preview / instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 357,
      "tie_size": 1
@@ -7898,7 +7898,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 358,
      "tie_size": 1
@@ -7920,7 +7920,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 359,
      "tie_size": 1
@@ -7942,7 +7942,7 @@
      "open": null,
      "variant": "instruct / 8k",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 360,
      "tie_size": 1
@@ -7964,7 +7964,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 361,
      "tie_size": 1
@@ -7986,7 +7986,7 @@
      "open": null,
      "variant": "alpha",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 362,
      "tie_size": 1
@@ -8008,7 +8008,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": 5,
      "is_new": false,
      "tie_rank": 363,
      "tie_size": 1
@@ -8030,7 +8030,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 364,
      "tie_size": 1
@@ -8052,7 +8052,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 365,
      "tie_size": 1
@@ -8074,7 +8074,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 366,
      "tie_size": 1
@@ -8096,7 +8096,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 367,
      "tie_size": 1
@@ -8118,7 +8118,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 368,
      "tie_size": 1
@@ -8140,7 +8140,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 369,
      "tie_size": 1
@@ -8162,7 +8162,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 370,
      "tie_size": 1
@@ -8184,7 +8184,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 371,
      "tie_size": 1
@@ -8206,7 +8206,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 372,
      "tie_size": 1
@@ -8228,7 +8228,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 373,
      "tie_size": 1
@@ -8250,7 +8250,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 374,
      "tie_size": 1
@@ -8272,7 +8272,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 375,
      "tie_size": 1
@@ -8294,7 +8294,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 376,
      "tie_size": 1
@@ -8316,7 +8316,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 377,
      "tie_size": 1
@@ -8338,7 +8338,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 378,
      "tie_size": 1
@@ -8360,7 +8360,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 379,
      "tie_size": 1
@@ -8382,7 +8382,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 380,
      "tie_size": 1
@@ -8404,7 +8404,7 @@
      "open": null,
      "variant": "instruct / 4k",
      "registered": false,
-     "trend": 12,
+     "trend": 13,
      "is_new": false,
      "tie_rank": 381,
      "tie_size": 1
@@ -8426,7 +8426,7 @@
      "open": null,
      "variant": "beta",
      "registered": false,
-     "trend": 2,
+     "trend": 3,
      "is_new": false,
      "tie_rank": 382,
      "tie_size": 1
@@ -8448,7 +8448,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 383,
      "tie_size": 1
@@ -8470,7 +8470,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 384,
      "tie_size": 1
@@ -8492,7 +8492,7 @@
      "open": null,
      "variant": "alpha",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 385,
      "tie_size": 1
@@ -8514,7 +8514,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 386,
      "tie_size": 1
@@ -8536,7 +8536,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 387,
      "tie_size": 1
@@ -8558,7 +8558,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 388,
      "tie_size": 1
@@ -8580,7 +8580,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 389,
      "tie_size": 1
@@ -8602,7 +8602,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 390,
      "tie_size": 1
@@ -8624,7 +8624,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 391,
      "tie_size": 1
@@ -8646,7 +8646,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 392,
      "tie_size": 1
@@ -8668,7 +8668,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 393,
      "tie_size": 1
@@ -8690,7 +8690,7 @@
      "open": null,
      "variant": "instruct / 128k",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 394,
      "tie_size": 1
@@ -8712,7 +8712,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 395,
      "tie_size": 1
@@ -8734,7 +8734,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 396,
      "tie_size": 1
@@ -8756,7 +8756,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 397,
      "tie_size": 1
@@ -8778,7 +8778,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 398,
      "tie_size": 1
@@ -8800,7 +8800,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 399,
      "tie_size": 1
@@ -8822,7 +8822,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 400,
      "tie_size": 1
@@ -8844,7 +8844,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 401,
      "tie_size": 1
@@ -8866,7 +8866,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 402,
      "tie_size": 1
@@ -8888,7 +8888,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 403,
      "tie_size": 1
@@ -8910,7 +8910,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 404,
      "tie_size": 1
@@ -8932,7 +8932,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 405,
      "tie_size": 1
@@ -8954,7 +8954,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 406,
      "tie_size": 1
@@ -8976,7 +8976,7 @@
      "open": null,
      "variant": "chat",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 407,
      "tie_size": 1
@@ -8998,7 +8998,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 408,
      "tie_size": 1
@@ -9020,7 +9020,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 409,
      "tie_size": 1
@@ -9042,7 +9042,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 410,
      "tie_size": 1
@@ -9064,7 +9064,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 411,
      "tie_size": 1
@@ -9086,7 +9086,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 412,
      "tie_size": 1
@@ -9108,7 +9108,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 413,
      "tie_size": 1
@@ -9130,7 +9130,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 414,
      "tie_size": 1
@@ -9152,7 +9152,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 415,
      "tie_size": 1
@@ -9174,7 +9174,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 416,
      "tie_size": 1
@@ -9189,9 +9189,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-10-16T04:18:12Z",
-   "publish_date": "2026-10-16",
-   "compared_with": "2026-10-15",
+   "fetched_at": "2026-10-17T02:37:51Z",
+   "publish_date": "2026-10-17",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9415,9 +9415,9 @@
    "source_url": "https://www.superclueai.com/generalpage",
    "dataset_url": "https://www.superclueai.com/data/generalboard/",
    "license": "© SuperCLUE，本站仅聚合展示",
-   "fetched_at": "2026-10-16T04:18:44Z",
+   "fetched_at": "2026-10-17T02:38:29Z",
    "publish_date": "2026-07-01",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9765,9 +9765,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-16T04:18:12Z",
+   "fetched_at": "2026-10-17T02:37:51Z",
    "publish_date": "2026-10-13",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -12915,9 +12915,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-16T04:18:12Z",
+   "fetched_at": "2026-10-17T02:37:51Z",
    "publish_date": "2026-10-14",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13014,7 +13014,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
@@ -13036,7 +13036,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
@@ -13191,7 +13191,7 @@
      "variant": "max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
     },
@@ -13212,7 +13212,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -13234,7 +13234,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 14,
      "tie_size": 1
@@ -13256,7 +13256,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -13278,7 +13278,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -13322,7 +13322,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 14,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -13344,7 +13344,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -13366,7 +13366,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -13388,7 +13388,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -13432,7 +13432,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -13454,7 +13454,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -13498,7 +13498,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -13542,7 +13542,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -13564,7 +13564,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -13586,7 +13586,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 6,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -13608,7 +13608,7 @@
      "open": true,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -13630,7 +13630,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -13652,7 +13652,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -13674,7 +13674,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -13696,7 +13696,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -13718,7 +13718,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -13740,7 +13740,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -13762,7 +13762,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -13806,7 +13806,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -13828,7 +13828,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -13850,7 +13850,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -13872,7 +13872,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -13894,7 +13894,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -13916,7 +13916,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -13938,7 +13938,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -13960,7 +13960,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -14026,7 +14026,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -14048,7 +14048,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
@@ -14070,7 +14070,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -14092,7 +14092,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -14114,7 +14114,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -14129,9 +14129,9 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dataset_url": "https://livecodebench.github.io/performances_generation.json",
    "license": "官方公开数据",
-   "fetched_at": "2026-10-16T04:18:12Z",
+   "fetched_at": "2026-10-17T02:37:52Z",
    "publish_date": "2025-04-07",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -14687,9 +14687,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-10-16T04:18:39Z",
+   "fetched_at": "2026-10-17T02:38:23Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-10-15",
+   "compared_with": "2026-10-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -14726,7 +14726,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 1,
      "tie_size": 1
     },
@@ -14753,8 +14753,35 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 2,
+     "tie_size": 1
+    },
+    {
+     "model": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "organization": "dfurman",
+     "score": 51.23,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 81.6327344778521,
+      "bbh": 61.92476379259157,
+      "math": 40.6344410876133,
+      "gpqa": 20.022371364653242,
+      "musr": 36.37213541666666,
+      "mmlu_pro": 66.80149231678487
+     },
+     "rank": 3,
+     "id": "dfurmancalmerys78borpov01",
+     "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "vendor": "未标注",
+     "vendor_raw": "dfurman",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 3,
      "tie_size": 1
     },
     {
@@ -14770,7 +14797,7 @@
       "musr": 34.56614583333333,
       "mmlu_pro": 66.690676713948
      },
-     "rank": 3,
+     "rank": 4,
      "id": "maziyarpanahicalme24rys78b",
      "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
      "vendor": "未标注",
@@ -14779,9 +14806,36 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -1,
+     "is_new": false,
+     "tie_rank": 4,
+     "tie_size": 1
+    },
+    {
+     "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "organization": "huihui-ai",
+     "score": 48.11,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 85.92667455684251,
+      "bbh": 60.487869412693875,
+      "math": 60.12084592145015,
+      "gpqa": 19.35123042505593,
+      "musr": 12.342187500000003,
+      "mmlu_pro": 50.410017730496456
+     },
+     "rank": 5,
+     "id": "huihuiaiqwen2572binstructabliterated",
+     "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "huihui-ai",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 3,
+     "tie_rank": 5,
      "tie_size": 1
     },
     {
@@ -14797,7 +14851,7 @@
       "musr": 11.742187500000005,
       "mmlu_pro": 51.39812352245864
      },
-     "rank": 4,
+     "rank": 6,
      "id": "qwenqwen2572b",
      "display_name": "Qwen/Qwen2.5-72B",
      "vendor": "阿里巴巴",
@@ -14806,9 +14860,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 4,
+     "trend": -2,
+     "is_new": false,
+     "tie_rank": 6,
      "tie_size": 1
     },
     {
@@ -14824,7 +14878,7 @@
       "musr": 13.297135416666663,
       "mmlu_pro": 51.3242464539007
      },
-     "rank": 5,
+     "rank": 7,
      "id": "maziyarpanahicalme21qwen2572b",
      "display_name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
      "vendor": "阿里巴巴",
@@ -14833,9 +14887,63 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -2,
+     "is_new": false,
+     "tie_rank": 7,
+     "tie_size": 1
+    },
+    {
+     "model": "ehristoforu/qwen2.5-test-32b-it",
+     "organization": "ehristoforu",
+     "score": 47.37,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 78.89499860370483,
+      "bbh": 58.28330738049858,
+      "math": 59.74320241691843,
+      "gpqa": 15.212527964205815,
+      "musr": 19.126562500000002,
+      "mmlu_pro": 52.94954196217494
+     },
+     "rank": 8,
+     "id": "ehristoforuqwen25test32bit",
+     "display_name": "ehristoforu/qwen2.5-test-32b-it",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "ehristoforu",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 5,
+     "tie_rank": 8,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+     "organization": "Saxo",
+     "score": 47.34,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.71681804279312,
+      "bbh": 57.633928620802884,
+      "math": 60.27190332326284,
+      "gpqa": 14.988814317673373,
+      "musr": 18.155989583333334,
+      "mmlu_pro": 53.25428486997635
+     },
+     "rank": 9,
+     "id": "saxolinkbrickshorizonaiavengersv132b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 9,
      "tie_size": 1
     },
     {
@@ -14851,7 +14959,7 @@
       "musr": 12.016666666666671,
       "mmlu_pro": 51.305777186761226
      },
-     "rank": 6,
+     "rank": 10,
      "id": "maziyarpanahicalme22qwen2572b",
      "display_name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
      "vendor": "阿里巴巴",
@@ -14860,9 +14968,36 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -4,
+     "is_new": false,
+     "tie_rank": 10,
+     "tie_size": 1
+    },
+    {
+     "model": "fluently-lm/FluentlyLM-Prinum",
+     "organization": "fluently-lm",
+     "score": 47.22,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 80.9033364805383,
+      "bbh": 59.482203418427986,
+      "math": 54.003021148036254,
+      "gpqa": 18.232662192393736,
+      "musr": 17.259895833333335,
+      "mmlu_pro": 53.42050827423167
+     },
+     "rank": 11,
+     "id": "fluentlylmfluentlylmprinum",
+     "display_name": "fluently-lm/FluentlyLM-Prinum",
+     "vendor": "未标注",
+     "vendor_raw": "fluently-lm",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 6,
+     "tie_rank": 11,
      "tie_size": 1
     },
     {
@@ -14878,7 +15013,7 @@
       "musr": 38.688020833333326,
       "mmlu_pro": 54.270094562647756
      },
-     "rank": 7,
+     "rank": 12,
      "id": "jungzoonat3qqwen2514binstruct1me3",
      "display_name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
      "vendor": "阿里巴巴",
@@ -14887,9 +15022,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 7,
+     "tie_rank": 12,
      "tie_size": 1
     },
     {
@@ -14905,7 +15040,7 @@
       "musr": 38.688020833333326,
       "mmlu_pro": 54.270094562647756
      },
-     "rank": 8,
+     "rank": 13,
      "id": "jungzoonat3qqwen2514bv10e3",
      "display_name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
      "vendor": "阿里巴巴",
@@ -14914,9 +15049,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 8,
+     "tie_rank": 13,
+     "tie_size": 1
+    },
+    {
+     "model": "Sakalti/ultiima-72B",
+     "organization": "Sakalti",
+     "score": 46.77,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 71.4012154416947,
+      "bbh": 61.10313258693403,
+      "math": 53.54984894259819,
+      "gpqa": 21.923937360178968,
+      "musr": 18.115104166666665,
+      "mmlu_pro": 54.510195035460995
+     },
+     "rank": 14,
+     "id": "sakaltiultiima72b",
+     "display_name": "Sakalti/ultiima-72B",
+     "vendor": "未标注",
+     "vendor_raw": "Sakalti",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 14,
      "tie_size": 1
     },
     {
@@ -14932,7 +15094,7 @@
       "musr": 14.224479166666663,
       "mmlu_pro": 52.05378250591017
      },
-     "rank": 9,
+     "rank": 15,
      "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
      "display_name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -14943,7 +15105,34 @@
      "registered": false,
      "trend": -6,
      "is_new": false,
-     "tie_rank": 9,
+     "tie_rank": 15,
+     "tie_size": 1
+    },
+    {
+     "model": "maldv/Awqward2.5-32B-Instruct",
+     "organization": "maldv",
+     "score": 46.75,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 82.54697535871487,
+      "bbh": 57.20733868173476,
+      "math": 62.311178247734134,
+      "gpqa": 12.080536912751676,
+      "musr": 13.86953125,
+      "mmlu_pro": 52.478575650118195
+     },
+     "rank": 16,
+     "id": "maldvawqward2532b",
+     "display_name": "maldv/Awqward2.5-32B",
+     "vendor": "未标注",
+     "vendor_raw": "maldv",
+     "region": "other",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 16,
      "tie_size": 1
     },
     {
@@ -14959,7 +15148,7 @@
       "musr": 13.498958333333329,
       "mmlu_pro": 51.85062056737589
      },
-     "rank": 10,
+     "rank": 17,
      "id": "qwenqwen2532b",
      "display_name": "Qwen/Qwen2.5-32B",
      "vendor": "阿里巴巴",
@@ -14968,9 +15157,117 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
+     "trend": -7,
+     "is_new": false,
+     "tie_rank": 17,
+     "tie_size": 1
+    },
+    {
+     "model": "mistralai/Mistral-Large-Instruct-2411",
+     "organization": "mistralai",
+     "score": 46.52,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 84.00577135334247,
+      "bbh": 52.7448919952634,
+      "math": 49.546827794561935,
+      "gpqa": 24.94407158836689,
+      "musr": 17.216666666666665,
+      "mmlu_pro": 50.687056737588655
+     },
+     "rank": 18,
+     "id": "mistralaimistrallargeinstruct2411",
+     "display_name": "mistralai/Mistral-Large-Instruct-2411",
+     "vendor": "Mistral AI",
+     "vendor_raw": "mistralai",
+     "region": "fr",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 10,
+     "tie_rank": 18,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
+     "organization": "Saxo",
+     "score": 46.37,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 82.48702332034557,
+      "bbh": 56.527924000253876,
+      "math": 61.78247734138973,
+      "gpqa": 11.74496644295302,
+      "musr": 13.832291666666665,
+      "mmlu_pro": 51.822916666666664
+     },
+     "rank": 19,
+     "id": "saxolinkbrickshorizonaiavengersv332b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 19,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
+     "organization": "Saxo",
+     "score": 46.23,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 82.08985491828349,
+      "bbh": 56.186576093303636,
+      "math": 62.2356495468278,
+      "gpqa": 11.297539149888143,
+      "musr": 13.661718749999997,
+      "mmlu_pro": 51.915263002364064
+     },
+     "rank": 20,
+     "id": "saxolinkbrickshorizonaiavengersv632b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 20,
+     "tie_size": 1
+    },
+    {
+     "model": "maldv/Qwentile2.5-32B-Instruct",
+     "organization": "maldv",
+     "score": 45.9,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 73.93161256576994,
+      "bbh": 57.205877636883635,
+      "math": 52.190332326283986,
+      "gpqa": 17.897091722595075,
+      "musr": 19.96197916666667,
+      "mmlu_pro": 54.214686761229316
+     },
+     "rank": 21,
+     "id": "maldvqwentile2532b",
+     "display_name": "maldv/Qwentile2.5-32B",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "maldv",
+     "region": "cn",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 21,
      "tie_size": 1
     },
     {
@@ -14986,7 +15283,7 @@
       "musr": 22.265885416666666,
       "mmlu_pro": 48.082890070921984
      },
-     "rank": 11,
+     "rank": 22,
      "id": "openbuddyopenbuddyllama3370bv241",
      "display_name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1",
      "vendor": "Meta",
@@ -14995,9 +15292,36 @@
      "open": null,
      "variant": "131k",
      "registered": false,
+     "trend": -11,
+     "is_new": false,
+     "tie_rank": 22,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
+     "organization": "Saxo",
+     "score": 45.67,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 75.15558717536138,
+      "bbh": 56.67538301839144,
+      "math": 54.607250755287005,
+      "gpqa": 14.093959731543624,
+      "musr": 20.591406250000002,
+      "mmlu_pro": 52.912603427895974
+     },
+     "rank": 23,
+     "id": "saxolinkbrickshorizonaiavengersv532b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 11,
+     "tie_rank": 23,
      "tie_size": 1
     },
     {
@@ -15013,7 +15337,7 @@
       "musr": 12.091145833333337,
       "mmlu_pro": 52.45087174940899
      },
-     "rank": 12,
+     "rank": 24,
      "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
      "display_name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -15022,9 +15346,144 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -8,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 12,
+     "tie_rank": 24,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
+     "organization": "Saxo",
+     "score": 45.61,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 76.30963620970138,
+      "bbh": 56.552203892922165,
+      "math": 53.625377643504535,
+      "gpqa": 14.876957494407161,
+      "musr": 19.465885416666666,
+      "mmlu_pro": 52.8017878250591
+     },
+     "rank": 25,
+     "id": "saxolinkbrickshorizonaiavengersv432b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 25,
+     "tie_size": 1
+    },
+    {
+     "model": "Sakalti/ultiima-32B",
+     "organization": "Sakalti",
+     "score": 45.4,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 68.54357549080883,
+      "bbh": 58.112446786765965,
+      "math": 49.62235649546828,
+      "gpqa": 17.4496644295302,
+      "musr": 24.134895833333335,
+      "mmlu_pro": 54.55636820330969
+     },
+     "rank": 26,
+     "id": "sakaltiultiima32b",
+     "display_name": "Sakalti/ultiima-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Sakalti",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 26,
+     "tie_size": 1
+    },
+    {
+     "model": "dnhkng/RYS-XLarge",
+     "organization": "dnhkng",
+     "score": 45.35,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.95662619627035,
+      "bbh": 58.77356748233938,
+      "math": 42.522658610271904,
+      "gpqa": 17.897091722595075,
+      "musr": 23.721093749999998,
+      "mmlu_pro": 49.20028073286053
+     },
+     "rank": 27,
+     "id": "dnhkngrysxlarge",
+     "display_name": "dnhkng/RYS-XLarge",
+     "vendor": "未标注",
+     "vendor_raw": "dnhkng",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 27,
+     "tie_size": 1
+    },
+    {
+     "model": "Sakalti/ultiima-72B-v1.5",
+     "organization": "Sakalti",
+     "score": 44.9,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 65.49610588793291,
+      "bbh": 63.438206058920265,
+      "math": 43.957703927492446,
+      "gpqa": 21.812080536912756,
+      "musr": 18.536718749999995,
+      "mmlu_pro": 56.153959810874696
+     },
+     "rank": 28,
+     "id": "sakaltiultiima72bv15",
+     "display_name": "Sakalti/ultiima-72B-v1.5",
+     "vendor": "未标注",
+     "vendor_raw": "Sakalti",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 28,
+     "tie_size": 1
+    },
+    {
+     "model": "meta-llama/Llama-3.3-70B-Instruct",
+     "organization": "meta-llama",
+     "score": 44.85,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 89.97581971391463,
+      "bbh": 56.561410788022194,
+      "math": 48.338368580060425,
+      "gpqa": 10.514541387024611,
+      "musr": 15.565624999999999,
+      "mmlu_pro": 48.12906323877069
+     },
+     "rank": 29,
+     "id": "metallamallama3370b",
+     "display_name": "meta-llama/Llama-3.3-70B",
+     "vendor": "Meta",
+     "vendor_raw": "meta-llama",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 29,
      "tie_size": 1
     },
     {
@@ -15040,7 +15499,7 @@
       "musr": 21.721093749999998,
       "mmlu_pro": 53.20811170212767
      },
-     "rank": 13,
+     "rank": 30,
      "id": "finguairomboultima32b",
      "display_name": "FINGU-AI/RomboUltima-32B",
      "vendor": "未标注",
@@ -15049,9 +15508,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -8,
+     "trend": -17,
      "is_new": false,
-     "tie_rank": 13,
+     "tie_rank": 30,
      "tie_size": 1
     },
     {
@@ -15067,7 +15526,7 @@
       "musr": 18.99739583333333,
       "mmlu_pro": 49.37573877068559
      },
-     "rank": 14,
+     "rank": 31,
      "id": "maziyarpanahicalme21rys78b",
      "display_name": "MaziyarPanahi/calme-2.1-rys-78b",
      "vendor": "未标注",
@@ -15076,9 +15535,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 14,
+     "trend": -17,
+     "is_new": false,
+     "tie_rank": 31,
      "tie_size": 1
     },
     {
@@ -15094,7 +15553,7 @@
       "musr": 16.999218749999997,
       "mmlu_pro": 49.7266548463357
      },
-     "rank": 15,
+     "rank": 32,
      "id": "maziyarpanahicalme23rys78b",
      "display_name": "MaziyarPanahi/calme-2.3-rys-78b",
      "vendor": "未标注",
@@ -15103,9 +15562,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 15,
+     "trend": -17,
+     "is_new": false,
+     "tie_rank": 32,
      "tie_size": 1
     },
     {
@@ -15121,7 +15580,7 @@
       "musr": 20.15234375,
       "mmlu_pro": 49.05252659574468
      },
-     "rank": 16,
+     "rank": 33,
      "id": "maziyarpanahicalme21qwen272b",
      "display_name": "MaziyarPanahi/calme-2.1-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -15130,9 +15589,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 16,
+     "trend": -17,
+     "is_new": false,
+     "tie_rank": 33,
      "tie_size": 1
     },
     {
@@ -15148,7 +15607,7 @@
       "musr": 16.82864583333333,
       "mmlu_pro": 48.72931442080378
      },
-     "rank": 17,
+     "rank": 34,
      "id": "maziyarpanahicalme22rys78b",
      "display_name": "MaziyarPanahi/calme-2.2-rys-78b",
      "vendor": "未标注",
@@ -15157,9 +15616,36 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -17,
+     "is_new": false,
+     "tie_rank": 34,
+     "tie_size": 1
+    },
+    {
+     "model": "Undi95/MG-FinalMix-72B",
+     "organization": "Undi95",
+     "score": 44.3,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 80.13648231137824,
+      "bbh": 57.502411706281976,
+      "math": 39.72809667673716,
+      "gpqa": 18.008948545861294,
+      "musr": 21.217187499999998,
+      "mmlu_pro": 49.19104609929077
+     },
+     "rank": 35,
+     "id": "undi95mgfinalmix72b",
+     "display_name": "Undi95/MG-FinalMix-72B",
+     "vendor": "未标注",
+     "vendor_raw": "Undi95",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 17,
+     "tie_rank": 35,
      "tie_size": 1
     },
     {
@@ -15175,7 +15661,7 @@
       "musr": 19.730729166666666,
       "mmlu_pro": 53.47591607565011
      },
-     "rank": 18,
+     "rank": 36,
      "id": "evaunit01evaqwen2572bv02",
      "display_name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
      "vendor": "阿里巴巴",
@@ -15184,9 +15670,63 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -12,
+     "trend": -18,
      "is_new": false,
-     "tie_rank": 18,
+     "tie_rank": 36,
+     "tie_size": 1
+    },
+    {
+     "model": "dfurman/Qwen2-72B-Orpo-v0.1",
+     "organization": "dfurman",
+     "score": 44.17,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 78.79759039348927,
+      "bbh": 57.41436351018751,
+      "math": 40.55891238670695,
+      "gpqa": 17.897091722595075,
+      "musr": 20.87005208333333,
+      "mmlu_pro": 49.49578900709219
+     },
+     "rank": 37,
+     "id": "dfurmanqwen272borpov01",
+     "display_name": "dfurman/Qwen2-72B-Orpo-v0.1",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "dfurman",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 37,
+     "tie_size": 1
+    },
+    {
+     "model": "dnhkng/RYS-XLarge-base",
+     "organization": "dnhkng",
+     "score": 44.1,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.10233735377686,
+      "bbh": 58.692146076576385,
+      "math": 37.91540785498489,
+      "gpqa": 17.225950782997764,
+      "musr": 22.4171875,
+      "mmlu_pro": 49.22798463356975
+     },
+     "rank": 38,
+     "id": "dnhkngrysxlargebase",
+     "display_name": "dnhkng/RYS-XLarge-base",
+     "vendor": "未标注",
+     "vendor_raw": "dnhkng",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 38,
      "tie_size": 1
     },
     {
@@ -15202,7 +15742,7 @@
       "musr": 16.516927083333332,
       "mmlu_pro": 49.27415780141844
      },
-     "rank": 19,
+     "rank": 39,
      "id": "maziyarpanahicalme22qwen272b",
      "display_name": "MaziyarPanahi/calme-2.2-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -15211,9 +15751,90 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -20,
+     "is_new": false,
+     "tie_rank": 39,
+     "tie_size": 1
+    },
+    {
+     "model": "arcee-ai/Arcee-Nova",
+     "organization": "arcee-ai",
+     "score": 44.05,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 79.07485471881274,
+      "bbh": 56.74098753952074,
+      "math": 43.80664652567976,
+      "gpqa": 18.008948545861294,
+      "musr": 17.220833333333328,
+      "mmlu_pro": 49.46808510638298
+     },
+     "rank": 40,
+     "id": "arceeaiarceenova",
+     "display_name": "arcee-ai/Arcee-Nova",
+     "vendor": "未标注",
+     "vendor_raw": "arcee-ai",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 19,
+     "tie_rank": 40,
+     "tie_size": 1
+    },
+    {
+     "model": "Steelskull/L3.3-MS-Nevoria-70b",
+     "organization": "Steelskull",
+     "score": 44.04,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.63268571833845,
+      "bbh": 56.60264873723427,
+      "math": 39.577039274924466,
+      "gpqa": 29.418344519015662,
+      "musr": 18.628645833333337,
+      "mmlu_pro": 50.39154846335697
+     },
+     "rank": 41,
+     "id": "steelskulll33msnevoria70b",
+     "display_name": "Steelskull/L3.3-MS-Nevoria-70b",
+     "vendor": "未标注",
+     "vendor_raw": "Steelskull",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 41,
+     "tie_size": 1
+    },
+    {
+     "model": "Triangle104/Set-70b",
+     "organization": "Triangle104",
+     "score": 44.03,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 76.42954028643999,
+      "bbh": 56.88003115055037,
+      "math": 36.40483383685801,
+      "gpqa": 26.174496644295303,
+      "musr": 18.961979166666666,
+      "mmlu_pro": 49.3572695035461
+     },
+     "rank": 42,
+     "id": "triangle104set70b",
+     "display_name": "Triangle104/Set-70b",
+     "vendor": "未标注",
+     "vendor_raw": "Triangle104",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 42,
      "tie_size": 1
     },
     {
@@ -15229,7 +15850,7 @@
       "musr": 19.20520833333333,
       "mmlu_pro": 54.95345744680851
      },
-     "rank": 20,
+     "rank": 43,
      "id": "aryanneqwentileswap",
      "display_name": "Aryanne/QwentileSwap",
      "vendor": "阿里巴巴",
@@ -15238,9 +15859,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -13,
+     "trend": -23,
      "is_new": false,
-     "tie_rank": 20,
+     "tie_rank": 43,
      "tie_size": 1
     },
     {
@@ -15256,7 +15877,7 @@
       "musr": 12.669531249999999,
       "mmlu_pro": 47.224069148936174
      },
-     "rank": 21,
+     "rank": 44,
      "id": "cranmaytempmotacillacinerea",
      "display_name": "Cran-May/tempmotacilla-cinerea",
      "vendor": "未标注",
@@ -15265,9 +15886,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -13,
+     "trend": -23,
      "is_new": false,
-     "tie_rank": 21,
+     "tie_rank": 44,
+     "tie_size": 1
+    },
+    {
+     "model": "Steelskull/L3.3-Nevoria-R1-70b",
+     "organization": "Steelskull",
+     "score": 43.61,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 60.23794642659256,
+      "bbh": 56.167288330479515,
+      "math": 46.299093655589125,
+      "gpqa": 29.194630872483216,
+      "musr": 20.191406249999996,
+      "mmlu_pro": 49.5881353427896
+     },
+     "rank": 45,
+     "id": "steelskulll33nevoriar170b",
+     "display_name": "Steelskull/L3.3-Nevoria-R1-70b",
+     "vendor": "未标注",
+     "vendor_raw": "Steelskull",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 45,
      "tie_size": 1
     },
     {
@@ -15283,7 +15931,7 @@
       "musr": 17.167968749999996,
       "mmlu_pro": 48.92324172576833
      },
-     "rank": 22,
+     "rank": 46,
      "id": "qwenqwen272b",
      "display_name": "Qwen/Qwen2-72B",
      "vendor": "阿里巴巴",
@@ -15292,9 +15940,144 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
+     "trend": -24,
+     "is_new": false,
+     "tie_rank": 46,
+     "tie_size": 1
+    },
+    {
+     "model": "mlabonne/BigQwen2.5-52B-Instruct",
+     "organization": "mlabonne",
+     "score": 43.55,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 79.13480675718205,
+      "bbh": 59.80960695923371,
+      "math": 54.7583081570997,
+      "gpqa": 6.935123042505594,
+      "musr": 10.446093750000001,
+      "mmlu_pro": 50.21609042553191
+     },
+     "rank": 47,
+     "id": "mlabonnebigqwen2552b",
+     "display_name": "mlabonne/BigQwen2.5-52B",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "mlabonne",
+     "region": "cn",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 22,
+     "tie_rank": 47,
+     "tie_size": 1
+    },
+    {
+     "model": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+     "organization": "VAGOsolutions",
+     "score": 43.41,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 86.56365111238182,
+      "bbh": 57.24162100868165,
+      "math": 36.933534743202415,
+      "gpqa": 12.192393736017896,
+      "musr": 19.38541666666666,
+      "mmlu_pro": 48.16600177304965
+     },
+     "rank": 48,
+     "id": "vagosolutionsllama31sauerkrautlm70b",
+     "display_name": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b",
+     "vendor": "Meta",
+     "vendor_raw": "VAGOsolutions",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 48,
+     "tie_size": 1
+    },
+    {
+     "model": "meta-llama/Llama-3.1-70B-Instruct",
+     "organization": "meta-llama",
+     "score": 43.41,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 86.6885419575615,
+      "bbh": 55.92799173898473,
+      "math": 38.066465256797585,
+      "gpqa": 14.205816554809845,
+      "musr": 17.691145833333334,
+      "mmlu_pro": 47.87972813238771
+     },
+     "rank": 49,
+     "id": "metallamallama3170b",
+     "display_name": "meta-llama/Llama-3.1-70B",
+     "vendor": "Meta",
+     "vendor_raw": "meta-llama",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 49,
+     "tie_size": 1
+    },
+    {
+     "model": "abacusai/Dracarys-72B-Instruct",
+     "organization": "abacusai",
+     "score": 43.38,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 78.55778224001206,
+      "bbh": 56.93552010003367,
+      "math": 39.65256797583081,
+      "gpqa": 18.791946308724835,
+      "musr": 16.81119791666666,
+      "mmlu_pro": 49.51425827423168
+     },
+     "rank": 50,
+     "id": "abacusaidracarys72b",
+     "display_name": "abacusai/Dracarys-72B",
+     "vendor": "未标注",
+     "vendor_raw": "abacusai",
+     "region": "other",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 50,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "organization": "Saxo",
+     "score": 43.34,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.56444456264933,
+      "bbh": 58.07744907944319,
+      "math": 56.646525679758305,
+      "gpqa": 2.1252796420581683,
+      "musr": 11.179427083333337,
+      "mmlu_pro": 52.44163711583924
+     },
+     "rank": 51,
+     "id": "saxolinkbrickshorizonaiavengersv232b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 51,
      "tie_size": 1
     },
     {
@@ -15310,7 +16093,7 @@
       "musr": 14.757812499999998,
       "mmlu_pro": 47.23330378250591
      },
-     "rank": 23,
+     "rank": 52,
      "id": "lunzimanqlsgqwen2514bmegafusionv91",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
      "vendor": "阿里巴巴",
@@ -15319,9 +16102,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 23,
+     "trend": -29,
+     "is_new": false,
+     "tie_rank": 52,
      "tie_size": 1
     },
     {
@@ -15337,7 +16120,7 @@
       "musr": 17.06953125,
       "mmlu_pro": 49.05252659574468
      },
-     "rank": 24,
+     "rank": 53,
      "id": "maziyarpanahicalme22llama3170b",
      "display_name": "MaziyarPanahi/calme-2.2-llama3.1-70b",
      "vendor": "Meta",
@@ -15346,9 +16129,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 24,
+     "trend": -29,
+     "is_new": false,
+     "tie_rank": 53,
      "tie_size": 1
     },
     {
@@ -15364,7 +16147,7 @@
       "musr": 17.736197916666658,
       "mmlu_pro": 48.4799793144208
      },
-     "rank": 25,
+     "rank": 54,
      "id": "maziyarpanahicalme23llama3170b",
      "display_name": "MaziyarPanahi/calme-2.3-llama3.1-70b",
      "vendor": "Meta",
@@ -15373,9 +16156,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 25,
+     "trend": -29,
+     "is_new": false,
+     "tie_rank": 54,
      "tie_size": 1
     },
     {
@@ -15391,7 +16174,7 @@
       "musr": 15.261718749999995,
       "mmlu_pro": 47.593454491725765
      },
-     "rank": 26,
+     "rank": 55,
      "id": "lunzimanqlsgqwen2514bmegafusionv92",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
      "vendor": "阿里巴巴",
@@ -15400,9 +16183,36 @@
      "open": null,
      "variant": null,
      "registered": false,
+     "trend": -29,
+     "is_new": false,
+     "tie_rank": 55,
+     "tie_size": 1
+    },
+    {
+     "model": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "organization": "YOYO-AI",
+     "score": 43.14,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 83.64605912312663,
+      "bbh": 50.26935344231426,
+      "math": 53.92749244712991,
+      "gpqa": 8.612975391498878,
+      "musr": 15.661718749999997,
+      "mmlu_pro": 46.706929669030735
+     },
+     "rank": 56,
+     "id": "yoyoaizyhllmqwen2514bv4",
+     "display_name": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "YOYO-AI",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
      "trend": 0,
      "is_new": true,
-     "tie_rank": 26,
+     "tie_rank": 56,
      "tie_size": 1
     },
     {
@@ -15418,7 +16228,7 @@
       "musr": 15.157812499999997,
       "mmlu_pro": 47.131722813238774
      },
-     "rank": 27,
+     "rank": 57,
      "id": "lunzimanqlsgqwen2514bmegafusionv87",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
      "vendor": "阿里巴巴",
@@ -15427,839 +16237,29 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 27,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
-     "organization": "Lunzima",
-     "score": 42.78,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 78.74761189200211,
-      "bbh": 49.0341381962539,
-      "math": 55.58912386706949,
-      "gpqa": 11.409395973154364,
-      "musr": 15.18723958333333,
-      "mmlu_pro": 46.734633569739955
-     },
-     "rank": 28,
-     "id": "lunzimanqlsgqwen2514bmegafusionv8",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 28,
-     "tie_size": 1
-    },
-    {
-     "model": "Daemontatox/Llama3.3-70B-CogniLink",
-     "organization": "Daemontatox",
-     "score": 42.77,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 69.31042965996889,
-      "bbh": 52.12466257626164,
-      "math": 41.389728096676734,
-      "gpqa": 26.062639821029084,
-      "musr": 21.395572916666662,
-      "mmlu_pro": 46.36524822695035
-     },
-     "rank": 29,
-     "id": "daemontatoxllama3370bcognilink",
-     "display_name": "Daemontatox/Llama3.3-70B-CogniLink",
-     "vendor": "Meta",
-     "vendor_raw": "Daemontatox",
-     "region": "us",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -20,
+     "trend": -30,
      "is_new": false,
-     "tie_rank": 29,
-     "tie_size": 1
-    },
-    {
-     "model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
-     "organization": "Goekdeniz-Guelmez",
-     "score": 42.55,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 82.91666112581285,
-      "bbh": 48.05226992969286,
-      "math": 54.229607250755286,
-      "gpqa": 12.304250559284117,
-      "musr": 13.15,
-      "mmlu_pro": 44.64760638297872
-     },
-     "rank": 30,
-     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
-     "display_name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Goekdeniz-Guelmez",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -20,
-     "is_new": false,
-     "tie_rank": 30,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
-     "organization": "Lunzima",
-     "score": 42.52,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 79.93413032974729,
-      "bbh": 49.946869654224066,
-      "math": 53.70090634441088,
-      "gpqa": 10.626398210290827,
-      "musr": 14.269531249999995,
-      "mmlu_pro": 46.660756501182036
-     },
-     "rank": 31,
-     "id": "lunzimanqlsgqwen2514bmegafusionv89",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 31,
-     "tie_size": 1
-    },
-    {
-     "model": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
-     "organization": "BenevolenceMessiah",
-     "score": 42.27,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 54.73499204333391,
-      "bbh": 61.91149453060484,
-      "math": 57.85498489425982,
-      "gpqa": 15.659955257270694,
-      "musr": 12.016666666666671,
-      "mmlu_pro": 51.425827423167846
-     },
-     "rank": 32,
-     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
-     "display_name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "BenevolenceMessiah",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -21,
-     "is_new": false,
-     "tie_rank": 32,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Fugazi14b",
-     "organization": "Quazim0t0",
-     "score": 41.94,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 69.97987561891337,
-      "bbh": 56.092125930693726,
-      "math": 46.52567975830816,
-      "gpqa": 13.534675615212524,
-      "musr": 16.419010416666662,
-      "mmlu_pro": 49.0802304964539
-     },
-     "rank": 33,
-     "id": "quazim0t0fugazi14b",
-     "display_name": "Quazim0t0/Fugazi14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 33,
-     "tie_size": 1
-    },
-    {
-     "model": "1024m/QWEN-14B-B100",
-     "organization": "1024m",
-     "score": 41.92,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 77.62104549262622,
-      "bbh": 49.77664782103219,
-      "math": 54.38066465256798,
-      "gpqa": 13.422818791946312,
-      "musr": 9.883333333333335,
-      "mmlu_pro": 46.429890661938536
-     },
-     "rank": 34,
-     "id": "1024mqwen14bb100",
-     "display_name": "1024m/QWEN-14B-B100",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "1024m",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -22,
-     "is_new": false,
-     "tie_rank": 34,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Rune-14b",
-     "organization": "Quazim0t0",
-     "score": 41.82,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.15973173402128,
-      "bbh": 56.053987787163095,
-      "math": 45.84592145015105,
-      "gpqa": 13.534675615212524,
-      "musr": 16.29348958333333,
-      "mmlu_pro": 49.01558806146573
-     },
-     "rank": 35,
-     "id": "quazim0t0rune14b",
-     "display_name": "Quazim0t0/Rune-14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 35,
-     "tie_size": 1
-    },
-    {
-     "model": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "organization": "CombinHorizon",
-     "score": 41.77,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 82.39958864701215,
-      "bbh": 48.19594986631396,
-      "math": 53.17220543806647,
-      "gpqa": 9.955257270693513,
-      "musr": 12.65390625,
-      "mmlu_pro": 44.213578605200944
-     },
-     "rank": 36,
-     "id": "combinhorizonjosiefiedabliteratedv4qwen2514binstbasemergeties",
-     "display_name": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "CombinHorizon",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -23,
-     "is_new": false,
-     "tie_rank": 36,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/SuperNova14b",
-     "organization": "Quazim0t0",
-     "score": 41.68,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.7642388861554,
-      "bbh": 56.0926914908668,
-      "math": 43.957703927492446,
-      "gpqa": 13.646532438478745,
-      "musr": 16.31510416666666,
-      "mmlu_pro": 49.27415780141844
-     },
-     "rank": 37,
-     "id": "quazim0t0supernova14b",
-     "display_name": "Quazim0t0/SuperNova14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 37,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Lineage-14B",
-     "organization": "Quazim0t0",
-     "score": 41.64,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.7042868477861,
-      "bbh": 56.02223040682762,
-      "math": 42.44712990936556,
-      "gpqa": 14.65324384787472,
-      "musr": 17.032812499999995,
-      "mmlu_pro": 49.006353427895974
-     },
-     "rank": 38,
-     "id": "quazim0t0lineage14b",
-     "display_name": "Quazim0t0/Lineage-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 38,
-     "tie_size": 1
-    },
-    {
-     "model": "Sakalti/Oxyge1-33B",
-     "organization": "Sakalti",
-     "score": 41.61,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 45.48265269484966,
-      "bbh": 58.03229697403189,
-      "math": 49.62235649546828,
-      "gpqa": 17.67337807606264,
-      "musr": 24.29765625,
-      "mmlu_pro": 54.547133569739955
-     },
-     "rank": 39,
-     "id": "sakaltioxyge133b",
-     "display_name": "Sakalti/Oxyge1-33B",
-     "vendor": "未标注",
-     "vendor_raw": "Sakalti",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 39,
-     "tie_size": 1
-    },
-    {
-     "model": "Qwen/Qwen2.5-14B-Instruct-1M",
-     "organization": "Qwen",
-     "score": 41.56,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 84.1356489669632,
-      "bbh": 45.658280600233155,
-      "math": 53.02114803625378,
-      "gpqa": 12.416107382550338,
-      "musr": 11.350000000000003,
-      "mmlu_pro": 42.77297576832151
-     },
-     "rank": 40,
-     "id": "qwenqwen2514b",
-     "display_name": "Qwen/Qwen2.5-14B",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Qwen",
-     "region": "cn",
-     "open": null,
-     "variant": "1m / instruct",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 40,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
-     "organization": "Lunzima",
-     "score": 41.55,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.27963581075988,
-      "bbh": 50.74642495052259,
-      "math": 42.37160120845921,
-      "gpqa": 16.778523489932887,
-      "musr": 21.06640625,
-      "mmlu_pro": 48.03671690307329
-     },
-     "rank": 41,
-     "id": "lunzimanqlsgqwen2514bmegafusionv88",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 41,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/MFGRIMM-14B",
-     "organization": "Quazim0t0",
-     "score": 41.52,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 68.94074389287091,
-      "bbh": 55.52294469432744,
-      "math": 50.60422960725075,
-      "gpqa": 11.185682326621922,
-      "musr": 13.783593750000001,
-      "mmlu_pro": 49.07099586288417
-     },
-     "rank": 42,
-     "id": "quazim0t0mfgrimm14b",
-     "display_name": "Quazim0t0/MFGRIMM-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 42,
-     "tie_size": 1
-    },
-    {
-     "model": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "organization": "CombinHorizon",
-     "score": 41.47,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 81.75762532303177,
-      "bbh": 47.767346005909815,
-      "math": 54.7583081570997,
-      "gpqa": 8.612975391498878,
-      "musr": 12.453906250000001,
-      "mmlu_pro": 43.44710401891253
-     },
-     "rank": 43,
-     "id": "combinhorizonhuihuiaiabliteratedv2qwen2514binstbasemergeties",
-     "display_name": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "CombinHorizon",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -29,
-     "is_new": false,
-     "tie_rank": 43,
-     "tie_size": 1
-    },
-    {
-     "model": "RDson/WomboCombo-R1-Coder-14B-Preview",
-     "organization": "RDson",
-     "score": 41.46,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 62.8557782240012,
-      "bbh": 48.154142488726684,
-      "math": 59.89425981873112,
-      "gpqa": 9.507829977628639,
-      "musr": 22.014843749999997,
-      "mmlu_pro": 46.30984042553191
-     },
-     "rank": 44,
-     "id": "rdsonwombocombor1coder14b",
-     "display_name": "RDson/WomboCombo-R1-Coder-14B",
-     "vendor": "未标注",
-     "vendor_raw": "RDson",
-     "region": "other",
-     "open": null,
-     "variant": "preview",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 44,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/MFDOOM-14B",
-     "organization": "Quazim0t0",
-     "score": 41.44,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 67.36204382150471,
-      "bbh": 55.53057914384544,
-      "math": 52.64350453172205,
-      "gpqa": 9.731543624161072,
-      "musr": 14.207031250000005,
-      "mmlu_pro": 49.17257683215129
-     },
-     "rank": 45,
-     "id": "quazim0t0mfdoom14b",
-     "display_name": "Quazim0t0/MFDOOM-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 45,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Nova-14b-sce",
-     "organization": "Quazim0t0",
-     "score": 41.41,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 70.2196837723906,
-      "bbh": 56.034331914713114,
-      "math": 41.616314199395774,
-      "gpqa": 15.100671140939594,
-      "musr": 16.4328125,
-      "mmlu_pro": 49.03405732860521
-     },
-     "rank": 46,
-     "id": "quazim0t0nova14bsce",
-     "display_name": "Quazim0t0/Nova-14b-sce",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 46,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Geedorah-14B",
-     "organization": "Quazim0t0",
-     "score": 41.39,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 68.72841837435782,
-      "bbh": 56.46229284952974,
-      "math": 44.48640483383686,
-      "gpqa": 12.975391498881436,
-      "musr": 16.567968749999995,
-      "mmlu_pro": 49.1264036643026
-     },
-     "rank": 47,
-     "id": "quazim0t0geedorah14b",
-     "display_name": "Quazim0t0/Geedorah-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 47,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Alice-14B",
-     "organization": "Quazim0t0",
-     "score": 41.35,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 68.36371937570092,
-      "bbh": 56.00650513096938,
-      "math": 45.69486404833837,
-      "gpqa": 13.534675615212524,
-      "musr": 15.42682291666666,
-      "mmlu_pro": 49.09869976359338
-     },
-     "rank": 48,
-     "id": "quazim0t0alice14b",
-     "display_name": "Quazim0t0/Alice-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 48,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/NovaScotia-14b-stock",
-     "organization": "Quazim0t0",
-     "score": 41.35,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 67.87412953186434,
-      "bbh": 56.02714781885254,
-      "math": 46.299093655589125,
-      "gpqa": 13.19910514541387,
-      "musr": 15.70130208333333,
-      "mmlu_pro": 48.9878841607565
-     },
-     "rank": 49,
-     "id": "quazim0t0novascotia14bstock",
-     "display_name": "Quazim0t0/NovaScotia-14b-stock",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 49,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/ODB-14b-sce",
-     "organization": "Quazim0t0",
-     "score": 41.34,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.15973173402128,
-      "bbh": 56.192610781815496,
-      "math": 41.1631419939577,
-      "gpqa": 14.988814317673373,
-      "musr": 16.49947916666667,
-      "mmlu_pro": 49.01558806146573
-     },
-     "rank": 50,
-     "id": "quazim0t0odb14bsce",
-     "display_name": "Quazim0t0/ODB-14b-sce",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 50,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Rosemary-14b",
-     "organization": "Quazim0t0",
-     "score": 41.34,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 69.15306941138402,
-      "bbh": 56.38346045501811,
-      "math": 43.8821752265861,
-      "gpqa": 14.205816554809845,
-      "musr": 15.552343749999997,
-      "mmlu_pro": 48.84936465721041
-     },
-     "rank": 51,
-     "id": "quazim0t0rosemary14b",
-     "display_name": "Quazim0t0/Rosemary-14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 51,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Ponder-14B-linear",
-     "organization": "Quazim0t0",
-     "score": 41.31,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 69.06064796960952,
-      "bbh": 56.21485209781756,
-      "math": 42.82477341389728,
-      "gpqa": 14.429530201342287,
-      "musr": 16.336718750000003,
-      "mmlu_pro": 48.97864952718677
-     },
-     "rank": 52,
-     "id": "quazim0t0ponder14blinear",
-     "display_name": "Quazim0t0/Ponder-14B-linear",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 52,
-     "tie_size": 1
-    },
-    {
-     "model": "Qwen/Qwen2.5-14B-Instruct",
-     "organization": "Qwen",
-     "score": 41.31,
-     "type": "💬 chat models (rlhf, dpo, ift, ...)",
-     "subscores": {
-      "ifeval": 81.57776920792386,
-      "bbh": 48.36070661282705,
-      "math": 54.7583081570997,
-      "gpqa": 9.61968680089485,
-      "musr": 10.157812500000004,
-      "mmlu_pro": 43.382461583924346
-     },
-     "rank": 53,
-     "id": "qwenqwen2514b",
-     "display_name": "Qwen/Qwen2.5-14B",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Qwen",
-     "region": "cn",
-     "open": null,
-     "variant": "instruct",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 53,
-     "tie_size": 1
-    },
-    {
-     "model": "Baptiste-HUVELLE-10/LeTriomphant2.2_ECE_iLAB",
-     "organization": "Baptiste-HUVELLE-10",
-     "score": 41.3,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 50.76330802271307,
-      "bbh": 61.61232489960707,
-      "math": 44.48640483383686,
-      "gpqa": 19.910514541387023,
-      "musr": 17.15234375,
-      "mmlu_pro": 53.90070921985816
-     },
-     "rank": 54,
-     "id": "baptistehuvelle10letriomphant22eceilab",
-     "display_name": "Baptiste-HUVELLE-10/LeTriomphant2.2_ECE_iLAB",
-     "vendor": "未标注",
-     "vendor_raw": "Baptiste-HUVELLE-10",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": -39,
-     "is_new": false,
-     "tie_rank": 54,
-     "tie_size": 1
-    },
-    {
-     "model": "OpenBuddy/openbuddy-llama3.1-70b-v22.1-131k",
-     "organization": "OpenBuddy",
-     "score": 41.25,
-     "type": "💬 chat models (rlhf, dpo, ift, ...)",
-     "subscores": {
-      "ifeval": 73.32710541363582,
-      "bbh": 51.94077625159233,
-      "math": 39.50151057401813,
-      "gpqa": 16.666666666666664,
-      "musr": 18.23645833333333,
-      "mmlu_pro": 47.82432033096927
-     },
-     "rank": 55,
-     "id": "openbuddyopenbuddyllama3170bv221",
-     "display_name": "OpenBuddy/openbuddy-llama3.1-70b-v22.1",
-     "vendor": "Meta",
-     "vendor_raw": "OpenBuddy",
-     "region": "us",
-     "open": null,
-     "variant": "131k",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 55,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v3",
-     "organization": "Lunzima",
-     "score": 41.23,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.48697456083192,
-      "bbh": 49.31202888085861,
-      "math": 41.616314199395774,
-      "gpqa": 17.561521252796418,
-      "musr": 19.59375,
-      "mmlu_pro": 48.82166075650118
-     },
-     "rank": 56,
-     "id": "lunzimanqlsgqwen2514bmegafusionv3",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v3",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 56,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/caramel-14B",
-     "organization": "Quazim0t0",
-     "score": 41.22,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 67.44947849483815,
-      "bbh": 55.75618206414753,
-      "math": 47.129909365558916,
-      "gpqa": 12.639821029082773,
-      "musr": 15.071875000000004,
-      "mmlu_pro": 49.28339243498819
-     },
-     "rank": 57,
-     "id": "quazim0t0caramel14b",
-     "display_name": "Quazim0t0/caramel-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
      "tie_rank": 57,
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/Wendy-14B",
-     "organization": "Quazim0t0",
-     "score": 41.21,
-     "type": "🤝 base merges and moerges",
+     "model": "Sao10K/70B-L3.3-Cirrus-x1",
+     "organization": "Sao10K",
+     "score": 43.0,
+     "type": "🔶 fine-tuned on domain-specific datasets",
      "subscores": {
-      "ifeval": 67.72175605172055,
-      "bbh": 56.172047866798856,
-      "math": 48.338368580060425,
-      "gpqa": 10.96196868008949,
-      "musr": 14.783593750000003,
-      "mmlu_pro": 49.27415780141844
+      "ifeval": 66.80751517085777,
+      "bbh": 57.132312166381276,
+      "math": 37.38670694864049,
+      "gpqa": 26.62192393736018,
+      "musr": 21.42083333333333,
+      "mmlu_pro": 48.646202718676115
      },
      "rank": 58,
-     "id": "quazim0t0wendy14b",
-     "display_name": "Quazim0t0/Wendy-14B",
+     "id": "sao10k70bl33cirrusx1",
+     "display_name": "Sao10K/70B-L3.3-Cirrus-x1",
      "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
+     "vendor_raw": "Sao10K",
      "region": "other",
      "open": null,
      "variant": null,
@@ -16270,24 +16270,24 @@
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/time-14b-stock",
-     "organization": "Quazim0t0",
-     "score": 41.18,
+     "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "organization": "Tarek07",
+     "score": 43.0,
      "type": "🤝 base merges and moerges",
      "subscores": {
-      "ifeval": 66.99235805440674,
-      "bbh": 55.35905866101553,
-      "math": 50.83081570996979,
-      "gpqa": 11.297539149888143,
-      "musr": 13.473697916666664,
-      "mmlu_pro": 49.09869976359338
+      "ifeval": 69.06064796960952,
+      "bbh": 56.24697023586278,
+      "math": 35.725075528700906,
+      "gpqa": 27.740492170022367,
+      "musr": 19.62864583333333,
+      "mmlu_pro": 49.61583924349882
      },
      "rank": 59,
-     "id": "quazim0t0time14bstock",
-     "display_name": "Quazim0t0/time-14b-stock",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
+     "id": "tarek07progenitorv11llama70b",
+     "display_name": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "vendor": "Meta",
+     "vendor_raw": "Tarek07",
+     "region": "us",
      "open": null,
      "variant": null,
      "registered": false,
@@ -16297,23 +16297,23 @@
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/1up-14b",
-     "organization": "Quazim0t0",
-     "score": 41.15,
-     "type": "🤝 base merges and moerges",
+     "model": "anthracite-org/magnum-v1-72b",
+     "organization": "anthracite-org",
+     "score": 42.96,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
      "subscores": {
-      "ifeval": 68.88079185450161,
-      "bbh": 55.83975950522497,
-      "math": 41.616314199395774,
-      "gpqa": 14.988814317673373,
-      "musr": 16.625000000000004,
-      "mmlu_pro": 48.96018026004729
+      "ifeval": 76.06484128778308,
+      "bbh": 57.653184855142705,
+      "math": 39.803625377643506,
+      "gpqa": 18.791946308724835,
+      "musr": 15.617187499999998,
+      "mmlu_pro": 49.84670508274232
      },
      "rank": 60,
-     "id": "quazim0t01up14b",
-     "display_name": "Quazim0t0/1up-14b",
+     "id": "anthraciteorgmagnumv172b",
+     "display_name": "anthracite-org/magnum-v1-72b",
      "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
+     "vendor_raw": "anthracite-org",
      "region": "other",
      "open": null,
      "variant": null,
@@ -16375,7 +16375,7 @@
      "score": 0.019952792181715723,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16401,7 +16401,7 @@
      "score": 1462.8474205203297,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -16433,7 +16433,7 @@
      "score": 0.02950188802086824,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16483,7 +16483,7 @@
      "score": 0.1373091288124116,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -16610,7 +16610,7 @@
      "score": 1500.9554786587114,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -16633,7 +16633,7 @@
      "rank": 12,
      "score": 0.06416331115509519,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "max"
     }
@@ -16682,7 +16682,7 @@
      "score": 0.038089989155445765,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16732,7 +16732,7 @@
      "score": 0.01921078723969037,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16758,7 +16758,7 @@
      "score": 1474.6645918511683,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "superclue": {
@@ -16832,7 +16832,7 @@
      "score": -0.010887552583393975,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16858,7 +16858,7 @@
      "score": 1470.3709141560387,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     },
     "superclue": {
@@ -16882,7 +16882,7 @@
      "score": 0.0235212617961907,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16982,7 +16982,7 @@
      "score": 0.0035548631669593328,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17058,7 +17058,7 @@
      "score": 1442.6942201249342,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17082,7 +17082,7 @@
      "score": 0.1368885765675987,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17109,7 +17109,7 @@
      "score": 1438.0013487945234,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 70,
+     "trend": 71,
      "variant": null
     },
     "superclue": {
@@ -17133,7 +17133,7 @@
      "score": -0.061264691054754364,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17207,7 +17207,7 @@
      "score": 1400.5236699479146,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     },
     "aa_intelligence": {
@@ -17273,7 +17273,7 @@
      "score": -0.02559435890334652,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17384,7 +17384,7 @@
      "score": 1507.6361874165489,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 1,
      "variant": "max"
     },
     "lmarena_webdev": {
@@ -17442,7 +17442,7 @@
      "score": 0.039674131857047726,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17527,7 +17527,7 @@
      "score": 0.03632281106902099,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17569,7 +17569,7 @@
      "score": -0.004092592342509681,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17611,7 +17611,7 @@
      "score": -0.06522634392729522,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -17653,7 +17653,7 @@
      "score": -0.03526557993315371,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -17679,7 +17679,7 @@
      "score": 1479.3122139856446,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -17695,7 +17695,7 @@
      "score": -0.047220351369200726,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17735,7 +17735,7 @@
      "score": -0.06247154274610261,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17761,7 +17761,7 @@
      "score": 1475.205553076342,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_webdev": {
@@ -17777,7 +17777,7 @@
      "score": -0.05800988841524328,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17807,7 +17807,7 @@
      "score": 1471.3397664394297,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 92,
+     "trend": 93,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -17823,7 +17823,7 @@
      "score": 0.033107768579748065,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 14,
+     "trend": 15,
      "variant": "xhigh"
     }
    },
@@ -17901,7 +17901,7 @@
      "score": 1468.9734137454454,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 198,
+     "trend": 199,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -17917,7 +17917,7 @@
      "score": 0.016371289333621204,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 8,
+     "trend": 9,
      "variant": "high"
     }
    },
@@ -18082,7 +18082,7 @@
      "score": 0.0007051848897225708,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18108,7 +18108,7 @@
      "score": 1442.12148050211,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -18124,7 +18124,7 @@
      "score": 0.04686398245272877,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -18150,7 +18150,7 @@
      "score": 1441.3906418931479,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18166,7 +18166,7 @@
      "score": -0.01328242244624982,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18190,7 +18190,7 @@
      "score": 1440.5473201399373,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18206,7 +18206,7 @@
      "score": -0.03211951083522055,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18230,7 +18230,7 @@
      "score": 1429.9946133933556,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18273,7 +18273,7 @@
      "score": 1427.7652036468833,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -18289,7 +18289,7 @@
      "score": 0.011611553700530018,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18329,7 +18329,7 @@
      "score": -0.1133063245476986,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18355,7 +18355,7 @@
      "score": 1398.0199753455704,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_webdev": {
@@ -18397,7 +18397,7 @@
      "score": 1391.6288983949628,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_webdev": {
@@ -18413,7 +18413,7 @@
      "score": 0.03258742655361496,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18437,7 +18437,7 @@
      "score": 1386.7207226836342,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18453,7 +18453,7 @@
      "score": -0.20180041895855674,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18511,7 +18511,7 @@
      "score": 1427.703156098861,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 79,
+     "trend": 80,
      "variant": null
     },
     "livecodebench": {
@@ -18644,7 +18644,7 @@
      "score": 1374.5908048889319,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 44,
+     "trend": 45,
      "variant": null
     },
     "livecodebench": {
@@ -18679,7 +18679,7 @@
      "score": 1369.5251501690184,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 7,
+     "trend": 8,
      "variant": "high"
     },
     "livecodebench": {
@@ -18711,7 +18711,7 @@
      "score": 1366.2366696625795,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -18747,7 +18747,7 @@
      "score": 1353.2945502996856,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -18782,7 +18782,7 @@
      "score": 1350.884852369603,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 8,
+     "trend": 9,
      "variant": "32k / thinking"
     },
     "livecodebench": {
@@ -18818,7 +18818,7 @@
      "score": 1336.554249045414,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 17,
      "variant": "high"
     },
     "livecodebench": {
@@ -18850,7 +18850,7 @@
      "score": 1300.3973861265524,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 19,
+     "trend": 20,
      "variant": null
     },
     "livecodebench": {
@@ -18882,7 +18882,7 @@
      "score": 1297.7752958285298,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 19,
+     "trend": 20,
      "variant": null
     },
     "livecodebench": {
@@ -18914,7 +18914,7 @@
      "score": 1286.342818557726,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -18946,7 +18946,7 @@
      "score": 1271.6531910176432,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -18978,7 +18978,7 @@
      "score": 1194.6420610252403,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -19081,7 +19081,7 @@
      "score": 1482.0166701667843,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 70,
+     "trend": 71,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19123,7 +19123,7 @@
      "score": 0.0290370022598572,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -19147,7 +19147,7 @@
      "score": 1479.4272470568092,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19247,7 +19247,7 @@
      "score": 1462.4039016755132,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19351,7 +19351,7 @@
      "score": -0.06346008730905843,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19446,7 +19446,7 @@
      "score": 1447.142519054217,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview / max"
     },
     "lmarena_webdev": {
@@ -19646,7 +19646,7 @@
      "score": 1438.4935941550966,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 57,
+     "trend": 58,
      "variant": "latest / chat"
     },
     "lmarena_webdev": {
@@ -19680,7 +19680,7 @@
      "score": 1438.4246824831582,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 10,
+     "trend": 9,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19712,7 +19712,7 @@
      "score": 1437.7189287176805,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19744,7 +19744,7 @@
      "score": 1437.602304534889,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19810,7 +19810,7 @@
      "score": 1436.363981628608,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19938,7 +19938,7 @@
      "score": 1428.1636233985298,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20205,7 +20205,7 @@
      "score": 1410.9853460654392,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 21,
+     "trend": 23,
      "variant": "non-thinking"
     },
     "lmarena_webdev": {
@@ -20237,7 +20237,7 @@
      "score": 1408.8984198274281,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20271,7 +20271,7 @@
      "score": 1407.998568045064,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "reasoning"
     },
     "lmarena_webdev": {
@@ -20306,7 +20306,7 @@
      "score": 1406.962809366786,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 10,
+     "trend": 11,
      "variant": "chat"
     },
     "lmarena_webdev": {
@@ -20338,7 +20338,7 @@
      "score": 1404.8321223235982,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20370,7 +20370,7 @@
      "score": 1397.0135676146804,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20402,7 +20402,7 @@
      "score": 1396.9237209726516,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20434,7 +20434,7 @@
      "score": 1396.6445118945935,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20500,7 +20500,7 @@
      "score": 1391.904129402532,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_webdev": {
@@ -20564,7 +20564,7 @@
      "score": 1359.1239335465827,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20598,7 +20598,7 @@
      "score": 1356.5630184436598,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "instruct"
     },
     "lmarena_webdev": {
@@ -20630,7 +20630,7 @@
      "score": 1354.8601029761023,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20662,7 +20662,7 @@
      "score": 1339.9202475131674,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20694,7 +20694,7 @@
      "score": 1290.6862504564715,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20726,7 +20726,7 @@
      "score": 1441.3843755522262,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20742,7 +20742,7 @@
      "score": -0.13613772364113494,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20766,7 +20766,7 @@
      "score": 1412.6234189082622,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20782,7 +20782,7 @@
      "score": -0.1472421341078853,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20809,7 +20809,7 @@
      "score": 1340.1070986110035,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 4,
      "variant": "thinking"
     },
     "lmarena_webdev": {
@@ -20829,9 +20829,9 @@
   }
  ],
  "cross_meta": {
-  "total_models": 420,
+  "total_models": 421,
   "multi_board": 118,
-  "single_board": 302,
+  "single_board": 303,
   "min_boards": 2,
   "boards": [
    "lmarena_text",
