@@ -23,12 +23,17 @@ data/manual/<source>.json 是抓取全部失败时的最后一级兜底，但它
 """
 
 import datetime
-import json
 import os
-import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+
+from common import read_json, write_json   # noqa: E402  统一 JSON 读写（原脚本自带一份）
+from gh_util import (                       # noqa: E402  gh 调用与 Issue 查找
+    gh, find_labeled_issue, ensure_label, comment_and_close,
+)
+
 ROOT = os.path.dirname(HERE)
 MANUAL_DIR = os.path.join(ROOT, "data", "manual")
 STATE_PATH = os.path.join(ROOT, "data", "state", "manual_check.json")
@@ -37,30 +42,9 @@ LABEL = "manual-stale"
 STALE_DAYS = 45
 
 
-def gh(*args, check=False):
-    try:
-        out = subprocess.run(["gh", *args], capture_output=True, text=True, timeout=60)
-    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
-        print(f"[WARN] gh 调用不可用: {exc}", file=sys.stderr)
-        return None
-    if out.returncode != 0 and check:
-        print(f"[WARN] gh {' '.join(args)} -> {out.stderr.strip()}", file=sys.stderr)
-    return out.stdout.strip() if out.returncode == 0 else None
-
-
-def read_json(path, default=None):
-    try:
-        with open(path, "r", encoding="utf-8") as fh:
-            return json.load(fh)
-    except (OSError, json.JSONDecodeError):
-        return default
-
-
-def write_json(path, obj):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, ensure_ascii=False, indent=1)
-        fh.write("\n")
+def find_open_issue():
+    """保留旧名，内部转调公共实现（外部调用方无需改动）。"""
+    return find_labeled_issue(LABEL)
 
 
 def _as_of(payload):
@@ -105,18 +89,6 @@ def scan():
     return stale, fresh, skipped
 
 
-def find_open_issue():
-    out = gh("issue", "list", "--label", LABEL, "--state", "open",
-             "--json", "number,title", "--limit", "1")
-    if not out:
-        return None
-    try:
-        items = json.loads(out)
-    except json.JSONDecodeError:
-        return None
-    return items[0] if items else None
-
-
 def build_body(stale):
     lines = [
         f"**日期**：{datetime.date.today().isoformat()}",
@@ -158,9 +130,9 @@ def main():
 
     if not stale:
         if existing:
-            gh("issue", "comment", str(existing["number"]),
-               "--body", "✅ 所有人工兜底数据均已在其 `as_of` 阈值内更新，自动关闭。")
-            gh("issue", "close", str(existing["number"]))
+            comment_and_close(
+                existing,
+                "✅ 所有人工兜底数据均已在其 `as_of` 阈值内更新，自动关闭。")
             print(f"[INFO] 人工数据均新鲜，关闭 issue #{existing['number']}")
         else:
             print("[INFO] 人工数据均新鲜，无遗留 issue。")
@@ -174,8 +146,7 @@ def main():
         else:
             print(f"[INFO] 过期集合未变（{stale_sources}），跳过评论以避免刷屏")
     else:
-        gh("label", "create", LABEL, "--color", "D4C5F9",
-           "--description", "人工兜底数据已过期，需按上游最新期更新", "--force")
+        ensure_label(LABEL, "D4C5F9", "人工兜底数据已过期，需按上游最新期更新")
         title = f"人工兜底数据过期：{len(stale)} 项（{datetime.date.today().isoformat()}）"
         out = gh("issue", "create", "--label", LABEL, "--title", title, "--body", body)
         print(f"[INFO] 已创建人工数据过期 issue：{out or '(gh 不可用)'}")

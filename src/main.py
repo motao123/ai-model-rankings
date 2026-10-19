@@ -30,6 +30,7 @@ from common import (  # noqa: E402
     latest_snapshot_before, load_manual, snapshot_path,
 )
 from models import enrich, canonical_id, registry_stats  # noqa: E402
+from schema import validate_meta  # noqa: E402
 import fallback as fb_engine  # noqa: E402
 
 import fetch_lmarena  # noqa: E402
@@ -336,9 +337,28 @@ def _add_trend(payload, source_id, date_str):
 
 
 def _degrade(source_id, date_str, error, failures, collected, status="fallback"):
-    """执行降级链并把结果记入 collected / failures。"""
+    """执行降级链并把结果记入 collected / failures。
+
+    兜底数据同样要过数据契约。理由：降级链的目的是「用可信的旧数据顶上」，
+    而不是「来什么显示什么」。LKG 层的定义本就是「通过契约的批次」，
+    若兜底数据绕过契约检查，那么一份 meta 字段拼错的 manual JSON 会被
+    提升进展示层——这恰好是 P0-2 要消除的那类静默失败，只是换了个入口。
+
+    这里只校验 meta 契约（行级契约在 LKG 晋级时已保证，且历史快照可能
+    因上游合理缩榜而低于当下阈值，用行级阈值会误杀有效的兜底数据）。
+    """
     payload, layer = _fallback_payload(source_id, date_str)
     if payload:
+        meta_reasons = validate_meta(source_id, payload)
+        if meta_reasons:
+            # 兜底数据自身残缺：不用它，改记为彻底失败，避免展示半残数据
+            warn(f"[降级/{source_id}] 兜底层 {layer} 数据未过 meta 契约: "
+                 f"{'; '.join(meta_reasons)}")
+            failures.append({"source": source_id, "status": "failed",
+                             "layer": layer,
+                             "error": error + "；且兜底数据 meta 契约不通过: "
+                                       + "; ".join(meta_reasons)})
+            return
         collected[source_id] = _add_trend(payload, source_id, date_str)
         failures.append({"source": source_id, "status": status,
                          "layer": layer, "error": error})

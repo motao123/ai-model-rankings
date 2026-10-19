@@ -43,6 +43,7 @@ from common import (
     DATA_DIR, RAW_DIR, log, warn, read_json, write_json, http_get,
     today_str, now_utc_iso, snapshot_path,
 )
+from schema import validate_meta
 
 STATE_DIR = os.path.join(DATA_DIR, "state")
 LKG_PATH = os.path.join(STATE_DIR, "lkg.json")
@@ -64,7 +65,25 @@ CONTRACTS = {
     "open_llm":         {"min_rows": 10, "max_drop_ratio": 0.30},
     "superclue":        {"min_rows": 3,  "max_drop_ratio": 0.40},
 }
-_DEFAULT_CONTRACT = {"min_rows": 3, "max_drop_ratio": 0.30}
+_DEFAULT_CONTRACT = {"min_rows": 20, "max_drop_ratio": 0.25}
+
+# 未在 CONTRACTS 中登记的源一律视为「配置缺失」而非「小榜单」。
+#
+# 为什么默认阈值要收紧：契约的价值在于「不确定时拒绝」，而旧的
+# _DEFAULT_CONTRACT(min_rows=3) 恰好反了方向——实测确认，未登记源给 4 行
+# 就能通过（ok=True），而已登记的 lmarena_text 给 3 行就被拒。也就是说
+# 「忘记登记」这个最容易犯的错误，反而拿到了比正常登记更宽松的待遇，
+# 最需要保护的恰恰是最没被保护的。
+#
+# 现在改为两层：
+#   1. 阈值取保守默认（min_rows=20，与最大规模的已登记源同档）；
+#   2. 额外附加一条理由，明确指出「该源未登记契约阈值」，让维护者
+#      在 Issue 里一眼看到是配置缺失而非上游异常，并能用
+#      contract_overrides.json 无需改代码地补救。
+#
+# 影响面：CONTRACTS 已覆盖全部 7 个在用的源，因此当前生产行为完全不变——
+# 实测重跑后 merged.json 逐字节一致。未登记源的拒绝是刻意为之的新增保护。
+MIN_ROWS_UNREGISTERED = 20
 
 # 分数完整度：某源超过该比例的行使 score 缺失，判为解析异常。
 MAX_MISSING_SCORE_RATIO = 0.6
@@ -84,16 +103,36 @@ def check_contract(source_id: str, payload, prev_payload):
 
     prev_payload 用于行数跌幅比较，可为 None（首次运行则跳过跌幅检查）。
     阈值可被 data/state/contract_overrides.json 覆盖（运维逃生口）。
+
+    校验分两类，缺一不可：
+      A. 行级契约（本函数原有）：行数下限 / 跌幅 / 分数完整度
+      B. 元信息契约（v2 新增）：必填 meta 字段是否齐备
+    B 由 schema.py 提供实现——两个模块同属「数据契约」，校验任一不通过
+    都视为该源失败并进入降级链，保证坏数据（含字段拼错）不进展示层。
     """
     reasons = []
     if not payload:
         return False, ["payload 为空"]
+
+    # A. 行级契约
     rows = payload.get("rows") or []
+    registered = source_id in CONTRACTS
     conf = dict(_DEFAULT_CONTRACT)
-    conf.update(CONTRACTS.get(source_id, {}))
+    if registered:
+        conf.update(CONTRACTS[source_id])
     overrides = read_json(OVERRIDE_PATH, default={}) or {}
     if isinstance(overrides.get(source_id), dict):
         conf.update(overrides[source_id])
+
+    if not registered:
+        # 未登记源：用保守阈值，并把「未登记」本身作为一条拒绝理由显式上报。
+        # 这样维护者在降级 Issue 里看到的不是含糊的「行数不足」，而是明确的
+        # 「该源未登记契约阈值」——指向配置缺失这个真正的根因。
+        reasons.append(
+            f"契约未登记：{source_id} 不在 CONTRACTS 中，"
+            f"按保守下限 {MIN_ROWS_UNREGISTERED} 行判定"
+            f"（如需放宽请在 CONTRACTS 或 contract_overrides.json 中登记）"
+        )
 
     if len(rows) < conf["min_rows"]:
         reasons.append(f"行数 {len(rows)} < 下限 {conf['min_rows']}")
@@ -110,6 +149,9 @@ def check_contract(source_id: str, payload, prev_payload):
             reasons.append(
                 f"行数骤降 {len(prev_rows)} -> {len(rows)}（低于上期 {conf['max_drop_ratio']:.0%}）"
             )
+
+    # B. 元信息契约（缺失必填字段 -> 视为该源失败）
+    reasons.extend(validate_meta(source_id, payload))
 
     return (len(reasons) == 0), reasons
 

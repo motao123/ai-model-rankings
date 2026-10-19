@@ -13,10 +13,16 @@
 
 import json
 import os
-import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+
+from common import read_json          # noqa: E402  统一 JSON 读取（原脚本自带一份）
+from gh_util import (                   # noqa: E402  gh 调用与 Issue 查找
+    gh, find_labeled_issue, ensure_label, comment_and_close,
+)
+
 FAILREPORT = os.path.join(HERE, "..", "data", "state", "failures.json")
 LABEL = "data-degraded"
 LAYER_TXT = {
@@ -27,35 +33,13 @@ LAYER_TXT = {
 }
 
 
-def gh(*args, check=False):
-    try:
-        out = subprocess.run(["gh", *args], capture_output=True, text=True, timeout=60)
-    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
-        print(f"[WARN] gh 调用不可用: {exc}", file=sys.stderr)
-        return None
-    if out.returncode != 0 and check:
-        print(f"[WARN] gh {' '.join(args)} -> {out.stderr.strip()}", file=sys.stderr)
-    return out.stdout.strip() if out.returncode == 0 else None
-
-
 def find_open_issue():
-    out = gh("issue", "list", "--label", LABEL, "--state", "open",
-             "--json", "number,title", "--limit", "1")
-    if not out:
-        return None
-    try:
-        items = json.loads(out)
-    except json.JSONDecodeError:
-        return None
-    return items[0] if items else None
+    """保留旧名，内部转调公共实现（外部调用方无需改动）。"""
+    return find_labeled_issue(LABEL)
 
 
 def read_report():
-    try:
-        with open(FAILREPORT, "r", encoding="utf-8") as fh:
-            return json.load(fh)
-    except (OSError, json.JSONDecodeError):
-        return None
+    return read_json(FAILREPORT)
 
 
 def build_body(rep):
@@ -92,9 +76,9 @@ def main():
     degraded = rep.get("degraded", 0)
     if degraded == 0:
         if existing:
-            gh("issue", "comment", str(existing["number"]),
-               "--body", f"✅ {rep.get('date')} 定时抓取已全部恢复，无降级。自动关闭。")
-            gh("issue", "close", str(existing["number"]))
+            comment_and_close(
+                existing,
+                f"✅ {rep.get('date')} 定时抓取已全部恢复，无降级。自动关闭。")
             print(f"[INFO] 已恢复，关闭 issue #{existing['number']}")
         else:
             print("[INFO] 无降级且无遗留 issue。")
@@ -106,8 +90,7 @@ def main():
         gh("issue", "comment", str(existing["number"]), "--body", body)
         print(f"[INFO] 已在 issue #{existing['number']} 追加降级报告")
     else:
-        gh("label", "create", LABEL, "--color", "FBCA04",
-           "--description", "定时抓取有数据源降级", "--force")
+        ensure_label(LABEL, "FBCA04", "定时抓取有数据源降级")
         out = gh("issue", "create", "--label", LABEL, "--title", title, "--body", body)
         print(f"[INFO] 已创建降级 issue：{out or '(gh 不可用)'}")
 
