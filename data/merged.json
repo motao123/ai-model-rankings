@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-18T02:39:48Z",
- "date": "2026-10-18",
+ "generated_at": "2026-10-19T02:52:49Z",
+ "date": "2026-10-19",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-18T02:39:15Z",
+   "fetched_at": "2026-10-19T02:52:11Z",
    "publish_date": "2026-10-15",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9189,9 +9189,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-10-18T02:39:18Z",
-   "publish_date": "2026-10-18",
-   "compared_with": "2026-10-17",
+   "fetched_at": "2026-10-19T02:52:14Z",
+   "publish_date": "2026-10-19",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9390,7 +9390,7 @@
      "slug": "deepseek-v4-1-flash",
      "label": "DeepSeek V4.1 Flash (max)",
      "score": 39.46,
-     "price": 0.26522527009606844,
+     "price": 0.485662249576018,
      "rank": 10,
      "id": "deepseek-v4.1-flash",
      "display_name": "DeepSeek V4.1-Flash",
@@ -9415,9 +9415,9 @@
    "source_url": "https://www.superclueai.com/generalpage",
    "dataset_url": "https://www.superclueai.com/data/generalboard/",
    "license": "© SuperCLUE，本站仅聚合展示",
-   "fetched_at": "2026-10-18T02:39:48Z",
+   "fetched_at": "2026-10-19T02:52:48Z",
    "publish_date": "2026-07-01",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9765,9 +9765,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-18T02:39:17Z",
+   "fetched_at": "2026-10-19T02:52:13Z",
    "publish_date": "2026-10-16",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -10172,7 +10172,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -10194,7 +10194,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -10458,7 +10458,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -10480,7 +10480,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -10502,7 +10502,7 @@
      "open": true,
      "variant": "high, 20260813",
      "registered": true,
-     "trend": 38,
+     "trend": 39,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -10524,7 +10524,7 @@
      "open": true,
      "variant": "high",
      "registered": true,
-     "trend": 48,
+     "trend": 50,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -10546,7 +10546,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -10590,7 +10590,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 2,
+     "trend": 1,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -10612,7 +10612,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -10700,7 +10700,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -10722,7 +10722,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -10876,7 +10876,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 52,
+     "trend": 54,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -10920,7 +10920,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 50,
+     "trend": 52,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -10964,7 +10964,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 16,
+     "trend": 17,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -10987,7 +10987,7 @@
      "variant": "max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
     },
@@ -11008,7 +11008,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
@@ -11030,7 +11030,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
@@ -11052,7 +11052,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 52,
+     "trend": 54,
      "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
@@ -11074,7 +11074,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 15,
+     "trend": 16,
      "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
@@ -11097,7 +11097,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 60,
      "tie_size": 1
     },
@@ -11118,7 +11118,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 13,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 61,
      "tie_size": 1
@@ -11140,7 +11140,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 62,
      "tie_size": 1
@@ -11184,7 +11184,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 64,
      "tie_size": 1
@@ -11206,7 +11206,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 65,
      "tie_size": 1
@@ -11228,7 +11228,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 66,
      "tie_size": 1
@@ -11250,7 +11250,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 67,
      "tie_size": 1
@@ -11272,7 +11272,7 @@
      "open": true,
      "variant": "high / preview",
      "registered": true,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 68,
      "tie_size": 1
@@ -11294,7 +11294,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 33,
+     "trend": 35,
      "is_new": false,
      "tie_rank": 69,
      "tie_size": 1
@@ -11316,7 +11316,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 70,
      "tie_size": 1
@@ -11338,7 +11338,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 71,
      "tie_size": 1
@@ -11360,7 +11360,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 72,
      "tie_size": 1
@@ -11382,7 +11382,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 73,
      "tie_size": 1
@@ -11404,7 +11404,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 28,
+     "trend": 30,
      "is_new": false,
      "tie_rank": 74,
      "tie_size": 1
@@ -11426,7 +11426,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 75,
      "tie_size": 1
@@ -11470,7 +11470,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 22,
+     "trend": 24,
      "is_new": false,
      "tie_rank": 77,
      "tie_size": 1
@@ -11492,7 +11492,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 78,
      "tie_size": 1
@@ -11515,7 +11515,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 79,
      "tie_size": 1
     },
@@ -11536,7 +11536,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": -2,
+     "trend": 10,
      "is_new": false,
      "tie_rank": 80,
      "tie_size": 1
@@ -11558,7 +11558,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 81,
      "tie_size": 1
@@ -11580,7 +11580,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 82,
      "tie_size": 1
@@ -11602,7 +11602,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 83,
      "tie_size": 1
@@ -11624,7 +11624,7 @@
      "open": true,
      "variant": "high / preview",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 84,
      "tie_size": 1
@@ -11646,7 +11646,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 17,
+     "trend": 19,
      "is_new": false,
      "tie_rank": 85,
      "tie_size": 1
@@ -11668,7 +11668,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 29,
+     "trend": 31,
      "is_new": false,
      "tie_rank": 86,
      "tie_size": 1
@@ -11690,7 +11690,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 87,
      "tie_size": 1
@@ -11712,7 +11712,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 88,
      "tie_size": 1
@@ -11734,7 +11734,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": 13,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 89,
      "tie_size": 1
@@ -11756,7 +11756,7 @@
      "open": true,
      "variant": "instant",
      "registered": true,
-     "trend": -12,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 90,
      "tie_size": 1
@@ -11778,7 +11778,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 11,
+     "trend": 13,
      "is_new": false,
      "tie_rank": 91,
      "tie_size": 1
@@ -11800,7 +11800,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 92,
      "tie_size": 1
@@ -11822,7 +11822,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 93,
      "tie_size": 1
@@ -11844,7 +11844,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 94,
      "tie_size": 1
@@ -11866,7 +11866,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 7,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 95,
      "tie_size": 1
@@ -11888,7 +11888,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 35,
+     "trend": 37,
      "is_new": false,
      "tie_rank": 96,
      "tie_size": 1
@@ -11911,7 +11911,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 97,
      "tie_size": 1
     },
@@ -11932,7 +11932,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 98,
      "tie_size": 1
@@ -11954,7 +11954,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 99,
      "tie_size": 1
@@ -11976,7 +11976,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 100,
      "tie_size": 1
@@ -11998,7 +11998,7 @@
      "open": false,
      "variant": "minimal",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 101,
      "tie_size": 1
@@ -12020,7 +12020,7 @@
      "open": true,
      "variant": "preview",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 102,
      "tie_size": 1
@@ -12042,7 +12042,7 @@
      "open": false,
      "variant": "reasoning, 0309 / beta",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 103,
      "tie_size": 1
@@ -12064,7 +12064,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 104,
      "tie_size": 1
@@ -12086,7 +12086,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 105,
      "tie_size": 1
@@ -12108,7 +12108,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 106,
      "tie_size": 1
@@ -12130,7 +12130,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": 18,
+     "trend": 20,
      "is_new": false,
      "tie_rank": 107,
      "tie_size": 1
@@ -12152,7 +12152,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 108,
      "tie_size": 1
@@ -12174,7 +12174,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 109,
      "tie_size": 1
@@ -12196,7 +12196,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 110,
      "tie_size": 1
@@ -12218,7 +12218,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 111,
      "tie_size": 1
@@ -12240,7 +12240,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 112,
      "tie_size": 1
@@ -12262,7 +12262,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 113,
      "tie_size": 1
@@ -12284,7 +12284,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 114,
      "tie_size": 1
@@ -12306,7 +12306,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 16,
+     "trend": 18,
      "is_new": false,
      "tie_rank": 115,
      "tie_size": 1
@@ -12328,7 +12328,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 116,
      "tie_size": 1
@@ -12350,7 +12350,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 117,
      "tie_size": 1
@@ -12372,7 +12372,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 13,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 118,
      "tie_size": 1
@@ -12394,7 +12394,7 @@
      "open": true,
      "variant": "non-thinking",
      "registered": true,
-     "trend": 4,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 119,
      "tie_size": 1
@@ -12416,7 +12416,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 120,
      "tie_size": 1
@@ -12438,7 +12438,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 4,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 121,
      "tie_size": 1
@@ -12460,7 +12460,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 122,
      "tie_size": 1
@@ -12482,7 +12482,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 123,
      "tie_size": 1
@@ -12504,7 +12504,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 124,
      "tie_size": 1
@@ -12526,7 +12526,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 125,
      "tie_size": 1
@@ -12548,7 +12548,7 @@
      "open": true,
      "variant": "instruct",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 126,
      "tie_size": 1
@@ -12570,7 +12570,7 @@
      "open": true,
      "variant": "exp",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 127,
      "tie_size": 1
@@ -12592,7 +12592,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 128,
      "tie_size": 1
@@ -12614,7 +12614,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 129,
      "tie_size": 1
@@ -12636,7 +12636,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 130,
      "tie_size": 1
@@ -12658,7 +12658,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 131,
      "tie_size": 1
@@ -12680,7 +12680,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 132,
      "tie_size": 1
@@ -12702,7 +12702,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 133,
      "tie_size": 1
@@ -12724,7 +12724,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 134,
      "tie_size": 1
@@ -12746,7 +12746,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 135,
      "tie_size": 1
@@ -12768,7 +12768,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 136,
      "tie_size": 1
@@ -12790,7 +12790,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 137,
      "tie_size": 1
@@ -12812,7 +12812,7 @@
      "open": false,
      "variant": "thinking",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 138,
      "tie_size": 1
@@ -12834,7 +12834,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 139,
      "tie_size": 1
@@ -12856,7 +12856,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 140,
      "tie_size": 1
@@ -12878,7 +12878,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 141,
      "tie_size": 1
@@ -12900,7 +12900,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 142,
      "tie_size": 1
@@ -12922,7 +12922,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 143,
      "tie_size": 1
@@ -12945,7 +12945,7 @@
      "variant": "medium",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 144,
      "tie_size": 1
     }
@@ -12959,9 +12959,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-18T02:39:17Z",
+   "fetched_at": "2026-10-19T02:52:13Z",
    "publish_date": "2026-10-16",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13014,7 +13014,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 2,
      "tie_size": 1
@@ -13058,7 +13058,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
@@ -13080,7 +13080,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
@@ -13212,7 +13212,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -13234,7 +13234,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
@@ -13256,7 +13256,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -13278,7 +13278,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 14,
      "tie_size": 1
@@ -13300,7 +13300,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -13322,7 +13322,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -13344,7 +13344,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 16,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -13366,7 +13366,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -13388,7 +13388,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -13410,7 +13410,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -13432,7 +13432,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -13454,7 +13454,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -13476,7 +13476,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -13520,7 +13520,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 25,
      "tie_size": 1
@@ -13542,7 +13542,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -13564,7 +13564,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 10,
+     "trend": 8,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -13586,7 +13586,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -13608,7 +13608,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 8,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -13630,7 +13630,7 @@
      "open": true,
      "variant": "high, 20260813",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -13652,7 +13652,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -13674,7 +13674,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -13696,7 +13696,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -13718,7 +13718,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -13740,7 +13740,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -13762,7 +13762,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -13784,7 +13784,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -13807,7 +13807,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
     },
@@ -13828,7 +13828,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -13850,7 +13850,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -13872,7 +13872,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -13894,7 +13894,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -13916,7 +13916,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": 4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -13938,7 +13938,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -13960,7 +13960,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -13982,7 +13982,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -14004,7 +14004,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -14026,7 +14026,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -14048,7 +14048,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
@@ -14070,7 +14070,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -14092,7 +14092,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
@@ -14114,7 +14114,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -14129,9 +14129,9 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dataset_url": "https://livecodebench.github.io/performances_generation.json",
    "license": "官方公开数据",
-   "fetched_at": "2026-10-18T02:39:18Z",
+   "fetched_at": "2026-10-19T02:52:14Z",
    "publish_date": "2025-04-07",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -14687,9 +14687,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-10-18T02:39:43Z",
+   "fetched_at": "2026-10-19T02:52:43Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-10-17",
+   "compared_with": "2026-10-18",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -14758,6 +14758,33 @@
      "tie_size": 1
     },
     {
+     "model": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "organization": "dfurman",
+     "score": 51.23,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 81.6327344778521,
+      "bbh": 61.92476379259157,
+      "math": 40.6344410876133,
+      "gpqa": 20.022371364653242,
+      "musr": 36.37213541666666,
+      "mmlu_pro": 66.80149231678487
+     },
+     "rank": 3,
+     "id": "dfurmancalmerys78borpov01",
+     "display_name": "dfurman/CalmeRys-78B-Orpo-v0.1",
+     "vendor": "未标注",
+     "vendor_raw": "dfurman",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 3,
+     "tie_size": 1
+    },
+    {
      "model": "MaziyarPanahi/calme-2.4-rys-78b",
      "organization": "MaziyarPanahi",
      "score": 50.77,
@@ -14770,7 +14797,7 @@
       "musr": 34.56614583333333,
       "mmlu_pro": 66.690676713948
      },
-     "rank": 3,
+     "rank": 4,
      "id": "maziyarpanahicalme24rys78b",
      "display_name": "MaziyarPanahi/calme-2.4-rys-78b",
      "vendor": "未标注",
@@ -14779,9 +14806,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": -1,
      "is_new": false,
-     "tie_rank": 3,
+     "tie_rank": 4,
+     "tie_size": 1
+    },
+    {
+     "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "organization": "huihui-ai",
+     "score": 48.11,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 85.92667455684251,
+      "bbh": 60.487869412693875,
+      "math": 60.12084592145015,
+      "gpqa": 19.35123042505593,
+      "musr": 12.342187500000003,
+      "mmlu_pro": 50.410017730496456
+     },
+     "rank": 5,
+     "id": "huihuiaiqwen2572binstructabliterated",
+     "display_name": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "huihui-ai",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 5,
      "tie_size": 1
     },
     {
@@ -14797,7 +14851,7 @@
       "musr": 11.742187500000005,
       "mmlu_pro": 51.39812352245864
      },
-     "rank": 4,
+     "rank": 6,
      "id": "qwenqwen2572b",
      "display_name": "Qwen/Qwen2.5-72B",
      "vendor": "阿里巴巴",
@@ -14806,9 +14860,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 2,
+     "trend": -2,
      "is_new": false,
-     "tie_rank": 4,
+     "tie_rank": 6,
      "tie_size": 1
     },
     {
@@ -14824,7 +14878,7 @@
       "musr": 13.297135416666663,
       "mmlu_pro": 51.3242464539007
      },
-     "rank": 5,
+     "rank": 7,
      "id": "maziyarpanahicalme21qwen2572b",
      "display_name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
      "vendor": "阿里巴巴",
@@ -14833,9 +14887,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": -2,
      "is_new": false,
-     "tie_rank": 5,
+     "tie_rank": 7,
+     "tie_size": 1
+    },
+    {
+     "model": "ehristoforu/qwen2.5-test-32b-it",
+     "organization": "ehristoforu",
+     "score": 47.37,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 78.89499860370483,
+      "bbh": 58.28330738049858,
+      "math": 59.74320241691843,
+      "gpqa": 15.212527964205815,
+      "musr": 19.126562500000002,
+      "mmlu_pro": 52.94954196217494
+     },
+     "rank": 8,
+     "id": "ehristoforuqwen25test32bit",
+     "display_name": "ehristoforu/qwen2.5-test-32b-it",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "ehristoforu",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 8,
      "tie_size": 1
     },
     {
@@ -14851,7 +14932,7 @@
       "musr": 18.155989583333334,
       "mmlu_pro": 53.25428486997635
      },
-     "rank": 6,
+     "rank": 9,
      "id": "saxolinkbrickshorizonaiavengersv132b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
      "vendor": "未标注",
@@ -14860,9 +14941,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 3,
+     "trend": -3,
      "is_new": false,
-     "tie_rank": 6,
+     "tie_rank": 9,
      "tie_size": 1
     },
     {
@@ -14878,7 +14959,7 @@
       "musr": 12.016666666666671,
       "mmlu_pro": 51.305777186761226
      },
-     "rank": 7,
+     "rank": 10,
      "id": "maziyarpanahicalme22qwen2572b",
      "display_name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
      "vendor": "阿里巴巴",
@@ -14887,9 +14968,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 3,
+     "trend": -3,
      "is_new": false,
-     "tie_rank": 7,
+     "tie_rank": 10,
+     "tie_size": 1
+    },
+    {
+     "model": "fluently-lm/FluentlyLM-Prinum",
+     "organization": "fluently-lm",
+     "score": 47.22,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 80.9033364805383,
+      "bbh": 59.482203418427986,
+      "math": 54.003021148036254,
+      "gpqa": 18.232662192393736,
+      "musr": 17.259895833333335,
+      "mmlu_pro": 53.42050827423167
+     },
+     "rank": 11,
+     "id": "fluentlylmfluentlylmprinum",
+     "display_name": "fluently-lm/FluentlyLM-Prinum",
+     "vendor": "未标注",
+     "vendor_raw": "fluently-lm",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 11,
      "tie_size": 1
     },
     {
@@ -14905,7 +15013,7 @@
       "musr": 38.688020833333326,
       "mmlu_pro": 54.270094562647756
      },
-     "rank": 8,
+     "rank": 12,
      "id": "jungzoonat3qqwen2514binstruct1me3",
      "display_name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
      "vendor": "阿里巴巴",
@@ -14914,9 +15022,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 8,
+     "tie_rank": 12,
      "tie_size": 1
     },
     {
@@ -14932,7 +15040,7 @@
       "musr": 38.688020833333326,
       "mmlu_pro": 54.270094562647756
      },
-     "rank": 9,
+     "rank": 13,
      "id": "jungzoonat3qqwen2514bv10e3",
      "display_name": "JungZoona/T3Q-qwen2.5-14b-v1.0-e3",
      "vendor": "阿里巴巴",
@@ -14941,9 +15049,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 9,
+     "tie_rank": 13,
      "tie_size": 1
     },
     {
@@ -14959,7 +15067,7 @@
       "musr": 18.115104166666665,
       "mmlu_pro": 54.510195035460995
      },
-     "rank": 10,
+     "rank": 14,
      "id": "sakaltiultiima72b",
      "display_name": "Sakalti/ultiima-72B",
      "vendor": "未标注",
@@ -14968,9 +15076,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 10,
+     "tie_rank": 14,
      "tie_size": 1
     },
     {
@@ -14986,7 +15094,7 @@
       "musr": 14.224479166666663,
       "mmlu_pro": 52.05378250591017
      },
-     "rank": 11,
+     "rank": 15,
      "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
      "display_name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -14995,9 +15103,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 11,
+     "tie_rank": 15,
      "tie_size": 1
     },
     {
@@ -15013,7 +15121,7 @@
       "musr": 13.498958333333329,
       "mmlu_pro": 51.85062056737589
      },
-     "rank": 12,
+     "rank": 16,
      "id": "qwenqwen2532b",
      "display_name": "Qwen/Qwen2.5-32B",
      "vendor": "阿里巴巴",
@@ -15022,9 +15130,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 5,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 12,
+     "tie_rank": 16,
      "tie_size": 1
     },
     {
@@ -15040,7 +15148,7 @@
       "musr": 13.832291666666665,
       "mmlu_pro": 51.822916666666664
      },
-     "rank": 13,
+     "rank": 17,
      "id": "saxolinkbrickshorizonaiavengersv332b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
      "vendor": "未标注",
@@ -15049,9 +15157,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 6,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 13,
+     "tie_rank": 17,
      "tie_size": 1
     },
     {
@@ -15067,7 +15175,7 @@
       "musr": 13.661718749999997,
       "mmlu_pro": 51.915263002364064
      },
-     "rank": 14,
+     "rank": 18,
      "id": "saxolinkbrickshorizonaiavengersv632b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
      "vendor": "未标注",
@@ -15076,9 +15184,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 6,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 14,
+     "tie_rank": 18,
      "tie_size": 1
     },
     {
@@ -15094,7 +15202,7 @@
       "musr": 22.265885416666666,
       "mmlu_pro": 48.082890070921984
      },
-     "rank": 15,
+     "rank": 19,
      "id": "openbuddyopenbuddyllama3370bv241",
      "display_name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1",
      "vendor": "Meta",
@@ -15103,9 +15211,9 @@
      "open": null,
      "variant": "131k",
      "registered": false,
-     "trend": 7,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 15,
+     "tie_rank": 19,
      "tie_size": 1
     },
     {
@@ -15121,7 +15229,7 @@
       "musr": 20.591406250000002,
       "mmlu_pro": 52.912603427895974
      },
-     "rank": 16,
+     "rank": 20,
      "id": "saxolinkbrickshorizonaiavengersv532b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
      "vendor": "未标注",
@@ -15130,9 +15238,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 7,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 16,
+     "tie_rank": 20,
      "tie_size": 1
     },
     {
@@ -15148,7 +15256,7 @@
       "musr": 12.091145833333337,
       "mmlu_pro": 52.45087174940899
      },
-     "rank": 17,
+     "rank": 21,
      "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
      "display_name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -15157,9 +15265,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 7,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 17,
+     "tie_rank": 21,
      "tie_size": 1
     },
     {
@@ -15175,7 +15283,7 @@
       "musr": 19.465885416666666,
       "mmlu_pro": 52.8017878250591
      },
-     "rank": 18,
+     "rank": 22,
      "id": "saxolinkbrickshorizonaiavengersv432b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
      "vendor": "未标注",
@@ -15184,9 +15292,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 7,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 18,
+     "tie_rank": 22,
      "tie_size": 1
     },
     {
@@ -15202,7 +15310,7 @@
       "musr": 24.134895833333335,
       "mmlu_pro": 54.55636820330969
      },
-     "rank": 19,
+     "rank": 23,
      "id": "sakaltiultiima32b",
      "display_name": "Sakalti/ultiima-32B",
      "vendor": "未标注",
@@ -15211,9 +15319,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 7,
+     "trend": -4,
      "is_new": false,
-     "tie_rank": 19,
+     "tie_rank": 23,
+     "tie_size": 1
+    },
+    {
+     "model": "dnhkng/RYS-XLarge",
+     "organization": "dnhkng",
+     "score": 45.35,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.95662619627035,
+      "bbh": 58.77356748233938,
+      "math": 42.522658610271904,
+      "gpqa": 17.897091722595075,
+      "musr": 23.721093749999998,
+      "mmlu_pro": 49.20028073286053
+     },
+     "rank": 24,
+     "id": "dnhkngrysxlarge",
+     "display_name": "dnhkng/RYS-XLarge",
+     "vendor": "未标注",
+     "vendor_raw": "dnhkng",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 24,
      "tie_size": 1
     },
     {
@@ -15229,7 +15364,7 @@
       "musr": 18.536718749999995,
       "mmlu_pro": 56.153959810874696
      },
-     "rank": 20,
+     "rank": 25,
      "id": "sakaltiultiima72bv15",
      "display_name": "Sakalti/ultiima-72B-v1.5",
      "vendor": "未标注",
@@ -15238,9 +15373,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 20,
+     "tie_rank": 25,
      "tie_size": 1
     },
     {
@@ -15256,7 +15391,7 @@
       "musr": 21.721093749999998,
       "mmlu_pro": 53.20811170212767
      },
-     "rank": 21,
+     "rank": 26,
      "id": "finguairomboultima32b",
      "display_name": "FINGU-AI/RomboUltima-32B",
      "vendor": "未标注",
@@ -15265,9 +15400,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 21,
+     "tie_rank": 26,
      "tie_size": 1
     },
     {
@@ -15283,7 +15418,7 @@
       "musr": 18.99739583333333,
       "mmlu_pro": 49.37573877068559
      },
-     "rank": 22,
+     "rank": 27,
      "id": "maziyarpanahicalme21rys78b",
      "display_name": "MaziyarPanahi/calme-2.1-rys-78b",
      "vendor": "未标注",
@@ -15292,9 +15427,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 22,
+     "tie_rank": 27,
      "tie_size": 1
     },
     {
@@ -15310,7 +15445,7 @@
       "musr": 16.999218749999997,
       "mmlu_pro": 49.7266548463357
      },
-     "rank": 23,
+     "rank": 28,
      "id": "maziyarpanahicalme23rys78b",
      "display_name": "MaziyarPanahi/calme-2.3-rys-78b",
      "vendor": "未标注",
@@ -15319,9 +15454,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 23,
+     "tie_rank": 28,
      "tie_size": 1
     },
     {
@@ -15337,7 +15472,7 @@
       "musr": 20.15234375,
       "mmlu_pro": 49.05252659574468
      },
-     "rank": 24,
+     "rank": 29,
      "id": "maziyarpanahicalme21qwen272b",
      "display_name": "MaziyarPanahi/calme-2.1-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -15346,9 +15481,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 24,
+     "tie_rank": 29,
      "tie_size": 1
     },
     {
@@ -15364,7 +15499,7 @@
       "musr": 16.82864583333333,
       "mmlu_pro": 48.72931442080378
      },
-     "rank": 25,
+     "rank": 30,
      "id": "maziyarpanahicalme22rys78b",
      "display_name": "MaziyarPanahi/calme-2.2-rys-78b",
      "vendor": "未标注",
@@ -15373,9 +15508,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": -5,
      "is_new": false,
-     "tie_rank": 25,
+     "tie_rank": 30,
+     "tie_size": 1
+    },
+    {
+     "model": "Undi95/MG-FinalMix-72B",
+     "organization": "Undi95",
+     "score": 44.3,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 80.13648231137824,
+      "bbh": 57.502411706281976,
+      "math": 39.72809667673716,
+      "gpqa": 18.008948545861294,
+      "musr": 21.217187499999998,
+      "mmlu_pro": 49.19104609929077
+     },
+     "rank": 31,
+     "id": "undi95mgfinalmix72b",
+     "display_name": "Undi95/MG-FinalMix-72B",
+     "vendor": "未标注",
+     "vendor_raw": "Undi95",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 31,
      "tie_size": 1
     },
     {
@@ -15391,7 +15553,7 @@
       "musr": 19.730729166666666,
       "mmlu_pro": 53.47591607565011
      },
-     "rank": 26,
+     "rank": 32,
      "id": "evaunit01evaqwen2572bv02",
      "display_name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
      "vendor": "阿里巴巴",
@@ -15400,9 +15562,63 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": -6,
      "is_new": false,
-     "tie_rank": 26,
+     "tie_rank": 32,
+     "tie_size": 1
+    },
+    {
+     "model": "dfurman/Qwen2-72B-Orpo-v0.1",
+     "organization": "dfurman",
+     "score": 44.17,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 78.79759039348927,
+      "bbh": 57.41436351018751,
+      "math": 40.55891238670695,
+      "gpqa": 17.897091722595075,
+      "musr": 20.87005208333333,
+      "mmlu_pro": 49.49578900709219
+     },
+     "rank": 33,
+     "id": "dfurmanqwen272borpov01",
+     "display_name": "dfurman/Qwen2-72B-Orpo-v0.1",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "dfurman",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 33,
+     "tie_size": 1
+    },
+    {
+     "model": "dnhkng/RYS-XLarge-base",
+     "organization": "dnhkng",
+     "score": 44.1,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.10233735377686,
+      "bbh": 58.692146076576385,
+      "math": 37.91540785498489,
+      "gpqa": 17.225950782997764,
+      "musr": 22.4171875,
+      "mmlu_pro": 49.22798463356975
+     },
+     "rank": 34,
+     "id": "dnhkngrysxlargebase",
+     "display_name": "dnhkng/RYS-XLarge-base",
+     "vendor": "未标注",
+     "vendor_raw": "dnhkng",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 34,
      "tie_size": 1
     },
     {
@@ -15418,7 +15634,7 @@
       "musr": 16.516927083333332,
       "mmlu_pro": 49.27415780141844
      },
-     "rank": 27,
+     "rank": 35,
      "id": "maziyarpanahicalme22qwen272b",
      "display_name": "MaziyarPanahi/calme-2.2-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -15427,9 +15643,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 12,
+     "trend": -8,
      "is_new": false,
-     "tie_rank": 27,
+     "tie_rank": 35,
+     "tie_size": 1
+    },
+    {
+     "model": "arcee-ai/Arcee-Nova",
+     "organization": "arcee-ai",
+     "score": 44.05,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 79.07485471881274,
+      "bbh": 56.74098753952074,
+      "math": 43.80664652567976,
+      "gpqa": 18.008948545861294,
+      "musr": 17.220833333333328,
+      "mmlu_pro": 49.46808510638298
+     },
+     "rank": 36,
+     "id": "arceeaiarceenova",
+     "display_name": "arcee-ai/Arcee-Nova",
+     "vendor": "未标注",
+     "vendor_raw": "arcee-ai",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 36,
      "tie_size": 1
     },
     {
@@ -15445,7 +15688,7 @@
       "musr": 18.628645833333337,
       "mmlu_pro": 50.39154846335697
      },
-     "rank": 28,
+     "rank": 37,
      "id": "steelskulll33msnevoria70b",
      "display_name": "Steelskull/L3.3-MS-Nevoria-70b",
      "vendor": "未标注",
@@ -15454,9 +15697,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 13,
+     "trend": -9,
      "is_new": false,
-     "tie_rank": 28,
+     "tie_rank": 37,
+     "tie_size": 1
+    },
+    {
+     "model": "Triangle104/Set-70b",
+     "organization": "Triangle104",
+     "score": 44.03,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 76.42954028643999,
+      "bbh": 56.88003115055037,
+      "math": 36.40483383685801,
+      "gpqa": 26.174496644295303,
+      "musr": 18.961979166666666,
+      "mmlu_pro": 49.3572695035461
+     },
+     "rank": 38,
+     "id": "triangle104set70b",
+     "display_name": "Triangle104/Set-70b",
+     "vendor": "未标注",
+     "vendor_raw": "Triangle104",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 38,
      "tie_size": 1
     },
     {
@@ -15472,7 +15742,7 @@
       "musr": 19.20520833333333,
       "mmlu_pro": 54.95345744680851
      },
-     "rank": 29,
+     "rank": 39,
      "id": "aryanneqwentileswap",
      "display_name": "Aryanne/QwentileSwap",
      "vendor": "阿里巴巴",
@@ -15481,9 +15751,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 14,
+     "trend": -10,
      "is_new": false,
-     "tie_rank": 29,
+     "tie_rank": 39,
      "tie_size": 1
     },
     {
@@ -15499,7 +15769,7 @@
       "musr": 12.669531249999999,
       "mmlu_pro": 47.224069148936174
      },
-     "rank": 30,
+     "rank": 40,
      "id": "cranmaytempmotacillacinerea",
      "display_name": "Cran-May/tempmotacilla-cinerea",
      "vendor": "未标注",
@@ -15508,9 +15778,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 14,
+     "trend": -10,
      "is_new": false,
-     "tie_rank": 30,
+     "tie_rank": 40,
      "tie_size": 1
     },
     {
@@ -15526,7 +15796,7 @@
       "musr": 20.191406249999996,
       "mmlu_pro": 49.5881353427896
      },
-     "rank": 31,
+     "rank": 41,
      "id": "steelskulll33nevoriar170b",
      "display_name": "Steelskull/L3.3-Nevoria-R1-70b",
      "vendor": "未标注",
@@ -15535,9 +15805,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 14,
+     "trend": -10,
      "is_new": false,
-     "tie_rank": 31,
+     "tie_rank": 41,
      "tie_size": 1
     },
     {
@@ -15553,7 +15823,7 @@
       "musr": 17.167968749999996,
       "mmlu_pro": 48.92324172576833
      },
-     "rank": 32,
+     "rank": 42,
      "id": "qwenqwen272b",
      "display_name": "Qwen/Qwen2-72B",
      "vendor": "阿里巴巴",
@@ -15562,9 +15832,63 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 14,
+     "trend": -10,
      "is_new": false,
-     "tie_rank": 32,
+     "tie_rank": 42,
+     "tie_size": 1
+    },
+    {
+     "model": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+     "organization": "VAGOsolutions",
+     "score": 43.41,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 86.56365111238182,
+      "bbh": 57.24162100868165,
+      "math": 36.933534743202415,
+      "gpqa": 12.192393736017896,
+      "musr": 19.38541666666666,
+      "mmlu_pro": 48.16600177304965
+     },
+     "rank": 43,
+     "id": "vagosolutionsllama31sauerkrautlm70b",
+     "display_name": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b",
+     "vendor": "Meta",
+     "vendor_raw": "VAGOsolutions",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 43,
+     "tie_size": 1
+    },
+    {
+     "model": "abacusai/Dracarys-72B-Instruct",
+     "organization": "abacusai",
+     "score": 43.38,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 78.55778224001206,
+      "bbh": 56.93552010003367,
+      "math": 39.65256797583081,
+      "gpqa": 18.791946308724835,
+      "musr": 16.81119791666666,
+      "mmlu_pro": 49.51425827423168
+     },
+     "rank": 44,
+     "id": "abacusaidracarys72b",
+     "display_name": "abacusai/Dracarys-72B",
+     "vendor": "未标注",
+     "vendor_raw": "abacusai",
+     "region": "other",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 44,
      "tie_size": 1
     },
     {
@@ -15580,7 +15904,7 @@
       "musr": 11.179427083333337,
       "mmlu_pro": 52.44163711583924
      },
-     "rank": 33,
+     "rank": 45,
      "id": "saxolinkbrickshorizonaiavengersv232b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
      "vendor": "未标注",
@@ -15589,9 +15913,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 18,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 33,
+     "tie_rank": 45,
      "tie_size": 1
     },
     {
@@ -15607,7 +15931,7 @@
       "musr": 14.757812499999998,
       "mmlu_pro": 47.23330378250591
      },
-     "rank": 34,
+     "rank": 46,
      "id": "lunzimanqlsgqwen2514bmegafusionv91",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
      "vendor": "阿里巴巴",
@@ -15616,9 +15940,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 18,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 34,
+     "tie_rank": 46,
      "tie_size": 1
     },
     {
@@ -15634,7 +15958,7 @@
       "musr": 17.06953125,
       "mmlu_pro": 49.05252659574468
      },
-     "rank": 35,
+     "rank": 47,
      "id": "maziyarpanahicalme22llama3170b",
      "display_name": "MaziyarPanahi/calme-2.2-llama3.1-70b",
      "vendor": "Meta",
@@ -15643,9 +15967,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 18,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 35,
+     "tie_rank": 47,
      "tie_size": 1
     },
     {
@@ -15661,7 +15985,7 @@
       "musr": 17.736197916666658,
       "mmlu_pro": 48.4799793144208
      },
-     "rank": 36,
+     "rank": 48,
      "id": "maziyarpanahicalme23llama3170b",
      "display_name": "MaziyarPanahi/calme-2.3-llama3.1-70b",
      "vendor": "Meta",
@@ -15670,9 +15994,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 18,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 36,
+     "tie_rank": 48,
      "tie_size": 1
     },
     {
@@ -15688,7 +16012,7 @@
       "musr": 15.261718749999995,
       "mmlu_pro": 47.593454491725765
      },
-     "rank": 37,
+     "rank": 49,
      "id": "lunzimanqlsgqwen2514bmegafusionv92",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
      "vendor": "阿里巴巴",
@@ -15697,9 +16021,36 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 18,
+     "trend": -12,
      "is_new": false,
-     "tie_rank": 37,
+     "tie_rank": 49,
+     "tie_size": 1
+    },
+    {
+     "model": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "organization": "YOYO-AI",
+     "score": 43.14,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 83.64605912312663,
+      "bbh": 50.26935344231426,
+      "math": 53.92749244712991,
+      "gpqa": 8.612975391498878,
+      "musr": 15.661718749999997,
+      "mmlu_pro": 46.706929669030735
+     },
+     "rank": 50,
+     "id": "yoyoaizyhllmqwen2514bv4",
+     "display_name": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "YOYO-AI",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 50,
      "tie_size": 1
     },
     {
@@ -15715,7 +16066,7 @@
       "musr": 15.157812499999997,
       "mmlu_pro": 47.131722813238774
      },
-     "rank": 38,
+     "rank": 51,
      "id": "lunzimanqlsgqwen2514bmegafusionv87",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
      "vendor": "阿里巴巴",
@@ -15724,9 +16075,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 19,
+     "trend": -13,
      "is_new": false,
-     "tie_rank": 38,
+     "tie_rank": 51,
      "tie_size": 1
     },
     {
@@ -15742,7 +16093,7 @@
       "musr": 21.42083333333333,
       "mmlu_pro": 48.646202718676115
      },
-     "rank": 39,
+     "rank": 52,
      "id": "sao10k70bl33cirrusx1",
      "display_name": "Sao10K/70B-L3.3-Cirrus-x1",
      "vendor": "未标注",
@@ -15751,9 +16102,90 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 19,
+     "trend": -13,
      "is_new": false,
-     "tie_rank": 39,
+     "tie_rank": 52,
+     "tie_size": 1
+    },
+    {
+     "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "organization": "Tarek07",
+     "score": 43.0,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.06064796960952,
+      "bbh": 56.24697023586278,
+      "math": 35.725075528700906,
+      "gpqa": 27.740492170022367,
+      "musr": 19.62864583333333,
+      "mmlu_pro": 49.61583924349882
+     },
+     "rank": 53,
+     "id": "tarek07progenitorv11llama70b",
+     "display_name": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "vendor": "Meta",
+     "vendor_raw": "Tarek07",
+     "region": "us",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 53,
+     "tie_size": 1
+    },
+    {
+     "model": "anthracite-org/magnum-v1-72b",
+     "organization": "anthracite-org",
+     "score": 42.96,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 76.06484128778308,
+      "bbh": 57.653184855142705,
+      "math": 39.803625377643506,
+      "gpqa": 18.791946308724835,
+      "musr": 15.617187499999998,
+      "mmlu_pro": 49.84670508274232
+     },
+     "rank": 54,
+     "id": "anthraciteorgmagnumv172b",
+     "display_name": "anthracite-org/magnum-v1-72b",
+     "vendor": "未标注",
+     "vendor_raw": "anthracite-org",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 54,
+     "tie_size": 1
+    },
+    {
+     "model": "alpindale/magnum-72b-v1",
+     "organization": "alpindale",
+     "score": 42.93,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 76.06484128778308,
+      "bbh": 57.653184855142705,
+      "math": 39.803625377643506,
+      "gpqa": 18.791946308724835,
+      "musr": 15.617187499999998,
+      "mmlu_pro": 49.64354314420804
+     },
+     "rank": 55,
+     "id": "alpindalemagnum72bv1",
+     "display_name": "alpindale/magnum-72b-v1",
+     "vendor": "未标注",
+     "vendor_raw": "alpindale",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 55,
      "tie_size": 1
     },
     {
@@ -15769,7 +16201,7 @@
       "musr": 15.18723958333333,
       "mmlu_pro": 46.734633569739955
      },
-     "rank": 40,
+     "rank": 56,
      "id": "lunzimanqlsgqwen2514bmegafusionv8",
      "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8",
      "vendor": "阿里巴巴",
@@ -15778,9 +16210,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 40,
+     "trend": -16,
+     "is_new": false,
+     "tie_rank": 56,
      "tie_size": 1
     },
     {
@@ -15796,7 +16228,7 @@
       "musr": 21.395572916666662,
       "mmlu_pro": 46.36524822695035
      },
-     "rank": 41,
+     "rank": 57,
      "id": "daemontatoxllama3370bcognilink",
      "display_name": "Daemontatox/Llama3.3-70B-CogniLink",
      "vendor": "Meta",
@@ -15805,462 +16237,30 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 41,
-     "tie_size": 1
-    },
-    {
-     "model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
-     "organization": "Goekdeniz-Guelmez",
-     "score": 42.55,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 82.91666112581285,
-      "bbh": 48.05226992969286,
-      "math": 54.229607250755286,
-      "gpqa": 12.304250559284117,
-      "musr": 13.15,
-      "mmlu_pro": 44.64760638297872
-     },
-     "rank": 42,
-     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
-     "display_name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Goekdeniz-Guelmez",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 42,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
-     "organization": "Lunzima",
-     "score": 42.52,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 79.93413032974729,
-      "bbh": 49.946869654224066,
-      "math": 53.70090634441088,
-      "gpqa": 10.626398210290827,
-      "musr": 14.269531249999995,
-      "mmlu_pro": 46.660756501182036
-     },
-     "rank": 43,
-     "id": "lunzimanqlsgqwen2514bmegafusionv89",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.9",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 43,
-     "tie_size": 1
-    },
-    {
-     "model": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
-     "organization": "BenevolenceMessiah",
-     "score": 42.27,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 54.73499204333391,
-      "bbh": 61.91149453060484,
-      "math": 57.85498489425982,
-      "gpqa": 15.659955257270694,
-      "musr": 12.016666666666671,
-      "mmlu_pro": 51.425827423167846
-     },
-     "rank": 44,
-     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
-     "display_name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "BenevolenceMessiah",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 44,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Fugazi14b",
-     "organization": "Quazim0t0",
-     "score": 41.94,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 69.97987561891337,
-      "bbh": 56.092125930693726,
-      "math": 46.52567975830816,
-      "gpqa": 13.534675615212524,
-      "musr": 16.419010416666662,
-      "mmlu_pro": 49.0802304964539
-     },
-     "rank": 45,
-     "id": "quazim0t0fugazi14b",
-     "display_name": "Quazim0t0/Fugazi14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 45,
-     "tie_size": 1
-    },
-    {
-     "model": "1024m/QWEN-14B-B100",
-     "organization": "1024m",
-     "score": 41.92,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 77.62104549262622,
-      "bbh": 49.77664782103219,
-      "math": 54.38066465256798,
-      "gpqa": 13.422818791946312,
-      "musr": 9.883333333333335,
-      "mmlu_pro": 46.429890661938536
-     },
-     "rank": 46,
-     "id": "1024mqwen14bb100",
-     "display_name": "1024m/QWEN-14B-B100",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "1024m",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 46,
-     "tie_size": 1
-    },
-    {
-     "model": "Sakalti/Saka-14B",
-     "organization": "Sakalti",
-     "score": 41.91,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 71.74341857382856,
-      "bbh": 49.72322791125956,
-      "math": 40.93655589123867,
-      "gpqa": 19.463087248322143,
-      "musr": 20.740885416666668,
-      "mmlu_pro": 48.84013002364066
-     },
-     "rank": 47,
-     "id": "sakaltisaka14b",
-     "display_name": "Sakalti/Saka-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Sakalti",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 47,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Rune-14b",
-     "organization": "Quazim0t0",
-     "score": 41.82,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.15973173402128,
-      "bbh": 56.053987787163095,
-      "math": 45.84592145015105,
-      "gpqa": 13.534675615212524,
-      "musr": 16.29348958333333,
-      "mmlu_pro": 49.01558806146573
-     },
-     "rank": 48,
-     "id": "quazim0t0rune14b",
-     "display_name": "Quazim0t0/Rune-14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 48,
-     "tie_size": 1
-    },
-    {
-     "model": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "organization": "CombinHorizon",
-     "score": 41.77,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 82.39958864701215,
-      "bbh": 48.19594986631396,
-      "math": 53.17220543806647,
-      "gpqa": 9.955257270693513,
-      "musr": 12.65390625,
-      "mmlu_pro": 44.213578605200944
-     },
-     "rank": 49,
-     "id": "combinhorizonjosiefiedabliteratedv4qwen2514binstbasemergeties",
-     "display_name": "CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "CombinHorizon",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 49,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/SuperNova14b",
-     "organization": "Quazim0t0",
-     "score": 41.68,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.7642388861554,
-      "bbh": 56.0926914908668,
-      "math": 43.957703927492446,
-      "gpqa": 13.646532438478745,
-      "musr": 16.31510416666666,
-      "mmlu_pro": 49.27415780141844
-     },
-     "rank": 50,
-     "id": "quazim0t0supernova14b",
-     "display_name": "Quazim0t0/SuperNova14b",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 50,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/Lineage-14B",
-     "organization": "Quazim0t0",
-     "score": 41.64,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.7042868477861,
-      "bbh": 56.02223040682762,
-      "math": 42.44712990936556,
-      "gpqa": 14.65324384787472,
-      "musr": 17.032812499999995,
-      "mmlu_pro": 49.006353427895974
-     },
-     "rank": 51,
-     "id": "quazim0t0lineage14b",
-     "display_name": "Quazim0t0/Lineage-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 51,
-     "tie_size": 1
-    },
-    {
-     "model": "Sakalti/Oxyge1-33B",
-     "organization": "Sakalti",
-     "score": 41.61,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 45.48265269484966,
-      "bbh": 58.03229697403189,
-      "math": 49.62235649546828,
-      "gpqa": 17.67337807606264,
-      "musr": 24.29765625,
-      "mmlu_pro": 54.547133569739955
-     },
-     "rank": 52,
-     "id": "sakaltioxyge133b",
-     "display_name": "Sakalti/Oxyge1-33B",
-     "vendor": "未标注",
-     "vendor_raw": "Sakalti",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 52,
-     "tie_size": 1
-    },
-    {
-     "model": "Qwen/Qwen2.5-14B-Instruct-1M",
-     "organization": "Qwen",
-     "score": 41.56,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 84.1356489669632,
-      "bbh": 45.658280600233155,
-      "math": 53.02114803625378,
-      "gpqa": 12.416107382550338,
-      "musr": 11.350000000000003,
-      "mmlu_pro": 42.77297576832151
-     },
-     "rank": 53,
-     "id": "qwenqwen2514b",
-     "display_name": "Qwen/Qwen2.5-14B",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Qwen",
-     "region": "cn",
-     "open": null,
-     "variant": "1m / instruct",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 53,
-     "tie_size": 1
-    },
-    {
-     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
-     "organization": "Lunzima",
-     "score": 41.55,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 70.27963581075988,
-      "bbh": 50.74642495052259,
-      "math": 42.37160120845921,
-      "gpqa": 16.778523489932887,
-      "musr": 21.06640625,
-      "mmlu_pro": 48.03671690307329
-     },
-     "rank": 54,
-     "id": "lunzimanqlsgqwen2514bmegafusionv88",
-     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.8",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "Lunzima",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 54,
-     "tie_size": 1
-    },
-    {
-     "model": "Quazim0t0/MFGRIMM-14B",
-     "organization": "Quazim0t0",
-     "score": 41.52,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 68.94074389287091,
-      "bbh": 55.52294469432744,
-      "math": 50.60422960725075,
-      "gpqa": 11.185682326621922,
-      "musr": 13.783593750000001,
-      "mmlu_pro": 49.07099586288417
-     },
-     "rank": 55,
-     "id": "quazim0t0mfgrimm14b",
-     "display_name": "Quazim0t0/MFGRIMM-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 55,
-     "tie_size": 1
-    },
-    {
-     "model": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "organization": "CombinHorizon",
-     "score": 41.47,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 81.75762532303177,
-      "bbh": 47.767346005909815,
-      "math": 54.7583081570997,
-      "gpqa": 8.612975391498878,
-      "musr": 12.453906250000001,
-      "mmlu_pro": 43.44710401891253
-     },
-     "rank": 56,
-     "id": "combinhorizonhuihuiaiabliteratedv2qwen2514binstbasemergeties",
-     "display_name": "CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "CombinHorizon",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 56,
-     "tie_size": 1
-    },
-    {
-     "model": "RDson/WomboCombo-R1-Coder-14B-Preview",
-     "organization": "RDson",
-     "score": 41.46,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 62.8557782240012,
-      "bbh": 48.154142488726684,
-      "math": 59.89425981873112,
-      "gpqa": 9.507829977628639,
-      "musr": 22.014843749999997,
-      "mmlu_pro": 46.30984042553191
-     },
-     "rank": 57,
-     "id": "rdsonwombocombor1coder14b",
-     "display_name": "RDson/WomboCombo-R1-Coder-14B",
-     "vendor": "未标注",
-     "vendor_raw": "RDson",
-     "region": "other",
-     "open": null,
-     "variant": "preview",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
+     "trend": -16,
+     "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/MFDOOM-14B",
-     "organization": "Quazim0t0",
-     "score": 41.44,
-     "type": "🤝 base merges and moerges",
+     "model": "dnhkng/RYS-Llama3.1-Large",
+     "organization": "dnhkng",
+     "score": 42.71,
+     "type": "🔶 fine-tuned on domain-specific datasets",
      "subscores": {
-      "ifeval": 67.36204382150471,
-      "bbh": 55.53057914384544,
-      "math": 52.64350453172205,
-      "gpqa": 9.731543624161072,
-      "musr": 14.207031250000005,
-      "mmlu_pro": 49.17257683215129
+      "ifeval": 84.92001223420525,
+      "bbh": 55.414864048196534,
+      "math": 35.04531722054381,
+      "gpqa": 16.554809843400445,
+      "musr": 17.091145833333332,
+      "mmlu_pro": 47.205599881796694
      },
      "rank": 58,
-     "id": "quazim0t0mfdoom14b",
-     "display_name": "Quazim0t0/MFDOOM-14B",
-     "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
-     "region": "other",
+     "id": "dnhkngrysllama31large",
+     "display_name": "dnhkng/RYS-Llama3.1-Large",
+     "vendor": "Meta",
+     "vendor_raw": "dnhkng",
+     "region": "us",
      "open": null,
      "variant": null,
      "registered": false,
@@ -16270,23 +16270,23 @@
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/Nova-14b-sce",
-     "organization": "Quazim0t0",
-     "score": 41.41,
-     "type": "🔶 fine-tuned on domain-specific datasets",
+     "model": "hotmailuser/RombosBeagle-v2beta-MGS-32B",
+     "organization": "hotmailuser",
+     "score": 42.66,
+     "type": "🤝 base merges and moerges",
      "subscores": {
-      "ifeval": 70.2196837723906,
-      "bbh": 56.034331914713114,
-      "math": 41.616314199395774,
-      "gpqa": 15.100671140939594,
-      "musr": 16.4328125,
-      "mmlu_pro": 49.03405732860521
+      "ifeval": 51.567618363719376,
+      "bbh": 58.117898971791085,
+      "math": 49.92447129909365,
+      "gpqa": 17.337807606263986,
+      "musr": 24.460416666666664,
+      "mmlu_pro": 54.52866430260048
      },
      "rank": 59,
-     "id": "quazim0t0nova14bsce",
-     "display_name": "Quazim0t0/Nova-14b-sce",
+     "id": "hotmailuserrombosbeaglev2betamgs32b",
+     "display_name": "hotmailuser/RombosBeagle-v2beta-MGS-32B",
      "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
+     "vendor_raw": "hotmailuser",
      "region": "other",
      "open": null,
      "variant": null,
@@ -16297,23 +16297,23 @@
      "tie_size": 1
     },
     {
-     "model": "Quazim0t0/Geedorah-14B",
-     "organization": "Quazim0t0",
-     "score": 41.39,
-     "type": "🤝 base merges and moerges",
+     "model": "fblgit/TheBeagle-v2beta-32B-MGS",
+     "organization": "fblgit",
+     "score": 42.64,
+     "type": "🔶 fine-tuned on domain-specific datasets",
      "subscores": {
-      "ifeval": 68.72841837435782,
-      "bbh": 56.46229284952974,
-      "math": 44.48640483383686,
-      "gpqa": 12.975391498881436,
-      "musr": 16.567968749999995,
-      "mmlu_pro": 49.1264036643026
+      "ifeval": 51.807426517196596,
+      "bbh": 58.027976201167604,
+      "math": 49.47129909365559,
+      "gpqa": 17.67337807606264,
+      "musr": 24.260416666666668,
+      "mmlu_pro": 54.61177600472813
      },
      "rank": 60,
-     "id": "quazim0t0geedorah14b",
-     "display_name": "Quazim0t0/Geedorah-14B",
+     "id": "fblgitthebeaglev2beta32bmgs",
+     "display_name": "fblgit/TheBeagle-v2beta-32B-MGS",
      "vendor": "未标注",
-     "vendor_raw": "Quazim0t0",
+     "vendor_raw": "fblgit",
      "region": "other",
      "open": null,
      "variant": null,
@@ -16433,7 +16433,7 @@
      "score": 0.027380200199623894,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16483,7 +16483,7 @@
      "score": 0.13226320826945673,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -16634,7 +16634,7 @@
      "score": 0.049356218746185024,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16682,7 +16682,7 @@
      "score": 0.03952374054034707,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16732,7 +16732,7 @@
      "score": 0.01756986111315206,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16782,7 +16782,7 @@
      "score": 0.01934605387048485,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16832,7 +16832,7 @@
      "score": -0.011620853988777428,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16882,7 +16882,7 @@
      "score": 0.022563235794060662,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -16922,7 +16922,7 @@
      "score": 1481.2916394387735,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -16930,7 +16930,7 @@
      "score": -0.08005935212985105,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -16976,7 +16976,7 @@
      "score": 1582.0032964756833,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 38,
+     "trend": 39,
      "variant": "high, 20260813"
     },
     "lmarena_agent": {
@@ -16984,7 +16984,7 @@
      "score": 0.001579587539282772,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "high, 20260813"
     }
    },
@@ -17034,7 +17034,7 @@
      "score": 0.1360358765858802,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17084,7 +17084,7 @@
      "score": 0.1413169134780025,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17127,7 +17127,7 @@
      "score": 1505.9107483086677,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 52,
+     "trend": 54,
      "variant": null
     },
     "lmarena_agent": {
@@ -17135,7 +17135,7 @@
      "score": -0.06000277717642565,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17175,7 +17175,7 @@
      "score": 1482.450057987971,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17183,7 +17183,7 @@
      "score": -0.08306635276577626,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17233,7 +17233,7 @@
      "score": 0.0320848447087976,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -17267,7 +17267,7 @@
      "score": 1630.3289125780575,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17275,7 +17275,7 @@
      "score": -0.028660430374204623,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17307,7 +17307,7 @@
      "score": 1226.3086970280572,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -17360,7 +17360,7 @@
      "score": 1581.415423218968,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 48,
+     "trend": 50,
      "variant": "high"
     }
    },
@@ -17437,7 +17437,7 @@
      "score": 1585.1875723150379,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -17445,7 +17445,7 @@
      "score": 0.037497568970106254,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17530,7 +17530,7 @@
      "score": 0.03820697783448885,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17572,7 +17572,7 @@
      "score": -0.007238297190983788,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17614,7 +17614,7 @@
      "score": -0.06413154091070737,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 4,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -17648,7 +17648,7 @@
      "score": 1446.969141652994,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_agent": {
@@ -17656,7 +17656,7 @@
      "score": -0.0399773614003877,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -17688,7 +17688,7 @@
      "score": 1542.4624340713635,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17696,7 +17696,7 @@
      "score": -0.06431719875643153,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17738,7 +17738,7 @@
      "score": -0.06259067893013835,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17774,7 +17774,7 @@
      "score": 1512.6515336242637,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 17,
      "variant": null
     },
     "lmarena_agent": {
@@ -17782,7 +17782,7 @@
      "score": 0.031380880310161126,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 14,
      "variant": "xhigh"
     }
    },
@@ -17865,7 +17865,7 @@
      "score": 1521.9055706410982,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 52,
+     "trend": 54,
      "variant": null
     },
     "lmarena_agent": {
@@ -17873,7 +17873,7 @@
      "score": 0.014348605018106825,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 10,
+     "trend": 8,
      "variant": "high"
     }
    },
@@ -17955,7 +17955,7 @@
      "score": 0.02598333419739363,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17997,7 +17997,7 @@
      "score": 0.04581524829947999,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -18039,7 +18039,7 @@
      "score": -0.014095566007452608,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18079,7 +18079,7 @@
      "score": -0.034328072017449834,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18111,7 +18111,7 @@
      "score": 1542.109362234004,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18119,7 +18119,7 @@
      "score": -0.040253671766674194,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18162,7 +18162,7 @@
      "score": 0.008941392335583446,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18194,7 +18194,7 @@
      "score": 1263.7462194039967,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18202,7 +18202,7 @@
      "score": -0.11721288922906009,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18278,7 +18278,7 @@
      "score": 1578.160478866449,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -18286,7 +18286,7 @@
      "score": 0.03014280048359188,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18318,7 +18318,7 @@
      "score": 1370.5661189108528,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18326,7 +18326,7 @@
      "score": -0.20058232965191156,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18927,7 +18927,7 @@
      "score": 1557.601679367112,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 1,
      "variant": "high"
     }
    },
@@ -18962,7 +18962,7 @@
      "score": 1499.570190165974,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 15,
+     "trend": 16,
      "variant": "high"
     }
    },
@@ -18988,7 +18988,7 @@
      "score": 1631.45189828793,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_agent": {
@@ -18996,7 +18996,7 @@
      "score": 0.026803473468702294,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -19088,7 +19088,7 @@
      "score": 1584.698340531561,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -19096,7 +19096,7 @@
      "score": 0.014944374231666368,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -19131,7 +19131,7 @@
      "score": 1439.9992532948302,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 22,
+     "trend": 24,
      "variant": null
     }
    },
@@ -19163,7 +19163,7 @@
      "score": 1508.4694279635078,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19261,7 +19261,7 @@
      "score": 1509.568389170306,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19293,7 +19293,7 @@
      "score": -0.0673373802560682,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19327,7 +19327,7 @@
      "score": 1469.4471855596476,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19363,7 +19363,7 @@
      "score": 1375.6282410272206,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "reasoning, 0309 / beta"
     }
    },
@@ -19461,7 +19461,7 @@
      "score": 1435.402770704169,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19496,7 +19496,7 @@
      "score": 1436.7207182369455,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 10,
      "variant": "thinking"
     }
    },
@@ -19528,7 +19528,7 @@
      "score": 1367.3787007789042,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19563,7 +19563,7 @@
      "score": 1395.9474507552413,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 35,
+     "trend": 37,
      "variant": "medium"
     }
    },
@@ -19595,7 +19595,7 @@
      "score": 1341.1209888665087,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19630,7 +19630,7 @@
      "score": 1416.779483932917,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 29,
+     "trend": 31,
      "variant": null
     }
    },
@@ -19664,7 +19664,7 @@
      "score": 1385.1137753401413,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19696,7 +19696,7 @@
      "score": 1400.4867817048178,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19728,7 +19728,7 @@
      "score": 1401.540857859337,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19762,7 +19762,7 @@
      "score": 1214.588394110147,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "thinking"
     }
    },
@@ -19794,7 +19794,7 @@
      "score": 1461.6326415320564,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19826,7 +19826,7 @@
      "score": 1433.9964950297422,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19858,7 +19858,7 @@
      "score": 1435.3320782626454,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19890,7 +19890,7 @@
      "score": 1359.4781703662488,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19922,7 +19922,7 @@
      "score": 1230.4642215084482,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19954,7 +19954,7 @@
      "score": 1438.4341346920514,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19990,7 +19990,7 @@
      "score": 1362.4151849688005,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 18,
+     "trend": 20,
      "variant": "thinking"
     }
    },
@@ -20024,7 +20024,7 @@
      "score": 1390.266705221792,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20056,7 +20056,7 @@
      "score": 1360.5487595545055,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20090,7 +20090,7 @@
      "score": 1256.7165639799632,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -20122,7 +20122,7 @@
      "score": 1322.1201606820314,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20157,7 +20157,7 @@
      "score": 1330.3221018514685,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 4,
+     "trend": 6,
      "variant": "non-thinking"
     }
    },
@@ -20189,7 +20189,7 @@
      "score": 1358.308909076793,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20223,7 +20223,7 @@
      "score": 1242.0075176822172,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "reasoning"
     }
    },
@@ -20258,7 +20258,7 @@
      "score": 1159.0472187041937,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "reasoning"
     }
    },
@@ -20290,7 +20290,7 @@
      "score": 1398.7110513050225,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20322,7 +20322,7 @@
      "score": 1243.7728624739273,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20354,7 +20354,7 @@
      "score": 1357.5664564690428,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20386,7 +20386,7 @@
      "score": 1330.1848239652209,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20418,7 +20418,7 @@
      "score": 1254.0638240850826,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20452,7 +20452,7 @@
      "score": 1384.2976772505276,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -20484,7 +20484,7 @@
      "score": 1354.8085148666353,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20516,7 +20516,7 @@
      "score": 1386.3174860235608,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20550,7 +20550,7 @@
      "score": 1274.6994680180574,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "instruct"
     }
    },
@@ -20582,7 +20582,7 @@
      "score": 1170.8824286585855,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20614,7 +20614,7 @@
      "score": 1297.1707427686242,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20646,7 +20646,7 @@
      "score": 1193.016402336504,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20678,7 +20678,7 @@
      "score": 1413.7243959524017,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -20686,7 +20686,7 @@
      "score": -0.14350144310368892,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20718,7 +20718,7 @@
      "score": 1409.1292581930497,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -20726,7 +20726,7 @@
      "score": -0.15132888574183895,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20749,7 +20749,7 @@
      "rank": 79,
      "score": 1437.9289557145548,
      "metric": "Arena Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": null
     },
@@ -20757,7 +20757,7 @@
      "rank": 38,
      "score": -0.0367479662950584,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": null
     }
@@ -20793,7 +20793,7 @@
      "score": 1237.905881219719,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "thinking"
     }
    },

@@ -1,44 +1,44 @@
 {
  "aa_intelligence": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 10,
   "checksum": "11de8838995d1809",
-  "promoted_at": "2026-10-18T02:39:18Z"
+  "promoted_at": "2026-10-19T02:52:14Z"
  },
  "livecodebench": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 28,
   "checksum": "594295cb3a7b6f68",
-  "promoted_at": "2026-10-18T02:39:18Z"
+  "promoted_at": "2026-10-19T02:52:14Z"
  },
  "lmarena_text": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 416,
   "checksum": "1647434250d6465d",
-  "promoted_at": "2026-10-18T02:39:17Z"
+  "promoted_at": "2026-10-19T02:52:13Z"
  },
  "lmarena_webdev": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 144,
   "checksum": "d35f00347efe3d17",
-  "promoted_at": "2026-10-18T02:39:18Z"
+  "promoted_at": "2026-10-19T02:52:14Z"
  },
  "lmarena_agent": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 52,
   "checksum": "254a6afd37a33f6a",
-  "promoted_at": "2026-10-18T02:39:18Z"
+  "promoted_at": "2026-10-19T02:52:14Z"
  },
  "open_llm": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 60,
-  "checksum": "55edc6ff7271dd99",
-  "promoted_at": "2026-10-18T02:39:43Z"
+  "checksum": "a3858eab18379acc",
+  "promoted_at": "2026-10-19T02:52:43Z"
  },
  "superclue": {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "rows": 18,
   "checksum": "b9dbe2062c1170aa",
-  "promoted_at": "2026-10-18T02:39:48Z"
+  "promoted_at": "2026-10-19T02:52:48Z"
  }
 }
