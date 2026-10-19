@@ -44,6 +44,7 @@ from common import (
     today_str, now_utc_iso, snapshot_path,
 )
 from schema import validate_meta
+import boards
 
 STATE_DIR = os.path.join(DATA_DIR, "state")
 LKG_PATH = os.path.join(STATE_DIR, "lkg.json")
@@ -56,15 +57,10 @@ OVERRIDE_PATH = os.path.join(STATE_DIR, "contract_overrides.json")
 # ---------------------------------------------------------------- 数据契约
 # 每源独立阈值。min_rows 为硬下限；max_drop_ratio 为"较上期行数跌幅"容忍度
 # （新行数 < 上期 * ratio 即判为异常，多为解析器失效导致的"抓到壳但没抓到肉"）。
-CONTRACTS = {
-    "lmarena_text":     {"min_rows": 20, "max_drop_ratio": 0.35},
-    "lmarena_webdev":   {"min_rows": 10, "max_drop_ratio": 0.35},
-    "lmarena_agent":    {"min_rows": 5,  "max_drop_ratio": 0.35},
-    "aa_intelligence":  {"min_rows": 5,  "max_drop_ratio": 0.30},
-    "livecodebench":    {"min_rows": 5,  "max_drop_ratio": 0.30},
-    "open_llm":         {"min_rows": 10, "max_drop_ratio": 0.30},
-    "superclue":        {"min_rows": 3,  "max_drop_ratio": 0.40},
-}
+#
+# 阈值不再在本文件硬编码，改由 boards.BOARDS 的 BoardSpec 派生——
+# 榜单知识（有哪些榜、什么口径、多大规模）本就该只有一处定义。
+CONTRACTS = boards.contracts()
 _DEFAULT_CONTRACT = {"min_rows": 20, "max_drop_ratio": 0.25}
 
 # 未在 CONTRACTS 中登记的源一律视为「配置缺失」而非「小榜单」。

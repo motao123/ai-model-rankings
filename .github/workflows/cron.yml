@@ -35,6 +35,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # 契约与注册表自检：数据契约是本项目的核心保护机制，失效必须立刻暴露。
+      # 不依赖第三方测试框架（刻意不引入构建链，见架构文档），
+      # 失败即非零退出码，会直接让本次工作流红掉。
+      - name: Verify data contracts and board registry
+        run: python tests/test_contracts.py
+
       - name: Fetch and merge rankings
         run: python src/main.py
 

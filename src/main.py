@@ -41,37 +41,35 @@ import fetch_superclue  # noqa: E402
 import build_trend  # noqa: E402
 
 
+# ============================================================================
+# 榜单配置：全部从 boards.py 的注册表派生，不再在本文件重复声明。
+#
+# 迁移前这 7 处常量散落在本文件与 fallback.py（BOARD_ORDER /
+# BOARD_TASK_LABEL / METHOD_GROUPS / CROSS_MIN_BOARDS / _PREF_BOARDS /
+# TIE_TOLERANCE / DIMENSION_LEADERS / CONTRACTS），新增一个榜要改 6 处，
+# 漏一处不报错只是静默用旧值。现在它们的唯一定义处是 boards.BOARDS。
+# ============================================================================
+import boards as B  # noqa: E402
+
 # 声明"支持第三方镜像通道"的源：活源失败时可用 Wayback 快照重解析。
 # 数据集型源（HF datasets-server）无对应镜像页面，故不登记。
-_MIRROR_REGISTRY = {
+_MIRROR_MODULES = {
     fetch_aa.SOURCE_ID: fetch_aa,
 }
 
 # 方法论分组：用于"多源交叉置信度"，绝不做跨榜分数运算
-METHOD_GROUPS = {
-    "lmarena_text": "human", "lmarena_webdev": "human", "lmarena_agent": "human",
-    "aa_intelligence": "objective", "livecodebench": "objective", "open_llm": "objective",
-    "superclue": "chinese",
-}
+METHOD_GROUPS = B.method_groups()
 
 # 跨榜对比只呈现「至少出现在 N 个榜」的模型：单榜模型信息量低、会把长尾原始 ID
 # 淹没主表；它们仍完整保留在各自的分榜明细里。
-CROSS_MIN_BOARDS = 2
+CROSS_MIN_BOARDS = B.CROSS_MIN_BOARDS
 
 # 默认代表榜优先级（用于同分排序与前端默认并列列）
-_PREF_BOARDS = ["lmarena_text", "aa_intelligence", "superclue", "lmarena_webdev"]
+_PREF_BOARDS = B.pref_boards()
 
 # 中文任务名：前端以「任务名（原榜名）」双层命名呈现——先让访客看懂"这个榜在测什么"，
 # 再让他看到原始榜名。缺失时前端回退到内置映射，不阻断渲染。
-BOARD_TASK_LABEL = {
-    "lmarena_text": "对话偏好",
-    "lmarena_webdev": "前端生成",
-    "lmarena_agent": "智能体交互",
-    "aa_intelligence": "综合智能",
-    "superclue": "中文综合",
-    "livecodebench": "代码生成",
-    "open_llm": "开源通用",
-}
+BOARD_TASK_LABEL = B.task_labels()
 
 # 统计并列：**只有上游公布了容差口径的榜才启用**，其余榜保留原始名次。
 #
@@ -80,36 +78,21 @@ BOARD_TASK_LABEL = {
 # 700 分，全距被尾部差模型拉大）上把阈值放大到 5.6 分，导致头部真实分差 3~4 分的
 # 模型被并成同一名次，414 行里 400 行卷入并列，名次彻底失去区分度。
 #
-# 因此改为白名单：口径必须有出处，并在页面如实标注；未列入的榜不做并列处理，
+# 因此改为白名单（声明在 boards.py 的 BoardSpec.tie_tolerance）：
+# 口径必须有出处，并在页面如实标注；未列入的榜不做并列处理，
 # 由前端说明「上游未公布容差，名次按原始排序展示，相邻分差不代表显著性」。
-TIE_TOLERANCE = {
-    # SuperCLUE 官方口径：「为减少波动影响，榜单将分差 1 分值内的模型视为并列排名」
-    "superclue": {
-        "abs": 1.0,
-        "source": "SuperCLUE 官方口径：分差 1 分以内视为并列排名",
-    },
-}
+TIE_TOLERANCE = B.tie_tolerances()
 
 # 方法论版本号：每当改动「变体折叠 / 厂商归一 / 跨榜收录门槛 / 排序规则 / 并列规则」
 # 任一项就升版，并在页面显式展示。作用对标 Artificial Analysis 的 Intelligence Index
 # 版本号——让读者能判断"我看到的这套结论是按哪一版规则算出来的"，也让历史结论可追溯。
-METHODOLOGY_VERSION = "cross-v2"
-METHODOLOGY_CHANGES = [
-    ("cross-v2", "统计并列改为「仅上游公布容差的榜启用」（白名单 + 出处），不再用全距比率自适应阈值；"
-                 "厂商与国别都推不出的模型改为「列出但标灰、不参与排序」；已退役归档榜不再产出「当前第一」；"
-                 "榜单改「任务名（原榜名）」双层命名"),
-    ("cross-v1", "建立模型主数据层：变体折叠 + 厂商归一；跨榜表只收 ≥2 榜模型；id 一律由主数据重算"),
-]
+METHODOLOGY_VERSION = B.METHODOLOGY_VERSION
+METHODOLOGY_CHANGES = [tuple(x) for x in B.METHODOLOGY_CHANGES]
 
 # 「各维度当前第一」摘要条的数据来源配置：(榜 id, 中文维度名, 该维度的度量依据)
 # 每一项都只是**陈述某个榜上的第一名是谁**（事实），不做任何跨榜加总或换算。
 # 某榜缺数据或已退役时该项自动省略，不阻断渲染。
-DIMENSION_LEADERS = [
-    ("aa_intelligence", "综合智能", "Artificial Analysis Intelligence Index"),
-    ("lmarena_text", "对话偏好", "LMArena Text Arena Score"),
-    ("livecodebench", "代码生成", "LiveCodeBench pass@1"),
-    ("superclue", "中文综合", "SuperCLUE 智能指数"),
-]
+DIMENSION_LEADERS = B.dimension_leaders()
 
 
 def _tie_meta(sid):
@@ -186,10 +169,7 @@ def _source_ids_for_lmarena():
 
 
 # 榜单顺序即前端 tab 顺序；kind 决定「真人偏好 / 客观基准」分区
-BOARD_ORDER = [
-    "lmarena_text", "aa_intelligence", "superclue",
-    "lmarena_webdev", "lmarena_agent", "livecodebench", "open_llm",
-]
+BOARD_ORDER = B.board_order()
 
 
 def _build_task_map(date_str):
@@ -220,7 +200,7 @@ def _prev_payload_for_check(source_id, date_str):
 
 def _mirror_payload(source_id, date_str):
     """B 层：第三方镜像（Internet Archive）。仅对登记在册的 HTML 源启用。"""
-    mod = _MIRROR_REGISTRY.get(source_id)
+    mod = _MIRROR_MODULES.get(source_id)
     if not mod or not getattr(mod, "MIRROR_OK", False):
         return None
     src_url = getattr(mod, "SOURCE_URL", None)
@@ -372,6 +352,17 @@ def main():
     os.makedirs(MANUAL_DIR, exist_ok=True)
     log(f"=== AI 模型排行榜数据抓取开始 {date_str} (UTC) ===")
 
+    # 榜单注册表自检：配置错误（如 order 重复、并列容差缺出处、tab 顺序漏榜）
+    # 属于「代码写错」而非「上游异常」，不该等到某个榜渲染不出来才发现。
+    # 在任何网络请求之前拦下，失败即中止——带着错配置跑完全程只会产出
+    # 一份口径可疑的数据，白白消耗抓取配额。
+    reg_problems = B.validate()
+    if reg_problems:
+        warn("榜单注册表自检不通过，已中止本次抓取：")
+        for p in reg_problems:
+            warn(f"  - {p}")
+        return
+
     tasks = _build_task_map(date_str)
     collected = {}   # source_id -> payload
     failures = []    # 记录失败与降级情况
@@ -504,6 +495,14 @@ def build_merged(collected, date_str, failures):
         sid: {"task": BOARD_TASK_LABEL.get(sid, ""), "board": b.get("board")}
         for sid, b in boards.items()
     }
+    # 榜单 tab 展示顺序显式下发，供前端摆脱硬编码副本。
+    #
+    # 刻意用 TAB_ORDER（前端原顺序）而非 list(boards.keys())（数据编排顺序）：
+    # 二者原本就不同——boards 是「总榜 → 客观基准 → 子榜」（跨榜表据此选
+    # 代表榜），tab 是按机构把 LMArena 三个子榜排在一起。用哪个都会改变
+    # 另���侧的可���行为，属于视觉顺序变更，不该在「去重」里夹带。
+    # 本次只保证前端顺序与迁移前逐字一致。
+    cross_meta["board_order"] = list(B.TAB_ORDER)
     cross_meta["dimension_leaders"] = _compute_dimension_leaders(boards)
     cross_meta["reference_only"] = _compute_reference_only(cross)
     # 主数据层规模：注册表实体数、别名条数，以及「正式名能否解析回自身」的自检结果。

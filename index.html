@@ -598,24 +598,49 @@ footer.site a:hover{text-decoration:underline}
    ========================================================================= */
 
 const KIND_LABEL = { human_preference: "真人偏好", objective_benchmark: "客观基准" };
-const BOARD_TAB_ORDER = ["lmarena_text","lmarena_webdev","lmarena_agent","aa_intelligence","superclue","livecodebench","open_llm"];
 
-/* 任务名兜底映射：数据里的 task_label 缺失时（旧数据/异常）回退到这里，不阻断渲染。
-   与 src/main.py 的 BOARD_TASK_LABEL 保持一致。 */
-const FALLBACK_TASK = {
+/* 榜单 tab 顺序与任务名一律由 data/merged.json 的 cross_meta 驱动
+   （board_order / task_labels），前端不再硬编码第二份副本。
+   迁移原因：此处曾是 main.py BOARD_ORDER / BOARD_TASK_LABEL 的镜像，
+   改榜名或顺序要同步两个文件，漏一处只是静默显示旧值。
+
+   下面的 BUILTIN_* 仅作「数据文件缺失/损坏」时的最后兜底——
+   例如首次访问、Actions 尚未产出、或所有取数端点都失败。
+   正常路径下它们会被 merged.json 的真实值整体覆盖（见 syncBoardMeta）。*/
+const BUILTIN_BOARD_ORDER = ["lmarena_text","lmarena_webdev","lmarena_agent","aa_intelligence","superclue","livecodebench","open_llm"];
+const BUILTIN_TASK = {
   lmarena_text:"对话偏好", lmarena_webdev:"前端生成", lmarena_agent:"智能体交互",
   aa_intelligence:"综合智能", superclue:"中文综合", livecodebench:"代码生成", open_llm:"开源通用",
 };
-/* 双层命名：先让访客看懂"这个榜在测什么"（任务名），再给原始榜名。 */
+
+/* 由数据驱动的运行时视图。启动时若成功取到 merged.json，
+   下面两个常量会被真实值覆盖（syncBoardMeta）。*/
+let BOARD_TAB_ORDER = BUILTIN_BOARD_ORDER.slice();
+let TASK_MAP = Object.assign({}, BUILTIN_TASK);
+
+function syncBoardMeta(cm){
+  if(!cm) return;
+  const tl = cm.task_labels||{};
+  const derived = {};
+  for(const sid in tl){ if(tl[sid] && tl[sid].task) derived[sid]=tl[sid].task; }
+  const order = Array.isArray(cm.board_order) && cm.board_order.length
+    ? cm.board_order.slice()
+    : (cm.boards||[]).slice();
+  if(Object.keys(derived).length){ TASK_MAP = derived; }
+  if(order.length){ BOARD_TAB_ORDER = order; }
+}
+
+/* 任务名兜底映射：数据里的 task_label 缺失时（旧数据/异常）回退到内置表，
+   不阻断渲染。正常情况下该表已被 merged.json 覆盖。*/
 function boardLabel(k){
   const b=(STATE.merged&&STATE.merged.boards[k])||{};
-  const task=b.task_label||FALLBACK_TASK[k]||"";
+  const task=b.task_label||TASK_MAP[k]||"";
   const short=String(b.board||k).replace(/（.*?）/g,"").replace(/\s+/g," ").trim();
   return task? task+"（"+short+"）" : short;
 }
 function boardTask(k){
   const b=(STATE.merged&&STATE.merged.boards[k])||{};
-  return b.task_label||FALLBACK_TASK[k]||"";
+  return b.task_label||TASK_MAP[k]||"";
 }
 
 let STATE = { merged:null, trend:null, meta:null, curBoard:null, filter:"all", region:"all", query:"", crossBoard:null, crossLimit:50, crossSort:null, boardLimit:60, via:null, fromCache:false, openTrace:{} };
@@ -838,6 +863,9 @@ async function boot(){
   STATE.merged=m.data; STATE.trend=t.data; STATE.meta=mt.data;
   STATE.via=m.via; STATE.fromCache=m.fromCache;
   if(!STATE.merged||!STATE.merged.boards){ $("#app").innerHTML='<div class="empty-hint">未能加载数据。请在仓库根目录用本地服务器打开（如 <code>python -m http.server</code>），或等待 GitHub Actions 首次生成 <code>data/merged.json</code>。</div>'; return; }
+  // 榜单元信息数据驱动：在任何渲染之前用 merged.json 的真实值覆盖内置兜底表，
+  // 否则 tab 顺序与任务名会用到与后端不同步的硬编码。
+  syncBoardMeta(STATE.merged.cross_meta);
   readURLState();
   if(STATE.merged.disclaimer) $("#disclaimer-text").innerHTML = esc(STATE.merged.disclaimer).replace(/不可直接横向比较/g,'<b>不可直接横向比较</b>');
   renderFreshness();
