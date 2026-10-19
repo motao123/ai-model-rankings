@@ -13,6 +13,19 @@
 """
 
 from common import http_get, log, warn, now_utc_iso
+# 让 sources/ 内的模块能 import src/ 下的 common / models。
+# sources/__init__.py 已做同样引导，此处重复是为了支持直接
+# `python src/sources/aa.py` 这种独立运行方式。
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_SRC = os.path.dirname(_HERE)
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
+
+from sources import register  # noqa: E402
+
 
 SOURCE_PAGE = "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
 SOURCE_ID = "open_llm"
@@ -198,6 +211,30 @@ def fetch(date_str: str):
         "channel": "hf-datasets-server",
         "rows": cleaned,
     }
+
+
+# ============================================================================
+# 适配器实例。编排层只认这个对象，不关心底层是单源还是多源。
+# ============================================================================
+
+class OpenLlmAdapter:
+    """HF 数据集型源，无对应镜像页面。"""
+
+    source_ids = [SOURCE_ID]
+
+    mirror_ok = False
+
+    @property
+    def source_url(self):
+        """镜像查询用 URL；不支持镜像时为 None。"""
+        return None
+
+    def fetch(self, date_str):
+        """见 sources.SourceAdapter.fetch 契约。"""
+        return {SOURCE_ID: fetch(date_str)}
+
+
+ADAPTER = register(OpenLlmAdapter())
 
 
 if __name__ == "__main__":

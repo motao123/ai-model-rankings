@@ -9,7 +9,6 @@
 """
 
 import datetime
-import glob
 import json
 import os
 import sys
@@ -142,32 +141,36 @@ def snapshot_path(source: str, date_str: str) -> str:
 
 
 def write_snapshot(source: str, payload: dict, date_str: str = None) -> str:
+    """写每日快照。这是写入 raw 目录的**唯一入口**。
+
+    写完必须让 SnapshotStore 的内存索引失效——否则同一进程内后续的
+    latest_snapshot_before 会读到「今天这份文件还不存在」的旧索引，
+    表现为趋势对比与契约跌幅检查静默跳过当日（不会报错，只会少一次对比），
+    极难排查。
+    """
     date_str = date_str or today_str()
     path = snapshot_path(source, date_str)
     write_json(path, payload)
+    # 延迟导入：snapshot 依赖 common，反向导入会成环
+    from snapshot import STORE
+    STORE.invalidate()
     return path
 
 
 def list_snapshots(source: str):
-    """返回 [(date_str, path), ...]，按日期升序。"""
-    out = []
-    for path in glob.glob(os.path.join(RAW_DIR, f"{source}_*.json")):
-        base = os.path.basename(path)
-        date_part = base[len(source) + 1: -len(".json")]
-        out.append((date_part, path))
-    out.sort(key=lambda x: x[0])
-    return out
+    """返回 [(date_str, path), ...]，按日期升序。
+
+    已改为走 snapshot.STORE 的内存索引（避免每次调用都 glob 全目录）。
+    保留本函数作为兼容入口，供尚未迁移的调用方使用。
+    """
+    from snapshot import STORE
+    return STORE.list_all(source)
 
 
 def latest_snapshot_before(source: str, date_str: str):
     """取 date_str 之前最近一次快照的 (date_str, payload)，无则 (None, None)。"""
-    prev = None
-    for d, path in list_snapshots(source):
-        if d < date_str:
-            prev = (d, path)
-    if prev is None:
-        return None, None
-    return prev[0], read_json(prev[1])
+    from snapshot import STORE
+    return STORE.latest_before(source, date_str)
 
 
 def load_manual(source: str):

@@ -20,6 +20,19 @@ import re
 
 from common import http_get, log, warn, now_utc_iso
 from models import normalize
+# 让 sources/ 内的模块能 import src/ 下的 common / models。
+# sources/__init__.py 已做同样引导，此处重复是为了支持直接
+# `python src/sources/aa.py` 这种独立运行方式。
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_SRC = os.path.dirname(_HERE)
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
+
+from sources import register  # noqa: E402
+
 
 SOURCE_PAGE = "https://artificialanalysis.ai/"
 SOURCE_ID = "aa_intelligence"
@@ -127,6 +140,30 @@ def _strip_variant(label: str) -> str:
         prev = cur
         cur = _VARIANT.sub("", cur).strip()
     return cur
+
+
+# ============================================================================
+# 适配器实例。编排层只认这个对象，不关心底层是单源还是多源。
+# ============================================================================
+
+class AaAdapter:
+    """AA 是 Next.js 站点，数据嵌在 flight payload 里，故支持 Wayback 镜像重解析。"""
+
+    source_ids = [SOURCE_ID]
+
+    mirror_ok = True
+
+    @property
+    def source_url(self):
+        """镜像查询用 URL；不支持镜像时为 None。"""
+        return SOURCE_URL
+
+    def fetch(self, date_str):
+        """见 sources.SourceAdapter.fetch 契约。"""
+        return {SOURCE_ID: fetch(date_str)}
+
+
+ADAPTER = register(AaAdapter())
 
 
 if __name__ == "__main__":

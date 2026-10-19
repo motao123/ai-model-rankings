@@ -32,7 +32,8 @@
    什么样」，与规则表同源，避免再次分叉。
 """
 
-from dataclasses import dataclass, field
+import datetime
+from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
@@ -60,6 +61,20 @@ class BoardSpec:
 
     retired: bool = False         # 已退役归档榜（不产出「当前第一」）
     retired_note: str = ""
+
+    # 抓取频率：0 = 每日（默认）；N = 每 N 天至少抓一次。
+    #
+    # 判据不是「是否已退役」——实测证明 retired 完全不能预测内容变化：
+    #   open_llm（retired=True）9 期里内容 checksum 变了 8 次，
+    #   因为 HF datasets-server 的分页顺序不稳定，同分数模型位置随机抖动，
+    #   降频只会加剧展示层抖动；
+    #   superclue / livecodebench（retired=False）8~9 期里内容一次没变，
+    #   前者是双月/年度期次，后者是滚动更新但当日无新题。
+    #
+    # 真正的判据是 publish_date 是否推进（见 fetch_policy 模块文档）。
+    # 实测：publish_date 变化次数与内容变化次数高度一致，唯二例外是
+    # open_llm（publish_date 恒定而内容抖动 = 重排噪声，不是新数据）。
+    fetch_every_days: int = 0
 
     # 默认并列展示的代表榜（跨榜表代表名次取值优先级）
     pref_for_display: bool = False
@@ -116,6 +131,9 @@ BOARDS = (
         pref_for_display=True,
         leader_slot="中文综合",
         leader_basis="SuperCLUE 智能指数",
+        # 上游是双月 / 年度期次，实测 8 期快照内容 checksum 一次未变
+        # （publish_date 恒为 2026-07-01）。每日重抓纯属浪费配额。
+        fetch_every_days=7,
     ),
     BoardSpec(
         source_id="lmarena_webdev",
@@ -149,6 +167,9 @@ BOARDS = (
         min_rows=5, max_drop_ratio=0.30,
         leader_slot="代码生成",
         leader_basis="LiveCodeBench pass@1",
+        # 名义上是「滚动更新」，但实测 9 期快照内容 checksum 一次未变——
+        # 官方每天并不真的出新题。降为每周一次，题目更新仍能在 7 天内跟上。
+        fetch_every_days=7,
     ),
     BoardSpec(
         source_id="open_llm",
@@ -161,6 +182,12 @@ BOARDS = (
         min_rows=10, max_drop_ratio=0.30,
         retired=True,
         retired_note="该榜单已于 2025 年 3 月退役，此处为归档快照，仅供开源模型横向参考。",
+        # 注意：这里**不**降频，尽管它是已退役归档榜。
+        # 实测 9 期里内容 checksum 变了 8 次，第一名在两个模型间反复跳动——
+        # HF datasets-server 分页顺序不稳定，而本榜按 Average 降序取 Top 60，
+        # 同分数模型的相对位置随分页顺序抖动。这是「排序不稳定」而非
+        # 「每日新数据」，降频只会让展示层长期停在一个随机的切片上。
+        fetch_every_days=0,
     ),
 )
 
@@ -270,6 +297,37 @@ METHODOLOGY_CHANGES = (
     ("cross-v1",
      "建立模型主数据层：变体折叠 + 厂商归一；跨榜表只收 ≥2 榜模型；id 一律由主数据重算"),
 )
+
+
+def fetch_every_days(source_id: str) -> int:
+    """该榜的重抓间隔（天）。0 表示每日。"""
+    b = BY_ID.get(source_id)
+    return b.fetch_every_days if b else 0
+
+
+def should_fetch_today(source_id: str, date_str: str, last_fetch_date: str | None) -> bool:
+    """今天是否需要重抓该榜。
+
+    判据：距上次成功抓取是否已过 fetch_every_days 天。
+
+    为什么不用「是否已退役」：实测证明 retired 完全不能预测内容变化。
+    见 BoardSpec.fetch_every_days 的注释——open_llm（retired=True）内容
+    每天都在变（分页顺序抖动），superclue / livecodebench（retired=False）
+    8~9 期一次没变。
+
+    last_fetch_date 为 None（从未抓过）时必须抓，否则新源永远拿不到数据。
+    """
+    every = fetch_every_days(source_id)
+    if every <= 0:
+        return True
+    if not last_fetch_date:
+        return True
+    try:
+        last = datetime.date.fromisoformat(str(last_fetch_date)[:10])
+        today = datetime.date.fromisoformat(str(date_str)[:10])
+    except ValueError:
+        return True     # 日期不可解析时保守抓取
+    return (today - last).days >= every
 
 
 def registry_summary() -> dict:

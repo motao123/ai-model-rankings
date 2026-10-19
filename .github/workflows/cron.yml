@@ -41,6 +41,11 @@ jobs:
       - name: Verify data contracts and board registry
         run: python tests/test_contracts.py
 
+      # 领域层单元测试：并列排名 / 跨榜聚合 / 趋势序列全是纯函数，
+      # 改动这些算法时本可在提交前就发现问题，而不是等线上数据出错。
+      - name: Run domain unit tests
+        run: python tests/test_domain.py
+
       - name: Fetch and merge rankings
         run: python src/main.py
 

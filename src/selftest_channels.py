@@ -10,7 +10,7 @@
 （本机网络通常无法访问 archive.org）。
 
 本脚本用于**主动演练**这一层：不依赖真实降级发生，直接调用镜像通道的
-完整代码路径（可用性查询 -> id_ 原始捕获 -> 复用 fetch_aa.parse_html 重解析），
+完整代码路径（可用性查询 -> id_ 原始捕获 -> 复用适配器的 parse_html 重解析），
 把每一步的成功/失败与行数打印出来。
 
 用法：
@@ -26,13 +26,17 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import fallback as fb_engine  # noqa: E402
-import fetch_aa  # noqa: E402
+from sources import load_all  # noqa: E402
 from common import log  # noqa: E402
 
 
-def _check_mirror(module):
-    """演练某个源走镜像通道的完整路径。返回 dict(ok, rows, detail)。"""
-    src_id = getattr(module, "SOURCE_ID", "?")
+def _check_mirror(module, src_id=None):
+    """演练某个源走镜像通道的完整路径。返回 dict(ok, rows, detail)。
+
+    src_id 由调用方传入：一个适配器可能产出多个 source_id，
+    而镜像通道的 URL 与重解析入口都在模块级（按适配器而非按 source_id 定义）。
+    """
+    src_id = src_id or getattr(module, "SOURCE_ID", "?")
     url = getattr(module, "SOURCE_URL", None)
     if not getattr(module, "MIRROR_OK", False) or not url:
         return {"source": src_id, "ok": None, "rows": 0,
@@ -67,7 +71,16 @@ def main():
     log("=== 兜底通道自检开始 ===")
 
     # 1) 第三方镜像通道（Internet Archive）
-    results = [_check_mirror(fetch_aa)]
+    # 遍历全部适配器，自动跳过未声明镜像能力的源——原先这里硬编码了
+    # aa 适配器，新增一个 HTML 类源若忘记声明 mirror_ok，这个自检就会漏掉它。
+    import sys
+    results = []
+    for ad in load_all():
+        if not getattr(ad, "mirror_ok", False):
+            continue
+        mod = sys.modules[type(ad).__module__]
+        for sid in ad.source_ids:
+            results.append(_check_mirror(mod, sid))
     for r in results:
         if r["ok"] is None:
             log(f"[SKIP] mirror/{r['source']}: {r['detail']}")

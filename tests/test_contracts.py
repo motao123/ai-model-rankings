@@ -160,6 +160,105 @@ for sid in (merged.get("boards") or {}):
     if snaps:
         check(f"最新快照 {sid:14s} 通过", validate_meta(sid, read_json(snaps[-1][1])), [])
 
+# ---------------------------------------------------------------- snapshot
+section("6. 快照索引（与旧 glob 实现语义一致）")
+from snapshot import SnapshotStore          # noqa: E402
+import tempfile                              # noqa: E402
+
+s = SnapshotStore()
+# 索引结果须与「全量 glob + 排序」完全一致
+for sid in sorted(s.list_sources()):
+    entries = s.list_all(sid)
+    dates = [d for d, _ in entries]
+    check(f"索引 {sid:16s} 日期升序", dates, sorted(dates))
+    check(f"索引 {sid:16s} 无重复日期", len(dates) == len(set(dates)), True)
+
+# latest_before 边界：早于全部快照 / 晚于全部快照 / 恰好等于某日期
+probe_source = sorted(s.list_sources())[0]
+entries = s.list_all(probe_source)
+if entries:
+    first_d = entries[0][0]
+    mid_d = entries[len(entries) // 2][0]
+    check("latest_before 早于全部快照 -> (None, None)",
+          s.latest_before(probe_source, "2000-01-01"), (None, None))
+    check("latest_before 晚于全部快照 -> 返回最新",
+          s.latest_before(probe_source, "2099-01-01")[0], entries[-1][0])
+    check("latest_before 命中该日期本身不返回自己",
+          s.latest_before(probe_source, mid_d)[0] < mid_d, True)
+
+# 失效机制：新建文件后必须 invalidate 才能看到
+with tempfile.TemporaryDirectory() as td:
+    t = SnapshotStore(td)
+    check("空目录无源", t.list_sources(), [])
+    import os as _os
+    with open(_os.path.join(td, "foo_2026-01-01.json"), "w") as fh:
+        fh.write("{}")
+    check("新建文件后（未 invalidate）仍为空", t.list_sources(), [])
+    t.invalidate()
+    check("invalidate 后可见", t.list_sources(), ["foo"])
+    # source_id 含下划线时按右切解析，不能用 split("_")
+    with open(_os.path.join(td, "lmarena_text_2026-01-02.json"), "w") as fh:
+        fh.write("{}")
+    t.invalidate()
+    check("source_id 含下划线解析正确", t.list_all("lmarena_text"),
+          [("2026-01-02", _os.path.join(td, "lmarena_text_2026-01-02.json"))])
+    # 无日期部分的文件名应被跳过而非误解析
+    with open(_os.path.join(td, "nounderscore.json"), "w") as fh:
+        fh.write("{}")
+    t.invalidate()
+    check("无下划线文件名被跳过", "nounderscore" not in t.list_sources(), True)
+
+# ---------------------------------------------------------------- sources
+section("7. 数据源适配器注册")
+from sources import load_all, all_source_ids      # noqa: E402
+import boards as _B                               # noqa: E402
+
+ads = load_all()
+check("适配器已注册", len(ads) > 0, True)
+check("适配器产出的 source_id 与注册表完全一致",
+      sorted(all_source_ids()), sorted(b.source_id for b in _B.BOARDS))
+check("source_id 无重复", len(all_source_ids()) == len(set(all_source_ids())), True)
+
+for ad in ads:
+    name = type(ad).__name__
+    check(f"{name:22s} 声明了 source_ids", bool(ad.source_ids), True)
+    check(f"{name:22s} source_id 已在注册表登记",
+          all(s in _B.BY_ID for s in ad.source_ids), True)
+    check(f"{name:22s} mirror_ok 为布尔", isinstance(ad.mirror_ok, bool), True)
+    # 声明支持镜像就必须给出可查询的 URL
+    if ad.mirror_ok:
+        check(f"{name:22s} 声明镜像则必须有 source_url", bool(ad.source_url), True)
+    check(f"{name:22s} 有可调用的 fetch", callable(getattr(ad, "fetch", None)), True)
+
+# 镜像声明与 boards.BoardSpec.mirror_ok 必须一致：两处都可能成为唯一真值源
+for ad in ads:
+    mod = sys.modules[type(ad).__module__]
+    for sid in ad.source_ids:
+        check(f"{sid:16s} 适配器与注册表的 mirror_ok 一致",
+              bool(ad.mirror_ok) == bool(_B.BY_ID[sid].mirror_ok), True)
+
+# ---------------------------------------------------------------- fetch policy
+section("8. 重抓频率策略")
+check("未登记源默认每日抓", _B.fetch_every_days("nope"), 0)
+check("从未抓过的源必须抓", _B.should_fetch_today("superclue", "2026-10-19", None), True)
+check("每日榜：刚抓过也要抓",
+      _B.should_fetch_today("lmarena_text", "2026-10-19", "2026-10-19"), True)
+check("每周榜：同一天不重复抓",
+      _B.should_fetch_today("superclue", "2026-10-19", "2026-10-19"), False)
+check("每周榜：第 7 天抓", _B.should_fetch_today("superclue", "2026-10-26", "2026-10-19"), True)
+check("每周榜：第 6 天不抓", _B.should_fetch_today("superclue", "2026-10-25", "2026-10-19"), False)
+check("日期不可解析时保守抓取",
+      _B.should_fetch_today("superclue", "2026-10-19", "not-a-date"), True)
+
+# 关键回归：降频判据不能与 retired 标签挂钩（实测 open_llm retired=True
+# 但内容每天变，superclue/livecodebench retired=False 但内容不变）
+for b in _B.BOARDS:
+    if b.retired:
+        check(f"{b.source_id:16s} retired=True 但未降频（分页顺序抖动，需每日）",
+              b.fetch_every_days, 0)
+check("superclue 已降频（双月期次）", _B.fetch_every_days("superclue"), 7)
+check("livecodebench 已降频（实测无新题）", _B.fetch_every_days("livecodebench"), 7)
+
 print()
 print("=" * 66)
 print(f"共 {_count} 项检查，{len(_fails)} 项失败")

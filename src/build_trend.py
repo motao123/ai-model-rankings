@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""趋势聚合：从 data/raw/<source>_<date>.json 历史快照生成 data/trend.json。
+"""趋势数据落盘：遍历快照 → 交给 domain.trend 计算 → 写 data/trend.json。
 
-前端的历史趋势折线读这个文件。逻辑：对每个榜单，按日期遍历所有快照，
-取出重点模型（默认各榜最新一期 Top N）在每个日期的 rank，形成时间序列。
+前端的历史趋势折线读 data/trend.json。聚合逻辑已迁入 domain/trend.py
+（纯函数、可单测）；本文件只负责 IO：读快照目录、调用、落盘。
 
 只使用快照里的原始 rank，不做任何跨日插值或分数换算。快照越多，折线越长。
 """
 
 import os
+import sys
 
-from common import (
-    RAW_DIR, DATA_DIR, list_snapshots, read_json, write_json, log, warn,
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+
+from common import DATA_DIR, read_json, write_json, log, warn, RAW_DIR  # noqa: E402
+from models import enrich                                              # noqa: E402
+from snapshot import STORE                                             # noqa: E402
+from domain.trend import (                                             # noqa: E402
+    build_trend_from_store, TOP_N_PER_BOARD, MAX_POINTS,
 )
-from models import enrich
-
-TOP_N_PER_BOARD = 12   # 每个榜追踪前 N 名的历史
-MAX_POINTS = 60        # 每条折线最多多少个日期点（防止快照过多导致文件膨胀）
 
 
 def build_trend():
@@ -24,76 +27,8 @@ def build_trend():
         warn("无 raw 快照目录，跳过趋势聚合")
         return None
 
-    # 收集所有出现过的 source_id
-    sources = set()
-    for fname in os.listdir(RAW_DIR):
-        if not fname.endswith(".json") or "_" not in fname:
-            continue
-        src = fname.rsplit("_", 1)[0]
-        sources.add(src)
-
-    trend = {"boards": {}}
-    for src in sorted(sources):
-        snaps = list_snapshots(src)
-        if not snaps:
-            continue
-        # 取最新一期，确定要追踪哪些模型
-        latest_date, latest_path = snaps[-1]
-        latest = read_json(latest_path, {})
-        latest_rows = latest.get("rows", []) if isinstance(latest, dict) else []
-        if not latest_rows:
-            continue
-
-        # 重点模型 = 最新榜按 rank 升序取前 TOP_N（按 canonical id 去重：
-        # 主数据折叠后同一模型的不同变体只保留名次最好的那一条）
-        tracked, seen = [], set()
-        for row in sorted(latest_rows, key=lambda r: r.get("rank", 999)):
-            meta = enrich(row.get("model", ""), row.get("organization"))
-            cid = row.get("id") or meta["id"]
-            if cid in seen:
-                continue
-            seen.add(cid)
-            tracked.append({
-                "id": cid,
-                "name": row.get("display_name") or meta["display_name"],
-                "variant": meta.get("variant"),
-                "vendor": meta["vendor"],
-                "region": meta["region"],
-                "open": meta["open"],
-            })
-            if len(tracked) >= TOP_N_PER_BOARD:
-                break
-        tracked_ids = {t["id"] for t in tracked}
-
-        # 遍历每个日期，构建 rank 时间序列
-        series = {cid: [] for cid in tracked_ids}
-        dates = []
-        for date_str, path in snaps[-MAX_POINTS:]:
-            snap = read_json(path, {})
-            rows = snap.get("rows", []) if isinstance(snap, dict) else []
-            rank_by_cid = {}
-            for row in rows:
-                meta = enrich(row.get("model", ""), row.get("organization"))
-                cid = row.get("id") or meta["id"]
-                if cid in tracked_ids and isinstance(row.get("rank"), int):
-                    prev = rank_by_cid.get(cid)
-                    if prev is None or row["rank"] < prev:   # 多变体取最好名次
-                        rank_by_cid[cid] = row["rank"]
-            dates.append(date_str)
-            for cid in tracked_ids:
-                series[cid].append(rank_by_cid.get(cid))  # None = 当期未上榜
-
-        trend["boards"][src] = {
-            "board": latest.get("board"),
-            "metric": latest.get("metric"),
-            "source_url": latest.get("source_url"),
-            "dates": dates,
-            "models": [
-                {**t, "ranks": series[t["id"]]}
-                for t in tracked
-            ],
-        }
-
+    trend = build_trend_from_store(STORE, enrich, read_json,
+                                   TOP_N_PER_BOARD, MAX_POINTS)
     trend["generated_from"] = "data/raw snapshots"
     write_json(os.path.join(DATA_DIR, "trend.json"), trend)
     log(f"趋势聚合完成：{len(trend['boards'])} 个榜单")
