@@ -23,7 +23,8 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ],
    "models": [
     {
@@ -34,6 +35,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -81,6 +83,7 @@
       null,
       2,
       2,
+      2,
       2
      ]
     },
@@ -108,6 +111,7 @@
       2,
       2,
       2,
+      3,
       3,
       3,
       3
@@ -139,6 +143,7 @@
       3,
       4,
       4,
+      4,
       4
      ]
     },
@@ -166,6 +171,7 @@
       4,
       4,
       4,
+      5,
       5,
       5,
       5
@@ -197,6 +203,7 @@
       5,
       6,
       6,
+      6,
       6
      ]
     },
@@ -224,6 +231,7 @@
       6,
       6,
       6,
+      7,
       7,
       7,
       7
@@ -255,6 +263,7 @@
       7,
       8,
       8,
+      8,
       8
      ]
     },
@@ -282,6 +291,7 @@
       8,
       8,
       8,
+      9,
       9,
       9,
       9
@@ -313,6 +323,7 @@
       9,
       10,
       10,
+      10,
       10
      ]
     },
@@ -340,6 +351,7 @@
       10,
       10,
       10,
+      11,
       11,
       11,
       11
@@ -667,7 +679,8 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ],
    "models": [
     {
@@ -679,6 +692,7 @@
      "open": false,
      "ranks": [
       2,
+      1,
       1,
       1,
       1,
@@ -723,6 +737,7 @@
       5,
       5,
       2,
+      2,
       2
      ]
     },
@@ -750,6 +765,7 @@
       2,
       2,
       2,
+      3,
       3,
       3
      ]
@@ -779,6 +795,7 @@
       3,
       3,
       4,
+      4,
       4
      ]
     },
@@ -806,6 +823,7 @@
       4,
       4,
       4,
+      5,
       5,
       5
      ]
@@ -835,6 +853,7 @@
       6,
       6,
       6,
+      6,
       6
      ]
     },
@@ -852,6 +871,7 @@
       6,
       6,
       3,
+      7,
       7,
       7,
       7,
@@ -891,6 +911,7 @@
       9,
       9,
       8,
+      8,
       8
      ]
     },
@@ -919,6 +940,7 @@
       8,
       8,
       9,
+      9,
       9
      ]
     },
@@ -936,6 +958,7 @@
       12,
       12,
       11,
+      10,
       10,
       10,
       10,
@@ -975,6 +998,7 @@
       11,
       11,
       11,
+      11,
       11
      ]
     },
@@ -998,6 +1022,7 @@
       11,
       11,
       11,
+      12,
       12,
       12,
       12,
@@ -1030,7 +1055,8 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ],
    "models": [
     {
@@ -1041,6 +1067,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -1086,6 +1113,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -1114,6 +1142,7 @@
       3,
       3,
       3,
+      3,
       3
      ]
     },
@@ -1125,6 +1154,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      4,
       4,
       4,
       4,
@@ -1170,6 +1200,7 @@
       7,
       6,
       6,
+      6,
       6
      ]
     },
@@ -1198,6 +1229,7 @@
       6,
       7,
       7,
+      7,
       7
      ]
     },
@@ -1215,6 +1247,7 @@
       7,
       7,
       7,
+      8,
       8,
       8,
       8,
@@ -1254,6 +1287,7 @@
       12,
       10,
       10,
+      10,
       10
      ]
     },
@@ -1271,6 +1305,7 @@
       9,
       9,
       9,
+      11,
       11,
       11,
       11,
@@ -1310,6 +1345,7 @@
       10,
       12,
       12,
+      12,
       12
      ]
     },
@@ -1327,6 +1363,7 @@
       11,
       11,
       11,
+      13,
       13,
       13,
       13,
@@ -1366,6 +1403,7 @@
       14,
       14,
       14,
+      14,
       14
      ]
     }
@@ -1393,7 +1431,8 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ],
    "models": [
     {
@@ -1404,6 +1443,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -1449,6 +1489,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -1460,6 +1501,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      3,
       3,
       3,
       3,
@@ -1505,6 +1547,7 @@
       4,
       4,
       4,
+      4,
       4
      ]
     },
@@ -1516,6 +1559,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      5,
       5,
       5,
       5,
@@ -1561,6 +1605,7 @@
       6,
       6,
       6,
+      6,
       6
      ]
     },
@@ -1588,6 +1633,7 @@
       16,
       16,
       16,
+      8,
       8,
       8
      ]
@@ -1617,6 +1663,7 @@
       8,
       8,
       9,
+      9,
       9
      ]
     },
@@ -1645,6 +1692,7 @@
       9,
       9,
       10,
+      10,
       10
      ]
     },
@@ -1671,6 +1719,7 @@
       10,
       10,
       10,
+      11,
       11,
       11,
       11
@@ -1701,6 +1750,7 @@
       11,
       10,
       12,
+      12,
       12
      ]
     },
@@ -1728,6 +1778,7 @@
       13,
       13,
       13,
+      14,
       14,
       14
      ]
@@ -1757,212 +1808,10 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ],
    "models": [
-    {
-     "id": "maziyarpanahicalme32instruct78b",
-     "name": "MaziyarPanahi/calme-3.2-instruct-78b",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      1,
-      null,
-      1,
-      1,
-      null,
-      1,
-      1,
-      null,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    },
-    {
-     "id": "maziyarpanahicalme31instruct78b",
-     "name": "MaziyarPanahi/calme-3.1-instruct-78b",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      2,
-      null,
-      2,
-      2,
-      null,
-      2,
-      2,
-      null,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
-     ]
-    },
-    {
-     "id": "maziyarpanahicalme24rys78b",
-     "name": "MaziyarPanahi/calme-2.4-rys-78b",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      3,
-      null,
-      3,
-      3,
-      null,
-      3,
-      4,
-      null,
-      3,
-      4,
-      3,
-      4,
-      3,
-      3,
-      3,
-      3,
-      4,
-      3,
-      3
-     ]
-    },
-    {
-     "id": "qwenqwen2572b",
-     "name": "Qwen/Qwen2.5-72B",
-     "variant": "instruct",
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      4,
-      null,
-      4,
-      4,
-      null,
-      4,
-      6,
-      null,
-      4,
-      6,
-      4,
-      6,
-      null,
-      4,
-      4,
-      4,
-      5,
-      4,
-      4
-     ]
-    },
-    {
-     "id": "maziyarpanahicalme21qwen2572b",
-     "name": "MaziyarPanahi/calme-2.1-qwen2.5-72b",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      5,
-      null,
-      5,
-      5,
-      null,
-      5,
-      7,
-      null,
-      5,
-      7,
-      5,
-      7,
-      4,
-      5,
-      5,
-      5,
-      6,
-      5,
-      5
-     ]
-    },
-    {
-     "id": "saxolinkbrickshorizonaiavengersv132b",
-     "name": "Saxo/Linkbricks-Horizon-AI-Avengers-V1-32B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      6,
-      null,
-      6,
-      6,
-      null,
-      6,
-      9,
-      null,
-      null,
-      9,
-      6,
-      9,
-      null,
-      6,
-      null,
-      6,
-      7,
-      6,
-      6
-     ]
-    },
-    {
-     "id": "maziyarpanahicalme22qwen2572b",
-     "name": "MaziyarPanahi/calme-2.2-qwen2.5-72b",
-     "variant": null,
-     "vendor": "阿里巴巴",
-     "region": "cn",
-     "open": null,
-     "ranks": [
-      7,
-      null,
-      7,
-      7,
-      null,
-      7,
-      10,
-      null,
-      6,
-      10,
-      7,
-      10,
-      5,
-      7,
-      6,
-      7,
-      8,
-      7,
-      7
-     ]
-    },
     {
      "id": "jungzoonat3qqwen2514binstruct1me3",
      "name": "JungZoona/T3Q-Qwen2.5-14B-Instruct-1M-e3",
@@ -1989,7 +1838,8 @@
       8,
       9,
       8,
-      8
+      8,
+      1
      ]
     },
     {
@@ -2018,36 +1868,8 @@
       9,
       10,
       9,
-      9
-     ]
-    },
-    {
-     "id": "sakaltiultiima72b",
-     "name": "Sakalti/ultiima-72B",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      10,
-      null,
-      10,
-      10,
-      null,
-      10,
-      14,
-      null,
-      null,
-      14,
-      10,
-      14,
-      null,
-      10,
-      null,
-      10,
-      11,
-      10,
-      10
+      9,
+      2
      ]
     },
     {
@@ -2076,35 +1898,277 @@
       11,
       12,
       11,
-      11
+      11,
+      3
      ]
     },
     {
-     "id": "qwenqwen2532b",
-     "name": "Qwen/Qwen2.5-32B",
-     "variant": "instruct",
+     "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
+     "name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
+     "variant": null,
      "vendor": "阿里巴巴",
      "region": "cn",
      "open": null,
      "ranks": [
+      17,
+      4,
+      17,
+      17,
+      2,
+      17,
+      21,
+      4,
       12,
-      null,
-      12,
-      12,
-      null,
-      12,
-      16,
-      null,
+      24,
+      17,
+      21,
       10,
       17,
       12,
+      17,
+      18,
+      17,
+      17,
+      4
+     ]
+    },
+    {
+     "id": "finguairomboultima32b",
+     "name": "FINGU-AI/RomboUltima-32B",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      21,
+      5,
+      21,
+      21,
+      3,
+      21,
+      26,
+      5,
+      13,
+      30,
+      21,
+      26,
+      11,
+      21,
+      13,
+      21,
+      23,
+      21,
+      21,
+      5
+     ]
+    },
+    {
+     "id": "evaunit01evaqwen2572bv02",
+     "name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      27,
+      6,
+      26,
+      27,
+      4,
+      26,
+      32,
+      6,
+      18,
+      36,
+      26,
+      32,
       16,
+      26,
+      18,
+      26,
+      29,
+      26,
+      27,
+      6
+     ]
+    },
+    {
+     "id": "aryanneqwentileswap",
+     "name": "Aryanne/QwentileSwap",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      31,
+      7,
+      28,
+      31,
+      5,
+      29,
+      39,
+      7,
+      20,
+      43,
+      29,
+      39,
+      18,
+      29,
+      20,
+      29,
+      36,
+      29,
+      31,
+      7
+     ]
+    },
+    {
+     "id": "cranmaytempmotacillacinerea",
+     "name": "Cran-May/tempmotacilla-cinerea",
+     "variant": null,
+     "vendor": "未标注",
+     "region": "other",
+     "open": null,
+     "ranks": [
+      32,
+      8,
+      29,
+      32,
+      6,
+      30,
+      40,
+      8,
+      21,
+      44,
+      30,
+      40,
+      19,
+      30,
+      21,
+      30,
+      37,
+      30,
+      32,
+      8
+     ]
+    },
+    {
+     "id": "daemontatoxllama3370bcognilink",
+     "name": "Daemontatox/Llama3.3-70B-CogniLink",
+     "variant": null,
+     "vendor": "Meta",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      45,
+      9,
+      39,
+      47,
+      7,
+      42,
+      57,
+      9,
+      29,
+      null,
+      41,
+      57,
+      26,
+      41,
+      29,
+      42,
+      54,
+      41,
+      47,
+      9
+     ]
+    },
+    {
+     "id": "goekdenizguelmezjosiefiedqwen2514binstructabliteratedv4",
+     "name": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      46,
+      10,
+      40,
+      49,
+      8,
+      43,
+      null,
+      10,
+      30,
+      null,
+      42,
+      null,
+      27,
+      42,
+      30,
+      43,
+      57,
+      42,
+      49,
+      10
+     ]
+    },
+    {
+     "id": "benevolencemessiahqwen2572b2xinstructtiesv10",
+     "name": "BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      48,
+      11,
+      42,
+      54,
+      9,
+      45,
+      null,
+      11,
+      32,
+      null,
+      44,
+      null,
+      29,
+      44,
+      32,
+      45,
+      null,
+      44,
+      53,
+      11
+     ]
+    },
+    {
+     "id": "1024mqwen14bb100",
+     "name": "1024m/QWEN-14B-B100",
+     "variant": null,
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      51,
+      12,
+      44,
+      59,
+      10,
+      48,
       null,
       12,
-      10,
-      12,
-      13,
-      12,
+      34,
+      null,
+      46,
+      null,
+      31,
+      46,
+      34,
+      48,
+      null,
+      46,
+      57,
       12
      ]
     }
