@@ -25,9 +25,42 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "models": [
+    {
+     "id": "gemini4carbon",
+     "name": "Gemini 4 Carbon",
+     "variant": null,
+     "vendor": "Google DeepMind",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1
+     ]
+    },
     {
      "id": "claude-opus-5.5",
      "name": "Claude Opus 5.5",
@@ -56,7 +89,8 @@
       1,
       1,
       1,
-      1
+      1,
+      2
      ]
     },
     {
@@ -87,7 +121,8 @@
       4,
       4,
       4,
-      2
+      2,
+      3
      ]
     },
     {
@@ -118,37 +153,7 @@
       7,
       7,
       7,
-      3
-     ]
-    },
-    {
-     "id": "gemini-4-argon",
-     "name": "Gemini 4 Argon",
-     "variant": null,
-     "vendor": "Google DeepMind",
-     "region": "us",
-     "open": false,
-     "ranks": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      5,
-      5,
-      5,
-      5,
+      3,
       4
      ]
     },
@@ -180,6 +185,7 @@
       3,
       3,
       3,
+      5,
       5
      ]
     },
@@ -211,6 +217,7 @@
       2,
       2,
       2,
+      6,
       6
      ]
     },
@@ -242,6 +249,7 @@
       6,
       6,
       6,
+      7,
       7
      ]
     },
@@ -269,6 +277,7 @@
       7,
       7,
       7,
+      8,
       8,
       8,
       8,
@@ -304,6 +313,7 @@
       10,
       10,
       10,
+      9,
       9
      ]
     },
@@ -335,6 +345,7 @@
       11,
       11,
       11,
+      10,
       10
      ]
     },
@@ -366,6 +377,7 @@
       9,
       9,
       9,
+      11,
       11
      ]
     }
@@ -693,7 +705,8 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "models": [
     {
@@ -723,7 +736,39 @@
       1,
       1,
       1,
+      1,
       1
+     ]
+    },
+    {
+     "id": "gemini4carbon",
+     "name": "Gemini 4 Carbon",
+     "variant": "high",
+     "vendor": "Google DeepMind",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      2
      ]
     },
     {
@@ -753,36 +798,7 @@
       2,
       2,
       2,
-      2
-     ]
-    },
-    {
-     "id": "gpt-6-astra",
-     "name": "GPT-6 Astra",
-     "variant": "max",
-     "vendor": "OpenAI",
-     "region": "us",
-     "open": false,
-     "ranks": [
-      4,
       2,
-      2,
-      2,
-      2,
-      5,
-      4,
-      5,
-      5,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      3,
-      3,
-      3,
       3
      ]
     },
@@ -813,7 +829,39 @@
       4,
       4,
       4,
+      4,
       4
+     ]
+    },
+    {
+     "id": "gpt-6-astra",
+     "name": "GPT-6 Astra",
+     "variant": "max",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "ranks": [
+      4,
+      2,
+      2,
+      2,
+      2,
+      5,
+      4,
+      5,
+      5,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      5
      ]
     },
     {
@@ -843,7 +891,8 @@
       5,
       5,
       5,
-      5
+      5,
+      6
      ]
     },
     {
@@ -873,67 +922,8 @@
       6,
       6,
       6,
-      6
-     ]
-    },
-    {
-     "id": "gpt-6-sol",
-     "name": "GPT-6 Sol",
-     "variant": "max",
-     "vendor": "OpenAI",
-     "region": "us",
-     "open": false,
-     "ranks": [
       6,
-      6,
-      6,
-      6,
-      6,
-      3,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
-      7,
       7
-     ]
-    },
-    {
-     "id": "claude-opus-5",
-     "name": "Claude Opus 5",
-     "variant": "max",
-     "vendor": "Anthropic",
-     "region": "us",
-     "open": false,
-     "ranks": [
-      7,
-      9,
-      9,
-      9,
-      9,
-      9,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      9,
-      9,
-      9,
-      9,
-      8,
-      8,
-      8,
-      8
      ]
     },
     {
@@ -963,7 +953,70 @@
       9,
       9,
       9,
+      9,
+      8
+     ]
+    },
+    {
+     "id": "gpt-6-sol",
+     "name": "GPT-6 Sol",
+     "variant": "max",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "ranks": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      3,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
       9
+     ]
+    },
+    {
+     "id": "claude-opus-5",
+     "name": "Claude Opus 5",
+     "variant": "max",
+     "vendor": "Anthropic",
+     "region": "us",
+     "open": false,
+     "ranks": [
+      7,
+      9,
+      9,
+      9,
+      9,
+      9,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      8,
+      8,
+      8,
+      8,
+      10
      ]
     },
     {
@@ -993,36 +1046,7 @@
       10,
       10,
       10,
-      10
-     ]
-    },
-    {
-     "id": "claude-sonnet-5",
-     "name": "Claude Sonnet 5",
-     "variant": "high",
-     "vendor": "Anthropic",
-     "region": "us",
-     "open": false,
-     "ranks": [
-      13,
-      13,
-      13,
-      13,
-      13,
-      14,
-      12,
-      13,
-      13,
-      12,
-      12,
-      12,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
+      10,
       11
      ]
     },
@@ -1046,6 +1070,7 @@
       11,
       11,
       11,
+      12,
       12,
       12,
       12,
@@ -1082,9 +1107,41 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "models": [
+    {
+     "id": "gemini4carbon",
+     "name": "Gemini 4 Carbon",
+     "variant": "high",
+     "vendor": "Google DeepMind",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1
+     ]
+    },
     {
      "id": "gemini-4-argon",
      "name": "Gemini 4 Argon",
@@ -1112,7 +1169,8 @@
       1,
       1,
       1,
-      1
+      1,
+      2
      ]
     },
     {
@@ -1142,7 +1200,8 @@
       2,
       2,
       2,
-      2
+      2,
+      3
      ]
     },
     {
@@ -1172,7 +1231,8 @@
       3,
       3,
       3,
-      3
+      3,
+      4
      ]
     },
     {
@@ -1202,7 +1262,8 @@
       4,
       4,
       4,
-      4
+      4,
+      5
      ]
     },
     {
@@ -1232,7 +1293,8 @@
       6,
       6,
       6,
-      6
+      6,
+      7
      ]
     },
     {
@@ -1262,7 +1324,8 @@
       7,
       7,
       7,
-      7
+      7,
+      8
      ]
     },
     {
@@ -1292,67 +1355,8 @@
       8,
       8,
       8,
-      8
-     ]
-    },
-    {
-     "id": "muse-spark-1.3",
-     "name": "Muse Spark 1.3",
-     "variant": "max",
-     "vendor": "Meta",
-     "region": "us",
-     "open": true,
-     "ranks": [
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      12,
-      10,
-      10,
-      10,
-      10,
-      10
-     ]
-    },
-    {
-     "id": "mimo-v2.6-pro",
-     "name": "MiMo V2.6 Pro",
-     "variant": null,
-     "vendor": "小米",
-     "region": "cn",
-     "open": true,
-     "ranks": [
-      10,
-      9,
-      9,
-      9,
-      9,
-      9,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11,
-      11
+      8,
+      9
      ]
     },
     {
@@ -1382,7 +1386,70 @@
       12,
       12,
       12,
+      12,
+      11
+     ]
+    },
+    {
+     "id": "mimo-v2.6-pro",
+     "name": "MiMo V2.6 Pro",
+     "variant": null,
+     "vendor": "小米",
+     "region": "cn",
+     "open": true,
+     "ranks": [
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
       12
+     ]
+    },
+    {
+     "id": "muse-spark-1.3",
+     "name": "Muse Spark 1.3",
+     "variant": "max",
+     "vendor": "Meta",
+     "region": "us",
+     "open": true,
+     "ranks": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      10,
+      10,
+      10,
+      10,
+      10,
+      13
      ]
     },
     {
@@ -1412,36 +1479,7 @@
       13,
       13,
       13,
-      13
-     ]
-    },
-    {
-     "id": "gemini-3.7-flash",
-     "name": "Gemini 3.7 Flash",
-     "variant": "high",
-     "vendor": "Google DeepMind",
-     "region": "us",
-     "open": false,
-     "ranks": [
       13,
-      13,
-      13,
-      13,
-      13,
-      13,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
-      14,
       14
      ]
     }
@@ -1471,7 +1509,8 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "models": [
     {
@@ -1482,6 +1521,7 @@
      "region": "us",
      "open": false,
      "ranks": [
+      1,
       1,
       1,
       1,
@@ -1531,6 +1571,7 @@
       2,
       2,
       2,
+      2,
       2
      ]
     },
@@ -1561,7 +1602,39 @@
       3,
       3,
       3,
+      3,
       3
+     ]
+    },
+    {
+     "id": "gemini4carbon",
+     "name": "Gemini 4 Carbon",
+     "variant": "high",
+     "vendor": "Google DeepMind",
+     "region": "us",
+     "open": null,
+     "ranks": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4
      ]
     },
     {
@@ -1591,7 +1664,8 @@
       4,
       4,
       4,
-      4
+      4,
+      5
      ]
     },
     {
@@ -1621,7 +1695,8 @@
       5,
       5,
       5,
-      5
+      5,
+      6
      ]
     },
     {
@@ -1651,7 +1726,8 @@
       6,
       6,
       6,
-      6
+      6,
+      7
      ]
     },
     {
@@ -1681,7 +1757,8 @@
       8,
       8,
       8,
-      8
+      8,
+      9
      ]
     },
     {
@@ -1711,36 +1788,7 @@
       9,
       9,
       9,
-      9
-     ]
-    },
-    {
-     "id": "gpt-6-sol",
-     "name": "GPT-6 Sol",
-     "variant": "max",
-     "vendor": "OpenAI",
-     "region": "us",
-     "open": false,
-     "ranks": [
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
-      8,
       9,
-      9,
-      9,
-      9,
-      10,
-      10,
-      10,
       10
      ]
     },
@@ -1771,7 +1819,39 @@
       11,
       11,
       11,
+      11,
       11
+     ]
+    },
+    {
+     "id": "gpt-6-sol",
+     "name": "GPT-6 Sol",
+     "variant": "max",
+     "vendor": "OpenAI",
+     "region": "us",
+     "open": false,
+     "ranks": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      12
      ]
     },
     {
@@ -1801,37 +1881,8 @@
       12,
       12,
       12,
-      12
-     ]
-    },
-    {
-     "id": "deepseek-v4.1-flash",
-     "name": "DeepSeek V4.1-Flash",
-     "variant": "max",
-     "vendor": "深度求索",
-     "region": "cn",
-     "open": true,
-     "ranks": [
-      23,
-      23,
-      23,
-      23,
-      23,
-      23,
-      24,
-      24,
-      24,
-      24,
-      24,
       12,
-      13,
-      13,
-      13,
-      13,
-      14,
-      14,
-      14,
-      14
+      13
      ]
     }
    ]
@@ -1861,7 +1912,8 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "models": [
     {
@@ -1892,6 +1944,7 @@
       1,
       1,
       null,
+      1,
       1
      ]
     },
@@ -1923,38 +1976,8 @@
       2,
       2,
       null,
+      2,
       2
-     ]
-    },
-    {
-     "id": "dfurmancalmerys78borpov01",
-     "name": "dfurman/CalmeRys-78B-Orpo-v0.1",
-     "variant": null,
-     "vendor": "未标注",
-     "region": "other",
-     "open": null,
-     "ranks": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      3,
-      null,
-      null,
-      3,
-      null,
-      3,
-      null,
-      null,
-      null,
-      null,
-      3,
-      null,
-      null,
-      null,
-      3
      ]
     },
     {
@@ -1985,7 +2008,8 @@
       3,
       3,
       null,
-      4
+      4,
+      3
      ]
     },
     {
@@ -2016,7 +2040,8 @@
       4,
       4,
       null,
-      5
+      5,
+      4
      ]
     },
     {
@@ -2047,7 +2072,8 @@
       5,
       5,
       null,
-      6
+      6,
+      5
      ]
     },
     {
@@ -2078,7 +2104,8 @@
       6,
       6,
       null,
-      7
+      7,
+      6
      ]
     },
     {
@@ -2109,7 +2136,8 @@
       7,
       7,
       null,
-      8
+      8,
+      7
      ]
     },
     {
@@ -2140,7 +2168,8 @@
       8,
       8,
       1,
-      9
+      9,
+      8
      ]
     },
     {
@@ -2171,7 +2200,8 @@
       9,
       9,
       2,
-      10
+      10,
+      9
      ]
     },
     {
@@ -2202,7 +2232,8 @@
       10,
       10,
       null,
-      11
+      11,
+      10
      ]
     },
     {
@@ -2233,6 +2264,39 @@
       11,
       11,
       3,
+      12,
+      11
+     ]
+    },
+    {
+     "id": "qwenqwen2532b",
+     "name": "Qwen/Qwen2.5-32B",
+     "variant": "instruct",
+     "vendor": "阿里巴巴",
+     "region": "cn",
+     "open": null,
+     "ranks": [
+      12,
+      null,
+      12,
+      12,
+      null,
+      12,
+      16,
+      null,
+      10,
+      17,
+      12,
+      16,
+      null,
+      12,
+      10,
+      12,
+      13,
+      12,
+      12,
+      null,
+      13,
       12
      ]
     }
