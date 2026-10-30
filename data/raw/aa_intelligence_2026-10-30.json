@@ -1,0 +1,104 @@
+{
+ "source_id": "aa_intelligence",
+ "board": "Artificial Analysis 智能指数榜",
+ "metric": "Intelligence Index",
+ "kind": "objective_benchmark",
+ "source_url": "https://artificialanalysis.ai/text/intelligence-index",
+ "dataset_url": "https://artificialanalysis.ai/",
+ "license": "© Artificial Analysis，本站仅聚合展示",
+ "fetched_at": "2026-10-30T03:59:27Z",
+ "publish_date": "2026-10-30",
+ "channel": "html-flight-payload",
+ "mirror_note": null,
+ "price_unit": "USD per 1M blended tokens",
+ "rows": [
+  {
+   "model": "Gemini 4 Carbon",
+   "slug": "gemini-4-carbon",
+   "label": "Gemini 4 Carbon (high)",
+   "score": 59.43,
+   "price": 7.755545745286556,
+   "rank": 1
+  },
+  {
+   "model": "Claude Opus 5.5",
+   "slug": "claude-opus-5-5",
+   "label": "Claude Opus 5.5 (max with fallback)",
+   "score": 58.41,
+   "price": 10.036409719512749,
+   "rank": 2
+  },
+  {
+   "model": "GPT-6 Astra",
+   "slug": "gpt-6-astra",
+   "label": "GPT-6 Astra (max)",
+   "score": 56.85,
+   "price": 6.244666943602518,
+   "rank": 3
+  },
+  {
+   "model": "GPT-6.1 Sol",
+   "slug": "gpt-6-1-sol",
+   "label": "GPT-6.1 Sol (max)",
+   "score": 54.51,
+   "price": 1.2720632679446995,
+   "rank": 4
+  },
+  {
+   "model": "Claude Fable 5.1",
+   "slug": "claude-fable-5-1",
+   "label": "Claude Fable 5.1 (max with fallback)",
+   "score": 49.01,
+   "price": 12.993997201178466,
+   "rank": 5
+  },
+  {
+   "model": "Kimi K3.1 Pro",
+   "slug": "kimi-k3-1-pro",
+   "label": "Kimi K3.1 Pro",
+   "score": 46.0,
+   "price": 3.6812002895742055,
+   "rank": 6
+  },
+  {
+   "model": "Muse Wonder",
+   "slug": "muse-wonder",
+   "label": "Muse Wonder (max)",
+   "score": 43.32,
+   "price": 6.9520364786062245,
+   "rank": 7
+  },
+  {
+   "model": "Grok 4.7",
+   "slug": "grok-4-7",
+   "label": "Grok 4.7 (xhigh)",
+   "score": 34.34,
+   "price": 7.511769586408455,
+   "rank": 8
+  },
+  {
+   "model": "DeepSeek V4.1 Flash 1017",
+   "slug": "deepseek-v4-1-flash-1017",
+   "label": "DeepSeek V4.1 Flash 1017 (max)",
+   "score": 32.49,
+   "price": 0.60210514783598,
+   "rank": 9
+  },
+  {
+   "model": "GLM-5.3",
+   "slug": "glm-5-3",
+   "label": "GLM-5.3 (max)",
+   "score": 31.65,
+   "price": 5.009264601719954,
+   "rank": 10
+  },
+  {
+   "model": "MiMo-V2.6-Pro",
+   "slug": "mimo-v2-6-pro",
+   "label": "MiMo-V2.6-Pro",
+   "score": 29.89,
+   "price": 0.25718036275876155,
+   "rank": 11
+  }
+ ]
+}
