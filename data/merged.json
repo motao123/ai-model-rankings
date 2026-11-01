@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-31T03:43:58Z",
- "date": "2026-10-31",
+ "generated_at": "2026-11-01T03:53:02Z",
+ "date": "2026-11-01",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -13,11 +13,11 @@
    "license": "CC-BY-4.0",
    "fetched_at": "2026-10-31T03:43:44Z",
    "publish_date": "2026-10-28",
-   "compared_with": "2026-10-30",
-   "stale": false,
-   "stale_from": null,
-   "stale_days": 0,
-   "channel": "hf-datasets-server",
+   "compared_with": "2026-10-31",
+   "stale": true,
+   "stale_from": "2026-10-31",
+   "stale_days": 1,
+   "channel": "lkg",
    "mirror_note": null,
    "manual": false,
    "manual_note": null,
@@ -9255,9 +9255,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-10-31T03:43:40Z",
-   "publish_date": "2026-10-31",
-   "compared_with": "2026-10-30",
+   "fetched_at": "2026-11-01T03:51:51Z",
+   "publish_date": "2026-11-01",
+   "compared_with": "2026-10-31",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9851,9 +9851,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-31T03:43:45Z",
+   "fetched_at": "2026-11-01T03:52:33Z",
    "publish_date": "2026-10-28",
-   "compared_with": "2026-10-30",
+   "compared_with": "2026-10-31",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13221,9 +13221,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-31T03:43:45Z",
+   "fetched_at": "2026-11-01T03:52:33Z",
    "publish_date": "2026-10-28",
-   "compared_with": "2026-10-30",
+   "compared_with": "2026-10-31",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13409,7 +13409,7 @@
      "variant": "max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 8,
      "tie_size": 1
     },
@@ -13431,7 +13431,7 @@
      "variant": "max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
     },
@@ -13452,7 +13452,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -13474,7 +13474,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -13496,7 +13496,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
@@ -13518,7 +13518,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 10,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -13540,7 +13540,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 14,
      "tie_size": 1
@@ -13562,7 +13562,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -13584,7 +13584,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -13606,7 +13606,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -13628,7 +13628,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 5,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -13650,7 +13650,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -13672,7 +13672,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -13694,7 +13694,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -13716,7 +13716,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 16,
+     "trend": 22,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -13738,7 +13738,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -13760,7 +13760,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -13782,7 +13782,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 25,
      "tie_size": 1
@@ -13804,7 +13804,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -13826,7 +13826,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -13848,7 +13848,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -13870,7 +13870,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -13892,7 +13892,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -13914,7 +13914,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -13936,7 +13936,7 @@
      "open": true,
      "variant": "high, 20260813",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -13958,7 +13958,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -13980,7 +13980,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -14002,7 +14002,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 3,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -14024,7 +14024,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -14046,7 +14046,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -14068,7 +14068,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 7,
+     "trend": 13,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -14090,7 +14090,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -14112,7 +14112,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -14134,7 +14134,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -14156,7 +14156,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -14178,7 +14178,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -14200,7 +14200,7 @@
      "open": false,
      "variant": "low",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -14222,7 +14222,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -14244,7 +14244,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -14266,7 +14266,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -14288,7 +14288,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -14310,7 +14310,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
@@ -14332,7 +14332,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -14354,7 +14354,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
@@ -14376,7 +14376,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -14398,7 +14398,7 @@
      "open": null,
      "variant": "nvfp4",
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -14420,7 +14420,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -14442,7 +14442,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
@@ -14464,7 +14464,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
@@ -14486,7 +14486,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
@@ -15059,9 +15059,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-10-31T03:43:58Z",
+   "fetched_at": "2026-11-01T03:53:02Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-10-30",
+   "compared_with": "2026-10-31",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15152,7 +15152,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 3,
      "tie_size": 1
     },
@@ -15178,7 +15178,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
@@ -15206,7 +15206,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
     },
@@ -15232,7 +15232,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 6,
      "tie_size": 1
@@ -15259,7 +15259,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 7,
      "tie_size": 1
@@ -15287,7 +15287,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 8,
      "tie_size": 1
     },
@@ -15314,7 +15314,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
     },
@@ -15340,7 +15340,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -15367,7 +15367,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -15395,7 +15395,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
     },
@@ -15421,7 +15421,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -15448,63 +15448,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 14,
-     "tie_size": 1
-    },
-    {
-     "model": "zetasepic/Qwen2.5-32B-Instruct-abliterated-v2",
-     "organization": "zetasepic",
-     "score": 46.89,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 83.34131216283905,
-      "bbh": 56.53381848053764,
-      "math": 59.516616314199396,
-      "gpqa": 15.659955257270694,
-      "musr": 14.928385416666664,
-      "mmlu_pro": 51.35195035460993
-     },
-     "rank": 15,
-     "id": "zetasepicqwen2532binstructabliteratedv2",
-     "display_name": "zetasepic/Qwen2.5-32B-Instruct-abliterated-v2",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "zetasepic",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 15,
-     "tie_size": 1
-    },
-    {
-     "model": "rubenroy/Gilgamesh-72B",
-     "organization": "rubenroy",
-     "score": 46.79,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 84.86006019583593,
-      "bbh": 61.83602130504769,
-      "math": 43.80664652567976,
-      "gpqa": 19.239373601789712,
-      "musr": 17.664062499999996,
-      "mmlu_pro": 53.3558658392435
-     },
-     "rank": 16,
-     "id": "rubenroygilgamesh72b",
-     "display_name": "rubenroy/Gilgamesh-72B",
-     "vendor": "未标注",
-     "vendor_raw": "rubenroy",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 16,
      "tie_size": 1
     },
     {
@@ -15520,7 +15466,7 @@
       "musr": 18.115104166666665,
       "mmlu_pro": 54.510195035460995
      },
-     "rank": 17,
+     "rank": 15,
      "id": "sakaltiultiima72b",
      "display_name": "Sakalti/ultiima-72B",
      "vendor": "未标注",
@@ -15529,9 +15475,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -7,
+     "trend": 2,
      "is_new": false,
-     "tie_rank": 17,
+     "tie_rank": 15,
      "tie_size": 1
     },
     {
@@ -15547,7 +15493,7 @@
       "musr": 14.224479166666663,
       "mmlu_pro": 52.05378250591017
      },
-     "rank": 18,
+     "rank": 16,
      "id": "combinhorizonzetasepicabliteratedv2qwen2532binstbasemergeties",
      "display_name": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -15556,9 +15502,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -7,
+     "trend": 2,
      "is_new": false,
-     "tie_rank": 18,
+     "tie_rank": 16,
      "tie_size": 1
     },
     {
@@ -15574,7 +15520,7 @@
       "musr": 13.86953125,
       "mmlu_pro": 52.478575650118195
      },
-     "rank": 19,
+     "rank": 17,
      "id": "maldvawqward2532b",
      "display_name": "maldv/Awqward2.5-32B",
      "vendor": "未标注",
@@ -15583,63 +15529,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 19,
-     "tie_size": 1
-    },
-    {
-     "model": "raphgg/test-2.5-72B",
-     "organization": "raphgg",
-     "score": 46.74,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 84.37047035199936,
-      "bbh": 62.1541268705062,
-      "math": 41.08761329305136,
-      "gpqa": 18.568232662192393,
-      "musr": 20.515104166666664,
-      "mmlu_pro": 53.74372044917257
-     },
-     "rank": 20,
-     "id": "raphggtest2572b",
-     "display_name": "raphgg/test-2.5-72B",
-     "vendor": "未标注",
-     "vendor_raw": "raphgg",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 20,
-     "tie_size": 1
-    },
-    {
-     "model": "shuttleai/shuttle-3",
-     "organization": "shuttleai",
-     "score": 46.7,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 81.5403130360776,
-      "bbh": 64.05301565117443,
-      "math": 45.996978851963746,
-      "gpqa": 21.588366890380314,
-      "musr": 14.64427083333333,
-      "mmlu_pro": 52.40469858156028
-     },
-     "rank": 21,
-     "id": "shuttleaishuttle3",
-     "display_name": "shuttleai/shuttle-3",
-     "vendor": "未标注",
-     "vendor_raw": "shuttleai",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 21,
+     "trend": 2,
+     "is_new": false,
+     "tie_rank": 17,
      "tie_size": 1
     },
     {
@@ -15655,7 +15547,7 @@
       "musr": 13.498958333333329,
       "mmlu_pro": 51.85062056737589
      },
-     "rank": 22,
+     "rank": 18,
      "id": "qwenqwen2532b",
      "display_name": "Qwen/Qwen2.5-32B",
      "vendor": "阿里巴巴",
@@ -15664,9 +15556,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -10,
+     "trend": 4,
      "is_new": false,
-     "tie_rank": 22,
+     "tie_rank": 18,
      "tie_size": 1
     },
     {
@@ -15682,7 +15574,7 @@
       "musr": 17.216666666666665,
       "mmlu_pro": 50.687056737588655
      },
-     "rank": 23,
+     "rank": 19,
      "id": "mistralaimistrallargeinstruct2411",
      "display_name": "mistralai/Mistral-Large-Instruct-2411",
      "vendor": "Mistral AI",
@@ -15691,36 +15583,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 23,
-     "tie_size": 1
-    },
-    {
-     "model": "rombodawg/Rombos-LLM-V2.5-Qwen-72b",
-     "organization": "rombodawg",
-     "score": 46.5,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 71.5535889218385,
-      "bbh": 61.26714504573664,
-      "math": 54.229607250755286,
-      "gpqa": 19.798657718120808,
-      "musr": 17.322916666666668,
-      "mmlu_pro": 54.83340721040189
-     },
-     "rank": 24,
-     "id": "rombodawgrombosllmv25qwen72b",
-     "display_name": "rombodawg/Rombos-LLM-V2.5-Qwen-72b",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "rombodawg",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 24,
+     "trend": 4,
+     "is_new": false,
+     "tie_rank": 19,
      "tie_size": 1
     },
     {
@@ -15736,7 +15601,7 @@
       "musr": 13.832291666666665,
       "mmlu_pro": 51.822916666666664
      },
-     "rank": 25,
+     "rank": 20,
      "id": "saxolinkbrickshorizonaiavengersv332b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V3-32B",
      "vendor": "未标注",
@@ -15745,36 +15610,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -12,
+     "trend": 5,
      "is_new": false,
-     "tie_rank": 25,
-     "tie_size": 1
-    },
-    {
-     "model": "zetasepic/Qwen2.5-72B-Instruct-abliterated",
-     "organization": "zetasepic",
-     "score": 46.34,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 71.52610628687438,
-      "bbh": 59.912975835046495,
-      "math": 52.416918429003026,
-      "gpqa": 20.917225950782996,
-      "musr": 19.122916666666665,
-      "mmlu_pro": 54.13157505910166
-     },
-     "rank": 26,
-     "id": "zetasepicqwen2572binstructabliterated",
-     "display_name": "zetasepic/Qwen2.5-72B-Instruct-abliterated",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "zetasepic",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 26,
+     "tie_rank": 20,
      "tie_size": 1
     },
     {
@@ -15790,7 +15628,7 @@
       "musr": 13.661718749999997,
       "mmlu_pro": 51.915263002364064
      },
-     "rank": 27,
+     "rank": 21,
      "id": "saxolinkbrickshorizonaiavengersv632b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V6-32B",
      "vendor": "未标注",
@@ -15799,36 +15637,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -13,
+     "trend": 6,
      "is_new": false,
-     "tie_rank": 27,
-     "tie_size": 1
-    },
-    {
-     "model": "tanliboy/lambda-qwen2.5-32b-dpo-test",
-     "organization": "tanliboy",
-     "score": 45.92,
-     "type": "💬 chat models (rlhf, dpo, ift, ...)",
-     "subscores": {
-      "ifeval": 80.83839767372794,
-      "bbh": 54.40796058706255,
-      "math": 61.027190332326285,
-      "gpqa": 14.205816554809845,
-      "musr": 13.328385416666663,
-      "mmlu_pro": 51.739804964539005
-     },
-     "rank": 28,
-     "id": "tanliboylambdaqwen2532bdpotest",
-     "display_name": "tanliboy/lambda-qwen2.5-32b-dpo-test",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "tanliboy",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 28,
+     "tie_rank": 21,
      "tie_size": 1
     },
     {
@@ -15844,7 +15655,7 @@
       "musr": 19.96197916666667,
       "mmlu_pro": 54.214686761229316
      },
-     "rank": 29,
+     "rank": 22,
      "id": "maldvqwentile2532b",
      "display_name": "maldv/Qwentile2.5-32B",
      "vendor": "阿里巴巴",
@@ -15853,36 +15664,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 29,
-     "tie_size": 1
-    },
-    {
-     "model": "rombodawg/Rombos-LLM-V2.5-Qwen-32b",
-     "organization": "rombodawg",
-     "score": 45.83,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 68.26631116548536,
-      "bbh": 58.261894086787414,
-      "math": 49.546827794561935,
-      "gpqa": 19.574944071588366,
-      "musr": 24.727083333333336,
-      "mmlu_pro": 54.621010638297875
-     },
-     "rank": 30,
-     "id": "rombodawgrombosllmv25qwen32b",
-     "display_name": "rombodawg/Rombos-LLM-V2.5-Qwen-32b",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "rombodawg",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 30,
+     "trend": 7,
+     "is_new": false,
+     "tie_rank": 22,
      "tie_size": 1
     },
     {
@@ -15898,7 +15682,7 @@
       "musr": 22.265885416666666,
       "mmlu_pro": 48.082890070921984
      },
-     "rank": 31,
+     "rank": 23,
      "id": "openbuddyopenbuddyllama3370bv241",
      "display_name": "OpenBuddy/openbuddy-llama3.3-70b-v24.1",
      "vendor": "Meta",
@@ -15907,9 +15691,9 @@
      "open": null,
      "variant": "131k",
      "registered": false,
-     "trend": -16,
+     "trend": 8,
      "is_new": false,
-     "tie_rank": 31,
+     "tie_rank": 23,
      "tie_size": 1
     },
     {
@@ -15925,7 +15709,7 @@
       "musr": 20.591406250000002,
       "mmlu_pro": 52.912603427895974
      },
-     "rank": 32,
+     "rank": 24,
      "id": "saxolinkbrickshorizonaiavengersv532b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V5-32B",
      "vendor": "未标注",
@@ -15934,9 +15718,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -16,
+     "trend": 8,
      "is_new": false,
-     "tie_rank": 32,
+     "tie_rank": 24,
      "tie_size": 1
     },
     {
@@ -15952,7 +15736,7 @@
       "musr": 12.091145833333337,
       "mmlu_pro": 52.45087174940899
      },
-     "rank": 33,
+     "rank": 25,
      "id": "combinhorizonhuihuiaiabliteratedqwen2532binstbasemergeties",
      "display_name": "CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES",
      "vendor": "阿里巴巴",
@@ -15961,9 +15745,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -16,
+     "trend": 8,
      "is_new": false,
-     "tie_rank": 33,
+     "tie_rank": 25,
      "tie_size": 1
     },
     {
@@ -15979,7 +15763,7 @@
       "musr": 19.465885416666666,
       "mmlu_pro": 52.8017878250591
      },
-     "rank": 34,
+     "rank": 26,
      "id": "saxolinkbrickshorizonaiavengersv432b",
      "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V4-32B",
      "vendor": "未标注",
@@ -15988,9 +15772,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -16,
+     "trend": 8,
      "is_new": false,
-     "tie_rank": 34,
+     "tie_rank": 26,
      "tie_size": 1
     },
     {
@@ -16006,7 +15790,7 @@
       "musr": 24.134895833333335,
       "mmlu_pro": 54.55636820330969
      },
-     "rank": 35,
+     "rank": 27,
      "id": "sakaltiultiima32b",
      "display_name": "Sakalti/ultiima-32B",
      "vendor": "未标注",
@@ -16015,9 +15799,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -16,
+     "trend": 8,
      "is_new": false,
-     "tie_rank": 35,
+     "tie_rank": 27,
      "tie_size": 1
     },
     {
@@ -16033,7 +15817,7 @@
       "musr": 23.721093749999998,
       "mmlu_pro": 49.20028073286053
      },
-     "rank": 36,
+     "rank": 28,
      "id": "dnhkngrysxlarge",
      "display_name": "dnhkng/RYS-XLarge",
      "vendor": "未标注",
@@ -16042,36 +15826,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 36,
-     "tie_size": 1
-    },
-    {
-     "model": "ssmits/Qwen2.5-95B-Instruct",
-     "organization": "ssmits",
-     "score": 45.26,
-     "type": "💬 chat models (rlhf, dpo, ift, ...)",
-     "subscores": {
-      "ifeval": 84.31051831363006,
-      "bbh": 58.530351322851054,
-      "math": 53.02114803625378,
-      "gpqa": 15.212527964205815,
-      "musr": 13.61484375,
-      "mmlu_pro": 46.85468380614657
-     },
-     "rank": 37,
-     "id": "ssmitsqwen2595b",
-     "display_name": "ssmits/Qwen2.5-95B",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "ssmits",
-     "region": "cn",
-     "open": null,
-     "variant": "instruct",
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 37,
+     "trend": 8,
+     "is_new": false,
+     "tie_rank": 28,
      "tie_size": 1
     },
     {
@@ -16087,7 +15844,7 @@
       "musr": 18.536718749999995,
       "mmlu_pro": 56.153959810874696
      },
-     "rank": 38,
+     "rank": 29,
      "id": "sakaltiultiima72bv15",
      "display_name": "Sakalti/ultiima-72B-v1.5",
      "vendor": "未标注",
@@ -16096,36 +15853,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -18,
+     "trend": 9,
      "is_new": false,
-     "tie_rank": 38,
-     "tie_size": 1
-    },
-    {
-     "model": "tomasmcm/sky-t1-coder-32b-flash",
-     "organization": "tomasmcm",
-     "score": 44.87,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 77.80090160773415,
-      "bbh": 55.46594372212499,
-      "math": 54.229607250755286,
-      "gpqa": 15.771812080536915,
-      "musr": 12.808854166666663,
-      "mmlu_pro": 53.13423463356975
-     },
-     "rank": 39,
-     "id": "tomasmcmskyt1coder32bflash",
-     "display_name": "tomasmcm/sky-t1-coder-32b-flash",
-     "vendor": "未标注",
-     "vendor_raw": "tomasmcm",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 39,
+     "tie_rank": 29,
      "tie_size": 1
     },
     {
@@ -16141,7 +15871,7 @@
       "musr": 15.565624999999999,
       "mmlu_pro": 48.12906323877069
      },
-     "rank": 40,
+     "rank": 30,
      "id": "metallamallama3370b",
      "display_name": "meta-llama/Llama-3.3-70B",
      "vendor": "Meta",
@@ -16150,9 +15880,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 40,
+     "trend": 10,
+     "is_new": false,
+     "tie_rank": 30,
      "tie_size": 1
     },
     {
@@ -16168,7 +15898,7 @@
       "musr": 21.721093749999998,
       "mmlu_pro": 53.20811170212767
      },
-     "rank": 41,
+     "rank": 31,
      "id": "finguairomboultima32b",
      "display_name": "FINGU-AI/RomboUltima-32B",
      "vendor": "未标注",
@@ -16177,9 +15907,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 41,
+     "tie_rank": 31,
      "tie_size": 1
     },
     {
@@ -16195,7 +15925,7 @@
       "musr": 18.99739583333333,
       "mmlu_pro": 49.37573877068559
      },
-     "rank": 42,
+     "rank": 32,
      "id": "maziyarpanahicalme21rys78b",
      "display_name": "MaziyarPanahi/calme-2.1-rys-78b",
      "vendor": "未标注",
@@ -16204,9 +15934,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 42,
+     "tie_rank": 32,
      "tie_size": 1
     },
     {
@@ -16222,7 +15952,7 @@
       "musr": 16.999218749999997,
       "mmlu_pro": 49.7266548463357
      },
-     "rank": 43,
+     "rank": 33,
      "id": "maziyarpanahicalme23rys78b",
      "display_name": "MaziyarPanahi/calme-2.3-rys-78b",
      "vendor": "未标注",
@@ -16231,9 +15961,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 43,
+     "tie_rank": 33,
      "tie_size": 1
     },
     {
@@ -16249,7 +15979,7 @@
       "musr": 20.15234375,
       "mmlu_pro": 49.05252659574468
      },
-     "rank": 44,
+     "rank": 34,
      "id": "maziyarpanahicalme21qwen272b",
      "display_name": "MaziyarPanahi/calme-2.1-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -16258,9 +15988,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 44,
+     "tie_rank": 34,
      "tie_size": 1
     },
     {
@@ -16276,7 +16006,7 @@
       "musr": 16.82864583333333,
       "mmlu_pro": 48.72931442080378
      },
-     "rank": 45,
+     "rank": 35,
      "id": "maziyarpanahicalme22rys78b",
      "display_name": "MaziyarPanahi/calme-2.2-rys-78b",
      "vendor": "未标注",
@@ -16285,9 +16015,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 45,
+     "tie_rank": 35,
      "tie_size": 1
     },
     {
@@ -16303,7 +16033,7 @@
       "musr": 21.217187499999998,
       "mmlu_pro": 49.19104609929077
      },
-     "rank": 46,
+     "rank": 36,
      "id": "undi95mgfinalmix72b",
      "display_name": "Undi95/MG-FinalMix-72B",
      "vendor": "未标注",
@@ -16312,9 +16042,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 46,
+     "tie_rank": 36,
      "tie_size": 1
     },
     {
@@ -16330,7 +16060,7 @@
       "musr": 19.730729166666666,
       "mmlu_pro": 53.47591607565011
      },
-     "rank": 47,
+     "rank": 37,
      "id": "evaunit01evaqwen2572bv02",
      "display_name": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
      "vendor": "阿里巴巴",
@@ -16339,9 +16069,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -20,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 47,
+     "tie_rank": 37,
      "tie_size": 1
     },
     {
@@ -16357,7 +16087,7 @@
       "musr": 20.87005208333333,
       "mmlu_pro": 49.49578900709219
      },
-     "rank": 48,
+     "rank": 38,
      "id": "dfurmanqwen272borpov01",
      "display_name": "dfurman/Qwen2-72B-Orpo-v0.1",
      "vendor": "阿里巴巴",
@@ -16366,9 +16096,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 48,
+     "trend": 10,
+     "is_new": false,
+     "tie_rank": 38,
      "tie_size": 1
     },
     {
@@ -16384,7 +16114,7 @@
       "musr": 22.4171875,
       "mmlu_pro": 49.22798463356975
      },
-     "rank": 49,
+     "rank": 39,
      "id": "dnhkngrysxlargebase",
      "display_name": "dnhkng/RYS-XLarge-base",
      "vendor": "未标注",
@@ -16393,9 +16123,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 49,
+     "trend": 10,
+     "is_new": false,
+     "tie_rank": 39,
      "tie_size": 1
     },
     {
@@ -16411,7 +16141,7 @@
       "musr": 16.516927083333332,
       "mmlu_pro": 49.27415780141844
      },
-     "rank": 50,
+     "rank": 40,
      "id": "maziyarpanahicalme22qwen272b",
      "display_name": "MaziyarPanahi/calme-2.2-qwen2-72b",
      "vendor": "阿里巴巴",
@@ -16420,9 +16150,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -22,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 50,
+     "tie_rank": 40,
      "tie_size": 1
     },
     {
@@ -16438,7 +16168,7 @@
       "musr": 17.220833333333328,
       "mmlu_pro": 49.46808510638298
      },
-     "rank": 51,
+     "rank": 41,
      "id": "arceeaiarceenova",
      "display_name": "arcee-ai/Arcee-Nova",
      "vendor": "未标注",
@@ -16447,9 +16177,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 51,
+     "trend": 10,
+     "is_new": false,
+     "tie_rank": 41,
      "tie_size": 1
     },
     {
@@ -16465,7 +16195,7 @@
       "musr": 18.628645833333337,
       "mmlu_pro": 50.39154846335697
      },
-     "rank": 52,
+     "rank": 42,
      "id": "steelskulll33msnevoria70b",
      "display_name": "Steelskull/L3.3-MS-Nevoria-70b",
      "vendor": "未标注",
@@ -16474,9 +16204,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -23,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 52,
+     "tie_rank": 42,
      "tie_size": 1
     },
     {
@@ -16492,7 +16222,7 @@
       "musr": 18.961979166666666,
       "mmlu_pro": 49.3572695035461
      },
-     "rank": 53,
+     "rank": 43,
      "id": "triangle104set70b",
      "display_name": "Triangle104/Set-70b",
      "vendor": "未标注",
@@ -16501,9 +16231,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -23,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 53,
+     "tie_rank": 43,
      "tie_size": 1
     },
     {
@@ -16519,7 +16249,7 @@
       "musr": 19.20520833333333,
       "mmlu_pro": 54.95345744680851
      },
-     "rank": 54,
+     "rank": 44,
      "id": "aryanneqwentileswap",
      "display_name": "Aryanne/QwentileSwap",
      "vendor": "阿里巴巴",
@@ -16528,36 +16258,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -23,
+     "trend": 10,
      "is_new": false,
-     "tie_rank": 54,
-     "tie_size": 1
-    },
-    {
-     "model": "wanlige/li-14b-v0.4",
-     "organization": "wanlige",
-     "score": 43.66,
-     "type": "🤝 base merges and moerges",
-     "subscores": {
-      "ifeval": 81.32798751756451,
-      "bbh": 50.384177102490106,
-      "math": 55.740181268882175,
-      "gpqa": 11.85682326621924,
-      "musr": 16.349999999999998,
-      "mmlu_pro": 46.30060579196218
-     },
-     "rank": 55,
-     "id": "wanligeli14bv04",
-     "display_name": "wanlige/li-14b-v0.4",
-     "vendor": "未标注",
-     "vendor_raw": "wanlige",
-     "region": "other",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 55,
+     "tie_rank": 44,
      "tie_size": 1
     },
     {
@@ -16573,7 +16276,7 @@
       "musr": 12.669531249999999,
       "mmlu_pro": 47.224069148936174
      },
-     "rank": 56,
+     "rank": 45,
      "id": "cranmaytempmotacillacinerea",
      "display_name": "Cran-May/tempmotacilla-cinerea",
      "vendor": "未标注",
@@ -16582,9 +16285,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -24,
+     "trend": 11,
      "is_new": false,
-     "tie_rank": 56,
+     "tie_rank": 45,
      "tie_size": 1
     },
     {
@@ -16600,7 +16303,7 @@
       "musr": 20.191406249999996,
       "mmlu_pro": 49.5881353427896
      },
-     "rank": 57,
+     "rank": 46,
      "id": "steelskulll33nevoriar170b",
      "display_name": "Steelskull/L3.3-Nevoria-R1-70b",
      "vendor": "未标注",
@@ -16609,9 +16312,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -24,
+     "trend": 11,
      "is_new": false,
-     "tie_rank": 57,
+     "tie_rank": 46,
      "tie_size": 1
     },
     {
@@ -16627,7 +16330,7 @@
       "musr": 17.167968749999996,
       "mmlu_pro": 48.92324172576833
      },
-     "rank": 58,
+     "rank": 47,
      "id": "qwenqwen272b",
      "display_name": "Qwen/Qwen2-72B",
      "vendor": "阿里巴巴",
@@ -16636,36 +16339,9 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": -24,
+     "trend": 11,
      "is_new": false,
-     "tie_rank": 58,
-     "tie_size": 1
-    },
-    {
-     "model": "prithivMLmods/Galactic-Qwen-14B-Exp2",
-     "organization": "prithivMLmods",
-     "score": 43.56,
-     "type": "🔶 fine-tuned on domain-specific datasets",
-     "subscores": {
-      "ifeval": 66.20300801872366,
-      "bbh": 59.91731650130399,
-      "math": 34.74320241691843,
-      "gpqa": 19.910514541387023,
-      "musr": 28.489843749999995,
-      "mmlu_pro": 52.11842494089834
-     },
-     "rank": 59,
-     "id": "prithivmlmodsgalacticqwen14bexp2",
-     "display_name": "prithivMLmods/Galactic-Qwen-14B-Exp2",
-     "vendor": "阿里巴巴",
-     "vendor_raw": "prithivMLmods",
-     "region": "cn",
-     "open": null,
-     "variant": null,
-     "registered": false,
-     "trend": 0,
-     "is_new": true,
-     "tie_rank": 59,
+     "tie_rank": 47,
      "tie_size": 1
     },
     {
@@ -16681,7 +16357,7 @@
       "musr": 10.446093750000001,
       "mmlu_pro": 50.21609042553191
      },
-     "rank": 60,
+     "rank": 48,
      "id": "mlabonnebigqwen2552b",
      "display_name": "mlabonne/BigQwen2.5-52B",
      "vendor": "阿里巴巴",
@@ -16689,6 +16365,330 @@
      "region": "cn",
      "open": null,
      "variant": "instruct",
+     "registered": false,
+     "trend": 12,
+     "is_new": false,
+     "tie_rank": 48,
+     "tie_size": 1
+    },
+    {
+     "model": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct",
+     "organization": "VAGOsolutions",
+     "score": 43.41,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 86.56365111238182,
+      "bbh": 57.24162100868165,
+      "math": 36.933534743202415,
+      "gpqa": 12.192393736017896,
+      "musr": 19.38541666666666,
+      "mmlu_pro": 48.16600177304965
+     },
+     "rank": 49,
+     "id": "vagosolutionsllama31sauerkrautlm70b",
+     "display_name": "VAGOsolutions/Llama-3.1-SauerkrautLM-70b",
+     "vendor": "Meta",
+     "vendor_raw": "VAGOsolutions",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 49,
+     "tie_size": 1
+    },
+    {
+     "model": "meta-llama/Llama-3.1-70B-Instruct",
+     "organization": "meta-llama",
+     "score": 43.41,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 86.6885419575615,
+      "bbh": 55.92799173898473,
+      "math": 38.066465256797585,
+      "gpqa": 14.205816554809845,
+      "musr": 17.691145833333334,
+      "mmlu_pro": 47.87972813238771
+     },
+     "rank": 50,
+     "id": "metallamallama3170b",
+     "display_name": "meta-llama/Llama-3.1-70B",
+     "vendor": "Meta",
+     "vendor_raw": "meta-llama",
+     "region": "us",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 50,
+     "tie_size": 1
+    },
+    {
+     "model": "abacusai/Dracarys-72B-Instruct",
+     "organization": "abacusai",
+     "score": 43.38,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 78.55778224001206,
+      "bbh": 56.93552010003367,
+      "math": 39.65256797583081,
+      "gpqa": 18.791946308724835,
+      "musr": 16.81119791666666,
+      "mmlu_pro": 49.51425827423168
+     },
+     "rank": 51,
+     "id": "abacusaidracarys72b",
+     "display_name": "abacusai/Dracarys-72B",
+     "vendor": "未标注",
+     "vendor_raw": "abacusai",
+     "region": "other",
+     "open": null,
+     "variant": "instruct",
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 51,
+     "tie_size": 1
+    },
+    {
+     "model": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "organization": "Saxo",
+     "score": 43.34,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 79.56444456264933,
+      "bbh": 58.07744907944319,
+      "math": 56.646525679758305,
+      "gpqa": 2.1252796420581683,
+      "musr": 11.179427083333337,
+      "mmlu_pro": 52.44163711583924
+     },
+     "rank": 52,
+     "id": "saxolinkbrickshorizonaiavengersv232b",
+     "display_name": "Saxo/Linkbricks-Horizon-AI-Avengers-V2-32B",
+     "vendor": "未标注",
+     "vendor_raw": "Saxo",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 52,
+     "tie_size": 1
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
+     "organization": "Lunzima",
+     "score": 43.31,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 80.02655177152178,
+      "bbh": 50.73787805937095,
+      "math": 54.68277945619335,
+      "gpqa": 12.416107382550338,
+      "musr": 14.757812499999998,
+      "mmlu_pro": 47.23330378250591
+     },
+     "rank": 53,
+     "id": "lunzimanqlsgqwen2514bmegafusionv91",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.1",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "Lunzima",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 53,
+     "tie_size": 1
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.2-llama3.1-70b",
+     "organization": "MaziyarPanahi",
+     "score": 43.31,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 85.92667455684251,
+      "bbh": 54.20646208605566,
+      "math": 43.65558912386707,
+      "gpqa": 9.955257270693513,
+      "musr": 17.06953125,
+      "mmlu_pro": 49.05252659574468
+     },
+     "rank": 54,
+     "id": "maziyarpanahicalme22llama3170b",
+     "display_name": "MaziyarPanahi/calme-2.2-llama3.1-70b",
+     "vendor": "Meta",
+     "vendor_raw": "MaziyarPanahi",
+     "region": "us",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 54,
+     "tie_size": 1
+    },
+    {
+     "model": "MaziyarPanahi/calme-2.3-llama3.1-70b",
+     "organization": "MaziyarPanahi",
+     "score": 43.28,
+     "type": "💬 chat models (rlhf, dpo, ift, ...)",
+     "subscores": {
+      "ifeval": 86.04657863358113,
+      "bbh": 55.58549511699308,
+      "math": 39.274924471299094,
+      "gpqa": 12.527964205816552,
+      "musr": 17.736197916666658,
+      "mmlu_pro": 48.4799793144208
+     },
+     "rank": 55,
+     "id": "maziyarpanahicalme23llama3170b",
+     "display_name": "MaziyarPanahi/calme-2.3-llama3.1-70b",
+     "vendor": "Meta",
+     "vendor_raw": "MaziyarPanahi",
+     "region": "us",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 55,
+     "tie_size": 1
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
+     "organization": "Lunzima",
+     "score": 43.23,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 78.62272104682242,
+      "bbh": 50.455174757059126,
+      "math": 53.32326283987915,
+      "gpqa": 14.093959731543624,
+      "musr": 15.261718749999995,
+      "mmlu_pro": 47.593454491725765
+     },
+     "rank": 56,
+     "id": "lunzimanqlsgqwen2514bmegafusionv92",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v9.2",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "Lunzima",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 56,
+     "tie_size": 1
+    },
+    {
+     "model": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "organization": "YOYO-AI",
+     "score": 43.14,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 83.64605912312663,
+      "bbh": 50.26935344231426,
+      "math": 53.92749244712991,
+      "gpqa": 8.612975391498878,
+      "musr": 15.661718749999997,
+      "mmlu_pro": 46.706929669030735
+     },
+     "rank": 57,
+     "id": "yoyoaizyhllmqwen2514bv4",
+     "display_name": "YOYO-AI/ZYH-LLM-Qwen2.5-14B-V4",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "YOYO-AI",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 57,
+     "tie_size": 1
+    },
+    {
+     "model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
+     "organization": "Lunzima",
+     "score": 43.09,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 78.74761189200211,
+      "bbh": 49.91009317302106,
+      "math": 54.0785498489426,
+      "gpqa": 13.534675615212524,
+      "musr": 15.157812499999997,
+      "mmlu_pro": 47.131722813238774
+     },
+     "rank": 58,
+     "id": "lunzimanqlsgqwen2514bmegafusionv87",
+     "display_name": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v8.7",
+     "vendor": "阿里巴巴",
+     "vendor_raw": "Lunzima",
+     "region": "cn",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 58,
+     "tie_size": 1
+    },
+    {
+     "model": "Sao10K/70B-L3.3-Cirrus-x1",
+     "organization": "Sao10K",
+     "score": 43.0,
+     "type": "🔶 fine-tuned on domain-specific datasets",
+     "subscores": {
+      "ifeval": 66.80751517085777,
+      "bbh": 57.132312166381276,
+      "math": 37.38670694864049,
+      "gpqa": 26.62192393736018,
+      "musr": 21.42083333333333,
+      "mmlu_pro": 48.646202718676115
+     },
+     "rank": 59,
+     "id": "sao10k70bl33cirrusx1",
+     "display_name": "Sao10K/70B-L3.3-Cirrus-x1",
+     "vendor": "未标注",
+     "vendor_raw": "Sao10K",
+     "region": "other",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 59,
+     "tie_size": 1
+    },
+    {
+     "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "organization": "Tarek07",
+     "score": 43.0,
+     "type": "🤝 base merges and moerges",
+     "subscores": {
+      "ifeval": 69.06064796960952,
+      "bbh": 56.24697023586278,
+      "math": 35.725075528700906,
+      "gpqa": 27.740492170022367,
+      "musr": 19.62864583333333,
+      "mmlu_pro": 49.61583924349882
+     },
+     "rank": 60,
+     "id": "tarek07progenitorv11llama70b",
+     "display_name": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+     "vendor": "Meta",
+     "vendor_raw": "Tarek07",
+     "region": "us",
+     "open": null,
+     "variant": null,
      "registered": false,
      "trend": 0,
      "is_new": true,
@@ -16747,13 +16747,13 @@
      "score": 0.05955600574608372,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 10,
+     "trend": 14,
      "variant": "max"
     }
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16805,13 +16805,13 @@
      "score": 0.009119361444542019,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16863,13 +16863,13 @@
      "score": 0.026748579776335085,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 5,
      "variant": "max"
     }
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16919,7 +16919,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16970,7 +16970,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17020,7 +17020,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17064,13 +17064,13 @@
      "score": 0.031375825809846235,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17112,13 +17112,13 @@
      "score": 0.027705996772957868,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17162,13 +17162,13 @@
      "score": 0.004482244232743595,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17212,13 +17212,13 @@
      "score": -0.023262807029308576,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17262,13 +17262,13 @@
      "score": 0.012550529818184046,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17310,13 +17310,13 @@
      "score": -0.08932691327565813,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17362,13 +17362,13 @@
      "score": -0.0030051721572174742,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "high, 20260813"
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17418,7 +17418,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17468,7 +17468,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17513,13 +17513,13 @@
      "score": -0.07319108163660436,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17561,13 +17561,13 @@
      "score": -0.03962980693930212,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 7,
+     "trend": 13,
      "variant": null
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17611,13 +17611,13 @@
      "score": 0.023946701791754732,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17653,7 +17653,7 @@
      "score": -0.04022661938759629,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17699,7 +17699,7 @@
    },
    "group_count": 2,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17743,7 +17743,7 @@
    },
    "group_count": 2,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17785,7 +17785,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17822,13 +17822,13 @@
      "score": 0.07565942758202185,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17864,13 +17864,13 @@
      "score": 0.026495450925865173,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "high"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17906,13 +17906,13 @@
      "score": 0.08037071257211915,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "high"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17949,13 +17949,13 @@
      "score": 0.02593617325354452,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17991,13 +17991,13 @@
      "score": -0.013461022898167443,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "high"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18033,13 +18033,13 @@
      "score": -0.07538020659982388,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18075,13 +18075,13 @@
      "score": -0.044514063835776815,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "preview"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18115,13 +18115,13 @@
      "score": -0.0766934579263557,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18157,13 +18157,13 @@
      "score": -0.06586293614361291,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18207,7 +18207,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18247,13 +18247,13 @@
      "score": -0.013902435627719558,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18289,13 +18289,13 @@
      "score": 0.04790625499047256,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18329,13 +18329,13 @@
      "score": 0.010018747709004657,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18371,13 +18371,13 @@
      "score": -0.026798104156421143,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18413,13 +18413,13 @@
      "score": 0.02940963023579071,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": "high"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18453,13 +18453,13 @@
      "score": -0.04459740534602481,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18493,13 +18493,13 @@
      "score": -0.060236922606071455,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18536,13 +18536,13 @@
      "score": 0.004874136743475029,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18576,13 +18576,13 @@
      "score": -0.12647508600286153,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18618,13 +18618,13 @@
      "score": -0.149438527585762,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "nvfp4"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18660,13 +18660,13 @@
      "score": 0.014326641851425207,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "high"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18702,13 +18702,13 @@
      "score": 0.07955487093669349,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18746,13 +18746,13 @@
      "score": 0.02225749002662884,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 22,
      "variant": "max"
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18786,13 +18786,13 @@
      "score": -0.20794935074240756,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18826,7 +18826,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18858,7 +18858,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18894,7 +18894,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18928,7 +18928,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18962,7 +18962,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18994,7 +18994,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19029,7 +19029,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19063,7 +19063,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19099,7 +19099,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19133,7 +19133,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19169,7 +19169,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19201,7 +19201,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19233,7 +19233,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19265,7 +19265,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19299,7 +19299,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19331,7 +19331,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19365,7 +19365,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19392,7 +19392,7 @@
      "rank": 9,
      "score": 0.10089643946312506,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "max"
     }
@@ -19433,7 +19433,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19460,7 +19460,7 @@
      "rank": 8,
      "score": 0.10574985212598499,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "max"
     }
@@ -19502,7 +19502,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19536,7 +19536,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19568,7 +19568,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19596,7 +19596,7 @@
      "score": 0.01223884066007757,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -19637,7 +19637,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19671,7 +19671,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19703,7 +19703,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19737,7 +19737,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19769,7 +19769,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19801,7 +19801,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19827,13 +19827,13 @@
      "score": -0.07368242078467599,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19868,7 +19868,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19900,7 +19900,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19932,7 +19932,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19964,7 +19964,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19998,7 +19998,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20030,7 +20030,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20065,7 +20065,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20097,7 +20097,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20132,7 +20132,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20164,7 +20164,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20196,7 +20196,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20231,7 +20231,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20263,7 +20263,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20295,7 +20295,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20329,7 +20329,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20361,7 +20361,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20393,7 +20393,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20425,7 +20425,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20457,7 +20457,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20489,7 +20489,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20521,7 +20521,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20553,7 +20553,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20589,7 +20589,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20621,7 +20621,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20653,7 +20653,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20687,7 +20687,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20719,7 +20719,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20754,7 +20754,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20786,7 +20786,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20820,7 +20820,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20855,7 +20855,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20887,7 +20887,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20919,7 +20919,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20951,7 +20951,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20983,7 +20983,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21015,7 +21015,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21049,7 +21049,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21081,7 +21081,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21113,7 +21113,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21147,7 +21147,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21179,7 +21179,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21211,7 +21211,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21243,7 +21243,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21277,13 +21277,13 @@
      "score": -0.15799537295041588,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21317,13 +21317,13 @@
      "score": -0.049272209402198626,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21357,13 +21357,13 @@
      "score": -0.17010177604397714,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21398,7 +21398,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": false,
+   "has_stale": true,
    "confidence": "partial",
    "reference_only": true
   }
@@ -21606,5 +21606,12 @@
    "self_check_failures": []
   }
  },
- "failures": []
+ "failures": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "适配器未产出该子集"
+  }
+ ]
 }

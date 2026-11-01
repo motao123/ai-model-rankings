@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-10-31T03:43:58Z",
- "date": "2026-10-31",
- "total": 0,
- "degraded": 0,
- "items": []
+ "generated_at": "2026-11-01T03:53:02Z",
+ "date": "2026-11-01",
+ "total": 1,
+ "degraded": 1,
+ "items": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "适配器未产出该子集"
+  }
+ ]
 }

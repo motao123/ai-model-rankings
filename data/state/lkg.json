@@ -1,9 +1,9 @@
 {
  "aa_intelligence": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "rows": 11,
   "checksum": "4a32e2736b0b6590",
-  "promoted_at": "2026-10-31T03:43:40Z"
+  "promoted_at": "2026-11-01T03:51:51Z"
  },
  "livecodebench": {
   "date": "2026-10-26",
@@ -18,22 +18,22 @@
   "promoted_at": "2026-10-31T03:43:45Z"
  },
  "lmarena_webdev": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "rows": 152,
   "checksum": "d971a5e451bb1fb3",
-  "promoted_at": "2026-10-31T03:43:45Z"
+  "promoted_at": "2026-11-01T03:52:33Z"
  },
  "lmarena_agent": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "rows": 57,
   "checksum": "e7ae38f4db72edff",
-  "promoted_at": "2026-10-31T03:43:45Z"
+  "promoted_at": "2026-11-01T03:52:33Z"
  },
  "open_llm": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "rows": 60,
-  "checksum": "758fac9b189886f0",
-  "promoted_at": "2026-10-31T03:43:58Z"
+  "checksum": "0a4c5477df969a72",
+  "promoted_at": "2026-11-01T03:53:02Z"
  },
  "superclue": {
   "date": "2026-10-26",
