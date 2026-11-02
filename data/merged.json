@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-01T03:53:02Z",
- "date": "2026-11-01",
+ "generated_at": "2026-11-02T03:57:20Z",
+ "date": "2026-11-02",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,13 +11,13 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-10-31T03:43:44Z",
+   "fetched_at": "2026-11-02T03:56:46Z",
    "publish_date": "2026-10-28",
    "compared_with": "2026-10-31",
-   "stale": true,
-   "stale_from": "2026-10-31",
-   "stale_days": 1,
-   "channel": "lkg",
+   "stale": false,
+   "stale_from": null,
+   "stale_days": 0,
+   "channel": "hf-datasets-server",
    "mirror_note": null,
    "manual": false,
    "manual_note": null,
@@ -9255,9 +9255,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-11-01T03:51:51Z",
-   "publish_date": "2026-11-01",
-   "compared_with": "2026-10-31",
+   "fetched_at": "2026-11-02T03:56:36Z",
+   "publish_date": "2026-11-02",
+   "compared_with": "2026-11-01",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9501,7 +9501,7 @@
    "source_url": "https://www.superclueai.com/generalpage",
    "dataset_url": "https://www.superclueai.com/data/generalboard/",
    "license": "© SuperCLUE，本站仅聚合展示",
-   "fetched_at": "2026-10-26T02:48:01Z",
+   "fetched_at": "2026-11-02T03:57:20Z",
    "publish_date": "2026-07-01",
    "compared_with": "2026-10-26",
    "stale": false,
@@ -9851,9 +9851,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-01T03:52:33Z",
+   "fetched_at": "2026-11-02T03:56:48Z",
    "publish_date": "2026-10-28",
-   "compared_with": "2026-10-31",
+   "compared_with": "2026-11-01",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13221,9 +13221,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-01T03:52:33Z",
+   "fetched_at": "2026-11-02T03:56:48Z",
    "publish_date": "2026-10-28",
-   "compared_with": "2026-10-31",
+   "compared_with": "2026-11-01",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -14501,7 +14501,7 @@
    "source_url": "https://livecodebench.github.io/leaderboard.html",
    "dataset_url": "https://livecodebench.github.io/performances_generation.json",
    "license": "官方公开数据",
-   "fetched_at": "2026-10-26T02:47:31Z",
+   "fetched_at": "2026-11-02T03:56:48Z",
    "publish_date": "2025-04-07",
    "compared_with": "2026-10-26",
    "stale": false,
@@ -15059,9 +15059,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-11-01T03:53:02Z",
+   "fetched_at": "2026-11-02T03:57:14Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-10-31",
+   "compared_with": "2026-11-01",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15475,7 +15475,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -15502,7 +15502,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -15529,7 +15529,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -15556,7 +15556,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -15583,7 +15583,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -15610,7 +15610,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -15637,7 +15637,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -15664,7 +15664,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -15691,7 +15691,7 @@
      "open": null,
      "variant": "131k",
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -15718,7 +15718,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -15745,7 +15745,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 25,
      "tie_size": 1
@@ -15772,7 +15772,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -15799,7 +15799,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -15826,7 +15826,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -15853,7 +15853,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 9,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -15880,7 +15880,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -15907,7 +15907,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -15934,7 +15934,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -15961,7 +15961,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -15988,7 +15988,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -16015,7 +16015,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -16042,7 +16042,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -16069,7 +16069,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -16096,7 +16096,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -16123,7 +16123,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -16150,7 +16150,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -16177,7 +16177,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -16204,7 +16204,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -16231,7 +16231,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -16258,7 +16258,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 10,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -16285,7 +16285,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 11,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -16312,7 +16312,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 11,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -16339,7 +16339,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 11,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -16366,7 +16366,7 @@
      "open": null,
      "variant": "instruct",
      "registered": false,
-     "trend": 12,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -16394,7 +16394,7 @@
      "variant": "instruct",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
     },
@@ -16421,7 +16421,7 @@
      "variant": "instruct",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
     },
@@ -16448,7 +16448,7 @@
      "variant": "instruct",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
     },
@@ -16475,7 +16475,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
     },
@@ -16502,7 +16502,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
     },
@@ -16529,7 +16529,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
     },
@@ -16556,7 +16556,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
     },
@@ -16583,7 +16583,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
     },
@@ -16610,7 +16610,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
     },
@@ -16637,7 +16637,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
     },
@@ -16664,7 +16664,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
     },
@@ -16691,7 +16691,7 @@
      "variant": null,
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 60,
      "tie_size": 1
     }
@@ -16753,7 +16753,7 @@
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16811,7 +16811,7 @@
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16869,7 +16869,7 @@
    },
    "group_count": 3,
    "appearance_count": 5,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16919,7 +16919,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -16970,7 +16970,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17020,7 +17020,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17070,7 +17070,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17118,7 +17118,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17168,7 +17168,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17218,7 +17218,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17268,7 +17268,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17316,7 +17316,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17368,7 +17368,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17418,7 +17418,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17468,7 +17468,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17519,7 +17519,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17567,7 +17567,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17617,7 +17617,7 @@
    },
    "group_count": 2,
    "appearance_count": 4,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17699,7 +17699,7 @@
    },
    "group_count": 2,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17743,7 +17743,7 @@
    },
    "group_count": 2,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -17785,7 +17785,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17828,7 +17828,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17870,7 +17870,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17912,7 +17912,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17955,7 +17955,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -17997,7 +17997,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18039,7 +18039,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18081,7 +18081,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18121,7 +18121,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18163,7 +18163,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18207,7 +18207,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18253,7 +18253,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18295,7 +18295,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18335,7 +18335,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18377,7 +18377,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18419,7 +18419,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18459,7 +18459,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18499,7 +18499,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18542,7 +18542,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18582,7 +18582,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18624,7 +18624,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18666,7 +18666,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18708,7 +18708,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18752,7 +18752,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18792,7 +18792,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -18826,7 +18826,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18858,7 +18858,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18894,7 +18894,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18928,7 +18928,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18962,7 +18962,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -18994,7 +18994,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19029,7 +19029,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19063,7 +19063,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19099,7 +19099,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19133,7 +19133,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19169,7 +19169,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19201,7 +19201,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19233,7 +19233,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19265,7 +19265,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19299,7 +19299,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19331,7 +19331,7 @@
    },
    "group_count": 2,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "verified",
    "reference_only": false
   },
@@ -19365,7 +19365,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19433,7 +19433,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19502,7 +19502,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19536,7 +19536,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19568,7 +19568,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19637,7 +19637,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19671,7 +19671,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19703,7 +19703,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19737,7 +19737,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19769,7 +19769,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19801,7 +19801,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19833,7 +19833,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19868,7 +19868,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19900,7 +19900,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19932,7 +19932,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19964,7 +19964,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -19998,7 +19998,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20030,7 +20030,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20065,7 +20065,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20097,7 +20097,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20132,7 +20132,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20164,7 +20164,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20196,7 +20196,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20231,7 +20231,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20263,7 +20263,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20295,7 +20295,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20329,7 +20329,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20361,7 +20361,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20393,7 +20393,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20425,7 +20425,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20457,7 +20457,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20489,7 +20489,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20521,7 +20521,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20553,7 +20553,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20589,7 +20589,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20621,7 +20621,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20653,7 +20653,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20687,7 +20687,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20719,7 +20719,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20754,7 +20754,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20786,7 +20786,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20820,7 +20820,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20855,7 +20855,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20887,7 +20887,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20919,7 +20919,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20951,7 +20951,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -20983,7 +20983,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21015,7 +21015,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21049,7 +21049,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21081,7 +21081,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21113,7 +21113,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21147,7 +21147,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21179,7 +21179,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21211,7 +21211,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21243,7 +21243,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": false
   },
@@ -21283,7 +21283,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21323,7 +21323,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21363,7 +21363,7 @@
    },
    "group_count": 1,
    "appearance_count": 3,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": true
   },
@@ -21398,7 +21398,7 @@
    },
    "group_count": 1,
    "appearance_count": 2,
-   "has_stale": true,
+   "has_stale": false,
    "confidence": "partial",
    "reference_only": true
   }
@@ -21606,12 +21606,5 @@
    "self_check_failures": []
   }
  },
- "failures": [
-  {
-   "source": "lmarena_text",
-   "status": "fallback",
-   "layer": "lkg",
-   "error": "适配器未产出该子集"
-  }
- ]
+ "failures": []
 }

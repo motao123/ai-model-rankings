@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-01T03:53:02Z",
- "status": "partial",
+ "generated_at": "2026-11-02T03:57:20Z",
+ "status": "ok",
  "boards": [
   "lmarena_text",
   "aa_intelligence",
@@ -10,13 +10,6 @@
   "livecodebench",
   "open_llm"
  ],
- "degraded": 1,
- "failures": [
-  {
-   "source": "lmarena_text",
-   "status": "fallback",
-   "layer": "lkg",
-   "error": "适配器未产出该子集"
-  }
- ]
+ "degraded": 0,
+ "failures": []
 }
