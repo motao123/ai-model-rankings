@@ -1,9 +1,9 @@
 {
  "aa_intelligence": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "rows": 20,
   "checksum": "3d9954176f551cb6",
-  "promoted_at": "2026-11-06T04:43:56Z"
+  "promoted_at": "2026-11-07T04:12:36Z"
  },
  "livecodebench": {
   "date": "2026-11-02",
@@ -30,10 +30,10 @@
   "promoted_at": "2026-11-06T04:44:05Z"
  },
  "open_llm": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "rows": 60,
-  "checksum": "4fb19c59d811f225",
-  "promoted_at": "2026-11-06T04:44:34Z"
+  "checksum": "758fac9b189886f0",
+  "promoted_at": "2026-11-07T04:13:28Z"
  },
  "superclue": {
   "date": "2026-11-02",
