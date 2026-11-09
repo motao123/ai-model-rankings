@@ -1,0 +1,129 @@
+{
+ "source_id": "superclue",
+ "board": "SuperCLUE 中文大模型综合榜",
+ "metric": "综合得分",
+ "kind": "objective_benchmark",
+ "source_url": "https://www.superclueai.com/generalpage",
+ "dataset_url": "https://www.superclueai.com/data/generalboard/",
+ "license": "© SuperCLUE，本站仅聚合展示",
+ "fetched_at": "2026-11-09T04:15:23Z",
+ "publish_date": "2026-11-01",
+ "data_period": "2026年11月",
+ "channel": "auto",
+ "rows": [
+  {
+   "model": "Gemini-4-Argon",
+   "organization": "Google",
+   "score": 73.62,
+   "rank": 1
+  },
+  {
+   "model": "GPT-6.1-Sol",
+   "organization": "OpenAI",
+   "score": 71.76,
+   "rank": 2
+  },
+  {
+   "model": "Kimi-K3.1-Pro",
+   "organization": "月之暗面",
+   "score": 61.46,
+   "rank": 3
+  },
+  {
+   "model": "DeepSeek-V4.1-Flash-1017",
+   "organization": "深度求索",
+   "score": 58.95,
+   "rank": 4
+  },
+  {
+   "model": "GLM-5.3",
+   "organization": "智谱AI",
+   "score": 50.66,
+   "rank": 5
+  },
+  {
+   "model": "Grok-4.7",
+   "organization": "xAI",
+   "score": 49.66,
+   "rank": 6
+  },
+  {
+   "model": "GLM-5.3-Flash",
+   "organization": "智谱AI",
+   "score": 47.18,
+   "rank": 7
+  },
+  {
+   "model": "Qwen3.8-Max-0902",
+   "organization": "阿里巴巴",
+   "score": 43.22,
+   "rank": 8
+  },
+  {
+   "model": "Darwin-180B-RSI-R3",
+   "organization": "VIDRAFT",
+   "score": 43.08,
+   "rank": 9
+  },
+  {
+   "model": "Hy4-Preview",
+   "organization": "腾讯",
+   "score": 42.96,
+   "rank": 10
+  },
+  {
+   "model": "Doubao-Seed-2.1-Pro-260915",
+   "organization": "字节跳动",
+   "score": 42.06,
+   "rank": 11
+  },
+  {
+   "model": "MiniMax M3.1-Flash",
+   "organization": "稀宇科技",
+   "score": 41.35,
+   "rank": 12
+  },
+  {
+   "model": "Step-5-Preview",
+   "organization": "阶跃星辰",
+   "score": 41.23,
+   "rank": 13
+  },
+  {
+   "model": "MiniMax-M3",
+   "organization": "稀宇科技",
+   "score": 41.17,
+   "rank": 14
+  },
+  {
+   "model": "Qwen3.8-Flash",
+   "organization": "阿里巴巴",
+   "score": 39.81,
+   "rank": 15
+  },
+  {
+   "model": "LongCat-2.5-Preview",
+   "organization": "美团",
+   "score": 39.59,
+   "rank": 16
+  },
+  {
+   "model": "MiMo-V2.6-Flash",
+   "organization": "小米集团",
+   "score": 36.4,
+   "rank": 17
+  },
+  {
+   "model": "Spark-X2.6",
+   "organization": "科大讯飞",
+   "score": 35.39,
+   "rank": 18
+  },
+  {
+   "model": "MiMo-V2.6-Pro",
+   "organization": "小米集团",
+   "score": 34.57,
+   "rank": 19
+  }
+ ]
+}

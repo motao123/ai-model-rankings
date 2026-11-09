@@ -1,15 +1,15 @@
 {
  "aa_intelligence": {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "rows": 20,
   "checksum": "3d9954176f551cb6",
-  "promoted_at": "2026-11-08T03:55:43Z"
+  "promoted_at": "2026-11-09T04:10:37Z"
  },
  "livecodebench": {
-  "date": "2026-11-02",
+  "date": "2026-11-09",
   "rows": 28,
   "checksum": "594295cb3a7b6f68",
-  "promoted_at": "2026-11-02T03:56:48Z"
+  "promoted_at": "2026-11-09T04:12:06Z"
  },
  "lmarena_text": {
   "date": "2026-11-08",
@@ -30,15 +30,15 @@
   "promoted_at": "2026-11-08T03:55:48Z"
  },
  "open_llm": {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "rows": 60,
-  "checksum": "758fac9b189886f0",
-  "promoted_at": "2026-11-08T03:55:55Z"
+  "checksum": "60afe8836a5f1559",
+  "promoted_at": "2026-11-09T04:15:21Z"
  },
  "superclue": {
-  "date": "2026-11-02",
-  "rows": 18,
-  "checksum": "b9dbe2062c1170aa",
-  "promoted_at": "2026-11-02T03:57:20Z"
+  "date": "2026-11-09",
+  "rows": 19,
+  "checksum": "09d3240836db682f",
+  "promoted_at": "2026-11-09T04:15:23Z"
  }
 }
