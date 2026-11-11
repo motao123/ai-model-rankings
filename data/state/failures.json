@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-10T05:40:20Z",
- "date": "2026-11-10",
- "total": 0,
- "degraded": 0,
- "items": []
+ "generated_at": "2026-11-11T04:15:28Z",
+ "date": "2026-11-11",
+ "total": 2,
+ "degraded": 2,
+ "items": [
+  {
+   "source": "lmarena_text",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "适配器未产出该子集"
+  },
+  {
+   "source": "lmarena_webdev",
+   "status": "fallback",
+   "layer": "lkg",
+   "error": "适配器未产出该子集"
+  }
+ ]
 }
