@@ -1,0 +1,176 @@
+{
+ "source_id": "aa_intelligence",
+ "board": "Artificial Analysis 智能指数榜",
+ "metric": "Intelligence Index",
+ "kind": "objective_benchmark",
+ "source_url": "https://artificialanalysis.ai/text/intelligence-index",
+ "dataset_url": "https://artificialanalysis.ai/",
+ "license": "© Artificial Analysis，本站仅聚合展示",
+ "fetched_at": "2026-11-13T04:40:18Z",
+ "publish_date": "2026-11-13",
+ "channel": "html-flight-payload",
+ "mirror_note": null,
+ "price_unit": "USD per 1M blended tokens",
+ "rows": [
+  {
+   "model": "Claude Fable 5.2",
+   "slug": "claude-fable-5-2",
+   "label": "Claude Fable 5.2 (max)",
+   "score": 64.56,
+   "price": 26.53855780398091,
+   "rank": 1
+  },
+  {
+   "model": "Claude Fable 5.2",
+   "slug": "claude-fable-5-2-high",
+   "label": "Claude Fable 5.2 (high)",
+   "score": 61.82,
+   "price": 9.078414777860381,
+   "rank": 2
+  },
+  {
+   "model": "Gemini 4 Carbon",
+   "slug": "gemini-4-carbon",
+   "label": "Gemini 4 Carbon (high)",
+   "score": 60.03,
+   "price": 5.484780948230178,
+   "rank": 3
+  },
+  {
+   "model": "Claude Opus 5.5",
+   "slug": "claude-opus-5-5",
+   "label": "Claude Opus 5.5 (max)",
+   "score": 59.11,
+   "price": 10.036409719512749,
+   "rank": 4
+  },
+  {
+   "model": "Gemini 4 Carbon",
+   "slug": "gemini-4-carbon-medium",
+   "label": "Gemini 4 Carbon (medium)",
+   "score": 58.26,
+   "price": 4.677653677420589,
+   "rank": 5
+  },
+  {
+   "model": "GPT-6 Astra",
+   "slug": "gpt-6-astra",
+   "label": "GPT-6 Astra (max)",
+   "score": 56.85,
+   "price": 6.244666943602518,
+   "rank": 6
+  },
+  {
+   "model": "GPT-6.1 Sol",
+   "slug": "gpt-6-1-sol",
+   "label": "GPT-6.1 Sol (max)",
+   "score": 54.61,
+   "price": 1.2720632679446995,
+   "rank": 7
+  },
+  {
+   "model": "GPT-6 Astra",
+   "slug": "gpt-6-astra-medium",
+   "label": "GPT-6 Astra (medium)",
+   "score": 51.55,
+   "price": 2.732438933013427,
+   "rank": 8
+  },
+  {
+   "model": "Muse Wonder Full",
+   "slug": "muse-wonder-full",
+   "label": "Muse Wonder Full (max)",
+   "score": 50.08,
+   "price": null,
+   "rank": 9
+  },
+  {
+   "model": "Claude Opus 5.5",
+   "slug": "claude-opus-5-5-medium",
+   "label": "Claude Opus 5.5 (medium)",
+   "score": 48.21,
+   "price": 2.4510894376611723,
+   "rank": 10
+  },
+  {
+   "model": "Kimi K3.1 Pro",
+   "slug": "kimi-k3-1-pro",
+   "label": "Kimi K3.1 Pro",
+   "score": 46.45,
+   "price": 3.6812002895742055,
+   "rank": 11
+  },
+  {
+   "model": "GPT-6.1 Sol",
+   "slug": "gpt-6-1-sol-medium",
+   "label": "GPT-6.1 Sol (medium)",
+   "score": 46.35,
+   "price": 0.3593898648025732,
+   "rank": 12
+  },
+  {
+   "model": "Muse Wonder",
+   "slug": "muse-wonder",
+   "label": "Muse Wonder (max)",
+   "score": 43.57,
+   "price": 6.9520364786062245,
+   "rank": 13
+  },
+  {
+   "model": "Muse Wonder",
+   "slug": "muse-wonder-high",
+   "label": "Muse Wonder (high)",
+   "score": 40.53,
+   "price": 4.560546278670271,
+   "rank": 14
+  },
+  {
+   "model": "Grok 4.7",
+   "slug": "grok-4-7",
+   "label": "Grok 4.7 (xhigh)",
+   "score": 35.49,
+   "price": 7.771539401587139,
+   "rank": 15
+  },
+  {
+   "model": "Grok 4.7",
+   "slug": "grok-4-7-high",
+   "label": "Grok 4.7 (high)",
+   "score": 35.21,
+   "price": 6.18359556537658,
+   "rank": 16
+  },
+  {
+   "model": "DeepSeek V4.1 Flash 1017",
+   "slug": "deepseek-v4-1-flash-1017",
+   "label": "DeepSeek V4.1 Flash 1017 (max)",
+   "score": 32.59,
+   "price": 0.60210514783598,
+   "rank": 17
+  },
+  {
+   "model": "GLM-5.3",
+   "slug": "glm-5-3",
+   "label": "GLM-5.3 (max)",
+   "score": 31.65,
+   "price": 5.009264601719954,
+   "rank": 18
+  },
+  {
+   "model": "MiMo-V2.6-Pro",
+   "slug": "mimo-v2-6-pro",
+   "label": "MiMo-V2.6-Pro",
+   "score": 29.89,
+   "price": 0.25718036275876155,
+   "rank": 19
+  },
+  {
+   "model": "DeepSeek V4.1 Flash 1017",
+   "slug": "deepseek-v4-1-flash-1017-high",
+   "label": "DeepSeek V4.1 Flash 1017 (high)",
+   "score": 28.64,
+   "price": 0.45619449806633267,
+   "rank": 20
+  }
+ ]
+}
