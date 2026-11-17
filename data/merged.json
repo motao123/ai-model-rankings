@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-16T04:22:50Z",
- "date": "2026-11-16",
+ "generated_at": "2026-11-17T06:06:48Z",
+ "date": "2026-11-17",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-16T04:22:37Z",
+   "fetched_at": "2026-11-17T06:06:39Z",
    "publish_date": "2026-11-11",
-   "compared_with": "2026-11-12",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -199,7 +199,7 @@
      "variant": "high",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 8,
      "tie_size": 1
     },
@@ -220,7 +220,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 2,
      "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
@@ -242,7 +242,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -264,7 +264,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -330,7 +330,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 14,
      "tie_size": 1
@@ -352,7 +352,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -374,7 +374,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -396,7 +396,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -418,7 +418,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -440,7 +440,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -484,7 +484,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -506,7 +506,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -528,7 +528,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -550,7 +550,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -594,7 +594,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -616,7 +616,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -638,7 +638,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 16,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -660,7 +660,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -682,7 +682,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -704,7 +704,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 88,
+     "trend": 89,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -726,7 +726,7 @@
      "open": null,
      "variant": "preview / max",
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -748,7 +748,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -814,7 +814,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -836,7 +836,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 82,
+     "trend": 83,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -858,7 +858,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 36,
+     "trend": 37,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -880,7 +880,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -902,7 +902,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -924,7 +924,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -946,7 +946,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 6,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -968,7 +968,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -990,7 +990,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -1012,7 +1012,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -1034,7 +1034,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -1056,7 +1056,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -1078,7 +1078,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -1100,7 +1100,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
@@ -1166,7 +1166,7 @@
      "open": false,
      "variant": "reasoning, 0309 / beta",
      "registered": true,
-     "trend": 15,
+     "trend": 16,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -1188,7 +1188,7 @@
      "open": false,
      "variant": "beta",
      "registered": true,
-     "trend": 14,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -1210,7 +1210,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -1232,7 +1232,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
@@ -1298,7 +1298,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
@@ -1320,7 +1320,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
@@ -1342,7 +1342,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 60,
      "tie_size": 1
@@ -1364,7 +1364,7 @@
      "open": null,
      "variant": "preview / max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 61,
      "tie_size": 1
@@ -1386,7 +1386,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 62,
      "tie_size": 1
@@ -1474,7 +1474,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -4,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 66,
      "tie_size": 1
@@ -1518,7 +1518,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 68,
      "tie_size": 1
@@ -1584,7 +1584,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 71,
      "tie_size": 1
@@ -1672,7 +1672,7 @@
      "open": false,
      "variant": "minimal",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 75,
      "tie_size": 1
@@ -1694,7 +1694,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 76,
      "tie_size": 1
@@ -1716,7 +1716,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 77,
      "tie_size": 1
@@ -1738,7 +1738,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 78,
      "tie_size": 1
@@ -1760,7 +1760,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": 59,
+     "trend": 58,
      "is_new": false,
      "tie_rank": 79,
      "tie_size": 1
@@ -1804,7 +1804,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 81,
      "tie_size": 1
@@ -1826,7 +1826,7 @@
      "open": false,
      "variant": "chat",
      "registered": true,
-     "trend": 57,
+     "trend": 56,
      "is_new": false,
      "tie_rank": 82,
      "tie_size": 1
@@ -1892,7 +1892,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 85,
      "tie_size": 1
@@ -1914,7 +1914,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 86,
      "tie_size": 1
@@ -1958,7 +1958,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 88,
      "tie_size": 1
@@ -2068,7 +2068,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 14,
+     "trend": 13,
      "is_new": false,
      "tie_rank": 93,
      "tie_size": 1
@@ -2354,7 +2354,7 @@
      "open": true,
      "variant": "high / preview",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 106,
      "tie_size": 1
@@ -2376,7 +2376,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 107,
      "tie_size": 1
@@ -2420,7 +2420,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 109,
      "tie_size": 1
@@ -2640,7 +2640,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 119,
      "tie_size": 1
@@ -2662,7 +2662,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 120,
      "tie_size": 1
@@ -2706,7 +2706,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": 6,
+     "trend": 5,
      "is_new": false,
      "tie_rank": 122,
      "tie_size": 1
@@ -2772,7 +2772,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 125,
      "tie_size": 1
@@ -2794,7 +2794,7 @@
      "open": null,
      "variant": "preview",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 126,
      "tie_size": 1
@@ -2816,7 +2816,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 127,
      "tie_size": 1
@@ -2904,7 +2904,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 8,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 131,
      "tie_size": 1
@@ -3014,7 +3014,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 136,
      "tie_size": 1
@@ -3036,7 +3036,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 137,
      "tie_size": 1
@@ -3058,7 +3058,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 138,
      "tie_size": 1
@@ -3102,7 +3102,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 140,
      "tie_size": 1
@@ -3124,7 +3124,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 141,
      "tie_size": 1
@@ -3256,7 +3256,7 @@
      "open": false,
      "variant": "non-reasoning",
      "registered": true,
-     "trend": 11,
+     "trend": 12,
      "is_new": false,
      "tie_rank": 147,
      "tie_size": 1
@@ -3498,7 +3498,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 158,
      "tie_size": 1
@@ -3520,7 +3520,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 159,
      "tie_size": 1
@@ -3542,7 +3542,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 160,
      "tie_size": 1
@@ -4004,7 +4004,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 181,
      "tie_size": 1
@@ -4026,7 +4026,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 182,
      "tie_size": 1
@@ -4818,7 +4818,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 218,
      "tie_size": 1
@@ -4906,7 +4906,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 222,
      "tie_size": 1
@@ -4928,7 +4928,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 223,
      "tie_size": 1
@@ -5742,7 +5742,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 260,
      "tie_size": 1
@@ -5764,7 +5764,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 261,
      "tie_size": 1
@@ -5962,7 +5962,7 @@
      "open": null,
      "variant": "bf16 / instruct",
      "registered": false,
-     "trend": 5,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 270,
      "tie_size": 1
@@ -6050,7 +6050,7 @@
      "open": null,
      "variant": "fp8 / instruct",
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 274,
      "tie_size": 1
@@ -6072,7 +6072,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 275,
      "tie_size": 1
@@ -9299,9 +9299,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-11-16T04:22:33Z",
-   "publish_date": "2026-11-16",
-   "compared_with": "2026-11-15",
+   "fetched_at": "2026-11-17T06:06:35Z",
+   "publish_date": "2026-11-17",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9491,7 +9491,7 @@
      "variant": "max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
     },
@@ -9510,7 +9510,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -9530,7 +9530,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -9550,7 +9550,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
@@ -9567,7 +9567,7 @@
    "license": "© SuperCLUE，本站仅聚合展示",
    "fetched_at": "2026-11-16T04:22:50Z",
    "publish_date": "2026-11-01",
-   "compared_with": "2026-11-09",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9933,9 +9933,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-16T04:22:38Z",
+   "fetched_at": "2026-11-17T06:06:40Z",
    "publish_date": "2026-11-15",
-   "compared_with": "2026-11-15",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9966,7 +9966,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 26,
+     "trend": 27,
      "is_new": false,
      "tie_rank": 1,
      "tie_size": 1
@@ -10010,7 +10010,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 6,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 3,
      "tie_size": 1
@@ -10077,7 +10077,7 @@
      "variant": "xhigh / max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 6,
      "tie_size": 1
     },
@@ -10120,7 +10120,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 8,
      "tie_size": 1
@@ -10142,7 +10142,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
@@ -10164,7 +10164,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -10186,7 +10186,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -10208,7 +10208,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
@@ -10230,7 +10230,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 6,
+     "trend": 7,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -10274,7 +10274,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -10296,7 +10296,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 2,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -10318,7 +10318,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -10340,7 +10340,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -10362,7 +10362,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 12,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -10384,7 +10384,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -10406,7 +10406,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -10450,7 +10450,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -10472,7 +10472,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -10494,7 +10494,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 25,
      "tie_size": 1
@@ -10516,7 +10516,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -10538,7 +10538,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -10560,7 +10560,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -10604,7 +10604,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -10626,7 +10626,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -10670,7 +10670,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -10692,7 +10692,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -10714,7 +10714,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -10736,7 +10736,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -10758,7 +10758,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -10780,7 +10780,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -10802,7 +10802,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -10824,7 +10824,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -10846,7 +10846,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -10868,7 +10868,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -10912,7 +10912,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 31,
+     "trend": 32,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -10934,7 +10934,7 @@
      "open": true,
      "variant": "high",
      "registered": true,
-     "trend": 51,
+     "trend": 52,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -10956,7 +10956,7 @@
      "open": true,
      "variant": "high, 20260813",
      "registered": true,
-     "trend": 38,
+     "trend": 39,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -10978,7 +10978,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -11000,7 +11000,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -11022,7 +11022,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
@@ -11044,7 +11044,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 2,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -11066,7 +11066,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 7,
+     "trend": 8,
      "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
@@ -11088,7 +11088,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -11110,7 +11110,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -11132,7 +11132,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -11154,7 +11154,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
@@ -11176,7 +11176,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
@@ -11198,7 +11198,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
@@ -11220,7 +11220,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
@@ -11242,7 +11242,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
@@ -11264,7 +11264,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 60,
      "tie_size": 1
@@ -11286,7 +11286,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 61,
      "tie_size": 1
@@ -11308,7 +11308,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 62,
      "tie_size": 1
@@ -11330,7 +11330,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 53,
+     "trend": 54,
      "is_new": false,
      "tie_rank": 63,
      "tie_size": 1
@@ -11374,7 +11374,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 51,
+     "trend": 52,
      "is_new": false,
      "tie_rank": 65,
      "tie_size": 1
@@ -11396,7 +11396,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 66,
      "tie_size": 1
@@ -11418,7 +11418,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 16,
+     "trend": 17,
      "is_new": false,
      "tie_rank": 67,
      "tie_size": 1
@@ -11440,7 +11440,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 68,
      "tie_size": 1
@@ -11462,7 +11462,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 69,
      "tie_size": 1
@@ -11484,7 +11484,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 52,
+     "trend": 53,
      "is_new": false,
      "tie_rank": 70,
      "tie_size": 1
@@ -11506,7 +11506,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 24,
+     "trend": 25,
      "is_new": false,
      "tie_rank": 71,
      "tie_size": 1
@@ -11528,7 +11528,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 72,
      "tie_size": 1
@@ -11550,7 +11550,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 22,
+     "trend": 23,
      "is_new": false,
      "tie_rank": 73,
      "tie_size": 1
@@ -11572,7 +11572,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 9,
+     "trend": 10,
      "is_new": false,
      "tie_rank": 74,
      "tie_size": 1
@@ -11594,7 +11594,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 75,
      "tie_size": 1
@@ -11616,7 +11616,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 76,
      "tie_size": 1
@@ -11638,7 +11638,7 @@
      "open": null,
      "variant": "preview / max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 77,
      "tie_size": 1
@@ -11660,7 +11660,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 78,
      "tie_size": 1
@@ -11682,7 +11682,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 79,
      "tie_size": 1
@@ -11704,7 +11704,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 80,
      "tie_size": 1
@@ -11726,7 +11726,7 @@
      "open": true,
      "variant": "high / preview",
      "registered": true,
-     "trend": 3,
+     "trend": 4,
      "is_new": false,
      "tie_rank": 81,
      "tie_size": 1
@@ -11748,7 +11748,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 34,
+     "trend": 35,
      "is_new": false,
      "tie_rank": 82,
      "tie_size": 1
@@ -11770,7 +11770,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 83,
      "tie_size": 1
@@ -11792,7 +11792,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 84,
      "tie_size": 1
@@ -11814,7 +11814,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 85,
      "tie_size": 1
@@ -11836,7 +11836,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 86,
      "tie_size": 1
@@ -11858,7 +11858,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 29,
+     "trend": 30,
      "is_new": false,
      "tie_rank": 87,
      "tie_size": 1
@@ -11880,7 +11880,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 88,
      "tie_size": 1
@@ -11924,7 +11924,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 90,
      "tie_size": 1
@@ -11946,7 +11946,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": 11,
+     "trend": 12,
      "is_new": false,
      "tie_rank": 91,
      "tie_size": 1
@@ -11968,7 +11968,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 92,
      "tie_size": 1
@@ -12012,7 +12012,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 94,
      "tie_size": 1
@@ -12034,7 +12034,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 95,
      "tie_size": 1
@@ -12056,7 +12056,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 96,
      "tie_size": 1
@@ -12078,7 +12078,7 @@
      "open": true,
      "variant": "high / preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 97,
      "tie_size": 1
@@ -12100,7 +12100,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 31,
+     "trend": 32,
      "is_new": false,
      "tie_rank": 98,
      "tie_size": 1
@@ -12122,7 +12122,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 17,
+     "trend": 18,
      "is_new": false,
      "tie_rank": 99,
      "tie_size": 1
@@ -12144,7 +12144,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 100,
      "tie_size": 1
@@ -12166,7 +12166,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 101,
      "tie_size": 1
@@ -12188,7 +12188,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": 14,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 102,
      "tie_size": 1
@@ -12210,7 +12210,7 @@
      "open": true,
      "variant": "instant",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 103,
      "tie_size": 1
@@ -12232,7 +12232,7 @@
      "open": null,
      "variant": "nvfp4",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 104,
      "tie_size": 1
@@ -12254,7 +12254,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 105,
      "tie_size": 1
@@ -12276,7 +12276,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 10,
+     "trend": 11,
      "is_new": false,
      "tie_rank": 106,
      "tie_size": 1
@@ -12320,7 +12320,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 8,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 108,
      "tie_size": 1
@@ -12342,7 +12342,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 35,
+     "trend": 37,
      "is_new": false,
      "tie_rank": 109,
      "tie_size": 1
@@ -12364,7 +12364,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 110,
      "tie_size": 1
@@ -12386,7 +12386,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 111,
      "tie_size": 1
@@ -12408,7 +12408,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 112,
      "tie_size": 1
@@ -12430,7 +12430,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 113,
      "tie_size": 1
@@ -12474,7 +12474,7 @@
      "open": true,
      "variant": "preview",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 115,
      "tie_size": 1
@@ -12496,7 +12496,7 @@
      "open": false,
      "variant": "reasoning, 0309 / beta",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 116,
      "tie_size": 1
@@ -12518,7 +12518,7 @@
      "open": false,
      "variant": "codex harness",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 117,
      "tie_size": 1
@@ -12540,7 +12540,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 118,
      "tie_size": 1
@@ -12562,7 +12562,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 119,
      "tie_size": 1
@@ -12584,7 +12584,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": 19,
+     "trend": 20,
      "is_new": false,
      "tie_rank": 120,
      "tie_size": 1
@@ -12606,7 +12606,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 121,
      "tie_size": 1
@@ -12628,7 +12628,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 122,
      "tie_size": 1
@@ -12650,7 +12650,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 123,
      "tie_size": 1
@@ -12694,7 +12694,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 125,
      "tie_size": 1
@@ -12716,7 +12716,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 126,
      "tie_size": 1
@@ -12738,7 +12738,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 127,
      "tie_size": 1
@@ -12760,7 +12760,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 16,
+     "trend": 18,
      "is_new": false,
      "tie_rank": 128,
      "tie_size": 1
@@ -12782,7 +12782,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 129,
      "tie_size": 1
@@ -12804,7 +12804,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 130,
      "tie_size": 1
@@ -12826,7 +12826,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 13,
+     "trend": 15,
      "is_new": false,
      "tie_rank": 131,
      "tie_size": 1
@@ -12848,7 +12848,7 @@
      "open": true,
      "variant": "non-thinking",
      "registered": true,
-     "trend": 5,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 132,
      "tie_size": 1
@@ -12870,7 +12870,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 133,
      "tie_size": 1
@@ -12892,7 +12892,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 5,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 134,
      "tie_size": 1
@@ -12914,7 +12914,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 135,
      "tie_size": 1
@@ -12936,7 +12936,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 136,
      "tie_size": 1
@@ -12958,7 +12958,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 137,
      "tie_size": 1
@@ -12980,7 +12980,7 @@
      "open": true,
      "variant": "thinking",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 138,
      "tie_size": 1
@@ -13002,7 +13002,7 @@
      "open": true,
      "variant": "instruct",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 139,
      "tie_size": 1
@@ -13024,7 +13024,7 @@
      "open": true,
      "variant": "exp",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 140,
      "tie_size": 1
@@ -13046,7 +13046,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 141,
      "tie_size": 1
@@ -13068,7 +13068,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 142,
      "tie_size": 1
@@ -13090,7 +13090,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 143,
      "tie_size": 1
@@ -13112,7 +13112,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 144,
      "tie_size": 1
@@ -13156,7 +13156,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 146,
      "tie_size": 1
@@ -13178,7 +13178,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 147,
      "tie_size": 1
@@ -13200,7 +13200,7 @@
      "open": null,
      "variant": "thinking",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 148,
      "tie_size": 1
@@ -13222,7 +13222,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 149,
      "tie_size": 1
@@ -13244,7 +13244,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 150,
      "tie_size": 1
@@ -13266,7 +13266,7 @@
      "open": false,
      "variant": "thinking",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 151,
      "tie_size": 1
@@ -13288,7 +13288,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 152,
      "tie_size": 1
@@ -13310,7 +13310,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 153,
      "tie_size": 1
@@ -13332,7 +13332,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 154,
      "tie_size": 1
@@ -13354,7 +13354,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 155,
      "tie_size": 1
@@ -13376,7 +13376,7 @@
      "open": false,
      "variant": "reasoning",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 156,
      "tie_size": 1
@@ -13398,7 +13398,7 @@
      "open": null,
      "variant": "medium",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 157,
      "tie_size": 1
@@ -13413,9 +13413,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-16T04:22:38Z",
+   "fetched_at": "2026-11-17T06:06:40Z",
    "publish_date": "2026-11-15",
-   "compared_with": "2026-11-15",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13446,7 +13446,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 10,
+     "trend": 16,
      "is_new": false,
      "tie_rank": 1,
      "tie_size": 1
@@ -13468,7 +13468,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 0,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 2,
      "tie_size": 1
@@ -13512,7 +13512,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 0,
+     "trend": 11,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
@@ -13535,7 +13535,7 @@
      "variant": "high",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
     },
@@ -13556,7 +13556,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 6,
      "tie_size": 1
@@ -13578,7 +13578,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 7,
      "tie_size": 1
@@ -13600,7 +13600,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 8,
      "tie_size": 1
@@ -13622,7 +13622,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -2,
+     "trend": 3,
      "is_new": false,
      "tie_rank": 9,
      "tie_size": 1
@@ -13644,7 +13644,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -2,
+     "trend": 10,
      "is_new": false,
      "tie_rank": 10,
      "tie_size": 1
@@ -13666,7 +13666,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 11,
      "tie_size": 1
@@ -13688,7 +13688,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 12,
      "tie_size": 1
@@ -13710,7 +13710,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 13,
      "tie_size": 1
@@ -13733,7 +13733,7 @@
      "variant": "xhigh / max",
      "registered": false,
      "trend": 0,
-     "is_new": true,
+     "is_new": false,
      "tie_rank": 14,
      "tie_size": 1
     },
@@ -13754,7 +13754,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -11,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 15,
      "tie_size": 1
@@ -13776,7 +13776,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -3,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 16,
      "tie_size": 1
@@ -13798,7 +13798,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -13820,7 +13820,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 18,
      "tie_size": 1
@@ -13842,7 +13842,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 11,
+     "trend": 16,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -13864,7 +13864,7 @@
      "open": null,
      "variant": "medium",
      "registered": false,
-     "trend": -12,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 20,
      "tie_size": 1
@@ -13886,7 +13886,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 7,
+     "trend": 13,
      "is_new": false,
      "tie_rank": 21,
      "tie_size": 1
@@ -13908,7 +13908,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -13930,7 +13930,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -13952,7 +13952,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 24,
      "tie_size": 1
@@ -13996,7 +13996,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 26,
      "tie_size": 1
@@ -14018,7 +14018,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 27,
      "tie_size": 1
@@ -14040,7 +14040,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 28,
      "tie_size": 1
@@ -14062,7 +14062,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 29,
      "tie_size": 1
@@ -14084,7 +14084,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 30,
      "tie_size": 1
@@ -14106,7 +14106,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 31,
      "tie_size": 1
@@ -14128,7 +14128,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 14,
+     "trend": 19,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -14150,7 +14150,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -14172,7 +14172,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 34,
      "tie_size": 1
@@ -14194,7 +14194,7 @@
      "open": null,
      "variant": "preview",
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 35,
      "tie_size": 1
@@ -14216,7 +14216,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 36,
      "tie_size": 1
@@ -14238,7 +14238,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 37,
      "tie_size": 1
@@ -14260,7 +14260,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 38,
      "tie_size": 1
@@ -14282,7 +14282,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 39,
      "tie_size": 1
@@ -14304,7 +14304,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 40,
      "tie_size": 1
@@ -14326,7 +14326,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -14348,7 +14348,7 @@
      "open": false,
      "variant": "medium",
      "registered": true,
-     "trend": 4,
+     "trend": 9,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -14370,7 +14370,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 43,
      "tie_size": 1
@@ -14392,7 +14392,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 8,
+     "trend": 14,
      "is_new": false,
      "tie_rank": 44,
      "tie_size": 1
@@ -14414,7 +14414,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 45,
      "tie_size": 1
@@ -14436,7 +14436,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 46,
      "tie_size": 1
@@ -14458,7 +14458,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 47,
      "tie_size": 1
@@ -14480,7 +14480,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 48,
      "tie_size": 1
@@ -14502,7 +14502,7 @@
      "open": false,
      "variant": "preview",
      "registered": true,
-     "trend": -8,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 49,
      "tie_size": 1
@@ -14524,7 +14524,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 50,
      "tie_size": 1
@@ -14546,7 +14546,7 @@
      "open": false,
      "variant": "low",
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 51,
      "tie_size": 1
@@ -14568,7 +14568,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -14590,7 +14590,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -14612,7 +14612,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -14634,7 +14634,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -5,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
@@ -14656,7 +14656,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -7,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
@@ -14678,7 +14678,7 @@
      "open": true,
      "variant": "xhigh",
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 57,
      "tie_size": 1
@@ -14700,7 +14700,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 58,
      "tie_size": 1
@@ -14722,7 +14722,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 59,
      "tie_size": 1
@@ -14744,7 +14744,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 60,
      "tie_size": 1
@@ -14766,7 +14766,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 61,
      "tie_size": 1
@@ -14788,7 +14788,7 @@
      "open": null,
      "variant": "nvfp4",
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 62,
      "tie_size": 1
@@ -14810,7 +14810,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 63,
      "tie_size": 1
@@ -14832,7 +14832,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 64,
      "tie_size": 1
@@ -14854,7 +14854,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": -6,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 65,
      "tie_size": 1
@@ -14871,7 +14871,7 @@
    "license": "官方公开数据",
    "fetched_at": "2026-11-16T04:22:38Z",
    "publish_date": "2025-04-07",
-   "compared_with": "2026-11-09",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15427,9 +15427,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-11-16T04:22:48Z",
+   "fetched_at": "2026-11-17T06:06:48Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-11-15",
+   "compared_with": "2026-11-16",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -17083,7 +17083,7 @@
      "score": 1474.9344435222965,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17091,7 +17091,7 @@
      "score": 31.65,
      "metric": "Intelligence Index",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17107,7 +17107,7 @@
      "score": 1622.2656789436146,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17115,7 +17115,7 @@
      "score": 0.00032437615009942326,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17141,7 +17141,7 @@
      "score": 1474.5888242361389,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 15,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17165,7 +17165,7 @@
      "score": 1686.2251930517164,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 6,
+     "trend": 7,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17173,7 +17173,7 @@
      "score": 0.039465683917165484,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 7,
+     "trend": 13,
      "variant": "max"
     }
    },
@@ -17199,7 +17199,7 @@
      "score": 1463.557606683928,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17207,7 +17207,7 @@
      "score": 32.59,
      "metric": "Intelligence Index",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17223,7 +17223,7 @@
      "score": 1661.4090008988376,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 12,
+     "trend": 14,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17231,7 +17231,7 @@
      "score": 0.011331422702498825,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -8,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17258,7 +17258,7 @@
      "score": 1444.7459952819304,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -4,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17282,7 +17282,7 @@
      "score": 1742.3355894955869,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17290,7 +17290,7 @@
      "score": 0.11776381760227703,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 3,
      "variant": "max"
     }
    },
@@ -17316,7 +17316,7 @@
      "score": 1399.940088361005,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "xhigh"
     },
     "aa_intelligence": {
@@ -17324,7 +17324,7 @@
      "score": 35.49,
      "metric": "Intelligence Index",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17340,7 +17340,7 @@
      "score": 1640.0851740078472,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -17348,7 +17348,7 @@
      "score": 0.0177691680295281,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -17440,7 +17440,7 @@
      "score": 1679.1201066237227,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -17448,7 +17448,7 @@
      "score": 0.10001334737759858,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -17499,7 +17499,7 @@
      "score": 0.1819375579333983,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 0,
+     "trend": 6,
      "variant": "max"
     }
    },
@@ -17541,7 +17541,7 @@
      "score": 1647.336734048649,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17549,7 +17549,7 @@
      "score": 0.009460703637169235,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17593,7 +17593,7 @@
      "score": 1825.9621938325238,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 26,
+     "trend": 27,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -17601,7 +17601,7 @@
      "score": 0.28612631840600056,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 10,
+     "trend": 16,
      "variant": "max"
     }
    },
@@ -17625,7 +17625,7 @@
      "score": 1491.597449810005,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17641,7 +17641,7 @@
      "score": 1623.8353645079155,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17649,7 +17649,7 @@
      "score": 0.014970009197570992,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17673,7 +17673,7 @@
      "score": 1485.2771568679314,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17689,7 +17689,7 @@
      "score": 1675.5761328893823,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 2,
      "variant": null
     },
     "lmarena_agent": {
@@ -17697,7 +17697,7 @@
      "score": -0.00874379556052798,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17721,7 +17721,7 @@
      "score": 1471.719083894755,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17737,7 +17737,7 @@
      "score": 1609.106095262355,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17745,7 +17745,7 @@
      "score": -0.036960070566851466,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17769,7 +17769,7 @@
      "score": 1450.8436942626167,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "superclue": {
@@ -17785,7 +17785,7 @@
      "score": 1638.534308059064,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -17793,7 +17793,7 @@
      "score": -0.006398998386028814,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17835,7 +17835,7 @@
      "score": 1571.752641636183,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -17843,7 +17843,7 @@
      "score": -0.046471199363334215,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -17869,7 +17869,7 @@
      "score": 1439.6141599762245,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "aa_intelligence": {
@@ -17893,7 +17893,7 @@
      "score": 0.13913252054241584,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -17933,7 +17933,7 @@
      "score": 1582.0343291399042,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 31,
+     "trend": 32,
      "variant": null
     },
     "lmarena_agent": {
@@ -17941,7 +17941,7 @@
      "score": -0.03523660957627848,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 8,
+     "trend": 14,
      "variant": null
     }
    },
@@ -17975,7 +17975,7 @@
      "score": 1723.8540504086402,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17983,7 +17983,7 @@
      "score": 0.08001367120182927,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18009,7 +18009,7 @@
      "rank": 9,
      "score": 42.89,
      "metric": "Intelligence Index",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "max"
     },
@@ -18017,7 +18017,7 @@
      "rank": 6,
      "score": 1749.814651229602,
      "metric": "Arena Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "xhigh / max"
     },
@@ -18025,7 +18025,7 @@
      "rank": 14,
      "score": 0.0746092390852728,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "xhigh / max"
     }
@@ -18060,7 +18060,7 @@
      "score": 1631.6484324850692,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_agent": {
@@ -18068,7 +18068,7 @@
      "score": 0.056653662031935434,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 11,
+     "trend": 16,
      "variant": null
     }
    },
@@ -18108,7 +18108,7 @@
      "score": -0.051771649249132086,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18132,7 +18132,7 @@
      "score": 1457.8258141339948,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18140,7 +18140,7 @@
      "score": 1226.3687712139167,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "livecodebench": {
@@ -18190,7 +18190,7 @@
      "score": 0.14101977351038036,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18225,7 +18225,7 @@
      "score": 1691.083877037472,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 8,
+     "trend": 9,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -18233,7 +18233,7 @@
      "score": 0.061844516045278915,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18258,7 +18258,7 @@
      "rank": 8,
      "score": 1502.1225848020104,
      "metric": "Arena Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "high"
     },
@@ -18267,14 +18267,14 @@
      "score": 1703.904673893014,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
      "rank": 5,
      "score": 0.1490657982485307,
      "metric": "IPS Score",
-     "is_new": true,
+     "is_new": false,
      "trend": 0,
      "variant": "high"
     }
@@ -18301,7 +18301,7 @@
      "score": 1499.579748060844,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -18317,7 +18317,7 @@
      "score": 0.0143593825967001,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -18360,7 +18360,7 @@
      "score": 0.012014662821167768,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18386,7 +18386,7 @@
      "score": 1488.7142092963645,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -18394,7 +18394,7 @@
      "score": 1588.3468383133782,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -18402,7 +18402,7 @@
      "score": -0.030636491779548813,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -18428,7 +18428,7 @@
      "score": 1483.436687240015,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     },
     "lmarena_webdev": {
@@ -18436,7 +18436,7 @@
      "score": 1533.9381321608478,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -18444,7 +18444,7 @@
      "score": -0.0907729284207224,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18470,7 +18470,7 @@
      "score": 1480.0628067665934,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_webdev": {
@@ -18478,7 +18478,7 @@
      "score": 1446.3669685303926,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_agent": {
@@ -18486,7 +18486,7 @@
      "score": -0.05635581362158938,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -8,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -18510,7 +18510,7 @@
      "score": 1478.859266585519,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18518,7 +18518,7 @@
      "score": 1541.5538636882459,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18526,7 +18526,7 @@
      "score": -0.0900935153082267,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18552,7 +18552,7 @@
      "score": 1474.722944529974,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     },
     "lmarena_webdev": {
@@ -18560,7 +18560,7 @@
      "score": 1515.2217572430377,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18568,7 +18568,7 @@
      "score": -0.08005391403273611,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18594,7 +18594,7 @@
      "score": 1469.377688051567,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_webdev": {
@@ -18602,7 +18602,7 @@
      "score": 1607.6104813903737,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -18610,7 +18610,7 @@
      "score": -0.004851784667897775,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -18646,7 +18646,7 @@
      "score": 1772.2285268565488,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 6,
+     "trend": 7,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -18654,7 +18654,7 @@
      "score": 0.15285002202884324,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 0,
+     "trend": 11,
      "variant": "max"
     }
    },
@@ -18692,7 +18692,7 @@
      "score": 1520.238304066568,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 53,
+     "trend": 54,
      "variant": null
     },
     "lmarena_agent": {
@@ -18700,7 +18700,7 @@
      "score": -0.02719499527460207,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18726,7 +18726,7 @@
      "score": 1457.3332381462187,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "xhigh"
     },
     "lmarena_webdev": {
@@ -18734,7 +18734,7 @@
      "score": 1615.7331806850373,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18742,7 +18742,7 @@
      "score": 0.03723689410579545,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18768,7 +18768,7 @@
      "score": 1441.874438891733,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -18776,7 +18776,7 @@
      "score": 1539.094997678689,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -18784,7 +18784,7 @@
      "score": 0.011433190702117563,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -18818,7 +18818,7 @@
      "score": 1505.840621253263,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 52,
+     "trend": 53,
      "variant": null
     },
     "lmarena_agent": {
@@ -18826,7 +18826,7 @@
      "score": -0.08702244191970704,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18850,7 +18850,7 @@
      "score": 1436.5611524704927,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18858,7 +18858,7 @@
      "score": 1589.9120921259462,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18866,7 +18866,7 @@
      "score": -0.05629315147406264,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18901,7 +18901,7 @@
      "score": 1618.1472963280155,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -18909,7 +18909,7 @@
      "score": -0.009246274904087496,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "xhigh"
     }
    },
@@ -18941,7 +18941,7 @@
      "score": 1263.2148682738537,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18949,7 +18949,7 @@
      "score": -0.14468466822060044,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -18973,7 +18973,7 @@
      "score": 1411.2956993888797,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -18981,7 +18981,7 @@
      "score": 1566.319210179848,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -18989,7 +18989,7 @@
      "score": -0.06811172387697396,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19023,7 +19023,7 @@
      "score": 1400.956284096251,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "nvfp4"
     },
     "lmarena_agent": {
@@ -19031,7 +19031,7 @@
      "score": -0.16731386653643363,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": "nvfp4"
     }
    },
@@ -19057,7 +19057,7 @@
      "score": 1397.652253252265,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19065,7 +19065,7 @@
      "score": 1593.2157732209616,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -19073,7 +19073,7 @@
      "score": -0.0037016618655602387,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -19107,7 +19107,7 @@
      "score": 1672.8294786156646,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -19115,7 +19115,7 @@
      "score": 0.06254218405708521,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": "max"
     }
    },
@@ -19151,7 +19151,7 @@
      "score": 1576.631492574981,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -19159,7 +19159,7 @@
      "score": 0.007889327234467539,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": 14,
+     "trend": 19,
      "variant": "max"
     }
    },
@@ -19191,7 +19191,7 @@
      "score": 1368.9933231487948,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -19199,7 +19199,7 @@
      "score": -0.2392583059896365,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19730,7 +19730,7 @@
      "score": 1501.475176103134,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 2,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19738,7 +19738,7 @@
      "score": 1546.8314881210563,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 4,
      "variant": "high"
     }
    },
@@ -19773,7 +19773,7 @@
      "score": 0.11337098136701876,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 10,
      "variant": "max"
     }
    },
@@ -19799,7 +19799,7 @@
      "score": 1489.7726215811858,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 3,
+     "trend": 4,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19807,7 +19807,7 @@
      "score": 1557.0444290091507,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 2,
      "variant": "high"
     }
    },
@@ -19842,7 +19842,7 @@
      "score": 1499.9338090629863,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 24,
+     "trend": 25,
      "variant": "high"
     }
    },
@@ -19866,7 +19866,7 @@
      "score": 1479.5078232359447,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -19874,7 +19874,7 @@
      "score": 1440.835685604418,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -19900,7 +19900,7 @@
      "score": 1479.4104235552559,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19908,7 +19908,7 @@
      "score": 1537.5624137685506,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     }
    },
@@ -19935,7 +19935,7 @@
      "score": 1471.1466425995563,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 88,
+     "trend": 89,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -19943,7 +19943,7 @@
      "score": 1512.139559377014,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 16,
+     "trend": 17,
      "variant": null
     }
    },
@@ -19969,7 +19969,7 @@
      "score": 1465.9821427983225,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 36,
+     "trend": 37,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20003,7 +20003,7 @@
      "score": 1607.9478242883272,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -20035,7 +20035,7 @@
      "score": 1463.9480306943242,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20043,7 +20043,7 @@
      "score": 1479.189182071168,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20067,7 +20067,7 @@
      "score": 1462.449308025596,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20075,7 +20075,7 @@
      "score": 1508.0077814354695,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20101,7 +20101,7 @@
      "score": 1461.5197235015044,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 6,
+     "trend": 7,
      "variant": "high"
     },
     "lmarena_webdev": {
@@ -20109,7 +20109,7 @@
      "score": 1555.3329315442707,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 7,
+     "trend": 8,
      "variant": "high"
     }
    },
@@ -20133,7 +20133,7 @@
      "score": 1457.9303542111916,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20141,7 +20141,7 @@
      "score": 1522.2708650281902,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20165,7 +20165,7 @@
      "score": 1455.406683688413,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20173,7 +20173,7 @@
      "score": 1509.527090114604,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20197,7 +20197,7 @@
      "score": 1454.2634955167173,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -20205,7 +20205,7 @@
      "score": -0.0901715773025957,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20240,7 +20240,7 @@
      "score": 1580.8313453870173,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 38,
+     "trend": 39,
      "variant": "high, 20260813"
     }
    },
@@ -20267,7 +20267,7 @@
      "score": 1451.1381273758238,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 15,
+     "trend": 16,
      "variant": "reasoning, 0309 / beta"
     },
     "lmarena_webdev": {
@@ -20275,7 +20275,7 @@
      "score": 1375.6780888669573,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "reasoning, 0309 / beta"
     }
    },
@@ -20299,7 +20299,7 @@
      "score": 1451.0229712754358,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20307,7 +20307,7 @@
      "score": 1468.8170475036982,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20331,7 +20331,7 @@
      "score": 1448.31551840575,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20339,7 +20339,7 @@
      "score": 1493.4512770536273,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20363,7 +20363,7 @@
      "score": 1448.016651955706,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20371,7 +20371,7 @@
      "score": 1552.468819599658,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20397,7 +20397,7 @@
      "score": 1446.3140740623062,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview / max"
     },
     "lmarena_webdev": {
@@ -20405,7 +20405,7 @@
      "score": 1482.3389425390626,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview / max"
     }
    },
@@ -20429,7 +20429,7 @@
      "score": 1446.0380301279633,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20437,7 +20437,7 @@
      "score": 1435.0359362988754,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20472,7 +20472,7 @@
      "score": 1436.5290995582845,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 11,
+     "trend": 12,
      "variant": "thinking"
     }
    },
@@ -20504,7 +20504,7 @@
      "score": 1370.2661274010572,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20539,7 +20539,7 @@
      "score": 1397.594997309992,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 35,
+     "trend": 37,
      "variant": "medium"
     }
    },
@@ -20563,7 +20563,7 @@
      "score": 1440.2981509763886,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20571,7 +20571,7 @@
      "score": 1341.8628572111413,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20595,7 +20595,7 @@
      "score": 1438.6112787951442,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20603,7 +20603,7 @@
      "score": 1384.8415770937172,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20630,7 +20630,7 @@
      "score": 1438.4856380536066,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 57,
+     "trend": 56,
      "variant": "chat"
     },
     "lmarena_webdev": {
@@ -20638,7 +20638,7 @@
      "score": 1418.9504542801146,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 31,
+     "trend": 32,
      "variant": null
     }
    },
@@ -20670,7 +20670,7 @@
      "score": 1400.128845967823,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20704,7 +20704,7 @@
      "score": 1216.0171168266465,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "thinking"
     }
    },
@@ -20728,7 +20728,7 @@
      "score": 1436.4163320434473,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20736,7 +20736,7 @@
      "score": 1434.3066555679775,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20760,7 +20760,7 @@
      "score": 1436.0969314406225,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20768,7 +20768,7 @@
      "score": 1461.478610569688,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20832,7 +20832,7 @@
      "score": 1393.909968169034,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20864,7 +20864,7 @@
      "score": 1358.1235331273697,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20891,7 +20891,7 @@
      "score": 1432.0187784097625,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 14,
+     "trend": 13,
      "variant": null
     },
     "lmarena_webdev": {
@@ -20899,7 +20899,7 @@
      "score": 1581.6053074478245,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 51,
+     "trend": 52,
      "variant": "high"
     }
    },
@@ -20931,7 +20931,7 @@
      "score": 1230.8831023900611,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20963,7 +20963,7 @@
      "score": 1437.933449152085,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -20999,7 +20999,7 @@
      "score": 1362.4753809964877,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 19,
+     "trend": 20,
      "variant": "thinking"
     }
    },
@@ -21031,7 +21031,7 @@
      "score": 1390.1054927212963,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21055,7 +21055,7 @@
      "score": 1417.4571069336089,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -21063,7 +21063,7 @@
      "score": 1360.1743664099438,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21097,7 +21097,7 @@
      "score": 1255.8198739256104,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -21129,7 +21129,7 @@
      "score": 1321.7439130649927,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21164,7 +21164,7 @@
      "score": 1331.232074902832,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 5,
+     "trend": 6,
      "variant": "non-thinking"
     }
    },
@@ -21196,7 +21196,7 @@
      "score": 1357.4139236632066,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21230,7 +21230,7 @@
      "score": 1241.6260259192622,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "reasoning"
     }
    },
@@ -21257,7 +21257,7 @@
      "score": 1406.950812116448,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 11,
+     "trend": 12,
      "variant": "non-reasoning"
     },
     "lmarena_webdev": {
@@ -21265,7 +21265,7 @@
      "score": 1158.7177347139905,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "reasoning"
     }
    },
@@ -21393,7 +21393,7 @@
      "score": 1330.1417014807557,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21425,7 +21425,7 @@
      "score": 1252.9671212679814,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21459,7 +21459,7 @@
      "score": 1384.1517225012944,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": "preview"
     }
    },
@@ -21491,7 +21491,7 @@
      "score": 1353.774849068347,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21523,7 +21523,7 @@
      "score": 1385.8060303159018,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21557,7 +21557,7 @@
      "score": 1274.295866813156,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "instruct"
     }
    },
@@ -21589,7 +21589,7 @@
      "score": 1170.6003989816963,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21621,7 +21621,7 @@
      "score": 1298.8528407126532,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21645,7 +21645,7 @@
      "score": 1290.763551800122,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -21653,7 +21653,7 @@
      "score": 1192.7089865932212,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21685,7 +21685,7 @@
      "score": 1484.872267812677,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -21693,7 +21693,7 @@
      "score": -0.12253127509031625,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21717,7 +21717,7 @@
      "score": 1443.0369849182216,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -21725,7 +21725,7 @@
      "score": 1414.144650408657,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -21733,7 +21733,7 @@
      "score": -0.18275656200853618,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21757,7 +21757,7 @@
      "score": 1424.4803472099288,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -3,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -21765,7 +21765,7 @@
      "score": 1436.2619741593876,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -2,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -21773,7 +21773,7 @@
      "score": -0.07401693431356612,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -7,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21797,7 +21797,7 @@
      "score": 1414.206890559136,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_webdev": {
@@ -21805,7 +21805,7 @@
      "score": 1408.082111284618,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -21813,7 +21813,7 @@
      "score": -0.18704240624929264,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -6,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21845,7 +21845,7 @@
      "score": 1644.6760395957338,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -21853,7 +21853,7 @@
      "score": 0.0251235677762612,
      "metric": "IPS Score",
      "is_new": false,
-     "trend": -5,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21888,7 +21888,7 @@
      "score": 1236.7154199179095,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "thinking"
     }
    },
