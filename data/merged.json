@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-17T06:06:48Z",
- "date": "2026-11-17",
+ "generated_at": "2026-11-18T05:35:56Z",
+ "date": "2026-11-18",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-17T06:06:39Z",
+   "fetched_at": "2026-11-18T05:35:47Z",
    "publish_date": "2026-11-11",
-   "compared_with": "2026-11-16",
+   "compared_with": "2026-11-17",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9299,9 +9299,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-11-17T06:06:35Z",
-   "publish_date": "2026-11-17",
-   "compared_with": "2026-11-16",
+   "fetched_at": "2026-11-18T05:35:44Z",
+   "publish_date": "2026-11-18",
+   "compared_with": "2026-11-17",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9336,12 +9336,32 @@
      "tie_size": 1
     },
     {
+     "model": "GPT-6.2 Astra",
+     "slug": "gpt-6-2-astra",
+     "label": "GPT-6.2 Astra (max)",
+     "score": 62.14,
+     "price": 3.9979061566801852,
+     "rank": 2,
+     "id": "gpt62astra",
+     "display_name": "GPT-6.2 Astra",
+     "vendor": "OpenAI",
+     "vendor_raw": null,
+     "region": "us",
+     "open": null,
+     "variant": null,
+     "registered": false,
+     "trend": 0,
+     "is_new": true,
+     "tie_rank": 2,
+     "tie_size": 1
+    },
+    {
      "model": "Gemini 4 Carbon",
      "slug": "gemini-4-carbon",
      "label": "Gemini 4 Carbon (high)",
      "score": 60.03,
      "price": 5.484780948230178,
-     "rank": 2,
+     "rank": 3,
      "id": "gemini4carbon",
      "display_name": "Gemini 4 Carbon",
      "vendor": "Google DeepMind",
@@ -9350,9 +9370,9 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 0,
+     "trend": -1,
      "is_new": false,
-     "tie_rank": 2,
+     "tie_rank": 3,
      "tie_size": 1
     },
     {
@@ -9361,7 +9381,7 @@
      "label": "Claude Opus 5.5 (max)",
      "score": 59.11,
      "price": 10.036409719512749,
-     "rank": 3,
+     "rank": 4,
      "id": "claude-opus-5.5",
      "display_name": "Claude Opus 5.5",
      "vendor": "Anthropic",
@@ -9370,48 +9390,28 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 0,
-     "is_new": false,
-     "tie_rank": 3,
-     "tie_size": 1
-    },
-    {
-     "model": "GPT-6 Astra",
-     "slug": "gpt-6-astra",
-     "label": "GPT-6 Astra (max)",
-     "score": 56.85,
-     "price": 6.244666943602518,
-     "rank": 4,
-     "id": "gpt-6-astra",
-     "display_name": "GPT-6 Astra",
-     "vendor": "OpenAI",
-     "vendor_raw": null,
-     "region": "us",
-     "open": false,
-     "variant": null,
-     "registered": true,
-     "trend": 0,
+     "trend": -1,
      "is_new": false,
      "tie_rank": 4,
      "tie_size": 1
     },
     {
-     "model": "GPT-6.1 Sol",
-     "slug": "gpt-6-1-sol",
-     "label": "GPT-6.1 Sol (max)",
-     "score": 54.61,
-     "price": 1.2720632679446995,
+     "model": "GPT-6.2 Sol",
+     "slug": "gpt-6-2-sol",
+     "label": "GPT-6.2 Sol (max)",
+     "score": 57.26,
+     "price": 1.014379970300768,
      "rank": 5,
-     "id": "gpt-6.1-sol",
-     "display_name": "GPT-6.1 Sol",
+     "id": "gpt62sol",
+     "display_name": "GPT-6.2 Sol",
      "vendor": "OpenAI",
      "vendor_raw": null,
      "region": "us",
-     "open": false,
+     "open": null,
      "variant": null,
-     "registered": true,
+     "registered": false,
      "trend": 0,
-     "is_new": false,
+     "is_new": true,
      "tie_rank": 5,
      "tie_size": 1
     },
@@ -9933,9 +9933,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-17T06:06:40Z",
+   "fetched_at": "2026-11-18T05:35:48Z",
    "publish_date": "2026-11-15",
-   "compared_with": "2026-11-16",
+   "compared_with": "2026-11-17",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -13413,9 +13413,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-17T06:06:40Z",
+   "fetched_at": "2026-11-18T05:35:49Z",
    "publish_date": "2026-11-15",
-   "compared_with": "2026-11-16",
+   "compared_with": "2026-11-17",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15427,9 +15427,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-11-17T06:06:48Z",
+   "fetched_at": "2026-11-18T05:35:56Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-11-16",
+   "compared_with": "2026-11-17",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -17242,65 +17242,6 @@
    "reference_only": false
   },
   {
-   "id": "gpt-6.1-sol",
-   "display_name": "GPT-6.1 Sol",
-   "vendor": "OpenAI",
-   "region": "us",
-   "open": false,
-   "registered": true,
-   "variants": [
-    "max",
-    "medium"
-   ],
-   "appearances": {
-    "lmarena_text": {
-     "rank": 66,
-     "score": 1444.7459952819304,
-     "metric": "Arena Score",
-     "is_new": false,
-     "trend": 0,
-     "variant": "max"
-    },
-    "aa_intelligence": {
-     "rank": 5,
-     "score": 54.61,
-     "metric": "Intelligence Index",
-     "is_new": false,
-     "trend": 0,
-     "variant": null
-    },
-    "superclue": {
-     "rank": 2,
-     "score": 71.76,
-     "metric": "综合得分",
-     "is_new": false,
-     "trend": 0,
-     "variant": null
-    },
-    "lmarena_webdev": {
-     "rank": 8,
-     "score": 1742.3355894955869,
-     "metric": "Arena Score",
-     "is_new": false,
-     "trend": 0,
-     "variant": "max"
-    },
-    "lmarena_agent": {
-     "rank": 9,
-     "score": 0.11776381760227703,
-     "metric": "IPS Score",
-     "is_new": false,
-     "trend": 3,
-     "variant": "max"
-    }
-   },
-   "group_count": 3,
-   "appearance_count": 5,
-   "has_stale": false,
-   "confidence": "verified",
-   "reference_only": false
-  },
-  {
    "id": "grok-4.7",
    "display_name": "Grok 4.7",
    "vendor": "xAI",
@@ -17378,11 +17319,11 @@
      "variant": "high"
     },
     "aa_intelligence": {
-     "rank": 2,
+     "rank": 3,
      "score": 60.03,
      "metric": "Intelligence Index",
      "is_new": false,
-     "trend": 0,
+     "trend": -1,
      "variant": null
     },
     "lmarena_webdev": {
@@ -17479,11 +17420,11 @@
      "variant": "high"
     },
     "aa_intelligence": {
-     "rank": 3,
+     "rank": 4,
      "score": 59.11,
      "metric": "Intelligence Index",
      "is_new": false,
-     "trend": 0,
+     "trend": -1,
      "variant": null
     },
     "lmarena_webdev": {
@@ -17804,6 +17745,57 @@
    "reference_only": false
   },
   {
+   "id": "gpt-6.1-sol",
+   "display_name": "GPT-6.1 Sol",
+   "vendor": "OpenAI",
+   "region": "us",
+   "open": false,
+   "registered": true,
+   "variants": [
+    "max",
+    "medium"
+   ],
+   "appearances": {
+    "lmarena_text": {
+     "rank": 66,
+     "score": 1444.7459952819304,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0,
+     "variant": "max"
+    },
+    "superclue": {
+     "rank": 2,
+     "score": 71.76,
+     "metric": "综合得分",
+     "is_new": false,
+     "trend": 0,
+     "variant": null
+    },
+    "lmarena_webdev": {
+     "rank": 8,
+     "score": 1742.3355894955869,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0,
+     "variant": "max"
+    },
+    "lmarena_agent": {
+     "rank": 9,
+     "score": 0.11776381760227703,
+     "metric": "IPS Score",
+     "is_new": false,
+     "trend": 3,
+     "variant": "max"
+    }
+   },
+   "group_count": 2,
+   "appearance_count": 4,
+   "has_stale": false,
+   "confidence": "verified",
+   "reference_only": false
+  },
+  {
    "id": "step-5-preview",
    "display_name": "阶跃 Step 5 Preview",
    "vendor": "阶跃星辰",
@@ -17845,56 +17837,6 @@
      "is_new": false,
      "trend": 0,
      "variant": null
-    }
-   },
-   "group_count": 2,
-   "appearance_count": 4,
-   "has_stale": false,
-   "confidence": "verified",
-   "reference_only": false
-  },
-  {
-   "id": "gpt-6-astra",
-   "display_name": "GPT-6 Astra",
-   "vendor": "OpenAI",
-   "region": "us",
-   "open": false,
-   "registered": true,
-   "variants": [
-    "max"
-   ],
-   "appearances": {
-    "lmarena_text": {
-     "rank": 78,
-     "score": 1439.6141599762245,
-     "metric": "Arena Score",
-     "is_new": false,
-     "trend": 0,
-     "variant": "max"
-    },
-    "aa_intelligence": {
-     "rank": 4,
-     "score": 56.85,
-     "metric": "Intelligence Index",
-     "is_new": false,
-     "trend": 0,
-     "variant": null
-    },
-    "lmarena_webdev": {
-     "rank": 5,
-     "score": 1762.8833463635062,
-     "metric": "Arena Score",
-     "is_new": false,
-     "trend": 0,
-     "variant": "max"
-    },
-    "lmarena_agent": {
-     "rank": 7,
-     "score": 0.13913252054241584,
-     "metric": "IPS Score",
-     "is_new": false,
-     "trend": 0,
-     "variant": "max"
     }
    },
    "group_count": 2,
@@ -18786,6 +18728,48 @@
      "is_new": false,
      "trend": 0,
      "variant": "high"
+    }
+   },
+   "group_count": 1,
+   "appearance_count": 3,
+   "has_stale": false,
+   "confidence": "partial",
+   "reference_only": false
+  },
+  {
+   "id": "gpt-6-astra",
+   "display_name": "GPT-6 Astra",
+   "vendor": "OpenAI",
+   "region": "us",
+   "open": false,
+   "registered": true,
+   "variants": [
+    "max"
+   ],
+   "appearances": {
+    "lmarena_text": {
+     "rank": 78,
+     "score": 1439.6141599762245,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0,
+     "variant": "max"
+    },
+    "lmarena_webdev": {
+     "rank": 5,
+     "score": 1762.8833463635062,
+     "metric": "Arena Score",
+     "is_new": false,
+     "trend": 0,
+     "variant": "max"
+    },
+    "lmarena_agent": {
+     "rank": 7,
+     "score": 0.13913252054241584,
+     "metric": "IPS Score",
+     "is_new": false,
+     "trend": 0,
+     "variant": "max"
     }
    },
    "group_count": 1,
@@ -21900,9 +21884,9 @@
   }
  ],
  "cross_meta": {
-  "total_models": 421,
+  "total_models": 423,
   "multi_board": 127,
-  "single_board": 294,
+  "single_board": 296,
   "min_boards": 2,
   "boards": [
    "lmarena_text",
