@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T05:14:07Z",
- "date": "2026-11-21",
+ "generated_at": "2026-11-22T04:40:37Z",
+ "date": "2026-11-22",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-21T05:13:59Z",
+   "fetched_at": "2026-11-22T04:40:27Z",
    "publish_date": "2026-11-19",
-   "compared_with": "2026-11-20",
+   "compared_with": "2026-11-21",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9409,9 +9409,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-11-21T05:13:50Z",
-   "publish_date": "2026-11-21",
-   "compared_with": "2026-11-20",
+   "fetched_at": "2026-11-22T04:40:14Z",
+   "publish_date": "2026-11-22",
+   "compared_with": "2026-11-21",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -10043,9 +10043,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-21T05:14:00Z",
+   "fetched_at": "2026-11-22T04:40:28Z",
    "publish_date": "2026-11-20",
-   "compared_with": "2026-11-20",
+   "compared_with": "2026-11-21",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -10076,7 +10076,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 32,
+     "trend": 31,
      "is_new": false,
      "tie_rank": 1,
      "tie_size": 1
@@ -10164,7 +10164,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 5,
      "tie_size": 1
@@ -10186,7 +10186,7 @@
      "open": null,
      "variant": "high",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 6,
      "tie_size": 1
@@ -10208,7 +10208,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 7,
      "tie_size": 1
@@ -10428,7 +10428,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 6,
+     "trend": 5,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -10472,7 +10472,7 @@
      "open": false,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 19,
      "tie_size": 1
@@ -10538,7 +10538,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 22,
      "tie_size": 1
@@ -10758,7 +10758,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -10780,7 +10780,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -10956,7 +10956,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 41,
      "tie_size": 1
@@ -10978,7 +10978,7 @@
      "open": null,
      "variant": "max",
      "registered": false,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 42,
      "tie_size": 1
@@ -11198,7 +11198,7 @@
      "open": null,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 52,
      "tie_size": 1
@@ -11220,7 +11220,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 53,
      "tie_size": 1
@@ -12474,7 +12474,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 110,
      "tie_size": 1
@@ -12518,7 +12518,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 112,
      "tie_size": 1
@@ -13611,9 +13611,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-21T05:14:00Z",
+   "fetched_at": "2026-11-22T04:40:28Z",
    "publish_date": "2026-11-18",
-   "compared_with": "2026-11-20",
+   "compared_with": "2026-11-21",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15691,9 +15691,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-11-21T05:14:07Z",
+   "fetched_at": "2026-11-22T04:40:37Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-11-20",
+   "compared_with": "2026-11-21",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -17429,7 +17429,7 @@
      "score": 1682.9504676988922,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 6,
+     "trend": 5,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17645,7 +17645,7 @@
      "score": 1764.886599440801,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -17846,7 +17846,7 @@
      "score": 1823.6359080977645,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 32,
+     "trend": 31,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -18091,7 +18091,7 @@
      "score": 1570.1140404539433,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "high"
     },
     "lmarena_agent": {
@@ -18239,7 +18239,7 @@
      "score": 1766.1844637793192,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -18406,7 +18406,7 @@
      "score": 1625.7162536990577,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -19166,7 +19166,7 @@
      "score": 1763.9611761987949,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -19414,7 +19414,7 @@
      "score": 1573.1653499379909,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -19498,7 +19498,7 @@
      "score": 1674.4293973521571,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -20433,7 +20433,7 @@
      "score": 1608.2924731994244,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -21068,7 +21068,7 @@
      "score": 1399.9496326462033,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -21695,7 +21695,7 @@
      "score": 1398.0380886139792,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
