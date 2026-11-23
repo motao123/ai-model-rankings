@@ -1,44 +1,44 @@
 {
  "aa_intelligence": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "rows": 12,
   "checksum": "c0aca12d535a52d4",
-  "promoted_at": "2026-11-22T04:40:14Z"
+  "promoted_at": "2026-11-23T05:17:26Z"
  },
  "livecodebench": {
-  "date": "2026-11-16",
+  "date": "2026-11-23",
   "rows": 28,
   "checksum": "594295cb3a7b6f68",
-  "promoted_at": "2026-11-16T04:22:38Z"
+  "promoted_at": "2026-11-23T05:17:35Z"
  },
  "lmarena_text": {
-  "date": "2026-11-22",
-  "rows": 426,
-  "checksum": "97548cb4d3efe4cc",
-  "promoted_at": "2026-11-22T04:40:28Z"
+  "date": "2026-11-23",
+  "rows": 427,
+  "checksum": "f0d941c262badfe5",
+  "promoted_at": "2026-11-23T05:17:35Z"
  },
  "lmarena_webdev": {
-  "date": "2026-11-22",
-  "rows": 161,
-  "checksum": "349fc6e9f9cabf62",
-  "promoted_at": "2026-11-22T04:40:28Z"
+  "date": "2026-11-23",
+  "rows": 162,
+  "checksum": "968b613fc7d783fa",
+  "promoted_at": "2026-11-23T05:17:35Z"
  },
  "lmarena_agent": {
-  "date": "2026-11-22",
-  "rows": 68,
-  "checksum": "73a3fed5a1d9ce8a",
-  "promoted_at": "2026-11-22T04:40:28Z"
+  "date": "2026-11-23",
+  "rows": 69,
+  "checksum": "05e15ec80e3ef7bd",
+  "promoted_at": "2026-11-23T05:17:35Z"
  },
  "open_llm": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "rows": 60,
   "checksum": "758fac9b189886f0",
-  "promoted_at": "2026-11-22T04:40:37Z"
+  "promoted_at": "2026-11-23T05:17:40Z"
  },
  "superclue": {
-  "date": "2026-11-16",
-  "rows": 19,
-  "checksum": "09d3240836db682f",
-  "promoted_at": "2026-11-16T04:22:50Z"
+  "date": "2026-11-23",
+  "rows": 21,
+  "checksum": "08736d0934888081",
+  "promoted_at": "2026-11-23T05:17:43Z"
  }
 }
