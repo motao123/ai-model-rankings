@@ -1,11 +1,11 @@
 {
- "checked_at": "2026-11-23T05:17:44Z",
- "stale_sources": [],
- "fresh_sources": [
+ "checked_at": "2026-11-24T07:58:33Z",
+ "stale_sources": [
   "lmarena_text",
   "lmarena_webdev",
   "superclue"
  ],
+ "fresh_sources": [],
  "skipped_retired": [
   "open_llm"
  ],

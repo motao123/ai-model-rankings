@@ -1,9 +1,9 @@
 {
  "aa_intelligence": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": 12,
   "checksum": "c0aca12d535a52d4",
-  "promoted_at": "2026-11-23T05:17:26Z"
+  "promoted_at": "2026-11-24T07:58:20Z"
  },
  "livecodebench": {
   "date": "2026-11-23",
@@ -12,28 +12,28 @@
   "promoted_at": "2026-11-23T05:17:35Z"
  },
  "lmarena_text": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": 427,
   "checksum": "f0d941c262badfe5",
-  "promoted_at": "2026-11-23T05:17:35Z"
+  "promoted_at": "2026-11-24T07:58:24Z"
  },
  "lmarena_webdev": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": 162,
-  "checksum": "968b613fc7d783fa",
-  "promoted_at": "2026-11-23T05:17:35Z"
+  "checksum": "d0145f845a5d0a97",
+  "promoted_at": "2026-11-24T07:58:24Z"
  },
  "lmarena_agent": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": 69,
   "checksum": "05e15ec80e3ef7bd",
-  "promoted_at": "2026-11-23T05:17:35Z"
+  "promoted_at": "2026-11-24T07:58:24Z"
  },
  "open_llm": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": 60,
   "checksum": "758fac9b189886f0",
-  "promoted_at": "2026-11-23T05:17:40Z"
+  "promoted_at": "2026-11-24T07:58:31Z"
  },
  "superclue": {
   "date": "2026-11-23",

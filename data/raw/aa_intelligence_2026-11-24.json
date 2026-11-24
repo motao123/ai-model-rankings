@@ -1,0 +1,112 @@
+{
+ "source_id": "aa_intelligence",
+ "board": "Artificial Analysis 智能指数榜",
+ "metric": "Intelligence Index",
+ "kind": "objective_benchmark",
+ "source_url": "https://artificialanalysis.ai/text/intelligence-index",
+ "dataset_url": "https://artificialanalysis.ai/",
+ "license": "© Artificial Analysis，本站仅聚合展示",
+ "fetched_at": "2026-11-24T07:58:20Z",
+ "publish_date": "2026-11-24",
+ "channel": "html-flight-payload",
+ "mirror_note": null,
+ "price_unit": "USD per 1M blended tokens",
+ "rows": [
+  {
+   "model": "Claude Fable 5.2",
+   "slug": "claude-fable-5-2",
+   "label": "Claude Fable 5.2 (max)",
+   "score": 64.56,
+   "price": 26.53855780398091,
+   "rank": 1
+  },
+  {
+   "model": "GPT-6.2 Astra",
+   "slug": "gpt-6-2-astra",
+   "label": "GPT-6.2 Astra (max)",
+   "score": 62.14,
+   "price": 3.9979061566801852,
+   "rank": 2
+  },
+  {
+   "model": "Gemini 4 Neon",
+   "slug": "gemini-4-neon",
+   "label": "Gemini 4 Neon (xhigh)",
+   "score": 61.4,
+   "price": 6.444838101104699,
+   "rank": 3
+  },
+  {
+   "model": "Claude Opus 5.5",
+   "slug": "claude-opus-5-5",
+   "label": "Claude Opus 5.5 (max)",
+   "score": 59.11,
+   "price": 10.036409719512749,
+   "rank": 4
+  },
+  {
+   "model": "GPT-6.2 Sol",
+   "slug": "gpt-6-2-sol",
+   "label": "GPT-6.2 Sol (max)",
+   "score": 57.26,
+   "price": 1.014379970300768,
+   "rank": 5
+  },
+  {
+   "model": "Muse Wonder Full",
+   "slug": "muse-wonder-full",
+   "label": "Muse Wonder Full (max)",
+   "score": 50.08,
+   "price": null,
+   "rank": 6
+  },
+  {
+   "model": "Kimi K3.1 Pro",
+   "slug": "kimi-k3-1-pro",
+   "label": "Kimi K3.1 Pro",
+   "score": 46.45,
+   "price": 3.6812002895742055,
+   "rank": 7
+  },
+  {
+   "model": "Muse Wonder",
+   "slug": "muse-wonder",
+   "label": "Muse Wonder (max)",
+   "score": 43.57,
+   "price": 6.9520364786062245,
+   "rank": 8
+  },
+  {
+   "model": "Qwen4 Max",
+   "slug": "qwen4-max",
+   "label": "Qwen4 Max",
+   "score": 42.89,
+   "price": 3.2681327300897323,
+   "rank": 9
+  },
+  {
+   "model": "Grok 4.7",
+   "slug": "grok-4-7",
+   "label": "Grok 4.7 (xhigh)",
+   "score": 35.49,
+   "price": 7.771539401587139,
+   "rank": 10
+  },
+  {
+   "model": "DeepSeek V4.1 Flash 1017",
+   "slug": "deepseek-v4-1-flash-1017",
+   "label": "DeepSeek V4.1 Flash 1017 (max)",
+   "score": 32.59,
+   "price": 0.60210514783598,
+   "rank": 11
+  },
+  {
+   "model": "GLM-5.3",
+   "slug": "glm-5-3",
+   "label": "GLM-5.3 (max)",
+   "score": 31.65,
+   "price": 5.009264601719954,
+   "rank": 12
+  }
+ ]
+}
