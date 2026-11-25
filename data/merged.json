@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T07:58:31Z",
- "date": "2026-11-24",
+ "generated_at": "2026-11-25T06:36:04Z",
+ "date": "2026-11-25",
  "disclaimer": "本站为第三方数据聚合展示，所有分数与排名均来自 LMArena / Artificial Analysis / SuperCLUE / LiveCodeBench / Hugging Face 等原始榜单，本站不修改任何分数，也不自行计算跨榜综合总分。各榜单评测口径不同，分数不可直接横向比较，跨榜对比仅用于观察同一模型在不同方法论下的相对表现。",
  "boards": {
   "lmarena_text": {
@@ -11,9 +11,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-24T07:58:23Z",
+   "fetched_at": "2026-11-25T06:35:59Z",
    "publish_date": "2026-11-22",
-   "compared_with": "2026-11-23",
+   "compared_with": "2026-11-24",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9431,9 +9431,9 @@
    "source_url": "https://artificialanalysis.ai/text/intelligence-index",
    "dataset_url": "https://artificialanalysis.ai/",
    "license": "© Artificial Analysis，本站仅聚合展示",
-   "fetched_at": "2026-11-24T07:58:20Z",
-   "publish_date": "2026-11-24",
-   "compared_with": "2026-11-23",
+   "fetched_at": "2026-11-25T06:35:58Z",
+   "publish_date": "2026-11-25",
+   "compared_with": "2026-11-24",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -9451,7 +9451,7 @@
      "model": "Claude Fable 5.2",
      "slug": "claude-fable-5-2",
      "label": "Claude Fable 5.2 (max)",
-     "score": 64.56,
+     "score": 64.77,
      "price": 26.53855780398091,
      "rank": 1,
      "id": "claude-fable-5",
@@ -9471,7 +9471,7 @@
      "model": "GPT-6.2 Astra",
      "slug": "gpt-6-2-astra",
      "label": "GPT-6.2 Astra (max)",
-     "score": 62.14,
+     "score": 62.19,
      "price": 3.9979061566801852,
      "rank": 2,
      "id": "gpt62astra",
@@ -9491,7 +9491,7 @@
      "model": "Gemini 4 Neon",
      "slug": "gemini-4-neon",
      "label": "Gemini 4 Neon (xhigh)",
-     "score": 61.4,
+     "score": 61.55,
      "price": 6.444838101104699,
      "rank": 3,
      "id": "gemini4neon",
@@ -9511,7 +9511,7 @@
      "model": "Claude Opus 5.5",
      "slug": "claude-opus-5-5",
      "label": "Claude Opus 5.5 (max)",
-     "score": 59.11,
+     "score": 59.12,
      "price": 10.036409719512749,
      "rank": 4,
      "id": "claude-opus-5.5",
@@ -9551,7 +9551,7 @@
      "model": "Muse Wonder Full",
      "slug": "muse-wonder-full",
      "label": "Muse Wonder Full (max)",
-     "score": 50.08,
+     "score": 49.93,
      "price": null,
      "rank": 6,
      "id": "musewonderfull",
@@ -9571,7 +9571,7 @@
      "model": "Kimi K3.1 Pro",
      "slug": "kimi-k3-1-pro",
      "label": "Kimi K3.1 Pro",
-     "score": 46.45,
+     "score": 46.55,
      "price": 3.6812002895742055,
      "rank": 7,
      "id": "kimi-k3",
@@ -9591,7 +9591,7 @@
      "model": "Muse Wonder",
      "slug": "muse-wonder",
      "label": "Muse Wonder (max)",
-     "score": 43.57,
+     "score": 43.73,
      "price": 6.9520364786062245,
      "rank": 8,
      "id": "musewonder",
@@ -9611,7 +9611,7 @@
      "model": "Qwen4 Max",
      "slug": "qwen4-max",
      "label": "Qwen4 Max",
-     "score": 42.89,
+     "score": 42.79,
      "price": 3.2681327300897323,
      "rank": 9,
      "id": "qwen4",
@@ -9631,7 +9631,7 @@
      "model": "Grok 4.7",
      "slug": "grok-4-7",
      "label": "Grok 4.7 (xhigh)",
-     "score": 35.49,
+     "score": 35.37,
      "price": 7.771539401587139,
      "rank": 10,
      "id": "grok-4.7",
@@ -9651,7 +9651,7 @@
      "model": "DeepSeek V4.1 Flash 1017",
      "slug": "deepseek-v4-1-flash-1017",
      "label": "DeepSeek V4.1 Flash 1017 (max)",
-     "score": 32.59,
+     "score": 32.4,
      "price": 0.60210514783598,
      "rank": 11,
      "id": "deepseek-v4.1-flash",
@@ -9671,7 +9671,7 @@
      "model": "GLM-5.3",
      "slug": "glm-5-3",
      "label": "GLM-5.3 (max)",
-     "score": 31.65,
+     "score": 31.55,
      "price": 5.009264601719954,
      "rank": 12,
      "id": "glm-5.3",
@@ -10101,9 +10101,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-24T07:58:24Z",
+   "fetched_at": "2026-11-25T06:36:00Z",
    "publish_date": "2026-11-23",
-   "compared_with": "2026-11-23",
+   "compared_with": "2026-11-24",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -10134,7 +10134,7 @@
      "open": false,
      "variant": "xhigh",
      "registered": true,
-     "trend": 31,
+     "trend": 32,
      "is_new": false,
      "tie_rank": 1,
      "tie_size": 1
@@ -10486,7 +10486,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": 5,
+     "trend": 6,
      "is_new": false,
      "tie_rank": 17,
      "tie_size": 1
@@ -10618,7 +10618,7 @@
      "open": true,
      "variant": "max",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 23,
      "tie_size": 1
@@ -10816,7 +10816,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 32,
      "tie_size": 1
@@ -10838,7 +10838,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 33,
      "tie_size": 1
@@ -11300,7 +11300,7 @@
      "open": null,
      "variant": null,
      "registered": false,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 54,
      "tie_size": 1
@@ -11322,7 +11322,7 @@
      "open": false,
      "variant": "high",
      "registered": true,
-     "trend": 2,
+     "trend": 1,
      "is_new": false,
      "tie_rank": 55,
      "tie_size": 1
@@ -11344,7 +11344,7 @@
      "open": false,
      "variant": null,
      "registered": true,
-     "trend": 1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 56,
      "tie_size": 1
@@ -12510,7 +12510,7 @@
      "open": null,
      "variant": "nvfp4",
      "registered": false,
-     "trend": 2,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 109,
      "tie_size": 1
@@ -12598,7 +12598,7 @@
      "open": true,
      "variant": null,
      "registered": true,
-     "trend": -1,
+     "trend": 0,
      "is_new": false,
      "tie_rank": 113,
      "tie_size": 1
@@ -13691,9 +13691,9 @@
    "source_url": "https://lmarena.ai/leaderboard",
    "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
    "license": "CC-BY-4.0",
-   "fetched_at": "2026-11-24T07:58:24Z",
+   "fetched_at": "2026-11-25T06:36:00Z",
    "publish_date": "2026-11-22",
-   "compared_with": "2026-11-23",
+   "compared_with": "2026-11-24",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -15793,9 +15793,9 @@
    "source_url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
    "dataset_url": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
    "license": "归档数据（榜单已于 2025-03 退役）",
-   "fetched_at": "2026-11-24T07:58:31Z",
+   "fetched_at": "2026-11-25T06:36:04Z",
    "publish_date": "2025-03",
-   "compared_with": "2026-11-23",
+   "compared_with": "2026-11-24",
    "stale": false,
    "stale_from": null,
    "stale_days": 0,
@@ -17454,7 +17454,7 @@
     },
     "aa_intelligence": {
      "rank": 7,
-     "score": 46.45,
+     "score": 46.55,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17473,7 +17473,7 @@
      "score": 1682.8911109229225,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 5,
+     "trend": 6,
      "variant": "max"
     },
     "lmarena_agent": {
@@ -17512,7 +17512,7 @@
     },
     "aa_intelligence": {
      "rank": 12,
-     "score": 31.65,
+     "score": 31.55,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17570,7 +17570,7 @@
     },
     "aa_intelligence": {
      "rank": 11,
-     "score": 32.59,
+     "score": 32.4,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17628,7 +17628,7 @@
     },
     "aa_intelligence": {
      "rank": 10,
-     "score": 35.49,
+     "score": 35.37,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17679,7 +17679,7 @@
    "appearances": {
     "aa_intelligence": {
      "rank": 9,
-     "score": 42.89,
+     "score": 42.79,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17788,7 +17788,7 @@
     },
     "aa_intelligence": {
      "rank": 3,
-     "score": 61.4,
+     "score": 61.55,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17839,7 +17839,7 @@
     },
     "aa_intelligence": {
      "rank": 4,
-     "score": 59.11,
+     "score": 59.12,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17889,7 +17889,7 @@
     },
     "aa_intelligence": {
      "rank": 8,
-     "score": 43.57,
+     "score": 43.73,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -17989,7 +17989,7 @@
     },
     "aa_intelligence": {
      "rank": 1,
-     "score": 64.56,
+     "score": 64.77,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -18000,7 +18000,7 @@
      "score": 1821.6543300273584,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 31,
+     "trend": 32,
      "variant": "xhigh"
     },
     "lmarena_agent": {
@@ -18382,7 +18382,7 @@
     },
     "aa_intelligence": {
      "rank": 2,
-     "score": 62.14,
+     "score": 62.19,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -18466,7 +18466,7 @@
    "appearances": {
     "aa_intelligence": {
      "rank": 6,
-     "score": 50.08,
+     "score": 49.93,
      "metric": "Intelligence Index",
      "is_new": false,
      "trend": 0,
@@ -18517,7 +18517,7 @@
      "score": 1625.8388451198834,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -19568,7 +19568,7 @@
      "score": 1400.038159892862,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 0,
      "variant": "nvfp4"
     },
     "lmarena_agent": {
@@ -20317,7 +20317,7 @@
      "score": 1557.3954105121502,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 2,
+     "trend": 1,
      "variant": "high"
     }
    },
@@ -21807,7 +21807,7 @@
      "score": 1397.9128553136584,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": -1,
+     "trend": 0,
      "variant": null
     }
    },
@@ -22395,7 +22395,7 @@
      "score": 1559.7868951203154,
      "metric": "Arena Score",
      "is_new": false,
-     "trend": 1,
+     "trend": 0,
      "variant": null
     },
     "lmarena_agent": {
@@ -22559,7 +22559,7 @@
     "vendor": "Anthropic",
     "region": "us",
     "open": false,
-    "score": 64.56,
+    "score": 64.77,
     "rank": 1,
     "tie_rank": 1,
     "tie_size": 1,
