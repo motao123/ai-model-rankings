@@ -1,0 +1,704 @@
+{
+ "source_id": "lmarena_agent",
+ "board": "Agent Arena 榜（真人盲测）",
+ "metric": "IPS Score",
+ "kind": "human_preference",
+ "source_url": "https://lmarena.ai/leaderboard",
+ "dataset_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+ "license": "CC-BY-4.0",
+ "fetched_at": "2026-11-26T06:27:19Z",
+ "publish_date": "2026-11-22",
+ "channel": "hf-datasets-server",
+ "rows": [
+  {
+   "model": "Claude Fable 5.2 (Max)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.27443718394748495,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 1
+  },
+  {
+   "model": "Claude Opus 5.5 (Max)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.19117186195772867,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 2
+  },
+  {
+   "model": "Gemini 4 Neon (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": 0.18288671775196863,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 3
+  },
+  {
+   "model": "Gemini 4 Carbon (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": 0.16127062430229325,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 4
+  },
+  {
+   "model": "Claude Sonnet 5.5 (Max)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.15207838017752168,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 5
+  },
+  {
+   "model": "GPT-6 Astra (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.14644819839682002,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 6
+  },
+  {
+   "model": "GPT-6.2 Astra (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.1391246491333556,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 7
+  },
+  {
+   "model": "Claude Opus 5.5 (High)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.1386088676462861,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 8
+  },
+  {
+   "model": "Gemini 4 Hydrogen (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": 0.13589964976474905,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 9
+  },
+  {
+   "model": "Claude Fable 5.1 (Max)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.13147317127912914,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 10
+  },
+  {
+   "model": "GPT-6.2 Sol (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.11277870995932568,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 11
+  },
+  {
+   "model": "GPT-6.1 Sol (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.11017046792267338,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 12
+  },
+  {
+   "model": "GPT-6.1 Terra (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.10445218352904273,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 13
+  },
+  {
+   "model": "Gemini 4 Argon (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": 0.10252691966101724,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 14
+  },
+  {
+   "model": "GPT-6.1 Sol (Medium)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.08214553792912509,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 15
+  },
+  {
+   "model": "Muse Wonder Full (Max)",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": 0.08039083830005407,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 16
+  },
+  {
+   "model": "Claude Sonnet 5.5 (High)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.07874981157680937,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 17
+  },
+  {
+   "model": "Qwen4-Max (xHigh)",
+   "organization": "alibaba",
+   "license": "Proprietary",
+   "score": 0.07303501775920995,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 18
+  },
+  {
+   "model": "GPT-6 Sol (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.06459189199918285,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 19
+  },
+  {
+   "model": "Claude Opus 5 (Max)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.061716029751691465,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 20
+  },
+  {
+   "model": "Hy4",
+   "organization": "tencent",
+   "license": "Proprietary",
+   "score": 0.060908120482314,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 21
+  },
+  {
+   "model": "Claude Fable 5 (High)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.060854182621427555,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 22
+  },
+  {
+   "model": "GPT-6.1 Terra (Medium)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.04469262428065049,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 23
+  },
+  {
+   "model": "Kimi K3.1 Pro (Max)",
+   "organization": "moonshot",
+   "license": "Kimi K3.1 Pro License",
+   "score": 0.03922965546904197,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 24
+  },
+  {
+   "model": "GPT-5.6 Sol (xHigh)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.03450277496175428,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 25
+  },
+  {
+   "model": "Gemini 3.8 Flash (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": 0.015436354175945228,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 26
+  },
+  {
+   "model": "Inkling 2 Small",
+   "organization": "thinky",
+   "license": "Apache 2.0",
+   "score": 0.01363765115192338,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 27
+  },
+  {
+   "model": "Grok 4.7 (xHigh)",
+   "organization": "xai",
+   "license": "Proprietary",
+   "score": 0.0128393953090544,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 28
+  },
+  {
+   "model": "Muse Spark 1.3 (Max)",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": 0.012790805651318186,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 29
+  },
+  {
+   "model": "MiMo-V2.6-Pro",
+   "organization": "xiaomi",
+   "license": "MIT",
+   "score": 0.01050384999715724,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 30
+  },
+  {
+   "model": "DeepSeek-V4.1-Flash-20261017 (Max)",
+   "organization": "deepseek",
+   "license": "MIT",
+   "score": 0.006816655935366427,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 31
+  },
+  {
+   "model": "Claude Sonnet 5 (High)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": 0.00647491238455033,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 32
+  },
+  {
+   "model": "Muse Wonder (Max)",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": 0.003555309149791817,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 33
+  },
+  {
+   "model": "GPT-6 Luna (Max)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": 0.003252886559160331,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 34
+  },
+  {
+   "model": "GLM-5.3 (Max)",
+   "organization": "zai",
+   "license": "MIT",
+   "score": 0.0019112494479580607,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 35
+  },
+  {
+   "model": "Kimi K3 (Max)",
+   "organization": "moonshot",
+   "license": "Kimi K3 license",
+   "score": -0.0014528588667886708,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 36
+  },
+  {
+   "model": "GLM-5.2 (Max)",
+   "organization": "zai",
+   "license": "MIT",
+   "score": -0.0036369746058279922,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 37
+  },
+  {
+   "model": "Claude Haiku 5.5 (High)",
+   "organization": "anthropic",
+   "license": "Proprietary",
+   "score": -0.004238737455761248,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 38
+  },
+  {
+   "model": "Hy4 preview",
+   "organization": "tencent",
+   "license": "Apache 2.0",
+   "score": -0.004709320392131132,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 39
+  },
+  {
+   "model": "Grok 4.6 (xHigh)",
+   "organization": "xai",
+   "license": "Proprietary",
+   "score": -0.005065993138374665,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 40
+  },
+  {
+   "model": "Qwen3.8-Max",
+   "organization": "alibaba",
+   "license": "Proprietary",
+   "score": -0.009937194364109678,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 41
+  },
+  {
+   "model": "Muse Ember (Max)",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": -0.01044070771270847,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 42
+  },
+  {
+   "model": "MiMo-V2.6-Flash",
+   "organization": "xiaomi",
+   "license": "MIT",
+   "score": -0.01910606911701827,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 43
+  },
+  {
+   "model": "GPT-5.6 Terra (xHigh)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": -0.02587256445296298,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 44
+  },
+  {
+   "model": "GPT-6 Luna (Medium)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": -0.030745361742244046,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 45
+  },
+  {
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": -0.03128568929007493,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 46
+  },
+  {
+   "model": "GLM-5.3-Flash",
+   "organization": "zai",
+   "license": "MIT",
+   "score": -0.03780592648151674,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 47
+  },
+  {
+   "model": "MiniMax-M3.1-Flash",
+   "organization": "minimax",
+   "license": "MiniMax Community License",
+   "score": -0.03973254891965576,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 48
+  },
+  {
+   "model": "Qwen3.8-Flash-Next",
+   "organization": "alibaba",
+   "license": "qwen-community-1.0",
+   "score": -0.046761904275303745,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 49
+  },
+  {
+   "model": "Step 5 Preview",
+   "organization": "stepfun",
+   "license": "Proprietary",
+   "score": -0.05150918508404891,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 50
+  },
+  {
+   "model": "Qwen3.8-27B",
+   "organization": "alibaba",
+   "license": "Apache 2.0",
+   "score": -0.05526422396694995,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 51
+  },
+  {
+   "model": "Gemini 3.1 Pro Preview",
+   "organization": "google",
+   "license": "Proprietary",
+   "score": -0.05613495356719122,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 52
+  },
+  {
+   "model": "Mistral Large 4",
+   "organization": "mistral",
+   "license": "Modified MIT",
+   "score": -0.06235884523411807,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 53
+  },
+  {
+   "model": "GPT-6 Luna (Low)",
+   "organization": "openai",
+   "license": "Proprietary",
+   "score": -0.06637462672348007,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 54
+  },
+  {
+   "model": "Inkling 2 Mini",
+   "organization": "thinky",
+   "license": "Apache 2.0",
+   "score": -0.07738694516381724,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 55
+  },
+  {
+   "model": "Qwen3.7-Max",
+   "organization": "alibaba",
+   "license": "Proprietary",
+   "score": -0.08501347396455586,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 56
+  },
+  {
+   "model": "Hy3",
+   "organization": "tencent",
+   "license": "Apache 2.0",
+   "score": -0.08702432972955201,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 57
+  },
+  {
+   "model": "Muse Spark 1.2 (xHigh)",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": -0.08761509520667345,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 58
+  },
+  {
+   "model": "Muse Spark 1.1",
+   "organization": "meta",
+   "license": "Proprietary",
+   "score": -0.09080241109853947,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 59
+  },
+  {
+   "model": "Qwen3.7-Plus",
+   "organization": "alibaba",
+   "license": "Proprietary",
+   "score": -0.09189523052659121,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 60
+  },
+  {
+   "model": "Beam 1.0 501B A23B",
+   "organization": "reflection",
+   "license": "Apache 2.0",
+   "score": -0.09541265299694282,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 61
+  },
+  {
+   "model": "MiniMax-M3",
+   "organization": "minimax",
+   "license": "MiniMax Community License",
+   "score": -0.10451950424949517,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 62
+  },
+  {
+   "model": "Spark-X2.6",
+   "organization": "synlan",
+   "license": "Proprietary",
+   "score": -0.12344300110942992,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 63
+  },
+  {
+   "model": "Mistral Medium 3.5",
+   "organization": "mistral",
+   "license": "Modified MIT",
+   "score": -0.14319586316014238,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 64
+  },
+  {
+   "model": "Nemotron 3 Ultra",
+   "organization": "nvidia",
+   "license": "OpenMDW-1.1",
+   "score": -0.16561456384183973,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 65
+  },
+  {
+   "model": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
+   "organization": "nvidia",
+   "license": "OpenMDW-1.1",
+   "score": -0.17692221978007208,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 66
+  },
+  {
+   "model": "Inkling-Small",
+   "organization": "thinky",
+   "license": "Apache 2.0",
+   "score": -0.1817266159467758,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 67
+  },
+  {
+   "model": "Inkling",
+   "organization": "thinky",
+   "license": "Apache 2.0",
+   "score": -0.18543913127683925,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 68
+  },
+  {
+   "model": "Solar Pro 4",
+   "organization": "upstage",
+   "license": "Proprietary",
+   "score": -0.24049079608880114,
+   "votes": null,
+   "publish_date": "2026-11-22",
+   "category": "overall",
+   "rank": 69
+  }
+ ]
+}
